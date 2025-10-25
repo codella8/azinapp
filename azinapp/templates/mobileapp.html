@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">توسعه اپلیکیشن موبایل</h2>
+        <p class="service-subtitle">ساخت اپلیکیشن‌های اندروید و iOS با جدیدترین تکنولوژی‌ها</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">انواع اپلیکیشن‌هایی که توسعه می‌دهیم:</h4>
+            <ul class="service-list">
+                <li>اپلیکیشن فروشگاهی</li>
+                <li>اپلیکیشن خدمات آنلاین</li>
+                <li>اپلیکیشن آموزشی</li>
+                <li>اپلیکیشن رزرو و نوبت‌دهی</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/mobileapp.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="row text-center g-4 mb-5">
+        <div class="col-md-4"><div class="feature-box"><i class="bi bi-phone feature-icon"></i><h5>اندروید و iOS</h5></div></div>
+        <div class="col-md-4"><div class="feature-box"><i class="bi bi-cloud-upload feature-icon"></i><h5>انتشار در مارکت‌ها</h5></div></div>
+        <div class="col-md-4"><div class="feature-box"><i class="bi bi-gear feature-icon"></i><h5>پشتیبانی کامل</h5></div></div>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}مدیریت شبکه‌های اجتماعی - AZIN GROUP{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">مدیریت شبکه‌های اجتماعی</h2>
+        <p class="service-subtitle">افزایش تعامل و رشد ارگانیک برند شما در شبکه‌های اجتماعی</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">خدمات ما:</h4>
+            <ul class="service-list">
+                <li>تولید محتوای گرافیکی و ویدیویی</li>
+                <li>زمان‌بندی و انتشار پست‌ها</li>
+                <li>مدیریت کمپین‌های تبلیغاتی</li>
+                <li>تحلیل و گزارش عملکرد</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/market.jpg' %}" alt="SMM" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

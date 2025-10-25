@@ -1,0 +1,75 @@
+{% load static %}
+<input type="checkbox" id="sidebarToggle" class="d-none">
+<label for="sidebarToggle" class="sidebar-toggler d-md-none">
+    <i class="fas fa-bars"></i>
+</label>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/group.jpg' %}" alt="azin" class="logo" width="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">صفحه اصلی</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{% url 'services' %}"
+                        role="button" aria-expanded="false"> خدمات
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'website' %}">
+                                <i class="fas fa-laptop-code me-2"></i> طراحی و توسعه وبسایت
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'mobileapp' %}">
+                                <i class="fas fa-mobile-alt me-2"></i> توسعه اپلیکیشن موبایل
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'marketing' %}">
+                                <i class="fas fa-bullhorn me-2"></i> بازاریابی دیجیتال و تبلیغات
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'smm' %}">
+                                <i class="fas fa-hashtag me-2"></i> مدیریت شبکه های اجتماعی
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'graphicdesign' %}">
+                                <i class="fas fa-palette me-2"></i> طراحی گرافیک و برندینگ
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'bussinessmanage' %}">
+                                <i class="fas fa-shopping-cart me-2"></i> راهکارهای تجارت الکترونیک
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'decore' %}">
+                                <i class="fas fa-couch me-2"></i> خدمات طراحی داخلی و دکوراسیون
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'travel' %}">
+                                <i class="fas fa-plane me-2"></i> خدمات کامل گردشگری
+                            </a></li>
+                        <li><a class="dropdown-item" href="{% url 'store' %}">
+                                <i class="fas fa-store me-2"></i> فروشگاه اینترنتی
+                            </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-center fw-bold" href="{% url 'services' %}">
+                                <i class="fas fa-list me-2"></i> مشاهده همه خدمات
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">نمونه کارها</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">درباره ما</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">تماس با ما</a></li>
+
+                <li class="nav-item desktop-lang-switcher">
+                    <form action="" method="post">
+                        <input type="hidden" name="next" value="">
+                        <select class="desktop-lang-select" name="language">
+                            <option value="fa">فارسی</option>
+                            <option value="en">English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}طراحی گرافیک و برندسازی - AZIN GROUP{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">طراحی گرافیک و برندسازی</h2>
+        <p class="service-subtitle">ساخت هویت بصری قدرتمند برای برند شما</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">خدمات ما:</h4>
+            <ul class="service-list">
+                <li>طراحی لوگو و هویت برند</li>
+                <li>طراحی کارت و پوستر تبلیغاتی</li>
+                <li>طراحی بسته‌بندی محصول</li>
+                <li>گرافیک دیجیتال و موشن‌گرافی</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/branding.jpg' %}" alt="Branding" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

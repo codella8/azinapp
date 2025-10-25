@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">فروشگاه اینترنتی و فیزیکی آذین</h2>
+        <p class="service-subtitle">عرضه محصولات باکیفیت از برندهای معتبر با خدمات سریع و مطمئن</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">خدمات فروشگاه آذین</h4>
+            <ul class="service-list">
+                <li>فروش آنلاین و حضوری محصولات متنوع</li>
+                <li>ارائه محصولات برندهای معتبر داخلی و خارجی</li>
+                <li>تحویل سریع و مطمئن در سراسر کشور</li>
+                <li>پشتیبانی مشتریان قبل و بعد از خرید</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/eccomerce.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="row text-center g-4 mb-5">
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-bag-check feature-icon"></i>
+                <h5>محصولات معتبر</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-truck feature-icon"></i>
+                <h5>تحویل سریع</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-gear feature-icon"></i>
+                <h5>پشتیبانی مشتریان</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

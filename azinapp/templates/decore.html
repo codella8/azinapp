@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">خدمات طراحی داخلی دکوراسیون آذین</h2>
+        <p class="service-subtitle">زیبایی خلاقیت و تخصص در طراحی فضاهای داخل شما</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">خدمات دکوراسیون آذین</h4>
+            <ul class="service-list">
+                <li>طراحی داخلی منازل و آپارتمان‌ها</li>
+                <li>دکوراسیون دفاتر و فضاهای تجاری</li>
+                <li>استفاده از متریال مدرن و باکیفیت</li>
+                <li>اجرای پروژه توسط تیم متخصص</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/decore.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="row text-center g-4 mb-5">
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-phone feature-icon"></i>
+                <h5>اندروید و iOS</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-cloud-upload feature-icon"></i>
+                <h5>انتشار در مارکت‌ها</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box"><i class="bi bi-gear feature-icon"></i>
+                <h5>پشتیبانی کامل</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

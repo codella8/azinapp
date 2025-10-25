@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}طراحی و توسعه وبسایت - AZIN GROUP{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+
+    <div class="service-header text-center mb-5">
+        <h2 class="service-title">طراحی و توسعه وبسایت</h2>
+        <p class="service-subtitle">طراحی مدرن، واکنش‌گرا و مطابق با استانداردهای جهانی</p>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h4 class="mb-3">چرا وبسایت مهم است؟</h4>
+            <p>
+                وبسایت حرفه‌ای اولین قدم برای ورود جدی به فضای آنلاین است. تیم ما وبسایت‌هایی طراحی می‌کند
+                که علاوه بر ظاهر زیبا، بهینه‌سازی شده برای سئو، امنیت بالا و سرعت عالی دارند.
+            </p>
+            <ul class="service-list">
+                <li>وبسایت شرکتی</li>
+                <li>فروشگاه اینترنتی</li>
+                <li>وبسایت شخصی و رزومه</li>
+                <li>سیستم‌های مدیریتی اختصاصی</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="{% static 'img/web.jpg' %}" alt="Web Design" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <div class="row text-center g-4 mb-5">
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-laptop feature-icon"></i>
+                <h5>ریسپانسیو کامل</h5>
+                <p>سازگار با موبایل، تبلت و دسکتاپ</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-speedometer2 feature-icon"></i>
+                <h5>سرعت بالا</h5>
+                <p>بهینه‌سازی حرفه‌ای برای افزایش سرعت</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-shield-lock feature-icon"></i>
+                <h5>امنیت بالا</h5>
+                <p>رعایت پروتکل‌های امنیتی روز دنیا</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-samples my-5">
+        <h4 class="text-center mb-4">نمونه کارهای طراحی سایت</h4>
+        <div class="row g-4">
+            {% for project in projects_web %}
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}" class="project-img">
+                    <h5 class="mt-3">{{ project.name }}</h5>
+                    <a href="{{ project.url }}" class="btn btn-warning mt-2" target="_blank">مشاهده پروژه</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-dark">ثبت سفارش وبسایت</a>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}تماس با ما - AZIN GROUP{% endblock %}
+
+{% block content %}
+
+<!-- هیرو صفحه تماس -->
+<section class="contact-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="contact-main-title">در تماس باشید</h1>
+                <p class="contact-subtitle">ما مشتاق شنیدن ایده‌ها و پروژه‌های شما هستیم. بیایید با هم همکاری کنیم!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if messages %}
+<div class="container mt-4">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="contact-info-wrapper">
+                    <h3 class="section-title">راه‌های ارتباطی</h3>
+                    <p class="section-description">از طریق روش‌های زیر می‌توانید با ما در ارتباط باشید</p>
+
+                    <div class="contact-info-cards">
+                      <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>ایمیل</h4>
+                                <p>info@azingroup.com</p>
+                                <span>پاسخگویی در 24 ساعت</span>
+                            </div>
+                        </div>
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>تلفن</h4>
+                                <p>+98 912 123 4567</p>
+                                <span>شنبه تا پنجشنبه 9:00 - 18:00</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>آدرس</h4>
+                                <p>تاجیکستان، دوشنبه</p>
+                                <span>ساعات کاری: 9:00 - 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <div class="form-header">
+                        <h3>پیام خود را ارسال کنید</h3>
+                        <p>فرم زیر را پر کنید تا در اسرع وقت با شما تماس بگیریم</p>
+                    </div>
+
+                    <form method="post" class="contact-form">
+                        {% csrf_token %}
+
+                        {% if form.errors %}
+                        <div class="alert alert-danger">
+                            <strong>لطفا خطاهای زیر را اصلاح کنید:</strong>
+                            <ul>
+                                {% for field, errors in form.errors.items %}
+                                {% for error in errors %}
+                                <li>{{ error }}</li>
+                                {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <span for="{{ form.name.id_for_label }}">{{ form.name.label }}</span>
+                                {{ form.name }}
+                            </div>
+                            <div class="form-group">
+                                <span for="{{ form.email.id_for_label }}">{{ form.email.label }}</span>
+                                {{ form.email }}
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
+                                {{ form.phone }}
+                            </div>
+                            <div class="form-group">
+                                <label for="{{ form.subject.id_for_label }}">{{ form.subject.label }}</label>
+                                {{ form.subject }}
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
+                            {{ form.message }}
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">
+                                <i class="bi bi-send-fill"></i>
+                                ارسال پیام
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-wrapper animate-on-scroll">
+                    <div class="map-header">
+                        <h4>موقعیت ما روی نقشه</h4>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353158446!3d-37.816279442021134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8a32f7f982d!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1625061234567!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" class="google-map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>آماده شروع پروژه خود هستید؟</h2>
+                <p>بیایید با هم گفتگو کنیم و بهترین راهکار را برای کسب و کار شما پیدا کنیم</p>
+                <div class="cta-buttons">
+                    <a href="tel:+989121234567" class="btn cta-btn primary">
+                        <i class="bi bi-telephone-outbound"></i>
+                        تماس تلفنی
+                    </a>
+                    <a href="https://wa.me/989121234567" class="btn cta-btn secondary" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                        واتساپ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateOnScroll = function () {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        };
+
+        animateOnScroll();
+
+        window.addEventListener('scroll', animateOnScroll);
+    });
+
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+        const requiredFields = this.querySelectorAll('[required]');
+        let isValid = true;
+
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.style.borderColor = '#dc3545';
+            } else {
+                field.style.borderColor = '';
+            }
+        });
+
+        if (!isValid) {
+            e.preventDefault();
+            alert('لطفا تمام فیلدهای ضروری را پر کنید.');
+        }
+    });
+</script>
+{% endblock %}

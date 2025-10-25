@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}خدمات ما - AZIN GROUP{% endblock %}
+
+{% block content %}
+
+<section class="services-hero text-center py-5">
+    <div class="container">
+        <h1 class="main-title">خدمات ما</h1>
+        <p class="hero-subtitle">
+            ما مجموعه‌ای از خدمات تخصصی در زمینه طراحی وب، اپلیکیشن، برندینگ و بازاریابی دیجیتال ارائه می‌دهیم
+        </p>
+    </div>
+</section>
+
+<section class="business-model py-5">
+    <div class="container">
+        <div class="header-box dark">
+            <h4 class="mb-3 text-center">مدل کسب و کار</h4>
+            <ul class="business-model-list text-center">
+                <li>پروژه‌های مبتنی بر مشتری - خدمات‌دهی به B2B و B2C</li>
+                <li>مدل تیم دورکار - انعطاف‌پذیر، مقیاس‌پذیر و مقرون‌به‌صرفه</li>
+                <li>بسته‌های خدماتی - وب، اپلیکیشن، برندینگ، بازاریابی و رسانه</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<h3 class="section-subtitle text-center mb-4">زیرمجموعه‌های آذین گروپ</h3>
+<div class="row g-4 text-center subsidiaries">
+
+    <div class="col-md-6 col-lg-3">
+        <div class="subsidiary-card">
+            <div class="subsidiary-icon"><i class="bi bi-bag-check"></i></div>
+            <h5>AZIN STORE</h5>
+            <p>فروشگاه اینترنتی و فیزیکی با محصولات باکیفیت و خدمات سریع و مطمئن.</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="subsidiary-card">
+            <div class="subsidiary-icon"><i class="bi bi-camera-reels"></i></div>
+            <h5>AZIN MEDIA</h5>
+            <p>دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی، تولید محتوا و تبلیغات حرفه‌ای.</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="subsidiary-card">
+            <div class="subsidiary-icon"><i class="bi bi-house-heart"></i></div>
+            <h5>AZIN DECOR</h5>
+            <p>طراحی داخلی و دکوراسیون منازل، دفاتر و فضاهای تجاری با خلاقیت و تخصص.</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="subsidiary-card">
+            <div class="subsidiary-icon"><i class="bi bi-airplane"></i></div>
+            <h5>AZIN TRAVEL</h5>
+            <p>خدمات گردشگری، ویزا، بلیط پرواز، تورهای داخلی و مشاوره تحصیل در خارج.</p>
+        </div>
+    </div>
+
+</div>
+
+<section class="service-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">خدمات تخصصی ما</h2>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-layout-text-window-reverse"></i></div>
+                    <h4>طراحی و توسعه وبسایت</h4>
+                    <p>وبسایت‌های مدرن و ریسپانسیو، مطابق با نیاز کسب‌وکار شما و بهینه برای سئو.</p>
+                    <a href="{% url 'website' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-phone"></i></div>
+                    <h4>توسعه اپلیکیشن موبایل</h4>
+                    <p>اپلیکیشن‌های اختصاصی iOS و Android با تجربه کاربری روان و حرفه‌ای.</p>
+                    <a href="{% url 'mobileapp' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-cart4"></i></div>
+                    <h4>راهکارهای تجارت الکترونیک</h4>
+                    <p>راه‌اندازی فروشگاه آنلاین، پرداخت امن و مدیریت سفارش‌ها.</p>
+                    <a href="{% url 'bussinessmanage' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-brush"></i></div>
+                    <h4>طراحی گرافیک و برندینگ</h4>
+                    <p>طراحی لوگو، هویت بصری و گرافیک تبلیغاتی برای برند شما.</p>
+                    <a href="{% url 'graphicdesign' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-instagram"></i></div>
+                    <h4>مدیریت شبکه‌های اجتماعی</h4>
+                    <p>انتشار پست‌ها، تحلیل آمار و اجرای کمپین‌های موفق.</p>
+                    <a href="{% url 'smm' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon"><i class="bi bi-megaphone"></i></div>
+                    <h4>بازاریابی دیجیتال و تبلیغات</h4>
+                    <p>کمپین‌های هدفمند برای افزایش مشتری و بهبود برندینگ.</p>
+                    <a href="{% url 'marketing' %}" class="btn btn-outline-warning mt-3">بیشتر بدانید</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
