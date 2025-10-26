@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <input type="checkbox" id="sidebarToggle" class="d-none">
 <label for="sidebarToggle" class="sidebar-toggler d-md-none">
     <i class="fas fa-bars"></i>
@@ -59,16 +60,54 @@
                 <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">درباره ما</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">تماس با ما</a></li>
 
-                <li class="nav-item desktop-lang-switcher">
-                    <form action="" method="post">
-                        <input type="hidden" name="next" value="">
-                        <select class="desktop-lang-select" name="language">
-                            <option value="fa">فارسی</option>
-                            <option value="en">English</option>
-                            <option value="ar">العربية</option>
-                        </select>
-                    </form>
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hover-underline d-flex align-items-center" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="small">{% trans 'پروفایل' %}</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-glass">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="{% url 'update_user' %}">
+                                <i class="bi bi-person fs-5 me-2  text-warning"></i> {% trans 'پروفایل کاربری' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="{% url 'update_info' %}">
+                                <i class="bi bi-pencil-square fs-5 me-2  text-warning"></i> {% trans 'اطلاعات کاربری' %}
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item  text-warning d-flex align-items-center" href="{% url 'logout' %}">
+                                <i class="bi bi-box-arrow-right fs-5 me-2"></i> {% trans 'خروج' %}
+                            </a>
+                        </li>
+                    </ul>
                 </li>
+                {% if user.is_staff %}
+                <li class="nav-item">
+                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'admin:index' %}">
+                        <i class=" me-1 text-primary"></i>
+                        <span class="small">{% trans 'پنل مدیریت' %}</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'login' %}">
+                        <i class="bi bi-box-arrow-in-right fs-5 me-1 text-warning"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'signup' %}">
+                        <i class="bi bi-person-plus fs-5 me-1  text-warning"></i>
+                    </a>
+                </li>
+                {% endif %}
+
             </ul>
         </div>
     </div>

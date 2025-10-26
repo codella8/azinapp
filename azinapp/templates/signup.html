@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans 'ثبت‌نام' %}{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* CSS styles above here */
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="signup-section">
+    <div class="container-fluid p-0">
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="signup-form-container p-4 p-md-5">
+                    <div class="text-center mb-5">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'img/karnoo.png' %}" alt="کارنو" class="logo mb-4" width="120">
+                        </a>
+                        <h3 class="fw-bold mb-2">{% trans 'حساب کاربری جدید' %}</h3>
+                        <p class="text-muted">{% trans 'اطلاعات خود را وارد کنید تا ثبت‌نام کنید' %}</p>
+                    </div>
+
+                    <form method="POST" action="{% url 'signup' %}" class="needs-validation" novalidate>
+                        {% csrf_token %}
+
+                        <div class="row g-3">
+                            {% for field in form %}
+                            <div class="form-group">
+                                <label for="{{ field.id_for_label }}">
+                                    {% if field.name == 'username' %}
+                                    <i class="bi bi-person"></i>
+                                    {% elif field.name == 'email' %}
+                                    <i class="bi bi-envelope"></i>
+                                    {% elif field.name == 'password1' %}
+                                    <i class="bi bi-lock"></i>
+                                    {% elif field.name == 'password2' %}
+                                    <i class="bi bi-shield-lock"></i>
+                                    {% endif %}
+                                    {{ field.label }}
+                                </label>
+                                {{ field }}
+                                {% if field.help_text %}
+                                <small class="form-text text-muted">{{ field.help_text }}</small>
+                                {% endif %}
+                                {% if field.errors %}
+                                <div class="form-error">
+                                    <i class="bi bi-exclamation-circle"></i> {{ field.errors|striptags }}
+                                </div>
+                                {% endif %}
+                                
+                                {% if field.name == 'password1' %}
+                                <div class="password-strength">
+                                    <div class="strength-bar" id="password-strength-bar"></div>
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+
+                            <div class="col-12 mt-4">
+                                <button class="btn btn-primary w-100 py-3" type="submit">
+                                    <i class="bi bi-person-plus me-2"></i> {% trans 'ثبت‌نام' %}
+                                </button>
+                            </div>
+
+                            <div class="col-12 text-center mt-4">
+                                <p class="mb-0">{% trans 'قبلاً حساب دارید؟' %}
+                                    <a href="{% url 'login' %}" class="text-primary fw-semibold">{% trans 'وارد شوید' %}</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Password strength indicator
+document.addEventListener('DOMContentLoaded', function() {
+    const passwordInput = document.querySelector('input[name="password1"]');
+    const strengthBar = document.getElementById('password-strength-bar');
+    
+    if (passwordInput && strengthBar) {
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            let strength = 0;
+            
+            if (password.length >= 8) strength += 1;
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength += 1;
+            if (password.match(/\d/)) strength += 1;
+            if (password.match(/[^a-zA-Z\d]/)) strength += 1;
+            
+            strengthBar.className = 'strength-bar';
+            if (strength === 0) {
+                strengthBar.style.width = '0%';
+            } else if (strength === 1) {
+                strengthBar.classList.add('strength-weak');
+            } else if (strength === 2) {
+                strengthBar.classList.add('strength-medium');
+            } else {
+                strengthBar.classList.add('strength-strong');
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

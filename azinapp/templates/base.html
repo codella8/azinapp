@@ -23,10 +23,35 @@
 <body>
 
     {% include "navbar.html" %}
-->
+    ->
     <main>
         {% block content %}{% endblock content %}
     </main>
+
+    <!-- این کد رو در base.html خودتون قرار بدید -->
+    <div class="floating-lang-switcher">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-main-btn">
+            <i class="fas fa-globe-americas"></i>
+            <span class="current-lang">FA</span>
+        </label>
+
+        <div class="lang-dropdown-menu">
+            <form action="{% url 'set_language' %}" method="post" class="lang-form">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ request.path }}">
+
+                <button type="submit" name="language" value="en"
+                    class="lang-item {% if LANGUAGE_CODE == 'en' %}active{% endif %}">
+                    <span class="lang-flag">🇺🇸</span>
+                    <span class="lang-name">English</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- برای بستن منو با کلیک بیرون -->
+        <label for="langToggle" class="lang-overlay"></label>
+    </div>
     <footer class="azin-footer">
         <div class="container">
             <div class="footer-content">
@@ -48,7 +73,7 @@
                         <ul class="footer-links">
                             <li><a href="{% url 'index' %}"><i class="fas fa-chevron-left"></i> خانه</a></li>
                             <li><a href="{% url 'about' %}"><i class="fas fa-chevron-left"></i> درباره ما</a></li>
-                            <li><a href="{% url 'services' %}"><i class="fas fa-chevron-left"></i > خدمات</a></li>
+                            <li><a href="{% url 'services' %}"><i class="fas fa-chevron-left"></i> خدمات</a></li>
                         </ul>
                     </div>
 

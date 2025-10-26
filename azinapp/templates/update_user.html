@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans 'ویرایش پروفایل' %}{% endblock title %}
+
+{% block extra_css %}
+<style>
+    /* CSS styles above here */
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>{% trans 'ویرایش پروفایل' %}</h2>
+            <p class="subtitle">{% trans 'اطلاعات شخصی خودرا بروز کنید' %}</p>
+
+            <form method="POST" action="{% url 'update_user' %}">
+                {% csrf_token %}
+                
+                {% for field in user_form %}
+                <div class="form-field {% if field.field.required %}required{% endif %}">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    
+                    {% if field.help_text %}
+                    <small class="helptext">{{ field.help_text }}</small>
+                    {% endif %}
+                    
+                    {% if field.errors %}
+                    <div class="error-messages">
+                        {{ field.errors }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+                <div class="form-actions">
+                    <button class="btn btn-success" type="submit">
+                        <i class="bi bi-check-circle"></i> {% trans 'ذخیره تغییرات' %}
+                    </button>
+                    <a class="btn btn-info" href="{% url 'update_password' %}">
+                        <i class="bi bi-shield-lock"></i> {% trans 'تغییر رمز عبور' %}
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+// Add loading state to buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const submitBtn = form.querySelector('.btn-success');
+    
+    form.addEventListener('submit', function() {
+        submitBtn.classList.add('loading');
+        submitBtn.innerHTML = '<i class="bi bi-check-circle"></i> در حال ذخیره...';
+    });
+    
+    // Add focus effects to form fields
+    const formFields = form.querySelectorAll('input, select, textarea');
+    
+    formFields.forEach(field => {
+        field.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        field.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentElement.classList.remove('focused');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
