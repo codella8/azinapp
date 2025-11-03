@@ -4,12 +4,6 @@
 
 {% block title %} {% trans 'ثبت‌نام' %}{% endblock %}
 
-{% block extra_css %}
-<style>
-    /* CSS styles above here */
-</style>
-{% endblock %}
-
 {% block content %}
 <section class="signup-section">
     <div class="container-fluid p-0">
@@ -23,6 +17,7 @@
                         <h3 class="fw-bold mb-2">{% trans 'حساب کاربری جدید' %}</h3>
                         <p class="text-muted">{% trans 'اطلاعات خود را وارد کنید تا ثبت‌نام کنید' %}</p>
                     </div>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
 
                     <form method="POST" action="{% url 'signup' %}" class="needs-validation" novalidate>
                         {% csrf_token %}

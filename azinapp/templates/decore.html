@@ -44,5 +44,22 @@
         </div>
     </div>
 
+    <section class="portfolio-preview py-5">
+        <div class="container">
+            <h3 class="section-subtitle text-center mb-4">نمونه کارها</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="{% static 'img/samlpe.jpg' %}" class="profile-img" alt="Project 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'img/samlpe.jpg' %}" class="profile-img" alt="Project 3">
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="{% url 'portfolio' %}" class="btn btn-outline-dark">مشاهده همه نمونه‌کارها</a>
+            </div>
+        </div>
+    </section>
+
 </div>
 {% endblock content %}
