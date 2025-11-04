@@ -147,7 +147,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 
-LOCALE_PATHS = [
+LOCALE_PATHS = [ 
     BASE_DIR / 'locale',
 ]
 
