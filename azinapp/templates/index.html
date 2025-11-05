@@ -1,167 +1,398 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load static %}
-{% block title %}Home - AZIN GROUP{% endblock %}
+{% block title %}AZINGROUP{% endblock %}
 
 {% block content %}
+<section class="premium-hero">
+    <div class="hero-background">
+        <div class="bg-gradient"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
 
-<section class="hero text-center">
-    <div class="overlay"></div>
-    <div class="container py-5">
-        <div class="row align-items-center flex-column-reverse flex-lg-row text-center text-lg-start">
-            <div class="col-lg-6 mt-4 mt-lg-0 text-light">
-                <h2 class="glowing-text">AZIN GROUP</h2>
-                <p class="job">راهکارهای نوین دیجیتال برای رشد کسب‌وکار شما</p>
-                <p class="home-intro-text">
-                    ما یک تیم چند تخصصی هستیم که خدمات طراحی وب، برندینگ، مدیریت شبکه‌های اجتماعی و بازاریابی دیجیتال را
-                    با بالاترین کیفیت ارائه می‌کنیم.
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>Lorem ipsum dolor sit amet.
+                    </span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Lorem, ipsum dolor.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quod?
                 </p>
-                <a href="{% url 'contact' %}" class="btn btn-warning mt-1">تماس با ما</a>
+
+                <div class="hero-actions">
+                    <a href="{% url 'contact' %}" class="cta-btn primary">
+                        <span>شروع پروژه</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="{% url 'portfolio' %}" class="cta-btn secondary">
+                        <i class="bi bi-play-circle"></i>
+                        <span>مشاهده نمونه‌کارها</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="150"></div>
+                        <div class="stat-label">پروژه موفق</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="+100"></div>
+                        <div class="stat-label">رضایت مشتری</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="10">10</div>
+                        <div class="stat-label">سال تجربه</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center">
+
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="main-visual">
+                        <div class="floating-card card-1">
+                            <i class="bi bi-laptop"></i>
+                            <span>طراحی وب</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="bi bi-phone"></i>
+                            <span>اپلیکیشن</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="bi bi-megaphone"></i>
+                            <span>مارکتینگ</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="bi bi-palette"></i>
+                            <span>گرافیک</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش زیرمجموعه‌های اصلی -->
+<section class="subsidiaries-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">زیرمجموعه‌های آذین گروپ</h2>
+            <p class="section-subtitle">تخصص‌های متنوع برای نیازهای مختلف کسب‌وکار شما</p>
+        </div>
+
+        <div class="subsidiaries-grid">
+            <div class="subsidiary-card">
+                <div class="card-icon">
+                    <i class="bi bi-shop"></i>
+                </div>
+                <h3>فروشگاه آذین</h3>
+                <p>فروشگاه اینترنتی و فیزیکی با محصولات باکیفیت و خدمات سریع و مطمئن</p>
+                <a href="{% url 'store' %}" class="card-link">
+                    <span>مشاهده جزئیات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="subsidiary-card">
+                <div class="card-icon">
+                    <i class="bi bi-camera-video"></i>
+                </div>
+                <h3>آذین مدیا</h3>
+                <p>دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی، تولید محتوا و تبلیغات حرفه‌ای</p>
+                <a href="{% url 'smm' %}" class="card-link">
+                    <span>مشاهده جزئیات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="subsidiary-card">
+                <div class="card-icon">
+                    <i class="bi bi-house-heart"></i>
+                </div>
+                <h3>دکوراسیون آذین</h3>
+                <p>طراحی داخلی و دکوراسیون منازل، دفاتر و فضاهای تجاری با خلاقیت و تخصص</p>
+                <a href="{% url 'decore' %}" class="card-link">
+                    <span>مشاهده جزئیات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="subsidiary-card">
+                <div class="card-icon">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <h3>خدمات گردشگری آذین</h3>
+                <p>خدمات گردشگری، ویزا، بلیط پرواز، تورهای داخلی و مشاوره تحصیل در خارج</p>
+                <a href="{% url 'travel' %}" class="card-link">
+                    <span>مشاهده جزئیات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
 
-<h3 class="section-subtitle text-center mb-4 mt-5">زیرمجموعه‌های آذین گروپ</h3>
-<div class="row g-4 text-center subsidiaries">
+<!-- بخش درباره ما خلاصه -->
+<section class="about-preview">
+    <div class="about-background">
+        <!-- این تصویر برای preload هست و نمایش داده نمیشه -->
+        <img src="{% static 'img/about.jfif' %}" >
+        <div class="bg-image"></div>
+        <div class="bg-overlay"></div>
+        <div class="bg-pattern"></div>
+    </div>
 
-    <div class="row g-4 text-center subsidiaries">
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="subsidiary-card">
-                <div class="subsidiary-icon"><i class="bi bi-bag-check"></i></div>
-                <h5>AZIN STORE</h5>
-                <p>فروشگاه اینترنتی و فیزیکی با محصولات باکیفیت و خدمات سریع و مطمئن.</p>
-                <a href="{% url 'store' %}" class="btn btn-warning mt-3">{% trans "مرور بیشتر" %}</a>
+
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="content-wrapper">
+                    <div class="section-badge">
+                        <span>درباره ما</span>
+                    </div>
+
+                    <h2 class="section-title">تیم متخصص آذین گروپ</h2>
+
+                    <p class="about-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Maxime, quas! Rerum tempore consequuntur, perspiciatis veniam quia ad ea!
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>تیم متخصص و با تجربه</h4>
+                                <p>جمعی از بهترین متخصصان حوزه دیجیتال</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>پشتیبانی دائمی</h4>
+                                <p>پشتیبانی ۲۴ ساعته حتی پس از تحویل پروژه</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-cash-coin"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>قیمت‌گذاری منصفانه</h4>
+                                <p>ارائه خدمات با بهترین کیفیت و قیمت مناسب</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="{% url 'about' %}" class="cta-btn primary">
+                            <span>بیشتر درباره ما</span>
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <a href="{% url 'contact' %}" class="cta-btn secondary">
+                            <i class="bi bi-telephone"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="subsidiary-card">
-                <div class="subsidiary-icon"><i class="bi bi-camera-reels"></i></div>
-                <h5>AZIN MEDIA</h5>
-                <p>دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی، تولید محتوا و تبلیغات حرفه‌ای.</p>
-                <a href="{% url 'smm' %}" class="btn btn-warning mt-3">مرور بیشتر</a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="subsidiary-card">
-                <div class="subsidiary-icon"><i class="bi bi-house-heart"></i></div>
-                <h5>AZIN DECOR</h5>
-                <p>طراحی داخلی و دکوراسیون منازل، دفاتر و فضاهای تجاری با خلاقیت و تخصص.</p>
-                <a href="{% url 'decore' %}" class="btn btn-warning mt-3">مرور بیشتر</a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-            <div class="subsidiary-card">
-                <div class="subsidiary-icon"><i class="bi bi-airplane"></i></div>
-                <h5>AZIN TRAVEL</h5>
-                <p>خدمات گردشگری، ویزا، بلیط پرواز، تورهای داخلی و مشاوره تحصیل در خارج.</p>
-                <a href="{% url 'travel' %}" class="btn btn-warning mt-3">مرور بیشتر</a>
+
+            <div class="about-visual">
+                <div class="stats-container">
+                    <div class="main-stat">
+                        <div class="stat-circle">
+                            <div class="circle-progress" data-percent="98">
+                                <div class="circle-value">98%</div>
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>رضایت مشتری</h3>
+                            <p>از کیفیت خدمات ما راضی هستند</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="150">0</div>
+                                <div class="stat-label">پروژه موفق</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">متخصص</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="10">0</div>
+                                <div class="stat-label">سال تجربه</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-rocket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <section class="content-section light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="section-title text-start">درباره ما</h2>
-                    <p>ما یک تیم متخصص و با انگیزه هستیم که با سال‌ها تجربه در زمینه توسعه نرم‌افزار و راهکارهای
-                        دیجیتال، آماده خدمت‌رسانی به شما هستیم.</p>
-                    <ul class="custom-list mt-4">
-                        <li>تیم متخصص و با تجربه</li>
-                        <li>پروژه‌های موفق متعدد</li>
-                        <li>پشتیبانی دائمی</li>
-                        <li>قیمت‌گذاری منصفانه</li>
-                    </ul>
-                    <a href="{% url 'about' %}" class="btn btn-outline-custom mt-3">بیشتر بدانید</a>
-                </div>
-                <div class="col-md-6">
-                    <div class="content-box light">
-                        <h3>ماموریت ما</h3>
-                        <p>ارائه راهکارهای دیجیتال نوآورانه که به کسب و کارها کمک می‌کند تا در دنیای دیجیتال موفق باشند.
-                        </p>
+<section class="services-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">خدمات تخصصی ما</h2>
+            <p class="section-subtitle">از ایده تا اجرا، همراه شما در مسیر دیجیتال</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-preview-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="bi bi-laptop"></i>
                     </div>
+                    <span class="service-badge">pro</span>
                 </div>
+                <h3>طراحی و توسعه وبسایت</h3>
+                <p>وبسایت‌های مدرن، واکنش‌گرا و بهینه‌شده برای موتورهای جستجو</p>
+                <ul class="service-features">
+                    <li>طراحی UI/UX حرفه‌ای</li>
+                    <li>توسعه با جدیدترین تکنولوژی‌ها</li>
+                    <li>بهینه‌سازی برای سئو</li>
+                    <li>پشتیبانی کامل</li>
+                </ul>
+                <a href="{% url 'website' %}" class="service-cta">
+                    <span>مشاهده خدمات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="service-preview-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <span class="service-badge">pro</span>
+                </div>
+                <h3>مدیریت شبکه های اجتماعی</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Accusamus, quas porro? Deserunt!</p>
+                <ul class="service-features">
+                    <li>مدیریت حرفه ای پیج ها</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+                <a href="{% url 'mobileapp' %}" class="service-cta">
+                    <span>مشاهده خدمات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="service-preview-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <span class="service-badge">pro</span>
+                </div>
+                <h3>دیجیتال مارکتینگ</h3>
+                <p>استراتژی‌های بازاریابی دیجیتال برای رشد کسب‌وکار شما</p>
+                <ul class="service-features">
+                    <li>تبلیغات گوگل</li>
+                    <li>ایمیل مارکتینگ</li>
+                    <li>آنالیز و گزارش</li>
+                </ul>
+                <a href="{% url 'marketing' %}" class="service-cta">
+                    <span>مشاهده خدمات</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
-    </section>
 
-    <section class="services-preview py-5">
-        <div class="container">
-            <h3 class="section-subtitle text-center mb-4">خدمات ما</h3>
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="fas fa-store feature-icon"></i>
-                        <h5>فروشگاه اینترنتی</h5>
-                        <p>عرضه محصولات باکیفیت از برندهای معتبر با خدمات سریع و مطمئن</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="bi bi-laptop feature-icon"></i>
-                        <h5>طراحی وب</h5>
-                        <p>ایجاد وب‌سایت‌های مدرن و واکنش‌گرا</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="bi bi-phone feature-icon"></i>
-                        <h5>اپلیکیشن موبایل</h5>
-                        <p>توسعه اپلیکیشن‌های کاربردی برای اندروید و iOS</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center mt-4">
-                <a href="{% url 'services' %}" class="btn btn-outline-dark">مشاهده همه خدمات</a>
-            </div>
+        <div class="text-center mt-5">
+            <a href="{% url 'services' %}" class="view-all-btn">
+                <span>مشاهده همه خدمات</span>
+                <i class="bi bi-arrow-left"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
 
-    <section class="box py-5">
-        <div class="container">
-            <h3 class="section-subtitle text-center mb-4">چرا ما؟</h3>
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="bi bi-clock-history feature-icon"></i>
-                        <h5>تحویل به‌موقع</h5>
-                        <p>پروژه‌ها طبق زمان‌بندی مشخص اجرا می‌شوند.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="bi bi-award feature-icon"></i>
-                        <h5>کیفیت تضمینی</h5>
-                        <p>استفاده از استانداردهای جهانی در طراحی و توسعه.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature">
-                        <i class="bi bi-people feature-icon"></i>
-                        <h5>تیم متخصص</h5>
-                        <p>ترکیب تجربه و تخصص در زمینه‌های مختلف دیجیتال.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
 
-    <section class="cta py-5 text-center bg-light">
-        <div class="container">
-            <h3 class="section-subtitle">شروع همکاری</h3>
-            <p class="home-intro-text">
-                آماده‌اید برند و کسب‌وکار خود را به سطح بالاتری ببرید؟ همین حالا با ما تماس بگیرید.
-            </p>
-            <a href="{% url 'contact' %}" class="btn btn-warning mt-3">تماس با ما</a>
-        </div>
-    </section>
+        document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+    });
+</script>
 
-    {% endblock content %}
+{% endblock %}

@@ -20,6 +20,7 @@
     {% block extra_css %}{% endblock %}
 </head>
 <meta name="google-site-verification" content="UqK0dNRhg3r7558hLnqOqPhzPDfqTdt5gpGVOdOgre0" />
+
 <body>
 
     {% include "navbar.html" %}
@@ -61,61 +62,184 @@
         <!-- برای بستن منو با کلیک بیرون -->
         <label for="langToggle" class="lang-overlay"></label>
     </div>
-    <footer class="azin-footer">
+    <footer class="modern-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <h5 class="footer-title">AZINGROUP</h5>
-                        <p class="footer-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam quaerat cumque.
-                        </p>
-
-                        <div class="certifications">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+            <div class="footer-main">
+                <div class="footer-grid">
+                    <!-- ستون درباره شرکت -->
+                    <div class="footer-column about-column">
+                        <div class="footer-brand">
+                            <div class="brand-logo">
+                                <img src="{% static 'img/logo.jfif' %}" alt="AZIN GROUP" class="logo">
+                                <span class="brand-name">AZIN GROUP</span>
+                            </div>
+                            <p class="company-description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ea quasi,
+                                quisquam dicta voluptas modi quaerat nostrum unde expedita velit
+                                consequatur nisi ipsa quis deserunt vero facilis blanditiis rem assumenda!
                             </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="trust-badges">
+                            <div class="badge">
+                                <i class="bi bi-shield-check"></i>
+                                <span>ضمانت کیفیت</span>
+                            </div>
+                            <div class="badge">
+                                <i class="bi bi-award"></i>
+                                <span>تیم متخصص</span>
+                            </div>
+                            <div class="badge">
+                                <i class="bi bi-headset"></i>
+                                <span>پشتیبانی 24/7</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6 mb-4">
-                        <h6 class="footer-subtitle">اکتشاف</h6>
+
+                    <!-- ستون لینک‌های سریع -->
+                    <div class="footer-column">
+                        <h4 class="column-title">دسترسی سریع</h4>
                         <ul class="footer-links">
-                            <li><a href="{% url 'index' %}"><i class="fas fa-chevron-left"></i> خانه</a></li>
-                            <li><a href="{% url 'about' %}"><i class="fas fa-chevron-left"></i> درباره ما</a></li>
-                            <li><a href="{% url 'services' %}"><i class="fas fa-chevron-left"></i> خدمات</a></li>
+                            <li>
+                                <a href="{% url 'index' %}" class="footer-link">
+                                    <i class="bi bi-house"></i>
+                                    <span>صفحه اصلی</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'about' %}" class="footer-link">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>درباره ما</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'services' %}" class="footer-link">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>خدمات ما</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'portfolio' %}" class="footer-link">
+                                    <i class="bi bi-images"></i>
+                                    <span>نمونه کارها</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}" class="footer-link">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>تماس با ما</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 mb-4">
-                        <h6 class="footer-subtitle">محصولات ما</h6>
+                    <!-- ستون خدمات -->
+                    <div class="footer-column">
+                        <h4 class="column-title">خدمات ما</h4>
                         <ul class="footer-links">
-                            <li><a href="#"><i class="fas fa-chevron-left"></i> lorem</a></li>
-                            <li><a href="#"><i class="fas fa-chevron-left"></i> lorem </a></li>
-                            <li><a href="#"><i class="fas fa-chevron-left"></i> lorem </a></li>
-                            <li><a href="#"><i class="fas fa-chevron-left"></i> lorem </a></li>
+                            <li>
+                                <a href="{% url 'website' %}" class="footer-link">
+                                    <i class="bi bi-laptop"></i>
+                                    <span>طراحی وب‌سایت</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'mobileapp' %}" class="footer-link">
+                                    <i class="bi bi-phone"></i>
+                                    <span>اپلیکیشن موبایل</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'smm' %}" class="footer-link">
+                                    <i class="bi bi-megaphone"></i>
+                                    <span>مدیریت شبکه‌های اجتماعی</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'graphicdesign' %}" class="footer-link">
+                                    <i class="bi bi-palette"></i>
+                                    <span>طراحی گرافیک</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'store' %}" class="footer-link">
+                                    <i class="bi bi-cart"></i>
+                                    <span>فروشگاه اینترنتی</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <h6 class="footer-subtitle">تماس با ما</h6>
-                        <ul class="footer-contact">
-                            <li><i class="fas fa-envelope"></i> info@.net</li>
-                            <li><i class="fas fa-envelope"></i> sales@azingroup.net</li>
-                            <li><i class="fas fa-share-alt"></i> f @ w in</li>
-                        </ul>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-telegram"></i></a>
+
+                    <!-- ستون تماس و شبکه‌های اجتماعی -->
+                    <div class="footer-column contact-column">
+                        <h4 class="column-title">ارتباط با ما</h4>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">ایمیل</span>
+                                    <a href="mailto:info@azingroup.net" class="contact-value">info@azingroup.net</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">فروش</span>
+                                    <a href="mailto:sales@azingroup.net" class="contact-value">sales@azingroup.net</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">تلفن</span>
+                                    <a href="tel:+982100000000" class="contact-value">021-00000000</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h5 class="social-title">ما را دنبال کنید</h5>
+                            <div class="social-links">
+                                <a href="#" class="social-link instagram" aria-label="اینستاگرام">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link telegram" aria-label="تلگرام">
+                                    <i class="bi bi-telegram"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin" aria-label="لینکدین">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link twitter" aria-label="توییتر">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link whatsapp" aria-label="واتساپ">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="copyright">© 2024 AZINGROUP. تمامی حقوق محفوظ است.</p>
-                        </div>
+            </div>
+
+            <!-- بخش پایینی فوتر -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 <strong>AZIN GROUP</strong>. تمامی حقوق محفوظ است.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">قوانین و مقررات</a>
+                        <a href="#" class="legal-link">حریم خصوصی</a>
                     </div>
                 </div>
             </div>

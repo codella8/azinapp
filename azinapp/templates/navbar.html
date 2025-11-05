@@ -1,114 +1,348 @@
 {% load static %}
 {% load i18n %}
-<input type="checkbox" id="sidebarToggle" class="d-none">
-<label for="sidebarToggle" class="sidebar-toggler d-md-none">
-    <i class="fas fa-bars"></i>
-</label>
-<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'index' %}">
-            <img src="{% static 'img/logo.jpg' %}" alt="azin" class="logo" width="60">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">صفحه اصلی</a></li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{% url 'services' %}"
-                        role="button" aria-expanded="false"> خدمات
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'website' %}">
-                                <i class="fas fa-laptop-code me-2"></i> طراحی و توسعه وبسایت
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'mobileapp' %}">
-                                <i class="fas fa-mobile-alt me-2"></i> توسعه اپلیکیشن موبایل
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'marketing' %}">
-                                <i class="fas fa-bullhorn me-2"></i> بازاریابی دیجیتال و تبلیغات
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'smm' %}">
-                                <i class="fas fa-hashtag me-2"></i> مدیریت شبکه های اجتماعی
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'graphicdesign' %}">
-                                <i class="fas fa-palette me-2"></i> طراحی گرافیک و برندینگ
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'bussinessmanage' %}">
-                                <i class="fas fa-shopping-cart me-2"></i> راهکارهای تجارت الکترونیک
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'decore' %}">
-                                <i class="fas fa-couch me-2"></i> خدمات طراحی داخلی و دکوراسیون
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'travel' %}">
-                                <i class="fas fa-plane me-2"></i> خدمات کامل گردشگری
-                            </a></li>
-                        <li><a class="dropdown-item" href="{% url 'store' %}">
-                                <i class="fas fa-store me-2"></i> فروشگاه اینترنتی
-                            </a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-center fw-bold" href="{% url 'services' %}">
-                                <i class="fas fa-list me-2"></i> مشاهده همه خدمات
-                            </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">نمونه کارها</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">درباره ما</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">تماس با ما</a></li>
-
-                {% if user.is_authenticated %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hover-underline d-flex align-items-center" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="small">{% trans 'پروفایل' %}</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-glass">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="{% url 'update_user' %}">
-                                <i class="bi bi-person fs-5 me-2  text-warning"></i> {% trans 'پروفایل کاربری' %}
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="{% url 'update_info' %}">
-                                <i class="bi bi-pencil-square fs-5 me-2  text-warning"></i> {% trans 'اطلاعات کاربری' %}
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item  text-warning d-flex align-items-center" href="{% url 'logout' %}">
-                                <i class="bi bi-box-arrow-right fs-5 me-2"></i> {% trans 'خروج' %}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                {% if user.is_staff %}
-                <li class="nav-item">
-                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'admin:index' %}">
-                        <i class=" me-1 text-primary"></i>
-                        <span class="small">{% trans 'پنل مدیریت' %}</span>
-                    </a>
-                </li>
-                {% endif %}
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'login' %}">
-                        <i class="bi bi-box-arrow-in-right fs-5 me-1 text-warning"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hover-underline d-flex align-items-center" href="{% url 'signup' %}">
-                        <i class="bi bi-person-plus fs-5 me-1  text-warning"></i>
-                    </a>
-                </li>
-                {% endif %}
-
-            </ul>
+<!-- Modern Navigation -->
+<nav class="modern-nav">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="{% url 'index' %}" class="logo-link">
+                <img src="{% static 'img/logo.jfif' %}" alt="AZIN GROUP" class="logo-img">
+            </a>
         </div>
+
+        <!-- Desktop Menu -->
+        <div class="nav-menu">
+            <div class="menu-left">
+                <a href="{% url 'index' %}" class="nav-link">صفحه اصلی</a>
+                
+                <!-- Services Mega Menu -->
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">
+                        خدمات
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="menu-section">
+                                <h4>تکنولوژی و توسعه</h4>
+                                <a href="{% url 'website' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">طراحی و توسعه وبسایت</span>
+                                        <span class="item-desc">وبسایت‌های مدرن و واکنش‌گرا</span>
+                                    </div>
+                                </a>
+                                <a href="{% url 'mobileapp' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M12 18H12.01" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">توسعه اپلیکیشن موبایل</span>
+                                        <span class="item-desc">اپلیکیشن‌های iOS و Android</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="menu-section">
+                                <h4>دیجیتال مارکتینگ</h4>
+                                <a href="{% url 'marketing' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 16V8.00002C21 6.89545 20.1046 6.00002 19 6.00002H5C3.89543 6.00002 3 6.89545 3 8.00002V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M7 12H17" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">بازاریابی دیجیتال</span>
+                                        <span class="item-desc">استراتژی‌های رشد آنلاین</span>
+                                    </div>
+                                </a>
+                                <a href="{% url 'smm' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 4.00002C22 2.89545 21.1046 2.00002 20 2.00002H4C2.89543 2.00002 2 2.89545 2 4.00002V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V4.00002Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M8 6.00002V18" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 6.00002V18" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M12 6.00002V18" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">مدیریت شبکه‌های اجتماعی</span>
+                                        <span class="item-desc">مدیریت حرفه‌ای پیج‌ها</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="menu-section">
+                                <h4>خدمات تخصصی</h4>
+                                <a href="{% url 'graphicdesign' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">طراحی گرافیک و برندینگ</span>
+                                        <span class="item-desc">هویت بصری منحصر به فرد</span>
+                                    </div>
+                                </a>
+                                <a href="{% url 'bussinessmanage' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">راهکارهای تجارت الکترونیک</span>
+                                        <span class="item-desc">فروشگاه‌های آنلاین</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="menu-section">
+                                <h4>سایر خدمات</h4>
+                                <a href="{% url 'decore' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M3 9H21M7 15H17M9 21V9M15 21V9" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">طراحی داخلی و دکوراسیون</span>
+                                        <span class="item-desc">فضاهای مدرن و کاربردی</span>
+                                    </div>
+                                </a>
+                                <a href="{% url 'travel' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">خدمات گردشگری</span>
+                                        <span class="item-desc">تورهای داخلی و خارجی</span>
+                                    </div>
+                                </a>
+                                <a href="{% url 'store' %}" class="menu-item">
+                                    <div class="item-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <path d="M3 10H21L19 21H5L3 10Z" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M16 10V6C16 3.79086 14.2091 2 12 2V2C9.79086 2 8 3.79086 8 6V10" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="item-content">
+                                        <span class="item-title">فروشگاه اینترنتی</span>
+                                        <span class="item-desc">محصولات باکیفیت</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menu-footer">
+                            <a href="{% url 'services' %}" class="view-all-btn">
+                                <span>مشاهده همه خدمات</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="{% url 'portfolio' %}" class="nav-link">نمونه کارها</a>
+                <a href="{% url 'about' %}" class="nav-link">درباره ما</a>
+                <a href="{% url 'contact' %}" class="nav-link">تماس با ما</a>
+            </div>
+
+            <div class="menu-right">
+                <!-- User Menu -->
+                {% if user.is_authenticated %}
+                <div class="user-menu">
+                    <button class="user-toggle">
+                        <div class="user-avatar">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 20C6 16.6863 8.68629 14 12 14C15.3137 14 18 16.6863 18 20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="user-name">پروفایل</span>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="{% url 'update_user' %}" class="user-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 20C6 16.6863 8.68629 14 12 14C15.3137 14 18 16.6863 18 20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>پروفایل کاربری</span>
+                        </a>
+                        <a href="{% url 'update_info' %}" class="user-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>اطلاعات کاربری</span>
+                        </a>
+                        {% if user.is_staff %}
+                        <a href="{% url 'admin:index' %}" class="user-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>پنل مدیریت</span>
+                        </a>
+                        {% endif %}
+                        <div class="user-divider"></div>
+                        <a href="{% url 'logout' %}" class="user-item logout">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 12H9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>خروج</span>
+                        </a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="auth-buttons">
+                    <a href="{% url 'login' %}" class="auth-btn login-btn">ورود</a>
+                    <a href="{% url 'signup' %}" class="auth-btn signup-btn">ثبت‌نام</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-menu-header">
+            <div class="nav-logo">
+                <a href="{% url 'index' %}" class="logo-link">
+                    <img src="{% static 'img/logo.jfif' %}" alt="AZIN GROUP" class="logo-img">
+                    <span class="logo-text">AZIN</span>
+                </a>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu-body">
+            <a href="{% url 'index' %}" class="mobile-link">صفحه اصلی</a>
+            
+            <div class="mobile-accordion">
+                <button class="mobile-accordion-toggle">خدمات</button>
+                <div class="mobile-accordion-content">
+                    <a href="{% url 'website' %}" class="mobile-sub-link">طراحی و توسعه وبسایت</a>
+                    <a href="{% url 'mobileapp' %}" class="mobile-sub-link">توسعه اپلیکیشن موبایل</a>
+                    <a href="{% url 'marketing' %}" class="mobile-sub-link">بازاریابی دیجیتال</a>
+                    <a href="{% url 'smm' %}" class="mobile-sub-link">مدیریت شبکه‌های اجتماعی</a>
+                    <a href="{% url 'graphicdesign' %}" class="mobile-sub-link">طراحی گرافیک و برندینگ</a>
+                    <a href="{% url 'bussinessmanage' %}" class="mobile-sub-link">راهکارهای تجارت الکترونیک</a>
+                    <a href="{% url 'decore' %}" class="mobile-sub-link">طراحی داخلی و دکوراسیون</a>
+                    <a href="{% url 'travel' %}" class="mobile-sub-link">خدمات گردشگری</a>
+                    <a href="{% url 'store' %}" class="mobile-sub-link">فروشگاه اینترنتی</a>
+                </div>
+            </div>
+
+            <a href="{% url 'portfolio' %}" class="mobile-link">نمونه کارها</a>
+            <a href="{% url 'about' %}" class="mobile-link">درباره ما</a>
+            <a href="{% url 'contact' %}" class="mobile-link">تماس با ما</a>
+
+            {% if user.is_authenticated %}
+            <div class="mobile-user-section">
+                <a href="{% url 'update_user' %}" class="mobile-user-link">پروفایل کاربری</a>
+                <a href="{% url 'update_info' %}" class="mobile-user-link">اطلاعات کاربری</a>
+                {% if user.is_staff %}
+                <a href="{% url 'admin:index' %}" class="mobile-user-link">پنل مدیریت</a>
+                {% endif %}
+                <a href="{% url 'logout' %}" class="mobile-user-link logout">خروج</a>
+            </div>
+            {% else %}
+            <div class="mobile-auth-buttons">
+                <a href="{% url 'login' %}" class="mobile-auth-btn">ورود</a>
+                <a href="{% url 'signup' %}" class="mobile-auth-btn signup">ثبت‌نام</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Mobile Accordion
+    const accordionToggles = document.querySelectorAll('.mobile-accordion-toggle');
+    accordionToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            toggle.classList.toggle('active');
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+        });
+    });
+
+    // User Menu Toggle
+    const userToggle = document.querySelector('.user-toggle');
+    if (userToggle) {
+        userToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            userToggle.parentElement.classList.toggle('active');
+        });
+
+        // Close user dropdown when clicking outside
+        document.addEventListener('click', () => {
+            document.querySelector('.user-menu')?.classList.remove('active');
+        });
+    }
+
+    // Mega Menu Hover
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.classList.add('active');
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.classList.remove('active');
+        });
+    });
+</script>
