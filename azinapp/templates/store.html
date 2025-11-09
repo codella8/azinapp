@@ -1,49 +1,287 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+{% block title %}فروشگاه - AZIN GROUP{% endblock %}
 
 {% block content %}
-
-<div class="container my-5">
-
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">فروشگاه اینترنتی و فیزیکی آذین</h2>
-        <p class="service-subtitle">عرضه محصولات باکیفیت از برندهای معتبر با خدمات سریع و مطمئن</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">خدمات فروشگاه آذین</h4>
-            <ul class="service-list">
-                <li>فروش آنلاین و حضوری محصولات متنوع</li>
-                <li>ارائه محصولات برندهای معتبر داخلی و خارجی</li>
-                <li>تحویل سریع و مطمئن در سراسر کشور</li>
-                <li>پشتیبانی مشتریان قبل و بعد از خرید</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/eccomerce.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+<!-- هیرو سکشن فروشگاه -->
+<section class="store-hero-section">
+    <div class="store-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="store-pattern"></div>
+        <div class="floating-store-elements">
+            <div class="store-element elem-1"><i class="bi bi-bag"></i></div>
+            <div class="store-element elem-2"><i class="bi bi-truck"></i></div>
+            <div class="store-element elem-3"><i class="bi bi-star"></i></div>
+            <div class="store-element elem-4"><i class="bi bi-shield-check"></i></div>
         </div>
     </div>
 
-    <div class="row text-center g-4 mb-5">
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-bag-check feature-icon"></i>
-                <h5>محصولات معتبر</h5>
+    <div class="container">
+        <div class="store-hero-content">
+            <div class="store-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">فروشگاه معتبر</span>
+                    <div class="badge-line"></div>
+                </div>
+
+                <h1 class="store-hero-title">
+                    <span class="title-line">فروشگاه اینترنتی</span>
+                    <span class="title-line accent">آذین</span>
+                </h1>
+
+                <p class="store-hero-description">
+                    بزرگترین مرجع خرید آنلاین با هزاران محصول از برندهای معتبر داخلی و خارجی.
+                    تجربه‌ای متفاوت از خرید آسان، سریع و مطمئن با گارانتی اصالت کالا.
+                </p>
+
+                <div class="store-stats">
+                    <div class="store-stat">
+                        <div class="stat-number" data-count="1000">0<span>+</span></div>
+                        <div class="stat-label">محصول متنوع</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="store-stat">
+                        <div class="stat-number" data-count="50000">0<span>+</span></div>
+                        <div class="stat-label">مشتری راضی</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="store-stat">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">ساعت پشتیبانی</div>
+                    </div>
+                </div>
+
+                <div class="store-hero-actions">
+                    <a href="{% url 'contact' %}" class="store-cta-btn secondary">
+                        <i class="bi bi-headset"></i>
+                        <span>مشاوره خرید</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-truck feature-icon"></i>
-                <h5>تحویل سریع</h5>
+
+
+            <div class="decoration-hero-visual">
+                <div class="design-showcase">
+                    <div class="showcase-item main-showcase">
+                        <img src="{% static 'img/decore.jpg' %}" alt="نمونه کار طراحی داخلی">
+                        <div class="showcase-overlay">
+                            <span class="showcase-tag">طراحی مدرن</span>
+                        </div>
+                    </div>
+
+                    <div class="showcase-item tertiary-showcase">
+                        <img src="{% static 'img/market.jpg' %}" alt="نمونه کار معماری داخلی">
+                    </div>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="delivery-item">
+                        <i class="bi bi-truck"></i>
+                        <div class="delivery-text">
+                            <strong>تحویل</strong>
+                            <span>آدرس</span>
+                        </div>
+                    </div>
+                    <div class="delivery-item">
+                        <i class="bi bi-shield-check"></i>
+                        <div class="delivery-text">
+                            <strong>گارانتی اصالت</strong>
+                            <span>ضمانت بازگشت ۷ روزه</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </div>
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-gear feature-icon"></i>
-                <h5>پشتیبانی مشتریان</h5>
+    </div>
+</section>
+
+<!-- بخش دسته‌بندی محصولات -->
+<section class="categories-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">محصولات</h2>
+            <p class="section-subtitle">از بین هزاران محصول در دسته‌بندی‌های متنوع انتخاب کنید</p>
+        </div>
+
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <h3>محصول</h3>
+                <p>توضیحات محصول</p>
+                <span class="product-count">تعداد محصول</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="bi bi-laptop"></i>
+                </div>
+                <h3>محصول</h3>
+                <p>توضیحات محصول</p>
+                <span class="product-count">تعداد محصول</span>>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="bi bi-house-door"></i>
+                </div>
+                <h3>محصول</h3>
+                <p>توضیحات محصول</p>
+                <span class="product-count">تعداد محصول</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="bi bi-phone"></i>
+                </div>
+                <h3>محصول</h3>
+                <p>توضیحات محصول</p>
+                <span class="product-count">تعداد محصول</span>
             </div>
         </div>
     </div>
+</section>
 
-</div>
+<!-- بخش مزایای خرید -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">چرا فروشگاه آذین؟</h2>
+            <p class="section-subtitle">مزایای منحصر به فرد خرید از فروشگاه اینترنتی آذین</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>گارانتی اصالت کالا</h4>
+                <p>تمامی محصولات دارای گارانتی اصالت و سلامت فیزیکی هستند</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <h4>پرداخت امن</h4>
+                <p>پرداخت آنلاین امن با درگاه‌های بانکی معتبر</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="bi bi-award"></i>
+                </div>
+                <h4>برندهای معتبر</h4>
+                <p>همکاری با معتبرترین برندهای داخلی و خارجی</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش CTA نهایی -->
+<section class="store-cta-section">
+    <div class="container">
+        <div class="cta-content-wrapper">
+            <div class="cta-text">
+                <h2>آماده تجربه خرید متفاوت هستید؟</h2>
+                <p>همین حالا به خانواده بزرگ مشتریان آذین بپیوندید و از مزایای ویژه ما بهره‌مند شوید</p>
+
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>تخفیف ویژه اولین خرید</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>تحویل رایگان</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>مشاوره رایگان</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-actions">
+                <a href="#" class="cta-btn primary large">
+                    <i class="bi bi-bag"></i>
+                    <span>شروع خرید</span>
+                </a>
+                <a href="{% url 'contact' %}" class="cta-btn secondary large">
+                    <i class="bi bi-headset"></i>
+                    <span>مشاوره رایگان</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // افزودن به سبد خرید
+        const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('h3').textContent;
+
+                // نمایش پیام موفقیت
+                this.innerHTML = '<i class="bi bi-check"></i> افزوده شد به سبد';
+                this.style.background = '#28a745';
+
+                setTimeout(() => {
+                    this.innerHTML = '<i class="bi bi-cart-plus"></i> افزودن به سبد خرید';
+                    this.style.background = '';
+                }, 2000);
+
+                console.log(`محصول "${productName}" به سبد خرید افزوده شد`);
+            });
+        });
+
+        // دکمه‌های علاقه‌مندی
+        const wishlistBtns = document.querySelectorAll('.wishlist');
+        wishlistBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                this.classList.toggle('active');
+                if (this.classList.contains('active')) {
+                    this.innerHTML = '<i class="bi bi-heart-fill"></i>';
+                } else {
+                    this.innerHTML = '<i class="bi bi-heart"></i>';
+                }
+            });
+        });
+    });
+</script>
 {% endblock content %}

@@ -1,30 +1,419 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}طراحی گرافیک و برندسازی - AZIN GROUP{% endblock %}
+{% block title %}طراحی گرافیک - AZIN GROUP{% endblock %}
 
 {% block content %}
-<div class="container my-5">
 
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">طراحی گرافیک و برندسازی</h2>
-        <p class="service-subtitle">ساخت هویت بصری قدرتمند برای برند شما</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">خدمات ما:</h4>
-            <ul class="service-list">
-                <li>طراحی لوگو و هویت برند</li>
-                <li>طراحی کارت و پوستر تبلیغاتی</li>
-                <li>طراحی بسته‌بندی محصول</li>
-                <li>گرافیک دیجیتال و موشن‌گرافی</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/branding.jpg' %}" alt="Branding" class="img-fluid rounded shadow">
+<section class="graphic-hero-section">
+    <div class="graphic-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="graphic-pattern"></div>
+        <div class="floating-graphic-elements">
+            <div class="graphic-element elem-1"><i class="bi bi-palette"></i></div>
+            <div class="graphic-element elem-2"><i class="bi bi-brush"></i></div>
+            <div class="graphic-element elem-3"><i class="bi bi-pen"></i></div>
+            <div class="graphic-element elem-4"><i class="bi bi-eyedropper"></i></div>
         </div>
     </div>
 
-</div>
+    <div class="container">
+        <div class="graphic-hero-content">
+            <div class="graphic-hero-text">
+                <h1 class="graphic-hero-title">
+                    <span class="title-line">طراحی گرافیک و</span>
+                    <span class="title-line accent">برندسازی حرفه‌ای</span>
+                </h1>
+
+                <p class="graphic-hero-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, illum!
+                </p>
+            </div>
+
+            <div class="graphic-hero-visual">
+                <div class="brand-showcase">
+                    <div class="showcase-item logo-design">
+                        <div class="design-preview">
+                            <div class="logo-sample">
+                                <div class="logo-shape shape-1"></div>
+                                <div class="logo-shape shape-2"></div>
+                            </div>
+                            <span class="design-label">طراحی لوگو</span>
+                        </div>
+                    </div>
+                    <div class="showcase-item branding">
+                        <div class="design-preview">
+                            <div class="brand-elements">
+                                <div class="color-palette">
+                                    <div class="color color-1"></div>
+                                    <div class="color color-2"></div>
+                                    <div class="color color-3"></div>
+                                </div>
+                                <div class="typography-sample">
+                                    <span class="font-sample">Brand Font</span>
+                                </div>
+                            </div>
+                            <span class="design-label">برندینگ</span>
+                        </div>
+                    </div>
+                    <div class="showcase-item packaging">
+                        <div class="design-preview">
+                            <div class="package-design">
+                                <div class="package-box">
+                                    <div class="package-front"></div>
+                                    <div class="package-side"></div>
+                                </div>
+                            </div>
+                            <span class="design-label">بسته‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش خدمات تخصصی -->
+<section class="graphic-services-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">خدمات تخصصی طراحی گرافیک</h2>
+            <p class="section-subtitle">از ایده پردازی تا اجرای حرفه‌ای تمامی خدمات گرافیکی</p>
+        </div>
+
+        <div class="graphic-services-grid">
+            <div class="graphic-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-star"></i>
+                </div>
+                <h3>طراحی لوگو و هویت برند</h3>
+                <p>طراحی لوگو منحصر به فرد و توسعه کامل هویت برند شما</p>
+                <ul class="service-features">
+                    <li>طراحی ۳ طرح اولیه لوگو</li>
+                    <li>راهنمای کامل برند</li>
+                    <li>پالت رنگی اختصاصی</li>
+                    <li>تایپوگرافی سفارشی</li>
+                    <li>فایل‌های تمام رستر و وکتور</li>
+                </ul>
+                <a href="{% url 'contact' %}?service=logo" class="service-cta-btn">
+                    <span>درخواست طراحی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="graphic-service-card featured">
+                <div class="service-icon">
+                    <i class="bi bi-file-earmark-image"></i>
+                </div>
+                <h3>طراحی تبلیغات و مارکتینگ</h3>
+                <p>طراحی حرفه‌ای محتوا برای کمپین‌های تبلیغاتی شما</p>
+                <ul class="service-features">
+                    <li>طراحی پوستر و بنر</li>
+                    <li>اینفوگرافیک و چارت</li>
+                    <li>طراحی کارت ویزیت</li>
+                    <li>بروشور و کاتالوگ</li>
+                    <li>طرح‌های شبکه‌های اجتماعی</li>
+                </ul>
+                <a href="{% url 'contact' %}?service=marketing" class="service-cta-btn">
+                    <span>درخواست طراحی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="graphic-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-box"></i>
+                </div>
+                <h3>طراحی بسته‌بندی</h3>
+                <p>طراحی بسته‌بندی خلاقانه و جذاب برای محصولات شما</p>
+                <ul class="service-features">
+                    <li>طراحی لیبل و استیکر</li>
+                    <li>بسته‌بندی محصول</li>
+                    <li>جعبه و کارتن</li>
+                    <li>طراحی سه‌بعدی</li>
+                    <li>فایل آماده چاپ</li>
+                </ul>
+            
+                <a href="{% url 'contact' %}?service=packaging" class="service-cta-btn">
+                    <span>درخواست طراحی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش فرآیند طراحی -->
+<section class="design-process-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">فرآیند طراحی گرافیک</h2>
+            <p class="section-subtitle">از مشاوره اولیه تا تحویل نهایی، قدم به قدم با شما</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="step-content">
+                    <h4>مشاوره و تحقیق</h4>
+                    <p>بررسی نیازهای شما، تحلیل بازار و شناخت برند</p>
+                    <ul>
+                        <li>مشاوره تخصصی</li>
+                        <li>تحلیل رقبا</li>
+                        <li>شناسایی مخاطب</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="step-content">
+                    <h4>ایده‌پردازی و کانسپت</h4>
+                    <p>خروجی ایده‌های خلاقانه و توسعه کانسپت طراحی</p>
+                    <ul>
+                        <li>ایده‌پردازی</li>
+                        <li>انتخاب کانسپت</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-pencil"></i>
+                </div>
+                <div class="step-content">
+                    <h4>طراحی و اجرا</h4>
+                    <p>اجرای حرفه‌ای طرح‌ها با جدیدترین نرم‌افزارها</p>
+                    <ul>
+                        <li>طراحی اولیه</li>
+                        <li>بازخورد و اصلاح</li>
+                        <li>اجرای نهایی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تحویل و پشتیبانی</h4>
+                    <p>تحویل فایل‌های نهایی و پشتیبانی پس از تحویل</p>
+                    <ul>
+                        <li>تحویل فایل‌ها</li>
+                        <li>راهنمای استفاده</li>
+                        <li>پشتیبانی فنی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نمونه کارها -->
+<section id="portfolio" class="graphic-portfolio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">نمونه کارهای طراحی گرافیک</h2>
+        </div>
+
+        <div class="graphic-portfolio-grid">
+            <div class="portfolio-item" data-category="logo">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/logo.jpg' %}" alt="pic">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">لوگو</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h6>Lorem, ipsum.</h6>
+                        <div class="portfolio-tags">
+                            <span class="tag">مدرن</span>
+                            <span class="tag">مینیمال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="branding">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/logo.jpg' %}" alt="pic">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">برندینگ</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h6>Lorem, ipsum.</h6>
+                        <div class="portfolio-tags">
+                            <span class="tag">تکنولوژی</span>
+                            <span class="tag">مدرن</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="packaging">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/brand.jpg' %}" alt="pic">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">بسته‌بندی</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h6>بسته‌بندی محصولات آرایشی</h6>
+                        <div class="portfolio-tags">
+                            <span class="tag">لوکس</span>
+                            <span class="tag">زنانه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="print">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/decore.jpg' %}" alt="pic">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">چاپ</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h6>Lorem, ipsum.</h6>
+                        <div class="portfolio-tags">
+                            <span class="tag">شرکتی</span>
+                            <span class="tag">حرفه‌ای</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نرم‌افزارها و تکنولوژی -->
+<section class="tools-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">نرم‌افزارها و تکنولوژی‌ها</h2>
+            <p class="section-subtitle">با برترین ابزارهای روز دنیا طراحی می‌کنیم</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <i class="bi bi-adobe"></i>
+                </div>
+                <h4>Adobe Creative Suite</h4>
+                <p>کامل‌ترین مجموعه نرم‌افزارهای طراحی گرافیک</p>
+                <div class="tool-features">
+                    <span>Photoshop</span>
+                    <span>Lorem, ipsum.r</span>
+                    <span>Lorem, ipsum.r</span>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <i class="bi bi-cube"></i>
+                </div>
+                <h4>طراحی سه‌بعدی</h4>
+                <p>مدل‌سازی و رندرینگ حرفه‌ای سه‌بعدی</p>
+                <div class="tool-features">
+                    <span>Lorem, ipsum.r</span>
+                    <span>Lorem, ipsum.r</span>
+                    <span>Lorem, ipsum.r</span>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <i class="bi bi-play-circle"></i>
+                </div>
+                <h4>موشن گرافیک</h4>
+                <p>انیمیشن و موشن گرافیک حرفه‌ای</p>
+                <div class="tool-features">
+                    <span>Lorem, ipsum.r</span>
+                    <span>Lorem, ipsum.r</span>
+                    <span>Lorem, ipsum.r</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // فیلتر نمونه کارها
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filterValue = this.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
 {% endblock content %}

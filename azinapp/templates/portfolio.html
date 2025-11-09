@@ -1,29 +1,51 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
-
 {% block title %}نمونه کارها - AZIN GROUP{% endblock %}
 
 {% block content %}
+<section class="luxury-portfolio-hero">
+    <div class="luxury-hero-background">
+        <div class="luxury-gradient-overlay"></div>
+        <div class="animated-geometric-pattern"></div>
+        <div class="floating-gold-elements">
+            <div class="gold-element elem-1"></div>
+            <div class="gold-element elem-2"></div>
+            <div class="gold-element elem-3"></div>
+            <div class="gold-element elem-4"></div>
+        </div>
+    </div>
 
-<section class="portfolio-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center">
-                <h1 class="portfolio-main-title">نمونه کارهای ما</h1>
-                <p class="portfolio-subtitle">نمایشی از پروژه‌های موفق و راهکارهای نوآورانه ارائه شده به مشتریان</p>
+        <div class="luxury-hero-content">
+            <div class="luxury-hero-text">
+                <div class="prestige-badge">
+                    <span class="badge-text">Portfolio Excellence</span>
+                    <div class="badge-line"></div>
+                </div>
 
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">{{ projects_show.count }}+</span>
-                        <span class="stat-text">پروژه موفق</span>
+                <h1 class="luxury-hero-title">
+                    <span class="title-line-2">نمونه کارها</span>
+                </h1>
+
+                <p class="luxury-hero-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, beatae!
+                </p>
+            </div>
+
+            <div class="luxury-hero-visual">
+                <div class="prestige-showcase">
+                    <div class="showcase-item showcase-main">
+                        <img src="{% static 'img/decore.jpg' %}" alt="پروژه ویژه">
+                        <div class="showcase-overlay">
+                            <span class="showcase-badge">Featured</span>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">{{ unique_clients }}500+</span>
-                        <span class="stat-text">مشتری راضی</span>
+                    <div class="showcase-item showcase-secondary">
+                        <img src="{% static 'img/about.jpg' %}" alt="پروژه دوم">
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-text">سال تجربه</span>
+                    <div class="showcase-item showcase-tertiary">
+                        <img src="{% static 'img/market.jpg' %}" alt="پروژه سوم">
                     </div>
                 </div>
             </div>
@@ -31,224 +53,224 @@
     </div>
 </section>
 
-<section class="portfolio-filter-section">
+<!-- بخش فیلترهای پیشرفته -->
+<section class="advanced-filters-section">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="filter-buttons text-center">
-                    <button class="filter-btn active" data-filter="all">همه پروژه‌ها</button>
-                    <button class="filter-btn" data-filter="web">توسعه وب</button>
-                    <button class="filter-btn" data-filter="mobile">اپلیکیشن موبایل</button>
-                    <button class="filter-btn" data-filter="ecommerce">تجارت الکترونیک</button>
-                    <button class="filter-btn" data-filter="branding">برندینگ</button>
-                    <button class="filter-btn" data-filter="marketing">بازاریابی</button>
+        <div class="filters-header">
+            <h2 class="filters-title">دسته‌بندی تخصصی پروژه‌ها</h2>
+        </div>
+
+        <div class="advanced-filter-tabs">
+            <div class="filter-category">
+                <h4>خدمات اصلی</h4>
+                <div class="filter-buttons">
+
+                    <button class="filter-btn luxury active" data-filter="all">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                        <span>همه پروژه‌ها</span>
+                    </button>
+
+
+                    <a href="{% url 'contact' %}" class="filter-btn luxury" data-filter="all">
+                        <i class="bi bi-phone"></i>
+                        <span>مدیریت شبکه های اجتماعی</span>
+                    </a>
+
+                    <a href="{% url 'media' %}" class="filter-btn luxury" data-filter="all">
+                        <i class="bi bi-camera"></i>
+                        <span>عکاسی و فلمبرداری</span>
+                    </a>
+
+                    <a href="{% url 'website' %}" class="filter-btn luxury" data-filter="all">
+                        <i class="bi bi-laptop"></i>
+                        <span>طراحی وبسایت</span>
+                    </a>
+
+                    <a href="{% url 'mobileapp' %}" class="filter-btn luxury" data-filter="app">
+                        <i class="bi bi-phone"></i>
+                        <span>اپلیکیشن موبایل</span>
+                    </a>
+
+                    <a href="{% url 'smm' %}" class="filter-btn luxury" data-filter="marketing">
+                        <i class="bi bi-megaphone"></i>
+                        <span>دیجیتال مارکتینگ</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="filter-category">
+                <h4>صنایع تخصصی</h4>
+                <div class="filter-buttons">
+                    <button class="filter-btn luxury" data-filter="ecommerce">
+                        <i class="bi bi-cart"></i>
+                        <span>فروشگاهی</span>
+                    </button>
+                    <button class="filter-btn luxury" data-filter="corporate">
+                        <i class="bi bi-building"></i>
+                        <span>شرکتی</span>
+                    </button>
+                    <button class="filter-btn luxury" data-filter="portfolio">
+                        <i class="bi bi-person-badge"></i>
+                        <span>شخصی</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<div class="portfolio-grid">
-    <div class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="{% static 'img/web.jpg' %}" alt="پروژه طراحی وبسایت">
-            <div class="portfolio-overlay">
-                <span class="portfolio-category">طراحی وب</span>
-            </div>
-        </div>
-        <div class="portfolio-content">
-            <h3>طراحی وبسایت فروشگاهی</h3>
-            <p>طراحی و توسعه کامل وبسایت فروشگاهی با امکانات پیشرفته</p>
-            <div class="portfolio-stats">
-                <span>زمان اجرا: ۲ ماه</span>
-                <span>رضایت: ۱۰۰٪</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="{% static 'img/wel.jpg' %}" alt="پروژه اپلیکیشن موبایل">
-            <div class="portfolio-overlay">
-                <span class="portfolio-category">اپلیکیشن</span>
-            </div>
-        </div>
-        <div class="portfolio-content">
-            <h3>اپلیکیشن خدمات آنلاین</h3>
-            <p>توسعه اپلیکیشن موبایل برای سرویس‌دهی آنلاین</p>
-            <div class="portfolio-stats">
-                <span>زمان اجرا: ۳ ماه</span>
-                <span>رضایت: ۹۸٪</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <div class="portfolio-image">
-            <img src="{% static 'img/team1.jpg' %}" alt="پروژه کمپین تبلیغاتی">
-            <div class="portfolio-overlay">
-                <span class="portfolio-category">مارکتینگ</span>
-            </div>
-        </div>
-        <div class="portfolio-content">
-            <h3>کمپین تبلیغاتی اینستاگرام</h3>
-            <p>مدیریت کامل کمپین تبلیغاتی با رشد ۳۰۰٪ی فالوور</p>
-            <div class="portfolio-stats">
-                <span>زمان اجرا: ۱ ماه</span>
-                <span>رشد: ۳۰۰٪</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section class="portfolio-section">
+<section class="luxury-portfolio-grid">
     <div class="container">
-        {% if projects_show %}
-        {% for project in projects_show %}
-        <div class="portfolio-item {% cycle 'left' 'right' %} animate-on-scroll" data-category="{{ project.category }}">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 {% if forloop.counter|divisibleby:2 %}order-lg-2{% endif %}">
-                    <div class="portfolio-image-wrapper">
-                        {% if project.image %}
-                        <img src="{{ project.image.url }}" alt="{{ project.name }}" class="portfolio-img">
-                        {% else %}
-                        <img src="{% static 'img/project-placeholder.jpg' %}" alt="{{ project.name }}"
-                            class="portfolio-img">
-                        {% endif %}
-                        <div class="portfolio-overlay">
+        <div class="luxury-grid" id="portfolioGrid">
+            {% for project in projects %}
+            <div class="luxury-portfolio-item">
+                <div class="luxury-portfolio-card">
+                    <div class="portfolio-image-container">
+                        <img src="{{ project.image.url }}" alt="{{ project.name }}" class="portfolio-image">
+
+                        <div class="portfolio-overlay luxury">
                             <div class="overlay-content">
-                                <h4>مشاهده جزئیات</h4>
-                                <div class="tech-tags">
-                                    {% for tech in project.technologies %}
-                                    <span class="tech-tag">{{ tech }}</span>
-                                    {% endfor %}
+                                <h3 class="project-title">{{ project.name }}</h3>
+                                <p class="project-description">{{ project.description|truncatewords:20 }}</p>
+
+                                <div class="project-actions">
+                                    {% if project.url %}
+                                    <a href="{{ project.url }}" class="action-btn live-preview" target="_blank">
+                                        <i class="bi bi-box-arrow-up-right"></i>
+                                        <span>مشاهده آنلاین</span>
+                                    </a>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-6 {% if forloop.counter|divisibleby:2 %}order-lg-1{% endif %}">
-                    <div class="portfolio-content">
-                        <span class="project-category">{{ project.get_category_display }}</span>
-                        <h3 class="project-title">{{ project.name }}</h3>
-                        <p class="project-description">{{ project.description|safe }}</p>
-
-                        <div class="project-features">
-                            <h5>ویژگی‌های کلیدی:</h5>
-                            <ul class="features-list">
-                                {% for feature in project.features %}
-                                <li>{{ feature }}</li>
-                                {% empty %}
-                                <li>ویژگی‌های این پروژه در حال به‌روزرسانی می‌باشد</li>
-                                {% endfor %}
-                            </ul>
+                    <div class="portfolio-content luxury">
+                        <div class="content-header">
+                            <h3 class="project-title">{{ project.name }}</h3>
                         </div>
 
-                        <div class="project-meta">
-                            <div class="meta-item">
-                                <i class="bi bi-calendar"></i>
-                                <span>زمان اجرا: {{ project.duration }}</span>
-                            </div>
-                            <div class="meta-item">
-                                <i class="bi bi-person"></i>
-                                <span>مشتری: {{ project.client }}</span>
-                            </div>
-                        </div>
+                        <p class="project-description">{{ project.description|truncatewords:15 }}</p>
 
-                        <div class="project-actions">
-                            {% if project.url %}
-                            <a href="{{ project.url }}" class="btn primary-btn" target="_blank">
-                                <i class="bi bi-eye"></i>
-                                مشاهده پروژه
-                            </a>
-                            {% endif %}
-                            <a href="#" class="btn outline-btn">
-                                <i class="bi bi-info-circle"></i>
-                                جزئیات بیشتر
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-
-        {% if not forloop.last %}
-        <div class="portfolio-divider"></div>
-        {% endif %}
-        {% endfor %}
-        {% else %}
-        <div class="text-center py-5">
-            <div class="empty-state">
-                <i class="bi bi-folder-x display-1 text-muted"></i>
-                <h3 class="mt-4">هنوز پروژه‌ای ثبت نشده است</h3>
-                <p class="text-muted">پروژه‌های ما به زودی در این بخش نمایش داده خواهند شد</p>
+            {% empty %}
+            <div class="empty-state luxury">
+                <div class="empty-icon">
+                    <i class="bi bi-folder2-open"></i>
+                </div>
+                <h3>پروژه‌ای یافت نشد</h3>
+                <p>هنوز پروژه‌ای به پورتفولیو اضافه نشده است</p>
             </div>
+            {% endfor %}
         </div>
-        {% endif %}
     </div>
 </section>
-<section class="portfolio-cta">
+
+<!-- بخش CTA لوکس -->
+<section class="luxury-cta-section">
+    <div class="luxury-cta-background">
+        <div class="cta-gradient"></div>
+        <div class="cta-pattern"></div>
+    </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2>آماده شروع پروژه بعدی خود هستید؟</h2>
-                <p>با تیم متخصص ما همراه شوید و ایده‌های خود را به واقعیت تبدیل کنید</p>
-                <div class="cta-buttons">
-                    <a href="{% url 'contact' %}" class="btn primary-btn large-btn">
-                        <i class="bi bi-chat-left-text"></i>
-                        درخواست مشاوره
-                    </a>
-                    <a href="{% url 'services' %}" class="btn outline-btn large-btn">
-                        <i class="bi bi-list-ul"></i>
-                        مشاهده خدمات
-                    </a>
+        <div class="luxury-cta-content">
+            <div class="cta-text">
+                <h2>آماده ایجاد پروژه‌ای استثنایی هستید؟</h2>
+                <p>با اعتماد به تیم متخصص آذین گروپ، کسب‌وکار خود را به سطح جدیدی برسانید</p>
+
+                <div class="cta-features">
+                    <div class="feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>مشاوره رایگان تخصصی</span>
+                    </div>
+                    <div class="feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>پشتیبانی ۲۴ ساعته</span>
+                    </div>
+                    <div class="feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>ضمانت کیفیت اجرا</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="cta-actions">
+                <a href="{% url 'contact' %}" class="luxury-cta-btn primary">
+                    <i class="bi bi-telephone"></i>
+                    <span>درخواست مشاوره رایگان</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
-{% endblock %}
-
-{% block extra_js %}
 <script>
+    // انیمیشن شماره‌های آماری
     document.addEventListener('DOMContentLoaded', function () {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        // انیمیشن شماره‌ها
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value + (element.getAttribute('data-count') > 90 ? '%' : '+');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2500);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // فیلترهای پیشرفته
+        const filterBtns = document.querySelectorAll('.filter-btn.luxury');
+        const portfolioItems = document.querySelectorAll('.luxury-portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
 
                 const filterValue = this.getAttribute('data-filter');
 
                 portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    const category = item.getAttribute('data-category');
+                    const industry = item.getAttribute('data-industry');
+
+                    if (filterValue === 'all' || category === filterValue || industry === filterValue) {
                         item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
                     } else {
-                        item.style.display = 'none';
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
                     }
                 });
             });
         });
-
-        const animateOnScroll = function () {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('animated');
-                }
-            });
-        };
-
-        animateOnScroll();
-        window.addEventListener('scroll', animateOnScroll);
     });
 </script>
 {% endblock %}

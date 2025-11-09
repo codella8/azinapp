@@ -4,77 +4,59 @@
 {% block title %}درباره ما - AZIN GROUP{% endblock %}
 
 {% block content %}
+
+<!-- Hero Section حرفه‌ای -->
 <section class="about-hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="hero-content">
-                    <h1 class="hero-title">درباره <span class="highlight">AZIN GROUP</span></h1>
-                    <p class="hero-subtitle">پیشتاز در ارائه راهکارهای دیجیتال و خدمات نوآورانه از سال ۲۰۱۷</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">7+</span>
-                            <span class="stat-text">سال تجربه</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-text">پروژه موفق</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">35+</span>
-                            <span class="stat-text">مشتری راضی</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="hero-image">
-                    <img src="{% static 'img/about.jpg' %}" alt="AZIN GROUP Team" class="img-fluid">
-                    <div class="floating-badge">
-                        <span>از ۲۰۱۷</span>
-                    </div>
-                </div>
-            </div>
+    <div class="hero-background">
+        <div class="bg-image"></div>
+        <div class="bg-overlay"></div>
+        <div class="bg-pattern"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
     </div>
-</section>
-
-<section class="story-section">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
-                <div class="story-image">
-                    <img src="{% static 'img/about.jpg' %}" alt="داستان آذین گروپ" class="img-fluid rounded">
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">درباره</span>
+                    <span class="title-line highlight">آذین گروپ</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatem porro dolorum iure explicabo maiores eum.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="+10">+</div>
+                        <div class="stat-label">سال تجربه</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="{% url 'contact' %}" class="cta-btn primary">
+                        <span>شروع همکاری</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="{% url 'portfolio' %}" class="cta-btn secondary">
+                        <i class="bi bi-play-circle"></i>
+                        <span>نمونه کارها</span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="story-content">
-                    <h2 class="section-title">داستان ما</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-year">۲۰۱۷</div>
-                            <div class="timeline-content">
-                                <h4>تأسیس آذین گروپ</h4>
-                                <p>آذین گروپ توسط احمد ولید سعیدی در شهر کابل بنیان‌گذاری شد. هدف ما از همان ابتدا ارائه
-                                    خدمات و محصولاتی نوآورانه، باکیفیت و جامع در عرصه‌های مختلف تجارت آنلاین و تکنولوژی
-                                    بود.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">۲۰۲۰</div>
-                            <div class="timeline-content">
-                                <h4>توسعه خدمات دیجیتال</h4>
-                                <p>با گسترش تیم تخصصی، خدمات دیجیتال مارکتینگ، طراحی وبسایت و اپلیکیشن را به مجموعه
-                                    خدمات خود اضافه کردیم.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">۲۰۲۳</div>
-                            <div class="timeline-content">
-                                <h4>تبدیل به مجموعه جامع</h4>
-                                <p>با اضافه شدن خدمات گردشگری و طراحی دکوراسیون، به یک مجموعه جامع و چندرشته‌ای تبدیل
-                                    شدیم.</p>
-                            </div>
+
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="main-image">
+                        <img src="{% static 'img/team1.jpg' %}" alt="تیم آذین گروپ" class="hero-img">
+                    </div>
+                    <div class="experience-badge">
+                        <div class="badge-content">
+                            <span class="years">10+</span>
+                            <span class="text">سال تجربه</span>
                         </div>
                     </div>
                 </div>
@@ -83,47 +65,165 @@
     </div>
 </section>
 
-<section class="services-overview">
+<section class="company-story">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <span>داستان ما</span>
+            </div>
+            <h2 class="section-title">سفر موفقیت ما</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus.</p>
+        </div>
+
+        <div class="story-timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2017</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-rocket"></i>
+                    </div>
+                    <h4>تأسیس آذین گروپ</h4>
+                    <p>آذین گروپ توسط احمد ولید سعیدی در شهر کابل بنیان‌گذاری شد. هدف ما از همان ابتدا ارائه خدمات و
+                        محصولاتی نوآورانه، باکیفیت و جامع در عرصه‌های مختلف تجارت آنلاین و تکنولوژی بود.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>توسعه خدمات دیجیتال</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum dolores vitae distinctio incidunt, nesciunt cupiditate
+                        esse nobis excepturi quas recusandae libero alias iusto deserunt
+                        sapiente earum vero fuga voluptatum nihil.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, molestias? Tempore, autem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nesciunt.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- حوزه‌های تخصصی -->
+<section class="expertise-section">
     <div class="container">
         <div class="section-header text-center">
+            <div class="section-badge">
+                <span>تخصص‌ها</span>
+            </div>
             <h2 class="section-title">حوزه‌های تخصصی ما</h2>
-            <p class="section-subtitle">چهار بخش اصلی فعالیت آذین گروپ</p>
+            <p class="section-subtitle">چهار رکن اصلی موفقیت آذین گروپ</p>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-shop"></i>
+
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <div class="card-icon">
+                    <i class="bi bi-shop"></i>
+                </div>
+                <div class="card-content">
+                    <h3>آذین استور</h3>
+                    <p>فروشگاه اینترنتی و فیزیکی با محصولات معتبر و خدمات سریع و مطمئن</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="number">500+</span>
+                            <span class="label">محصول</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">24/7</span>
+                            <span class="label">پشتیبانی</span>
+                        </div>
                     </div>
-                    <h4>فروشگاه اینترنتی</h4>
-                    <p>فروشگاه اینترنتی و فیزیکی برای عرضه محصولات معتبر با خدمات سریع و مطمئن</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-megaphone"></i>
+
+            <div class="expertise-card">
+                <div class="card-icon">
+                    <i class="bi bi-megaphone"></i>
+                </div>
+                <div class="card-content">
+                    <h3>آذین مدیا</h3>
+                    <p>تیم تخصصی دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی و تولید محتوا</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="number">70%</span>
+                            <span class="label">رشد</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">150+</span>
+                            <span class="label">کمپین</span>
+                        </div>
                     </div>
-                    <h4>دیجیتال مارکتینگ</h4>
-                    <p>تیم تخصصی دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی، تولید محتوا و برندینگ</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-house-door"></i>
+
+            <div class="expertise-card">
+                <div class="card-icon">
+                    <i class="bi bi-house-door"></i>
+                </div>
+                <div class="card-content">
+                    <h3>آذین دکور</h3>
+                    <p>خدمات طراحی داخلی و دکوراسیون با خلاقیت و تیم اجرایی حرفه‌ای</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="number">100+</span>
+                            <span class="label">پروژه</span>
+                        </div>
                     </div>
-                    <h4>طراحی دکوراسیون</h4>
-                    <p>خدمات طراحی داخلی و دکوراسیون منازل، دفاتر و فضاهای تجاری با خلاقیت و تیم اجرایی حرفه‌ای</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-airplane"></i>
+
+            <div class="expertise-card">
+                <div class="card-icon">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <div class="card-content">
+                    <h3>آذین تراول</h3>
+                    <p>خدمات گردشگری کامل شامل ویزا، بلیط و تورهای داخلی و خارجی</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="number">50+</span>
+                            <span class="label">مقصد</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">1000+</span>
+                            <span class="label">مسافر</span>
+                        </div>
                     </div>
-                    <h4>خدمات گردشگری</h4>
-                    <p>خدمات گردشگری و مشاوره سفر شامل ویزا، بلیط پرواز، تورهای داخلی و تحصیل در خارج از کشور</p>
                 </div>
             </div>
         </div>
@@ -132,59 +232,78 @@
 
 <section class="mission-values">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="mv-grid">
+            <div class="mission-section">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span>ماموریت</span>
+                    </div>
+                </div>
+
                 <div class="mission-content">
-                    <h2 class="section-title">ماموریت ما</h2>
                     <p class="mission-text">
-                        ما باور داریم که با ترکیب نوآوری، تخصص و تعهد می‌توانیم تجربه‌ای متفاوت و ارزشمند برای مشتریان
-                        خود خلق کنیم. هدف ما ساختن آینده‌ای دیجیتال برای برندها و کسب‌وکارهاست.
+                        ما باور داریم که با ترکیب <strong>نوآوری، تخصص و تعهد</strong> می‌توانیم تجربه‌ای متفاوت و
+                        ارزشمند برای مشتریان خود خلق کنیم. هدف ما ساختن آینده‌ای دیجیتال برای برندها و کسب‌وکارهاست.
                     </p>
-                    <div class="vision-box">
-                        <h4>چشم‌انداز</h4>
-                        <p>تبدیل شدن به پیشروترین مجموعه ارائه‌دهنده خدمات دیجیتال و مشاوره در منطقه</p>
+
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="vision-content">
+                            <h4>چشم‌انداز ما</h4>
+                            <p>تبدیل شدن به پیشروترین مجموعه ارائه‌دهنده خدمات دیجیتال و مشاوره در سطح منطقه تا سال 2026
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="values-content">
-                    <h2 class="section-title">ارزش‌های ما</h2>
-                    <div class="values-grid">
-                        <div class="value-item">
-                            <div class="value-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-                            <div class="value-text">
-                                <h5>نوآوری</h5>
-                                <p>به دنبال خلاقیت و راهکارهای نو برای رشد مشتریان</p>
-                            </div>
+
+            <div class="values-section">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <span>ارزش‌ها</span>
+                    </div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-lightbulb"></i>
                         </div>
-                        <div class="value-item">
-                            <div class="value-icon">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <div class="value-text">
-                                <h5>همکاری تیمی</h5>
-                                <p>ترکیبی از تخصص‌های گوناگون برای ارائه بهترین خدمات</p>
-                            </div>
+                        <div class="value-content">
+                            <h4>نوآوری</h4>
+                            <p>همیشه به دنبال راهکارهای خلاقانه و تکنولوژی‌های جدید برای رشد مشتریان</p>
                         </div>
-                        <div class="value-item">
-                            <div class="value-icon">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <div class="value-text">
-                                <h5>اعتماد و کیفیت</h5>
-                                <p>کیفیت بالا و پایبندی به اعتماد مشتری ارزش اصلی ماست</p>
-                            </div>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-people"></i>
                         </div>
-                        <div class="value-item">
-                            <div class="value-icon">
-                                <i class="bi bi-graph-up"></i>
-                            </div>
-                            <div class="value-text">
-                                <h5>توسعه مستمر</h5>
-                                <p>یادگیری و بهبود دائمی در تمامی فرآیندها</p>
-                            </div>
+                        <div class="value-content">
+                            <h4>همکاری تیمی</h4>
+                            <p>ترکیبی از تخصص‌های گوناگون برای ارائه بهترین و کامل‌ترین خدمات</p>
+                        </div>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4>اعتماد و کیفیت</h4>
+                            <p>کیفیت بالا و پایبندی به اعتماد مشتری ارزش اصلی و غیرقابل مذاکره ماست</p>
+                        </div>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4>توسعه مستمر</h4>
+                            <p>یادگیری و بهبود دائمی در تمامی فرآیندها و خدمات</p>
                         </div>
                     </div>
                 </div>
@@ -192,78 +311,102 @@
         </div>
     </div>
 </section>
-<section class="team-section">
+<!-- تیم متخصص -->
+<section class="team-section-about">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">تیم متخصص ما</h2>
-            <p class="section-subtitle">با افرادی آشنا شوید که پشت موفقیت‌های آذین گروپ هستند</p>
+            <div class="section-badge">
+                <span>تیم ما</span>
+            </div>
+            <h2 class="section-title">با متخصصان ما آشنا شوید</h2>
+            <p class="section-subtitle">تیمی متشکل از بهترین متخصصان در زمینه طراحی و توسعه</p>
         </div>
 
         {% if team %}
-        <div class="row g-4">
+        <div class="team-grid">
             {% for member in team %}
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="{{ member.photo.url }}" alt="{{ member.name }}" class="img-fluid">
-                        <div class="team-overlay">
+            <div class="team-card">
+                <div class="card-inner">
+                    <div class="member-image-section">
+                        <div class="image-wrapper">
+                            <img src="{{ member.photo.url }}" alt="{{ member.name }}" class="member-img">
+                            <div class="image-frame"></div>
+                        </div>
+                        <div class="social-overlay">
                             <div class="social-links">
-                                {% if member.instagram %}
-                                <a href="{{ member.instagram }}" target="_blank" class="social-link">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                {% endif %}
                                 {% if member.linkedin %}
-                                <a href="{{ member.linkedin }}" target="_blank" class="social-link">
+                                <a href="{{ member.linkedin }}" class="social-link" target="_blank">
                                     <i class="bi bi-linkedin"></i>
                                 </a>
                                 {% endif %}
                                 {% if member.github %}
-                                <a href="{{ member.github }}" target="_blank" class="social-link">
+                                <a href="{{ member.github }}" class="social-link" target="_blank">
                                     <i class="bi bi-github"></i>
+                                </a>
+                                {% endif %}
+                                {% if member.twitter %}
+                                <a href="{{ member.twitter }}" class="social-link" target="_blank">
+                                    <i class="bi bi-twitter"></i>
                                 </a>
                                 {% endif %}
                             </div>
                         </div>
                     </div>
-                    <div class="team-info">
-                        <h4 class="member-name">{{ member.name }}</h4>
-                        <p class="member-role">{{ member.role }}</p>
-                        <p class="member-bio">{{ member.bio|default:"عضو متخصص تیم آذین گروپ" }}</p>
+                    <div class="member-info">
+                        <div class="info-content">
+                            <h3 class="member-name">{{ member.name }}</h3>
+                            <p class="member-role">{{ member.role }}</p>
+                            <div class="member-divider"></div>
+                            <p class="member-bio">{{ member.bio|default:"عضو متخصص تیم آذین گروپ"|truncatewords:12 }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
         {% else %}
-        <div class="empty-team text-center">
-            <i class="bi bi-people display-1 text-muted"></i>
-            <h4 class="mt-3">اطلاعات تیم به زودی اضافه خواهد شد</h4>
-            <p class="text-muted">تیم متخصص ما در حال تکمیل شدن است</p>
+        <div class="empty-team">
+            <div class="empty-icon">
+                <i class="bi bi-people"></i>
+            </div>
+            <h3>تیم ما در حال تکمیل است</h3>
+            <p>به زودی با متخصصان حرفه‌ای ما آشنا خواهید شد</p>
         </div>
         {% endif %}
     </div>
 </section>
 
-<section class="about-cta">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2>آماده همکاری با ما هستید؟</h2>
-                <p>بیایید با هم گفتگو کنیم و بهترین راهکار را برای کسب و کار شما پیدا کنیم</p>
-                <div class="cta-buttons">
-                    <a href="{% url 'contact' %}" class="btn primary-btn">
-                        <i class="bi bi-chat-left-text"></i>
-                        شروع گفتگو
-                    </a>
-                    <a href="{% url 'portfolio' %}" class="btn secondary-btn">
-                        <i class="bi bi-briefcase"></i>
-                        مشاهده نمونه کارها
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+    });
+</script>
 
 {% endblock content %}

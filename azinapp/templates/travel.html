@@ -1,48 +1,265 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+{% block title %} خدمات گردشگری- AZIN GROUP{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">خدمات گردشگری و مسافرتی آذین</h2>
-        <p class="service-subtitle">همرا مطمئن شما در سفر تحصیل و گردشگری</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">خدمات سفر آذین</h4>
-            <ul class="service-list">
-                <li>ارائه ویزا برای کشورهای مختلف</li>
-                <li>رزرو و صدور بلیط پرواز داخلی و خارجی</li>
-                <li>تورهای داخلی و بین‌المللی</li>
-                <li>مشاوره تحصیل در خارج از کشور</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/travel.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+<!-- هیرو سکشن گردشگری -->
+<section class="travel-hero-section">
+    <div class="travel-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="travel-pattern"></div>
+        <div class="floating-travel-elements">
+            <div class="travel-element elem-1"><i class="bi bi-airplane"></i></div>
+            <div class="travel-element elem-2"><i class="bi bi-geo-alt"></i></div>
+            <div class="travel-element elem-3"><i class="bi bi-passport"></i></div>
+            <div class="travel-element elem-4"><i class="bi bi-suitcase2"></i></div>
         </div>
     </div>
 
-    <div class="row text-center g-4 mb-5">
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-airplane feature-icon"></i>
-                <h5>بلیط پرواز</h5>
+    <div class="container">
+        <div class="travel-hero-content">
+            <div class="travel-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">خدمات مسافرتی</span>
+                    <div class="badge-line"></div>
+                </div>
+
+                <h1 class="travel-hero-title">
+                    <span class="title-line">خدمات گردشگری</span>
+                    <span class="title-line accent">آذین</span>
+                </h1>
+
+                <p class="travel-hero-description">
+                    تجربه‌ای بی‌نظیر از سفر با خدمات کامل گردشگری آذین. 
+                    از دریافت ویزا تا برگزاری تورهای داخلی و خارجی، همه چیز در یک مجموعه.
+                </p>
+
+                <div class="travel-hero-actions">
+                    <a href="{% url 'contact' %}" class="travel-cta-btn primary">
+                        <i class="bi bi-telephone"></i>
+                        <span>مشاوره رایگان سفر</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-passport feature-icon"></i>
-                <h5>ویزای مسافرتی</h5>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="feature-box"><i class="bi bi-geo-alt feature-icon"></i>
-                <h5>تور های داخلی و خارجی</h5>
+
+            <div class="travel-hero-visual">
+                <div class="travel-showcase">
+                    <div class="destination-card main-destination">
+                        <img src="{% static 'img/port.jpg' %}" alt="تور اروپا">
+                    </div>
+                    <div class="destination-card secondary-destination">
+                        <img src="{% static 'img/social.jpg' %}" alt="تور آسیای جنوب شرقی">
+                    </div>
+                    <div class="destination-card tertiary-destination">
+                        <img src="{% static 'img/team.jpg' %}" alt="تور داخلی">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-</div>
+<!-- بخش خدمات اصلی -->
+<section id="services" class="travel-services-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">خدمات تخصصی گردشگری آذین</h2>
+            <p class="section-subtitle">کامل‌ترین مجموعه خدمات مسافرتی برای تجربه‌ای بی‌نظیر</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bi bi-passport"></i>
+                </div>
+                <h3>خدمات ویزا</h3>
+                <p></p>
+                <ul class="service-features">
+                    <li>ویزای شنگن</li>
+                    <li>ویزای کانادا و آمریکا</li>
+                    <li>ویزای امارات و ترکیه</li>
+                    <li>ویزای چین و ژاپن</li>
+                    <li>مشاوره تخصصی ویزا</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=visa" class="service-btn">
+                        <span>دریافت مشاوره</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card featured">
+                <div class="service-icon">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <h3>رزرو بلیط پرواز</h3>
+                <p>رزرو بلیط داخلی و خارجی با بهترین قیمت از تمامی ایرلاین‌ها</p>
+                <ul class="service-features">
+                    <li>پرواز داخلی و خارجی</li>
+                    <li>چارتر و سیستمی</li>
+                    <li>پرواز مستقیم و ترانزیت</li>
+                    <li>پشتیبانی ۲۴ ساعته</li>
+                    <li>تضمین بهترین قیمت</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=flight" class="service-btn">
+                        <span>استعلام قیمت</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bi bi-building"></i>
+                </div>
+                <h3>رزرو هتل</h3>
+                <p>رزرو هتل در تمامی نقاط دنیا با گارانتی بهترین قیمت و کیفیت</p>
+                <ul class="service-features">
+                    <li>هتل‌های ۵ ستاره لوکس</li>
+                    <li>هتل‌های اقتصادی</li>
+                    <li>ویلا و اقامتگاه‌های خصوصی</li>
+                    <li>رزرو آنلاین و فوری</li>
+                    <li>تضمین کیفیت اقامت</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=hotel" class="service-btn">
+                        <span>رزرو هتل</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bi bi-globe2"></i>
+                </div>
+                <h3>تورهای گروهی</h3>
+                <p>تورهای داخلی و خارجی با برنامه‌ریزی دقیق و خدمات کامل</p>
+                <ul class="service-features">
+                    <li>تور اروپا</li>
+                    <li>تور آسیای جنوب شرقی</li>
+                    <li>تور داخلی (شمال، اصفهان)</li>
+                    <li>تور زیارتی</li>
+                    <li>تور طبیعت‌گردی</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=tour" class="service-btn">
+                        <span>مشاهده تورها</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bi bi-book"></i>
+                </div>
+                <h3>مشاوره تحصیلی</h3>
+                <p>مشاوره تخصصی برای ادامه تحصیل در بهترین دانشگاه‌های جهان</p>
+                <ul class="service-features">
+                    <li>انتخاب دانشگاه</li>
+                    <li>اخذ پذیرش تحصیلی</li>
+                    <li>ویزای دانشجویی</li>
+                    <li>اقامت دانشجویی</li>
+                    <li>بورسیه تحصیلی</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=study" class="service-btn">
+                        <span>مشاوره تحصیلی</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>بیمه مسافرتی</h3>
+                <p>بیمه مسافرتی جامع برای سفرهای داخلی و خارجی با پوشش کامل</p>
+                <ul class="service-features">
+                    <li>بیمه درمانی بین‌المللی</li>
+                    <li>بیمه مسؤولیت</li>
+                    <li>بیمه لغو سفر</li>
+                    <li>بیمه وسایل شخصی</li>
+                    <li>پوشش تمام ریسک‌ها</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="{% url 'contact' %}?service=insurance" class="service-btn">
+                        <span>خرید بیمه</span>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- بخش CTA نهایی -->
+<section class="travel-cta-section">
+    <div class="container">
+        <div class="cta-content-wrapper">
+            <div class="cta-text">
+                <h2>آماده تجربه یک سفر فوق‌العاده هستید؟</h2>
+                <p>همین حالا با ما تماس بگیرید و از مشاوره رایگان تیم متخصص گردشگری آذین بهره‌مند شوید</p>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>مشاوره رایگان سفر</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>برنامه‌ریزی اختصاصی</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>ضمانت بهترین قیمت</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-actions">
+                <a href="{% url 'contact' %}" class="cta-btn primary large">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>درخواست مشاوره رایگان</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+    });
+</script>
 {% endblock content %}

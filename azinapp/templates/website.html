@@ -1,77 +1,386 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}طراحی و توسعه وبسایت - AZIN GROUP{% endblock %}
+{% block title %}توسعه وبسایت - AZIN GROUP{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">طراحی و توسعه وبسایت</h2>
-        <p class="service-subtitle">طراحی مدرن، واکنش‌گرا و مطابق با استانداردهای جهانی</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">چرا وبسایت مهم است؟</h4>
-            <p>
-                وبسایت حرفه‌ای اولین قدم برای ورود جدی به فضای آنلاین است. تیم ما وبسایت‌هایی طراحی می‌کند
-                که علاوه بر ظاهر زیبا، بهینه‌سازی شده برای سئو، امنیت بالا و سرعت عالی دارند.
-            </p>
-            <ul class="service-list">
-                <li>وبسایت شرکتی</li>
-                <li>فروشگاه اینترنتی</li>
-                <li>وبسایت شخصی و رزومه</li>
-                <li>سیستم‌های مدیریتی اختصاصی</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/web.jpg' %}" alt="Web Design" class="img-fluid rounded shadow">
+<!-- هیرو سکشن خدمات -->
+<section class="service-hero-section">
+    <div class="service-hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+        <div class="floating-elements">
+            <div class="element element-1"><i class="bi bi-code-slash"></i></div>
+            <div class="element element-2"><i class="bi bi-laptop"></i></div>
+            <div class="element element-3"><i class="bi bi-phone"></i></div>
+            <div class="element element-4"><i class="bi bi-tablet"></i></div>
         </div>
     </div>
 
-    <div class="row text-center g-4 mb-5">
-        <div class="col-md-4">
-            <div class="feature-box">
-                <i class="bi bi-laptop feature-icon"></i>
-                <h5>ریسپانسیو کامل</h5>
-                <p>سازگار با موبایل، تبلت و دسکتاپ</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="feature-box">
-                <i class="bi bi-speedometer2 feature-icon"></i>
-                <h5>سرعت بالا</h5>
-                <p>بهینه‌سازی حرفه‌ای برای افزایش سرعت</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="feature-box">
-                <i class="bi bi-shield-lock feature-icon"></i>
-                <h5>امنیت بالا</h5>
-                <p>رعایت پروتکل‌های امنیتی روز دنیا</p>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+        <div class="service-hero-content">
+            <div class="service-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">خدمات تخصصی</span>
+                    <div class="badge-line"></div>
+                </div>
 
-    <div class="portfolio-samples my-5">
-        <h4 class="text-center mb-4">نمونه کارهای طراحی سایت</h4>
-        <div class="row g-4">
-            {% for project in projects_web %}
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <img src="{{ project.image.url }}" alt="{{ project.name }}" class="project-img">
-                    <h5 class="mt-3">{{ project.name }}</h5>
-                    <a href="{{ project.url }}" class="btn btn-warning mt-2" target="_blank">مشاهده پروژه</a>
+                <h1 class="service-hero-title">
+                    <span class="title-line">طراحی و توسعه</span>
+                    <span class="title-line accent">وبسایت حرفه‌ای</span>
+                </h1>
+
+                <p class="service-hero-description">
+                    طراحی مدرن، توسعه اصولی و بهینه‌سازی حرفه‌ای وبسایت‌های شرکتی، فروشگاهی و شخصی
+                    با جدیدترین تکنولوژی‌های روز دنیا و تضمین کیفیت
+                </p>
+
+                <div class="service-hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number" data-count="120">0</div>
+                        <div class="stat-label">پروژه موفق</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number" data-count="99">0<span>%</span></div>
+                        <div class="stat-label">رضایت مشتری</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number" data-count="24">0/7</div>
+                        <div class="stat-label">پشتیبانی</div>
+                    </div>
+                </div>
+
+                <div class="service-hero-actions">
+                    <a href="{% url 'contact' %}" class="service-cta-btn primary">
+                        <i class="bi bi-rocket"></i>
+                        <span>شروع پروژه وبسایت</span>
+                    </a>
                 </div>
             </div>
-            {% endfor %}
+
+            <div class="service-hero-visual">
+                <div class="service-showcase">
+                    <div class="showcase-device desktop">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <img src="{% static 'img/web.jpg' %}" alt="pic">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-device tablet">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <img src="{% static 'img/wel.jpg' %}" alt="pic">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-device mobile">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <img src="{% static 'img/market.jpg' %}" alt="pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="text-center mt-5">
-        <a href="{% url 'contact' %}" class="btn btn-dark">ثبت سفارش وبسایت</a>
+<!-- بخش اهمیت وبسایت -->
+<section class="importance-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">چرا داشتن وبسایت حرفه‌ای حیاتی است؟</h2>
+            <p class="section-subtitle">وبسایت شما ویترین کسب‌وکار شما در دنیای دیجیتال است</p>
+        </div>
+
+        <div class="importance-grid">
+            <div class="importance-card">
+                <div class="card-icon">
+                    <i class="bi bi-globe2"></i>
+                </div>
+                <h4>حضور ۲۴ ساعته در سطح جهانی</h4>
+                <p>وبسایت شما به صورت ۲۴ ساعته و در تمام نقاط جهان در دسترس مشتریان شما خواهد بود</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h4>افزایش اعتبار و قابل اعتماد بودن</h4>
+                <p>وبسایت حرفه‌ای اعتبار برند شما را افزایش داده و حس اعتماد را در مشتریان ایجاد می‌کند</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon">
+                    <i class="bi bi-cash-coin"></i>
+                </div>
+                <h4>کاهش هزینه‌های بازاریابی</h4>
+                <p>با داشتن وبسایت، هزینه‌های تبلیغات و بازاریابی شما به شدت کاهش می‌یابد</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+                <h4>دسترسی به بازارهای جدید</h4>
+                <p>وبسایت امکان دسترسی به بازارهای جدید و مشتریان بالقوه را فراهم می‌کند</p>
+            </div>
+        </div>
     </div>
+</section>
 
-</div>
+<!-- بخش انواع خدمات -->
+<section class="services-types-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">انواع وبسایت‌های تخصصی</h2>
+            <p class="section-subtitle">طراحی اختصاصی برای هر نوع کسب‌وکار و نیاز</p>
+        </div>
+
+        <div class="services-types-grid">
+            <div class="service-type-card">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <span class="type-badge">1</span>
+                </div>
+                <h3>وبسایت شرکتی</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus?</p>
+                <ul class="type-features">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <div class="type-price">
+                    <span class="price-amount">10000</span>
+                </div>
+                <a href="{% url 'contact' %}?type=corporate" class="type-cta-btn">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="service-type-card featured">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-cart"></i>
+                    </div>
+                    <span class="type-badge">2</span>
+                </div>
+                <h3>فروشگاه اینترنتی</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus?</p>
+                <ul class="type-features">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <div class="type-price">
+                    <span class="price-amount">10000 </span>
+                </div>
+                <a href="{% url 'contact' %}?type=ecommerce" class="type-cta-btn">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="service-type-card">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <span class="type-badge">3</span>
+                </div>
+                <h3>وبسایت شخصی</h3>
+                <p>طراحی رزومه آنلاین، وبلاگ شخصی و پورتفولیو با طراحی مدرن و کاربرپسند</p>
+                <ul class="type-features">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <div class="type-price">
+                    <span class="price-amount">100000 </span>
+                </div>
+                <a href="{% url 'contact' %}?type=personal" class="type-cta-btn">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش ویژگی‌های فنی -->
+<section class="technical-features-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">ویژگی‌های فنی وبسایت‌های ما</h2>
+            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای جهانی</p>
+        </div>
+
+        <div class="technical-features">
+            <div class="tech-feature-grid">
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4>ریسپانسیو کامل</h4>
+                    <p>سازگاری کامل با تمام دستگاه‌ها شامل موبایل، تبلت و دسکتاپ</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h4>سرعت فوق‌العاده</h4>
+                    <p>بهینه‌سازی سرعت بارگذاری با امتیاز بالای ۹۰ در Google PageSpeed</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>امنیت بالا</h4>
+                    <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته و محافظت در برابر حملات</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 98%"></div>
+                    </div>
+                </div>
+
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4>سئو حرفه‌ای</h4>
+                    <p>بهینه‌سازی کامل برای موتورهای جستجو و رتبه‌بندی بهتر در گوگل</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش فرآیند کار -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">فرآیند طراحی و توسعه وبسایت</h2>
+            <p class="section-subtitle">از مشاوره تا تحویل نهایی، قدم به قدم با شما</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>مشاوره و تحلیل</h4>
+                    <p>بررسی نیازهای شما، تحلیل بازار هدف و ارائه پیشنهاد تخصصی</p>
+                </div>
+            </div>
+
+            <div class="process-step">   
+                <div class="step-content">
+                    <h4>طراحی UI/UX</h4>
+                    <p>طراحی واسط کاربری و تجربه کاربری متناسب با برند و کسب‌وکار شما</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>توسعه و برنامه‌نویسی</h4>
+                    <p>پیاده‌سازی فنی با استفاده از جدیدترین تکنولوژی‌های روز دنیا</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>تست و بهینه‌سازی</h4>
+                    <p>تست کامل عملکرد، امنیت و بهینه‌سازی سرعت و سئو</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>تحویل و پشتیبانی</h4>
+                    <p>تحویل نهایی و ارائه پشتیبانی فنی و آموزشی</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // فیلتر نمونه کارها
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.web-portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filterValue = this.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
 {% endblock content %}

@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load static %}
-{% block title %}AZINGROUP{% endblock %}
+{% block title %}صفحه اصلی - AZIN GROUP{% endblock %}
 
 {% block content %}
 <section class="premium-hero">
     <div class="hero-background">
-        <div class="bg-gradient"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="bg-gradient">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
         </div>
     </div>
 
@@ -148,7 +149,7 @@
 <section class="about-preview">
     <div class="about-background">
         <!-- این تصویر برای preload هست و نمایش داده نمیشه -->
-        <img src="{% static 'img/wel.jpg' %}" >
+        <img src="{% static 'img/app1.jpg' %}">
         <div class="bg-image"></div>
         <div class="bg-overlay"></div>
         <div class="bg-pattern"></div>
@@ -320,7 +321,7 @@
                 </div>
                 <h3>مدیریت شبکه های اجتماعی</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Accusamus, quas porro? Deserunt!</p>
+                    Accusamus, quas porro? Deserunt!</p>
                 <ul class="service-features">
                     <li>مدیریت حرفه ای پیج ها</li>
                     <li>Lorem, ipsum.</li>
@@ -336,29 +337,25 @@
             <div class="service-preview-card">
                 <div class="service-header">
                     <div class="service-icon">
-                        <i class="bi bi-megaphone"></i>
+                        <i class="bi bi-camera"></i>
                     </div>
                     <span class="service-badge">pro</span>
                 </div>
-                <h3>دیجیتال مارکتینگ</h3>
-                <p>استراتژی‌های بازاریابی دیجیتال برای رشد کسب‌وکار شما</p>
+                <h3>عکاسی و فلمبرداری</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus, quas porro? Deserunt!</p>
                 <ul class="service-features">
-                    <li>تبلیغات گوگل</li>
-                    <li>ایمیل مارکتینگ</li>
-                    <li>آنالیز و گزارش</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem ipsum dolor sit.</li>
                 </ul>
-                <a href="{% url 'marketing' %}" class="service-cta">
+                <a href="{% url 'mobileapp' %}" class="service-cta">
                     <span>مشاهده خدمات</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
-        </div>
 
-        <div class="text-center mt-5">
-            <a href="{% url 'services' %}" class="view-all-btn">
-                <span>مشاهده همه خدمات</span>
-                <i class="bi bi-arrow-left"></i>
-            </a>
         </div>
     </div>
 </section>

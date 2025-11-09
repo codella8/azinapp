@@ -53,23 +53,17 @@ def contact(request):
     return render(request, "contact.html", {"form": form})
 
 def portfolio(request):
-    projects_show = Work.objects.all() 
-    return render(request, 'portfolio.html', {'projects_show': projects_show})
-
-def services(request):
-    return render(request, 'services.html')
-
-def marketing(request):
-    return render(request, 'marketing.html')
-
-def bussinessmanage(request):
-    return render(request, 'bussinessmanage.html')
+    projects = Work.objects.all().order_by('-created_at') 
+    return render(request, 'portfolio.html', {'projects': projects})
 
 def graphicdesign(request):
     return render(request, 'graphicdesign.html')
 
 def mobileapp(request):
     return render(request, 'mobileapp.html')
+
+def media(request):
+    return render(request, 'media.html')
 
 def smm(request):
     return render(request, 'smm.html')

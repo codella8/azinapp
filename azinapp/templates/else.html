@@ -1,0 +1,1312 @@
+
+<!-- بخش تیم خلاق -->
+<section class="creative-team-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">تیم خلاق آذین مدیا</h2>
+            <p class="section-subtitle">جمعی از بهترین متخصصان تولید محتوای بصری ایران</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'img/home.jpg' %}" alt="کارگردان و مدیر تولید">
+                    <div class="member-social">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>محمد احمدی</h3>
+                    <span class="member-role">کارگردان و مدیر تولید</span>
+                    <p>۱۵ سال سابقه کارگردانی و تولید فیلم‌های سینمایی و تبلیغاتی</p>
+                    <div class="member-skills">
+                        <span>کارگردانی</span>
+                        <span>فیلم‌نامه‌نویسی</span>
+                        <span>مدیریت تولید</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'img/decore.jpg' %}" alt="مدیر عکاسی">
+                    <div class="member-social">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>سارا محمدی</h3>
+                    <span class="member-role">مدیر عکاسی</span>
+                    <p>تخصص در عکاسی صنعتی، محصول و پرتره با بیش از ۱۰۰ پروژه موفق</p>
+                    <div class="member-skills">
+                        <span>عکاسی صنعتی</span>
+                        <span>نورپردازی</span>
+                        <span>ادیت حرفه‌ای</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{% static 'img/team-3.jpg' %}" alt="ادیتور و متخصص پست‌پروداکشن">
+                    <div class="member-social">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h3>علی رضایی</h3>
+                    <span class="member-role">ادیتور و متخصص پست‌پروداکشن</span>
+                    <p>متخصص رنگ‌گری، جلوه‌های ویژه و مونتاج با نرم‌افزارهای پیشرفته</p>
+                    <div class="member-skills">
+                        <span>رنگ‌گری</span>
+                        <span>جلوه‌های ویژه</span>
+                        <span>مونتاج</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+/* بخش تیم خلاق */
+.creative-team-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.team-member:hover .member-photo img {
+    transform: scale(1.05);
+}
+
+.member-social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .member-social {
+    opacity: 1;
+}
+
+.member-social a {
+    width: 40px;
+    height: 40px;
+    background: #E50914;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    background: #fdce0a;
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: 25px;
+}
+
+.member-info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.member-role {
+    color: #282828;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.member-info p {
+    color: #6c757d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.member-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.member-skills span {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #e9ecef;
+}
+
+
+
+<!-- بخش نمونه کارها -->
+<section id="portfolio" class="web-portfolio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">نمونه کارهای طراحی وبسایت</h2>
+            <p class="section-subtitle">گزینه‌ای از پروژه‌های موفق اجرا شده توسط تیم ما</p>
+        </div>
+
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">همه پروژه‌ها</button>
+            <button class="filter-btn" data-filter="corporate">شرکتی</button>
+            <button class="filter-btn" data-filter="ecommerce">فروشگاهی</button>
+            <button class="filter-btn" data-filter="personal">شخصی</button>
+        </div>
+
+        <div class="web-portfolio-grid">
+            <div class="web-portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/static/images/project1.jpg" alt="پروژه فروشگاه آنلاین">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://example-store.com" class="portfolio-btn live-view" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>مشاهده آنلاین</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">وبسایت</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>فروشگاه آنلاین مد و پوشاک</h3>
+                        <p>یک پلتفرم تجارت الکترونیک کامل با سیستم مدیریت موجودی، درگاه پرداخت و پنل مدیریت پیشرفته</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/static/images/project2.jpg" alt="سیستم مدیریت مشتریان">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://crm.example.com" class="portfolio-btn live-view" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>مشاهده آنلاین</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">وبسایت</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>سیستم مدیریت مشتریان (CRM)</h3>
+                        <p>سیستم جامع مدیریت ارتباط با مشتریان با قابلیت پیگیری فرصت‌های فروش، مدیریت تماس‌ها و
+                            گزارش‌گیری تحلیلی</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-portfolio-item" data-category="mobile">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/static/images/project3.jpg" alt="اپلیکیشن مدیریت مالی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://play.google.com/store/apps/details?id=com.example.finance"
+                                    class="portfolio-btn live-view" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>مشاهده آنلاین</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">موبایل</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>اپلیکیشن مدیریت مالی شخصی</h3>
+                        <p>برنامه موبایل برای پیگیری درآمد و هزینه‌ها با نمودارهای تحلیلی، بودجه‌بندی و اعلان‌های هوشمند
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/static/images/project4.jpg" alt="پرتال خبری">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="https://news-portal.example.com" class="portfolio-btn live-view"
+                                    target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>مشاهده آنلاین</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">وبسایت</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>پرتال خبری و تحلیلی</h3>
+                        <p>سایت خبری با سیستم مدیریت محتوای پیشرفته، دسته‌بندی‌های مختلف، جستجوی پیشرفته و بخش نظرات
+                            کاربران</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+/* بخش نمونه کارها */
+.web-portfolio-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    color: #495057;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #ffcc00;
+    color: #000;
+}
+
+.filter-btn.active {
+    background: #ffcc00;
+    border-color: #ffcc00;
+    color: #000;
+}
+
+.web-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.web-portfolio-item {
+    transition: all 0.5s ease;
+}
+
+.portfolio-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.portfolio-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.portfolio-btn.details {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffcc00;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.portfolio-content p {
+    color: #6c757d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.portfolio-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #e9ecef;
+}
+
+.empty-portfolio {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+.empty-portfolio i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #dee2e6;
+}
+
+.empty-portfolio h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+
+
+
+
+
+
+
+<!-- بخش نمونه کارها -->
+<section id="portfolio" class="mobileapp-portfolio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">نمونه کارهای توسعه اپلیکیشن</h2>
+            <p class="section-subtitle">گزینه‌ای از پروژه‌های موفق اجرا شده توسط تیم ما</p>
+        </div>
+
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">همه پروژه‌ها</button>
+            <button class="filter-btn" data-filter="ios">iOS</button>
+            <button class="filter-btn" data-filter="android">Android</button>
+            <button class="filter-btn" data-filter="crossplatform">Cross-Platform</button>
+        </div>
+
+        <div class="mobileapp-portfolio-grid">
+            <div class="portfolio-item" data-category="ios">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/app-project-1.jpg' %}" alt="اپلیکیشن فروشگاهی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn app-store">
+                                    <i class="bi bi-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">
+                            <i class="bi bi-apple"></i>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>اپلیکیشن فروشگاهی</h3>
+                        <p>اپلیکیشن فروش آنلاین با قابلیت‌های پیشرفته خرید و پرداخت</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="bi bi-download"></i>
+                                <span>۵۰K+ دانلود</span>
+                            </div>
+                            <div class="stat">
+                                <i class="bi bi-star"></i>
+                                <span>۴.۸ امتیاز</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="android">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/app-project-2.jpg' %}" alt="اپلیکیشن خدماتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn play-store">
+                                    <i class="bi bi-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                                <a href="#" class="portfolio-btn details">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات پروژه</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">
+                            <i class="bi bi-google-play"></i>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>اپلیکیشن خدماتی</h3>
+                        <p>اپلیکیشن درخواست خدمات با موقعیت‌یابی و پرداخت آنلاین</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="bi bi-download"></i>
+                                <span>۱۰۰K+ دانلود</span>
+                            </div>
+                            <div class="stat">
+                                <i class="bi bi-star"></i>
+                                <span>۴.۹ امتیاز</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="crossplatform">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/app-project-3.jpg' %}" alt="اپلیکیشن آموزشی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn app-store">
+                                    <i class="bi bi-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="#" class="portfolio-btn play-store">
+                                    <i class="bi bi-google-play"></i>
+                                    <span>Play Store</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">
+                            <i class="bi bi-phone"></i>
+                            <span>Cross-Platform</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>اپلیکیشن آموزشی</h3>
+                        <p>پلتفرم آموزش آنلاین با ویدیو، آزمون و سیستم پیشرفت</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="bi bi-download"></i>
+                                <span>۲۰۰K+ دانلود</span>
+                            </div>
+                            <div class="stat">
+                                <i class="bi bi-star"></i>
+                                <span>۴.۷ امتیاز</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="{% url 'portfolio' %}" class="view-all-projects-btn">
+                <span>مشاهده همه پروژه‌ها</span>
+                <i class="bi bi-arrow-left"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+/* بخش نمونه کارها */
+.mobileapp-portfolio-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    color: #495057;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #007AFF;
+    color: #000;
+}
+
+.filter-btn.active {
+    background: #007AFF;
+    border-color: #007AFF;
+    color: white;
+}
+
+.mobileapp-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    transition: all 0.5s ease;
+}
+
+.portfolio-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.portfolio-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #007AFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.portfolio-btn.play-store {
+    background: #34C759;
+}
+
+.portfolio-btn.details {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.portfolio-content p {
+    color: #6c757d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.portfolio-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-stats .stat i {
+    color: #007AFF;
+}
+
+.view-all-projects-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 30px;
+    background: #007AFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-all-projects-btn:hover {
+    background: #0056CC;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
+}
+
+
+
+
+
+<!-- بخش CTA نهایی -->
+<section class="graphic-cta-section">
+    <div class="container">
+        <div class="cta-content-wrapper">
+            <div class="cta-text">
+                <h2>آماده ساخت هویت بصری منحصر به فرد هستید؟</h2>
+                <p>همین حالا با ما تماس بگیرید و از مشاوره رایگان تیم متخصص طراحی گرافیک آذین بهره‌مند شوید</p>
+
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>مشاوره رایگان تخصصی</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>طراحی اختصاصی</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle"></i>
+                        <span>پشتیبانی کامل</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-actions">
+                <a href="{% url 'contact' %}" class="cta-btn primary large">
+                    <i class="bi bi-palette2"></i>
+                    <span>درخواست مشاوره رایگان</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+/* بخش CTA */
+.graphic-cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #ededed 0%, #ededed 100%);
+    color: #282828;
+}
+
+.cta-content-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-text>p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.cta-feature i {
+    color: #FFD93D;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-btn.primary {
+    background: #FFD93D;
+    color: #333;
+}
+
+.cta-btn.primary:hover {
+    background: #FFC800;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 217, 61, 0.4);
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+.cta-btn.large {
+    min-width: 250px;
+    justify-content: center;
+}
+
+
+
+
+<!-- بخش انواع توسعه اپلیکیشن -->
+<section class="app-development-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">انواع توسعه اپلیکیشن موبایل</h2>
+            <p class="section-subtitle">راهکارهای متنوع برای نیازهای مختلف کسب‌وکار شما</p>
+        </div>
+
+        <div class="development-types-grid">
+            <div class="dev-type-card">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-apple"></i>
+                    </div>
+                    <span class="type-badge">پرسرعت</span>
+                </div>
+                <h3>توسعه Native iOS</h3>
+                <p>توسعه اپلیکیشن بومی برای iOS با زبان Swift و آخرین امکانات اپل</p>
+                <ul class="type-features">
+                    <li>توسعه با Swift و SwiftUI</li>
+                    <li>سازگاری کامل با iOS</li>
+                    <li>دسترسی به تمام قابلیت‌های سخت‌افزاری</li>
+                    <li>امنیت و پایداری بالا</li>
+                    <li>انتشار در App Store</li>
+                </ul>
+                <div class="type-tech">
+                    <span class="tech-tag">Swift</span>
+                    <span class="tech-tag">SwiftUI</span>
+                    <span class="tech-tag">Xcode</span>
+                </div>
+                <div class="type-price">
+                    <span class="price-amount">1000000</span>
+                </div>
+                <a href="{% url 'contact' %}?type=ios" class="type-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="dev-type-card featured">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <span class="type-badge">پرفروش</span>
+                </div>
+                <h3>توسعه Native Android</h3>
+                <p>توسعه اپلیکیشن بومی برای Android با Kotlin و Jetpack Compose</p>
+                <ul class="type-features">
+                    <li>توسعه با Kotlin و Java</li>
+                    <li>سازگاری با تمام دستگاه‌های اندروید</li>
+                    <li>بهینه‌سازی برای پلتفرم‌های مختلف</li>
+                    <li>امنیت و کارایی عالی</li>
+                    <li>انتشار در Google Play</li>
+                </ul>
+                <div class="type-tech">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Android Studio</span>
+                </div>
+                <div class="type-price">
+                    <span class="price-amount">20000</span>
+                </div>
+                <a href="{% url 'contact' %}?type=android" class="type-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="dev-type-card">
+                <div class="type-header">
+                    <div class="type-icon">
+                        <i class="bi bi-layers"></i>
+                    </div>
+                    <span class="type-badge">اقتصادی</span>
+                </div>
+                <h3>توسعه Cross-Platform</h3>
+                <p>توسعه اپلیکیشن Cross-Platform با React Native و Flutter</p>
+                <ul class="type-features">
+                    <li>توسعه همزمان برای iOS و Android</li>
+                    <li>کاهش زمان و هزینه توسعه</li>
+                    <li>تجربه کاربری نزدیک به Native</li>
+                    <li>قابلیت به‌روزرسانی سریع</li>
+                    <li>انتشار در تمام استورها</li>
+                </ul>
+                <div class="type-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                </div>
+                <div class="type-price">
+                    <span class="price-amount">30000</span>
+                </div>
+                <a href="{% url 'contact' %}?type=crossplatform" class="type-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+/* بخش انواع توسعه */
+.app-development-section {
+    padding: 100px 0;
+    background: #ededed;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-header.center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #fdce0a;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.development-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.dev-type-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.dev-type-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dev-type-card.featured {
+    border-color: #fdce0a;
+    transform: scale(1.05);
+}
+
+.dev-type-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.type-icon {
+    width: 60px;
+    height: 60px;
+    background: #ededed;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdce0a;
+    font-size: 1.8rem;
+}
+
+.type-badge {
+    background: #fdce0a;
+    color: #282828;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dev-type-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.dev-type-card>p {
+    color: #282828;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.type-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.type-features li {
+    padding: 8px 0;
+    color: #282828;
+    position: relative;
+    padding-right: 25px;
+}
+
+.type-features li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: #fdce0a;
+    font-weight: bold;
+}
+
+.type-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background: none;
+    color: #282828;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #ededed;
+}
+
+.type-price {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.price-from {
+    display: block;
+    color: #282828;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.price-amount span {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.type-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 15px;
+    background: #fdce0a;
+    color: #282828;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.type-cta-btn:hover {
+    background: #ededed;
+    color: #282828;
+    transform: translateY(-2px);
+}
+
+:root {
+    --dark-blue: #1a237e;
+    --blue: #283593;
+    --light-blue: #3949ab;
+    --yellow: #ffd600;
+    --gold: #ffab00;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --text-dark: #1a237e;
+    --text-light: #5c6bc0;
+    --border-color: #e8eaf6;
+    --shadow: 0 8px 25px rgba(26, 35, 126, 0.15);
+    --gradient: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+}

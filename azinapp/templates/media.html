@@ -1,0 +1,545 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}مدیا - AZIN GROUP{% endblock %}
+
+{% block content %}
+<!-- هیرو سکشن آذین مدیا -->
+<section class="media-hero-section">
+    <div class="media-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="media-pattern"></div>
+        <div class="floating-media-elements">
+            <div class="media-element elem-1"><i class="bi bi-camera-video"></i></div>
+            <div class="media-element elem-2"><i class="bi bi-camera"></i></div>
+            <div class="media-element elem-3"><i class="bi bi-film"></i></div>
+            <div class="media-element elem-4"><i class="bi bi-mic"></i></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="media-hero-content">
+            <div class="media-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">تولید محتوا</span>
+                    <div class="badge-line"></div>
+                </div>
+
+                <h1 class="media-hero-title">
+                    <span class="title-line">آذین مدیا</span>
+                    <span class="title-line accent">Lorem, ipsum dolor.
+                    </span>
+                </h1>
+
+                <p class="media-hero-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, eos!
+                </p>
+
+                <div class="media-stats">
+                    <div class="media-stat">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">پروژه تولید محتوا</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="media-stat">
+                        <div class="stat-number" data-count="10">0<span>+</span></div>
+                        <div class="stat-label">تیم تولید</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="media-stat">
+                        <div class="stat-number" data-count="24">0/7</div>
+                        <div class="stat-label">پشتیبانی</div>
+                    </div>
+                </div>
+
+                <div class="media-hero-actions">
+                    <a href="{% url 'contact' %}" class="media-cta-btn primary">
+                        <i class="bi bi-camera-video"></i>
+                        <span>مشاوره رایگان تولید</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="media-hero-visual">
+                <div class="media-showcase">
+                    <div class="camera-equipment">
+                        <div class="camera-body">
+                            <div class="camera-lens"></div>
+                            <div class="camera-display"></div>
+                        </div>
+                        <div class="equipment-label">تجهیزات حرفه‌ای</div>
+                    </div>
+                    <div class="production-scene">
+                        <div class="scene-set">
+                            <div class="lighting-setup"></div>
+                            <div class="camera-stand"></div>
+                            <div class="subject"></div>
+                        </div>
+                        <div class="scene-label">استودیو حرفه‌ای</div>
+                    </div>
+                    <div class="media-badges">
+                        <div class="badge-item">
+                            <i class="bi bi-award"></i>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="bi bi-star"></i>
+                            <span>Lorem, ipsum.</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="bi bi-lightning"></i>
+                            <span>تحویل سریع</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش خدمات تخصصی -->
+<section class="media-services-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">خدمات تخصصی آذین مدیا</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="media-services-grid">
+            <div class="media-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-camera"></i>
+                </div>
+                <h3>عکاسی حرفه‌ای</h3>
+                <p>عکاسی صنعتی، محصول، پرتره و مراسم با بهترین تجهیزات و نورپردازی</p>
+                <ul class="service-features">
+                    <li>عکاسی صنعتی و محصول</li>
+                    <li>عکاسی پرتره حرفه‌ای</li>
+                    <li>عکاسی مراسم و ایونت</li>
+                    <li>عکاسی معماری و فضای داخلی</li>
+                    <li>ادیت حرفه ای</li>
+                </ul>
+                <div class="service-equipment">
+                    <h4>تجهیزات مورد استفاده:</h4>
+                    <div class="equipment-list">
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}?service=photography" class="service-cta-btn">
+                    <span>درخواست عکاسی</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="media-service-card featured">
+                <div class="service-icon">
+                    <i class="bi bi-camera-reels"></i>
+                </div>
+                <h3>تولید فیلم و ویدیو</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eligendi?</p>
+                <ul class="service-features">
+                    <li>فیلم‌برداری </li>
+                    <li>تولید تیزر تبلیغاتی</li>
+                    <li>فیلم‌های تبلیغاتی</li>
+                    <li>محتوای ویدیویی شبکه‌های اجتماعی</li>
+                </ul>
+                <div class="service-equipment">
+                    <h4>تجهیزات مورد استفاده:</h4>
+                    <div class="equipment-list">
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}?service=filmmaking" class="service-cta-btn">
+                    <span>درخواست تولید فیلم</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="media-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-magic"></i>
+                </div>
+                <h3>Lorem, ipsum.</h3>
+                <p>ادیت، رنگ‌گری، صداگذاری و جلوه‌های ویژه با نرم‌افزارهای حرفه‌ای</p>
+                <ul class="service-features">
+                    <li>ادیت و مونتاج حرفه‌ای</li>
+                    <li>رنگ‌گری سینمایی</li>
+                    <li>صداگذاری و میکس</li>
+                    <li>جلوه‌های ویژه بصری</li>
+                    <li>انیمیشن و موشن گرافیک</li>
+                </ul>
+                <div class="service-equipment">
+                    <h4>نرم‌افزارهای مورد استفاده:</h4>
+                    <div class="equipment-list">
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                        <span>Lorem, ipsum.</span>
+                    </div>
+                </div>
+                <a href="{% url 'contact' %}?service=postproduction" class="service-cta-btn">
+                    <span>درخواست ادیت</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش استودیو و تجهیزات -->
+<section class="studio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">استودیو و تجهیزات پیشرفته</h2>
+        </div>
+
+        <div class="studio-grid">
+            <div class="studio-card">
+                <div class="studio-image">
+                    <img src="{% static 'img/travel.jpg' %}" alt="استودیو عکاسی">
+                    <div class="studio-overlay">
+                        <h4>استودیو عکاسی</h4>
+                        <p>فضای ۱۵۰ متری با نورپردازی کامل</p>
+                    </div>
+                </div>
+                <div class="studio-content">
+                    <h3>استودیو عکاسی حرفه‌ای</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="studio-card">
+                <div class="studio-image">
+                    <img src="{% static 'img/market.jpg' %}" alt="استودیو فیلم‌برداری">
+                    <div class="studio-overlay">
+                        <h4>استودیو فیلم‌برداری</h4>
+                        <p>مجموعه کامل سینمایی</p>
+                    </div>
+                </div>
+                <div class="studio-content">
+                    <h3>استودیو فیلم‌برداری</h3>
+                    <ul>
+                        <li>دوربین‌های سینمایی RED & ARRI</li>
+                        <li>سیستم نورپردازی فیلم</li>
+                        <li>تجهیزات صداگذاری حرفه‌ای</li>
+                        <li>کرین و ریل دوربین</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="studio-card">
+                <div class="studio-image">
+                    <img src="{% static 'img/team1.jpg' %}" alt="اتاق ادیت">
+                    <div class="studio-overlay">
+                        <h4>اتاق ادیت و رنگ‌گری</h4>
+                        <p>پست‌پروداکشن حرفه‌ای</p>
+                    </div>
+                </div>
+                <div class="studio-content">
+                    <h3>اتاق پست‌پروداکشن</h3>
+                    <ul>
+                        <li>مانیتورهای کالیبره شده</li>
+                        <li>سیستم‌های پردازش قدرتمند</li>
+                        <li>اتاق صدا با آکوستیک ایده‌آل</li>
+                        <li>نرم‌افزارهای به روز</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نمونه کارهای تصویری -->
+<section class="media-portfolio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">گالری آثار آذین مدیا</h2>
+            <p class="section-subtitle">نمونه‌ای از پروژه‌های موفق تولید محتوای آذین</p>
+        </div>
+
+        <div class="media-portfolio-grid">
+            <div class="portfolio-item" data-category="photography corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>عکاسی محصولات صنعتی با نورپردازی حرفه‌ای</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-aperture"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">عکاسی</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="photography corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>عکاسی محصولات صنعتی با نورپردازی حرفه‌ای</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-aperture"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">عکاسی</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio-item" data-category="photography corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>عکاسی محصولات صنعتی با نورپردازی حرفه‌ای</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-aperture"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">عکاسی</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio-item" data-category="photography corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>عکاسی محصولات صنعتی با نورپردازی حرفه‌ای</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-aperture"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">عکاسی</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="photography corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>عکاسی محصولات صنعتی با نورپردازی حرفه‌ای</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-aperture"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">ویدیو</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="video commercial">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/market.jpg' %}" alt="تیزر تبلیغاتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera-video"></i>
+                                    Lorem ipsum dolor sit.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-film"></i>
+                                    Lorem, ipsum.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">ویدیو</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="photography commercial">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/smm.jpg' %}" alt="عکاسی محصول">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>عکاسی محصول - لوازم آرایشی</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-lightning"></i>
+                                    Lorem ipsum dolor sit amet.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">عکاسی</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="video corporate">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/app1.jpg' %}" alt="فیلم شرکتی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="portfolio-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-camera-video"></i>
+                                    Lorem, ipsum dolor.
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-drone"></i>
+                                    Lorem, ipsum.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-badge">ویدیو</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // کنترل نمایش ویدیوها
+        const controlBtns = document.querySelectorAll('.control-btn');
+        controlBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                controlBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // اینجا می‌توانید ویدیوی مربوطه را لود کنید
+            });
+        });
+
+        // فیلتر نمونه کارها
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filterValue = this.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
+{% endblock content %}

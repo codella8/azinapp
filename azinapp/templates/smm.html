@@ -1,30 +1,519 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}مدیریت شبکه‌های اجتماعی - AZIN GROUP{% endblock %}
+{% block title %}مدیریت شبکه های اجتماعی - AZIN GROUP{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">مدیریت شبکه‌های اجتماعی</h2>
-        <p class="service-subtitle">افزایش تعامل و رشد ارگانیک برند شما در شبکه‌های اجتماعی</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">خدمات ما:</h4>
-            <ul class="service-list">
-                <li>تولید محتوای گرافیکی و ویدیویی</li>
-                <li>زمان‌بندی و انتشار پست‌ها</li>
-                <li>مدیریت کمپین‌های تبلیغاتی</li>
-                <li>تحلیل و گزارش عملکرد</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/market.jpg' %}" alt="SMM" class="img-fluid rounded shadow">
+<section class="smm-hero-section">
+    <div class="smm-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="social-pattern"></div>
+        <div class="floating-social-elements">
+            <div class="social-element elem-1"><i class="bi bi-instagram"></i></div>
+            <div class="social-element elem-2"><i class="bi bi-facebook"></i></div>
+            <div class="social-element elem-3"><i class="bi bi-youtube"></i></div>
         </div>
     </div>
 
-</div>
+    <div class="container">
+        <div class="smm-hero-content">
+            <div class="smm-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">دیجیتال مارکتینگ</span>
+                    <div class="badge-line"></div>
+                </div>
+
+                <h1 class="smm-hero-title">
+                    <span class="title-line">مدیریت حرفه‌ای</span>
+                    <span class="title-line accent">شبکه‌های اجتماعی</span>
+                </h1>
+
+                <p class="smm-hero-description">
+                    رشد کسب‌وکار شما در فضای دیجیتال با استراتژی‌های اثربخش مدیریت شبکه‌های اجتماعی.
+                    افزایش تعامل، جذب مشتری و ساخت برند با تیم متخصص آذین.
+                </p>
+
+                <div class="smm-stats">
+                    <div class="smm-stat">
+                        <div class="stat-number" data-count="200">0</div>
+                        <div class="stat-label">صفحه مدیریت شده</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="smm-stat">
+                        <div class="stat-number" data-count="5">0<span>M+</span></div>
+                        <div class="stat-label">تعامل ماهانه</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="smm-stat">
+                        <div class="stat-number" data-count="98">0<span>%</span></div>
+                        <div class="stat-label">رضایت مشتری</div>
+                    </div>
+                </div>
+
+                <div class="smm-hero-actions">
+                    <a href="{% url 'contact' %}" class="smm-cta-btn primary">
+                        <i class="bi bi-chat-dots"></i>
+                        <span>مشاوره رایگان</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="smm-hero-visual">
+                <div class="social-showcase">
+                    <div class="social-platform instagram">
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <i class="bi bi-instagram"></i>
+                                <span>Instagram</span>
+                            </div>
+                            <div class="platform-stats">
+                                <div class="stat">
+                                    <span class="number">+ 15K</span>
+                                    <span class="label">فالوور</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">+ 25K</span>
+                                    <span class="label">تعامل</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-platform linkedin">
+                        <div class="platform-card">
+                            <div class="platform-header">
+                                <i class="bi bi-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="platform-stats">
+                                <div class="stat">
+                                    <span class="number">+ 50K</span>
+                                    <span class="label">نمایش</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">+ 1K</span>
+                                    <span class="label">تعامل</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-analytics">
+                        <div class="analytics-card">
+                            <div class="growth-chart">
+                                <div class="chart-bar" style="height: 80%"></div>
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 90%"></div>
+                                <div class="chart-bar" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش خدمات اصلی -->
+<section id="services" class="smm-services-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">Lorem ipsum dolor isicing elit. Excepturi, earum!</h2>
+            <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime.</p>
+        </div>
+
+        <div class="smm-services-grid">
+            <div class="smm-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+                <h3>تولید محتوای حرفه‌ای</h3>
+                <p>تولید محتوای جذاب و بهینه‌شده برای هر پلتفرم با استراتژی محتوای اختصاصی</p>
+                <ul class="service-features">
+                    <li>طراحی پست و استوری</li>
+                    <li>تولید محتوای ویدیویی</li>
+                    <li>کپشن‌نویسی حرفه‌ای</li>
+                    <li>طراحی گرافیک اختصاصی</li>
+                    <li>کمپین محتوایی فصلی</li>
+                </ul>
+                <a href="{% url 'contact' %}?service=content" class="service-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="smm-service-card featured">
+                <div class="service-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h3>مدیریت کامل پیج</h3>
+                <p>مدیریت حرفه‌ای و روزانه پیج‌های اجتماعی با استراتژی رشد مستمر</p>
+                <ul class="service-features">
+                    <li>پست‌گذاری روزانه</li>
+                    <li>مدیریت کامنت‌ها و پیام‌ها</li>
+                    <li>برنامه‌ریزی کانتنت کالندر</li>
+                    <li>آنالیز رقبا و بازار</li>
+                    <li>گزارش‌دهی هفتگی</li>
+                </ul>
+                <a href="{% url 'contact' %}?service=management" class="service-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="smm-service-card">
+                <div class="service-icon">
+                    <i class="bi bi-megaphone"></i>
+                </div>
+                <h3>تبلیغات و کمپین‌سازی</h3>
+                <p>اجرای کمپین‌های تبلیغاتی هدفمند با بالاترین نرخ بازگشت سرمایه</p>
+                <ul class="service-features">
+                    <li>تبلیغات اینستاگرام و فیسبوک</li>
+                    <li>کمپین‌سازی هشتگ</li>
+                    <li>تبلیغات ریتارگتینگ</li>
+                    <li>کمپین اینفلوئنسر مارکتینگ</li>
+                    <li>آنالیز ROI کمپین‌ها</li>
+                </ul>
+                <a href="{% url 'contact' %}?service=ads" class="service-cta-btn">
+                    <span>درخواست مشاوره</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش پلتفرم‌های تحت پوشش -->
+<section class="platforms-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">پلتفرم‌های تحت پوشش</h2>
+            <p class="section-subtitle">مدیریت تخصصی تمام پلتفرم‌های اجتماعی محبوب</p>
+        </div>
+
+        <div class="platforms-grid">
+            <div class="platform-card">
+                <div class="platform-logo instagram">
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <h3>اینستاگرام</h3>
+                <p>مدیریت حرفه‌ای پیج، تولید محتوای ویدیویی و تصویری، استوری‌مارکتینگ</p>
+                <div class="platform-features">
+                    <span>پست‌گذاری حرفه‌ای</span>
+                    <span>استوری‌مارکتینگ</span>
+                    <span>Reels تولید</span>
+                    <span>مدیریت کامنت</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <div class="platform-logo facebook">
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <h3>فیسبوک</h3>
+                <p>مدیریت پیج، گروه‌سازی، تبلیغات هدفمند و community management</p>
+                <div class="platform-features">
+                    <span>مدیریت پیج</span>
+                    <span>گروه‌سازی</span>
+                    <span>تبلیغات هدفمند</span>
+                    <span>مدیریت جامعه</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <div class="platform-logo youtube">
+                    <i class="bi bi-youtube"></i>
+                </div>
+                <h3>یوتیوب</h3>
+                <p>مدیریت کانال، تولید محتوای ویدیویی، SEO ویدیو و افزایش سابسکرایبر</p>
+                <div class="platform-features">
+                    <span>تولید ویدیو</span>
+                    <span>SEO ویدیو</span>
+                    <span>افزایش سابسکرایبر</span>
+                    <span>آنالیز عملکرد</span>
+                </div>
+            </div>
+
+            <div class="platform-card">
+                <div class="platform-logo tiktok">
+                    <i class="bi bi-tiktok"></i>
+                </div>
+                <h3>تیک‌تاک</h3>
+                <p>تولید محتوای ویدیویی کوتاه، ترندسازی و جذب مخاطب نسل جدید</p>
+                <div class="platform-features">
+                    <span>تولید محتوای کوتاه</span>
+                    <span>ترندسازی</span>
+                    <span>جذب نسل Z</span>
+                    <span>کمپین چلنج</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش استراتژی و فرآیند -->
+<section class="strategy-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">استراتژی مدیریت شبکه‌های اجتماعی</h2>
+            <p class="section-subtitle">برنامه‌ای جامع برای رشد پایدار برند شما</p>
+        </div>
+
+        <div class="strategy-process">
+            <div class="strategy-step">
+                <div class="step-content">
+                    <h4>تحلیل و تحقیقات</h4>
+                    <p>بررسی دقیق کسب‌وکار، تحلیل رقبا و شناسایی مخاطبان هدف</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strategy-step">
+                <div class="step-content">
+                    <h4>تدوین استراتژی</h4>
+                    <p>تعیین اهداف، انتخاب پلتفرم‌ها و طراحی نقشه راه محتوایی</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strategy-step">
+                <div class="step-content">
+                    <h4>تولید و انتشار محتوا</h4>
+                    <p>تولید محتوای جذاب و انتشار استراتژیک در پلتفرم‌های مختلف</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strategy-step">
+                <div class="step-content">
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <ul>
+                        <li>مدیریت کامنت و پیام</li>
+                        <li>برگزاری مسابقات</li>
+                        <li>ساخت جامعه وفادار</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strategy-step">
+                <div class="step-content">
+                    <h4>آنالیز و بهینه‌سازی</h4>
+                    <p>مانیتورینگ عملکرد، آنالیز داده‌ها و بهینه‌سازی مستمر استراتژی</p>
+                    <ul>
+                        <li>آنالیز متریک‌های کلیدی</li>
+                        <li>گزارش‌دهی منظم</li>
+                        <li>بهینه‌سازی مستمر</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نتایج و آمار -->
+<section class="results-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">نتایج قابل اندازه‌گیری</h2>
+            <p class="section-subtitle">شاهد رشد قابل توجه کسب‌وکارهای همکار با ما باشید</p>
+        </div>
+
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+                <div class="result-content">
+                    <h3>افزایش فالوور</h3>
+                    <div class="result-stats">
+                        <span class="percentage">+300%</span>
+                        <span class="duration">در 3 ماه</span>
+                    </div>
+                    <p>رشد ارگانیک و پایدار فالوورهای واقعی و هدفمند</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="result-icon">
+                    <i class="bi bi-chat-heart"></i>
+                </div>
+                <div class="result-content">
+                    <h3>افزایش تعامل</h3>
+                    <div class="result-stats">
+                        <span class="percentage">+45%</span>
+                        <span class="duration">در 3 ماه</span>
+                    </div>
+                    <p>رشد چشمگیر لایک، کامنت و اشتراک‌گذاری محتوا</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="result-icon">
+                    <i class="bi bi-cart"></i>
+                </div>
+                <div class="result-content">
+                    <h3>افزایش فروش</h3>
+                    <div class="result-stats">
+                        <span class="percentage">+ 200 %</span>
+                        <span class="duration">در 3 ماه</span>
+                    </div>
+                    <p>تبدیل مخاطب به مشتری و افزایش مستقیم فروش</p>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="result-icon">
+                    <i class="bi bi-eye"></i>
+                </div>
+                <div class="result-content">
+                    <h3>افزایش ریچ</h3>
+                    <div class="result-stats">
+                        <span class="percentage">+ 35 %</span>
+                        <span class="duration">در 3 ماه</span>
+                    </div>
+                    <p>دیده شدن بیشتر برند توسط مخاطبان جدید</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نمونه کارها -->
+<section class="smm-portfolio-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">نمونه کارهای موفق</h2>
+            <p class="section-subtitle">نتایج ملموس از همکاری با کسب‌وکارهای مختلف</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/home.jpg' %}" alt="pic">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <span class="value">+ 150 k</span>
+                                    <span class="label">فالوور</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="value">+ 400 %</span>
+                                    <span class="label">رشد</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Lorem, ipsum.
+                        </h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">اینستاگرام</span>
+                            <span class="tag">تبلیغات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/smm.jpg' %}" alt="استارتاپ فناوری">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <span class="value">+ 50K</span>
+                                    <span class="label">نمایش</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="value">+ 600%</span>
+                                    <span class="label">تعامل</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>لوکس گلس</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">اینستاگرام</span>
+                            <span class="tag">ویدیو</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/about.jpg' %}" alt="رستوران زنجیره‌ای">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <span class="value">+ 80K</span>
+                                    <span class="label">فالوور</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="value">+ 25%</span>
+                                    <span class="label">فروش</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Lorem, ipsum.</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">اینستاگرام</span>
+                            <span class="tag">ویدیو</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+    });
+</script>
 {% endblock content %}

@@ -1,36 +1,242 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}توسعه اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+{% block title %}اپلیکیشن موبایل - AZIN GROUP{% endblock %}
 
 {% block content %}
-<div class="container my-5">
-
-    <div class="service-header text-center mb-5">
-        <h2 class="service-title">توسعه اپلیکیشن موبایل</h2>
-        <p class="service-subtitle">ساخت اپلیکیشن‌های اندروید و iOS با جدیدترین تکنولوژی‌ها</p>
-    </div>
-
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h4 class="mb-3">انواع اپلیکیشن‌هایی که توسعه می‌دهیم:</h4>
-            <ul class="service-list">
-                <li>اپلیکیشن فروشگاهی</li>
-                <li>اپلیکیشن خدمات آنلاین</li>
-                <li>اپلیکیشن آموزشی</li>
-                <li>اپلیکیشن رزرو و نوبت‌دهی</li>
-            </ul>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="{% static 'img/mobileapp.jpg' %}" alt="Mobile App" class="img-fluid rounded shadow">
+<!-- هیرو سکشن اپلیکیشن موبایل -->
+<section class="mobileapp-hero-section">
+    <div class="mobileapp-hero-background">
+        <div class="hero-gradient-overlay"></div>
+        <div class="app-pattern"></div>
+        <div class="floating-app-elements">
+            <div class="app-element elem-1"><i class="bi bi-phone"></i></div>
+            <div class="app-element elem-2"><i class="bi bi-tablet"></i></div>
+            <div class="app-element elem-3"><i class="bi bi-code-slash"></i></div>
+            <div class="app-element elem-4"><i class="bi bi-rocket"></i></div>
         </div>
     </div>
 
-    <div class="row text-center g-4 mb-5">
-        <div class="col-md-4"><div class="feature-box"><i class="bi bi-phone feature-icon"></i><h5>اندروید و iOS</h5></div></div>
-        <div class="col-md-4"><div class="feature-box"><i class="bi bi-cloud-upload feature-icon"></i><h5>انتشار در مارکت‌ها</h5></div></div>
-        <div class="col-md-4"><div class="feature-box"><i class="bi bi-gear feature-icon"></i><h5>پشتیبانی کامل</h5></div></div>
-    </div>
+    <div class="container">
+        <div class="mobileapp-hero-content">
+            <div class="mobileapp-hero-text">
 
-</div>
+                <h1 class="mobileapp-hero-title">
+                    <span class="title-line">توسعه اپلیکیشن</span>
+                    <span class="title-line accent">موبایل حرفه‌ای</span>
+                </h1>
+
+                <p class="mobileapp-hero-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, est.
+                </p>
+
+                <div class="mobileapp-hero-actions">
+                    <a href="{% url 'contact' %}" class="mobileapp-cta-btn primary">
+                        <i class="bi bi-chat-dots"></i>
+                        <span>مشاوره رایگان</span>
+                    </a>
+                    <a href="{% url 'portfolio' %}"class="mobileapp-cta-btn secondary">
+                        <i class="bi bi-phone"></i>
+                        <span>مشاهده نمونه‌کارها</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobileapp-hero-visual">
+                <div class="app-showcase">
+                    <div class="app-device iphone">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <img src="{% static 'img/mobileapp.jpg' %}" alt="pic">
+                                <div class="app-badge">
+                                    <i class="bi bi-apple"></i>
+                                    <span>iOS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-device android">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <img src="{% static 'img/port.jpg' %}" alt="pic">
+                                <div class="app-badge">
+                                    <i class="bi bi-google-play"></i>
+                                    <span>Android</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش ویژگی‌های فنی -->
+<section class="technical-features-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">ویژگی‌های فنی اپلیکیشن‌های ما</h2>
+            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای جهانی توسعه موبایل</p>
+        </div>
+
+        <div class="tech-features-grid">
+            <div class="tech-feature-card">
+                <div class="tech-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>امنیت بالا</h4>
+                <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته و رمزنگاری داده‌ها</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 98%"></div>
+                </div>
+            </div>
+
+            <div class="tech-feature-card">
+                <div class="tech-icon">
+                    <i class="bi bi-cloud-upload"></i>
+                </div>
+                <h4>Backend قدرتمند</h4>
+                <p>توسعه سرور و API های امن و scalable برای پشتیبانی از اپلیکیشن</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 94%"></div>
+                </div>
+            </div>
+
+            <div class="tech-feature-card">
+                <div class="tech-icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <h4>پشتیبانی کامل</h4>
+                <p>پشتیبانی فنی و به‌روزرسانی‌های دوره‌ای پس از انتشار</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<!-- بخش تکنولوژی‌ها -->
+<section class="technologies-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">تکنولوژی‌های مورد استفاده</h2>
+            <p class="section-subtitle">با جدیدترین و برترین تکنولوژی‌های روز دنیا</p>
+        </div>
+
+        <div class="technologies-grid">
+            <div class="tech-card">
+                <div class="tech-logo">
+                    <i class="bi bi-apple"></i>
+                </div>
+                <h4>iOS Development</h4>
+                <div class="tech-stack">
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-logo">
+                    <i class="bi bi-google"></i>
+                </div>
+                <h4>Android Development</h4>
+                <div class="tech-stack">
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-logo">
+                    <i class="bi bi-react"></i>
+                </div>
+                <h4>Cross-Platform</h4>
+                <div class="tech-stack">
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-logo">
+                    <i class="bi bi-database"></i>
+                </div>
+                <h4>Backend & Database</h4>
+                <div class="tech-stack">
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Lorem, ipsum.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // انیمیشن شماره‌ها
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const valueElement = entry.target;
+                    const target = parseInt(valueElement.getAttribute('data-count'));
+                    animateValue(valueElement, 0, target, 2000);
+                    observer.unobserve(valueElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // فیلتر نمونه کارها
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    });
+</script>
 {% endblock content %}
