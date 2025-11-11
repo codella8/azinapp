@@ -27,33 +27,36 @@
                     <span class="title-line">Azin Group Company</span>
                 </h1>
 
-                <p class="hero-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quod?
-                </p>
+                <div class="hero-description">
+                    <p>{% trans 'آذین گروپ یک شرکت خلاق و نوآور در زمینه فناوری اطلاعات است که در طراحی و توسعه وب‌سایت، ساخت اپلیکیشن‌های موبایل، سیستم‌های (CRM) و (ERP)و مشاوره‌های تجاری فعالیت دارد. ' %}</p>
+
+                    <p>{% trans 'ما با ارائه راه‌حل‌های دیجیتال و سیستم‌های تجارت الکترونیک، به رشد و موفقیت کسب‌وکار شما کمک می‌کنیم. هدف ما، تبدیل ایده‌های شما به واقعیت است.' %}</p>
+                </div>
+
 
                 <div class="hero-actions">
                     <a href="{% url 'contact' %}" class="cta-btn primary">
-                        <span>شروع پروژه</span>
+                        <span>{% trans 'شروع پروژه' %}</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                     <a href="{% url 'portfolio' %}" class="cta-btn secondary">
                         <i class="bi bi-play-circle"></i>
-                        <span>مشاهده نمونه‌کارها</span>
+                        <span>{% trans 'مشاهده نمونه کارها' %}</span>
                     </a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number" data-count="150"></div>
-                        <div class="stat-label">پروژه موفق</div>
+                        <div class="stat-label">{% trans 'پروژه موفق' %}</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number" data-count="+100"></div>
-                        <div class="stat-label">رضایت مشتری</div>
+                        <div class="stat-label">{% trans 'مشتری راضی' %}</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number" data-count="10">10</div>
-                        <div class="stat-label">سال تجربه</div>
+                        <div class="stat-label">{% trans 'سال تجربه' %}</div>
                     </div>
                 </div>
             </div>
@@ -63,19 +66,19 @@
                     <div class="main-visual">
                         <div class="floating-card card-1">
                             <i class="bi bi-laptop"></i>
-                            <span>طراحی وب</span>
+                            <span>{% trans 'توسعه وب' %}</span>
                         </div>
                         <div class="floating-card card-2">
                             <i class="bi bi-phone"></i>
-                            <span>اپلیکیشن</span>
+                            <span>{% trans 'برندینگ' %}</span>
                         </div>
                         <div class="floating-card card-3">
                             <i class="bi bi-megaphone"></i>
-                            <span>مارکتینگ</span>
+                            <span>{% trans 'مارکیتینگ' %}</span>
                         </div>
                         <div class="floating-card card-4">
                             <i class="bi bi-palette"></i>
-                            <span>گرافیک</span>
+                            <span>{% trans 'دکوراسیون' %}</span>
                         </div>
                     </div>
                 </div>
@@ -88,8 +91,8 @@
 <section class="subsidiaries-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">زیرمجموعه‌های آذین گروپ</h2>
-            <p class="section-subtitle">تخصص‌های متنوع برای نیازهای مختلف کسب‌وکار شما</p>
+            <h2 class="section-title">{% trans 'زیرمجموعه‌های آذین گروپ' %}</h2>
+            <p class="section-subtitle">{% trans 'تخصص‌های متنوع برای نیازهای مختلف کسب‌وکار شما' %}</p>
         </div>
 
         <div class="subsidiaries-grid">
@@ -97,10 +100,10 @@
                 <div class="card-icon">
                     <i class="bi bi-shop"></i>
                 </div>
-                <h3>فروشگاه آذین</h3>
-                <p>فروشگاه اینترنتی و فیزیکی با محصولات باکیفیت و خدمات سریع و مطمئن</p>
+                <h3>{% trans 'فروشگاه آذین' %}</h3>
+                <p>{% trans 'فروشگاه آذین با ارائه محصولات باکیفیت و خدمات حرفه‌ای، تجربه‌ای آسان و مطمئن از خرید آنلاین را برای شما فراهم می‌کند.' %}</p>
                 <a href="{% url 'store' %}" class="card-link">
-                    <span>مشاهده جزئیات</span>
+                    <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -109,10 +112,10 @@
                 <div class="card-icon">
                     <i class="bi bi-camera-video"></i>
                 </div>
-                <h3>آذین مدیا</h3>
-                <p>دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی، تولید محتوا و تبلیغات حرفه‌ای</p>
+                <h3>{% trans 'آذین مدیا' %}</h3>
+                <p>{% trans 'آذین مدیا با تیمی خلاق در زمینه تولید محتوای دیجیتال، عکاسی، فیلم‌برداری و تبلیغات، به رشد و دیده‌شدن برند شما کمک می‌کند.' %}</p>
                 <a href="{% url 'smm' %}" class="card-link">
-                    <span>مشاهده جزئیات</span>
+                    <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -121,10 +124,10 @@
                 <div class="card-icon">
                     <i class="bi bi-house-heart"></i>
                 </div>
-                <h3>دکوراسیون آذین</h3>
-                <p>طراحی داخلی و دکوراسیون منازل، دفاتر و فضاهای تجاری با خلاقیت و تخصص</p>
+                <h3>{%trans 'دکوراسیون آذین' %}</h3>
+                <p>{% trans 'آذین دکور با طراحی‌های مدرن و سلیقه‌ای، فضای شما را به محیطی زیبا و الهام‌بخش تبدیل می‌کند.' %}</p>
                 <a href="{% url 'decore' %}" class="card-link">
-                    <span>مشاهده جزئیات</span>
+                    <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -133,10 +136,10 @@
                 <div class="card-icon">
                     <i class="bi bi-airplane"></i>
                 </div>
-                <h3>خدمات گردشگری آذین</h3>
-                <p>خدمات گردشگری، ویزا، بلیط پرواز، تورهای داخلی و مشاوره تحصیل در خارج</p>
+                <h3>{% trans 'خدمات گردشگری آذین' %}</h3>
+                <p>{% trans 'آذین تراول با ارائه خدمات مسافرتی و گردشگری حرفه‌ای، سفری راحت، امن و به‌یادماندنی را برای شما فراهم می‌سازد.' %}</p>
                 <a href="{% url 'travel' %}" class="card-link">
-                    <span>مشاهده جزئیات</span>
+                    <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -145,10 +148,8 @@
 </section>
 
 
-<!-- بخش درباره ما خلاصه -->
 <section class="about-preview">
     <div class="about-background">
-        <!-- این تصویر برای preload هست و نمایش داده نمیشه -->
         <img src="{% static 'img/app1.jpg' %}">
         <div class="bg-image"></div>
         <div class="bg-overlay"></div>
@@ -161,14 +162,13 @@
             <div class="about-content">
                 <div class="content-wrapper">
                     <div class="section-badge">
-                        <span>درباره ما</span>
+                        <span>{% trans 'درباره ما' %}</span>
                     </div>
 
-                    <h2 class="section-title">تیم متخصص آذین گروپ</h2>
+                    <h2 class="section-title">{% trans 'تیم متخصص آذین گروپ' %}</h2>
 
                     <p class="about-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Maxime, quas! Rerum tempore consequuntur, perspiciatis veniam quia ad ea!
+                        {% trans 'تیم تخصصی آذین متشکل از افراد خلاق، باتجربه و متعهد است که با دانش روز و عشق به کار، بهترین خدمات را برای موفقیت شما ارائه می‌دهد.' %}
                     </p>
 
                     <div class="about-features">
