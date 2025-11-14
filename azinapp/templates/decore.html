@@ -439,16 +439,6 @@
                 });
             });
         });
-
-        // بزرگنمایی تصاویر نمونه کارها
-        const viewButtons = document.querySelectorAll('.view-details-btn');
-        viewButtons.forEach(btn => {
-            btn.addEventListener('click', function () {
-                const imgSrc = this.closest('.portfolio-card').querySelector('img').src;
-                // اینجا می‌توانید لایتباکس یا مدال برای نمایش بزرگتر تصویر پیاده‌سازی کنید
-                console.log('نمایش تصویر:', imgSrc);
-            });
-        });
     });
 </script>
 {% endblock content %}

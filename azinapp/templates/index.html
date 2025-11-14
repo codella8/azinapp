@@ -4,88 +4,50 @@
 {% block title %}صفحه اصلی - AZIN GROUP{% endblock %}
 
 {% block content %}
-<section class="premium-hero">
-    <div class="hero-background">
-        <div class="bg-gradient">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
+<!-- ====== HERO (insert where header should appear) ====== -->
+<section class="premium-hero" aria-label="Hero section">
+    <div class="premium-hero__bg" role="img" aria-hidden="true"></div>
+    <div class="premium-hero__overlay" aria-hidden="true"></div>
+    <div class="premium-hero__container">
+        <div class="premium-hero__left">
+
+            <h1 class="premium-hero__title">
+                ما به رشد<br> کسب‌وکار شما کمک می‌کنیم
+            </h1>
+
+            <p class="premium-hero__lead">
+                تیم آذین راهکارهای حرفه‌ای طراحی وب، اپلیکیشن و سیستم‌های مدیریت را ارائه می‌دهد تا برند شما سریع‌تر رشد
+                کند.
+            </p>
+
+            <div class="premium-hero__actions">
+                <a class="premium-hero__btn primary" href="{% url 'contact' %}">شروع پروژه</a>
+                <a class="premium-hero__btn outline" href="{% url 'portfolio' %}">نمونه کارها</a>
+            </div>
+
+            <div class="premium-hero__stats">
+                <div class="premium-hero__stat">
+                    <div class="num" data-target="150">150+</div>
+                    <div class="label">پروژه موفق</div>
+                </div>
+                <div class="premium-hero__stat">
+                    <div class="num" data-target="100">100+</div>
+                    <div class="label">مشتری راضی</div>
+                </div>
+                <div class="premium-hero__stat">
+                    <div class="num" data-target="10">10</div>
+                    <div class="label">سال تجربه</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <span>AZINGROUP
-                    </span>
-                </div>
-
-                <h1 class="hero-title">
-                    <span class="title-line">Azin Group Company</span>
-                </h1>
-
-                <div class="hero-description">
-                    <p>{% trans 'آذین گروپ یک شرکت خلاق و نوآور در زمینه فناوری اطلاعات است که در طراحی و توسعه وب‌سایت، ساخت اپلیکیشن‌های موبایل، سیستم‌های (CRM) و (ERP)و مشاوره‌های تجاری فعالیت دارد. ' %}</p>
-
-                    <p>{% trans 'ما با ارائه راه‌حل‌های دیجیتال و سیستم‌های تجارت الکترونیک، به رشد و موفقیت کسب‌وکار شما کمک می‌کنیم. هدف ما، تبدیل ایده‌های شما به واقعیت است.' %}</p>
-                </div>
-
-
-                <div class="hero-actions">
-                    <a href="{% url 'contact' %}" class="cta-btn primary">
-                        <span>{% trans 'شروع پروژه' %}</span>
-                        <i class="bi bi-arrow-left"></i>
-                    </a>
-                    <a href="{% url 'portfolio' %}" class="cta-btn secondary">
-                        <i class="bi bi-play-circle"></i>
-                        <span>{% trans 'مشاهده نمونه کارها' %}</span>
-                    </a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number" data-count="150"></div>
-                        <div class="stat-label">{% trans 'پروژه موفق' %}</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-count="+100"></div>
-                        <div class="stat-label">{% trans 'مشتری راضی' %}</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-count="10">10</div>
-                        <div class="stat-label">{% trans 'سال تجربه' %}</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="visual-container">
-                    <div class="main-visual">
-                        <div class="floating-card card-1">
-                            <i class="bi bi-laptop"></i>
-                            <span>{% trans 'توسعه وب' %}</span>
-                        </div>
-                        <div class="floating-card card-2">
-                            <i class="bi bi-phone"></i>
-                            <span>{% trans 'برندینگ' %}</span>
-                        </div>
-                        <div class="floating-card card-3">
-                            <i class="bi bi-megaphone"></i>
-                            <span>{% trans 'مارکیتینگ' %}</span>
-                        </div>
-                        <div class="floating-card card-4">
-                            <i class="bi bi-palette"></i>
-                            <span>{% trans 'دکوراسیون' %}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="premium-hero__right" aria-hidden="true">
+            <!-- عکس پرسنل/تصویر راست: مسیر را عوض کن -->
+            <img class="premium-hero__image" src="/static/img/azinlogo.jpg" alt="" />
         </div>
     </div>
 </section>
+
 
 <!-- بخش زیرمجموعه‌های اصلی -->
 <section class="subsidiaries-section">
@@ -101,7 +63,8 @@
                     <i class="bi bi-shop"></i>
                 </div>
                 <h3>{% trans 'فروشگاه آذین' %}</h3>
-                <p>{% trans 'فروشگاه آذین با ارائه محصولات باکیفیت و خدمات حرفه‌ای، تجربه‌ای آسان و مطمئن از خرید آنلاین را برای شما فراهم می‌کند.' %}</p>
+                <p>{% trans 'فروشگاه آذین با ارائه محصولات باکیفیت و خدمات حرفه‌ای، تجربه‌ای آسان و مطمئن از خرید آنلاین
+                    را برای شما فراهم می‌کند.' %}</p>
                 <a href="{% url 'store' %}" class="card-link">
                     <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
@@ -113,7 +76,8 @@
                     <i class="bi bi-camera-video"></i>
                 </div>
                 <h3>{% trans 'آذین مدیا' %}</h3>
-                <p>{% trans 'آذین مدیا با تیمی خلاق در زمینه تولید محتوای دیجیتال، عکاسی، فیلم‌برداری و تبلیغات، به رشد و دیده‌شدن برند شما کمک می‌کند.' %}</p>
+                <p>{% trans 'آذین مدیا با تیمی خلاق در زمینه تولید محتوای دیجیتال، عکاسی، فیلم‌برداری و تبلیغات، به رشد
+                    و دیده‌شدن برند شما کمک می‌کند.' %}</p>
                 <a href="{% url 'smm' %}" class="card-link">
                     <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
@@ -125,7 +89,8 @@
                     <i class="bi bi-house-heart"></i>
                 </div>
                 <h3>{%trans 'دکوراسیون آذین' %}</h3>
-                <p>{% trans 'آذین دکور با طراحی‌های مدرن و سلیقه‌ای، فضای شما را به محیطی زیبا و الهام‌بخش تبدیل می‌کند.' %}</p>
+                <p>{% trans 'آذین دکور با طراحی‌های مدرن و سلیقه‌ای، فضای شما را به محیطی زیبا و الهام‌بخش تبدیل
+                    می‌کند.' %}</p>
                 <a href="{% url 'decore' %}" class="card-link">
                     <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
@@ -137,7 +102,8 @@
                     <i class="bi bi-airplane"></i>
                 </div>
                 <h3>{% trans 'خدمات گردشگری آذین' %}</h3>
-                <p>{% trans 'آذین تراول با ارائه خدمات مسافرتی و گردشگری حرفه‌ای، سفری راحت، امن و به‌یادماندنی را برای شما فراهم می‌سازد.' %}</p>
+                <p>{% trans 'آذین تراول با ارائه خدمات مسافرتی و گردشگری حرفه‌ای، سفری راحت، امن و به‌یادماندنی را برای
+                    شما فراهم می‌سازد.' %}</p>
                 <a href="{% url 'travel' %}" class="card-link">
                     <span>{% trans 'مشاهده جزئیات' %}</span>
                     <i class="bi bi-arrow-left"></i>
@@ -168,7 +134,8 @@
                     <h2 class="section-title">{% trans 'تیم متخصص آذین گروپ' %}</h2>
 
                     <p class="about-description">
-                        {% trans 'تیم تخصصی آذین متشکل از افراد خلاق، باتجربه و متعهد است که با دانش روز و عشق به کار، بهترین خدمات را برای موفقیت شما ارائه می‌دهد.' %}
+                        {% trans 'تیم تخصصی آذین متشکل از افراد خلاق، باتجربه و متعهد است که با دانش روز و عشق به کار،
+                        بهترین خدمات را برای موفقیت شما ارائه می‌دهد.' %}
                     </p>
 
                     <div class="about-features">
