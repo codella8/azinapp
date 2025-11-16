@@ -261,6 +261,16 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .premium-hero__image,
+    .hero-img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+}
+
 
 /* Subsidiaries Section */
 .subsidiaries-section {
