@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %} خدمات گردشگری- AZIN GROUP{% endblock %}
+{% block title %}travel | azingroup{% endblock %}
 
 {% block content %}
 <!-- هیرو سکشن گردشگری -->
@@ -21,24 +21,46 @@
         <div class="travel-hero-content">
             <div class="travel-hero-text">
                 <div class="service-badge">
-                    <span class="badge-text">خدمات مسافرتی</span>
+                    <span class="badge-text">واحد خدمات مسافرتی</span>
                     <div class="badge-line"></div>
                 </div>
 
                 <h1 class="travel-hero-title">
-                    <span class="title-line">خدمات گردشگری</span>
-                    <span class="title-line accent">آذین</span>
+                    <span class="title-line">خدمات جامع گردشگری</span>
+                    <span class="title-line accent">واحد مسافرتی آذین</span>
                 </h1>
 
                 <p class="travel-hero-description">
-                    تجربه‌ای بی‌نظیر از سفر با خدمات کامل گردشگری آذین. 
-                    از دریافت ویزا تا برگزاری تورهای داخلی و خارجی، همه چیز در یک مجموعه.
+                    واحد خدمات مسافرتی گروه آذین با ارائه راهکارهای جامع و حرفه‌ای در حوزه گردشگری، همراهی مطمئن برای
+                    سفرهای تجاری، تفریحی و سازمانی شما می‌باشد. از مشاوره و برنامه‌ریزی تا اجرای کامل سفر، کیفیت و امنیت
+                    را تضمین می‌کنیم.
                 </p>
+
+                <div class="travel-stats">
+                    <div class="travel-stat">
+                        <div class="stat-number" data-count="50">0<span>+</span></div>
+                        <div class="stat-label">مقصد بین‌المللی</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="travel-stat">
+                        <div class="stat-number" data-count="1000">0<span>+</span></div>
+                        <div class="stat-label">مسافر سازمانی</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="travel-stat">
+                        <div class="stat-number" data-count="99">0<span>%</span></div>
+                        <div class="stat-label">رضایت مشتریان</div>
+                    </div>
+                </div>
 
                 <div class="travel-hero-actions">
                     <a href="{% url 'contact' %}" class="travel-cta-btn primary">
+                        <i class="bi bi-calendar-check"></i>
+                        <span>درخواست مشاوره سفر</span>
+                    </a>
+                    <a href="tel:+992110006443" class="travel-cta-btn secondary">
                         <i class="bi bi-telephone"></i>
-                        <span>مشاوره رایگان سفر</span>
+                        <span>تماس با واحد مسافرتی</span>
                     </a>
                 </div>
             </div>
@@ -46,13 +68,22 @@
             <div class="travel-hero-visual">
                 <div class="travel-showcase">
                     <div class="destination-card main-destination">
-                        <img src="{% static 'img/port.jpg' %}" alt="تور اروپا">
+                        <img src="{% static 'img/port.jpg' %}" alt="تورهای تجاری اروپا">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">تورهای تجاری اروپا</span>
+                        </div>
                     </div>
                     <div class="destination-card secondary-destination">
-                        <img src="{% static 'img/social.jpg' %}" alt="تور آسیای جنوب شرقی">
+                        <img src="{% static 'img/social.jpg' %}" alt="تورهای آسیای جنوب شرقی">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">آسیای جنوب شرقی</span>
+                        </div>
                     </div>
                     <div class="destination-card tertiary-destination">
-                        <img src="{% static 'img/decore.jpg' %}" alt="تور داخلی">
+                        <img src="{% static 'img/decore.jpg' %}" alt="تورهای داخلی سازمانی">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">تورهای داخلی سازمانی</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,8 +95,8 @@
 <section id="services" class="travel-services-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">خدمات تخصصی گردشگری آذین</h2>
-            <p class="section-subtitle">کامل‌ترین مجموعه خدمات مسافرتی برای تجربه‌ای بی‌نظیر</p>
+            <h2 class="section-title">خدمات تخصصی واحد مسافرتی آذین</h2>
+            <p class="section-subtitle">ارائه راهکارهای جامع برای سفرهای تجاری، تفریحی و سازمانی</p>
         </div>
 
         <div class="services-grid">
@@ -73,18 +104,18 @@
                 <div class="service-icon">
                     <i class="bi bi-passport"></i>
                 </div>
-                <h3>خدمات ویزا</h3>
-                <p></p>
+                <h3>خدمات ویزا و مهاجرت</h3>
+                <p>ارائه خدمات کامل ویزا برای سفرهای تجاری، توریستی و تحصیلی با بالاترین نرخ موفقیت</p>
                 <ul class="service-features">
-                    <li>ویزای شنگن</li>
-                    <li>ویزای کانادا و آمریکا</li>
-                    <li>ویزای امارات و ترکیه</li>
-                    <li>ویزای چین و ژاپن</li>
-                    <li>مشاوره تخصصی ویزا</li>
+                    <li>ویزای شنگن برای سفرهای تجاری و نمایشگاهی</li>
+                    <li>ویزای کانادا و آمریکا با پشتیبانی حقوقی کامل</li>
+                    <li>ویزای امارات، ترکیه و کشورهای همسایه</li>
+                    <li>ویزای چین، ژاپن و کره جنوبی برای بازدیدهای تجاری</li>
+                    <li>مشاوره تخصصی و همراهی در تمام مراحل</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=visa" class="service-btn">
-                        <span>دریافت مشاوره</span>
+                        <span>درخواست مشاوره ویزا</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -94,18 +125,18 @@
                 <div class="service-icon">
                     <i class="bi bi-airplane"></i>
                 </div>
-                <h3>رزرو بلیط پرواز</h3>
-                <p>رزرو بلیط داخلی و خارجی با بهترین قیمت از تمامی ایرلاین‌ها</p>
+                <h3>رزرواسیون پرواز و حمل‌ونقل</h3>
+                <p>رزرو بلیط پرواز داخلی و خارجی با بهترین قیمت از معتبرترین ایرلاین‌های جهان</p>
                 <ul class="service-features">
-                    <li>پرواز داخلی و خارجی</li>
-                    <li>چارتر و سیستمی</li>
-                    <li>پرواز مستقیم و ترانزیت</li>
-                    <li>پشتیبانی ۲۴ ساعته</li>
-                    <li>تضمین بهترین قیمت</li>
+                    <li>پروازهای داخلی و بین‌المللی تجاری و اقتصادی</li>
+                    <li>چارتر و سیستمی با گارانتی بهترین قیمت</li>
+                    <li>پرواز مستقیم و ترانزیت با کمترین زمان انتظار</li>
+                    <li>پشتیبانی ۲۴ ساعته و مدیریت تغییرات پرواز</li>
+                    <li>تضمین قیمت و شرایط استرداد شفاف</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=flight" class="service-btn">
-                        <span>استعلام قیمت</span>
+                        <span>استعلام قیمت پرواز</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -115,18 +146,18 @@
                 <div class="service-icon">
                     <i class="bi bi-building"></i>
                 </div>
-                <h3>رزرو هتل</h3>
-                <p>رزرو هتل در تمامی نقاط دنیا با گارانتی بهترین قیمت و کیفیت</p>
+                <h3>رزرواسیون اقامتگاه‌های سازمانی</h3>
+                <p>رزرو هتل، آپارتمان و ویلا در سراسر جهان با توجه به نیازهای سازمانی و بودجه</p>
                 <ul class="service-features">
-                    <li>هتل‌های ۵ ستاره لوکس</li>
-                    <li>هتل‌های اقتصادی</li>
-                    <li>ویلا و اقامتگاه‌های خصوصی</li>
-                    <li>رزرو آنلاین و فوری</li>
-                    <li>تضمین کیفیت اقامت</li>
+                    <li>هتل‌های ۵ ستاره لوکس برای مدیران ارشد</li>
+                    <li>هتل‌های اقتصادی مناسب کارکنان سازمان</li>
+                    <li>ویلا و اقامتگاه‌های خصوصی برای تیم‌ها</li>
+                    <li>رزرو آنلاین با تأیید فوری و مستندات کامل</li>
+                    <li>تضمین کیفیت و موقعیت مکانی مناسب</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=hotel" class="service-btn">
-                        <span>رزرو هتل</span>
+                        <span>رزرو اقامتگاه سازمانی</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -136,18 +167,18 @@
                 <div class="service-icon">
                     <i class="bi bi-globe2"></i>
                 </div>
-                <h3>تورهای گروهی</h3>
-                <p>تورهای داخلی و خارجی با برنامه‌ریزی دقیق و خدمات کامل</p>
+                <h3>تورهای سازمانی و تجاری</h3>
+                <p>طراحی و اجرای تورهای داخلی و خارجی ویژه سازمان‌ها با برنامه‌ریزی دقیق</p>
                 <ul class="service-features">
-                    <li>تور اروپا</li>
-                    <li>تور آسیای جنوب شرقی</li>
-                    <li>تور داخلی (شمال، اصفهان)</li>
-                    <li>تور زیارتی</li>
-                    <li>تور طبیعت‌گردی</li>
+                    <li>تورهای تجاری اروپا برای نمایشگاه‌ها و مذاکرات</li>
+                    <li>تورهای آسیای جنوب شرقی برای بازدیدهای کاری</li>
+                    <li>تورهای داخلی برای همایش‌ها و سمینارهای سازمانی</li>
+                    <li>تورهای زیارتی و مذهبی برای سازمان‌های مذهبی</li>
+                    <li>تورهای طبیعت‌گردی و تیم‌بیلدینگ</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=tour" class="service-btn">
-                        <span>مشاهده تورها</span>
+                        <span>درخواست برنامه تور</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -157,18 +188,18 @@
                 <div class="service-icon">
                     <i class="bi bi-book"></i>
                 </div>
-                <h3>مشاوره تحصیلی</h3>
-                <p>مشاوره تخصصی برای ادامه تحصیل در بهترین دانشگاه‌های جهان</p>
+                <h3>مشاوره تحصیلی و اخذ پذیرش</h3>
+                <p>مشاوره تخصصی برای ادامه تحصیل در دانشگاه‌های معتبر جهان با پشتیبانی کامل</p>
                 <ul class="service-features">
-                    <li>انتخاب دانشگاه</li>
-                    <li>اخذ پذیرش تحصیلی</li>
-                    <li>ویزای دانشجویی</li>
-                    <li>اقامت دانشجویی</li>
-                    <li>بورسیه تحصیلی</li>
+                    <li>انتخاب دانشگاه و رشته متناسب با اهداف شغلی</li>
+                    <li>اخذ پذیرش تحصیلی از دانشگاه‌های برتر جهان</li>
+                    <li>ویزای دانشجویی و همراهی در مراحل اداری</li>
+                    <li>اقامت دانشجویی و خدمات پشتیبانی در کشور مقصد</li>
+                    <li>کمک در اخذ بورسیه و کمک هزینه تحصیلی</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=study" class="service-btn">
-                        <span>مشاوره تحصیلی</span>
+                        <span>مشاوره تحصیلی رایگان</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -178,18 +209,18 @@
                 <div class="service-icon">
                     <i class="bi bi-shield-check"></i>
                 </div>
-                <h3>بیمه مسافرتی</h3>
-                <p>بیمه مسافرتی جامع برای سفرهای داخلی و خارجی با پوشش کامل</p>
+                <h3>بیمه مسافرتی جامع</h3>
+                <p>بیمه مسافرتی جامع برای سفرهای داخلی و خارجی با پوشش کامل ریسک‌های سفر</p>
                 <ul class="service-features">
-                    <li>بیمه درمانی بین‌المللی</li>
-                    <li>بیمه مسؤولیت</li>
-                    <li>بیمه لغو سفر</li>
-                    <li>بیمه وسایل شخصی</li>
-                    <li>پوشش تمام ریسک‌ها</li>
+                    <li>بیمه درمانی بین‌المللی با پوشش بیمارستان‌های معتبر</li>
+                    <li>بیمه مسؤولیت مدنی و خسارات ثالث</li>
+                    <li>بیمه لغو سفر و بازگشت وجه</li>
+                    <li>بیمه وسایل شخصی و لوازم الکترونیکی</li>
+                    <li>پوشش کامل ریسک‌های سفرهای تجاری و تفریحی</li>
                 </ul>
                 <div class="service-cta">
                     <a href="{% url 'contact' %}?service=insurance" class="service-btn">
-                        <span>خرید بیمه</span>
+                        <span>خرید بیمه مسافرتی</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                 </div>
@@ -197,34 +228,136 @@
         </div>
     </div>
 </section>
+
+<!-- بخش فرآیند خدمات مسافرتی -->
+<section class="travel-process-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">فرآیند سیستماتیک خدمات مسافرتی</h2>
+            <p class="section-subtitle">رویکرد مرحله‌ای و شفاف برای برنامه‌ریزی و اجرای سفرهای سازمانی</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تحلیل نیاز و مشاوره تخصصی</h4>
+                    <p>بررسی دقیق اهداف سفر، نیازهای سازمانی و ارائه مشاوره تخصصی</p>
+                    <ul>
+                        <li>تحلیل هدف سفر (تجاری، تفریحی، آموزشی)</li>
+                        <li>بررسی محدودیت‌های بودجه و زمان</li>
+                        <li>مشاوره در انتخاب مقاصد مناسب</li>
+                        <li>تهیه پیش‌نویس برنامه سفر</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-calendar-check"></i>
+                </div>
+                <div class="step-content">
+                    <h4>برنامه‌ریزی و رزرواسیون</h4>
+                    <p>برنامه‌ریزی دقیق، رزرو پرواز، هتل و خدمات جانبی با بهترین شرایط</p>
+                    <ul>
+                        <li>رزرو پرواز با بهترین مسیر و قیمت</li>
+                        <li>انتخاب و رزرو اقامتگاه مناسب</li>
+                        <li>برنامه‌ریزی ترانسفر و حمل‌ونقل محلی</li>
+                        <li>هماهنگی برنامه‌های جانبی سفر</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-file-text"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تهیه مستندات و اخذ ویزا</h4>
+                    <p>تهیه کامل مستندات سفر، اخذ ویزا و بیمه مسافرتی</p>
+                    <ul>
+                        <li>تهیه مدارک لازم برای ویزا</li>
+                        <li>اخذ ویزای کشور مقصد</li>
+                        <li>صدور بیمه مسافرتی جامع</li>
+                        <li>تهیه گایدبوک و راهنمای سفر</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-headset"></i>
+                </div>
+                <div class="step-content">
+                    <h4>پشتیبانی و همراهی در سفر</h4>
+                    <p>پشتیبانی ۲۴ ساعته در طول سفر و مدیریت موارد اضطراری</p>
+                    <ul>
+                        <li>پشتیبانی تلفنی ۲۴ ساعته</li>
+                        <li>همراهی در فرودگاه و نقاط انتقال</li>
+                        <li>مدیریت شرایط اضطراری و تغییرات</li>
+                        <li>هماهنگی با شریک‌های محلی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-clipboard-check"></i>
+                </div>
+                <div class="step-content">
+                    <h4>گزارش‌دهی و پیگیری پس از سفر</h4>
+                    <p>گزارش‌دهی جامع، جمع‌آوری بازخورد و پیگیری امور مالی</p>
+                    <ul>
+                        <li>تهیه گزارش جامع از سفر</li>
+                        <li>جمع‌آوری نظرات و بازخوردها</li>
+                        <li>پیگیری امور مالی و صورتحساب</li>
+                        <li>برنامه‌ریزی برای سفرهای آتی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- بخش CTA نهایی -->
 <section class="travel-cta-section">
     <div class="container">
         <div class="cta-content-wrapper">
             <div class="cta-text">
-                <h2>آماده تجربه یک سفر فوق‌العاده هستید؟</h2>
-                <p>همین حالا با ما تماس بگیرید و از مشاوره رایگان تیم متخصص گردشگری آذین بهره‌مند شوید</p>
-                
+                <h2>آماده برنامه‌ریزی سفر سازمانی خود هستید؟</h2>
+                <p>برای دریافت مشاوره تخصصی، استعلام قیمت و برنامه‌ریزی سفر، با واحد خدمات مسافرتی گروه آذین تماس بگیرید
+                </p>
+
                 <div class="cta-features">
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>مشاوره رایگان سفر</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>مشاوره رایگان و تحلیل نیازهای سفر</span>
                     </div>
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>برنامه‌ریزی اختصاصی</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>برنامه‌ریزی اختصاصی متناسب با اهداف سازمان</span>
                     </div>
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>ضمانت بهترین قیمت</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>ضمانت بهترین قیمت و شرایط خدمات</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>پشتیبانی ۲۴ ساعته در طول سفر</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="cta-actions">
                 <a href="{% url 'contact' %}" class="cta-btn primary large">
                     <i class="bi bi-calendar-check"></i>
-                    <span>درخواست مشاوره رایگان</span>
+                    <span>درخواست مشاوره تخصصی</span>
+                </a>
+                <a href="tel:+992110006443" class="cta-btn secondary large">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <span>تماس فوری با واحد مسافرتی</span>
                 </a>
             </div>
         </div>
@@ -233,7 +366,7 @@
 
 <script>
     // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const animateValue = (element, start, end, duration) => {
             let startTimestamp = null;
             const step = (timestamp) => {
@@ -260,6 +393,29 @@
         }, { threshold: 0.5 });
 
         document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
+
+        // شبیه‌سازی درخواست خدمات
+        const serviceButtons = document.querySelectorAll('.service-btn, .cta-btn');
+        serviceButtons.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                if (this.href.includes('contact') && !this.href.includes('tel:')) {
+                    e.preventDefault();
+                    const serviceType = this.href.split('=')[1] || 'general';
+                    const serviceNames = {
+                        'visa': 'خدمات ویزا و مهاجرت',
+                        'flight': 'رزرواسیون پرواز',
+                        'hotel': 'رزرواسیون اقامتگاه',
+                        'tour': 'تورهای سازمانی',
+                        'study': 'مشاوره تحصیلی',
+                        'insurance': 'بیمه مسافرتی',
+                        'general': 'مشاوره عمومی'
+                    };
+
+                    console.log(`درخواست خدمت: ${serviceNames[serviceType]}`);
+                    window.location.href = this.href;
+                }
+            });
+        });
     });
 </script>
 {% endblock content %}

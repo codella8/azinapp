@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}طراحی گرافیک - AZIN GROUP{% endblock %}
+{% block title %}graphicdesign | azingroup{% endblock %}
 
 {% block content %}
 
@@ -21,13 +21,28 @@
         <div class="graphic-hero-content">
             <div class="graphic-hero-text">
                 <h1 class="graphic-hero-title">
-                    <span class="title-line">طراحی گرافیک و</span>
-                    <span class="title-line accent">برندسازی حرفه‌ای</span>
+                    <span class="title-line">طراحی گرافیک سازمانی و</span>
+                    <span class="title-line accent">هویت‌سازی برند</span>
                 </h1>
 
                 <p class="graphic-hero-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, illum!
+                    واحد طراحی گرافیک گروه آذین با بهره‌گیری از تیم متخصص و خلاق، راهکارهای بصری مؤثری برای تقویت حضور برند شما در بازار ارائه می‌دهد. از طراحی لوگو تا توسعه کامل سیستم بصری، همراهی قابل اعتماد برای موفقیت برند شما هستیم.
                 </p>
+                
+                <div class="graphic-stats">
+                    <div class="graphic-stat">
+                        <div class="stat-number" data-count="200">0</div>
+                        <div class="stat-label">پروژه برندسازی</div>
+                    </div>
+                    <div class="graphic-stat">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">لوگو طراحی شده</div>
+                    </div>
+                    <div class="graphic-stat">
+                        <div class="stat-number" data-count="99">0</div>
+                        <div class="stat-label">رضایت مشتری</div>
+                    </div>
+                </div>
             </div>
 
             <div class="graphic-hero-visual">
@@ -38,7 +53,7 @@
                                 <div class="logo-shape shape-1"></div>
                                 <div class="logo-shape shape-2"></div>
                             </div>
-                            <span class="design-label">طراحی لوگو</span>
+                            <span class="design-label">طراحی لوگو سازمانی</span>
                         </div>
                     </div>
                     <div class="showcase-item branding">
@@ -50,10 +65,10 @@
                                     <div class="color color-3"></div>
                                 </div>
                                 <div class="typography-sample">
-                                    <span class="font-sample">Brand Font</span>
+                                    <span class="font-sample">Corporate Font</span>
                                 </div>
                             </div>
-                            <span class="design-label">برندینگ</span>
+                            <span class="design-label">توسعه هویت برند</span>
                         </div>
                     </div>
                     <div class="showcase-item packaging">
@@ -64,7 +79,7 @@
                                     <div class="package-side"></div>
                                 </div>
                             </div>
-                            <span class="design-label">بسته‌بندی</span>
+                            <span class="design-label">طراحی بسته‌بندی</span>
                         </div>
                     </div>
                 </div>
@@ -78,64 +93,64 @@
     <div class="container">
         <div class="section-header center">
             <h2 class="section-title">خدمات تخصصی طراحی گرافیک</h2>
-            <p class="section-subtitle">از ایده پردازی تا اجرای حرفه‌ای تمامی خدمات گرافیکی</p>
+            <p class="section-subtitle">راهکارهای بصری جامع برای تقویت حضور برند شما در بازار</p>
         </div>
 
         <div class="graphic-services-grid">
             <div class="graphic-service-card">
                 <div class="service-icon">
-                    <i class="bi bi-star"></i>
+                    <i class="bi bi-badge-tm"></i>
                 </div>
-                <h3>طراحی لوگو و هویت برند</h3>
-                <p>طراحی لوگو منحصر به فرد و توسعه کامل هویت برند شما</p>
+                <h3>طراحی هویت بصری برند</h3>
+                <p>توسعه سیستم جامع بصری شامل لوگو، پالت رنگی، تایپوگرافی و المان‌های گرافیکی برای ایجاد هویت منسجم برند</p>
                 <ul class="service-features">
-                    <li>طراحی ۳ طرح اولیه لوگو</li>
-                    <li>راهنمای کامل برند</li>
-                    <li>پالت رنگی اختصاصی</li>
-                    <li>تایپوگرافی سفارشی</li>
-                    <li>فایل‌های تمام رستر و وکتور</li>
+                    <li>تحلیل رقبا و تحقیق بازار هدف</li>
+                    <li>طراحی ۳ کانسپت اولیه لوگو</li>
+                    <li>تدوین راهنمای کامل برند (Brand Guidelines)</li>
+                    <li>تعریف پالت رنگی سازمانی</li>
+                    <li>انتخاب و طراحی تایپوگرافی اختصاصی</li>
                 </ul>
-                <a href="{% url 'contact' %}?service=logo" class="service-cta-btn">
-                    <span>درخواست طراحی</span>
+                <a href="{% url 'contact' %}?service=branding" class="service-cta-btn">
+                    <span>ثبت سفارش</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
 
             <div class="graphic-service-card featured">
                 <div class="service-icon">
-                    <i class="bi bi-file-earmark-image"></i>
+                    <i class="bi bi-megaphone"></i>
                 </div>
-                <h3>طراحی تبلیغات و مارکتینگ</h3>
-                <p>طراحی حرفه‌ای محتوا برای کمپین‌های تبلیغاتی شما</p>
+                <h3>طرابیغات و کمپین‌های بازاریابی</h3>
+                <p>طراحی حرفه‌ای محتوای بصری برای کمپین‌های تبلیغاتی دیجیتال و چاپی با تمرکز بر جذب مخاطب</p>
                 <ul class="service-features">
-                    <li>طراحی پوستر و بنر</li>
-                    <li>اینفوگرافیک و چارت</li>
-                    <li>طراحی کارت ویزیت</li>
-                    <li>بروشور و کاتالوگ</li>
-                    <li>طرح‌های شبکه‌های اجتماعی</li>
+                    <li>طراحی پوستر و بنرهای تبلیغاتی</li>
+                    <li>ساخت اینفوگرافیک و داده‌نمایی</li>
+                    <li>طراحی کارت ویزیت و سربرگ سازمانی</li>
+                    <li>تهیه بروشور و کاتالوگ محصولات</li>
+                    <li>طراحی محتوای شبکه‌های اجتماعی</li>
                 </ul>
                 <a href="{% url 'contact' %}?service=marketing" class="service-cta-btn">
-                    <span>درخواست طراحی</span>
+                    <span>ثبت سفارش</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
 
             <div class="graphic-service-card">
                 <div class="service-icon">
-                    <i class="bi bi-box"></i>
+                    <i class="bi bi-box-seam"></i>
                 </div>
-                <h3>طراحی بسته‌بندی</h3>
-                <p>طراحی بسته‌بندی خلاقانه و جذاب برای محصولات شما</p>
+                <h3>طراحی بسته‌بندی و لیبلینگ</h3>
+                <p>خلق طراحی‌های خلاقانه و کاربردی برای بسته‌بندی محصولات با هدف جذب مشتری و افزایش فروش</p>
                 <ul class="service-features">
-                    <li>طراحی لیبل و استیکر</li>
-                    <li>بسته‌بندی محصول</li>
-                    <li>جعبه و کارتن</li>
-                    <li>طراحی سه‌بعدی</li>
-                    <li>فایل آماده چاپ</li>
+                    <li>طراحی لیبل و برچسب محصول</li>
+                    <li>طراحی بسته‌بندی اصلی محصول</li>
+                    <li>طراحی جعبه و کارتن حمل</li>
+                    <li>مدل‌سازی سه‌بعدی بسته‌بندی</li>
+                    <li>تهیه فایل‌های آماده چاپ</li>
                 </ul>
             
                 <a href="{% url 'contact' %}?service=packaging" class="service-cta-btn">
-                    <span>درخواست طراحی</span>
+                    <span>ثبت سفارش</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -147,22 +162,23 @@
 <section class="design-process-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">فرآیند طراحی گرافیک</h2>
-            <p class="section-subtitle">از مشاوره اولیه تا تحویل نهایی، قدم به قدم با شما</p>
+            <h2 class="section-title">فرآیند طراحی سیستماتیک</h2>
+            <p class="section-subtitle">رویکرد مرحله‌ای و مبتنی بر استانداردهای طراحی حرفه‌ای</p>
         </div>
 
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-icon">
-                    <i class="bi bi-chat-dots"></i>
+                    <i class="bi bi-clipboard-data"></i>
                 </div>
                 <div class="step-content">
-                    <h4>مشاوره و تحقیق</h4>
-                    <p>بررسی نیازهای شما، تحلیل بازار و شناخت برند</p>
+                    <h4>تحلیل و تحقیق برند</h4>
+                    <p>شناسایی اهداف سازمانی، تحلیل رقبا و درک مخاطبان هدف</p>
                     <ul>
-                        <li>مشاوره تخصصی</li>
-                        <li>تحلیل رقبا</li>
-                        <li>شناسایی مخاطب</li>
+                        <li>مصاحبه با ذینفعان برند</li>
+                        <li>تحلیل جایگاه رقابتی</li>
+                        <li>شناسایی مخاطبان هدف</li>
+                        <li>تعیین استراتژی بصری</li>
                     </ul>
                 </div>
             </div>
@@ -172,41 +188,45 @@
                     <i class="bi bi-lightbulb"></i>
                 </div>
                 <div class="step-content">
-                    <h4>ایده‌پردازی و کانسپت</h4>
-                    <p>خروجی ایده‌های خلاقانه و توسعه کانسپت طراحی</p>
+                    <h4>ایده‌پردازی و کانسپت‌سازی</h4>
+                    <p>توسعه ایده‌های خلاقانه و ارائه کانسپت‌های طراحی</p>
                     <ul>
-                        <li>ایده‌پردازی</li>
-                        <li>انتخاب کانسپت</li>
+                        <li>طوفان فکری و ایده‌پردازی</li>
+                        <li>تهیه اسکچ و طرح اولیه</li>
+                        <li>انتخاب کانسپت برتر</li>
+                        <li>توسعه جهت‌گیری خلاقانه</li>
                     </ul>
                 </div>
             </div>
 
             <div class="process-step">
                 <div class="step-icon">
-                    <i class="bi bi-pencil"></i>
+                    <i class="bi bi-pencil-square"></i>
                 </div>
                 <div class="step-content">
-                    <h4>طراحی و اجرا</h4>
-                    <p>اجرای حرفه‌ای طرح‌ها با جدیدترین نرم‌افزارها</p>
+                    <h4>طراحی و توسعه اجرایی</h4>
+                    <p>اجرای حرفه‌ای طرح‌ها و اصلاح بر اساس بازخوردهای دریافتی</p>
                     <ul>
-                        <li>طراحی اولیه</li>
-                        <li>بازخورد و اصلاح</li>
-                        <li>اجرای نهایی</li>
+                        <li>طراحی دیجیتالی کامل</li>
+                        <li>ارائه برای بازخورد</li>
+                        <li>اصلاح و بهبود طرح</li>
+                        <li>تهیه نسخه نهایی</li>
                     </ul>
                 </div>
             </div>
 
             <div class="process-step">
                 <div class="step-icon">
-                    <i class="bi bi-check-circle"></i>
+                    <i class="bi bi-folder-check"></i>
                 </div>
                 <div class="step-content">
-                    <h4>تحویل و پشتیبانی</h4>
-                    <p>تحویل فایل‌های نهایی و پشتیبانی پس از تحویل</p>
+                    <h4>تحویل و مستندسازی</h4>
+                    <p>تحویل کامل فایل‌ها و ارائه راهنمای کاربری</p>
                     <ul>
-                        <li>تحویل فایل‌ها</li>
-                        <li>راهنمای استفاده</li>
-                        <li>پشتیبانی فنی</li>
+                        <li>تحویل فایل‌های نهایی</li>
+                        <li>ارائه راهنمای برند</li>
+                        <li>مستندسازی فنی</li>
+                        <li>پشتیبانی پس از تحویل</li>
                     </ul>
                 </div>
             </div>
@@ -218,23 +238,37 @@
 <section id="portfolio" class="graphic-portfolio-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">نمونه کارهای طراحی گرافیک</h2>
+            <h2 class="section-title">گالری پروژه‌های طراحی گرافیک</h2>
+            <p class="section-subtitle">نمایشگاهی از دستاوردهای واحد طراحی گرافیک گروه آذین</p>
         </div>
+    
 
         <div class="graphic-portfolio-grid">
             <div class="portfolio-item" data-category="logo">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/azinlogo.jpg' %}" alt="pic">
+                        <img src="{% static 'img/azinlogo.jpg' %}" alt="طراحی لوگو شرکت فناوری اطلاعات">
                         <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>لوگو شرکت تک‌راه</h4>
+                                <p>شرکت فناوری اطلاعات و ارتباطات</p>
+                            </div>
                             <div class="portfolio-actions">
+                                <button class="view-btn" data-project="1">
+                                    <i class="bi bi-eye"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="portfolio-badge">لوگو</div>
+                        <div class="portfolio-badge">طراحی لوگو</div>
                     </div>
                     <div class="portfolio-content">
-                        <h6>Lorem, ipsum.</h6>
+                        <div class="client-info">
+                            <i class="bi bi-building"></i>
+                            <span>شرکت تک‌راه</span>
+                        </div>
+                        <h6>طراحی لوگو و نشان سازمانی</h6>
                         <div class="portfolio-tags">
+                            <span class="tag">تکنولوژی</span>
                             <span class="tag">مدرن</span>
                             <span class="tag">مینیمال</span>
                         </div>
@@ -245,18 +279,30 @@
             <div class="portfolio-item" data-category="branding">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/azinlogo.jpg' %}" alt="pic">
+                        <img src="{% static 'img/azinlogo.jpg' %}" alt="سیستم هویت بصری بانک خصوصی">
                         <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>برندینگ بانک سرمایه</h4>
+                                <p>توسعه کامل سیستم بصری</p>
+                            </div>
                             <div class="portfolio-actions">
+                                <button class="view-btn" data-project="2">
+                                    <i class="bi bi-eye"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="portfolio-badge">برندینگ</div>
+                        <div class="portfolio-badge">هویت برند</div>
                     </div>
                     <div class="portfolio-content">
-                        <h6>Lorem, ipsum.</h6>
+                        <div class="client-info">
+                            <i class="bi bi-bank"></i>
+                            <span>بانک سرمایه</span>
+                        </div>
+                        <h6>توسعه سیستم هویت بصری</h6>
                         <div class="portfolio-tags">
-                            <span class="tag">تکنولوژی</span>
-                            <span class="tag">مدرن</span>
+                            <span class="tag">سازمانی</span>
+                            <span class="tag">امنیت</span>
+                            <span class="tag">اعتماد</span>
                         </div>
                     </div>
                 </div>
@@ -265,18 +311,30 @@
             <div class="portfolio-item" data-category="packaging">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/brand.jpg' %}" alt="pic">
+                        <img src="{% static 'img/brand.jpg' %}" alt="طراحی بسته‌بندی محصولات لوکس آرایشی">
                         <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>بسته‌بندی گل‌رنگ</h4>
+                                <p>برند محصولات آرایشی</p>
+                            </div>
                             <div class="portfolio-actions">
+                                <button class="view-btn" data-project="3">
+                                    <i class="bi bi-eye"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="portfolio-badge">بسته‌بندی</div>
+                        <div class="portfolio-badge">طراحی بسته‌بندی</div>
                     </div>
                     <div class="portfolio-content">
-                        <h6>بسته‌بندی محصولات آرایشی</h6>
+                        <div class="client-info">
+                            <i class="bi bi-flower1"></i>
+                            <span>برند گل‌رنگ</span>
+                        </div>
+                        <h6>طراحی بسته‌بندی محصولات آرایشی</h6>
                         <div class="portfolio-tags">
                             <span class="tag">لوکس</span>
                             <span class="tag">زنانه</span>
+                            <span class="tag">طبیعی</span>
                         </div>
                     </div>
                 </div>
@@ -285,17 +343,29 @@
             <div class="portfolio-item" data-category="print">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/decore.jpg' %}" alt="pic">
+                        <img src="{% static 'img/decore.jpg' %}" alt="طراحی کاتالوگ محصولات صنعتی">
                         <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>کاتالوگ فنی صنعت‌گستر</h4>
+                                <p>شرکت تجهیزات صنعتی</p>
+                            </div>
                             <div class="portfolio-actions">
+                                <button class="view-btn" data-project="4">
+                                    <i class="bi bi-eye"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="portfolio-badge">چاپ</div>
+                        <div class="portfolio-badge">طراحی چاپی</div>
                     </div>
                     <div class="portfolio-content">
-                        <h6>Lorem, ipsum.</h6>
+                        <div class="client-info">
+                            <i class="bi bi-gear"></i>
+                            <span>صنعت‌گستر</span>
+                        </div>
+                        <h6>طراحی کاتالوگ محصولات صنعتی</h6>
                         <div class="portfolio-tags">
-                            <span class="tag">شرکتی</span>
+                            <span class="tag">فنی</span>
+                            <span class="tag">صنعتی</span>
                             <span class="tag">حرفه‌ای</span>
                         </div>
                     </div>
@@ -309,8 +379,8 @@
 <section class="tools-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">نرم‌افزارها و تکنولوژی‌ها</h2>
-            <p class="section-subtitle">با برترین ابزارهای روز دنیا طراحی می‌کنیم</p>
+            <h2 class="section-title">ابزارها و فناوری‌های طراحی</h2>
+            <p class="section-subtitle">استفاده از پیشرفته‌ترین نرم‌افزارها و متدولوژی‌های روز دنیا</p>
         </div>
 
         <div class="tools-grid">
@@ -318,12 +388,13 @@
                 <div class="tool-logo">
                     <i class="bi bi-adobe"></i>
                 </div>
-                <h4>Adobe Creative Suite</h4>
-                <p>کامل‌ترین مجموعه نرم‌افزارهای طراحی گرافیک</p>
+                <h4>Adobe Creative Cloud</h4>
+                <p>مجموعه کامل نرم‌افزارهای استاندارد صنعت طراحی گرافیک</p>
                 <div class="tool-features">
-                    <span>Photoshop</span>
-                    <span>Lorem, ipsum.r</span>
-                    <span>Lorem, ipsum.r</span>
+                    <span>Adobe Illustrator</span>
+                    <span>Adobe Photoshop</span>
+                    <span>Adobe InDesign</span>
+                    <span>Adobe After Effects</span>
                 </div>
             </div>
 
@@ -331,12 +402,13 @@
                 <div class="tool-logo">
                     <i class="bi bi-cube"></i>
                 </div>
-                <h4>طراحی سه‌بعدی</h4>
-                <p>مدل‌سازی و رندرینگ حرفه‌ای سه‌بعدی</p>
+                <h4>طراحی سه‌بعدی و رندرینگ</h4>
+                <p>ابزارهای پیشرفته مدل‌سازی و رندرینگ سه‌بعدی</p>
                 <div class="tool-features">
-                    <span>Lorem, ipsum.r</span>
-                    <span>Lorem, ipsum.r</span>
-                    <span>Lorem, ipsum.r</span>
+                    <span>Blender</span>
+                    <span>Cinema 4D</span>
+                    <span>KeyShot</span>
+                    <span>3ds Max</span>
                 </div>
             </div>
 
@@ -344,12 +416,13 @@
                 <div class="tool-logo">
                     <i class="bi bi-play-circle"></i>
                 </div>
-                <h4>موشن گرافیک</h4>
-                <p>انیمیشن و موشن گرافیک حرفه‌ای</p>
+                <h4>موشن گرافیک و انیمیشن</h4>
+                <p>تولید محتوای متحرک و انیمیشن‌های حرفه‌ای</p>
                 <div class="tool-features">
-                    <span>Lorem, ipsum.r</span>
-                    <span>Lorem, ipsum.r</span>
-                    <span>Lorem, ipsum.r</span>
+                    <span>Adobe After Effects</span>
+                    <span>Premiere Pro</span>
+                    <span>DaVinci Resolve</span>
+                    <span>Figma (پروتوتایپ)</span>
                 </div>
             </div>
         </div>
@@ -412,6 +485,15 @@
                         }, 300);
                     }
                 });
+            });
+        });
+
+        // نمایش جزئیات پروژه
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const projectId = this.getAttribute('data-project');
+                // نمایش مودال یا هدایت به صفحه جزئیات
+                alert(`نمایش جزئیات پروژه شماره ${projectId}\n\nاین بخش می‌تواند به صفحه جداگانه پروژه متصل شود.`);
             });
         });
     });

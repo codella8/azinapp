@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}فروشگاه - AZIN GROUP{% endblock %}
+{% block title %}store | azingroup{% endblock %}
 
 {% block content %}
 <!-- هیرو سکشن فروشگاه -->
@@ -10,9 +10,9 @@
         <div class="hero-gradient-overlay"></div>
         <div class="store-pattern"></div>
         <div class="floating-store-elements">
-            <div class="store-element elem-1"><i class="bi bi-bag"></i></div>
+            <div class="store-element elem-1"><i class="bi bi-bag-check"></i></div>
             <div class="store-element elem-2"><i class="bi bi-truck"></i></div>
-            <div class="store-element elem-3"><i class="bi bi-star"></i></div>
+            <div class="store-element elem-3"><i class="bi bi-award"></i></div>
             <div class="store-element elem-4"><i class="bi bi-shield-check"></i></div>
         </div>
     </div>
@@ -21,41 +21,46 @@
         <div class="store-hero-content">
             <div class="store-hero-text">
                 <div class="service-badge">
-                    <span class="badge-text">فروشگاه معتبر</span>
+                    <span class="badge-text">واحد بازرگانی و تأمین</span>
                     <div class="badge-line"></div>
                 </div>
 
                 <h1 class="store-hero-title">
-                    <span class="title-line">فروشگاه اینترنتی</span>
-                    <span class="title-line accent">آذین</span>
+                    <span class="title-line">پلتفرم جامع خرید سازمانی</span>
+                    <span class="title-line accent">واحد بازرگانی آذین</span>
                 </h1>
 
                 <p class="store-hero-description">
-                    بزرگترین مرجع خرید آنلاین با هزاران محصول از برندهای معتبر داخلی و خارجی.
-                    تجربه‌ای متفاوت از خرید آسان، سریع و مطمئن با گارانتی اصالت کالا.
+                    واحد بازرگانی گروه آذین با شبکه گسترده تأمین کالا، ارائه دهنده راهکارهای جامع تأمین محصولات سازمانی،
+                    اداری و مصرفی با بالاترین استانداردهای کیفی است. ما با تضمین اصالت، کیفیت و قیمت رقابتی، همراهی
+                    مطمئن برای تأمین نیازهای سازمانی شما هستیم.
                 </p>
 
                 <div class="store-stats">
                     <div class="store-stat">
                         <div class="stat-number" data-count="1000">0<span>+</span></div>
-                        <div class="stat-label">محصول متنوع</div>
+                        <div class="stat-label">کالای تأییدشده</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="store-stat">
                         <div class="stat-number" data-count="50000">0<span>+</span></div>
-                        <div class="stat-label">مشتری راضی</div>
+                        <div class="stat-label">سازمان همکار</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="store-stat">
                         <div class="stat-number" data-count="24">0</div>
-                        <div class="stat-label">ساعت پشتیبانی</div>
+                        <div class="stat-label">ساعت پشتیبانی سازمانی</div>
                     </div>
                 </div>
 
                 <div class="store-hero-actions">
-                    <a href="{% url 'contact' %}" class="store-cta-btn secondary">
+                    <a href="{% url 'contact' %}" class="store-cta-btn primary">
+                        <i class="bi bi-cart-check"></i>
+                        <span>درخواست کاتالوگ محصولات</span>
+                    </a>
+                    <a href="tel:+992110006443" class="store-cta-btn secondary">
                         <i class="bi bi-headset"></i>
-                        <span>مشاوره خرید</span>
+                        <span>تماس با واحد فروش</span>
                     </a>
                 </div>
             </div>
@@ -64,14 +69,17 @@
             <div class="decoration-hero-visual">
                 <div class="design-showcase">
                     <div class="showcase-item main-showcase">
-                        <img src="{% static 'img/decore.jpg' %}" alt="نمونه کار طراحی داخلی">
+                        <img src="{% static 'img/decore.jpg' %}" alt="محصولات اداری و سازمانی">
                         <div class="showcase-overlay">
-                            <span class="showcase-tag">طراحی مدرن</span>
+                            <span class="showcase-tag">تأمین سازمانی</span>
                         </div>
                     </div>
 
                     <div class="showcase-item tertiary-showcase">
-                        <img src="{% static 'img/market.jpg' %}" alt="نمونه کار معماری داخلی">
+                        <img src="{% static 'img/market.jpg' %}" alt="محصولات مصرفی باکیفیت">
+                        <div class="showcase-overlay">
+                            <span class="showcase-tag">کالای مصرفی</span>
+                        </div>
                     </div>
                 </div>
 
@@ -79,21 +87,26 @@
                     <div class="delivery-item">
                         <i class="bi bi-truck"></i>
                         <div class="delivery-text">
-                            <strong>تحویل</strong>
-                            <span>آدرس</span>
+                            <strong>تحویل در محل سازمان</strong>
+                            <span>سراسر کشور - حمل و نقل تخصصی</span>
                         </div>
                     </div>
                     <div class="delivery-item">
                         <i class="bi bi-shield-check"></i>
                         <div class="delivery-text">
-                            <strong>گارانتی اصالت</strong>
-                            <span>ضمانت بازگشت ۷ روزه</span>
+                            <strong>گارانتی اصالت و کیفیت</strong>
+                            <span>ضمانت بازگشت ۱۴ روزه کالا</span>
+                        </div>
+                    </div>
+                    <div class="delivery-item">
+                        <i class="bi bi-file-text"></i>
+                        <div class="delivery-text">
+                            <strong>مستندات کامل</strong>
+                            <span>فاکتور رسمی - گارانتی معتبر</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>
@@ -102,81 +115,217 @@
 <section class="categories-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">محصولات</h2>
-            <p class="section-subtitle">از بین هزاران محصول در دسته‌بندی‌های متنوع انتخاب کنید</p>
+            <h2 class="section-title">دسته‌بندی محصولات سازمانی</h2>
+            <p class="section-subtitle">تأمین جامع نیازهای سازمانی با محصولات تأییدشده و استاندارد</p>
         </div>
 
         <div class="categories-grid">
             <div class="category-card">
                 <div class="category-icon">
-                    <i class="bi bi-list"></i>
+                    <i class="bi bi-pc-display"></i>
                 </div>
-                <h3>محصول</h3>
-                <p>توضیحات محصول</p>
-                <span class="product-count">تعداد محصول</span>
+                <h3>تجهیزات فناوری اطلاعات</h3>
+                <p>تأمین سیستم‌های کامپیوتری، سرور، شبکه و تجهیزات جانبی با گارانتی معتبر</p>
+                <span class="product-count">۱۵۰+ کالای تأییدشده</span>
+                <a href="{% url 'contact' %}?category=it" class="category-link">
+                    <span>درخواست پیش‌فاکتور</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
 
             <div class="category-card">
                 <div class="category-icon">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-building-gear"></i>
                 </div>
-                <h3>محصول</h3>
-                <p>توضیحات محصول</p>
-                <span class="product-count">تعداد محصول</span>>
+                <h3>تجهیزات اداری و سازمانی</h3>
+                <p>تأمین میز، صندلی، کابینت و سایر تجهیزات اداری با استانداردهای ارگونومی</p>
+                <span class="product-count">۳۰۰+ محصول استاندارد</span>
+                <a href="{% url 'contact' %}?category=office" class="category-link">
+                    <span>درخواست پیش‌فاکتور</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
 
             <div class="category-card">
                 <div class="category-icon">
-                    <i class="bi bi-house-door"></i>
+                    <i class="bi bi-cup-straw"></i>
                 </div>
-                <h3>محصول</h3>
-                <p>توضیحات محصول</p>
-                <span class="product-count">تعداد محصول</span>
+                <h3>ملزومات مصرفی سازمانی</h3>
+                <p>تأمین نوشت‌افزار، مواد مصرفی، محصولات بهداشتی و لوازم عمومی سازمان</p>
+                <span class="product-count">۴۰۰+ آیتم مصرفی</span>
+                <a href="{% url 'contact' %}?category=consumables" class="category-link">
+                    <span>درخواست پیش‌فاکتور</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
 
             <div class="category-card">
                 <div class="category-icon">
-                    <i class="bi bi-phone"></i>
+                    <i class="bi bi-tools"></i>
                 </div>
-                <h3>محصول</h3>
-                <p>توضیحات محصول</p>
-                <span class="product-count">تعداد محصول</span>
+                <h3>تجهیزات فنی و صنعتی</h3>
+                <p>تأمین ابزارآلات، تجهیزات ایمنی و محصولات فنی مورد نیاز صنایع مختلف</p>
+                <span class="product-count">۲۵۰+ کالای تخصصی</span>
+                <a href="{% url 'contact' %}?category=technical" class="category-link">
+                    <span>درخواست پیش‌فاکتور</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- بخش مزایای خرید -->
+<!-- بخش مزایای خرید سازمانی -->
 <section class="benefits-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">چرا فروشگاه آذین؟</h2>
-            <p class="section-subtitle">مزایای منحصر به فرد خرید از فروشگاه اینترنتی آذین</p>
+            <h2 class="section-title">مزایای خرید سازمانی از واحد بازرگانی آذین</h2>
+            <p class="section-subtitle">تمایز در کیفیت، خدمات و پشتیبانی برای سازمان‌های همکار</p>
         </div>
 
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">
-                    <i class="bi bi-shield-check"></i>
+                    <i class="bi bi-file-check"></i>
                 </div>
-                <h4>گارانتی اصالت کالا</h4>
-                <p>تمامی محصولات دارای گارانتی اصالت و سلامت فیزیکی هستند</p>
+                <h4>فرآیند خرید سازمانی استاندارد</h4>
+                <p>ارائه پیش‌فاکتور رسمی، فاکتور معتبر و مستندات کامل مالی و گارانتی</p>
+                <ul class="benefit-details">
+                    <li>صدور پیش‌فاکتور اختصاصی</li>
+                    <li>فاکتور رسمی با مهر سازمان</li>
+                    <li>مستندات گارانتی و راهنما</li>
+                </ul>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">
-                    <i class="bi bi-credit-card"></i>
+                    <i class="bi bi-shield-lock"></i>
                 </div>
-                <h4>پرداخت امن</h4>
-                <p>پرداخت آنلاین امن با درگاه‌های بانکی معتبر</p>
+                <h4>تضمین کیفیت و اصالت کالا</h4>
+                <p>کلیه محصولات دارای گواهی اصالت، استانداردهای بین‌المللی و سلامت فیزیکی</p>
+                <ul class="benefit-details">
+                    <li>گواهی اصالت کالا</li>
+                    <li>استانداردهای ISO معتبر</li>
+                    <li>بازرسی کیفی قبل از تحویل</li>
+                </ul>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">
-                    <i class="bi bi-award"></i>
+                    <i class="bi bi-graph-up-arrow"></i>
                 </div>
-                <h4>برندهای معتبر</h4>
-                <p>همکاری با معتبرترین برندهای داخلی و خارجی</p>
+                <h4>پشتیبانی و خدمات پس از فروش</h4>
+                <p>پشتیبانی فنی، خدمات گارانتی و امکان بازگشت کالا در صورت عدم رضایت</p>
+                <ul class="benefit-details">
+                    <li>پشتیبانی فنی ۲۴/۷</li>
+                    <li>خدمات گارانتی معتبر</li>
+                    <li>ضمانت بازگشت ۱۴ روزه</li>
+                </ul>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <h4>سیستم لجستیک و تحویل پیشرفته</h4>
+                <p>سیستم حمل و نقل تخصصی، تحویل در محل سازمان و مدیریت زنجیره تأمین</p>
+                <ul class="benefit-details">
+                    <li>حمل و نقل تخصصی</li>
+                    <li>تحویل درب سازمان</li>
+                    <li>پیگیری آنلاین سفارش</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش فرآیند خرید سازمانی -->
+<section class="purchase-process-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">فرآیند سیستماتیک خرید سازمانی</h2>
+            <p class="section-subtitle">رویکرد مرحله‌ای و شفاف برای تأمین نیازهای سازمانی شما</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تحلیل نیاز و استعلام قیمت</h4>
+                    <p>بررسی دقیق نیازمندی‌های سازمان، ارائه کاتالوگ و استعلام قیمت رسمی</p>
+                    <ul>
+                        <li>مشاوره تخصصی نیازسنجی</li>
+                        <li>ارائه کاتالوگ محصولات تأییدشده</li>
+                        <li>صدور استعلام قیمت رسمی</li>
+                        <li>تحلیل هزینه‌-فایده (ROI)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-file-text"></i>
+                </div>
+                <div class="step-content">
+                    <h4>صدور پیش‌فاکتور و تأیید نهایی</h4>
+                    <p>تهیه پیش‌فاکتور رسمی، تأیید نهایی و عقد قرارداد رسمی خرید</p>
+                    <ul>
+                        <li>تهیه پیش‌فاکتور اختصاصی</li>
+                        <li>مشخصات فنی و گارانتی محصولات</li>
+                        <li>تأیید نهایی توسط سازمان متقاضی</li>
+                        <li>عقد قرارداد رسمی خرید</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تأمین، بسته‌بندی و آماده‌سازی</h4>
+                    <p>تأمین کالا از تأمین‌کنندگان معتبر، بسته‌بندی حرفه‌ای و کنترل کیفیت</p>
+                    <ul>
+                        <li>تأمین از شبکه گسترده تأمین‌کنندگان</li>
+                        <li>بسته‌بندی مطابق با استانداردهای حمل</li>
+                        <li>کنترل کیفیت قبل از ارسال</li>
+                        <li>تهیه مستندات همراه کالا</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <div class="step-content">
+                    <h4>حمل و تحویل در محل سازمان</h4>
+                    <p>حمل تخصصی، تحویل در محل سازمان و نصب/راه‌اندازی در صورت نیاز</p>
+                    <ul>
+                        <li>حمل و نقل با سیستم تخصصی</li>
+                        <li>تحویل در محل سازمان متقاضی</li>
+                        <li>نصب و راه‌اندازی (در صورت نیاز)</li>
+                        <li>تحویل مستندات و فاکتورها</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">
+                    <i class="bi bi-headset"></i>
+                </div>
+                <div class="step-content">
+                    <h4>پشتیبانی و خدمات پس از فروش</h4>
+                    <p>پشتیبانی فنی، خدمات گارانتی و مدیریت بازگشت کالا در صورت نیاز</p>
+                    <ul>
+                        <li>پشتیبانی فنی ۲۴ ساعته</li>
+                        <li>خدمات گارانتی معتبر</li>
+                        <li>مدیریت بازگشت و تعویض کالا</li>
+                        <li>گزارش‌گیری و پیگیری رضایت</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -187,33 +336,34 @@
     <div class="container">
         <div class="cta-content-wrapper">
             <div class="cta-text">
-                <h2>آماده تجربه خرید متفاوت هستید؟</h2>
-                <p>همین حالا به خانواده بزرگ مشتریان آذین بپیوندید و از مزایای ویژه ما بهره‌مند شوید</p>
+                <h2>آماده بهینه‌سازی فرآیند تأمین سازمانی خود هستید؟</h2>
+                <p>برای دریافت کاتالوگ محصولات، استعلام قیمت و مشاوره تخصصی تأمین، با واحد بازرگانی گروه آذین تماس
+                    بگیرید</p>
 
                 <div class="cta-features">
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>تخفیف ویژه اولین خرید</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>تحلیل رایگان نیازهای تأمین سازمانی</span>
                     </div>
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>تحویل رایگان</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>ارائه پیش‌فاکتور رسمی و شفاف</span>
                     </div>
                     <div class="cta-feature">
-                        <i class="bi bi-check-circle"></i>
-                        <span>مشاوره رایگان</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>پشتیبانی فنی و خدمات گارانتی معتبر</span>
                     </div>
                 </div>
             </div>
 
             <div class="cta-actions">
-                <a href="#" class="cta-btn primary large">
-                    <i class="bi bi-bag"></i>
-                    <span>شروع خرید</span>
+                <a href="{% url 'contact' %}" class="cta-btn primary large">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>درخواست کاتالوگ محصولات</span>
                 </a>
-                <a href="{% url 'contact' %}" class="cta-btn secondary large">
-                    <i class="bi bi-headset"></i>
-                    <span>مشاوره رایگان</span>
+                <a href="tel:+992110006443" class="cta-btn secondary large">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <span>تماس با واحد فروش سازمانی</span>
                 </a>
             </div>
         </div>
@@ -250,37 +400,43 @@
 
         document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
 
-        // افزودن به سبد خرید
-        const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
-        addToCartBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productCard = this.closest('.product-card');
-                const productName = productCard.querySelector('h3').textContent;
+        // درخواست کاتالوگ و استعلام قیمت
+        const categoryLinks = document.querySelectorAll('.category-link');
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const category = this.getAttribute('href').split('=')[1];
+                const categoryNames = {
+                    'it': 'تجهیزات فناوری اطلاعات',
+                    'office': 'تجهیزات اداری و سازمانی',
+                    'consumables': 'ملزومات مصرفی سازمانی',
+                    'technical': 'تجهیزات فنی و صنعتی'
+                };
 
-                // نمایش پیام موفقیت
-                this.innerHTML = '<i class="bi bi-check"></i> افزوده شد به سبد';
-                this.style.background = '#28a745';
-
-                setTimeout(() => {
-                    this.innerHTML = '<i class="bi bi-cart-plus"></i> افزودن به سبد خرید';
-                    this.style.background = '';
-                }, 2000);
-
-                console.log(`محصول "${productName}" به سبد خرید افزوده شد`);
+                // نمایش پیام تأیید
+                const categoryName = categoryNames[category] || 'دسته‌بندی انتخابی';
+                if (confirm(`آیا مایل به دریافت کاتالوگ و استعلام قیمت برای دسته "${categoryName}" هستید؟`)) {
+                    window.location.href = this.href;
+                }
             });
         });
 
-        // دکمه‌های علاقه‌مندی
-        const wishlistBtns = document.querySelectorAll('.wishlist');
-        wishlistBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                this.classList.toggle('active');
-                if (this.classList.contains('active')) {
-                    this.innerHTML = '<i class="bi bi-heart-fill"></i>';
-                } else {
-                    this.innerHTML = '<i class="bi bi-heart"></i>';
-                }
-            });
+        // شبیه‌سازی درخواست مشاوره
+        const consultBtns = document.querySelectorAll('.store-cta-btn, .cta-btn');
+        consultBtns.forEach(btn => {
+            if (btn.href.includes('contact') || btn.href.includes('tel:')) {
+                btn.addEventListener('click', function (e) {
+                    if (!this.href.includes('tel:')) {
+                        e.preventDefault();
+                        // ثبت درخواست مشاوره
+                        console.log('ثبت درخواست مشاوره تأمین سازمانی');
+                        // هدایت به صفحه تماس
+                        setTimeout(() => {
+                            window.location.href = this.href;
+                        }, 500);
+                    }
+                });
+            }
         });
     });
 </script>

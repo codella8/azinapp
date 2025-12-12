@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}تماس با ما - AZIN GROUP{% endblock %}
+{% block title %}contact | azingroup{% endblock %}
 
 {% block content %}
 
@@ -9,8 +9,11 @@
 <div class="container mt-4">
     {% for message in messages %}
     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-        {{ message }}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="d-flex align-items-center">
+            <i class="bi {% if message.tags == 'success' %}bi-check-circle-fill{% elif message.tags == 'error' %}bi-x-circle-fill{% else %}bi-info-circle-fill{% endif %} me-2"></i>
+            <span>{{ message }}</span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="بستن"></button>
     </div>
     {% endfor %}
 </div>
@@ -21,8 +24,8 @@
         <div class="row g-5">
             <div class="col-lg-4">
                 <div class="contact-info-wrapper">
-                    <h3 class="section-title">راه‌های ارتباطی</h3>
-                    <p class="section-description">از طریق روش‌های زیر می‌توانید با ما در ارتباط باشید</p>
+                    <h3 class="section-title">اطلاعات ارتباطی</h3>
+                    <p class="section-description">دفاتر مرکزی و واحدهای تخصصی گروه آذین</p>
 
                     <div class="contact-info-cards">
                         <div class="contact-card animate-on-scroll">
@@ -30,18 +33,39 @@
                                 <i class="bi bi-envelope-fill"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>ایمیل</h4>
-                                <p> media@azingroup.com</p>
-                                <span>پاسخگویی در 24 ساعت</span>
+                                <h4>رایانامه رسمی</h4>
+                                <p class="contact-value">info@azingroup.com</p>
+                                <p class="contact-subtext">ارتباطات رسمی و اداری</p>
+                                <span class="contact-time">پاسخگویی: حداکثر ۲۴ ساعت کاری</span>
                             </div>
                         </div>
+                        
+                        <div class="contact-card animate-on-scroll">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>پست الکترونیکی واحدها</h4>
+                                <p class="contact-value">media@azingroup.com</p>
+                                <p class="contact-subtext">واحد رسانه و ارتباطات</p>
+                                <p class="contact-value">sales@azingroup.com</p>
+                                <p class="contact-subtext">واحد بازرگانی و فروش</p>
+                                <p class="contact-value">support@azingroup.com</p>
+                                <p class="contact-subtext">پشتیبانی فنی</p>
+                            </div>
+                        </div>
+
                         <div class="contact-card animate-on-scroll">
                             <div class="contact-icon">
                                 <i class="bi bi-telephone-fill"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>تلفن</h4>
-                                <p>+992 11 000 6443</p>
+                                <h4>تلفن‌های سازمانی</h4>
+                                <p class="contact-value">۷۸ ۶۴ ۰۰ ۱۱ ۹۹۲+</p>
+                                <p class="contact-subtext">دفتر مرکزی - بخش پذیرش</p>
+                                <p class="contact-value">۴۳ ۶۴ ۰۰ ۱۱ ۹۹۲+</p>
+                                <p class="contact-subtext">واحد فروش و مشاوره</p>
+                                <span class="contact-time">ساعات تماس: ۹:۰۰ تا ۱۸:۰۰ به وقت محلی</span>
                             </div>
                         </div>
 
@@ -50,28 +74,33 @@
                                 <i class="bi bi-geo-alt-fill"></i>
                             </div>
                             <div class="contact-details">
-                                <h4>آدرس</h4>
-                                <p>تاجیکستان، دوشنبه</p>
-                                <span>ساعات کاری: 9:00 - 18:00</span>
+                                <h4>نشانی دفتر مرکزی</h4>
+                                <p class="contact-value">جمهوری تاجیکستان، شهر دوشنبه</p>
+                                <p class="contact-subtext">خیابان رودکی، پلاک ۱۲۷، ساختمان مرکزی آذین</p>
+                                <span class="contact-time">روزهای کاری: شنبه تا چهارشنبه</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-7">
+            <div class="col-lg-8">
                 <div class="contact-form-wrapper animate-on-scroll">
                     <div class="form-header">
-                        <h3>پیام خود را ارسال کنید</h3>
+                        <h3>فرم درخواست ارتباط رسمی</h3>
+                        <p class="form-subtitle">جهت درخواست جلسه مشاوره، استعلام قیمت یا همکاری تجاری</p>
                     </div>
 
-                    <form method="post" class="contact-form">
+                    <form method="post" class="contact-form" id="contactForm">
                         {% csrf_token %}
 
                         {% if form.errors %}
                         <div class="alert alert-danger">
-                            <strong>لطفا خطاهای زیر را اصلاح کنید:</strong>
-                            <ul>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                <strong>لطفاً موارد زیر را بررسی نمایید:</strong>
+                            </div>
+                            <ul class="mb-0 ps-3">
                                 {% for field, errors in form.errors.items %}
                                 {% for error in errors %}
                                 <li>{{ error }}</li>
@@ -81,38 +110,99 @@
                         </div>
                         {% endif %}
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <span for="{{ form.name.id_for_label }}">{{ form.name.label }}</span>
-                                {{ form.name }}
+                        <div class="form-section">
+                            <h5 class="form-section-title">اطلاعات هویتی</h5>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="{{ form.name.id_for_label }}" class="form-label">
+                                        {{ form.name.label }}
+                                        <span class="required">*</span>
+                                    </label>
+                                    {{ form.name }}
+                                    <div class="form-text">نام و نام خانوادگی</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.email.id_for_label }}" class="form-label">
+                                        {{ form.email.label }}
+                                        <span class="required">*</span>
+                                    </label>
+                                    {{ form.email }}
+                                    <div class="form-text">پست الکترونیکی معتبر سازمانی</div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <span for="{{ form.email.id_for_label }}">{{ form.email.label }}</span>
-                                {{ form.email }}
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="{{ form.phone.id_for_label }}" class="form-label">
+                                        {{ form.phone.label }}
+                                        <span class="required">*</span>
+                                    </label>
+                                    {{ form.phone }}
+                                    <div class="form-text">شماره تماس </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="{{ form.company.id_for_label }}" class="form-label">
+                                        نام سازمان/شرکت
+                                    </label>
+                                    <input type="text" class="form-control" id="company" name="company" placeholder="نام رسمی سازمان">
+                                    <div class="form-text">اختیاری - برای مشتریان سازمانی</div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
-                                {{ form.phone }}
-                            </div>
-                            <div class="form-group">
-                                <label for="{{ form.subject.id_for_label }}">{{ form.subject.label }}</label>
-                                {{ form.subject }}
+                        <div class="form-section">
+                            <h5 class="form-section-title">موضوع درخواست</h5>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="{{ form.subject.id_for_label }}" class="form-label">
+                                        {{ form.subject.label }}
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select class="form-select" id="{{ form.subject.id_for_label }}" name="{{ form.subject.name }}" required>
+                                        <option value="" selected disabled>-- لطفاً انتخاب نمایید --</option>
+                                        <option value="درخواست مشاوره">درخواست جلسه مشاوره</option>
+                                        <option value="استعلام قیمت">استعلام قیمت و خدمات</option>
+                                        <option value="همکاری تجاری">پیشنهاد همکاری تجاری</option>
+                                        <option value="پشتیبانی فنی">درخواست پشتیبانی فنی</option>
+                                        <option value="انتقادات و پیشنهادات">انتقادات و پیشنهادات</option>
+                                        <option value="سایر">سایر موارد</option>
+                                    </select>
+                                    <div class="form-text">نوع درخواست خود را مشخص نمایید</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="priority" class="form-label">اولویت پاسخگویی</label>
+                                    <select class="form-select" id="priority" name="priority">
+                                        <option value="عادی" selected>عادی (پاسخ در ۴۸ ساعت)</option>
+                                        <option value="فوری">فوری (پاسخ در ۲۴ ساعت)</option>
+                                        <option value="خیلی فوری">خیلی فوری (پاسخ در ۱۲ ساعت)</option>
+                                    </select>
+                                    <div class="form-text">بر اساس اهمیت درخواست انتخاب شود</div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group full-width">
-                            <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
-                            {{ form.message }}
+                        <div class="form-section">
+                            <h5 class="form-section-title">متن درخواست</h5>
+                            <div class="form-group full-width">
+                                <label for="{{ form.message.id_for_label }}" class="form-label">
+                                    {{ form.message.label }}
+                                    <span class="required">*</span>
+                                </label>
+                                {{ form.message }}
+                                <div class="form-text">شرح کامل درخواست، نیازمندی‌ها و انتظارات خود را به صورت واضح بیان نمایید</div>
+                                
+                            </div>
                         </div>
 
                         <div class="form-submit">
                             <button type="submit" class="submit-btn">
-                                <i class="bi bi-send-fill"></i>
-                                ارسال پیام
+                                <i class="bi bi-send-fill me-2"></i>
+                                ارسال درخواست رسمی
                             </button>
+                            <p class="response-time">
+                                <i class="bi bi-clock-history me-1"></i>
+                                زمان متوسط پاسخگویی: ۲۴ ساعت کاری
+                            </p>
                         </div>
                     </form>
                 </div>
@@ -126,40 +216,98 @@
 {% block extra_js %}
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // انیمیشن اسکرول
         const animateOnScroll = function () {
             const elements = document.querySelectorAll('.animate-on-scroll');
-
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
+                if (elementTop < window.innerHeight - 100) {
                     element.classList.add('animated');
                 }
             });
         };
-
         animateOnScroll();
-
         window.addEventListener('scroll', animateOnScroll);
-    });
 
-    document.querySelector('.contact-form').addEventListener('submit', function (e) {
-        const requiredFields = this.querySelectorAll('[required]');
-        let isValid = true;
+        // شمارنده کاراکتر
+        const messageField = document.querySelector('#{{ form.message.id_for_label }}');
+        const charCount = document.querySelector('#charCount');
+        
+        if (messageField && charCount) {
+            messageField.addEventListener('input', function() {
+                charCount.textContent = this.value.length;
+                if (this.value.length > 1000) {
+                    charCount.classList.add('text-danger');
+                } else {
+                    charCount.classList.remove('text-danger');
+                }
+            });
+        }
 
-        requiredFields.forEach(field => {
-            if (!field.value.trim()) {
-                isValid = false;
-                field.style.borderColor = '#dc3545';
-            } else {
-                field.style.borderColor = '';
-            }
-        });
+        // اعتبارسنجی فرم
+        const contactForm = document.querySelector('#contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                const requiredFields = this.querySelectorAll('[required]');
+                let isValid = true;
+                let errorFields = [];
 
-        if (!isValid) {
-            e.preventDefault();
-            alert('لطفا تمام فیلدهای ضروری را پر کنید.');
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        errorFields.push(field.labels[0]?.textContent || field.name);
+                        field.classList.add('is-invalid');
+                    } else {
+                        field.classList.remove('is-invalid');
+                    }
+                });
+
+                // اعتبارسنجی ایمیل
+                const emailField = this.querySelector('#{{ form.email.id_for_label }}');
+                if (emailField && emailField.value.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(emailField.value)) {
+                        isValid = false;
+                        emailField.classList.add('is-invalid');
+                        errorFields.push('فرمت پست الکترونیکی');
+                    }
+                }
+
+                // اعتبارسنجی شماره تلفن
+                const phoneField = this.querySelector('#{{ form.phone.id_for_label }}');
+                if (phoneField && phoneField.value.trim()) {
+                    const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+                    if (!phoneRegex.test(phoneField.value) || phoneField.value.length < 8) {
+                        isValid = false;
+                        phoneField.classList.add('is-invalid');
+                        errorFields.push('فرمت شماره تماس');
+                    }
+                }
+
+                if (!isValid) {
+                    e.preventDefault();
+                    const errorMessage = 'لطفاً فیلدهای زیر را به درستی تکمیل نمایید:\n' + errorFields.join('\n');
+                    alert(errorMessage);
+                }
+            });
+
+            // حذف خطا هنگام تایپ
+            contactForm.querySelectorAll('input, select, textarea').forEach(field => {
+                field.addEventListener('input', function() {
+                    this.classList.remove('is-invalid');
+                });
+            });
+        }
+
+        // نمایش پیام موفقیت
+        const successAlert = document.querySelector('.alert-success');
+        if (successAlert) {
+            setTimeout(() => {
+                successAlert.classList.add('fade');
+                setTimeout(() => {
+                    successAlert.style.display = 'none';
+                }, 300);
+            }, 5000);
         }
     });
 </script>

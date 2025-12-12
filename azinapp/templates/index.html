@@ -1,60 +1,58 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load static %}
-{% block title %}صفحه اصلی - AZIN GROUP{% endblock %}
+{% block title %}صفحه اصلی | گروه آذین{% endblock %}
 
 {% block content %}
-<!-- ====== HERO (insert where header should appear) ====== -->
-<section class="premium-hero" aria-label="Hero section">
+<!-- ====== HERO ====== -->
+<section class="premium-hero" aria-label="بخش معرفی">
     <div class="premium-hero__bg" role="img" aria-hidden="true"></div>
     <div class="premium-hero__overlay" aria-hidden="true"></div>
     <div class="premium-hero__container">
         <div class="premium-hero__left">
 
             <h1 class="premium-hero__title">
-                ما به رشد<br> کسب‌وکار شما کمک می‌کنیم
+                ارائه راهکارهای یکپارچه دیجیتال<br>برای توسعه کسب‌وکار
             </h1>
 
             <p class="premium-hero__lead">
-                تیم آذین راهکارهای حرفه‌ای طراحی وب، اپلیکیشن و سیستم‌های مدیریت را ارائه می‌دهد تا برند شما سریع‌تر رشد
-                کند.
+                گروه آذین با بهره‌گیری از تیم متخصص و رویکردی نظام‌مند، مجموعه‌ای کامل از خدمات طراحی وب، توسعه اپلیکیشن موبایل و راهکارهای مدیریت دیجیتال را برای تحقق اهداف تجاری شما ارائه می‌نماید.
             </p>
 
             <div class="premium-hero__actions">
-                <a class="premium-hero__btn primary" href="{% url 'contact' %}">شروع پروژه</a>
-                <a class="premium-hero__btn outline" href="{% url 'portfolio' %}">نمونه کارها</a>
+                <a class="premium-hero__btn primary" href="{% url 'contact' %}">درخواست مشاوره تخصصی</a>
+                <a class="premium-hero__btn outline" href="{% url 'portfolio' %}">مشاهده سوابق اجرایی</a>
             </div>
 
             <div class="premium-hero__stats">
                 <div class="premium-hero__stat">
                     <div class="num" data-target="150">150+</div>
-                    <div class="label">پروژه موفق</div>
+                    <div class="label">پروژه تکمیل شده</div>
                 </div>
                 <div class="premium-hero__stat">
                     <div class="num" data-target="100">100+</div>
-                    <div class="label">مشتری راضی</div>
+                    <div class="label">شرکت همکار</div>
                 </div>
                 <div class="premium-hero__stat">
                     <div class="num" data-target="10">10</div>
-                    <div class="label">سال تجربه</div>
+                    <div class="label">سال فعالیت مستمر</div>
                 </div>
             </div>
         </div>
 
         <div class="premium-hero__right" aria-hidden="true">
-            <!-- روش درست -->
-            <img class="premium-hero__image" src="{% static 'img/azinlogo.jpg' %}" alt="" />
+            <img class="premium-hero__image" src="{% static 'img/azinlogo.jpg' %}" alt="لوگوی گروه آذین" />
         </div>
     </div>
 </section>
 
 
-<!-- بخش زیرمجموعه‌های اصلی -->
+<!-- بخش زیرمجموعه‌ها -->
 <section class="subsidiaries-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">{% trans 'زیرمجموعه‌های آذین گروپ' %}</h2>
-            <p class="section-subtitle">{% trans 'تخصص‌های متنوع برای نیازهای مختلف کسب‌وکار شما' %}</p>
+            <h2 class="section-title">{% trans 'واحدهای تخصصی گروه آذین' %}</h2>
+            <p class="section-subtitle">{% trans 'پوشش کامل نیازهای سازمانی با تخصص‌های متمایز' %}</p>
         </div>
 
         <div class="subsidiaries-grid">
@@ -62,11 +60,10 @@
                 <div class="card-icon">
                     <i class="bi bi-shop"></i>
                 </div>
-                <h3>{% trans 'فروشگاه آذین' %}</h3>
-                <p>{% trans 'فروشگاه آذین با ارائه محصولات باکیفیت و خدمات حرفه‌ای، تجربه‌ای آسان و مطمئن از خرید آنلاین
-                    را برای شما فراهم می‌کند.' %}</p>
+                <h3>{% trans 'واحد بازرگانی آذین' %}</h3>
+                <p>{% trans 'ارائه خدمات جامع بازرگانی و تأمین کالا با تمرکز بر کیفیت، ارائه محصولات تأییدشده و پشتیبانی پس از فروش.' %}</p>
                 <a href="{% url 'store' %}" class="card-link">
-                    <span>{% trans 'مشاهده جزئیات' %}</span>
+                    <span>{% trans 'اطلاعات بیشتر' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -75,11 +72,10 @@
                 <div class="card-icon">
                     <i class="bi bi-camera-video"></i>
                 </div>
-                <h3>{% trans 'آذین مدیا' %}</h3>
-                <p>{% trans 'آذین مدیا با تیمی خلاق در زمینه تولید محتوای دیجیتال، عکاسی، فیلم‌برداری و تبلیغات، به رشد
-                    و دیده‌شدن برند شما کمک می‌کند.' %}</p>
+                <h3>{% trans 'واحد رسانه آذین' %}</h3>
+                <p>{% trans 'تولید محتوای سازمانی، خدمات عکاسی صنعتی، تولید فیلم‌های تبلیغاتی و اجرای کمپین‌های رسانه‌ای.' %}</p>
                 <a href="{% url 'smm' %}" class="card-link">
-                    <span>{% trans 'مشاهده جزئیات' %}</span>
+                    <span>{% trans 'اطلاعات بیشتر' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -88,11 +84,10 @@
                 <div class="card-icon">
                     <i class="bi bi-house-heart"></i>
                 </div>
-                <h3>{%trans 'دکوراسیون آذین' %}</h3>
-                <p>{% trans 'آذین دکور با طراحی‌های مدرن و سلیقه‌ای، فضای شما را به محیطی زیبا و الهام‌بخش تبدیل
-                    می‌کند.' %}</p>
+                <h3>{%trans 'واحد طراحی دکوراسیون' %}</h3>
+                <p>{% trans 'طراحی و اجرای دکوراسیون اداری، تجاری و مسکونی با رعایت اصول ارگونومی و زیبایی‌شناسی.' %}</p>
                 <a href="{% url 'decore' %}" class="card-link">
-                    <span>{% trans 'مشاهده جزئیات' %}</span>
+                    <span>{% trans 'اطلاعات بیشتر' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -101,11 +96,10 @@
                 <div class="card-icon">
                     <i class="bi bi-airplane"></i>
                 </div>
-                <h3>{% trans 'خدمات گردشگری آذین' %}</h3>
-                <p>{% trans 'آذین تراول با ارائه خدمات مسافرتی و گردشگری حرفه‌ای، سفری راحت، امن و به‌یادماندنی را برای
-                    شما فراهم می‌سازد.' %}</p>
+                <h3>{% trans 'واحد خدمات مسافرتی' %}</h3>
+                <p>{% trans 'ارائه خدمات رزرواسیون، برنامه‌ریزی سفرهای تجاری و تفریحی، ویزا و کلیه خدمات مرتبط با سفر.' %}</p>
                 <a href="{% url 'travel' %}" class="card-link">
-                    <span>{% trans 'مشاهده جزئیات' %}</span>
+                    <span>{% trans 'اطلاعات بیشتر' %}</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
@@ -122,20 +116,18 @@
         <div class="bg-pattern"></div>
     </div>
 
-
     <div class="container">
         <div class="about-grid">
             <div class="about-content">
                 <div class="content-wrapper">
                     <div class="section-badge">
-                        <span>{% trans 'درباره ما' %}</span>
+                        <span>{% trans 'هویت سازمانی' %}</span>
                     </div>
 
-                    <h2 class="section-title">{% trans 'تیم متخصص آذین گروپ' %}</h2>
+                    <h2 class="section-title">{% trans 'رویکرد گروه آذین' %}</h2>
 
                     <p class="about-description">
-                        {% trans 'تیم تخصصی آذین متشکل از افراد خلاق، باتجربه و متعهد است که با دانش روز و عشق به کار،
-                        بهترین خدمات را برای موفقیت شما ارائه می‌دهد.' %}
+                        {% trans 'گروه آذین با تکیه بر دانش فنی، تجربه اجرایی و تعهد به کیفیت، همکاری مبتنی بر اعتماد متقابل با شرکای تجاری خود را سرلوحه فعالیت‌های خویش قرار داده است. ما راهکارهایی ارائه می‌دهیم که نه تنها پاسخگوی نیازهای کنونی، بلکه زمینه‌ساز رشد آتی سازمان شما باشد.' %}
                     </p>
 
                     <div class="about-features">
@@ -144,8 +136,8 @@
                                 <i class="bi bi-people"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>تیم متخصص و با تجربه</h4>
-                                <p>جمعی از بهترین متخصصان حوزه دیجیتال</p>
+                                <h4>تیم متخصص و مجرب</h4>
+                                <p>به‌کارگیری نیروهای متخصص با مدارک معتبر و سوابق اجرایی اثبات‌شده</p>
                             </div>
                         </div>
 
@@ -154,8 +146,8 @@
                                 <i class="bi bi-graph-up-arrow"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>Lorem, ipsum dolor.</h4>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h4>رویکرد مبتنی بر نتیجه</h4>
+                                <p>تعریف شاخص‌های کلیدی عملکرد (KPI) و نظارت مستمر بر دستیابی به اهداف</p>
                             </div>
                         </div>
 
@@ -164,8 +156,8 @@
                                 <i class="bi bi-headset"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>پشتیبانی دائمی</h4>
-                                <p>پشتیبانی ۲۴ ساعته حتی پس از تحویل پروژه</p>
+                                <h4>پشتیبانی و همراهی مستمر</h4>
+                                <p>ارائه خدمات پشتیبانی فنی و مشاوره‌ای در تمامی مراحل همکاری</p>
                             </div>
                         </div>
 
@@ -174,20 +166,20 @@
                                 <i class="bi bi-cash-coin"></i>
                             </div>
                             <div class="feature-content">
-                                <h4>قیمت‌گذاری منصفانه</h4>
-                                <p>ارائه خدمات با بهترین کیفیت و قیمت مناسب</p>
+                                <h4>شفافیت مالی</h4>
+                                <p>ارائه پیش‌فاکتورهای دقیق و گزارش‌گیری منظم از هزینه‌های انجام شده</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="about-actions">
                         <a href="{% url 'about' %}" class="cta-btn primary">
-                            <span>بیشتر درباره ما</span>
+                            <span>مشاهده جزئیات سازمانی</span>
                             <i class="bi bi-arrow-left"></i>
                         </a>
                         <a href="{% url 'contact' %}" class="cta-btn secondary">
                             <i class="bi bi-telephone"></i>
-                            <span>تماس با ما</span>
+                            <span>تماس با دفتر مرکزی</span>
                         </a>
                     </div>
                 </div>
@@ -202,8 +194,8 @@
                             </div>
                         </div>
                         <div class="stat-info">
-                            <h3>رضایت مشتری</h3>
-                            <p>از کیفیت خدمات ما راضی هستند</p>
+                            <h3>رضایتمندی مشتریان</h3>
+                            <p>بر اساس نظرسنجی‌های رسمی انجام شده</p>
                         </div>
                     </div>
 
@@ -214,7 +206,7 @@
                             </div>
                             <div class="stat-content">
                                 <div class="stat-number" data-count="150">0</div>
-                                <div class="stat-label">پروژه موفق</div>
+                                <div class="stat-label">پروژه اجرا شده</div>
                             </div>
                         </div>
 
@@ -224,7 +216,7 @@
                             </div>
                             <div class="stat-content">
                                 <div class="stat-number" data-count="50">0</div>
-                                <div class="stat-label">متخصص</div>
+                                <div class="stat-label">پرسنل متخصص</div>
                             </div>
                         </div>
 
@@ -234,13 +226,17 @@
                             </div>
                             <div class="stat-content">
                                 <div class="stat-number" data-count="10">0</div>
-                                <div class="stat-label">سال تجربه</div>
+                                <div class="stat-label">سال سابقه فعالیت</div>
                             </div>
                         </div>
 
                         <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="bi bi-rocket"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="24">0</div>
+                                <div class="stat-label">ساعت پشتیبانی</div>
                             </div>
                         </div>
                     </div>
@@ -253,8 +249,8 @@
 <section class="services-preview">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">خدمات تخصصی ما</h2>
-            <p class="section-subtitle">از ایده تا اجرا، همراه شما در مسیر دیجیتال</p>
+            <h2 class="section-title">خدمات تخصصی گروه</h2>
+            <p class="section-subtitle">ارائه راهکارهای دیجیتال یکپارچه برای سازمان‌ها و کسب‌وکارها</p>
         </div>
 
         <div class="services-grid">
@@ -263,15 +259,15 @@
                     <div class="service-icon">
                         <i class="bi bi-laptop"></i>
                     </div>
-                    <span class="service-badge">pro</span>
+                    <span class="service-badge">سطح یک</span>
                 </div>
-                <h3>طراحی و توسعه وبسایت</h3>
-                <p>وبسایت‌های مدرن، واکنش‌گرا و بهینه‌شده برای موتورهای جستجو</p>
+                <h3>توسعه پورتال سازمانی</h3>
+                <p>طراحی و توسعه وب‌سایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوا (CMS) با استانداردهای روز</p>
                 <ul class="service-features">
-                    <li>طراحی UI/UX حرفه‌ای</li>
-                    <li>توسعه با جدیدترین تکنولوژی‌ها</li>
-                    <li>بهینه‌سازی برای سئو</li>
-                    <li>پشتیبانی کامل</li>
+                    <li>طراحی رابط کاربری (UI/UX) حرفه‌ای</li>
+                    <li>توسعه با استفاده از فریمورک‌های روز</li>
+                    <li>بهینه‌سازی برای موتورهای جستجو (SEO)</li>
+                    <li>پشتیبانی و نگهداری دوره‌ای</li>
                 </ul>
                 <a href="{% url 'website' %}" class="service-cta">
                     <span>مشاهده خدمات</span>
@@ -284,16 +280,15 @@
                     <div class="service-icon">
                         <i class="bi bi-phone"></i>
                     </div>
-                    <span class="service-badge">pro</span>
+                    <span class="service-badge">سطح یک</span>
                 </div>
-                <h3>مدیریت شبکه های اجتماعی</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusamus, quas porro? Deserunt!</p>
+                <h3>مدیریت شبکه‌های اجتماعی سازمانی</h3>
+                <p>طراحی و اجرای استراتژی حضور مؤثر در شبکه‌های اجتماعی، تولید محتوا و مدیریت برند سازمانی</p>
                 <ul class="service-features">
-                    <li>مدیریت حرفه ای پیج ها</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem ipsum dolor sit.</li>
+                    <li>تدوین استراتژی محتوای سازمانی</li>
+                    <li>مدیریت صفحه‌های رسمی</li>
+                    <li>آنالیز و گزارش‌گیری عملکرد</li>
+                    <li>اجرای کمپین‌های تبلیغاتی</li>
                 </ul>
                 <a href="{% url 'mobileapp' %}" class="service-cta">
                     <span>مشاهده خدمات</span>
@@ -306,23 +301,21 @@
                     <div class="service-icon">
                         <i class="bi bi-camera"></i>
                     </div>
-                    <span class="service-badge">pro</span>
+                    <span class="service-badge">سطح یک</span>
                 </div>
-                <h3>عکاسی و فلمبرداری</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusamus, quas porro? Deserunt!</p>
+                <h3>تولید محتوای بصری سازمانی</h3>
+                <p>تولید محتوای تصویری و ویدئویی حرفه‌ای برای استفاده در رسانه‌های سازمانی، وب‌سایت و نمایشگاه‌ها</p>
                 <ul class="service-features">
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem ipsum dolor sit.</li>
+                    <li>عکاسی صنعتی و تبلیغاتی</li>
+                    <li>تولید فیلم‌های معرفی سازمان</li>
+                    <li>ساخت موشن گرافیک</li>
+                    <li>تدوین و صداگذاری حرفه‌ای</li>
                 </ul>
                 <a href="{% url 'mobileapp' %}" class="service-cta">
                     <span>مشاهده خدمات</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
             </div>
-
         </div>
     </div>
 </section>

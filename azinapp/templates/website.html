@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}توسعه وبسایت - AZIN GROUP{% endblock %}
+{% block title %}توسعه وبسایت سازمانی | گروه آذین{% endblock %}
 
 {% block content %}
 <!-- هیرو سکشن خدمات -->
@@ -12,8 +12,8 @@
         <div class="floating-elements">
             <div class="element element-1"><i class="bi bi-code-slash"></i></div>
             <div class="element element-2"><i class="bi bi-laptop"></i></div>
-            <div class="element element-3"><i class="bi bi-phone"></i></div>
-            <div class="element element-4"><i class="bi bi-tablet"></i></div>
+            <div class="element element-3"><i class="bi bi-shield-check"></i></div>
+            <div class="element element-4"><i class="bi bi-graph-up"></i></div>
         </div>
     </div>
 
@@ -21,39 +21,46 @@
         <div class="service-hero-content">
             <div class="service-hero-text">
                 <div class="service-badge">
-                    <span class="badge-text">خدمات تخصصی</span>
+                    <span class="badge-text">واحد توسعه وب و نرم‌افزار</span>
                     <div class="badge-line"></div>
                 </div>
 
                 <h1 class="service-hero-title">
-                    <span class="title-line">طراحی و توسعه</span>
-                    <span class="title-line accent">وبسایت حرفه‌ای</span>
+                    <span class="title-line">توسعه پورتال‌ها و وبسایت‌های</span>
+                    <span class="title-line accent">سازمانی پیشرفته</span>
                 </h1>
 
                 <p class="service-hero-description">
-                    طراحی مدرن، توسعه اصولی و بهینه‌سازی حرفه‌ای وبسایت‌های شرکتی، فروشگاهی و شخصی
-                    با جدیدترین تکنولوژی‌های روز دنیا و تضمین کیفیت
+                    واحد توسعه وب گروه آذین با بهره‌گیری از تیم متخصص و استفاده از جدیدترین تکنولوژی‌های روز، راهکارهای جامعی برای طراحی و توسعه وبسایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوای پیشرفته ارائه می‌دهد. کیفیت، امنیت و کارایی در اولویت ماست.
                 </p>
 
                 <div class="service-hero-stats">
                     <div class="hero-stat">
                         <div class="stat-number" data-count="120">0</div>
-                        <div class="stat-label">پروژه موفق</div>
+                        <div class="stat-label">پروژه اجرایی</div>
                     </div>
                     <div class="hero-stat">
                         <div class="stat-number" data-count="99">0<span>%</span></div>
-                        <div class="stat-label">رضایت مشتری</div>
+                        <div class="stat-label">رضایت سازمانی</div>
                     </div>
                     <div class="hero-stat">
                         <div class="stat-number" data-count="24">0/7</div>
-                        <div class="stat-label">پشتیبانی</div>
+                        <div class="stat-label">پشتیبانی فنی</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number" data-count="10">0<span>+</span></div>
+                        <div class="stat-label">سال تجربه</div>
                     </div>
                 </div>
 
                 <div class="service-hero-actions">
                     <a href="{% url 'contact' %}" class="service-cta-btn primary">
-                        <i class="bi bi-rocket"></i>
-                        <span>شروع پروژه وبسایت</span>
+                        <i class="bi bi-calendar-check"></i>
+                        <span>درخواست مشاوره فنی</span>
+                    </a>
+                    <a href="{% url 'portfolio' %}" class="service-cta-btn secondary">
+                        <i class="bi bi-eye"></i>
+                        <span>مشاهده نمونه کارها</span>
                     </a>
                 </div>
             </div>
@@ -63,21 +70,24 @@
                     <div class="showcase-device desktop">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/web.jpg' %}" alt="pic">
+                                <img src="{% static 'img/web.jpg' %}" alt="پورتال سازمانی طراحی شده">
+                                <div class="device-label">پورتال سازمانی</div>
                             </div>
                         </div>
                     </div>
                     <div class="showcase-device tablet">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/wel.jpg' %}" alt="pic">
+                                <img src="{% static 'img/wel.jpg' %}" alt="نمونه وبسایت ریسپانسیو">
+                                <div class="device-label">نمایش تبلت</div>
                             </div>
                         </div>
                     </div>
                     <div class="showcase-device mobile">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/market.jpg' %}" alt="pic">
+                                <img src="{% static 'img/market.jpg' %}" alt="نمونه اپلیکیشن وب">
+                                <div class="device-label">نمایش موبایل</div>
                             </div>
                         </div>
                     </div>
@@ -87,12 +97,12 @@
     </div>
 </section>
 
-<!-- بخش اهمیت وبسایت -->
+<!-- بخش اهمیت وبسایت سازمانی -->
 <section class="importance-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">چرا داشتن وبسایت حرفه‌ای حیاتی است؟</h2>
-            <p class="section-subtitle">وبسایت شما ویترین کسب‌وکار شما در دنیای دیجیتال است</p>
+            <h2 class="section-title">اهمیت راه‌اندازی پلتفرم دیجیتال سازمانی</h2>
+            <p class="section-subtitle">وبسایت شما ستون فقرات حضور دیجیتال و ارتباط سازمانی شماست</p>
         </div>
 
         <div class="importance-grid">
@@ -100,32 +110,32 @@
                 <div class="card-icon">
                     <i class="bi bi-globe2"></i>
                 </div>
-                <h4>حضور ۲۴ ساعته در سطح جهانی</h4>
-                <p>وبسایت شما به صورت ۲۴ ساعته و در تمام نقاط جهان در دسترس مشتریان شما خواهد بود</p>
+                <h4>حضور مستمر در فضای دیجیتال</h4>
+                <p>وبسایت سازمانی به صورت ۲۴ ساعته و در تمام نقاط جهان، نماینده رسمی و معتبر سازمان شماست</p>
+            </div>
+
+            <div class="importance-card">
+                <div class="card-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>افزایش اعتبار و اعتماد سازمانی</h4>
+                <p>وبسایت حرفه‌ای اعتبار برند سازمانی را تقویت کرده و حس اطمینان را در ذینفعان ایجاد می‌کند</p>
             </div>
 
             <div class="importance-card">
                 <div class="card-icon">
                     <i class="bi bi-graph-up-arrow"></i>
                 </div>
-                <h4>افزایش اعتبار و قابل اعتماد بودن</h4>
-                <p>وبسایت حرفه‌ای اعتبار برند شما را افزایش داده و حس اعتماد را در مشتریان ایجاد می‌کند</p>
-            </div>
-
-            <div class="importance-card">
-                <div class="card-icon">
-                    <i class="bi bi-cash-coin"></i>
-                </div>
-                <h4>کاهش هزینه‌های بازاریابی</h4>
-                <p>با داشتن وبسایت، هزینه‌های تبلیغات و بازاریابی شما به شدت کاهش می‌یابد</p>
+                <h4>بهینه‌سازی هزینه‌های ارتباطی</h4>
+                <p>کاهش هزینه‌های بازاریابی، تبلیغات و ارتباطات سازمانی از طریق پلتفرم دیجیتال یکپارچه</p>
             </div>
 
             <div class="importance-card">
                 <div class="card-icon">
                     <i class="bi bi-people"></i>
                 </div>
-                <h4>دسترسی به بازارهای جدید</h4>
-                <p>وبسایت امکان دسترسی به بازارهای جدید و مشتریان بالقوه را فراهم می‌کند</p>
+                <h4>دسترسی به بازارها و فرصت‌های جدید</h4>
+                <p>امکان ارتباط با مشتریان، شرکا و سرمایه‌گذاران جدید در سطح ملی و بین‌المللی</p>
             </div>
         </div>
     </div>
@@ -135,8 +145,8 @@
 <section class="services-types-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">انواع وبسایت‌های تخصصی</h2>
-            <p class="section-subtitle">طراحی اختصاصی برای هر نوع کسب‌وکار و نیاز</p>
+            <h2 class="section-title">انواع پلتفرم‌های وب سازمانی</h2>
+            <p class="section-subtitle">راهکارهای تخصصی متناسب با اهداف و نیازمندی‌های سازمانی</p>
         </div>
 
         <div class="services-types-grid">
@@ -145,18 +155,20 @@
                     <div class="type-icon">
                         <i class="bi bi-building"></i>
                     </div>
-                    <span class="type-badge">1</span>
+                    <span class="type-badge">primary</span>
                 </div>
-                <h3>وبسایت شرکتی</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus?</p>
+                <h3>پورتال سازمانی و شرکتی</h3>
+                <p>توسعه پورتال‌های جامع سازمانی با امکانات مدیریت محتوا، بخش‌های مختلف سازمانی و سیستم گزارش‌گیری</p>
                 <ul class="type-features">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>سیستم مدیریت محتوای پیشرفته (CMS)</li>
+                    <li>پنل مدیریت چندسطحی با دسترسی‌های متفاوت</li>
+                    <li>گالری تصاویر و مدیریت فایل سازمانی</li>
+                    <li>فرم‌های تماس و درخواست آنلاین</li>
+                    <li>اتصال به سیستم‌های داخلی سازمان</li>
+                    <li>پنل آمار و گزارش‌گیری پیشرفته</li>
                 </ul>
                 <div class="type-price">
-                    <span class="price-amount">10000</span>
+                    <span class="price-note">(بسته به پیچیدگی پروژه)</span>
                 </div>
                 <a href="{% url 'contact' %}?type=corporate" class="type-cta-btn">
                     <span>ثبت سفارش</span>
@@ -167,22 +179,24 @@
             <div class="service-type-card featured">
                 <div class="type-header">
                     <div class="type-icon">
-                        <i class="bi bi-cart"></i>
+                        <i class="bi bi-cart-check"></i>
                     </div>
-                    <span class="type-badge">2</span>
+                    <span class="type-badge">medium</span>
                 </div>
-                <h3>فروشگاه اینترنتی</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus?</p>
+                <h3>پلتفرم تجارت الکترونیک</h3>
+                <p>توسعه فروشگاه‌های آنلاین پیشرفته با سیستم‌های پرداخت، مدیریت موجودی و لجستیک یکپارچه</p>
                 <ul class="type-features">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>سیستم مدیریت محصولات و دسته‌بندی‌ها</li>
+                    <li>درگاه پرداخت امن چندگانه</li>
+                    <li>سیستم مدیریت سفارشات و پیگیری</li>
+                    <li>پنل مدیریت مشتریان و باشگاه مشتریان</li>
+                    <li>سیستم انبارداری و مدیریت موجودی</li>
+                    <li>گزارش‌های تحلیلی فروش و مالی</li>
+                    <li>سیستم حمل و نقل و لجستیک</li>
+                    <li>پنل تخفیف‌ها و کمپین‌های فروش</li>
                 </ul>
                 <div class="type-price">
-                    <span class="price-amount">10000 </span>
+                    <span class="price-note">(بسته به امکانات مورد نیاز)</span>
                 </div>
                 <a href="{% url 'contact' %}?type=ecommerce" class="type-cta-btn">
                     <span>ثبت سفارش</span>
@@ -195,22 +209,23 @@
                     <div class="type-icon">
                         <i class="bi bi-person-badge"></i>
                     </div>
-                    <span class="type-badge">3</span>
+                    <span class="type-badge">pro</span>
                 </div>
-                <h3>وبسایت شخصی</h3>
-                <p>طراحی رزومه آنلاین، وبلاگ شخصی و پورتفولیو با طراحی مدرن و کاربرپسند</p>
+                <h3>وبسایت‌های تخصصی و پرتال‌های ویژه</h3>
+                <p>توسعه وبسایت‌های تخصصی برای مشاغل خاص، پرتال‌های خبری، آموزشی و سیستم‌های مدیریت رویداد</p>
                 <ul class="type-features">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>وبسایت‌های تخصصی پزشکی، حقوقی، مهندسی</li>
+                    <li>پرتال‌های خبری و رسانه‌ای</li>
+                    <li>سایت‌های آموزشی و مدیریت دوره‌ها</li>
+                    <li>سیستم رزرواسیون آنلاین</li>
+                    <li>پرتال‌های مدیریت رویداد و همایش</li>
+                    <li>وبسایت‌های سازمان‌های دولتی و NGO</li>
                 </ul>
                 <div class="type-price">
-                    <span class="price-amount">100000 </span>
+
+                    <span class="price-note">(متناسب با نوع سرویس)</span>
                 </div>
-                <a href="{% url 'contact' %}?type=personal" class="type-cta-btn">
+                <a href="{% url 'contact' %}?type=specialized" class="type-cta-btn">
                     <span>ثبت سفارش</span>
                     <i class="bi bi-arrow-left"></i>
                 </a>
@@ -223,8 +238,8 @@
 <section class="technical-features-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">ویژگی‌های فنی وبسایت‌های ما</h2>
-            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای جهانی</p>
+            <h2 class="section-title">ویژگی‌های فنی و استانداردهای توسعه</h2>
+            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای بین‌المللی توسعه وب</p>
         </div>
 
         <div class="technical-features">
@@ -233,8 +248,8 @@
                     <div class="tech-icon">
                         <i class="bi bi-phone"></i>
                     </div>
-                    <h4>ریسپانسیو کامل</h4>
-                    <p>سازگاری کامل با تمام دستگاه‌ها شامل موبایل، تبلت و دسکتاپ</p>
+                    <h4>طراحی ریسپانسیو کامل</h4>
+                    <p>سازگاری بی‌نقص با تمام دستگاه‌ها (موبایل، تبلت، دسکتاپ) و رعایت اصول طراحی تطبیقی</p>
                     <div class="tech-progress">
                         <div class="progress-bar" style="width: 100%"></div>
                     </div>
@@ -244,8 +259,8 @@
                     <div class="tech-icon">
                         <i class="bi bi-speedometer2"></i>
                     </div>
-                    <h4>سرعت فوق‌العاده</h4>
-                    <p>بهینه‌سازی سرعت بارگذاری با امتیاز بالای ۹۰ در Google PageSpeed</p>
+                    <h4>بهینه‌سازی سرعت و عملکرد</h4>
+                    <p>بهینه‌سازی کامل سرعت بارگذاری با امتیاز بالای ۹۵ در Google PageSpeed Insights</p>
                     <div class="tech-progress">
                         <div class="progress-bar" style="width: 95%"></div>
                     </div>
@@ -253,10 +268,10 @@
 
                 <div class="tech-feature-card">
                     <div class="tech-icon">
-                        <i class="bi bi-shield-check"></i>
+                        <i class="bi bi-shield-lock"></i>
                     </div>
-                    <h4>امنیت بالا</h4>
-                    <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته و محافظت در برابر حملات</p>
+                    <h4>امنیت پیشرفته چندلایه</h4>
+                    <p>پیاده‌سازی پروتکل‌های امنیتی SSL/TLS، محافظت در برابر حملات و رمزنگاری داده‌ها</p>
                     <div class="tech-progress">
                         <div class="progress-bar" style="width: 98%"></div>
                     </div>
@@ -266,10 +281,32 @@
                     <div class="tech-icon">
                         <i class="bi bi-search"></i>
                     </div>
-                    <h4>سئو حرفه‌ای</h4>
-                    <p>بهینه‌سازی کامل برای موتورهای جستجو و رتبه‌بندی بهتر در گوگل</p>
+                    <h4>بهینه‌سازی سئو تخصصی</h4>
+                    <p>بهینه‌سازی کامل برای موتورهای جستجو، ساختار URL استاندارد و معماری اطلاعات بهینه</p>
                     <div class="tech-progress">
                         <div class="progress-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+                    <h4>توسعه با تکنولوژی‌های روز</h4>
+                    <p>استفاده از فریمورک‌های مدرن مانند React، Vue.js، Django و Laravel برای توسعه</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 96%"></div>
+                    </div>
+                </div>
+
+                <div class="tech-feature-card">
+                    <div class="tech-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <h4>پایگاه داده بهینه و مقیاس‌پذیر</h4>
+                    <p>استفاده از پایگاه‌داده‌های پیشرفته و معماری مقیاس‌پذیر برای پشتیبانی از رشد سازمان</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" style="width: 94%"></div>
                     </div>
                 </div>
             </div>
@@ -281,48 +318,113 @@
 <section class="process-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">فرآیند طراحی و توسعه وبسایت</h2>
-            <p class="section-subtitle">از مشاوره تا تحویل نهایی، قدم به قدم با شما</p>
+            <h2 class="section-title">فرآیند سیستماتیک توسعه وبسایت سازمانی</h2>
+            <p class="section-subtitle">رویکرد مرحله‌ای و مبتنی بر استانداردهای بین‌المللی توسعه نرم‌افزار</p>
         </div>
 
         <div class="process-timeline">
             <div class="process-step">
+                <div class="step-number">۰۱</div>
+                <div class="step-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
                 <div class="step-content">
-                    <h4>مشاوره و تحلیل</h4>
-                    <p>بررسی نیازهای شما، تحلیل بازار هدف و ارائه پیشنهاد تخصصی</p>
+                    <h4>تحلیل نیاز و تدوین مستندات</h4>
+                    <p>بررسی دقیق نیازمندی‌های سازمان، تحلیل رقبا و تدوین مستندات فنی و کاربردی</p>
                 </div>
             </div>
 
             <div class="process-step">   
+                <div class="step-number">۰۲</div>
+                <div class="step-icon">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
                 <div class="step-content">
-                    <h4>طراحی UI/UX</h4>
-                    <p>طراحی واسط کاربری و تجربه کاربری متناسب با برند و کسب‌وکار شما</p>
+                    <h4>طراحی UX/UI و معماری</h4>
+                    <p>طراحی تجربه کاربری، واسط کاربری و تعیین معماری فنی سیستم</p>
+                    <ul class="step-details">
+                        <li>طراحی وایرفریم و پروتوتایپ</li>
+                        <li>طراحی UI مطابق با هویت برند سازمان</li>
+                        <li>تعیین معماری فنی و تکنولوژی‌های مورد استفاده</li>
+                        <li>طراحی دیتابیس و ساختار داده‌ها</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="process-step">
+                <div class="step-number">۰۳</div>
+                <div class="step-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
                 <div class="step-content">
-                    <h4>توسعه و برنامه‌نویسی</h4>
-                    <p>پیاده‌سازی فنی با استفاده از جدیدترین تکنولوژی‌های روز دنیا</p>
+                    <h4>توسعه و پیاده‌سازی فنی</h4>
+                    <p>پیاده‌سازی فنی با استفاده از تکنولوژی‌های روز و روش‌های توسعه Agile</p>
+                    <ul class="step-details">
+                        <li>توسعه Frontend و Backend</li>
+                        <li>پیاده‌سازی ماژول‌ها و سرویس‌ها</li>
+                        <li>یکپارچه‌سازی با سیستم‌های موجود</li>
+                        <li>تست واحد و یکپارچگی</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="process-step">
+                <div class="step-number">۰۴</div>
+                <div class="step-icon">
+                    <i class="bi bi-bug"></i>
+                </div>
                 <div class="step-content">
-                    <h4>تست و بهینه‌سازی</h4>
-                    <p>تست کامل عملکرد، امنیت و بهینه‌سازی سرعت و سئو</p>
+                    <h4>تست و کنترل کیفیت</h4>
+                    <p>انجام تست‌های جامع عملکردی، امنیتی، بارگذاری و پذیرش کاربر</p>
+                    <ul class="step-details">
+                        <li>تست عملکردی و بررسی باگ‌ها</li>
+                        <li>تست امنیتی و بررسی آسیب‌پذیری‌ها</li>
+                        <li>تست بارگذاری و بررسی Performance</li>
+                        <li>تست پذیرش کاربر (UAT)</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="process-step">
+                <div class="step-number">۰۵</div>
+                <div class="step-icon">
+                    <i class="bi bi-rocket"></i>
+                </div>
                 <div class="step-content">
-                    <h4>تحویل و پشتیبانی</h4>
-                    <p>تحویل نهایی و ارائه پشتیبانی فنی و آموزشی</p>
+                    <h4>استقرار و پشتیبانی</h4>
+                    <p>استقرار نهایی بر روی سرور، آموزش کاربران و ارائه پشتیبانی فنی مستمر</p>
+                    <ul class="step-details">
+                        <li>استقرار بر روی سرورهای امن و بهینه</li>
+                        <li>آموزش مدیران و کاربران سیستم</li>
+                        <li>پشتیبانی فنی و نگهداری دوره‌ای</li>
+                        <li>مانیتورینگ و گزارش‌گیری عملکرد</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- بخش CTA -->
+<section class="website-cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>آماده توسعه پلتفرم دیجیتال سازمانی خود هستید؟</h2>
+            <p>برای دریافت مشاوره تخصصی، تحلیل نیازمندی‌ها و دریافت پروپوزال توسعه، با واحد توسعه وب گروه آذین تماس بگیرید</p>
+            <div class="cta-actions">
+                <a href="{% url 'contact' %}" class="cta-btn primary">
+                    <i class="bi bi-chat-left-text"></i>
+                    <span>درخواست جلسه مشاوره فنی</span>
+                </a>
+                <a href="tel:+992110006443" class="cta-btn secondary">
+                    <i class="bi bi-telephone-outbound"></i>
+                    <span>تماس با واحد توسعه</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
     // انیمیشن شماره‌ها
     document.addEventListener('DOMContentLoaded', function () {
@@ -352,35 +454,6 @@
         }, { threshold: 0.5 });
 
         document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
-
-        // فیلتر نمونه کارها
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.web-portfolio-item');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-
-                const filterValue = this.getAttribute('data-filter');
-
-                portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                        item.style.display = 'block';
-                        setTimeout(() => {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }, 100);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 300);
-                    }
-                });
-            });
-        });
     });
 </script>
 {% endblock content %}

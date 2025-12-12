@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}اپلیکیشن موبایل - AZIN GROUP{% endblock %}
+{% block title %}mobileapp | azingroup{% endblock %}
 
 {% block content %}
 <!-- هیرو سکشن اپلیکیشن موبایل -->
@@ -20,20 +20,24 @@
     <div class="container">
         <div class="mobileapp-hero-content">
             <div class="mobileapp-hero-text">
+                <div class="service-badge">
+                    <span class="badge-text">واحد توسعه موبایل</span>
+                    <div class="badge-line"></div>
+                </div>
 
                 <h1 class="mobileapp-hero-title">
-                    <span class="title-line">توسعه اپلیکیشن</span>
-                    <span class="title-line accent">موبایل حرفه‌ای</span>
+                    <span class="title-line">توسعه اپلیکیشن‌های سازمانی</span>
+                    <span class="title-line accent">با تکنولوژی‌های برتر موبایل</span>
                 </h1>
 
                 <p class="mobileapp-hero-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, est.
+                    واحد توسعه اپلیکیشن موبایل گروه آذین با تیمی از مهندسان متخصص، راهکارهای نوآورانه و کاربردی برای پلتفرم‌های iOS و Android ارائه می‌دهد. ما از ایده‌پردازی تا انتشار در استورها، همراهی قابل اعتماد برای کسب‌وکارهای دیجیتال هستیم.
                 </p>
 
                 <div class="mobileapp-hero-actions">
                     <a href="{% url 'contact' %}" class="mobileapp-cta-btn primary">
-                        <i class="bi bi-chat-dots"></i>
-                        <span>مشاوره رایگان</span>
+                        <i class="bi bi-calendar-check"></i>
+                        <span>درخواست مشاوره فنی</span>
                     </a>
                     <a href="{% url 'portfolio' %}"class="mobileapp-cta-btn secondary">
                         <i class="bi bi-phone"></i>
@@ -47,7 +51,7 @@
                     <div class="app-device iphone">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/mobileapp.jpg' %}" alt="pic">
+                                <img src="{% static 'img/mobileapp.jpg' %}" alt="نمونه اپلیکیشن iOS طراحی شده">
                                 <div class="app-badge">
                                     <i class="bi bi-apple"></i>
                                     <span>iOS</span>
@@ -58,7 +62,7 @@
                     <div class="app-device android">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/port.jpg' %}" alt="pic">
+                                <img src="{% static 'img/port.jpg' %}" alt="نمونه اپلیکیشن Android طراحی شده">
                                 <div class="app-badge">
                                     <i class="bi bi-google-play"></i>
                                     <span>Android</span>
@@ -66,6 +70,157 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش انواع اپلیکیشن‌ها -->
+<section class="app-types-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">انواع اپلیکیشن‌های قابل توسعه</h2>
+            <p class="section-subtitle">راهکارهای سفارشی متناسب با نیازهای کسب‌وکار شما</p>
+        </div>
+
+        <div class="app-types-grid">
+            <div class="app-type-card">
+                <div class="app-type-icon">
+                    <i class="bi bi-cart"></i>
+                </div>
+                <h3>اپلیکیشن‌های تجارت الکترونیک</h3>
+                <p>توسعه پلتفرم‌های فروش آنلاین با قابلیت‌های پرداخت، سبد خرید و مدیریت سفارشات</p>
+                <ul class="app-features">
+                    <li>سیستم پرداخت چندگانه و امن</li>
+                    <li>مدیریت موجودی و انبار آنلاین</li>
+                    <li>پیگیری سفارشات در لحظه</li>
+                    <li>سیستم امتیازدهی و نظرسنجی</li>
+                </ul>
+            </div>
+
+            <div class="app-type-card">
+                <div class="app-type-icon">
+                    <i class="bi bi-briefcase"></i>
+                </div>
+                <h3>اپلیکیشن‌های سازمانی و مدیریتی</h3>
+                <p>توسعه اپلیکیشن‌های اختصاصی برای مدیریت فرآیندهای داخلی سازمان</p>
+                <ul class="app-features">
+                    <li>سیستم حضور و غیاب هوشمند</li>
+                    <li>مدیریت پروژه و تسک</li>
+                    <li>گزارش‌گیری و آنالیتیکس</li>
+                    <li>ارتباط داخلی سازمانی</li>
+                </ul>
+            </div>
+
+            <div class="app-type-card">
+                <div class="app-type-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+                <h3>اپلیکیشن‌های خدمات مشتریان</h3>
+                <p>توسعه پلتفرم‌های تعاملی برای ارائه خدمات به مشتریان نهایی</p>
+                <ul class="app-features">
+                    <li>سیستم تیکت و پشتیبانی</li>
+                    <li>رزرو آنلاین و نوبت‌دهی</li>
+                    <li>پروفایل کاربری شخصی‌سازی شده</li>
+                    <li>اعلان‌های هوشمند و زمان‌بندی شده</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- بخش فرآیند توسعه -->
+<section class="development-process-section">
+    <div class="container">
+        <div class="section-header center">
+            <h2 class="section-title">فرآیند توسعه اپلیکیشن موبایل</h2>
+            <p class="section-subtitle">رویکرد سیستماتیک و مرحله‌ای برای تضمین کیفیت</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">۰۱</div>
+                <div class="step-icon">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تحلیل نیاز و برنامه‌ریزی</h4>
+                    <p>بررسی دقیق نیازمندی‌ها، تحلیل بازار و تدوین مستندات فنی پروژه</p>
+                    <ul>
+                        <li>مشاوره تخصصی با تحلیلگران کسب‌وکار</li>
+                        <li>تهیه User Stories و سناریوهای کاربری</li>
+                        <li>تدوین مستندات فنی (Technical Documentation)</li>
+                        <li>برنامه‌ریزی زمان‌بندی و منابع</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">۰۲</div>
+                <div class="step-icon">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+                <div class="step-content">
+                    <h4>طراحی UI/UX و معماری</h4>
+                    <p>طراحی رابط کاربری، تجربه کاربری و معماری فنی اپلیکیشن</p>
+                    <ul>
+                        <li>طراحی وایرفریم و پروتوتایپ اولیه</li>
+                        <li>طراحی UI با تمرکز بر اصول Material Design / Human Interface</li>
+                        <li>تعیین معماری فنی (MVVM، Clean Architecture)</li>
+                        <li>توسعه Design System اختصاصی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">۰۳</div>
+                <div class="step-icon">
+                    <i class="bi bi-code-square"></i>
+                </div>
+                <div class="step-content">
+                    <h4>توسعه و پیاده‌سازی</h4>
+                    <p>کدنویسی، پیاده‌سازی ماژول‌ها و یکپارچه‌سازی سرویس‌ها</p>
+                    <ul>
+                        <li>توسعه Frontend با تکنولوژی‌های روز</li>
+                        <li>پیاده‌سازی Backend و API ها</li>
+                        <li>یکپارچه‌سازی سرویس‌های شخص ثالث</li>
+                        <li>پیاده‌سازی سیستم‌های امنیتی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">۰۴</div>
+                <div class="step-icon">
+                    <i class="bi bi-bug"></i>
+                </div>
+                <div class="step-content">
+                    <h4>تست و کنترل کیفیت</h4>
+                    <p>انجام تست‌های جامع و اطمینان از عملکرد بی‌نقص اپلیکیشن</p>
+                    <ul>
+                        <li>تست واحد (Unit Testing)</li>
+                        <li>تست یکپارچگی (Integration Testing)</li>
+                        <li>تست کاربری (User Acceptance Testing)</li>
+                        <li>تست عملکرد و Load Testing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">۰۵</div>
+                <div class="step-icon">
+                    <i class="bi bi-rocket"></i>
+                </div>
+                <div class="step-content">
+                    <h4>استقرار و پشتیبانی</h4>
+                    <p>انتشار در استورها، مانیتورینگ و پشتیبانی مستمر</p>
+                    <ul>
+                        <li>آماده‌سازی برای انتشار (App Store / Google Play)</li>
+                        <li>مانیتورینگ عملکرد و گزارش‌گیری</li>
+                        <li>پشتیبانی فنی و رفع باگ‌ها</li>
+                        <li>به‌روزرسانی‌های دوره‌ای</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -85,8 +240,8 @@
                 <div class="tech-icon">
                     <i class="bi bi-shield-check"></i>
                 </div>
-                <h4>امنیت بالا</h4>
-                <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته و رمزنگاری داده‌ها</p>
+                <h4>امنیت پیشرفته</h4>
+                <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته، رمزنگاری end-to-end و احراز هویت چندعاملی</p>
                 <div class="tech-progress">
                     <div class="progress-bar" style="width: 98%"></div>
                 </div>
@@ -96,8 +251,8 @@
                 <div class="tech-icon">
                     <i class="bi bi-cloud-upload"></i>
                 </div>
-                <h4>Backend قدرتمند</h4>
-                <p>توسعه سرور و API های امن و scalable برای پشتیبانی از اپلیکیشن</p>
+                <h4>معماری مقیاس‌پذیر</h4>
+                <p>توسعه سرور و API های امن و scalable با قابلیت پشتیبانی از میلیون‌ها کاربر همزمان</p>
                 <div class="tech-progress">
                     <div class="progress-bar" style="width: 94%"></div>
                 </div>
@@ -105,10 +260,21 @@
 
             <div class="tech-feature-card">
                 <div class="tech-icon">
+                    <i class="bi bi-speedometer2"></i>
+                </div>
+                <h4>عملکرد بهینه</h4>
+                <p>بهینه‌سازی کامل کد، کاهش مصرف باتری و افزایش سرعت لود اپلیکیشن</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 96%"></div>
+                </div>
+            </div>
+
+            <div class="tech-feature-card">
+                <div class="tech-icon">
                     <i class="bi bi-tools"></i>
                 </div>
-                <h4>پشتیبانی کامل</h4>
-                <p>پشتیبانی فنی و به‌روزرسانی‌های دوره‌ای پس از انتشار</p>
+                <h4>پشتیبانی جامع</h4>
+                <p>پشتیبانی فنی ۲۴/۷، به‌روزرسانی‌های دوره‌ای و رفع سریع مشکلات</p>
                 <div class="tech-progress">
                     <div class="progress-bar" style="width: 100%"></div>
                 </div>
@@ -117,14 +283,12 @@
     </div>
 </section>
 
-</section>
-
 <!-- بخش تکنولوژی‌ها -->
 <section class="technologies-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">تکنولوژی‌های مورد استفاده</h2>
-            <p class="section-subtitle">با جدیدترین و برترین تکنولوژی‌های روز دنیا</p>
+            <h2 class="section-title">تکنولوژی‌های مورد استفاده در توسعه</h2>
+            <p class="section-subtitle">استفاده از برترین و به‌روزترین تکنولوژی‌های صنعت توسعه موبایل</p>
         </div>
 
         <div class="technologies-grid">
@@ -132,36 +296,45 @@
                 <div class="tech-logo">
                     <i class="bi bi-apple"></i>
                 </div>
-                <h4>iOS Development</h4>
+                <h4>توسعه iOS Native</h4>
                 <div class="tech-stack">
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Swift 5.9</span>
+                    <span class="stack-item">SwiftUI</span>
+                    <span class="stack-item">UIKit</span>
+                    <span class="stack-item">Combine Framework</span>
+                    <span class="stack-item">Core Data</span>
                 </div>
+                <p class="tech-description">توسعه اپلیکیشن‌های بومی iOS با آخرین ویژگی‌های سیستم عامل</p>
             </div>
 
             <div class="tech-card">
                 <div class="tech-logo">
                     <i class="bi bi-google"></i>
                 </div>
-                <h4>Android Development</h4>
+                <h4>توسعه Android Native</h4>
                 <div class="tech-stack">
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Kotlin</span>
+                    <span class="stack-item">Jetpack Compose</span>
+                    <span class="stack-item">Coroutines</span>
+                    <span class="stack-item">Room Database</span>
+                    <span class="stack-item">Retrofit</span>
                 </div>
+                <p class="tech-description">توسعه اپلیکیشن‌های بومی Android با معماری‌های مدرن</p>
             </div>
 
             <div class="tech-card">
                 <div class="tech-logo">
                     <i class="bi bi-react"></i>
                 </div>
-                <h4>Cross-Platform</h4>
+                <h4>Cross-Platform Development</h4>
                 <div class="tech-stack">
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">React Native</span>
+                    <span class="stack-item">Flutter</span>
+                    <span class="stack-item">Xamarin</span>
+                    <span class="stack-item">TypeScript</span>
+                    <span class="stack-item">Redux</span>
                 </div>
+                <p class="tech-description">توسعه چندپلتفرمی برای صرفه‌جویی در زمان و هزینه</p>
             </div>
 
             <div class="tech-card">
@@ -170,10 +343,13 @@
                 </div>
                 <h4>Backend & Database</h4>
                 <div class="tech-stack">
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
-                    <span class="stack-item">Lorem, ipsum.</span>
+                    <span class="stack-item">Node.js</span>
+                    <span class="stack-item">Python Django</span>
+                    <span class="stack-item">Firebase</span>
+                    <span class="stack-item">MongoDB</span>
+                    <span class="stack-item">PostgreSQL</span>
                 </div>
+                <p class="tech-description">توسعه سمت سرور و پایگاه‌داده‌های امن و مقیاس‌پذیر</p>
             </div>
         </div>
     </div>

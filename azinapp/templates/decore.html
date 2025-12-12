@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}دکوراسیون - AZIN GROUP{% endblock %}
+{% block title %}decoration | azingroup{% endblock %}
 
 {% block content %}
 
@@ -10,10 +10,10 @@
         <div class="hero-gradient-overlay"></div>
         <div class="architectural-pattern"></div>
         <div class="floating-design-elements">
-            <div class="design-element elem-1"><i class="bi bi-house-door"></i></div>
-            <div class="design-element elem-2"><i class="bi bi-lamp"></i></div>
-            <div class="design-element elem-3"><i class="bi bi-palette"></i></div>
-            <div class="design-element elem-4"><i class="bi bi-rulers"></i></div>
+            <div class="design-element elem-1"><i class="bi bi-building"></i></div>
+            <div class="design-element elem-2"><i class="bi bi-rulers"></i></div>
+            <div class="design-element elem-3"><i class="bi bi-lightning-charge"></i></div>
+            <div class="design-element elem-4"><i class="bi bi-palette"></i></div>
         </div>
     </div>
 
@@ -21,24 +21,42 @@
         <div class="decoration-hero-content">
             <div class="decoration-hero-text">
                 <div class="service-badge">
-                    <span class="badge-text">خدمات تخصصی</span>
+                    <span class="badge-text">واحد طراحی و معماری</span>
                     <div class="badge-line"></div>
                 </div>
 
                 <h1 class="decoration-hero-title">
-                    <span class="title-line">طراحی داخلی و</span>
-                    <span class="title-line accent">دکوراسیون آذین</span>
+                    <span class="title-line">طراحی داخلی تخصصی و</span>
+                    <span class="title-line accent">معماری فضاهای سازمانی</span>
                 </h1>
 
                 <p class="decoration-hero-description">
-                    ترکیبی از زیبایی، خلاقیت و تخصص در طراحی فضاهای داخلی.
-                    با تیم متخصص ما، فضای زندگی و کار خود را به مکانی رویایی تبدیل کنید.
+                    واحد طراحی و معماری گروه آذین با ترکیب دانش فنی، خلاقیت و تجربه اجرایی، راهکارهای جامعی برای بهینه‌سازی فضاهای اداری، تجاری و مسکونی ارائه می‌نماید. تمرکز ما بر ایجاد محیط‌های کاربرپسند، کارآمد و مطابق با استانداردهای روز جهانی است.
                 </p>
+
+                <div class="decoration-hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">۰</div>
+                        <div class="stat-label">پروژه تکمیل شده</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">۰</div>
+                        <div class="stat-label">مشتری سازمانی</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="98">۰</div>
+                        <div class="stat-label">رضایت مشتری</div>
+                    </div>
+                </div>
 
                 <div class="decoration-hero-actions">
                     <a href="{% url 'contact' %}" class="decoration-cta-btn primary">
-                        <i class="bi bi-house-check"></i>
-                        <span>مشاوره رایگان طراحی</span>
+                        <i class="bi bi-calendar-check"></i>
+                        <span>درخواست بازدید و مشاوره</span>
+                    </a>
+                    <a href="#portfolio" class="decoration-cta-btn secondary">
+                        <i class="bi bi-images"></i>
+                        <span>مشاهده گالری پروژه‌ها</span>
                     </a>
                 </div>
             </div>
@@ -46,16 +64,22 @@
             <div class="decoration-hero-visual">
                 <div class="design-showcase">
                     <div class="showcase-item main-showcase">
-                        <img src="{% static 'img/decore.jpg' %}" alt="نمونه کار طراحی داخلی">
+                        <img src="{% static 'img/decore.jpg' %}" alt="پروژه طراحی دفتر مرکزی سازمانی">
                         <div class="showcase-overlay">
-                            <span class="showcase-tag">طراحی مدرن</span>
+                            <span class="showcase-tag">طراحی اداری مدرن</span>
                         </div>
                     </div>
                     <div class="showcase-item secondary-showcase">
-                        <img src="{% static 'img/web.jpg' %}" alt="نمونه کار دکوراسیون">
+                        <img src="{% static 'img/web.jpg' %}" alt="پروژه طراحی فضای تجاری">
+                        <div class="showcase-overlay">
+                            <span class="showcase-tag">دکوراسیون تجاری</span>
+                        </div>
                     </div>
                     <div class="showcase-item tertiary-showcase">
-                        <img src="{% static 'img/market.jpg' %}" alt="نمونه کار معماری داخلی">
+                        <img src="{% static 'img/market.jpg' %}" alt="پروژه معماری داخلی مسکونی">
+                        <div class="showcase-overlay">
+                            <span class="showcase-tag">طراحی مسکونی لوکس</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,51 +91,63 @@
 <section class="decoration-services-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">خدمات تخصصی دکوراسیون آذین</h2>
-            <p class="section-subtitle">با تیمی از متخصصان خلاق و با تجربه در زمینه طراحی داخلی</p>
+            <h2 class="section-title">خدمات تخصصی طراحی و معماری داخلی</h2>
+            <p class="section-subtitle">ارائه راهکارهای جامع مبتنی بر اصول ارگونومی و زیبایی‌شناسی</p>
         </div>
 
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">
-                    <i class="bi bi-house-heart"></i>
+                    <i class="bi bi-building"></i>
                 </div>
-                <h3>طراحی داخلی منازل</h3>
-                <p>طراحی و دکوراسیون آپارتمان، ویلا و منازل مسکونی با جدیدترین سبک‌های روز دنیا</p>
+                <h3>طراحی فضاهای اداری و سازمانی</h3>
+                <p>طراحی و بهینه‌سازی دفاتر کار، ساختمان‌های اداری و فضای سازمانی با رعایت اصول ارگونومی و بهره‌وری نیروی انسانی</p>
                 <ul class="service-features">
-                    <li>طراحی اتاق خواب و پذیرایی</li>
-                    <li>دکوراسیون آشپزخانه مدرن</li>
-                    <li>طراحی فضای حمام و سرویس بهداشتی</li>
-                    <li>طراحی نورپردازی حرفه‌ای</li>
+                    <li>طراحی پلان اداری بر اساس چارت سازمانی</li>
+                    <li>بهینه‌سازی گردش کار و دسترسی‌ها</li>
+                    <li>طراحی اتاق‌های جلسات و سالن کنفرانس</li>
+                    <li>ایجاد فضاهای استراحت و تعامل کارکنان</li>
                 </ul>
+                <a href="{% url 'contact' %}" class="service-cta">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
 
             <div class="service-card featured">
                 <div class="service-icon">
-                    <i class="bi bi-building"></i>
+                    <i class="bi bi-shop"></i>
                 </div>
-                <h3>دکوراسیون تجاری</h3>
-                <p>طراحی دفاتر اداری، رستوران‌ها، فروشگاه‌ها و فضاهای تجاری با هدف جذب مشتری</p>
+                <h3>طراحی فضاهای تجاری و فروشگاهی</h3>
+                <p>طراحی مراکز خرید، فروشگاه‌ها، رستوران‌ها و فضاهای تجاری با هدف جذب مشتری و افزایش فروش</p>
                 <ul class="service-features">
-                    <li>طراحی دفاتر کار و اتاق جلسات</li>
-                    <li>دکوراسیون رستوران و کافی شاپ</li>
-                    <li>طراحی فروشگاه و ویترین</li>
-                    <li>بهینه‌سازی فضای تجاری</li>
+                    <li>طراحی ویترین و فضای فروش بهینه</li>
+                    <li>برنامه‌ریزی چیدمان و گردش مشتری</li>
+                    <li>طراحی نورپردازی و سینرژی بصری</li>
+                    <li>ایجاد هویت بصری منحصر به فرد برند</li>
                 </ul>
+                <a href="{% url 'contact' %}" class="service-cta">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
 
             <div class="service-card">
                 <div class="service-icon">
-                    <i class="bi bi-palette2"></i>
+                    <i class="bi bi-house-door"></i>
                 </div>
-                <h3>مشاوره طراحی</h3>
-                <p>مشاوره تخصصی در انتخاب رنگ، متریال، مبلمان و المان‌های دکوراتیو</p>
+                <h3>طراحی فضاهای مسکونی و اقامتی</h3>
+                <p>طراحی آپارتمان‌ها، ویلاها، هتل‌ها و واحدهای اقامتی با تأکید بر آسایش، کاربری و زیبایی‌شناسی</p>
                 <ul class="service-features">
-                    <li>مشاوره انتخاب پالت رنگی</li>
-                    <li>انتخاب متریال و مصالح</li>
-                    <li>مشاوره خرید مبلمان و دکور</li>
-                    <li>بررسی فنی فضای موجود</li>
+                    <li>طراحی مبتنی بر سبک زندگی ساکنین</li>
+                    <li>بهینه‌سازی فضاهای کوچک و بزرگ</li>
+                    <li>انتخاب متریال و رنگ‌بندی مناسب</li>
+                    <li>طراحی نورپردازی و سیستم‌های هوشمند</li>
                 </ul>
+                <a href="{% url 'contact' %}" class="service-cta">
+                    <span>ثبت سفارش</span>
+                    <i class="bi bi-arrow-left"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -121,28 +157,38 @@
 <section class="features-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">چرا دکوراسیون آذین؟</h2>
-            <p class="section-subtitle">تضمین کیفیت و خلاقیت در هر پروژه</p>
+            <h2 class="section-title">مزایای رقابتی واحد طراحی آذین</h2>
+            <p class="section-subtitle">تفاوت در کیفیت، تخصص و رویکرد سیستماتیک</p>
         </div>
 
         <div class="features-grid">
             <div class="feature-item">
                 <div class="feature-icon-wrapper">
-                    <i class="bi bi-award"></i>
+                    <i class="bi bi-diagram-3"></i>
                 </div>
                 <div class="feature-content">
-                    <h4>تیم متخصص و با تجربه</h4>
-                    <p>جمعی از بهترین طراحان داخلی با سال‌ها تجربه در پروژه‌های مختلف</p>
+                    <h4>رویکرد سیستماتیک و مبتنی بر فرآیند</h4>
+                    <p>استفاده از متدولوژی‌های استاندارد طراحی و کنترل کیفیت در تمامی مراحل پروژه</p>
                 </div>
             </div>
 
             <div class="feature-item">
                 <div class="feature-icon-wrapper">
-                    <i class="bi bi-flower1"></i>
+                    <i class="bi bi-people-fill"></i>
                 </div>
                 <div class="feature-content">
-                    <h4>خلاقیت و نوآوری</h4>
-                    <p>ایده‌پردازی منحصر به فرد و طراحی اختصاصی برای هر پروژه</p>
+                    <h4>تیم چندتخصصی و مجرب</h4>
+                    <p>همکاری معماران، طراحان داخلی، مهندسین نورپردازی و متخصصان ارگونومی</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon-wrapper">
+                    <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>تحلیل هزینه‌-فایده (Cost-Benefit Analysis)</h4>
+                    <p>ارائه گزارش تحلیلی از بازگشت سرمایه (ROI) و بهره‌وری فضای طراحی شده</p>
                 </div>
             </div>
 
@@ -151,18 +197,8 @@
                     <i class="bi bi-shield-check"></i>
                 </div>
                 <div class="feature-content">
-                    <h4>استفاده از متریال درجه یک</h4>
-                    <p>به کارگیری بهترین و باکیفیت‌ترین مصالح و مواد اولیه در اجرای پروژه</p>
-                </div>
-            </div>
-
-            <div class="feature-item">
-                <div class="feature-icon-wrapper">
-                    <i class="bi bi-headset"></i>
-                </div>
-                <div class="feature-content">
-                    <h4>پشتیبانی پس از اجرا</h4>
-                    <p>پشتیبانی و خدمات پس از اجرا برای اطمینان از رضایت کامل شما</p>
+                    <h4>رعایت استانداردهای بین‌المللی</h4>
+                    <p>پایبندی به استانداردهای ISO در حوزه طراحی و ایمنی فضای کاری</p>
                 </div>
             </div>
         </div>
@@ -173,30 +209,138 @@
 <section id="portfolio" class="decoration-portfolio-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">گالری آثار طراحی داخلی</h2>
+            <h2 class="section-title">گالری پروژه‌های اجرا شده</h2>
+            <p class="section-subtitle">نمایشگاهی از دستاوردهای واحد طراحی و معماری</p>
         </div>
 
         <div class="decoration-portfolio-grid">
+            <div class="portfolio-item" data-category="office">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="طراحی دفتر مرکزی شرکت ارتباطات">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>دفتر مرکزی شرکت ارتباطات</h3>
+                                <p>مساحت: ۸۵۰ متر مربع | مدت اجرا: ۴ ماه</p>
+                                <div class="project-tags">
+                                    <span class="tag">طراحی باز</span>
+                                    <span class="tag">سیستم هوشمند</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-actions">
+                                <button class="view-details-btn" data-project="1">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات فنی</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="client-info">
+                            <i class="bi bi-building"></i>
+                            <span>شرکت ارتباطات سیار</span>
+                        </div>
+                        <h3>طراحی دفتر مرکزی سازمانی</h3>
+                        <span class="project-type">دفتر اداری</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="commercial">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/digital.jpg' %}" alt="طراحی مرکز خرید مدرن">
+                        <div class="portfolio-image">
+                            <img src="{% static 'img/digital.jpg' %}" alt="طراحی مرکز خرید مدرن">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>مرکز خرید ستاره شرق</h3>
+                                    <p>مساحت: ۲۵۰۰ متر مربع | مدت اجرا: ۶ ماه</p>
+                                    <div class="project-tags">
+                                        <span class="tag">گردش مشتری</span>
+                                        <span class="tag">طراحی ویترین</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-actions">
+                                    <button class="view-details-btn" data-project="2">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span>جزئیات فنی</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="client-info">
+                                <i class="bi bi-shop"></i>
+                                <span>گروه بازرگانی ستاره</span>
+                            </div>
+                            <h3>طراحی مرکز خرید مدرن</h3>
+                            <span class="project-type">مرکز تجاری</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="portfolio-item" data-category="residential">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="pic">
+                        <img src="{% static 'img/home.jpg' %}" alt="طراحی ویلا سازمانی">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>Lorem, ipsum.
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <h3>ویلا سازمانی مدیران ارشد</h3>
+                                <p>مساحت: ۴۲۰ متر مربع | مدت اجرا: ۵ ماه</p>
+                                <div class="project-tags">
+                                    <span class="tag">لوکس</span>
+                                    <span class="tag">هوشمندسازی</span>
+                                </div>
                             </div>
                             <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
+                                <button class="view-details-btn" data-project="3">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات فنی</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
-                        <span class="project-type">Lorem.</span>
+                        <div class="client-info">
+                            <i class="bi bi-house-heart"></i>
+                            <span>مشتری خصوصی</span>
+                        </div>
+                        <h3>طراحی ویلا سازمانی</h3>
+                        <span class="project-type">مسکونی لوکس</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="hospitality">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="{% static 'img/travel.jpg' %}" alt="طراحی لابی هتل بین‌المللی">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>لابی هتل پرسپولیس</h3>
+                                <p>مساحت: ۶۰۰ متر مربع | مدت اجرا: ۳ ماه</p>
+                                <div class="project-tags">
+                                    <span class="tag">طراحی لابی</span>
+                                    <span class="tag">فضای پذیرایی</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-actions">
+                                <button class="view-details-btn" data-project="4">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات فنی</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="client-info">
+                            <i class="bi bi-stars"></i>
+                            <span>هتل پرسپولیس</span>
+                        </div>
+                        <h3>طراحی لابی هتل ۵ ستاره</h3>
+                        <span class="project-type">فضای اقامتی</span>
                     </div>
                 </div>
             </div>
@@ -204,22 +348,31 @@
             <div class="portfolio-item" data-category="office">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="pic">
+                        <img src="{% static 'img/smm.jpg' %}" alt="طراحی فضای استارتاپی">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>دفتر کار استارتاپ</h3>
-                                <p>فضای کاری خلاق و الهام‌بخش</p>
+                                <h3>دفتر استارتاپ فناوری</h3>
+                                <p>مساحت: ۳۰۰ متر مربع | مدت اجرا: ۲ ماه</p>
+                                <div class="project-tags">
+                                    <span class="tag">فضای خلاق</span>
+                                    <span class="tag">تیم‌ورک</span>
+                                </div>
                             </div>
                             <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
+                                <button class="view-details-btn" data-project="5">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات فنی</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>دفتر کار استارتاپ</h3>
-                        <span class="project-type">اداری</span>
+                        <div class="client-info">
+                            <i class="bi bi-lightbulb"></i>
+                            <span>استارتاپ تک‌نو</span>
+                        </div>
+                        <h3>طراحی فضای استارتاپی</h3>
+                        <span class="project-type">دفتر نوآوری</span>
                     </div>
                 </div>
             </div>
@@ -227,91 +380,31 @@
             <div class="portfolio-item" data-category="commercial">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="{% static 'img/home.jpg' %}" alt="pic">
+                        <img src="{% static 'img/digital.jpg' %}" alt="طراحی رستوران سازمانی">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3>Lorem, ipsum dolor.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <h3>رستوران سازمانی برج تجارت</h3>
+                                <p>مساحت: ۴۵۰ متر مربع | مدت اجرا: ۳ ماه</p>
+                                <div class="project-tags">
+                                    <span class="tag">سلف‌سرویس</span>
+                                    <span class="tag">ظرفیت بالا</span>
+                                </div>
                             </div>
                             <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
+                                <button class="view-details-btn" data-project="6">
+                                    <i class="bi bi-info-circle"></i>
+                                    <span>جزئیات فنی</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>Lorem, ipsum.</h3>
-                        <span class="project-type">lorem</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-category="commercial">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/travel.jpg' %}" alt="pic">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Lorem, ipsum dolor.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
-                                </button>
-                            </div>
+                        <div class="client-info">
+                            <i class="bi bi-cup-hot"></i>
+                            <span>برج تجارت</span>
                         </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Lorem, ipsum.</h3>
-                        <span class="project-type">lorem</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-category="commercial">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/smm.jpg' %}" alt="pic">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Lorem, ipsum dolor.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Lorem, ipsum.</h3>
-                        <span class="project-type">lorem</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-category="office">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="pic">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>اتاق کنفرانس شرکتی</h3>
-                                <p>طراحی حرفه‌ای برای جلسات مهم</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-details-btn">
-                                    <i class="bi bi-zoom-in"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>اتاق کنفرانس شرکتی</h3>
-                        <span class="project-type">اداری</span>
+                        <h3>طراحی رستوران سازمانی</h3>
+                        <span class="project-type">فضای پذیرایی</span>
                     </div>
                 </div>
             </div>
@@ -323,18 +416,18 @@
 <section class="process-section">
     <div class="container">
         <div class="section-header center">
-            <h2 class="section-title">فرآیند طراحی و اجرای پروژه</h2>
-            <p class="section-subtitle">از مشاوره اولیه تا تحویل نهایی، قدم به قدم با شما</p>
+            <h2 class="section-title">فرآیند سیستماتیک طراحی و اجرا</h2>
+            <p class="section-subtitle">رویکرد مرحله‌ای و مبتنی بر استانداردهای بین‌المللی</p>
         </div>
 
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-icon">
-                    <i class="bi bi-chat-dots"></i>
+                    <i class="bi bi-clipboard-data"></i>
                 </div>
                 <div class="step-content">
-                    <h4>مشاوره و بازدید</h4>
-                    <p>بررسی نیازهای شما، بازدید از فضای موجود و ارائه پیشنهاد اولیه</p>
+                    <h4>تحلیل نیاز و مطالعات اولیه</h4>
+                    <p>بررسی الزامات سازمانی، تحلیل فضای موجود و تدوین برنامه فیزیکی (Program)</p>
                 </div>
             </div>
 
@@ -343,8 +436,8 @@
                     <i class="bi bi-pencil-square"></i>
                 </div>
                 <div class="step-content">
-                    <h4>طراحی مفهومی</h4>
-                    <p>ارائه پلان، پرسپکتیو و رندرهای سه‌بعدی از طرح پیشنهادی</p>
+                    <h4>طراحی مفهومی و ارائه ایده</h4>
+                    <p>ارائه پلان مفهومی، پرسپکتیو و رندرهای سه‌بعدی برای تأیید ایده اصلی</p>
                 </div>
             </div>
 
@@ -353,8 +446,8 @@
                     <i class="bi bi-rulers"></i>
                 </div>
                 <div class="step-content">
-                    <h4>طراحی اجرایی</h4>
-                    <p>تهیه نقشه‌های فنی، دیتیل‌های اجرایی و لیست مصالح</p>
+                    <h4>طراحی تفصیلی و تهیه مستندات</h4>
+                    <p>تهیه نقشه‌های اجرایی، دیتیل‌های فنی و لیست مصالح تأییدشده</p>
                 </div>
             </div>
 
@@ -363,18 +456,18 @@
                     <i class="bi bi-hammer"></i>
                 </div>
                 <div class="step-content">
-                    <h4>اجرای پروژه</h4>
-                    <p>نظارت بر اجرا، کنترل کیفیت و مدیریت زمان‌بندی پروژه</p>
+                    <h4>اجرا و نظارت بر پروژه</h4>
+                    <p>مدیریت اجرا، کنترل کیفیت و نظارت بر زمان‌بندی مطابق با برنامه پروژه</p>
                 </div>
             </div>
 
             <div class="process-step">
                 <div class="step-icon">
-                    <i class="bi bi-house-check"></i>
+                    <i class="bi bi-clipboard-check"></i>
                 </div>
                 <div class="step-content">
-                    <h4>تحویل نهایی</h4>
-                    <p>تحویل پروژه و ارائه گارانتی خدمات و پشتیبانی پس از اجرا</p>
+                    <h4>تحویل و پشتیبانی پس از اجرا</h4>
+                    <p>تحویل نهایی، ارائه مستندات و پشتیبانی خدمات پس از اجرا</p>
                 </div>
             </div>
         </div>
@@ -382,8 +475,8 @@
 </section>
 
 <script>
-    // انیمیشن شماره‌ها
     document.addEventListener('DOMContentLoaded', function () {
+        // انیمیشن شماره‌های آماری
         const animateValue = (element, start, end, duration) => {
             let startTimestamp = null;
             const step = (timestamp) => {
@@ -437,6 +530,15 @@
                         }, 300);
                     }
                 });
+            });
+        });
+
+        // نمایش جزئیات پروژه
+        document.querySelectorAll('.view-details-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const projectId = this.getAttribute('data-project');
+                // در اینجا می‌توانید مودال نمایش جزئیات پروژه را باز کنید
+                alert(`نمایش جزئیات فنی پروژه شماره ${projectId}\n\nاین بخش می‌تواند به صفحه جداگانه پروژه یا مودال متصل شود.`);
             });
         });
     });

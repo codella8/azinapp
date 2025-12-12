@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}درباره ما - AZIN GROUP{% endblock %}
+{% block title %}about | azingroup{% endblock %}
 
 {% block content %}
 
-<!-- Hero Section حرفه‌ای -->
+<!-- بخش معرفی -->
 <section class="about-hero">
     <div class="hero-background">
         <div class="bg-image"></div>
@@ -21,28 +21,27 @@
         <div class="hero-content-wrapper">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="title-line">درباره</span>
-                    <span class="title-line highlight">آذین گروپ</span>
+                    <span class="title-line">هویت سازمانی</span>
+                    <span class="title-line highlight">گروه آذین</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptatem porro dolorum iure explicabo maiores eum.
+                    گروه آذین به عنوان یک مجموعه پیشرو در ارائه خدمات تخصصی، با تکیه بر دانش فنی، تجربه اجرایی و تعهد به کیفیت، همراهی قابل اعتماد برای سازمان‌ها و کسب‌وکارها در مسیر تحول دیجیتال می‌باشد.
                 </p>
 
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number" data-count="+10">+</div>
-                        <div class="stat-label">سال تجربه</div>
+                        <div class="stat-number" data-count="10">+</div>
+                        <div class="stat-label">سال فعالیت</div>
                     </div>
                 </div>
 
                 <div class="hero-actions">
                     <a href="{% url 'contact' %}" class="cta-btn primary">
-                        <span>شروع همکاری</span>
+                        <span>درخواست همکاری</span>
                         <i class="bi bi-arrow-left"></i>
                     </a>
                     <a href="{% url 'portfolio' %}" class="cta-btn secondary">
-                        <i class="bi bi-play-circle"></i>
+                        <i class="bi bi-folder2-open"></i>
                         <span>نمونه کارها</span>
                     </a>
                 </div>
@@ -51,7 +50,7 @@
             <div class="hero-visual">
                 <div class="visual-container">
                     <div class="main-image">
-                        <img src="{% static 'img/team1.jpg' %}" alt="تیم آذین گروپ" class="hero-img">
+                        <img src="{% static 'img/team1.jpg' %}" alt="pic" class="hero-img">
                     </div>
                     <div class="experience-badge">
                         <div class="badge-content">
@@ -69,10 +68,10 @@
     <div class="container">
         <div class="section-header">
             <div class="section-badge">
-                <span>داستان ما</span>
+                <span>تاریخچه سازمانی</span>
             </div>
-            <h2 class="section-title">سفر موفقیت ما</h2>
-            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus.</p>
+            <h2 class="section-title">مسیر توسعه سازمانی</h2>
+            <p class="section-subtitle">مراحل رشد و تکامل گروه آذین در یک دهه فعالیت مستمر</p>
         </div>
 
         <div class="story-timeline">
@@ -80,37 +79,32 @@
                 <div class="timeline-year">2017</div>
                 <div class="timeline-content">
                     <div class="timeline-icon">
-                        <i class="bi bi-rocket"></i>
-                    </div>
-                    <h4>تأسیس آذین گروپ</h4>
-                    <p>آذین گروپ توسط احمد ولید سعیدی در شهر کابل بنیان‌گذاری شد. هدف ما از همان ابتدا ارائه خدمات و
-                        محصولاتی نوآورانه، باکیفیت و جامع در عرصه‌های مختلف تجارت آنلاین و تکنولوژی بود.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">2020</div>
-                <div class="timeline-content">
-                    <div class="timeline-icon">
-                        <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <h4>توسعه خدمات دیجیتال</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum dolores vitae distinctio incidunt, nesciunt cupiditate
-                        esse nobis excepturi quas recusandae libero alias iusto deserunt
-                        sapiente earum vero fuga voluptatum nihil.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">2023</div>
-                <div class="timeline-content">
-                    <div class="timeline-icon">
                         <i class="bi bi-building"></i>
                     </div>
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, molestias? Tempore, autem.
-                    </p>
+                    <h4>تأسیس رسمی گروه آذین</h4>
+                    <p>گروه آذین با هدف ارائه خدمات تخصصی در حوزه‌های فناوری اطلاعات و کسب‌وکار دیجیتال توسط  تأسیس گردید. تمرکز اولیه بر ارائه راهکارهای نرم‌افزاری و خدمات مشاوره‌ای به سازمان‌های خصوصی و دولتی قرار داشت.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2019</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <h4>توسعه ساختار سازمانی و ایجاد واحدهای تخصصی</h4>
+                    <p>با گسترش دامنه فعالیت‌ها، واحدهای تخصصی شامل واحد توسعه نرم‌افزار، واحد رسانه و واحد مشاوره کسب‌وکار شکل گرفتند. این دوره شاهد افزایش قابل توجه در تعداد پروژه‌های اجرایی و گسترش شبکه همکاران تجاری بود.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <h4>کسب گواهینامه‌های بین‌المللی و توسعه بازارهای منطقه‌ای</h4>
+                    <p>دریافت گواهینامه‌های معتبر بین‌المللی در حوزه کیفیت و امنیت اطلاعات. همکاری با سازمان‌های بین‌المللی و اجرای پروژه‌های مشترک در سطح منطقه آغاز گردید.</p>
                 </div>
             </div>
 
@@ -120,19 +114,8 @@
                     <div class="timeline-icon">
                         <i class="bi bi-globe"></i>
                     </div>
-                    <h4>Lorem, ipsum dolor.</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nesciunt.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-year">2025</div>
-                <div class="timeline-content">
-                    <div class="timeline-icon">
-                        <i class="bi bi-globe"></i>
-                    </div>
-                    <h4>Lorem, ipsum dolor.</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nesciunt.</p>
+                    <h4>راه‌اندازی سکوی خدمات یکپارچه ابری</h4>
+                    <p>راه‌اندازی پلتفرم یکپارچه خدمات ابری با قابلیت ارائه خدمات به صورت SaaS به مشتریان سازمانی. این دوره شاهد رشد ۴۰ درصدی درآمد و گسترش تیم فنی به بیش از ۵۰ متخصص بود.</p>
                 </div>
             </div>
         </div>
@@ -144,10 +127,10 @@
     <div class="container">
         <div class="section-header text-center">
             <div class="section-badge">
-                <span>تخصص‌ها</span>
+                <span>واحدهای سازمانی</span>
             </div>
-            <h2 class="section-title">حوزه‌های تخصصی ما</h2>
-            <p class="section-subtitle">چهار رکن اصلی موفقیت آذین گروپ</p>
+            <h2 class="section-title">ساختار تخصصی گروه</h2>
+            <p class="section-subtitle">چهار ستون اصلی خدمات گروه آذین</p>
         </div>
 
         <div class="expertise-grid">
@@ -156,16 +139,16 @@
                     <i class="bi bi-shop"></i>
                 </div>
                 <div class="card-content">
-                    <h3>آذین استور</h3>
-                    <p>فروشگاه اینترنتی و فیزیکی با محصولات معتبر و خدمات سریع و مطمئن</p>
+                    <h3>واحد بازرگانی و تأمین</h3>
+                    <p>ارائه خدمات جامع بازرگانی، تأمین کالا و محصولات با کیفیت با تمرکز بر نیازهای سازمانی و تأمین زنجیره‌ای</p>
                     <div class="card-stats">
                         <div class="stat">
-                            <span class="number">500+</span>
-                            <span class="label">محصول</span>
+                            <span class="number">۵۰۰+</span>
+                            <span class="label">کالای تأییدشده</span>
                         </div>
                         <div class="stat">
-                            <span class="number">24/7</span>
-                            <span class="label">پشتیبانی</span>
+                            <span class="number">۹۸%</span>
+                            <span class="label">رضایت مشتری</span>
                         </div>
                     </div>
                 </div>
@@ -176,16 +159,16 @@
                     <i class="bi bi-megaphone"></i>
                 </div>
                 <div class="card-content">
-                    <h3>آذین مدیا</h3>
-                    <p>تیم تخصصی دیجیتال مارکتینگ، مدیریت شبکه‌های اجتماعی و تولید محتوا</p>
+                    <h3>واحد رسانه و ارتباطات</h3>
+                    <p>تولید محتوای سازمانی، مدیریت ارتباطات رسانه‌ای و اجرای کمپین‌های تبلیغاتی مبتنی بر استراتژی</p>
                     <div class="card-stats">
                         <div class="stat">
-                            <span class="number">70%</span>
-                            <span class="label">رشد</span>
+                            <span class="number">۱۵۰+</span>
+                            <span class="label">پروژه اجرایی</span>
                         </div>
                         <div class="stat">
-                            <span class="number">150+</span>
-                            <span class="label">کمپین</span>
+                            <span class="number">۷۰%</span>
+                            <span class="label">میانگین رشد مشتریان</span>
                         </div>
                     </div>
                 </div>
@@ -193,15 +176,19 @@
 
             <div class="expertise-card">
                 <div class="card-icon">
-                    <i class="bi bi-house-door"></i>
+                    <i class="bi bi-building"></i>
                 </div>
                 <div class="card-content">
-                    <h3>آذین دکور</h3>
-                    <p>خدمات طراحی داخلی و دکوراسیون با خلاقیت و تیم اجرایی حرفه‌ای</p>
+                    <h3>واحد طراحی و معماری</h3>
+                    <p>ارائه خدمات طراحی داخلی، معماری و دکوراسیون فضای اداری و تجاری با رعایت استانداردهای بین‌المللی</p>
                     <div class="card-stats">
                         <div class="stat">
-                            <span class="number">100+</span>
-                            <span class="label">پروژه</span>
+                            <span class="number">۱۰۰+</span>
+                            <span class="label">پروژه تکمیل شده</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">۱۰۰%</span>
+                            <span class="label">تعهد به زمان‌بندی</span>
                         </div>
                     </div>
                 </div>
@@ -212,16 +199,16 @@
                     <i class="bi bi-airplane"></i>
                 </div>
                 <div class="card-content">
-                    <h3>آذین تراول</h3>
-                    <p>خدمات گردشگری کامل شامل ویزا، بلیط و تورهای داخلی و خارجی</p>
+                    <h3>واحد خدمات مسافرتی</h3>
+                    <p>ارائه خدمات جامع مسافرتی شامل رزرواسیون، ویزا و تورهای تجاری با پشتیبانی ۲۴ ساعته</p>
                     <div class="card-stats">
                         <div class="stat">
-                            <span class="number">50+</span>
-                            <span class="label">مقصد</span>
+                            <span class="number">۵۰+</span>
+                            <span class="label">مقصد بین‌المللی</span>
                         </div>
                         <div class="stat">
-                            <span class="number">1000+</span>
-                            <span class="label">مسافر</span>
+                            <span class="number">۱۰۰۰+</span>
+                            <span class="label">مسافر سازمانی</span>
                         </div>
                     </div>
                 </div>
@@ -236,14 +223,13 @@
             <div class="mission-section">
                 <div class="section-header">
                     <div class="section-badge">
-                        <span>ماموریت</span>
+                        <span>بیانیه مأموریت</span>
                     </div>
                 </div>
 
                 <div class="mission-content">
                     <p class="mission-text">
-                        ما باور داریم که با ترکیب <strong>نوآوری، تخصص و تعهد</strong> می‌توانیم تجربه‌ای متفاوت و
-                        ارزشمند برای مشتریان خود خلق کنیم. هدف ما ساختن آینده‌ای دیجیتال برای برندها و کسب‌وکارهاست.
+                        گروه آذین متعهد به ارائه راهکارهای نوآورانه و اثربخش در حوزه فناوری اطلاعات و خدمات تخصصی است. ما با بهره‌گیری از دانش روز و تجربه اجرایی، در جهت ارتقای بهره‌وری و ایجاد ارزش افزوده پایدار برای شرکای تجاری خود تلاش می‌کنیم. تمرکز اصلی ما بر توسعه راهکارهای یکپارچه‌ای است که همسو با اهداف استراتژیک سازمان‌ها بوده و زمینه‌ساز رشد و تحول دیجیتال آن‌ها باشد.
                     </p>
 
                     <div class="vision-card">
@@ -251,9 +237,8 @@
                             <i class="bi bi-eye"></i>
                         </div>
                         <div class="vision-content">
-                            <h4>چشم‌انداز ما</h4>
-                            <p>تبدیل شدن به پیشروترین مجموعه ارائه‌دهنده خدمات دیجیتال و مشاوره در سطح منطقه تا سال 2026
-                            </p>
+                            <h4>چشم‌انداز سازمانی</h4>
+                            <p>تبدیل شدن به ارائه‌دهنده برتر خدمات تخصصی در سطح منطقه تا سال ۱۴۰۶ از طریق توسعه مداوم دانش فنی، جذب و پرورش استعدادهای برتر و ایجاد ارزش متمایز برای ذینفعان</p>
                         </div>
                     </div>
                 </div>
@@ -262,7 +247,7 @@
             <div class="values-section">
                 <div class="section-header">
                     <div class="section-badge">
-                        <span>ارزش‌ها</span>
+                        <span>ارزش‌های محوری</span>
                     </div>
                 </div>
 
@@ -272,8 +257,8 @@
                             <i class="bi bi-lightbulb"></i>
                         </div>
                         <div class="value-content">
-                            <h4>نوآوری</h4>
-                            <p>همیشه به دنبال راهکارهای خلاقانه و تکنولوژی‌های جدید برای رشد مشتریان</p>
+                            <h4>نوآوری و تعالی</h4>
+                            <p>توسعه مستمر راهکارهای نوآورانه و تعهد به ارائه خدمات با بالاترین استانداردهای کیفیت</p>
                         </div>
                     </div>
 
@@ -282,8 +267,8 @@
                             <i class="bi bi-people"></i>
                         </div>
                         <div class="value-content">
-                            <h4>همکاری تیمی</h4>
-                            <p>ترکیبی از تخصص‌های گوناگون برای ارائه بهترین و کامل‌ترین خدمات</p>
+                            <h4>توسعه سرمایه انسانی</h4>
+                            <p>توجه ویژه به رشد و توسعه مستمر نیروی انسانی به عنوان ارزشمندترین دارایی سازمان</p>
                         </div>
                     </div>
 
@@ -292,8 +277,8 @@
                             <i class="bi bi-shield-check"></i>
                         </div>
                         <div class="value-content">
-                            <h4>اعتماد و کیفیت</h4>
-                            <p>کیفیت بالا و پایبندی به اعتماد مشتری ارزش اصلی و غیرقابل مذاکره ماست</p>
+                            <h4>اعتماد و مسئولیت‌پذیری</h4>
+                            <p>پایبندی به تعهدات و ایجاد رابطه‌ای مبتنی بر اعتماد متقابل با کلیه ذینفعان</p>
                         </div>
                     </div>
 
@@ -302,8 +287,8 @@
                             <i class="bi bi-graph-up-arrow"></i>
                         </div>
                         <div class="value-content">
-                            <h4>توسعه مستمر</h4>
-                            <p>یادگیری و بهبود دائمی در تمامی فرآیندها و خدمات</p>
+                            <h4>توسعه پایدار</h4>
+                            <p>ایجاد ارزش افزوده پایدار برای مشتریان، کارکنان و جامعه با رعایت اصول توسعه پایدار</p>
                         </div>
                     </div>
                 </div>
@@ -311,15 +296,16 @@
         </div>
     </div>
 </section>
-<!-- تیم متخصص -->
+
+<!-- تیم مدیریت -->
 <section class="team-section-about">
     <div class="container">
         <div class="section-header text-center">
             <div class="section-badge">
-                <span>تیم ما</span>
+                <span>تیم رهبری</span>
             </div>
-            <h2 class="section-title">با متخصصان ما آشنا شوید</h2>
-            <p class="section-subtitle">تیمی متشکل از بهترین متخصصان در زمینه طراحی و توسعه</p>
+            <h2 class="section-title">هیأت مدیره و تیم اجرایی</h2>
+            <p class="section-subtitle">مجموعه‌ای از متخصصان مجرب با سوابق اجرایی اثبات‌شده</p>
         </div>
 
         {% if team %}
@@ -357,7 +343,7 @@
                             <h3 class="member-name">{{ member.name }}</h3>
                             <p class="member-role">{{ member.role }}</p>
                             <div class="member-divider"></div>
-                            <p class="member-bio">{{ member.bio|default:"عضو متخصص تیم آذین گروپ"|truncatewords:12 }}
+                            <p class="member-bio">{{ member.bio|default:"عضو هیأت مدیره و تیم اجرایی گروه آذین"|truncatewords:12 }}
                             </p>
                         </div>
                     </div>
@@ -370,8 +356,8 @@
             <div class="empty-icon">
                 <i class="bi bi-people"></i>
             </div>
-            <h3>تیم ما در حال تکمیل است</h3>
-            <p>به زودی با متخصصان حرفه‌ای ما آشنا خواهید شد</p>
+            <h3>اطلاعات تیم مدیریت در حال تکمیل می‌باشد</h3>
+            <p>به زودی مشخصات اعضای هیأت مدیره و تیم اجرایی در این بخش منتشر خواهد شد</p>
         </div>
         {% endif %}
     </div>
