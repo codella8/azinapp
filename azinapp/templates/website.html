@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}توسعه وبسایت سازمانی | گروه آذین{% endblock %}
+{% block title %}توسعه وبسایت | گروه آذین{% endblock %}
 
 {% block content %}
 <!-- هیرو سکشن خدمات -->
@@ -26,19 +26,17 @@
                 </div>
 
                 <h1 class="service-hero-title">
-                    <span class="title-line">توسعه پورتال‌ها و وبسایت‌های</span>
+                    <span class="title-line">توسعه وبسایت های</span>
                     <span class="title-line accent">سازمانی پیشرفته</span>
                 </h1>
 
                 <p class="service-hero-description">
-                    واحد توسعه وب گروه آذین با بهره‌گیری از تیم متخصص و استفاده از جدیدترین تکنولوژی‌های روز، راهکارهای جامعی برای طراحی و توسعه وبسایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوای پیشرفته ارائه می‌دهد. کیفیت، امنیت و کارایی در اولویت ماست.
+                    واحد توسعه وب گروه آذین با بهره‌گیری از تیم متخصص و استفاده از جدیدترین تکنولوژی‌های روز، راهکارهای
+                    جامعی برای طراحی و توسعه وبسایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوای پیشرفته
+                    ارائه می‌دهد. کیفیت، امنیت و کارایی در اولویت ماست.
                 </p>
 
                 <div class="service-hero-stats">
-                    <div class="hero-stat">
-                        <div class="stat-number" data-count="120">0</div>
-                        <div class="stat-label">پروژه اجرایی</div>
-                    </div>
                     <div class="hero-stat">
                         <div class="stat-number" data-count="99">0<span>%</span></div>
                         <div class="stat-label">رضایت سازمانی</div>
@@ -70,7 +68,7 @@
                     <div class="showcase-device desktop">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/web.jpg' %}" alt="پورتال سازمانی طراحی شده">
+                                <img src="{% static 'img/web.jpg' %}" alt="pic">
                                 <div class="device-label">پورتال سازمانی</div>
                             </div>
                         </div>
@@ -78,7 +76,7 @@
                     <div class="showcase-device tablet">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/wel.jpg' %}" alt="نمونه وبسایت ریسپانسیو">
+                                <img src="{% static 'img/wel.jpg' %}" alt="pic">
                                 <div class="device-label">نمایش تبلت</div>
                             </div>
                         </div>
@@ -86,7 +84,7 @@
                     <div class="showcase-device mobile">
                         <div class="device-frame">
                             <div class="device-screen">
-                                <img src="{% static 'img/market.jpg' %}" alt="نمونه اپلیکیشن وب">
+                                <img src="{% static 'img/market.jpg' %}" alt="pic">
                                 <div class="device-label">نمایش موبایل</div>
                             </div>
                         </div>
@@ -97,7 +95,6 @@
     </div>
 </section>
 
-<!-- بخش اهمیت وبسایت سازمانی -->
 <section class="importance-section">
     <div class="container">
         <div class="section-header center">
@@ -155,20 +152,26 @@
                     <div class="type-icon">
                         <i class="bi bi-building"></i>
                     </div>
-                    <span class="type-badge">primary</span>
+                    <span class="type-badge">Basic</span>
                 </div>
-                <h3>پورتال سازمانی و شرکتی</h3>
-                <p>توسعه پورتال‌های جامع سازمانی با امکانات مدیریت محتوا، بخش‌های مختلف سازمانی و سیستم گزارش‌گیری</p>
                 <ul class="type-features">
-                    <li>سیستم مدیریت محتوای پیشرفته (CMS)</li>
-                    <li>پنل مدیریت چندسطحی با دسترسی‌های متفاوت</li>
-                    <li>گالری تصاویر و مدیریت فایل سازمانی</li>
-                    <li>فرم‌های تماس و درخواست آنلاین</li>
-                    <li>اتصال به سیستم‌های داخلی سازمان</li>
-                    <li>پنل آمار و گزارش‌گیری پیشرفته</li>
+                    <li>مناسب برای :</li>
+                    <li>کسب و کار های کوچک</li>
+                    <li>سایت های معرفی خدمات</li>
+                    <li>برند های نوپا</li>
+                </ul>
+                <p>امکانات:</p>
+                <ul class="type-features">
+                    <li>طراحی سایت تا 5 صفحه</li>
+                    <li>طراحی برای موبایل ,تبلیت و دسکتاپ</li>
+                    <li>فرم تماس با ارسال ایمیل</li>
+                    <li>سیستم کاربران (Authentication)</li>
+                    <li>اتصال شبکه های اجتماعی</li>
+                    <li>پنل مدیریت محتوا</li>
+                    <li>سئو پایه</li>
                 </ul>
                 <div class="type-price">
-                    <span class="price-note">(بسته به پیچیدگی پروژه)</span>
+                    <span class="price-note">قیمت </span>
                 </div>
                 <a href="{% url 'contact' %}?type=corporate" class="type-cta-btn">
                     <span>ثبت سفارش</span>
@@ -181,22 +184,28 @@
                     <div class="type-icon">
                         <i class="bi bi-cart-check"></i>
                     </div>
-                    <span class="type-badge">medium</span>
+                    <span class="type-badge">Standard</span>
                 </div>
-                <h3>پلتفرم تجارت الکترونیک</h3>
-                <p>توسعه فروشگاه‌های آنلاین پیشرفته با سیستم‌های پرداخت، مدیریت موجودی و لجستیک یکپارچه</p>
+
                 <ul class="type-features">
-                    <li>سیستم مدیریت محصولات و دسته‌بندی‌ها</li>
-                    <li>درگاه پرداخت امن چندگانه</li>
-                    <li>سیستم مدیریت سفارشات و پیگیری</li>
-                    <li>پنل مدیریت مشتریان و باشگاه مشتریان</li>
-                    <li>سیستم انبارداری و مدیریت موجودی</li>
-                    <li>گزارش‌های تحلیلی فروش و مالی</li>
-                    <li>سیستم حمل و نقل و لجستیک</li>
-                    <li>پنل تخفیف‌ها و کمپین‌های فروش</li>
+                    <li>مناسب:</li>
+                    <li>شرکت ها استارت آپ ها</li>
+                    <li>فروش خدمات و جذب مشتری</li>
+                </ul>
+
+                <p>امکانات:</p>
+                <ul class="type-features">
+                    <li>طراحی تا 10 صفحه</li>
+                    <li>طراحی UI/UX اختصاصی</li>
+                    <li>پنل مدیریت پیشرفته</li>
+                    <li>بلاگ حرفه ای</li>
+                    <li>چند زبانه (2 زبانه)</li>
+                    <li>سیستم کاربران (Authentication)</li>
+                    <li>بهینه سازی سرعت</li>
+                    <li>سطح امنیت بالاتر</li>
                 </ul>
                 <div class="type-price">
-                    <span class="price-note">(بسته به امکانات مورد نیاز)</span>
+                    <span class="price-note">قیمت</span>
                 </div>
                 <a href="{% url 'contact' %}?type=ecommerce" class="type-cta-btn">
                     <span>ثبت سفارش</span>
@@ -209,21 +218,26 @@
                     <div class="type-icon">
                         <i class="bi bi-person-badge"></i>
                     </div>
-                    <span class="type-badge">pro</span>
+                    <span class="type-badge">Pro (سطح سازمانی)</span>
                 </div>
-                <h3>وبسایت‌های تخصصی و پرتال‌های ویژه</h3>
-                <p>توسعه وبسایت‌های تخصصی برای مشاغل خاص، پرتال‌های خبری، آموزشی و سیستم‌های مدیریت رویداد</p>
+                <li>مناسب:</li>
+                <li>فروشگاها, پلتفرم ها , سیستم های ERP و سیستم های اختصاصی</li>
+                <p>امکانات:</p>
                 <ul class="type-features">
-                    <li>وبسایت‌های تخصصی پزشکی، حقوقی، مهندسی</li>
-                    <li>پرتال‌های خبری و رسانه‌ای</li>
-                    <li>سایت‌های آموزشی و مدیریت دوره‌ها</li>
-                    <li>سیستم رزرواسیون آنلاین</li>
-                    <li>پرتال‌های مدیریت رویداد و همایش</li>
-                    <li>وبسایت‌های سازمان‌های دولتی و NGO</li>
+                    <li>طراحی کاملا اختصاصی</li>
+                    <li>تعداد صفحات نا محدود</li>
+                    <li>پنل مدیریت سفارشی</li>
+                    <li>سیستم کاربران و سطوح دسترسی</li>
+                    <li>رزواسیون و پرداخت آنلاین</li>
+                    <li>گزارشگیری هوشمند و گزارش های فروش و مالی</li>
+                    <li>سیستم انبار داری و مدیریت موجودی</li>
+                    <li>امنیت پیشرفته</li>
+                    <li>تست و دیپلوی کامل</li>
+                    <li>مستندات فنی</li>
                 </ul>
                 <div class="type-price">
 
-                    <span class="price-note">(متناسب با نوع سرویس)</span>
+                    <span class="price-note">قیمت</span>
                 </div>
                 <a href="{% url 'contact' %}?type=specialized" class="type-cta-btn">
                     <span>ثبت سفارش</span>
@@ -234,7 +248,6 @@
     </div>
 </section>
 
-<!-- بخش ویژگی‌های فنی -->
 <section class="technical-features-section">
     <div class="container">
         <div class="section-header center">
@@ -334,7 +347,7 @@
                 </div>
             </div>
 
-            <div class="process-step">   
+            <div class="process-step">
                 <div class="step-number">۰۲</div>
                 <div class="step-icon">
                     <i class="bi bi-pencil-square"></i>
@@ -400,26 +413,6 @@
                         <li>مانیتورینگ و گزارش‌گیری عملکرد</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش CTA -->
-<section class="website-cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>آماده توسعه پلتفرم دیجیتال سازمانی خود هستید؟</h2>
-            <p>برای دریافت مشاوره تخصصی، تحلیل نیازمندی‌ها و دریافت پروپوزال توسعه، با واحد توسعه وب گروه آذین تماس بگیرید</p>
-            <div class="cta-actions">
-                <a href="{% url 'contact' %}" class="cta-btn primary">
-                    <i class="bi bi-chat-left-text"></i>
-                    <span>درخواست جلسه مشاوره فنی</span>
-                </a>
-                <a href="tel:+992110006443" class="cta-btn secondary">
-                    <i class="bi bi-telephone-outbound"></i>
-                    <span>تماس با واحد توسعه</span>
-                </a>
             </div>
         </div>
     </div>
