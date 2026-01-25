@@ -1,4 +1,3 @@
-/* ===== Scoped Hero styles - do not affect other parts of site ===== */
 .premium-hero {
     position: relative;
     width: 100%;
@@ -16,12 +15,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
-    /* مثل نمونه: تمرکز سمت راست */
     z-index: 1;
     filter: contrast(0.98) saturate(0.95);
 }
 
-/* gradient + blur overlay to make text readable */
 .premium-hero__overlay {
     position: absolute;
     inset: 0;
@@ -30,8 +27,6 @@
     -webkit-backdrop-filter: blur(6px);
     z-index: 2;
 }
-
-/* content container (centered, responsive) */
 .premium-hero__container {
     position: relative;
     z-index: 6;
@@ -6382,31 +6377,6 @@ body {
     font-weight: bold;
 }
 
-.type-price {
-    text-align: center;
-    margin-bottom: 25px;
-    padding: 20px 0;
-    border-top: 1px solid #e9ecef;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.price-from {
-    display: block;
-    color: #6c757d;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.price-amount {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-}
-
-.price-amount span {
-    font-size: 1rem;
-    color: #6c757d;
-}
 
 .type-cta-btn {
     display: flex;
@@ -6420,6 +6390,7 @@ body {
     text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
+    margin-bottom: 0%;
     transition: all 0.3s ease;
 }
 
@@ -6492,48 +6463,6 @@ body {
     background: #ffcc00;
     border-radius: 3px;
     transition: width 1s ease-in-out;
-}
-
-/* بخش فرآیند کار */
-.process-section {
-    padding: 100px 0;
-    background: #f8f9fa;
-}
-
-.process-timeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    position: relative;
-}
-
-.process-timeline::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #ffcc00;
-    z-index: 1;
-}
-
-.process-step {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-.step-content h4 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.step-content p {
-    color: #6c757d;
-    line-height: 1.6;
 }
 
 /* رسپانسیو */

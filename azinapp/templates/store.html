@@ -36,28 +36,7 @@
                     مطمئن برای تأمین نیازهای سازمانی شما هستیم.
                 </p>
 
-                <div class="store-stats">
-                    <div class="store-stat">
-                        <div class="stat-number" data-count="1000">0<span>+</span></div>
-                        <div class="stat-label">کالای تأییدشده</div>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="store-stat">
-                        <div class="stat-number" data-count="50000">0<span>+</span></div>
-                        <div class="stat-label">سازمان همکار</div>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="store-stat">
-                        <div class="stat-number" data-count="24">0</div>
-                        <div class="stat-label">ساعت پشتیبانی سازمانی</div>
-                    </div>
-                </div>
-
                 <div class="store-hero-actions">
-                    <a href="{% url 'contact' %}" class="store-cta-btn primary">
-                        <i class="bi bi-cart-check"></i>
-                        <span>درخواست کاتالوگ محصولات</span>
-                    </a>
                     <a href="tel:+992110006443" class="store-cta-btn secondary">
                         <i class="bi bi-headset"></i>
                         <span>تماس با واحد فروش</span>
@@ -369,75 +348,4 @@
         </div>
     </div>
 </section>
-
-<script>
-    // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function () {
-        const animateValue = (element, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value;
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const valueElement = entry.target;
-                    const target = parseInt(valueElement.getAttribute('data-count'));
-                    animateValue(valueElement, 0, target, 2000);
-                    observer.unobserve(valueElement);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
-
-        // درخواست کاتالوگ و استعلام قیمت
-        const categoryLinks = document.querySelectorAll('.category-link');
-        categoryLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const category = this.getAttribute('href').split('=')[1];
-                const categoryNames = {
-                    'it': 'تجهیزات فناوری اطلاعات',
-                    'office': 'تجهیزات اداری و سازمانی',
-                    'consumables': 'ملزومات مصرفی سازمانی',
-                    'technical': 'تجهیزات فنی و صنعتی'
-                };
-
-                // نمایش پیام تأیید
-                const categoryName = categoryNames[category] || 'دسته‌بندی انتخابی';
-                if (confirm(`آیا مایل به دریافت کاتالوگ و استعلام قیمت برای دسته "${categoryName}" هستید؟`)) {
-                    window.location.href = this.href;
-                }
-            });
-        });
-
-        // شبیه‌سازی درخواست مشاوره
-        const consultBtns = document.querySelectorAll('.store-cta-btn, .cta-btn');
-        consultBtns.forEach(btn => {
-            if (btn.href.includes('contact') || btn.href.includes('tel:')) {
-                btn.addEventListener('click', function (e) {
-                    if (!this.href.includes('tel:')) {
-                        e.preventDefault();
-                        // ثبت درخواست مشاوره
-                        console.log('ثبت درخواست مشاوره تأمین سازمانی');
-                        // هدایت به صفحه تماس
-                        setTimeout(() => {
-                            window.location.href = this.href;
-                        }, 500);
-                    }
-                });
-            }
-        });
-    });
-</script>
 {% endblock content %}

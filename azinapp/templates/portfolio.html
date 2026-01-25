@@ -32,16 +32,16 @@
             <div class="luxury-hero-visual">
                 <div class="prestige-showcase">
                     <div class="showcase-item showcase-main">
-                        <img src="{% static 'img/decore.jpg' %}" alt="پروژه شاخص طراحی دکوراسیون اداری">
+                        <img src="{% static 'img/decore.jpg' %}" alt="alt">
                         <div class="showcase-overlay">
                             <span class="showcase-badge">پروژه منتخب</span>
                         </div>
                     </div>
                     <div class="showcase-item showcase-secondary">
-                        <img src="{% static 'img/about.jpg' %}" alt="پروژه طراحی وب‌سایت سازمانی">
+                        <img src="{% static 'img/about.jpg' %}" alt="alt">
                     </div>
                     <div class="showcase-item showcase-tertiary">
-                        <img src="{% static 'img/market.jpg' %}" alt="پروژه توسعه پورتال تجارت الکترونیک">
+                        <img src="{% static 'img/market.jpg' %}" alt="alt">
                     </div>
                 </div>
             </div>
@@ -152,24 +152,10 @@
 
                     <div class="portfolio-content luxury">
                         <div class="content-header">
-                            <div class="project-category">
-                                <span class="category-badge">{{ project.category|default:"سطح یک" }}</span>
-                            </div>
                             <h3 class="project-title">{{ project.name }}</h3>
                         </div>
 
                         <p class="project-description">{{ project.description|truncatewords:15 }}</p>
-
-                        <div class="project-footer">
-                            <div class="client-info">
-                                <i class="bi bi-building"></i>
-                                <span>{{ project.client|default:"سازمان خصوصی" }}</span>
-                            </div>
-                            <div class="project-year">
-                                <i class="bi bi-calendar"></i>
-                                <span>{{ project.year|default:"1403" }}</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
