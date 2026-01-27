@@ -6390,7 +6390,6 @@ body {
     text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
-    margin-bottom: 0%;
     transition: all 0.3s ease;
 }
 
@@ -8006,7 +8005,7 @@ body {
     }
 }
 
-/* استایل‌های صفحه فروشگاه اینترنتی آذین */
+/* store.html style*/
 :root {
     --primary-dark: #282828;
     --primary-accent: #fdce0a;
