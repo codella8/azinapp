@@ -28,7 +28,10 @@ SECRET_KEY = 'django-insecure--qy@2yn56u^$rx)sq0s0b3$-&g=%4@sz)1%mdfj1=%4)0*c_0l
 DEBUG = True
 ALLOWED_HOSTS = ['azingroup.com', 'www.azingroup.com']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://azingroup.com",
+    "https://www.azingroup.com",
+]
 # ======================================== #
 # APPLICATION DEFINITION                   #
 # ======================================== #
