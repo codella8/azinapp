@@ -1,15 +1,7 @@
 from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
-from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    path('admin-panel/', views.admin_panel, name='admin_panel'),
-    
-    # ======================================== #
-    # MAIN PAGES                              #
-    # ======================================== #
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
@@ -54,11 +46,3 @@ urlpatterns = [
     path('profile/info/', views.update_info, name='update_info'),
     path('profile/password/', views.update_password, name='update_password'),
 ]
-
-# ======================================== #
-# STATIC & MEDIA FILES (Development)       #
-# ======================================== #
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
