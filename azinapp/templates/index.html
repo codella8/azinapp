@@ -1,294 +1,511 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load static %}
-{% block title %}صفحه اصلی | گروه آذین{% endblock %}
+
+{% block title %}AZIN GROUP — Digital, Creative & Business Services{% endblock %}
+
+{% block meta_description %}AZIN GROUP provides web development, media production, graphic design, social media management, and practical business services for organizations and growing businesses.{% endblock %}
+
+{% block og_title %}AZIN GROUP — Digital, Creative & Business Services{% endblock %}
+
+{% block og_description %}AZIN GROUP provides practical web, media, design, social media, and business services tailored to the needs of modern organizations.{% endblock %}
 
 {% block content %}
-<!-- ====== HERO ====== -->
-<section class="premium-hero" aria-label="بخش معرفی">
-    <div class="premium-hero__bg" role="img" aria-hidden="true"></div>
-    <div class="premium-hero__overlay" aria-hidden="true"></div>
-    <div class="premium-hero__container">
-        <div class="premium-hero__left">
 
-            <h1 class="premium-hero__title">
-                ارائه راهکارهای یکپارچه دیجیتال<br>برای توسعه کسب‌وکار
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="hero" aria-label="{% trans 'Hero section' %}">
+    <div class="hero__container">
+        <div class="hero__content">
+            <span class="hero__badge">{% trans "Digital & Creative Services" %}</span>
+            
+            <h1 class="hero__title">
+                {% trans "Digital Solutions &" %}<br>
+                <span class="hero__accent">{% trans "Creative Services" %}</span>
             </h1>
-
-            <p class="premium-hero__lead">
-                گروه آذین با بهره‌گیری از تیم متخصص و رویکردی نظام‌مند، مجموعه‌ای کامل از خدمات طراحی وب، توسعه اپلیکیشن موبایل و راهکارهای مدیریت دیجیتال را برای تحقق اهداف تجاری شما ارائه می‌نماید.
+            
+            <p class="hero__description">
+                {% trans "AZIN GROUP provides practical digital, creative, and business services designed around the needs of organizations and growing businesses. We bring technology, content, design, and business support together to help you build, improve, and manage your digital presence." %}
             </p>
-
-            <div class="premium-hero__actions">
-                <a class="premium-hero__btn primary" href="{% url 'contact' %}">درخواست مشاوره تخصصی</a>
-                <a class="premium-hero__btn outline" href="{% url 'portfolio' %}">مشاهده سوابق اجرایی</a>
+            
+            <div class="hero__actions">
+                <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                    {% trans "Discuss Your Project" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-
-            <div class="premium-hero__stats">
-                <div class="premium-hero__stat">
-                    <div class="num" data-target="150">150+</div>
-                    <div class="label">پروژه تکمیل شده</div>
+            
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <div class="hero__stat-number" data-count="120">0</div>
+                    <div class="hero__stat-label">{% trans "Projects Delivered" %}</div>
                 </div>
-                <div class="premium-hero__stat">
-                    <div class="num" data-target="100">100+</div>
-                    <div class="label">شرکت همکار</div>
+                <div class="hero__stat">
+                    <div class="hero__stat-number" data-count="80">0</div>
+                    <div class="hero__stat-label">{% trans "Clients Served" %}</div>
                 </div>
-                <div class="premium-hero__stat">
-                    <div class="num" data-target="10">10</div>
-                    <div class="label">سال فعالیت مستمر</div>
+                <div class="hero__stat">
+                    <div class="hero__stat-number" data-count="12">0</div>
+                    <div class="hero__stat-label">{% trans "Years of Experience" %}</div>
                 </div>
             </div>
         </div>
-
-        <div class="premium-hero__right" aria-hidden="true">
-            <img class="premium-hero__image" src="{% static 'img/azinlogo.jpg' %}" alt="لوگوی گروه آذین" />
+        
+        <div class="hero__visual">
+            <img src="{% static 'img/azinlogo.jpg' %}" alt="AZIN GROUP — Digital, Creative & Business Services" class="hero__image" loading="lazy">
         </div>
     </div>
 </section>
 
 
-<!-- بخش زیرمجموعه‌ها -->
-<section class="subsidiaries-section">
+<!-- ======================================== -->
+<!-- 2. AZIN GROUP OVERVIEW                   -->
+<!-- ======================================== -->
+<section class="section" aria-label="{% trans 'AZIN GROUP overview' %}">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">{% trans 'واحدهای تخصصی گروه آذین' %}</h2>
-            <p class="section-subtitle">{% trans 'پوشش کامل نیازهای سازمانی با تخصص‌های متمایز' %}</p>
+            <span class="section-header__badge">{% trans "Who We Are" %}</span>
+            <h2 class="section-header__title">{% trans "AZIN GROUP" %}</h2>
+            <p class="section-header__subtitle">{% trans "A multi-service company providing web, media, design, social media, and business services for organizations and businesses." %}</p>
         </div>
-
-        <div class="subsidiaries-grid">
-            <div class="subsidiary-card">
-                <div class="card-icon">
-                    <i class="bi bi-shop"></i>
+        
+        <div class="azin-overview">
+            <div class="azin-overview__content">
+                <p class="azin-overview__text">
+                    {% trans "AZIN GROUP works with businesses and organizations that need reliable support across digital, creative, and business activities. Our services cover website development, media production, graphic design, social media management, and business services. We focus on understanding the actual requirements of each project and providing practical solutions that are clear, useful, and appropriate for the client’s goals." %}
+                </p>
+                
+                <div class="azin-overview__features grid-3">
+                    <div class="azin-feature">
+                        <div class="azin-feature__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="azin-feature__title">{% trans "Practical Technology" %}</h4>
+                        <p class="azin-feature__desc">{% trans "Web development and digital solutions designed around business requirements, usability, and long-term maintenance." %}</p>
+                    </div>
+                    
+                    <div class="azin-feature">
+                        <div class="azin-feature__icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4 class="azin-feature__title">{% trans "Creative Services" %}</h4>
+                        <p class="azin-feature__desc">{% trans "Photography, video production, graphic design, and visual content developed for brands and business communication." %}</p>
+                    </div>
+                    
+                    <div class="azin-feature">
+                        <div class="azin-feature__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="azin-feature__title">{% trans "Business Support" %}</h4>
+                        <p class="azin-feature__desc">{% trans "Practical services that help businesses organize their digital activities, communication, and day-to-day business needs." %}</p>
+                    </div>
                 </div>
-                <h3>{% trans 'واحد بازرگانی آذین' %}</h3>
-                <p>{% trans 'ارائه خدمات جامع بازرگانی و تأمین کالا با تمرکز بر کیفیت، ارائه محصولات تأییدشده و پشتیبانی پس از فروش.' %}</p>
-                <a href="{% url 'store' %}" class="card-link">
-                    <span>{% trans 'اطلاعات بیشتر' %}</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="subsidiary-card">
-                <div class="card-icon">
-                    <i class="bi bi-camera-video"></i>
+                
+                <div class="azin-overview__actions">
+                    <a href="{% url 'about' %}" class="btn btn--primary">
+                        {% trans "Learn More About AZIN GROUP" %}
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <h3>{% trans 'واحد رسانه آذین' %}</h3>
-                <p>{% trans 'تولید محتوای سازمانی، خدمات عکاسی صنعتی، تولید فیلم‌های تبلیغاتی و اجرای کمپین‌های رسانه‌ای.' %}</p>
-                <a href="{% url 'smm' %}" class="card-link">
-                    <span>{% trans 'اطلاعات بیشتر' %}</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="subsidiary-card">
-                <div class="card-icon">
-                    <i class="bi bi-house-heart"></i>
-                </div>
-                <h3>{%trans 'واحد طراحی دکوراسیون' %}</h3>
-                <p>{% trans 'طراحی و اجرای دکوراسیون اداری، تجاری و مسکونی با رعایت اصول ارگونومی و زیبایی‌شناسی.' %}</p>
-                <a href="{% url 'decore' %}" class="card-link">
-                    <span>{% trans 'اطلاعات بیشتر' %}</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="subsidiary-card">
-                <div class="card-icon">
-                    <i class="bi bi-airplane"></i>
-                </div>
-                <h3>{% trans 'واحد خدمات مسافرتی' %}</h3>
-                <p>{% trans 'ارائه خدمات رزرواسیون، برنامه‌ریزی سفرهای تجاری و تفریحی، ویزا و کلیه خدمات مرتبط با سفر.' %}</p>
-                <a href="{% url 'travel' %}" class="card-link">
-                    <span>{% trans 'اطلاعات بیشتر' %}</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="about-preview">
-    <div class="about-background">
-        <img src="{% static 'img/app1.jpg' %}">
-        <div class="bg-image"></div>
-        <div class="bg-overlay"></div>
-        <div class="bg-pattern"></div>
-    </div>
-
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-content">
-                <div class="content-wrapper">
-                    <div class="section-badge">
-                        <span>{% trans 'هویت سازمانی' %}</span>
-                    </div>
-
-                    <h2 class="section-title">{% trans 'رویکرد گروه آذین' %}</h2>
-
-                    <p class="about-description">
-                        {% trans 'گروه آذین با تکیه بر دانش فنی، تجربه اجرایی و تعهد به کیفیت، همکاری مبتنی بر اعتماد متقابل با شرکای تجاری خود را سرلوحه فعالیت‌های خویش قرار داده است. ما راهکارهایی ارائه می‌دهیم که نه تنها پاسخگوی نیازهای کنونی، بلکه زمینه‌ساز رشد آتی سازمان شما باشد.' %}
-                    </p>
-
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>تیم متخصص و مجرب</h4>
-                                <p>به‌کارگیری نیروهای متخصص با مدارک معتبر و سوابق اجرایی اثبات‌شده</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>رویکرد مبتنی بر نتیجه</h4>
-                                <p>تعریف شاخص‌های کلیدی عملکرد (KPI) و نظارت مستمر بر دستیابی به اهداف</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="bi bi-headset"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>پشتیبانی و همراهی مستمر</h4>
-                                <p>ارائه خدمات پشتیبانی فنی و مشاوره‌ای در تمامی مراحل همکاری</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="bi bi-cash-coin"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>شفافیت مالی</h4>
-                                <p>ارائه پیش‌فاکتورهای دقیق و گزارش‌گیری منظم از هزینه‌های انجام شده</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-actions">
-                        <a href="{% url 'about' %}" class="cta-btn primary">
-                            <span>مشاهده جزئیات سازمانی</span>
-                            <i class="bi bi-arrow-left"></i>
-                        </a>
-                        <a href="{% url 'contact' %}" class="cta-btn secondary">
-                            <i class="bi bi-telephone"></i>
-                            <span>تماس با دفتر مرکزی</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services-preview">
+<!-- ======================================== -->
+<!-- 3. AZIN MEDIA — Featured Section        -->
+<!-- ======================================== -->
+<section class="section section--media" aria-label="{% trans 'AZIN MEDIA — Media Production' %}">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">خدمات تخصصی گروه</h2>
-            <p class="section-subtitle">ارائه راهکارهای دیجیتال یکپارچه برای سازمان‌ها و کسب‌وکارها</p>
+            <span class="section-header__badge">{% trans "Media Production" %}</span>
+            <h2 class="section-header__title">AZIN <span style="color:var(--color-primary);">MEDIA</span></h2>
+            <p class="section-header__subtitle">{% trans "Photography, videography, and content production for businesses, organizations, and brands." %}</p>
         </div>
-
-        <div class="services-grid">
-            <div class="service-preview-card">
-                <div class="service-header">
-                    <div class="service-icon">
-                        <i class="bi bi-laptop"></i>
+        
+        <div class="media-showcase">
+            <div class="media-showcase__grid">
+                <div class="media-showcase__item media-showcase__item--large">
+                    <div class="media-showcase__card">
+                        <div class="media-showcase__image">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>{% trans "Photography" %}</h4>
+                        <p>{% trans "Corporate, product, commercial, event, and business photography for professional communication and marketing materials." %}</p>
                     </div>
                 </div>
-                <h3>توسعه پورتال سازمانی</h3>
-                <p>طراحی و توسعه وب‌سایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوا (CMS) با استانداردهای روز</p>
-                <ul class="service-features">
-                    <li>طراحی رابط کاربری (UI/UX) حرفه‌ای</li>
-                    <li>توسعه با استفاده از فریمورک‌های روز</li>
-                    <li>بهینه‌سازی برای موتورهای جستجو (SEO)</li>
-                    <li>پشتیبانی و نگهداری دوره‌ای</li>
-                </ul>
-                <a href="{% url 'website' %}" class="service-cta">
-                    <span>مشاهده خدمات</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
+                
+                <div class="media-showcase__item">
+                    <div class="media-showcase__card">
+                        <div class="media-showcase__image">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>{% trans "Videography" %}</h4>
+                        <p>{% trans "Business videos, promotional content, corporate productions, and visual stories created for digital and offline use." %}</p>
+                    </div>
+                </div>
+                
+                <div class="media-showcase__item">
+                    <div class="media-showcase__card">
+                        <div class="media-showcase__image">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h4>{% trans "Motion Graphics" %}</h4>
+                        <p>{% trans "Motion design, animation, and visual effects for presentations, campaigns, social media, and digital content." %}</p>
+                    </div>
+                </div>
+                
+                <div class="media-showcase__item media-showcase__item--featured">
+                    <div class="media-showcase__card">
+                        <div class="media-showcase__image">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h4>{% trans "Advertising Content" %}</h4>
+                        <p>{% trans "Visual content and creative production that help businesses communicate their products, services, and brand message clearly." %}</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="service-preview-card">
-                <div class="service-header">
-                    <div class="service-icon">
-                        <i class="bi bi-phone"></i>
-                    </div>
-                </div>
-                <h3>مدیریت شبکه‌های اجتماعی سازمانی</h3>
-                <p>طراحی و اجرای استراتژی حضور مؤثر در شبکه‌های اجتماعی، تولید محتوا و مدیریت برند سازمانی</p>
-                <ul class="service-features">
-                    <li>تدوین استراتژی محتوای سازمانی</li>
-                    <li>مدیریت صفحه‌های رسمی</li>
-                    <li>آنالیز و گزارش‌گیری عملکرد</li>
-                    <li>اجرای کمپین‌های تبلیغاتی</li>
-                </ul>
-                <a href="{% url 'mobileapp' %}" class="service-cta">
-                    <span>مشاهده خدمات</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="service-preview-card">
-                <div class="service-header">
-                    <div class="service-icon">
-                        <i class="bi bi-camera"></i>
-                    </div>
-                </div>
-                <h3>تولید محتوای بصری سازمانی</h3>
-                <p>تولید محتوای تصویری و ویدئویی حرفه‌ای برای استفاده در رسانه‌های سازمانی، وب‌سایت و نمایشگاه‌ها</p>
-                <ul class="service-features">
-                    <li>عکاسی صنعتی و تبلیغاتی</li>
-                    <li>تولید فیلم‌های معرفی سازمان</li>
-                    <li>ساخت موشن گرافیک</li>
-                    <li>تدوین و صداگذاری حرفه‌ای</li>
-                </ul>
-                <a href="{% url 'mobileapp' %}" class="service-cta">
-                    <span>مشاهده خدمات</span>
-                    <i class="bi bi-arrow-left"></i>
+            
+            <div class="media-showcase__cta">
+                <a href="{% url 'media' %}" class="btn btn--primary btn--large">
+                    {% trans "Explore AZIN MEDIA" %}
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
 </section>
 
+
+<!-- ======================================== -->
+<!-- 4. SERVICES                              -->
+<!-- ======================================== -->
+<section class="section section--services" aria-label="{% trans 'Our services' %}">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-header__badge">{% trans "What We Do" %}</span>
+            <h2 class="section-header__title">{% trans "Our Services" %}</h2>
+            <p class="section-header__subtitle">{% trans "Practical digital, creative, and business services designed to support different stages of your business." %}</p>
+        </div>
+        
+        <div class="services-grid grid-3">
+
+            <!-- Service 1: Web Development -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Web Development" %}</h3>
+                <p class="service-card__desc">{% trans "Professional websites and web applications built around your business requirements, content, users, and future needs." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Responsive Design" %}</li>
+                    <li>{% trans "Content Management" %}</li>
+                    <li>{% trans "Search Engine Readiness" %}</li>
+                    <li>{% trans "Performance & Maintenance" %}</li>
+                </ul>
+                <a href="{% url 'website' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Service 2: Digital Solutions -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Digital Solutions" %}</h3>
+                <p class="service-card__desc">{% trans "Digital tools and solutions designed to help businesses manage information, improve workflows, and support their day-to-day operations." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Business-Focused Solutions" %}</li>
+                    <li>{% trans "Custom Functionality" %}</li>
+                    <li>{% trans "Data & Workflow Support" %}</li>
+                    <li>{% trans "Scalable Development" %}</li>
+                </ul>
+                <a href="{% url 'mobileapp' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Service 3: Media Production -->
+            <div class="service-card service-card--featured">
+                <div class="service-card__icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Media Production" %}</h3>
+                <p class="service-card__desc">{% trans "Photography, videography, and visual content production for businesses, organizations, products, and marketing campaigns." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Commercial Photography" %}</li>
+                    <li>{% trans "Video Production" %}</li>
+                    <li>{% trans "Motion Graphics" %}</li>
+                    <li>{% trans "Social Media Content" %}</li>
+                </ul>
+                <a href="{% url 'media' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Service 4: Social Media -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Social Media Management" %}</h3>
+                <p class="service-card__desc">{% trans "Structured social media management covering content planning, publishing, audience communication, and performance tracking." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Content Planning" %}</li>
+                    <li>{% trans "Community Management" %}</li>
+                    <li>{% trans "Analytics & Reporting" %}</li>
+                    <li>{% trans "Campaign Support" %}</li>
+                </ul>
+                <a href="{% url 'smm' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Service 5: Graphic Design -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Graphic Design & Branding" %}</h3>
+                <p class="service-card__desc">{% trans "Clear and consistent visual design for businesses that need professional branding and communication materials." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Logo Design" %}</li>
+                    <li>{% trans "Brand Identity" %}</li>
+                    <li>{% trans "Marketing Materials" %}</li>
+                    <li>{% trans "Print & Digital Design" %}</li>
+                </ul>
+                <a href="{% url 'graphicdesign' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Service 6: Business Services -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3 class="service-card__title">{% trans "Business Services" %}</h3>
+                <p class="service-card__desc">{% trans "Practical business support for organizations that need help with digital operations, communication, content, and related business activities." %}</p>
+                <ul class="service-card__features">
+                    <li>{% trans "Business Support" %}</li>
+                    <li>{% trans "Digital Operations" %}</li>
+                    <li>{% trans "Content & Documentation" %}</li>
+                    <li>{% trans "Project Coordination" %}</li>
+                </ul>
+                <a href="{% url 'store' %}" class="service-card__link">
+                    {% trans "Learn More" %}
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 5. PORTFOLIO PREVIEW                     -->
+<!-- ======================================== -->
+<section class="section section--portfolio" aria-label="{% trans 'Portfolio preview' %}">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-header__badge">{% trans "Our Work" %}</span>
+            <h2 class="section-header__title">{% trans "Selected Projects" %}</h2>
+            <p class="section-header__subtitle">{% trans "A selection of projects and services delivered for businesses and organizations." %}</p>
+        </div>
+        
+        <div class="portfolio-grid grid-3">
+            {% if projects %}
+                {% for project in projects|slice:":6" %}
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        {% if project.image %}
+                            <img src="{{ project.image.url }}" alt="{{ project.name }}" loading="lazy">
+                        {% else %}
+                            <div class="portfolio-card__placeholder">
+                                <i class="fas fa-image"></i>
+                            </div>
+                        {% endif %}
+                        <span class="portfolio-card__category">{{ project.category|default:"Project" }}</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">{{ project.name }}</h3>
+                        <p class="portfolio-card__desc">{{ project.short_description|default:project.description|truncatechars:100 }}</p>
+                        <a href="{% url 'portfolio' %}" class="portfolio-card__link">
+                            {% trans "View Project" %}
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <!-- Fallback: Static portfolio items if no projects in DB -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span class="portfolio-card__category">{% trans "Web Development" %}</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">{% trans "Business Website" %}</h3>
+                        <p class="portfolio-card__desc">{% trans "A professional business website designed to present services clearly, support customer communication, and provide a structured digital presence." %}</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="portfolio-card__category">{% trans "Digital Solutions" %}</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">{% trans "Business Application" %}</h3>
+                        <p class="portfolio-card__desc">{% trans "A practical digital solution designed to support business processes, organize information, and improve day-to-day operations." %}</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <span class="portfolio-card__category">{% trans "Media Production" %}</span>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">{% trans "Brand Video" %}</h3>
+                        <p class="portfolio-card__desc">{% trans "Business-focused video content combining professional production, editing, and visual elements to communicate a clear brand message." %}</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 6. WHY AZIN GROUP                        -->
+<!-- ======================================== -->
+<section class="section section--why" aria-label="{% trans 'Why AZIN GROUP' %}">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-header__badge">{% trans "Why Work With Us" %}</span>
+            <h2 class="section-header__title">{% trans "Why AZIN GROUP" %}</h2>
+            <p class="section-header__subtitle">{% trans "A practical approach focused on understanding your requirements and delivering work that serves a clear purpose." %}</p>
+        </div>
+        
+        <div class="why-grid grid-4">
+            <div class="why-card">
+                <div class="why-card__icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h4 class="why-card__title">{% trans "Experienced Team" %}</h4>
+                <p class="why-card__desc">{% trans "Our team brings experience across technology, media, design, and business services to support different project requirements." %}</p>
+            </div>
+            
+            <div class="why-card">
+                <div class="why-card__icon">
+                    <i class="fas fa-chess-queen"></i>
+                </div>
+                <h4 class="why-card__title">{% trans "Practical Approach" %}</h4>
+                <p class="why-card__desc">{% trans "We focus on understanding the actual business need before selecting the right service, process, and solution." %}</p>
+            </div>
+            
+            <div class="why-card">
+                <div class="why-card__icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h4 class="why-card__title">{% trans "Clear Communication" %}</h4>
+                <p class="why-card__desc">{% trans "We keep project requirements, deliverables, timelines, and communication clear throughout the working process." %}</p>
+            </div>
+            
+            <div class="why-card">
+                <div class="why-card__icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h4 class="why-card__title">{% trans "Ongoing Support" %}</h4>
+                <p class="why-card__desc">{% trans "Our relationship does not have to end when a project is delivered. We can continue to provide support, updates, and maintenance when needed." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 7. FINAL CTA                             -->
+<!-- ======================================== -->
+<section class="section section--cta" aria-label="{% trans 'Call to action' %}">
+    <div class="container">
+        <div class="cta-box">
+            <div class="cta-box__content">
+                <h2 class="cta-box__title">{% trans "Have a Project in Mind?" %}</h2>
+                <p class="cta-box__desc">{% trans "Tell us what you need, what you are trying to achieve, and where you need support. We will review your requirements and discuss the most suitable way to move forward with AZIN GROUP." %}</p>
+                <div class="cta-box__actions">
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        {% trans "Discuss Your Project" %}
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="{% url 'about' %}" class="btn btn--outline btn--large">
+                        {% trans "Learn More" %}
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT FOR COUNTER ANIMATION        -->
+<!-- ======================================== -->
+{% block extra_js %}
 <script>
-    // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function () {
-        const animateValue = (element, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value;
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
+    document.addEventListener('DOMContentLoaded', function() {
+        // Counter animation for hero stats
+        const counters = document.querySelectorAll('.hero__stat-number[data-count]');
+        
+        const animateCounter = (element) => {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000;
+            const stepTime = 16;
+            const steps = duration / stepTime;
+            const increment = target / steps;
+            let current = 0;
+            
+            const update = () => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    return;
                 }
+                element.textContent = Math.floor(current) + '+';
+                requestAnimationFrame(update);
             };
-            window.requestAnimationFrame(step);
+            
+            update();
         };
-
+        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const valueElement = entry.target;
-                    const target = parseInt(valueElement.getAttribute('data-count'));
-                    animateValue(valueElement, 0, target, 2000);
-                    observer.unobserve(valueElement);
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.5 });
-
-        document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+        
+        counters.forEach(counter => observer.observe(counter));
     });
 </script>
-
 {% endblock %}

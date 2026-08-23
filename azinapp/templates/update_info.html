@@ -2,100 +2,88 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}{% trans 'ویرایش اطلاعات' %} - AZIN GROUP{% endblock %}
+{% block title %}{% trans "Edit Profile" %} — AZIN GROUP{% endblock %}
+
+{% block meta_description %}Update your personal information and contact details.{% endblock %}
 
 {% block content %}
 
-<section class="profile-edit-section">
+<section class="profile-section" aria-label="{% trans 'Edit profile' %}">
     <div class="container">
-        <div class="profile-edit-header">
-            <h1 class="page-title">
-                <i class="fas fa-user-edit"></i> {% trans 'ویرایش اطلاعات کاربری' %}
+        <!-- Header -->
+        <div class="profile-section__header">
+            <h1 class="profile-section__title">
+                <i class="fas fa-user-edit"></i> {% trans "Edit Profile" %}
             </h1>
-            <p class="page-subtitle">{% trans 'اطلاعات حساب کاربری خود را مدیریت کنید' %}</p>
+            <p class="profile-section__subtitle">{% trans "Manage your personal information and contact details." %}</p>
         </div>
 
+        <!-- Messages -->
         {% if messages %}
-        {% for message in messages %}
-        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-            {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        {% endfor %}
+            {% for message in messages %}
+            <div class="profile-section__message profile-section__message--{{ message.tags }}">
+                <i class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-circle{% else %}info-circle{% endif %}"></i>
+                {{ message }}
+            </div>
+            {% endfor %}
         {% endif %}
 
-        <div class="profile-edit-container">
-            <div class="profile-sidebar">
-
-                <ul class="profile-menu">
-                    <li class="menu-item active">
+        <div class="profile-section__grid">
+            <!-- Sidebar -->
+            <div class="profile-section__sidebar">
+                <ul class="profile-section__menu">
+                    <li class="profile-section__menu-item active">
                         <a href="{% url 'update_info' %}">
-                            <i class="fas fa-user-cog"></i> {% trans 'اطلاعات شخصی' %}
+                            <i class="fas fa-user-cog"></i> {% trans "Personal Information" %}
                         </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="profile-section__menu-item">
                         <a href="{% url 'update_password' %}">
-                            <i class="fas fa-lock"></i> {% trans 'تغییر رمز عبور' %}
+                            <i class="fas fa-lock"></i> {% trans "Change Password" %}
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="profile-edit-form">
-                <div class="form-card">
-                    <div class="form-header">
+            <!-- Form -->
+            <div class="profile-section__form">
+                <div class="profile-section__card">
+                    <div class="profile-section__card-header">
                         <h2>
-                            <i class="fas fa-id-card"></i> {% trans 'اطلاعات شخصی ' %}
+                            <i class="fas fa-id-card"></i> {% trans "Personal Information" %}
                         </h2>
-                        <p>{% trans 'اطلاعات شناسایی و تماس خودرا بروز کنید' %}</p>
+                        <p>{% trans "Update your identification and contact details." %}</p>
                     </div>
 
-                    <form method="POST" action="{% url 'update_info' %}" class="edit-form">
+                    <form method="POST" action="{% url 'update_info' %}" class="profile-form">
                         {% csrf_token %}
 
-                        <div class="form-row">
+                        <div class="profile-form__grid">
                             {% for field in form %}
-                            <div class="form-group {% if field.errors %}has-error{% endif %}">
-                                <label for="{{ field.id_for_label }}">
+                            <div class="profile-form__group {% if field.errors %}profile-form__group--error{% endif %}">
+                                <label for="{{ field.id_for_label }}" class="profile-form__label">
                                     {{ field.label }}
-                                    {% if field.field.required %}<span class="required">*</span>{% endif %}
+                                    {% if field.field.required %}<span class="profile-form__required">*</span>{% endif %}
                                 </label>
-
-                                {% if field.name == 'gender' %}
-                                <div class="gender-select">
-                                    {% for choice in field %}
-                                    <div class="gender-option">
-                                        {{ choice.tag }}
-                                        <label for="{{ choice.id_for_label }}">{{ choice.choice_label }}</label>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                                {% else %}
                                 {{ field }}
-                                {% endif %}
-
                                 {% if field.help_text %}
-                                <small class="form-help">{{ field.help_text }}</small>
+                                <span class="profile-form__hint">{{ field.help_text }}</span>
                                 {% endif %}
-
                                 {% if field.errors %}
-                                <div class="form-errors">
-                                    {% for error in field.errors %}
-                                    <span class="error-message"><i class="fas fa-exclamation-circle"></i> {{ error
-                                        }}</span>
-                                    {% endfor %}
-                                </div>
+                                <span class="profile-form__error">
+                                    <i class="fas fa-exclamation-circle"></i> {{ field.errors|striptags }}
+                                </span>
                                 {% endif %}
                             </div>
                             {% endfor %}
                         </div>
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn-save">
-                                <i class="fas fa-save"></i> {% trans 'ذخیره تغییرات' %}
+                        <div class="profile-form__actions">
+                            <button type="submit" class="profile-form__submit">
+                                <i class="fas fa-save"></i> {% trans "Save Changes" %}
                             </button>
-                            <a href="" class="btn-cancel">
-                                <i class="fas fa-times"></i> {% trans 'انصراف' %}
+                            <a href="{% url 'index' %}" class="profile-form__cancel">
+                                <i class="fas fa-times"></i> {% trans "Cancel" %}
                             </a>
                         </div>
                     </form>
@@ -104,4 +92,5 @@
         </div>
     </div>
 </section>
+
 {% endblock %}

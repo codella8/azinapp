@@ -1,530 +1,628 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}media | azingroup{% endblock %}
+{% block title %}AZIN MEDIA — Photography, Video & Content Production{% endblock %}
+
+{% block meta_description %}AZIN MEDIA provides photography, video production, product content, corporate event coverage, portraits, and visual content for businesses, organizations, and individuals.{% endblock %}
+
+{% block og_title %}AZIN MEDIA — Photography, Video & Content Production{% endblock %}
+
+{% block og_description %}Photography and video production for businesses, products, events, organizations, and personal projects, with content planned around its intended use.{% endblock %}
 
 {% block content %}
-<section class="media-hero-section">
-    <div class="media-hero-background">
-        <div class="hero-gradient-overlay"></div>
-        <div class="media-pattern"></div>
-        <div class="floating-media-elements">
-            <div class="media-element elem-1"><i class="bi bi-camera-video"></i></div>
-            <div class="media-element elem-2"><i class="bi bi-camera"></i></div>
-            <div class="media-element elem-3"><i class="bi bi-film"></i></div>
-            <div class="media-element elem-4"><i class="bi bi-mic"></i></div>
-        </div>
+
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="media-hero" aria-label="{% trans 'AZIN MEDIA — Photography, Video & Content Production' %}">
+    <div class="media-hero__background">
+        <div class="media-hero__overlay"></div>
+        <div class="media-hero__pattern"></div>
     </div>
-
     <div class="container">
-        <div class="media-hero-content">
-            <div class="media-hero-text">
-                <div class="service-badge">
-                    <span class="badge-text">واحد تولید محتوا</span>
-                    <div class="badge-line"></div>
-                </div>
+        <div class="media-hero__content">
+            <div class="media-hero__text">
+                <span class="media-hero__badge">AZIN MEDIA</span>
 
-                <h1 class="media-hero-title">
-                    <span class="title-line">آذین مدیا</span>
-                    <span class="title-line accent">مرکز تخصصی تولید محتوای بصری و رسانه‌ای</span>
+                <h1 class="media-hero__title">
+                    <span class="media-hero__title-line">{% trans "Photography, Video &" %}</span>
+                    <span class="media-hero__title-line media-hero__accent">{% trans "Content Production" %}</span>
                 </h1>
 
-                <p class="media-hero-description">
-                    واحد رسانه گروه آذین با بهره‌گیری از تیم متخصص، تجهیزات پیشرفته و استودیوهای حرفه‌ای، راهکارهای جامعی در حوزه تولید محتوای بصری، عکاسی صنعتی و فیلم‌برداری ارائه می‌دهد. ما همراه شما در خلق تصاویر و ویدیوهایی هستیم که داستان برند شما را به بهترین شکل روایت می‌کنند.
+                <p class="media-hero__description">
+                    {% trans "We create photography and video content for businesses, organizations, events, products, and personal projects. From planning and production to editing and final delivery, we focus on creating visual content that fits where and how it will be used." %}
                 </p>
 
-                <div class="media-hero-actions">
-                    <a href="{% url 'contact' %}" class="media-cta-btn primary">
-                        <i class="bi bi-calendar-check"></i>
-                        <span>درخواست مشاوره تولید</span>
+                <div class="media-hero__actions">
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-calendar-check"></i>
+                        {% trans "Discuss Your Project" %}
+                    </a>
+
+                    <a href="#gallery" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-images"></i>
+                        {% trans "View Gallery" %}
                     </a>
                 </div>
             </div>
 
-            <div class="media-hero-visual">
-                <div class="media-showcase">
-                    <div class="camera-equipment">
-                        <div class="camera-body">
-                            <div class="camera-lens"></div>
-                            <div class="camera-display"></div>
-                        </div>
-                        <div class="equipment-label">تجهیزات حرفه‌ای</div>
+            <div class="media-hero__visual">
+                <div class="media-hero__stats-card">
+
+                    <div class="media-hero__stat">
+                        <span class="media-hero__stat-number">
+                            <i class="fas fa-camera"></i>
+                        </span>
+                        <span class="media-hero__stat-label">{% trans "Photography" %}</span>
                     </div>
-                    <div class="production-scene">
-                        <div class="scene-set">
-                            <div class="lighting-setup"></div>
-                            <div class="camera-stand"></div>
-                            <div class="subject"></div>
-                        </div>
-                        <div class="scene-label">استودیو حرفه‌ای</div>
+
+                    <div class="media-hero__stat">
+                        <span class="media-hero__stat-number">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        <span class="media-hero__stat-label">{% trans "Video Production" %}</span>
                     </div>
-                    <div class="media-badges">
-                        <div class="badge-item">
-                            <i class="bi bi-award"></i>
-                            <span>تیم متخصص با گواهینامه‌های بین‌المللی</span>
-                        </div>
-                        <div class="badge-item">
-                            <i class="bi bi-star"></i>
-                            <span>تجهیزات بروز و استاندارد</span>
-                        </div>
-                        <div class="badge-item">
-                            <i class="bi bi-lightning"></i>
-                            <span>تحویل سریع با کیفیت تضمینی</span>
-                        </div>
+
+                    <div class="media-hero__stat">
+                        <span class="media-hero__stat-number">
+                            <i class="fas fa-photo-video"></i>
+                        </span>
+                        <span class="media-hero__stat-label">{% trans "Visual Content" %}</span>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- بخش خدمات تخصصی -->
-<section class="media-services-section">
+
+<!-- ======================================== -->
+<!-- 2. SERVICES                              -->
+<!-- ======================================== -->
+<section class="section section--media-services" aria-label="{% trans 'Media services' %}">
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">خدمات تخصصی واحد رسانه</h2>
-            <p class="section-subtitle">ارائه راهکارهای جامع در حوزه تولید محتوای بصری و رسانه‌ای</p>
-        </div>
 
-        <div class="media-services-grid">
-            <div class="media-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-camera"></i>
-                </div>
-                <h3>عکاسی حرفه‌ای و صنعتی</h3>
-                <p>عکاسی تخصصی محصولات، صنعتی، پرتره سازمانی و مراسم با استفاده از پیشرفته‌ترین تجهیزات نورپردازی و دوربین‌های حرفه‌ای</p>
-                <ul class="service-features">
-                    <li>عکاسی صنعتی و محصول با نورپردازی کنترل شده</li>
-                    <li>عکاسی پرتره حرفه‌ای برای مدیران و کارکنان</li>
-                    <li>عکاسی مراسم، همایش‌ها و رویدادهای سازمانی</li>
-                    <li>عکاسی معماری، فضای داخلی و دکوراسیون</li>
-                    <li>ادیت و روتوش حرفه‌ای با استانداردهای جهانی</li>
-                </ul>
-                <div class="service-equipment">
-                    <h4>تجهیزات مورد استفاده:</h4>
-                    <div class="equipment-list">
-                        <span>دوربین‌های Canon EOS R5</span>
-                        <span>سیستم نورپردازی Profoto</span>
-                        <span>لنزهای تخصصی Sigma Art</span>
-                        <span>تجهیزات نورپردازی LED</span>
-                    </div>
-                </div>
-                <a href="{% url 'contact' %}?service=photography" class="service-cta-btn">
-                    <span>درخواست عکاسی تخصصی</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="media-service-card featured">
-                <div class="service-icon">
-                    <i class="bi bi-camera-reels"></i>
-                </div>
-                <h3>تولید فیلم و محتوای ویدئویی</h3>
-                <p>تولید محتوای ویدئویی حرفه‌ای شامل تیزرهای تبلیغاتی، فیلم‌های سازمانی، گزارش‌های تصویری و محتوای شبکه‌های اجتماعی</p>
-                <ul class="service-features">
-                    <li>فیلم‌برداری حرفه‌ای با دوربین‌های سینمایی</li>
-                    <li>تولید تیزر تبلیغاتی و برندسازی ویدئویی</li>
-                    <li>فیلم‌های مستند و گزارش‌های تصویری سازمانی</li>
-                    <li>تولید محتوای ویدئویی برای شبکه‌های اجتماعی</li>
-                    <li>فیلم‌برداری با دوربین 360 درجه و تجهیزات ویژه</li>
-                </ul>
-                <div class="service-equipment">
-                    <h4>تجهیزات مورد استفاده:</h4>
-                    <div class="equipment-list">
-                        <span>دوربین‌های سینمایی Sony FX6</span>
-                        <span>سیستم‌های صداگذاری Rode</span>
-                        <span>تجهیزات استیدی کم و موشن کنترل</span>
-                        <span>سیستم نورپردازی سینمایی</span>
-                    </div>
-                </div>
-                <a href="{% url 'contact' %}?service=filmmaking" class="service-cta-btn">
-                    <span>درخواست تولید فیلم</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="media-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-magic"></i>
-                </div>
-                <h3>پس‌تولید و ادیت حرفه‌ای</h3>
-                <p>خدمات کامل پس‌تولید شامل ادیت، رنگ‌گری سینمایی، صداگذاری، جلوه‌های ویژه و موشن گرافیک با نرم‌افزارهای حرفه‌ای</p>
-                <ul class="service-features">
-                    <li>ادیت و مونتاژ حرفه‌ای با استانداردهای برودکست</li>
-                    <li>رنگ‌گری سینمایی با نرم‌افزار DaVinci Resolve</li>
-                    <li>صداگذاری، میکس و مسترینگ حرفه‌ای</li>
-                    <li>جلوه‌های ویژه بصری (VFX) و کامپوزیت</li>
-                    <li>تولید انیمیشن و موشن گرافیک اختصاصی</li>
-                </ul>
-                <div class="service-equipment">
-                    <h4>نرم‌افزارهای مورد استفاده:</h4>
-                    <div class="equipment-list">
-                        <span>Adobe Premiere Pro CC</span>
-                        <span>DaVinci Resolve Studio</span>
-                        <span>Adobe After Effects</span>
-                        <span>Adobe Audition</span>
-                        <span>Cinema 4D</span>
-                    </div>
-                </div>
-                <a href="{% url 'contact' %}?service=postproduction" class="service-cta-btn">
-                    <span>درخواست خدمات پس‌تولید</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش استودیو و تجهیزات -->
-<section class="studio-section">
-    <div class="container">
         <div class="section-header">
-            <h2 class="section-title">استودیوها و تجهیزات پیشرفته</h2>
-            <p class="section-subtitle">امکانات کامل تولید محتوای حرفه‌ای در مجموعه آذین مدیا</p>
+            <span class="section-header__badge">{% trans "Our Services" %}</span>
+
+            <h2 class="section-header__title">
+                {% trans "Photography & Video Services" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Visual production for business communication, products, events, social media, and personal projects." %}
+            </p>
         </div>
 
-        <div class="studio-grid">
-            <div class="studio-card">
-                <div class="studio-image">
-                    <img src="{% static 'img/travel.jpg' %}" alt="استودیو عکاسی حرفه‌ای">
-                    <div class="studio-overlay">
-                        <h4>استودیو عکاسی</h4>
-                        <p>فضای ۱۵۰ متری با نورپردازی کامل و تجهیزات پیشرفته</p>
-                    </div>
+        <div class="media-services__grid">
+
+            <!-- Service 1: Wedding Photography -->
+            <div class="media-service media-service--featured">
+                <div class="media-service__icon">
+                    <i class="fas fa-ring"></i>
                 </div>
-                <div class="studio-content">
-                    <h3>استودیو عکاسی حرفه‌ای</h3>
-                    <ul>
-                        <li>سیستم نورپردازی حرفه‌ای با قابلیت کنترل دیجیتال</li>
-                        <li>پس‌زمینه‌های متنوع و سیستم تغییر سریع backdrop</li>
-                        <li>تجهیزات عکاسی محصول با جدول عکاسی حرفه‌ای</li>
-                        <li>اتاق آماده‌سازی و آرایش با نور طبیعی کنترل شده</li>
-                    </ul>
-                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Wedding Photography" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Wedding photography planned around the flow of your day, from preparation and ceremony to the reception. The focus is on documenting the people, details, and moments that matter to you." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Pre-wedding & engagement sessions" %}</li>
+                    <li>{% trans "Ceremony and reception coverage" %}</li>
+                    <li>{% trans "Professional photo selection and editing" %}</li>
+                    <li>{% trans "Digital delivery of final images" %}</li>
+                </ul>
             </div>
 
-            <div class="studio-card">
-                <div class="studio-image">
-                    <img src="{% static 'img/market.jpg' %}" alt="استودیو فیلم‌برداری سینمایی">
-                    <div class="studio-overlay">
-                        <h4>استودیو فیلم‌برداری</h4>
-                        <p>مجموعه کامل سینمایی با امکانات تولید فیلم حرفه‌ای</p>
-                    </div>
+
+            <!-- Service 2: Birthday & Celebration -->
+            <div class="media-service">
+                <div class="media-service__icon">
+                    <i class="fas fa-birthday-cake"></i>
                 </div>
-                <div class="studio-content">
-                    <h3>استودیو فیلم‌برداری سینمایی</h3>
-                    <ul>
-                        <li>دوربین‌های سینمایی RED Komodo و ARRI Alexa Mini</li>
-                        <li>سیستم نورپردازی فیلم با ژنراتورهای مخصوص</li>
-                        <li>تجهیزات صداگذاری حرفه‌ای با اتاق آکوستیک</li>
-                        <li>کرین، ریل دوربین و سیستم‌های موشن کنترل</li>
-                    </ul>
-                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Celebration & Event Photography" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Photography for birthdays, anniversaries, family gatherings, private events, and other occasions where you want a clear visual record of the people and atmosphere." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Birthday and private events" %}</li>
+                    <li>{% trans "Anniversaries and celebrations" %}</li>
+                    <li>{% trans "Family and group photography" %}</li>
+                    <li>{% trans "Edited digital photo delivery" %}</li>
+                </ul>
             </div>
 
-            <div class="studio-card">
-                <div class="studio-image">
-                    <img src="{% static 'img/team1.jpg' %}" alt="اتاق ادیت و پست‌پروداکشن">
-                    <div class="studio-overlay">
-                        <h4>اتاق ادیت و رنگ‌گری</h4>
-                        <p>پست‌پروداکشن حرفه‌ای با استانداردهای بین‌المللی</p>
-                    </div>
+
+            <!-- Service 3: Product Photography -->
+            <div class="media-service">
+                <div class="media-service__icon">
+                    <i class="fas fa-box-open"></i>
                 </div>
-                <div class="studio-content">
-                    <h3>اتاق پست‌پروداکشن پیشرفته</h3>
-                    <ul>
-                        <li>مانیتورهای کالیبره شده با پوشش رنگ کامل DCI-P3</li>
-                        <li>سیستم‌های پردازش قدرتمند با کارت‌گرافیک RTX 4090</li>
-                        <li>اتاق صدا با آکوستیک ایده‌آل و مانیتورینگ حرفه‌ای</li>
-                        <li>نرم‌افزارهای به روز با لایسنس‌های معتبر</li>
-                    </ul>
-                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Product Photography" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Product images prepared for e-commerce stores, websites, catalogs, social media, and marketing materials. We plan the shoot around the product, platform, and intended use." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Product and catalog photography" %}</li>
+                    <li>{% trans "Lifestyle and contextual images" %}</li>
+                    <li>{% trans "Clean backgrounds and detailed shots" %}</li>
+                    <li>{% trans "Editing and image preparation" %}</li>
+                </ul>
             </div>
+
+
+            <!-- Service 4: Corporate Events -->
+            <div class="media-service">
+                <div class="media-service__icon">
+                    <i class="fas fa-building"></i>
+                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Corporate & Event Photography" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Professional photography for conferences, seminars, company events, team activities, launches, and other business occasions where reliable visual documentation is needed." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Conferences and seminars" %}</li>
+                    <li>{% trans "Corporate events and launches" %}</li>
+                    <li>{% trans "Team and executive portraits" %}</li>
+                    <li>{% trans "Event documentation for business use" %}</li>
+                </ul>
+            </div>
+
+
+            <!-- Service 5: Videography -->
+            <div class="media-service media-service--featured">
+                <div class="media-service__icon">
+                    <i class="fas fa-video"></i>
+                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Video Production" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Video production for businesses, events, products, campaigns, and social media. Projects can be scoped around the required format, message, platform, and final deliverables." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Corporate and promotional videos" %}</li>
+                    <li>{% trans "Event and ceremony videos" %}</li>
+                    <li>{% trans "Short-form social media content" %}</li>
+                    <li>{% trans "Video editing and post-production" %}</li>
+                </ul>
+            </div>
+
+
+            <!-- Service 6: Portrait Photography -->
+            <div class="media-service">
+                <div class="media-service__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+
+                <h3 class="media-service__title">
+                    {% trans "Portrait & Professional Photography" %}
+                </h3>
+
+                <p class="media-service__desc">
+                    {% trans "Portrait sessions for individuals, families, professionals, teams, and organizations. Images can be prepared for personal use, professional profiles, websites, and business communication." %}
+                </p>
+
+                <ul class="media-service__features">
+                    <li>{% trans "Professional headshots" %}</li>
+                    <li>{% trans "Individual and family portraits" %}</li>
+                    <li>{% trans "Team and staff photography" %}</li>
+                    <li>{% trans "Edited images for digital use" %}</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- بخش نمونه کارهای تصویری -->
-<section class="media-portfolio-section">
+
+<!-- ======================================== -->
+<!-- 3. GALLERY                               -->
+<!-- ======================================== -->
+<section class="section section--gallery" id="gallery" aria-label="{% trans 'Media gallery' %}">
     <div class="container">
+
         <div class="section-header">
-            <h2 class="section-title">گالری آثار تولیدی واحد رسانه</h2>
-            <p class="section-subtitle">نمونه‌ای از پروژه‌های موفق تولید محتوای بصری آذین مدیا</p>
+            <span class="section-header__badge">{% trans "Portfolio" %}</span>
+
+            <h2 class="section-header__title">
+                {% trans "Selected Work" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "A selection of photography and visual content representing the types of projects we work on." %}
+            </p>
         </div>
 
-        <div class="media-portfolio-grid">
-            <div class="portfolio-item" data-category="photography corporate">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی صنعتی تجهیزات پزشکی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>عکاسی صنعتی تجهیزات پزشکی</h4>
-                                <p>عکاسی محصولات پزشکی با نورپردازی حرفه‌ای برای کاتالوگ فنی</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera"></i>
-                                    دوربین Canon EOS R5
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-aperture"></i>
-                                    دیافراگم f/11، نور استودیو
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">عکاسی صنعتی</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="portfolio-item" data-category="photography corporate">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی پرتره مدیران ارشد">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>عکاسی پرتره مدیران ارشد سازمانی</h4>
-                                <p>عکاسی پرتره حرفه‌ای برای وبسایت سازمانی و شبکه لینکدین</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera"></i>
-                                    دوربین Sony A7IV
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-aperture"></i>
-                                    دیافراگم f/2.8، نور طبیعی
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">عکاسی پرتره</div>
-                    </div>
-                </div>
-            </div>
+        <!-- Gallery Filters -->
+        <div class="gallery__filters">
+            <button class="gallery__filter active" data-filter="all">
+                {% trans "All" %}
+            </button>
 
-            <div class="portfolio-item" data-category="photography corporate">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی محصولات غذایی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>عکاسی محصولات غذایی رستوران</h4>
-                                <p>عکاسی غذایی برای منوی دیجیتال و شبکه‌های اجتماعی</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera"></i>
-                                    دوربین Nikon Z9
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-aperture"></i>
-                                    دیافراگم f/8، نور ترکیبی
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">عکاسی محصول</div>
-                    </div>
-                </div>
-            </div>
+            <button class="gallery__filter" data-filter="wedding">
+                {% trans "Wedding" %}
+            </button>
 
-            <div class="portfolio-item" data-category="photography corporate">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/digital.jpg' %}" alt="عکاسی معماری و فضای داخلی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>عکاسی معماری دفتر مرکزی</h4>
-                                <p>عکاسی فضای داخلی با لنز tilt-shift برای بروشور سازمانی</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera"></i>
-                                    دوربین Canon EOS R5
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-aperture"></i>
-                                    دیافراگم f/16، HDR ترکیبی
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">عکاسی معماری</div>
-                    </div>
-                </div>
-            </div>
+            <button class="gallery__filter" data-filter="birthday">
+                {% trans "Celebration" %}
+            </button>
 
-            <div class="portfolio-item" data-category="video commercial">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/market.jpg' %}" alt="تیزر تبلیغاتی محصول آرایشی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>تیزر تبلیغاتی محصولات آرایشی</h4>
-                                <p>تولید تیزر 30 ثانیه‌ای برای کمپین دیجیتال مارکتینگ</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera-video"></i>
-                                    دوربین Sony FX3
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-film"></i>
-                                    4K، 24fps، رنگ‌گری سینمایی
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">ویدیو تبلیغاتی</div>
-                    </div>
-                </div>
-            </div>
+            <button class="gallery__filter" data-filter="product">
+                {% trans "Product" %}
+            </button>
 
-            <div class="portfolio-item" data-category="video commercial">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/market.jpg' %}" alt="فیلم معرفی شرکت">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>فیلم معرفی شرکت بازرگانی</h4>
-                                <p>تولید فیلم ۳ دقیقه‌ای برای معرفی خدمات و تیم سازمان</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera-video"></i>
-                                    دوربین RED Komodo
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-film"></i>
-                                    6K، نورپردازی سینمایی
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">فیلم سازمانی</div>
-                    </div>
-                </div>
-            </div>
+            <button class="gallery__filter" data-filter="corporate">
+                {% trans "Corporate" %}
+            </button>
 
-            <div class="portfolio-item" data-category="photography commercial">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/smm.jpg' %}" alt="عکاسی محصولات لوکس">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>عکاسی محصولات لوکس - برند ساعت‌سازی</h4>
-                                <p>عکاسی محصولات با ارزش بالا با نورپردازی دقیق و کنترل شده</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera"></i>
-                                    دوربین Hasselblad X2D
-                                </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-lightning"></i>
-                                    نور استودیو با کنترل دقیق سایه‌ها
-                                </span>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">عکاسی محصول لوکس</div>
-                    </div>
-                </div>
-            </div>
+            <button class="gallery__filter" data-filter="portrait">
+                {% trans "Portrait" %}
+            </button>
+        </div>
 
-            <div class="portfolio-item" data-category="video corporate">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/app1.jpg' %}" alt="گزارش تصویری سالانه">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>گزارش تصویری سالانه سازمانی</h4>
-                                <p>تولید گزارش ۵ دقیقه‌ای از دستاوردهای سال مالی شرکت</p>
-                            </div>
-                            <div class="portfolio-meta">
-                                <span class="meta-item">
-                                    <i class="bi bi-camera-video"></i>
-                                    دوربین ARRI Alexa Mini
+
+        <!-- Gallery Grid -->
+        <div class="gallery__grid" id="galleryGrid">
+
+            <!-- Gallery items will be loaded from admin -->
+            {% if gallery_items %}
+
+                {% for item in gallery_items %}
+
+                <div class="gallery__item" data-category="{{ item.category|lower }}">
+
+                    <div class="gallery__card">
+
+                        {% if item.is_video %}
+
+                            <div class="gallery__video">
+                                <video src="{{ item.file.url }}" poster="{{ item.thumbnail.url }}" controls preload="none">
+                                    <source src="{{ item.file.url }}" type="video/mp4">
+                                    {% trans "Your browser does not support the video tag." %}
+                                </video>
+
+                                <span class="gallery__badge">
+                                    <i class="fas fa-play"></i>
+                                    {% trans "Video" %}
                                 </span>
-                                <span class="meta-item">
-                                    <i class="bi bi-drone"></i>
-                                    تصاویر هوایی با دوربین ۸K
+                            </div>
+
+                        {% else %}
+
+                            <div class="gallery__image">
+                                <img src="{{ item.file.url }}" alt="{{ item.title }}" loading="lazy">
+
+                                <span class="gallery__badge">
+                                    <i class="fas fa-camera"></i>
+                                    {% trans "Photo" %}
                                 </span>
                             </div>
+
+                        {% endif %}
+
+                        <div class="gallery__overlay">
+                            <h4>{{ item.title }}</h4>
+
+                            <p>
+                                {{ item.description|truncatewords:12 }}
+                            </p>
+
+                            <span class="gallery__category">
+                                {{ item.get_category_display }}
+                            </span>
                         </div>
-                        <div class="portfolio-badge">گزارش تصویری</div>
+
                     </div>
                 </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <!-- Fallback: Static gallery items -->
+
+                <div class="gallery__item" data-category="wedding">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-ring"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Wedding Photography" %}</h4>
+
+                            <p>
+                                {% trans "Wedding photography focused on people, details, atmosphere, and the natural flow of the day." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Wedding" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="gallery__item" data-category="wedding">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-ring"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Wedding Reception" %}</h4>
+
+                            <p>
+                                {% trans "Natural moments and event details documented throughout the reception." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Wedding" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="gallery__item" data-category="birthday">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Celebration Photography" %}</h4>
+
+                            <p>
+                                {% trans "Photography for private celebrations, gatherings, and events." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Celebration" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="gallery__item" data-category="product">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Product Photography" %}</h4>
+
+                            <p>
+                                {% trans "Product images prepared for online stores, websites, catalogs, and marketing use." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Product" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="gallery__item" data-category="corporate">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-building"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Corporate Event" %}</h4>
+
+                            <p>
+                                {% trans "Business event photography for conferences, meetings, launches, and company activities." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Corporate" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="gallery__item" data-category="portrait">
+                    <div class="gallery__card">
+
+                        <div class="gallery__image">
+                            <div class="gallery__placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+
+                            <span class="gallery__badge">
+                                <i class="fas fa-camera"></i>
+                                {% trans "Photo" %}
+                            </span>
+                        </div>
+
+                        <div class="gallery__overlay">
+                            <h4>{% trans "Professional Portrait" %}</h4>
+
+                            <p>
+                                {% trans "Portrait photography for professional profiles, websites, teams, and personal use." %}
+                            </p>
+
+                            <span class="gallery__category">
+                                {% trans "Portrait" %}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 4. CTA SECTION                           -->
+<!-- ======================================== -->
+<section class="section section--cta" aria-label="{% trans 'Call to action' %}">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Planning a Photo or Video Project?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you need to produce, where the content will be used, and when you need it. We can discuss the scope, required production, editing, and final deliverables before the project begins." %}
+                </p>
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-calendar-check"></i>
+                        {% trans "Discuss Your Project" %}
+                    </a>
+
+                    <a href="tel:+992110003443" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-phone"></i>
+                        {% trans "Call for Inquiry" %}
+                    </a>
+
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
+{% endblock %}
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT FOR FILTER                    -->
+<!-- ======================================== -->
+{% block extra_js %}
 <script>
-    // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function () {
-        const animateValue = (element, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value;
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        };
+    document.addEventListener('DOMContentLoaded', function() {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const valueElement = entry.target;
-                    const target = parseInt(valueElement.getAttribute('data-count'));
-                    animateValue(valueElement, 0, target, 2000);
-                    observer.unobserve(valueElement);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
-
-        // کنترل نمایش ویدیوها
-        const controlBtns = document.querySelectorAll('.control-btn');
-        controlBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
-                controlBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                // اینجا می‌توانید ویدیوی مربوطه را لود کنید
-            });
-        });
-
-        // فیلتر نمونه کارها
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        // ---- Gallery Filter ----
+        const filterBtns = document.querySelectorAll('.gallery__filter');
+        const galleryItems = document.querySelectorAll('.gallery__item');
 
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
+
+            btn.addEventListener('click', function() {
+
                 filterBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
 
                 const filterValue = this.getAttribute('data-filter');
 
-                portfolioItems.forEach(item => {
-                    const categories = item.getAttribute('data-category').split(' ');
-                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                galleryItems.forEach(item => {
+
+                    const category = item.getAttribute('data-category');
+
+                    if (filterValue === 'all' || category === filterValue) {
+
                         item.style.display = 'block';
+
                         setTimeout(() => {
                             item.style.opacity = '1';
                             item.style.transform = 'translateY(0)';
-                        }, 100);
+                        }, 50);
+
                     } else {
+
                         item.style.opacity = '0';
                         item.style.transform = 'translateY(20px)';
+
                         setTimeout(() => {
                             item.style.display = 'none';
                         }, 300);
+
                     }
+
                 });
+
             });
+
         });
+
     });
 </script>
-{% endblock content %}
+{% endblock %}

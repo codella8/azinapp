@@ -1,314 +1,937 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}contact | azingroup{% endblock %}
+{% block title %}Contact AZIN GROUP — Let's Work Together{% endblock %}
+
+{% block meta_description %}Contact AZIN GROUP for web development, digital solutions, creative services, media production, and business support. Tell us about your project and our team will get in touch.{% endblock %}
+
+{% block og_title %}Contact AZIN GROUP — Let's Work Together{% endblock %}
+
+{% block og_description %}Have a project in mind? Contact AZIN GROUP to discuss web development, digital solutions, creative services, media production, or business support.{% endblock %}
 
 {% block content %}
 
-{% if messages %}
-<div class="container mt-4">
-    {% for message in messages %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-        <div class="d-flex align-items-center">
-            <i class="bi {% if message.tags == 'success' %}bi-check-circle-fill{% elif message.tags == 'error' %}bi-x-circle-fill{% else %}bi-info-circle-fill{% endif %} me-2"></i>
-            <span>{{ message }}</span>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="بستن"></button>
-    </div>
-    {% endfor %}
-</div>
-{% endif %}
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="contact-hero" aria-labelledby="contact-hero-title">
 
-<section class="contact-section">
+    <div class="contact-hero__background">
+        <div class="contact-hero__overlay"></div>
+        <div class="contact-hero__pattern"></div>
+    </div>
+
     <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-4">
-                <div class="contact-info-wrapper">
-                    <h3 class="section-title">اطلاعات ارتباطی</h3>
-                    <p class="section-description">دفاتر مرکزی و واحدهای تخصصی گروه آذین</p>
+        <div class="contact-hero__content">
 
-                    <div class="contact-info-cards">
-                        <div class="contact-card animate-on-scroll">
-                            <div class="contact-icon">
-                                <i class="bi bi-envelope-fill"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>رایانامه رسمی</h4>
-                                <p class="contact-value">info@azingroup.com</p>
-                                <p class="contact-subtext">ارتباطات رسمی و اداری</p>
-                                <span class="contact-time">پاسخگویی: حداکثر ۲۴ ساعت کاری</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card animate-on-scroll">
-                            <div class="contact-icon">
-                                <i class="bi bi-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>پست الکترونیکی واحدها</h4>
-                                <p class="contact-value">media@azingroup.com</p>
-                                <p class="contact-subtext">واحد رسانه و ارتباطات</p>
-                                <p class="contact-value">sales@azingroup.com</p>
-                                <p class="contact-subtext">واحد بازرگانی و فروش</p>
-                                <p class="contact-value">support@azingroup.com</p>
-                                <p class="contact-subtext">پشتیبانی فنی</p>
-                            </div>
-                        </div>
+            <span class="contact-hero__badge">
+                {% trans "Get in Touch" %}
+            </span>
 
-                        <div class="contact-card animate-on-scroll">
-                            <div class="contact-icon">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>تلفن‌های سازمانی</h4>
-                                <p class="contact-value">۷۸ ۶۴ ۰۰ ۱۱ ۹۹۲+</p>
-                                <p class="contact-subtext">دفتر مرکزی - بخش پذیرش</p>
-                                <p class="contact-value">۴۳ ۶۴ ۰۰ ۱۱ ۹۹۲+</p>
-                                <p class="contact-subtext">واحد فروش و مشاوره</p>
-                                <span class="contact-time">ساعات تماس: ۹:۰۰ تا ۱۸:۰۰ به وقت محلی</span>
-                            </div>
-                        </div>
+            <h1 id="contact-hero-title" class="contact-hero__title">
+                {% trans "Let's Discuss Your" %}
+                <br>
+                <span class="contact-hero__accent">
+                    {% trans "Next Project" %}
+                </span>
+            </h1>
 
-                        <div class="contact-card animate-on-scroll">
-                            <div class="contact-icon">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>نشانی دفتر مرکزی</h4>
-                                <p class="contact-value">جمهوری تاجیکستان، شهر دوشنبه</p>
-                                <p class="contact-subtext">خیابان رودکی، پلاک ۱۲۷، ساختمان مرکزی آذین</p>
-                                <span class="contact-time">روزهای کاری: شنبه تا چهارشنبه</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p class="contact-hero__description">
+                {% trans "Whether you need a website, digital solution, creative service, media production, or business support, our team is ready to understand your needs and discuss the right approach for your project." %}
+            </p>
+
+            <div class="contact-hero__quick">
+
+                <a
+                    href="mailto:info@azingroup.com"
+                    class="contact-hero__quick-link"
+                    aria-label="{% trans 'Email AZIN GROUP' %}"
+                >
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>info@azingroup.com</span>
+                </a>
+
+                <a
+                    href="tel:+992110003443"
+                    class="contact-hero__quick-link"
+                    aria-label="{% trans 'Call AZIN GROUP' %}"
+                >
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <span>+992 11 000 3443</span>
+                </a>
+
             </div>
 
-            <div class="col-lg-8">
-                <div class="contact-form-wrapper animate-on-scroll">
-                    <div class="form-header">
-                        <h3>فرم درخواست ارتباط رسمی</h3>
-                        <p class="form-subtitle">جهت درخواست جلسه مشاوره، استعلام قیمت یا همکاری تجاری</p>
-                    </div>
-
-                    <form method="post" class="contact-form" id="contactForm">
-                        {% csrf_token %}
-
-                        {% if form.errors %}
-                        <div class="alert alert-danger">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                                <strong>لطفاً موارد زیر را بررسی نمایید:</strong>
-                            </div>
-                            <ul class="mb-0 ps-3">
-                                {% for field, errors in form.errors.items %}
-                                {% for error in errors %}
-                                <li>{{ error }}</li>
-                                {% endfor %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-
-                        <div class="form-section">
-                            <h5 class="form-section-title">اطلاعات هویتی</h5>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="{{ form.name.id_for_label }}" class="form-label">
-                                        {{ form.name.label }}
-                                        <span class="required">*</span>
-                                    </label>
-                                    {{ form.name }}
-                                    <div class="form-text">نام و نام خانوادگی</div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="{{ form.email.id_for_label }}" class="form-label">
-                                        {{ form.email.label }}
-                                        <span class="required">*</span>
-                                    </label>
-                                    {{ form.email }}
-                                    <div class="form-text">پست الکترونیکی معتبر سازمانی</div>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="{{ form.phone.id_for_label }}" class="form-label">
-                                        {{ form.phone.label }}
-                                        <span class="required">*</span>
-                                    </label>
-                                    {{ form.phone }}
-                                    <div class="form-text">شماره تماس </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="{{ form.company.id_for_label }}" class="form-label">
-                                        نام سازمان/شرکت
-                                    </label>
-                                    <input type="text" class="form-control" id="company" name="company" placeholder="نام رسمی سازمان">
-                                    <div class="form-text">اختیاری - برای مشتریان سازمانی</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <h5 class="form-section-title">موضوع درخواست</h5>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="{{ form.subject.id_for_label }}" class="form-label">
-                                        {{ form.subject.label }}
-                                        <span class="required">*</span>
-                                    </label>
-                                    <select class="form-select" id="{{ form.subject.id_for_label }}" name="{{ form.subject.name }}" required>
-                                        <option value="" selected disabled>-- لطفاً انتخاب نمایید --</option>
-                                        <option value="درخواست مشاوره">درخواست جلسه مشاوره</option>
-                                        <option value="استعلام قیمت">استعلام قیمت و خدمات</option>
-                                        <option value="همکاری تجاری">پیشنهاد همکاری تجاری</option>
-                                        <option value="پشتیبانی فنی">درخواست پشتیبانی فنی</option>
-                                        <option value="انتقادات و پیشنهادات">انتقادات و پیشنهادات</option>
-                                        <option value="سایر">سایر موارد</option>
-                                    </select>
-                                    <div class="form-text">نوع درخواست خود را مشخص نمایید</div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="priority" class="form-label">اولویت پاسخگویی</label>
-                                    <select class="form-select" id="priority" name="priority">
-                                        <option value="عادی" selected>عادی (پاسخ در ۴۸ ساعت)</option>
-                                        <option value="فوری">فوری (پاسخ در ۲۴ ساعت)</option>
-                                        <option value="خیلی فوری">خیلی فوری (پاسخ در ۱۲ ساعت)</option>
-                                    </select>
-                                    <div class="form-text">بر اساس اهمیت درخواست انتخاب شود</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <h5 class="form-section-title">متن درخواست</h5>
-                            <div class="form-group full-width">
-                                <label for="{{ form.message.id_for_label }}" class="form-label">
-                                    {{ form.message.label }}
-                                    <span class="required">*</span>
-                                </label>
-                                {{ form.message }}
-                                <div class="form-text">شرح کامل درخواست، نیازمندی‌ها و انتظارات خود را به صورت واضح بیان نمایید</div>
-                                
-                            </div>
-                        </div>
-
-                        <div class="form-submit">
-                            <button type="submit" class="submit-btn">
-                                <i class="bi bi-send-fill me-2"></i>
-                                ارسال درخواست رسمی
-                            </button>
-                            <p class="response-time">
-                                <i class="bi bi-clock-history me-1"></i>
-                                زمان متوسط پاسخگویی: ۲۴ ساعت کاری
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
+
 </section>
 
-{% endblock content %}
+
+<!-- ======================================== -->
+<!-- 2. CONTACT INFORMATION & FORM            -->
+<!-- ======================================== -->
+<section
+    class="section section--contact"
+    aria-labelledby="contact-section-title"
+>
+
+    <div class="container">
+
+        <div class="contact-grid grid-2">
+
+            <!-- ======================================== -->
+            <!-- CONTACT INFORMATION                       -->
+            <!-- ======================================== -->
+
+            <div class="contact-info">
+
+                <div
+                    class="section-header"
+                    style="text-align:left;margin-bottom:32px;"
+                >
+
+                    <span class="section-header__badge">
+                        {% trans "Contact Information" %}
+                    </span>
+
+                    <h2
+                        id="contact-section-title"
+                        class="section-header__title"
+                        style="font-size:1.8rem;"
+                    >
+                        {% trans "How Can We Help?" %}
+                    </h2>
+
+                    <p
+                        class="section-header__subtitle"
+                        style="text-align:left;"
+                    >
+                        {% trans "Choose the most convenient way to reach AZIN GROUP. For project inquiries, you can also use the contact form." %}
+                    </p>
+
+                </div>
+
+
+                <div class="contact-info__items">
+
+                    <!-- EMAIL -->
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "Email" %}</h3>
+
+                            <a href="mailto:azinmedia.com@gmail.com">
+                                info@azinmedia.co
+                            </a>
+
+                            <span>
+                                {% trans "General inquiries and project requests" %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUPPORT -->
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true">
+                            <i class="fas fa-headset"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "AzinGroup" %}</h3>
+
+                            <a href="https://wa.me/992110003443">
+                                @azingroup.co
+                            </a>
+                            <span>
+                                {% trans "Technical support and existing projects" %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true">
+                            <i class="fas fa-headset"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "AzinMedia" %}</h3>
+
+                            <a href="https://wa.me/992110006443">
+                                @azinmedia.co
+                            </a>
+                            <span>
+                                {% trans "Technical support and existing projects" %}
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true">
+                            <i class="fas fa-headset"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "Azinshop" %}</h3>
+
+                            <a href="https://wa.me/992979003443">
+                                @azinshop.Tj.co
+                            </a>
+
+                            <span>
+                                {% trans "Technical support and existing projects" %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "Phone" %}</h3>
+
+                            <a href="tel:+992110003443">
+                                +992 11 000 3443
+                            </a>
+
+                            <span>
+                                {% trans "Monday – Friday, 9:00 AM – 6:00 PM" %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+                    <div class="contact-info__item">
+
+                        <div
+                            class="contact-info__icon"
+                            aria-hidden="true"
+                        >
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <div class="contact-info__content">
+
+                            <h3>{% trans "Location" %}</h3>
+
+                            <span>
+                                Dushanbe, Tajikistan
+                            </span>
+
+                            <span>
+                                {% trans "Rudaki Avenue, 127" %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ======================================== -->
+                <!-- SOCIAL MEDIA                              -->
+                <!-- ======================================== -->
+
+                <div class="contact-info__social">
+
+                    <h3>
+                        {% trans "Follow AZIN GROUP" %}
+                    </h3>
+
+                    <div class="contact-info__social-links">
+
+                        <!-- Replace # with the actual social URLs -->
+
+                        <a
+                            href="#"
+                            class="contact-info__social-link"
+                            aria-label="Instagram"
+                        >
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-info__social-link"
+                            aria-label="Telegram"
+                        >
+                            <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-info__social-link"
+                            aria-label="Facebook"
+                        >
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-info__social-link"
+                            aria-label="TikTok"
+                        >
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="https://wa.me/992110003443"
+                            class="contact-info__social-link"
+                            aria-label="WhatsApp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ======================================== -->
+                <!-- WORKING HOURS                             -->
+                <!-- ======================================== -->
+
+                <div class="contact-info__hours">
+
+                    <h3>
+                        {% trans "Working Hours" %}
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <span>
+                                {% trans "Monday – Thursday" %}
+                            </span>
+
+                            <span>
+                                9:00 AM – 6:00 PM
+                            </span>
+                        </li>
+
+                        <li>
+                            <span>
+                                {% trans "Friday" %}
+                            </span>
+
+                            <span>
+                                9:00 AM – 1:00 PM
+                            </span>
+                        </li>
+
+                        <li>
+                            <span>
+                                {% trans "Saturday – Sunday" %}
+                            </span>
+
+                            <span>
+                                {% trans "Closed" %}
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- ======================================== -->
+            <!-- CONTACT FORM                              -->
+            <!-- ======================================== -->
+
+            <div class="contact-form-wrapper">
+
+                <div class="contact-form__header">
+
+                    <h2>
+                        {% trans "Send Us a Message" %}
+                    </h2>
+
+                    <p>
+                        {% trans "Tell us a little about your project, requirements, or question. Our team will review your message and get back to you." %}
+                    </p>
+
+                </div>
+
+
+                <form
+                    method="post"
+                    class="contact-form"
+                    id="contactForm"
+                    novalidate
+                >
+
+                    {% csrf_token %}
+
+
+                    <!-- FORM ERRORS -->
+                    {% if form.errors %}
+
+                    <div
+                        class="contact-form__errors"
+                        role="alert"
+                        aria-live="polite"
+                    >
+
+                        <i
+                            class="fas fa-exclamation-circle"
+                            aria-hidden="true"
+                        ></i>
+
+                        <div>
+
+                            <strong>
+                                {% trans "Please review the following information:" %}
+                            </strong>
+
+                            <ul>
+
+                                {% for field, errors in form.errors.items %}
+
+                                    {% for error in errors %}
+
+                                        <li>
+                                            {{ error }}
+                                        </li>
+
+                                    {% endfor %}
+
+                                {% endfor %}
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    <!-- ======================================== -->
+                    <!-- NAME + EMAIL                              -->
+                    <!-- ======================================== -->
+
+                    <div class="contact-form__row">
+
+                        <div class="contact-form__group">
+
+                            <label for="{{ form.name.id_for_label }}">
+                                {% trans "Full Name" %}
+                                <span class="required" aria-hidden="true">*</span>
+                            </label>
+
+                            {{ form.name }}
+
+                            <span class="contact-form__hint">
+                                {% trans "Enter your name or company name." %}
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-form__group">
+
+                            <label for="{{ form.email.id_for_label }}">
+                                {% trans "Email Address" %}
+                                <span class="required" aria-hidden="true">*</span>
+                            </label>
+
+                            {{ form.email }}
+
+                            <span class="contact-form__hint">
+                                {% trans "We use your email only to respond to your inquiry." %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ======================================== -->
+                    <!-- PHONE + SUBJECT                           -->
+                    <!-- ======================================== -->
+
+                    <div class="contact-form__row">
+
+                        <div class="contact-form__group">
+
+                            <label for="phone">
+                                {% trans "Phone Number" %}
+                            </label>
+
+                            <input
+                                type="tel"
+                                class="contact-form__input"
+                                id="phone"
+                                name="phone"
+                                placeholder="+992 11 000 3443"
+                                autocomplete="tel"
+                            >
+
+                            <span class="contact-form__hint">
+                                {% trans "Optional. Include your country code." %}
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-form__group">
+
+                            <label for="subject">
+                                {% trans "Subject" %}
+                                <span class="required" aria-hidden="true">*</span>
+                            </label>
+
+                            <select
+                                class="contact-form__input"
+                                id="subject"
+                                name="subject"
+                                required
+                            >
+
+                                <option
+                                    value=""
+                                    selected
+                                    disabled
+                                >
+                                    {% trans "Select a subject..." %}
+                                </option>
+
+                                <option value="consultation">
+                                    {% trans "Order a web app" %}
+                                </option>
+
+                                <option value="project">
+                                    {% trans "Order a Mobileapp" %}
+                                </option>
+
+                                <option value="project">
+                                    {% trans "Graphic Design" %}
+                                </option>
+
+                                <option value="project">
+                                    {% trans "Media" %}
+                                </option>
+
+                                <option value="partnership">
+                                    {% trans "Order Product" %}
+                                </option>
+
+                                <option value="support">
+                                    {% trans "Technical Support" %}
+                                </option>
+
+                                <option value="other">
+                                    {% trans "Other Inquiry" %}
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ======================================== -->
+                    <!-- MESSAGE                                   -->
+                    <!-- ======================================== -->
+
+                    <div class="contact-form__group contact-form__group--full">
+
+                        <label for="{{ form.message.id_for_label }}">
+                            {% trans "Message" %}
+                            <span class="required" aria-hidden="true">*</span>
+                        </label>
+
+                        {{ form.message }}
+
+                        <span class="contact-form__hint">
+                            {% trans "Briefly describe your project, requirements, budget range, or question." %}
+                        </span>
+
+                    </div>
+
+
+                    <!-- ======================================== -->
+                    <!-- SUBMIT                                    -->
+                    <!-- ======================================== -->
+
+                    <button
+                        type="submit"
+                        class="contact-form__submit"
+                    >
+
+                        <i
+                            class="fas fa-paper-plane"
+                            aria-hidden="true"
+                        ></i>
+
+                        {% trans "Send Message" %}
+
+                    </button>
+
+
+                    <p class="contact-form__response-time">
+
+                        <i
+                            class="fas fa-clock"
+                            aria-hidden="true"
+                        ></i>
+
+                        {% trans "We aim to respond within 24 business hours." %}
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================== -->
+<!-- 3. LOCATION / MAP                        -->
+<!-- ======================================== -->
+<section
+    class="section section--map"
+    aria-labelledby="location-title"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Our Location" %}
+            </span>
+
+            <h2
+                id="location-title"
+                class="section-header__title"
+            >
+                {% trans "Visit AZIN GROUP" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Our office is located in Dushanbe, Tajikistan." %}
+            </p>
+
+        </div>
+
+
+        <div class="map-container">
+
+            <iframe
+                class="map-container__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.439!2d68.793!3d38.561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDMzJzU5LjYiTiA2OMKwNDcnMzUuMCJF!5e0!3m2!1sen!2s!4v1700000000000"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="{% trans 'AZIN GROUP office location on Google Maps' %}"
+            ></iframe>
+
+
+            <div class="map-container__badge">
+
+                <i
+                    class="fas fa-map-pin"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Dushanbe, Tajikistan
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================== -->
+<!-- 4. FINAL CTA                              -->
+<!-- ======================================== -->
+<section
+    class="section section--cta"
+    aria-label="{% trans 'Start a project with AZIN GROUP' %}"
+>
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Have a Project in Mind?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you are looking to build or improve. We will help you identify the right solution and next steps." %}
+                </p>
+
+                <div class="cta-box__actions">
+
+                    <a
+                        href="{% url 'contact' %}"
+                        class="btn btn--primary btn--large"
+                    >
+                        <i
+                            class="fas fa-paper-plane"
+                            aria-hidden="true"
+                        ></i>
+
+                        {% trans "Start a Conversation" %}
+                    </a>
+
+
+                    <a
+                        href="tel:+992110003443"
+                        class="btn btn--outline btn--large"
+                        style="border-color:rgba(255,255,255,0.3);color:white;"
+                    >
+
+                        <i
+                            class="fas fa-phone"
+                            aria-hidden="true"
+                        ></i>
+
+                        {% trans "Call Us" %}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT                               -->
+<!-- Lightweight Client-Side Form Validation  -->
+<!-- ======================================== -->
 
 {% block extra_js %}
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // انیمیشن اسکرول
-        const animateOnScroll = function () {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                if (elementTop < window.innerHeight - 100) {
-                    element.classList.add('animated');
-                }
-            });
-        };
-        animateOnScroll();
-        window.addEventListener('scroll', animateOnScroll);
+document.addEventListener('DOMContentLoaded', function () {
 
-        // شمارنده کاراکتر
-        const messageField = document.querySelector('#{{ form.message.id_for_label }}');
-        const charCount = document.querySelector('#charCount');
-        
-        if (messageField && charCount) {
-            messageField.addEventListener('input', function() {
-                charCount.textContent = this.value.length;
-                if (this.value.length > 1000) {
-                    charCount.classList.add('text-danger');
-                } else {
-                    charCount.classList.remove('text-danger');
+    const form = document.getElementById('contactForm');
+
+    if (!form) {
+        return;
+    }
+
+
+    /*
+     * Client-side validation
+     * -----------------------
+     * This is only for user experience.
+     * Django/server-side validation remains the
+     * authoritative validation layer.
+     */
+
+    form.addEventListener('submit', function (event) {
+
+        let isValid = true;
+        let firstError = null;
+
+
+        /*
+         * Validate required fields
+         */
+        const requiredFields = form.querySelectorAll('[required]');
+
+        requiredFields.forEach(function (field) {
+
+            const value = field.value.trim();
+
+            if (!value) {
+
+                isValid = false;
+
+                field.classList.add(
+                    'contact-form__input--error'
+                );
+
+                field.setAttribute(
+                    'aria-invalid',
+                    'true'
+                );
+
+                if (!firstError) {
+                    firstError = field;
                 }
-            });
+
+            } else {
+
+                field.classList.remove(
+                    'contact-form__input--error'
+                );
+
+                field.removeAttribute(
+                    'aria-invalid'
+                );
+            }
+
+        });
+
+
+        /*
+         * Validate email format
+         */
+        const emailField = form.querySelector(
+            'input[type="email"]'
+        );
+
+        if (emailField && emailField.value.trim()) {
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(
+                emailField.value.trim()
+            )) {
+
+                isValid = false;
+
+                emailField.classList.add(
+                    'contact-form__input--error'
+                );
+
+                emailField.setAttribute(
+                    'aria-invalid',
+                    'true'
+                );
+
+                if (!firstError) {
+                    firstError = emailField;
+                }
+
+            }
+
         }
 
-        // اعتبارسنجی فرم
-        const contactForm = document.querySelector('#contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function (e) {
-                const requiredFields = this.querySelectorAll('[required]');
-                let isValid = true;
-                let errorFields = [];
 
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        errorFields.push(field.labels[0]?.textContent || field.name);
-                        field.classList.add('is-invalid');
-                    } else {
-                        field.classList.remove('is-invalid');
-                    }
-                });
+        /*
+         * Stop submission only when
+         * client-side validation fails.
+         */
+        if (!isValid) {
 
-                // اعتبارسنجی ایمیل
-                const emailField = this.querySelector('#{{ form.email.id_for_label }}');
-                if (emailField && emailField.value.trim()) {
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(emailField.value)) {
-                        isValid = false;
-                        emailField.classList.add('is-invalid');
-                        errorFields.push('فرمت پست الکترونیکی');
-                    }
-                }
+            event.preventDefault();
 
-                // اعتبارسنجی شماره تلفن
-                const phoneField = this.querySelector('#{{ form.phone.id_for_label }}');
-                if (phoneField && phoneField.value.trim()) {
-                    const phoneRegex = /^[\d\s\-\+\(\)]+$/;
-                    if (!phoneRegex.test(phoneField.value) || phoneField.value.length < 8) {
-                        isValid = false;
-                        phoneField.classList.add('is-invalid');
-                        errorFields.push('فرمت شماره تماس');
-                    }
-                }
+            if (firstError) {
+                firstError.focus();
+            }
 
-                if (!isValid) {
-                    e.preventDefault();
-                    const errorMessage = 'لطفاً فیلدهای زیر را به درستی تکمیل نمایید:\n' + errorFields.join('\n');
-                    alert(errorMessage);
-                }
-            });
-
-            // حذف خطا هنگام تایپ
-            contactForm.querySelectorAll('input, select, textarea').forEach(field => {
-                field.addEventListener('input', function() {
-                    this.classList.remove('is-invalid');
-                });
-            });
         }
 
-        // نمایش پیام موفقیت
-        const successAlert = document.querySelector('.alert-success');
-        if (successAlert) {
-            setTimeout(() => {
-                successAlert.classList.add('fade');
-                setTimeout(() => {
-                    successAlert.style.display = 'none';
-                }, 300);
-            }, 5000);
-        }
     });
+
+
+    /*
+     * Clear error state while user edits
+     * the field.
+     */
+    const fields = form.querySelectorAll(
+        'input, select, textarea'
+    );
+
+    fields.forEach(function (field) {
+
+        field.addEventListener(
+            'input',
+            function () {
+
+                this.classList.remove(
+                    'contact-form__input--error'
+                );
+
+                this.removeAttribute(
+                    'aria-invalid'
+                );
+
+            }
+        );
+
+
+        field.addEventListener(
+            'change',
+            function () {
+
+                this.classList.remove(
+                    'contact-form__input--error'
+                );
+
+                this.removeAttribute(
+                    'aria-invalid'
+                );
+
+            }
+        );
+
+    });
+
+});
 </script>
+
 {% endblock %}

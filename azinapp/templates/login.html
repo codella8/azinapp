@@ -2,90 +2,91 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}{% trans 'ناحیه کاربری' %} - AZIN GROUP{% endblock %}
+{% block title %}Login — AZIN GROUP{% endblock %}
+
+{% block meta_description %}Login to your AZIN GROUP account.{% endblock %}
 
 {% block content %}
-<section class="login-section">
+
+<section class="auth-section" aria-label="{% trans 'Login' %}">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-7">
-                <div class="login-card shadow-lg">
-                    <div class="login-form p-4 p-md-5">
-                        <div class="text-center mb-5">
-                            <a href="{% url 'index' %}">
-                                <img src="{% static 'img/azinlogo.jpg' %}" alt="azin" class="logo mb-4" width="120">
-                            </a>
-                            <h3 class="login-title position-relative">{% trans 'ورود به حساب' %}</h3>
-                        </div>
-                        <form method="POST" action="{% url 'login' %}">
-                            {% csrf_token %}
+        <div class="auth-container">
+            <div class="auth-card">
+                <!-- Header -->
+                <div class="auth-card__header">
+                    <a href="{% url 'index' %}" class="auth-card__logo-link">
+                        <img src="{% static 'img/azinlogo.jpg' %}" alt="AZIN GROUP" class="auth-card__logo" width="100">
+                    </a>
+                    <h2 class="auth-card__title">{% trans "Welcome Back" %}</h2>
+                    <p class="auth-card__subtitle">{% trans "Login to your account to manage your profile." %}</p>
+                </div>
 
-                            <div class="mb-4">
-                                <label for="username" class="form-label">
-                                    <i class="bi bi-person me-2"></i> {% trans 'نام کاربری یا ایمیل' %}
-                                </label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-transparent">
-                                        <i class="bi bi-person"></i>
-                                    </span>
-                                    <input type="text" class="form-control" id="username" name="username"
-                                        placeholder="{% trans 'نام کاربری یا ایمیل' %}" required>
-                                </div>
+                <!-- Form -->
+                <form method="POST" action="{% url 'login' %}" class="auth-form">
+                    {% csrf_token %}
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="auth-form__alert auth-form__alert--{{ message.tags }}">
+                                <i class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-circle{% else %}info-circle{% endif %}"></i>
+                                {{ message }}
                             </div>
+                        {% endfor %}
+                    {% endif %}
 
-                            <div class="mb-4">
-                                <label for="password" class="form-label">
-                                    <i class="bi bi-lock me-2"></i> {% trans 'رمز عبور' %}
-                                </label>
-                                <div class="input-group password-field">
-                                    <span class="input-group-text bg-transparent">
-                                        <i class="bi bi-lock"></i>
-                                    </span>
-                                    <input type="password" class="form-control" id="password" name="password"
-                                        placeholder="{% trans 'رمز عبور' %}" required>
-                                    <button class="toggle-password" type="button" onclick="togglePassword()">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="d-grid mb-4">
-                                <button type="submit" class="btn login-btn">
-                                    <i class="bi bi-box-arrow-in-right me-2"></i> {% trans 'ورود به حساب' %}
-                                </button>
-                            </div>
-                        </form>
-
-                        <div class="text-center mt-4">
-                            <p class="register-text">
-                                {% trans 'حساب ندارید؟' %}
-                                <a href="{% url 'signup' %}" class="register-link">
-                                    {% trans 'ثبت نام کنید' %}
-                                </a>
-                            </p>
+                    <div class="auth-form__group">
+                        <label for="username" class="auth-form__label">
+                            <i class="fas fa-user"></i> {% trans "Username or Email" %}
+                        </label>
+                        <div class="auth-form__input-wrapper">
+                            <input type="text" class="auth-form__input" id="username" name="username" 
+                                placeholder="{% trans 'Enter your username or email' %}" required autofocus>
                         </div>
                     </div>
+
+                    <div class="auth-form__group">
+                        <label for="password" class="auth-form__label">
+                            <i class="fas fa-lock"></i> {% trans "Password" %}
+                        </label>
+                        <div class="auth-form__input-wrapper auth-form__input-wrapper--password">
+                            <input type="password" class="auth-form__input" id="password" name="password" 
+                                placeholder="{% trans 'Enter your password' %}" required>
+                            <button type="button" class="auth-form__toggle-password" onclick="togglePassword()" aria-label="{% trans 'Toggle password visibility' %}">
+                                <i class="fas fa-eye" id="passwordIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-form__submit">
+                        <i class="fas fa-sign-in-alt"></i> {% trans "Login" %}
+                    </button>
+                </form>
+
+                <!-- Footer -->
+                <div class="auth-card__footer">
+                    <p>{% trans "Don't have an account?" %} <a href="{% url 'signup' %}" class="auth-card__link">{% trans "Sign Up" %}</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 {% endblock %}
 
 {% block extra_js %}
 <script>
     function togglePassword() {
         const passwordInput = document.getElementById('password');
-        const eyeIcon = document.querySelector('.toggle-password i');
-
+        const icon = document.getElementById('passwordIcon');
+        
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.classList.remove('bi-eye');
-            eyeIcon.classList.add('bi-eye-slash');
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
         } else {
             passwordInput.type = 'password';
-            eyeIcon.classList.remove('bi-eye-slash');
-            eyeIcon.classList.add('bi-eye');
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
         }
     }
 </script>

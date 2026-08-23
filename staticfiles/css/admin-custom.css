@@ -1,0 +1,200 @@
+/* ======================================== */
+/* AZIN GROUP — Custom Admin Styles        */
+/* ======================================== */
+
+/* ----- Brand Colors ----- */
+:root {
+    --azin-gold: #fdce0a;
+    --azin-gold-dark: #e6b800;
+    --azin-gold-light: #fff3a0;
+    --azin-dark: #282828;
+    --azin-light: #ededed;
+}
+
+/* ----- Login Page ----- */
+.login-page .login-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid rgba(253, 206, 10, 0.2);
+}
+
+.login-page .login-box .card {
+    border: none;
+    border-radius: 0;
+}
+
+.login-page .login-box .card-header {
+    background: linear-gradient(135deg, var(--azin-dark), #1a1a1a);
+    border: none;
+    padding: 30px 20px;
+}
+
+.login-page .login-box .card-header h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.login-page .login-box .card-header p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-page .login-box .btn-primary {
+    background: var(--azin-gold);
+    border-color: var(--azin-gold);
+    color: var(--azin-dark);
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.login-page .login-box .btn-primary:hover {
+    background: var(--azin-gold-dark);
+    border-color: var(--azin-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(253, 206, 10, 0.3);
+}
+
+.login-page .login-box .form-control {
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.login-page .login-box .form-control:focus {
+    border-color: var(--azin-gold);
+    box-shadow: 0 0 0 3px rgba(253, 206, 10, 0.2);
+}
+
+/* ----- Sidebar ----- */
+.main-sidebar .brand-link {
+    background: linear-gradient(135deg, var(--azin-dark), #1a1a1a);
+    border-bottom: 1px solid rgba(253, 206, 10, 0.2);
+    padding: 15px 20px;
+}
+
+.main-sidebar .brand-link .brand-text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.main-sidebar .brand-link .brand-text span {
+    color: var(--azin-gold);
+}
+
+.main-sidebar .nav-sidebar .nav-link {
+    border-radius: 10px;
+    margin: 4px 8px;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+}
+
+.main-sidebar .nav-sidebar .nav-link:hover {
+    background: rgba(253, 206, 10, 0.1);
+    color: var(--azin-gold);
+}
+
+.main-sidebar .nav-sidebar .nav-link.active {
+    background: linear-gradient(135deg, var(--azin-gold), var(--azin-gold-dark));
+    color: var(--azin-dark);
+    font-weight: 600;
+}
+
+.main-sidebar .nav-sidebar .nav-link.active i {
+    color: var(--azin-dark);
+}
+
+/* ----- Cards / Boxes ----- */
+.card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 16px 20px;
+    background: transparent;
+}
+
+/* ----- Tables ----- */
+.table thead th {
+    background: #f8f9fa;
+    border-bottom: 2px solid var(--azin-gold);
+    font-weight: 600;
+    color: var(--azin-dark);
+    padding: 12px 16px;
+}
+
+.table tbody tr:hover {
+    background: rgba(253, 206, 10, 0.05);
+}
+
+/* ----- Buttons ----- */
+.btn-primary {
+    background: var(--azin-gold);
+    border-color: var(--azin-gold);
+    color: var(--azin-dark);
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--azin-gold-dark);
+    border-color: var(--azin-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(253, 206, 10, 0.3);
+}
+
+/* ----- Image Previews ----- */
+.admin-image-preview {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.admin-image-preview:hover {
+    border-color: var(--azin-gold);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .login-page .login-box {
+        border-radius: 12px;
+        margin: 20px;
+    }
+    
+    .main-sidebar .brand-link .brand-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 12px;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}

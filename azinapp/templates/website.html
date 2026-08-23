@@ -1,336 +1,1839 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}توسعه وبسایت | گروه آذین{% endblock %}
+{% block title %}Web Development Services — AZIN GROUP{% endblock %}
+
+{% block meta_description %}
+Professional web development services by AZIN GROUP. We build responsive corporate websites, e-commerce stores, dashboards, educational platforms, and custom Django web applications.
+{% endblock %}
+
+{% block og_title %}Web Development Services — AZIN GROUP{% endblock %}
+
+{% block og_description %}
+Custom web development by AZIN GROUP — corporate websites, e-commerce, dashboards, educational platforms, and Django-powered business applications.
+{% endblock %}
+
 
 {% block content %}
-<!-- هیرو سکشن خدمات -->
-<section class="service-hero-section">
-    <div class="service-hero-background">
-        <div class="hero-gradient"></div>
-        <div class="hero-pattern"></div>
-        <div class="floating-elements">
-            <div class="element element-1"><i class="bi bi-code-slash"></i></div>
-            <div class="element element-2"><i class="bi bi-laptop"></i></div>
-            <div class="element element-3"><i class="bi bi-shield-check"></i></div>
-            <div class="element element-4"><i class="bi bi-graph-up"></i></div>
+
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+
+<section class="web-hero" aria-label="{% trans 'Web Development Services' %}">
+
+    <div class="web-hero__background">
+        <div class="web-hero__overlay"></div>
+        <div class="web-hero__pattern"></div>
+
+        <div class="web-hero__floating">
+            <div class="web-hero__float web-hero__float--1">
+                <i class="fas fa-code"></i>
+            </div>
+
+            <div class="web-hero__float web-hero__float--2">
+                <i class="fas fa-laptop"></i>
+            </div>
+
+            <div class="web-hero__float web-hero__float--3">
+                <i class="fas fa-database"></i>
+            </div>
+
+            <div class="web-hero__float web-hero__float--4">
+                <i class="fas fa-rocket"></i>
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="service-hero-content">
-            <div class="service-hero-text">
-                <div class="service-badge">
-                    <span class="badge-text">واحد توسعه وب و نرم‌افزار</span>
-                    <div class="badge-line"></div>
-                </div>
 
-                <h1 class="service-hero-title">
-                    <span class="title-line">توسعه وبسایت های</span>
-                    <span class="title-line accent">سازمانی پیشرفته</span>
+        <div class="web-hero__content">
+
+            <div class="web-hero__text">
+
+                <span class="web-hero__badge">
+                    AZIN GROUP — Web Development
+                </span>
+
+                <h1 class="web-hero__title">
+
+                    <span class="web-hero__title-line">
+                        {% trans "Web Development" %}
+                    </span>
+
+                    <span class="web-hero__title-line web-hero__accent">
+                        {% trans "& Business Solutions" %}
+                    </span>
+
                 </h1>
 
-                <p class="service-hero-description">
-                    واحد توسعه وب گروه آذین با بهره‌گیری از تیم متخصص و استفاده از جدیدترین تکنولوژی‌های روز، راهکارهای
-                    جامعی برای طراحی و توسعه وبسایت‌های سازمانی، پرتال‌های اختصاصی و سیستم‌های مدیریت محتوای پیشرفته
-                    ارائه می‌دهد. کیفیت، امنیت و کارایی در اولویت ماست.
+                <p class="web-hero__description">
+                    {% trans "We design and develop modern, responsive, and reliable websites and web applications for businesses, organizations, and growing brands. From professional corporate websites to custom Django-powered business systems, we build solutions around your goals, workflow, and budget." %}
                 </p>
 
-                <div class="service-hero-stats">
-                    <div class="hero-stat">
-                        <div class="stat-number" data-count="99">0<span>%</span></div>
-                        <div class="stat-label">رضایت سازمانی</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="stat-number" data-count="24">0/7</div>
-                        <div class="stat-label">پشتیبانی فنی</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="stat-number" data-count="10">0<span>+</span></div>
-                        <div class="stat-label">سال تجربه</div>
-                    </div>
+
+                <!-- Technology Stack -->
+
+                <div class="web-hero__tech-stack">
+
+                    <span class="web-hero__tech-tag">
+                        Python
+                    </span>
+
+                    <span class="web-hero__tech-tag">
+                        Django
+                    </span>
+
+                    <span class="web-hero__tech-tag">
+                        PostgreSQL
+                    </span>
+
+                    <span class="web-hero__tech-tag">
+                        HTML & CSS
+                    </span>
+
+                    <span class="web-hero__tech-tag">
+                        REST API
+                    </span>
+
+                    <span class="web-hero__tech-tag">
+                        Docker
+                    </span>
+
                 </div>
 
-                <div class="service-hero-actions">
-                    <a href="{% url 'contact' %}" class="service-cta-btn primary">
-                        <i class="bi bi-calendar-check"></i>
-                        <span>درخواست مشاوره فنی</span>
+
+                <!-- Hero Actions -->
+
+                <div class="web-hero__actions">
+
+                    <a href="#pricing"
+                       class="btn btn--primary btn--large">
+
+                        <i class="fas fa-tags"></i>
+
+                        {% trans "View Packages" %}
+
                     </a>
-                    <a href="{% url 'portfolio' %}" class="service-cta-btn secondary">
-                        <i class="bi bi-eye"></i>
-                        <span>مشاهده نمونه کارها</span>
+
+
+                    <a href="#portfolio"
+                       class="btn btn--outline btn--large"
+                       style="border-color:rgba(255,255,255,0.3);color:white;">
+
+                        <i class="fas fa-eye"></i>
+
+                        {% trans "View Portfolio" %}
+
                     </a>
+
                 </div>
+
+
+                <!-- Hero Trust Points -->
+
+                <div class="web-hero__stats">
+
+                    <div class="web-hero__stat">
+
+                        <span class="web-hero__stat-number">
+                            Django
+                        </span>
+
+                        <span class="web-hero__stat-label">
+                            {% trans "Backend Development" %}
+                        </span>
+
+                    </div>
+
+
+                    <div class="web-hero__stat">
+
+                        <span class="web-hero__stat-number">
+                            PostgreSQL
+                        </span>
+
+                        <span class="web-hero__stat-label">
+                            {% trans "Reliable Database Solutions" %}
+                        </span>
+
+                    </div>
+
+
+                    <div class="web-hero__stat">
+
+                        <span class="web-hero__stat-number">
+                            Custom
+                        </span>
+
+                        <span class="web-hero__stat-label">
+                            {% trans "Business-Focused Solutions" %}
+                        </span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="service-hero-visual">
-                <div class="service-showcase">
-                    <div class="showcase-device desktop">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img src="{% static 'img/web.jpg' %}" alt="pic">
-                                <div class="device-label">پورتال سازمانی</div>
+
+            <!-- Hero Visual -->
+
+            <div class="web-hero__visual">
+
+                <div class="web-hero__devices">
+
+                    <!-- Desktop -->
+
+                    <div class="web-hero__device web-hero__device--desktop">
+
+                        <div class="web-hero__device-frame">
+
+                            <div class="web-hero__device-screen">
+
+                                <div class="web-hero__device-placeholder">
+
+                                    <i class="fas fa-desktop"></i>
+
+                                    <span>
+                                        {% trans "Responsive Web Experience" %}
+                                    </span>
+
+                                </div>
+
                             </div>
+
                         </div>
+
                     </div>
-                    <div class="showcase-device tablet">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img src="{% static 'img/wel.jpg' %}" alt="pic">
-                                <div class="device-label">نمایش تبلت</div>
+
+
+                    <!-- Tablet -->
+
+                    <div class="web-hero__device web-hero__device--tablet">
+
+                        <div class="web-hero__device-frame">
+
+                            <div class="web-hero__device-screen">
+
+                                <div class="web-hero__device-placeholder">
+
+                                    <i class="fas fa-tablet-alt"></i>
+
+                                    <span>
+                                        {% trans "Tablet" %}
+                                    </span>
+
+                                </div>
+
                             </div>
+
                         </div>
+
                     </div>
-                    <div class="showcase-device mobile">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img src="{% static 'img/market.jpg' %}" alt="pic">
-                                <div class="device-label">نمایش موبایل</div>
+
+
+                    <!-- Mobile -->
+
+                    <div class="web-hero__device web-hero__device--mobile">
+
+                        <div class="web-hero__device-frame">
+
+                            <div class="web-hero__device-screen">
+
+                                <div class="web-hero__device-placeholder">
+
+                                    <i class="fas fa-mobile-alt"></i>
+
+                                    <span>
+                                        {% trans "Mobile" %}
+                                    </span>
+
+                                </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
 
-<section class="importance-section">
+
+
+<!-- ======================================== -->
+<!-- 2. WHAT WE BUILD                         -->
+<!-- ======================================== -->
+
+<section class="section section--types"
+         aria-label="{% trans 'Types of websites and applications' %}">
+
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">اهمیت راه‌اندازی پلتفرم دیجیتال سازمانی</h2>
-            <p class="section-subtitle">وبسایت شما ستون فقرات حضور دیجیتال و ارتباط سازمانی شماست</p>
-        </div>
 
-        <div class="importance-grid">
-            <div class="importance-card">
-                <div class="card-icon">
-                    <i class="bi bi-globe2"></i>
-                </div>
-                <h4>حضور مستمر در فضای دیجیتال</h4>
-                <p>وبسایت سازمانی به صورت ۲۴ ساعته و در تمام نقاط جهان، نماینده رسمی و معتبر سازمان شماست</p>
-            </div>
-
-            <div class="importance-card">
-                <div class="card-icon">
-                    <i class="bi bi-shield-check"></i>
-                </div>
-                <h4>افزایش اعتبار و اعتماد سازمانی</h4>
-                <p>وبسایت حرفه‌ای اعتبار برند سازمانی را تقویت کرده و حس اطمینان را در ذینفعان ایجاد می‌کند</p>
-            </div>
-
-            <div class="importance-card">
-                <div class="card-icon">
-                    <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <h4>بهینه‌سازی هزینه‌های ارتباطی</h4>
-                <p>کاهش هزینه‌های بازاریابی، تبلیغات و ارتباطات سازمانی از طریق پلتفرم دیجیتال یکپارچه</p>
-            </div>
-
-            <div class="importance-card">
-                <div class="card-icon">
-                    <i class="bi bi-people"></i>
-                </div>
-                <h4>دسترسی به بازارها و فرصت‌های جدید</h4>
-                <p>امکان ارتباط با مشتریان، شرکا و سرمایه‌گذاران جدید در سطح ملی و بین‌المللی</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش انواع خدمات -->
-<section class="services-types-section">
-    <div class="container">
         <div class="section-header">
-            <h2 class="section-title">انواع پلتفرم‌های وب سازمانی</h2>
-            <p class="section-subtitle">راهکارهای تخصصی متناسب با اهداف و نیازمندی‌های سازمانی</p>
+
+            <span class="section-header__badge">
+                {% trans "What We Build" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Websites & Web Applications" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "From professional business websites to custom web applications, we build practical digital solutions designed around your requirements." %}
+            </p>
+
         </div>
 
-        <div class="services-types-grid">
-            <div class="service-type-card">
-                <div class="type-header">
-                    <div class="type-icon">
-                        <i class="bi bi-building"></i>
-                    </div>
-                    <span class="type-badge">Basic</span>
+
+        <div class="types-grid grid-3">
+
+
+            <!-- Corporate -->
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-building"></i>
                 </div>
-                <p>ویژه گی ها</p>
-                <ul class="type-features">
-                    <li>طراحی سایت تا 5 صفحه</li>
-                    <li>طراحی برای موبایل ,تبلیت و دسکتاپ</li>
-                    <li>فرم تماس با ارسال ایمیل</li>
-                    <li>سیستم کاربران (Authentication)</li>
-                    <li>اتصال شبکه های اجتماعی</li>
-                    <li>پنل مدیریت محتوا</li>
-                    <li>سئو پایه</li>
+
+                <h4>
+                    {% trans "Corporate Websites" %}
+                </h4>
+
+                <p>
+                    {% trans "Professional websites that present your company, services, team, projects, and brand clearly to your customers." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "Responsive design" %}</li>
+
+                    <li>{% trans "Company & service pages" %}</li>
+
+                    <li>{% trans "Contact & inquiry forms" %}</li>
+
+                    <li>{% trans "Content management" %}</li>
+
                 </ul>
-                <a href="{% url 'contact' %}?type=corporate" class="type-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
+
+                <span class="type-card__price">
+
+                    {% trans "Starting at" %}
+
+                    <strong>$299</strong>
+
+                </span>
+
             </div>
 
-            <div class="service-type-card featured">
-                <div class="type-header">
-                    <div class="type-icon">
-                        <i class="bi bi-cart-check"></i>
-                    </div>
-                    <span class="type-badge">Standard</span>
+
+
+            <!-- E-Commerce -->
+
+            <div class="type-card type-card--featured">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-store"></i>
                 </div>
-                <p>ویژه گی ها</p>
-                <ul class="type-features">
-                    <li>طراحی تا 10 صفحه</li>
-                    <li>طراحی UI/UX اختصاصی</li>
-                    <li>پنل مدیریت پیشرفته</li>
-                    <li>بلاگ حرفه ای</li>
-                    <li>چند زبانه (2 زبانه)</li>
-                    <li>سیستم کاربران (Authentication)</li>
-                    <li>بهینه سازی سرعت</li>
-                    <li>سطح امنیت بالاتر</li>
+
+                <h4>
+                    {% trans "E-Commerce Stores" %}
+                </h4>
+
+                <p>
+                    {% trans "Online stores with product management, customer accounts, shopping carts, orders, and payment integrations." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "Product catalog & categories" %}</li>
+
+                    <li>{% trans "Shopping cart & checkout" %}</li>
+
+                    <li>{% trans "Payment integration" %}</li>
+
+                    <li>{% trans "Order management" %}</li>
+
                 </ul>
-                <a href="{% url 'contact' %}?type=ecommerce" class="type-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
+
+                <span class="type-card__price">
+
+                    {% trans "Starting at" %}
+
+                    <strong>$499</strong>
+
+                </span>
+
             </div>
 
-            <div class="service-type-card">
-                <div class="type-header">
-                    <div class="type-icon">
-                        <i class="bi bi-person-badge"></i>
-                    </div>
-                    <span class="type-badge">Pro (سطح سازمانی)</span>
+
+
+            <!-- Dashboards -->
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-chart-pie"></i>
                 </div>
-                <p>ویژه گی ها</p>
-                <ul class="type-features">
-                    <li>طراحی کاملا اختصاصی</li>
-                    <li>تعداد صفحات نا محدود</li>
-                    <li>پنل مدیریت سفارشی</li>
-                    <li>سیستم کاربران و سطوح دسترسی (Authentication)</li>
-                    <li>رزواسیون و پرداخت آنلاین</li>
-                    <li>گزارشگیری هوشمند و گزارش های فروش و مالی</li>
-                    <li>سیستم انبار داری و مدیریت موجودی</li>
-                    <li>امنیت پیشرفته</li>
-                    <li>تست و دیپلوی کامل</li>
-                    <li>مستندات فنی</li>
+
+                <h4>
+                    {% trans "Business Dashboards" %}
+                </h4>
+
+                <p>
+                    {% trans "Custom dashboards for managing business data, users, operations, reports, and internal workflows." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "User & role management" %}</li>
+
+                    <li>{% trans "Reports & analytics" %}</li>
+
+                    <li>{% trans "Custom forms & workflows" %}</li>
+
+                    <li>{% trans "Data export" %}</li>
+
                 </ul>
-                <a href="{% url 'contact' %}?type=specialized" class="type-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
+
+                <span class="type-card__price">
+
+                    {% trans "Starting at" %}
+
+                    <strong>$599</strong>
+
+                </span>
+
             </div>
+
+
+
+            <!-- Educational -->
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <h4>
+                    {% trans "Educational Platforms" %}
+                </h4>
+
+                <p>
+                    {% trans "Learning platforms for courses, lessons, students, educational content, assessments, and progress management." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "Course & lesson management" %}</li>
+
+                    <li>{% trans "Student accounts" %}</li>
+
+                    <li>{% trans "Content delivery" %}</li>
+
+                    <li>{% trans "Progress tracking" %}</li>
+
+                </ul>
+
+                <span class="type-card__price">
+
+                    {% trans "Starting at" %}
+
+                    <strong>$799</strong>
+
+                </span>
+
+            </div>
+
+
+
+            <!-- Blog -->
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-blog"></i>
+                </div>
+
+                <h4>
+                    {% trans "Blogs & Content Platforms" %}
+                </h4>
+
+                <p>
+                    {% trans "Professional publishing platforms for businesses, organizations, news, articles, and content-driven websites." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "Post & category management" %}</li>
+
+                    <li>{% trans "SEO-friendly structure" %}</li>
+
+                    <li>{% trans "Search & filtering" %}</li>
+
+                    <li>{% trans "Content management" %}</li>
+
+                </ul>
+
+                <span class="type-card__price">
+
+                    {% trans "Starting at" %}
+
+                    <strong>$249</strong>
+
+                </span>
+
+            </div>
+
+
+
+            <!-- Custom -->
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+
+                <h4>
+                    {% trans "Custom Web Applications" %}
+                </h4>
+
+                <p>
+                    {% trans "Custom-built web applications for businesses that need specific workflows, automation, integrations, or internal systems." %}
+                </p>
+
+                <ul class="type-card__features">
+
+                    <li>{% trans "Custom business logic" %}</li>
+
+                    <li>{% trans "Workflow automation" %}</li>
+
+                    <li>{% trans "API integrations" %}</li>
+
+                    <li>{% trans "Scalable architecture" %}</li>
+
+                </ul>
+
+                <span class="type-card__price">
+
+                    {% trans "Contact for quote" %}
+
+                </span>
+
+            </div>
+
         </div>
+
     </div>
+
 </section>
 
-<section class="technical-features-section">
+
+
+<!-- ======================================== -->
+<!-- 3. PRICING PACKAGES                      -->
+<!-- ======================================== -->
+
+<section class="section section--pricing"
+         id="pricing"
+         aria-label="{% trans 'Web development pricing' %}">
+
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">ویژگی‌های فنی و استانداردهای توسعه</h2>
-            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای بین‌المللی توسعه وب</p>
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Pricing" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Web Development Packages" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Clear starting prices for common project types. Final pricing is confirmed after reviewing your requirements and project scope." %}
+            </p>
+
         </div>
 
-        <div class="technical-features">
-            <div class="tech-feature-grid">
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-phone"></i>
+
+        <div class="pricing-grid">
+
+
+            <!-- BASIC -->
+
+            <div class="pricing-card">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge">
+                        {% trans "Basic" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Business Website" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            $299
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "starting from" %}
+                        </span>
+
                     </div>
-                    <h4>طراحی ریسپانسیو کامل</h4>
-                    <p>سازگاری بی‌نقص با تمام دستگاه‌ها (موبایل، تبلت، دسکتاپ) و رعایت اصول طراحی تطبیقی</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 100%"></div>
-                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "A professional website for small businesses, startups, professionals, and personal brands." %}
+                    </p>
+
                 </div>
 
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-speedometer2"></i>
-                    </div>
-                    <h4>بهینه‌سازی سرعت و عملکرد</h4>
-                    <p>بهینه‌سازی کامل سرعت بارگذاری با امتیاز بالای ۹۵ در Google PageSpeed Insights</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 95%"></div>
-                    </div>
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "Up to 5 core pages" %}</li>
+
+                        <li>{% trans "Responsive design" %}</li>
+
+                        <li>{% trans "Contact form" %}</li>
+
+                        <li>{% trans "Social media integration" %}</li>
+
+                        <li>{% trans "Basic SEO setup" %}</li>
+
+                        <li>{% trans "Content management" %}</li>
+
+                        <li>{% trans "1 revision round" %}</li>
+
+                    </ul>
+
                 </div>
 
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-shield-lock"></i>
-                    </div>
-                    <h4>امنیت پیشرفته چندلایه</h4>
-                    <p>پیاده‌سازی پروتکل‌های امنیتی SSL/TLS، محافظت در برابر حملات و رمزنگاری داده‌ها</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 98%"></div>
-                    </div>
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=basic"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Start Your Project" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
                 </div>
 
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <h4>بهینه‌سازی سئو تخصصی</h4>
-                    <p>بهینه‌سازی کامل برای موتورهای جستجو، ساختار URL استاندارد و معماری اطلاعات بهینه</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 92%"></div>
-                    </div>
-                </div>
-
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-code-square"></i>
-                    </div>
-                    <h4>توسعه با تکنولوژی‌های روز</h4>
-                    <p>استفاده از فریمورک‌های مدرن مانند React، Vue.js، Django و Laravel برای توسعه</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 96%"></div>
-                    </div>
-                </div>
-
-                <div class="tech-feature-card">
-                    <div class="tech-icon">
-                        <i class="bi bi-database"></i>
-                    </div>
-                    <h4>پایگاه داده بهینه و مقیاس‌پذیر</h4>
-                    <p>استفاده از پایگاه‌داده‌های پیشرفته و معماری مقیاس‌پذیر برای پشتیبانی از رشد سازمان</p>
-                    <div class="tech-progress">
-                        <div class="progress-bar" style="width: 94%"></div>
-                    </div>
-                </div>
             </div>
+
+
+
+            <!-- CORPORATE -->
+
+            <div class="pricing-card pricing-card--featured">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge featured">
+                        ⭐ {% trans "Most Popular" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Corporate Website" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            $599
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "starting from" %}
+                        </span>
+
+                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "A complete corporate website for companies that need a stronger online presence and content management." %}
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "Up to 15 core pages" %}</li>
+
+                        <li>{% trans "Custom UI/UX implementation" %}</li>
+
+                        <li>{% trans "Advanced content management" %}</li>
+
+                        <li>{% trans "Blog or news section" %}</li>
+
+                        <li>{% trans "Multi-language support" %}</li>
+
+                        <li>{% trans "User authentication" %}</li>
+
+                        <li>{% trans "Performance optimization" %}</li>
+
+                        <li>{% trans "2 revision rounds" %}</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=corporate"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Start Your Project" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- E-COMMERCE -->
+
+            <div class="pricing-card">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge">
+                        {% trans "E-Commerce" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Online Store" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            $799
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "starting from" %}
+                        </span>
+
+                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "A custom online store with product management, customer accounts, orders, and payment integration." %}
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "Product catalog" %}</li>
+
+                        <li>{% trans "Product categories" %}</li>
+
+                        <li>{% trans "Shopping cart & checkout" %}</li>
+
+                        <li>{% trans "Payment gateway integration" %}</li>
+
+                        <li>{% trans "Order management" %}</li>
+
+                        <li>{% trans "Inventory management" %}</li>
+
+                        <li>{% trans "Customer accounts" %}</li>
+
+                        <li>{% trans "2 revision rounds" %}</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=ecommerce"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Discuss Your Store" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
+
+
+
+        <!-- SECOND PRICING ROW -->
+
+        <div class="pricing-grid" style="margin-top:20px;">
+
+
+            <!-- DASHBOARD -->
+
+            <div class="pricing-card">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge">
+                        {% trans "Business" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Business Dashboard" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            $999
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "starting from" %}
+                        </span>
+
+                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "A custom internal dashboard for managing users, operations, data, reports, and business workflows." %}
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "User & role management" %}</li>
+
+                        <li>{% trans "Business data management" %}</li>
+
+                        <li>{% trans "Reports & analytics" %}</li>
+
+                        <li>{% trans "Custom forms & workflows" %}</li>
+
+                        <li>{% trans "CSV / PDF export" %}</li>
+
+                        <li>{% trans "Activity tracking" %}</li>
+
+                        <li>{% trans "Responsive interface" %}</li>
+
+                        <li>{% trans "3 revision rounds" %}</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=dashboard"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Discuss Your Dashboard" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EDUCATIONAL -->
+
+            <div class="pricing-card">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge">
+                        {% trans "Advanced" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Educational Platform" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            $1,499
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "starting from" %}
+                        </span>
+
+                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "A custom learning platform for organizations, educators, academies, and online education businesses." %}
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "Course & lesson management" %}</li>
+
+                        <li>{% trans "Student registration & profiles" %}</li>
+
+                        <li>{% trans "Educational content delivery" %}</li>
+
+                        <li>{% trans "Progress tracking" %}</li>
+
+                        <li>{% trans "Quizzes & assignments" %}</li>
+
+                        <li>{% trans "Certificates" %}</li>
+
+                        <li>{% trans "Admin management" %}</li>
+
+                        <li>{% trans "3 revision rounds" %}</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=education"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Discuss Your Platform" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CUSTOM -->
+
+            <div class="pricing-card">
+
+                <div class="pricing-card__header">
+
+                    <span class="pricing-card__badge">
+                        {% trans "Custom" %}
+                    </span>
+
+                    <h3 class="pricing-card__title">
+                        {% trans "Custom Web Application" %}
+                    </h3>
+
+                    <div class="pricing-card__price">
+
+                        <span class="pricing-card__amount">
+                            {% trans "Custom" %}
+                        </span>
+
+                        <span class="pricing-card__period">
+                            {% trans "project quote" %}
+                        </span>
+
+                    </div>
+
+                    <p class="pricing-card__desc">
+                        {% trans "For businesses that need a tailored system, automation, API integration, or a custom Django application." %}
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-card__body">
+
+                    <ul class="pricing-card__features">
+
+                        <li>{% trans "Custom business logic" %}</li>
+
+                        <li>{% trans "Django backend development" %}</li>
+
+                        <li>{% trans "Database architecture" %}</li>
+
+                        <li>{% trans "REST API development" %}</li>
+
+                        <li>{% trans "Third-party integrations" %}</li>
+
+                        <li>{% trans "Authentication & permissions" %}</li>
+
+                        <li>{% trans "Deployment assistance" %}</li>
+
+                        <li>{% trans "Documentation" %}</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="pricing-card__footer">
+
+                    <a href="{% url 'contact' %}?package=custom"
+                       class="btn btn--primary"
+                       style="width:100%;justify-content:center;">
+
+                        {% trans "Request a Quote" %}
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ADDITIONAL SERVICES -->
+
+        <div class="pricing-additional">
+
+            <h3 class="pricing-additional__title">
+                {% trans "Additional Services" %}
+            </h3>
+
+            <p class="pricing-additional__subtitle">
+                {% trans "Optional services that can be added to a project or requested separately." %}
+            </p>
+
+
+            <div class="pricing-additional__grid">
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Landing Page" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $150+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Website Redesign" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $200+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "UI/UX Implementation" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $200+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Django Backend Development" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $400+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "PostgreSQL Database Setup" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $200+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Admin Dashboard" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $400+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "REST API Development" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $300+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Payment Gateway Integration" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $150+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Third-Party API Integration" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $150+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Deployment & Hosting Setup" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $100+
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Bug Fixing & Maintenance" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $30/hour
+                    </span>
+                </div>
+
+
+                <div class="pricing-additional__item">
+                    <span class="pricing-additional__name">
+                        {% trans "Monthly Maintenance & Support" %}
+                    </span>
+                    <span class="pricing-additional__price">
+                        $100+/month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="pricing-additional__note">
+
+                <i class="fas fa-info-circle"></i>
+
+                {% trans "Prices shown are starting prices. Final pricing depends on project scope, number of pages, features, integrations, content requirements, and technical complexity." %}
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
+
+
+
+<!-- ======================================== -->
+<!-- 4. OUR PROCESS                           -->
+<!-- ======================================== -->
+
+<section class="section section--process"
+         aria-label="{% trans 'Web development process' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Our Process" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "From Idea to Launch" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "A clear and collaborative process designed to keep your project organized from the first conversation to final delivery." %}
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-step">
+
+                <span class="process-step__number">
+                    01
+                </span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <h4>
+                    {% trans "Discovery" %}
+                </h4>
+
+                <p>
+                    {% trans "We discuss your business, objectives, target audience, required features, and project priorities." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="process-step">
+
+                <span class="process-step__number">
+                    02
+                </span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+
+                <h4>
+                    {% trans "Scope & Proposal" %}
+                </h4>
+
+                <p>
+                    {% trans "You receive a clear project scope, recommended solution, estimated timeline, and pricing proposal." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="process-step">
+
+                <span class="process-step__number">
+                    03
+                </span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+
+                <h4>
+                    {% trans "Design & Planning" %}
+                </h4>
+
+                <p>
+                    {% trans "We plan the structure, user experience, content requirements, and technical architecture before development." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="process-step">
+
+                <span class="process-step__number">
+                    04
+                </span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h4>
+                    {% trans "Development" %}
+                </h4>
+
+                <p>
+                    {% trans "We develop the website or application, integrate the required functionality, and test the key user flows." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="process-step">
+
+                <span class="process-step__number">
+                    05
+                </span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+
+                <h4>
+                    {% trans "Launch & Handover" %}
+                </h4>
+
+                <p>
+                    {% trans "After final testing and approval, we deploy the project and provide the necessary handover and support." %}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 5. PORTFOLIO                            -->
+<!-- ======================================== -->
+
+<section class="section section--portfolio"
+         id="portfolio"
+         aria-label="{% trans 'Web development portfolio' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Portfolio" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Selected Projects" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Explore examples of websites, dashboards, and custom web applications developed for different business needs." %}
+            </p>
+
+        </div>
+
+
+        <div class="web-portfolio__grid grid-3">
+
+
+            {% if web_projects %}
+
+                {% for project in web_projects %}
+
+                <div class="web-portfolio__item">
+
+                    <div class="web-portfolio__card">
+
+                        <div class="web-portfolio__image">
+
+                            {% if project.image %}
+
+                                <img
+                                    src="{{ project.image.url }}"
+                                    alt="{{ project.title }}"
+                                    loading="lazy"
+                                >
+
+                            {% else %}
+
+                                <div class="web-portfolio__placeholder">
+
+                                    <i class="fas fa-laptop-code"></i>
+
+                                </div>
+
+                            {% endif %}
+
+
+                            <span class="web-portfolio__badge">
+
+                                {{ project.get_category_display|default:_("Web Project") }}
+
+                            </span>
+
+
+                            {% if project.is_featured %}
+
+                                <span class="web-portfolio__badge featured">
+
+                                    ⭐ {% trans "Featured" %}
+
+                                </span>
+
+                            {% endif %}
+
+                        </div>
+
+
+                        <div class="web-portfolio__content">
+
+                            <h4 class="web-portfolio__title">
+                                {{ project.title }}
+                            </h4>
+
+
+                            <p class="web-portfolio__desc">
+                                {{ project.description|truncatewords:18 }}
+                            </p>
+
+
+                            <div class="web-portfolio__meta">
+
+                                {% if project.client %}
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    {{ project.client }}
+                                </span>
+
+                                {% endif %}
+
+
+                                {% if project.technologies %}
+
+                                <span>
+                                    <i class="fas fa-code"></i>
+                                    {{ project.technologies|truncatechars:35 }}
+                                </span>
+
+                                {% endif %}
+
+                            </div>
+
+
+                            <a href="{% url 'contact' %}"
+                               class="web-portfolio__link">
+
+                                {% trans "Discuss a Similar Project" %}
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+            {% else %}
+
+
+                <!-- FALLBACK PROJECT 1 -->
+
+                <div class="web-portfolio__item">
+
+                    <div class="web-portfolio__card">
+
+                        <div class="web-portfolio__image">
+
+                            <div class="web-portfolio__placeholder">
+
+                                <i class="fas fa-globe"></i>
+
+                            </div>
+
+                            <span class="web-portfolio__badge">
+                                {% trans "Corporate Website" %}
+                            </span>
+
+                        </div>
+
+
+                        <div class="web-portfolio__content">
+
+                            <h4 class="web-portfolio__title">
+                                {% trans "Corporate Website" %}
+                            </h4>
+
+                            <p class="web-portfolio__desc">
+                                {% trans "A professional corporate website focused on clear service presentation, responsive design, and content management." %}
+                            </p>
+
+                            <div class="web-portfolio__meta">
+
+                                <span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {% trans "Business Website" %}
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-code"></i>
+                                    Django, PostgreSQL
+                                </span>
+
+                            </div>
+
+
+                            <a href="{% url 'contact' %}"
+                               class="web-portfolio__link">
+
+                                {% trans "Discuss a Similar Project" %}
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FALLBACK PROJECT 2 -->
+
+                <div class="web-portfolio__item">
+
+                    <div class="web-portfolio__card">
+
+                        <div class="web-portfolio__image">
+
+                            <div class="web-portfolio__placeholder">
+
+                                <i class="fas fa-store"></i>
+
+                            </div>
+
+                            <span class="web-portfolio__badge">
+                                {% trans "E-Commerce" %}
+                            </span>
+
+                        </div>
+
+
+                        <div class="web-portfolio__content">
+
+                            <h4 class="web-portfolio__title">
+                                {% trans "Online Store" %}
+                            </h4>
+
+                            <p class="web-portfolio__desc">
+                                {% trans "An e-commerce platform designed for product management, customer accounts, shopping cart functionality, and order processing." %}
+                            </p>
+
+                            <div class="web-portfolio__meta">
+
+                                <span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {% trans "Online Store" %}
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-code"></i>
+                                    Django, PostgreSQL
+                                </span>
+
+                            </div>
+
+
+                            <a href="{% url 'contact' %}"
+                               class="web-portfolio__link">
+
+                                {% trans "Discuss a Similar Project" %}
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FALLBACK PROJECT 3 -->
+
+                <div class="web-portfolio__item">
+
+                    <div class="web-portfolio__card">
+
+                        <div class="web-portfolio__image">
+
+                            <div class="web-portfolio__placeholder">
+
+                                <i class="fas fa-chart-pie"></i>
+
+                            </div>
+
+                            <span class="web-portfolio__badge">
+                                {% trans "Business Dashboard" %}
+                            </span>
+
+                        </div>
+
+
+                        <div class="web-portfolio__content">
+
+                            <h4 class="web-portfolio__title">
+                                {% trans "Business Management Dashboard" %}
+                            </h4>
+
+                            <p class="web-portfolio__desc">
+                                {% trans "A custom dashboard for managing business data, users, reports, workflows, and day-to-day operations." %}
+                            </p>
+
+                            <div class="web-portfolio__meta">
+
+                                <span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {% trans "Web Application" %}
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-code"></i>
+                                    Django, PostgreSQL
+                                </span>
+
+                            </div>
+
+
+                            <a href="{% url 'contact' %}"
+                               class="web-portfolio__link">
+
+                                {% trans "Discuss a Similar Project" %}
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 6. WHY AZIN GROUP                        -->
+<!-- ======================================== -->
+
+<section class="section section--why"
+         aria-label="{% trans 'Why choose AZIN GROUP' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Why AZIN GROUP" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Built Around Your Business" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "We focus on practical solutions, clear communication, maintainable code, and technology that supports your business goals." %}
+            </p>
+
+        </div>
+
+
+        <div class="types-grid grid-3">
+
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <h4>
+                    {% trans "Business-Focused Development" %}
+                </h4>
+
+                <p>
+                    {% trans "We start with your business requirements and workflows, then choose the right technical solution." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h4>
+                    {% trans "Modern & Maintainable Code" %}
+                </h4>
+
+                <p>
+                    {% trans "Our development approach emphasizes clean structure, maintainability, security, and future scalability." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <h4>
+                    {% trans "Clear Communication" %}
+                </h4>
+
+                <p>
+                    {% trans "You receive clear information about scope, progress, requirements, and next steps throughout the project." %}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 7. CTA SECTION                           -->
+<!-- ======================================== -->
+
+<section class="section section--cta"
+         aria-label="{% trans 'Start your web development project' %}">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Have a Web Project in Mind?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you need. We will review your requirements, recommend a suitable solution, and provide a clear project scope and quotation." %}
+                </p>
+
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn--primary btn--large">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        {% trans "Request a Free Consultation" %}
+
+                    </a>
+
+
+                    <a href="tel:+992110003443"
+                       class="btn btn--outline btn--large"
+                       style="border-color:rgba(255,255,255,0.3);color:white;">
+
+                        <i class="fas fa-phone"></i>
+
+                        {% trans "Contact Us" %}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
+
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT                               -->
+<!-- ======================================== -->
+
+{% block extra_js %}
 
 <script>
-    // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function () {
-        const animateValue = (element, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value;
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const valueElement = entry.target;
-                    const target = parseInt(valueElement.getAttribute('data-count'));
-                    animateValue(valueElement, 0, target, 2000);
-                    observer.unobserve(valueElement);
-                }
-            });
-        }, { threshold: 0.5 });
+document.addEventListener('DOMContentLoaded', function () {
 
-        document.querySelectorAll('.stat-number[data-count]').forEach(el => observer.observe(el));
-    });
+    /*
+     * Web Development page
+     * No artificial statistics or unsupported
+     * performance claims are displayed.
+     */
+
+});
+
 </script>
-{% endblock content %}
+
+{% endblock %}

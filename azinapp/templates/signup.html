@@ -2,108 +2,179 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %} {% trans 'signup' %} - AZIN GROUP{% endblock %}
+{% block title %}Sign Up — AZIN GROUP{% endblock %}
+
+{% block meta_description %}Create a new AZIN GROUP account.{% endblock %}
 
 {% block content %}
-<section class="signup-section">
-    <div class="container-fluid p-0">
-        <div class="row g-0 justify-content-center">
-            <div class="col-lg-5 col-md-7">
-                <div class="signup-form-container p-4 p-md-5">
-                    <div class="text-center mb-5">
-                        <a href="{% url 'index' %}">
-                            <img src="{% static 'img/azinlogo.jpg' %}" alt="کارنو" class="logo mb-4" width="120">
-                        </a>
-                        <h3 class="fw-bold mb-2">{% trans 'حساب کاربری جدید' %}</h3>
-                        <p class="text-muted">{% trans 'اطلاعات خود را وارد کنید تا ثبت‌نام کنید' %}</p>
-                    </div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
 
-                    <form method="POST" action="{% url 'signup' %}" class="needs-validation" novalidate>
-                        {% csrf_token %}
+<section class="auth-section" aria-label="{% trans 'Sign Up' %}">
+    <div class="container">
+        <div class="auth-container">
+            <div class="auth-card">
+                <!-- Header -->
+                <div class="auth-card__header">
+                    <a href="{% url 'index' %}" class="auth-card__logo-link">
+                        <img src="{% static 'img/azinlogo.jpg' %}" alt="AZIN GROUP" class="auth-card__logo" width="100">
+                    </a>
+                    <h2 class="auth-card__title">{% trans "Create Account" %}</h2>
+                    <p class="auth-card__subtitle">{% trans "Join AZIN GROUP and manage your projects." %}</p>
+                </div>
 
-                        <div class="row g-3">
-                            {% for field in form %}
-                            <div class="form-group">
-                                <label for="{{ field.id_for_label }}">
-                                    {% if field.name == 'username' %}
-                                    <i class="bi bi-person"></i>
-                                    {% elif field.name == 'email' %}
-                                    <i class="bi bi-envelope"></i>
-                                    {% elif field.name == 'password1' %}
-                                    <i class="bi bi-lock"></i>
-                                    {% elif field.name == 'password2' %}
-                                    <i class="bi bi-shield-lock"></i>
-                                    {% endif %}
-                                    {{ field.label }}
-                                </label>
-                                {{ field }}
-                                {% if field.help_text %}
-                                <small class="form-text text-muted">{{ field.help_text }}</small>
-                                {% endif %}
-                                {% if field.errors %}
-                                <div class="form-error">
-                                    <i class="bi bi-exclamation-circle"></i> {{ field.errors|striptags }}
-                                </div>
-                                {% endif %}
-                                
-                                {% if field.name == 'password1' %}
-                                <div class="password-strength">
-                                    <div class="strength-bar" id="password-strength-bar"></div>
-                                </div>
-                                {% endif %}
+                <!-- Form -->
+                <form method="POST" action="{% url 'signup' %}" class="auth-form" novalidate>
+                    {% csrf_token %}
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="auth-form__alert auth-form__alert--{{ message.tags }}">
+                                <i class="fas fa-{% if message.tags == 'success' %}check-circle{% elif message.tags == 'error' %}exclamation-circle{% else %}info-circle{% endif %}"></i>
+                                {{ message }}
                             </div>
-                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
 
-                            <div class="col-12 mt-4">
-                                <button class="btn btn-dark w-100 py-3" type="submit">
-                                    <i class="bi bi-person-plus me-2"></i> {% trans 'ثبت‌نام' %}
-                                </button>
-                            </div>
-
-                            <div class="col-12 text-center mt-4">
-                                <p class="mb-0">{% trans 'قبلاً حساب دارید؟' %}
-                                    <a href="{% url 'login' %}" class="text-primary fw-semibold">{% trans 'وارد شوید' %}</a>
-                                </p>
-                            </div>
+                    {% if form.non_field_errors %}
+                        <div class="auth-form__alert auth-form__alert--error">
+                            <i class="fas fa-exclamation-circle"></i>
+                            {{ form.non_field_errors|striptags }}
                         </div>
-                    </form>
+                    {% endif %}
+
+                    <!-- First & Last Name -->
+                    <div class="auth-form__row">
+                        <div class="auth-form__group">
+                            <label for="{{ form.first_name.id_for_label }}" class="auth-form__label">
+                                <i class="fas fa-user"></i> {% trans "First Name" %}
+                                <span class="auth-form__required">*</span>
+                            </label>
+                            {{ form.first_name }}
+                            {% if form.first_name.errors %}
+                                <span class="auth-form__error">{{ form.first_name.errors|striptags }}</span>
+                            {% endif %}
+                        </div>
+                        <div class="auth-form__group">
+                            <label for="{{ form.last_name.id_for_label }}" class="auth-form__label">
+                                <i class="fas fa-user"></i> {% trans "Last Name" %}
+                                <span class="auth-form__required">*</span>
+                            </label>
+                            {{ form.last_name }}
+                            {% if form.last_name.errors %}
+                                <span class="auth-form__error">{{ form.last_name.errors|striptags }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Username -->
+                    <div class="auth-form__group">
+                        <label for="{{ form.username.id_for_label }}" class="auth-form__label">
+                            <i class="fas fa-user-tag"></i> {% trans "Username" %}
+                            <span class="auth-form__required">*</span>
+                        </label>
+                        {{ form.username }}
+                        {% if form.username.help_text %}
+                            <span class="auth-form__hint">{{ form.username.help_text }}</span>
+                        {% endif %}
+                        {% if form.username.errors %}
+                            <span class="auth-form__error">{{ form.username.errors|striptags }}</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Email -->
+                    <div class="auth-form__group">
+                        <label for="{{ form.email.id_for_label }}" class="auth-form__label">
+                            <i class="fas fa-envelope"></i> {% trans "Email Address" %}
+                            <span class="auth-form__required">*</span>
+                        </label>
+                        {{ form.email }}
+                        {% if form.email.errors %}
+                            <span class="auth-form__error">{{ form.email.errors|striptags }}</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Password 1 -->
+                    <div class="auth-form__group">
+                        <label for="{{ form.password1.id_for_label }}" class="auth-form__label">
+                            <i class="fas fa-lock"></i> {% trans "Password" %}
+                            <span class="auth-form__required">*</span>
+                        </label>
+                        {{ form.password1 }}
+                        <div class="auth-form__strength" id="passwordStrength">
+                            <div class="auth-form__strength-bar" id="strengthBar"></div>
+                        </div>
+                        <span class="auth-form__hint">{% trans "At least 8 characters with letters and numbers." %}</span>
+                        {% if form.password1.errors %}
+                            <span class="auth-form__error">{{ form.password1.errors|striptags }}</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Password 2 -->
+                    <div class="auth-form__group">
+                        <label for="{{ form.password2.id_for_label }}" class="auth-form__label">
+                            <i class="fas fa-check-circle"></i> {% trans "Confirm Password" %}
+                            <span class="auth-form__required">*</span>
+                        </label>
+                        {{ form.password2 }}
+                        {% if form.password2.errors %}
+                            <span class="auth-form__error">{{ form.password2.errors|striptags }}</span>
+                        {% endif %}
+                    </div>
+
+                    <button type="submit" class="auth-form__submit">
+                        <i class="fas fa-user-plus"></i> {% trans "Create Account" %}
+                    </button>
+                </form>
+
+                <!-- Footer -->
+                <div class="auth-card__footer">
+                    <p>{% trans "Already have an account?" %} <a href="{% url 'login' %}" class="auth-card__link">{% trans "Login" %}</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 {% endblock %}
 
 {% block extra_js %}
 <script>
-// Password strength indicator
-document.addEventListener('DOMContentLoaded', function() {
-    const passwordInput = document.querySelector('input[name="password1"]');
-    const strengthBar = document.getElementById('password-strength-bar');
-    
-    if (passwordInput && strengthBar) {
-        passwordInput.addEventListener('input', function() {
-            const password = this.value;
-            let strength = 0;
-            
-            if (password.length >= 8) strength += 1;
-            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength += 1;
-            if (password.match(/\d/)) strength += 1;
-            if (password.match(/[^a-zA-Z\d]/)) strength += 1;
-            
-            strengthBar.className = 'strength-bar';
-            if (strength === 0) {
-                strengthBar.style.width = '0%';
-            } else if (strength === 1) {
-                strengthBar.classList.add('strength-weak');
-            } else if (strength === 2) {
-                strengthBar.classList.add('strength-medium');
-            } else {
-                strengthBar.classList.add('strength-strong');
-            }
-        });
-    }
-});
+    document.addEventListener('DOMContentLoaded', function() {
+        const passwordInput = document.querySelector('input[name="password1"]');
+        const strengthBar = document.getElementById('strengthBar');
+        
+        if (passwordInput && strengthBar) {
+            passwordInput.addEventListener('input', function() {
+                const password = this.value;
+                let strength = 0;
+                let width = 0;
+                let color = '#e9ecef';
+                
+                if (password.length >= 8) strength += 1;
+                if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength += 1;
+                if (password.match(/\d/)) strength += 1;
+                if (password.match(/[^a-zA-Z\d]/)) strength += 1;
+                
+                if (strength === 0) {
+                    width = 0;
+                    color = '#e9ecef';
+                } else if (strength === 1) {
+                    width = 25;
+                    color = '#ef4444';
+                } else if (strength === 2) {
+                    width = 50;
+                    color = '#f59e0b';
+                } else if (strength === 3) {
+                    width = 75;
+                    color = '#3b82f6';
+                } else {
+                    width = 100;
+                    color = '#22c55e';
+                }
+                
+                strengthBar.style.width = width + '%';
+                strengthBar.style.backgroundColor = color;
+            });
+        }
+    });
 </script>
 {% endblock %}

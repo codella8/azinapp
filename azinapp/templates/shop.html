@@ -1,0 +1,764 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}AZIN SHOP — Products & Business Supplies{% endblock %}
+
+{% block meta_description %}Explore AZIN SHOP for selected electronics, office supplies, home essentials, tools, and business products. Contact us for product inquiries, bulk orders, and sourcing requests.{% endblock %}
+
+{% block og_title %}AZIN SHOP — Products & Business Supplies{% endblock %}
+
+{% block og_description %}Quality products for business and everyday needs, with product sourcing and bulk order support from AZIN SHOP.{% endblock %}
+
+{% block content %}
+
+
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+
+<section class="shop-hero" aria-label="{% trans 'AZIN SHOP' %}">
+
+    <div class="shop-hero__background">
+        <div class="shop-hero__overlay"></div>
+        <div class="shop-hero__pattern"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="shop-hero__content">
+
+            <div class="shop-hero__text">
+
+                <span class="shop-hero__badge">
+                    AZIN SHOP
+                </span>
+
+                <h1 class="shop-hero__title">
+
+                    <span class="shop-hero__title-line">
+                        {% trans "Products for Business" %}
+                    </span>
+
+                    <span class="shop-hero__title-line shop-hero__accent">
+                        {% trans "& Everyday Needs" %}
+                    </span>
+
+                </h1>
+
+                <p class="shop-hero__description">
+                    {% trans "Discover a selected range of products for businesses, offices, and everyday use. From electronics and office supplies to home essentials and tools, AZIN SHOP helps you find the products you need through a simple and reliable inquiry process." %}
+                </p>
+
+                <div class="shop-hero__actions">
+
+                    <a href="#products"
+                       class="btn btn--primary btn--large">
+
+                        <i class="fas fa-shopping-bag"></i>
+
+                        {% trans "Explore Products" %}
+
+                    </a>
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn--outline btn--large"
+                       style="border-color:rgba(255,255,255,0.3);color:white;">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        {% trans "Request a Product" %}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="shop-hero__visual">
+
+                <div class="shop-hero__showcase">
+
+                    <div class="shop-hero__showcase-item">
+
+                        <i class="fas fa-laptop"></i>
+
+                        <span>
+                            {% trans "Electronics" %}
+                        </span>
+
+                    </div>
+
+
+                    <div class="shop-hero__showcase-item">
+
+                        <i class="fas fa-home"></i>
+
+                        <span>
+                            {% trans "Home Essentials" %}
+                        </span>
+
+                    </div>
+
+
+                    <div class="shop-hero__showcase-item">
+
+                        <i class="fas fa-briefcase"></i>
+
+                        <span>
+                            {% trans "Office Supplies" %}
+                        </span>
+
+                    </div>
+
+
+                    <div class="shop-hero__showcase-item">
+
+                        <i class="fas fa-tools"></i>
+
+                        <span>
+                            {% trans "Tools & Equipment" %}
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 2. PRODUCT CATEGORIES                    -->
+<!-- ======================================== -->
+
+<section class="section section--categories"
+         aria-label="{% trans 'Product categories' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Product Categories" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Explore Our Product Categories" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Browse our main product categories or contact us if you are looking for a specific item." %}
+            </p>
+
+        </div>
+
+
+        <div class="categories-grid grid-4">
+
+
+            <!-- Electronics -->
+
+            <div class="category-card">
+
+                <div class="category-card__icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+
+                <h4>
+                    {% trans "Electronics" %}
+                </h4>
+
+                <p>
+                    {% trans "Computers, accessories, devices, and selected electronic products for business and personal use." %}
+                </p>
+
+            </div>
+
+
+
+            <!-- Home -->
+
+            <div class="category-card category-card--featured">
+
+                <div class="category-card__icon">
+                    <i class="fas fa-home"></i>
+                </div>
+
+                <h4>
+                    {% trans "Home Essentials" %}
+                </h4>
+
+                <p>
+                    {% trans "Practical products and everyday essentials for homes, workplaces, and modern living." %}
+                </p>
+
+            </div>
+
+
+
+            <!-- Office -->
+
+            <div class="category-card">
+
+                <div class="category-card__icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+
+                <h4>
+                    {% trans "Office Supplies" %}
+                </h4>
+
+                <p>
+                    {% trans "Stationery, office equipment, accessories, and essential products for productive workplaces." %}
+                </p>
+
+            </div>
+
+
+
+            <!-- Tools -->
+
+            <div class="category-card">
+
+                <div class="category-card__icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+
+                <h4>
+                    {% trans "Tools & Equipment" %}
+                </h4>
+
+                <p>
+                    {% trans "Tools, equipment, and practical products for professional, technical, and business use." %}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 3. FEATURED PRODUCTS                     -->
+<!-- ======================================== -->
+
+<section class="section section--products"
+         id="products"
+         aria-label="{% trans 'Featured products' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Featured Products" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Selected Products" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Explore selected products available through AZIN SHOP. Contact us for availability, pricing, and order details." %}
+            </p>
+
+        </div>
+
+
+        <div class="products-grid grid-3">
+
+
+            {% if products %}
+
+                {% for product in products|slice:":6" %}
+
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        {% if product.image %}
+
+                            <img
+                                src="{{ product.image.url }}"
+                                alt="{{ product.title }}"
+                                loading="lazy">
+
+                        {% else %}
+
+                            <div class="product-card__placeholder">
+
+                                <i class="fas fa-box-open"></i>
+
+                            </div>
+
+                        {% endif %}
+
+
+                        {% if product.is_featured %}
+
+                            <span class="product-card__badge">
+                                ⭐ {% trans "Featured" %}
+                            </span>
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="product-card__content">
+
+                        <h4 class="product-card__title">
+                            {{ product.title }}
+                        </h4>
+
+                        <p class="product-card__desc">
+                            {{ product.description|truncatewords:18 }}
+                        </p>
+
+
+                        <a href="{% url 'contact' %}"
+                           class="product-card__link">
+
+                            {% trans "Request Details" %}
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+            {% else %}
+
+
+                <!-- ================================= -->
+                <!-- FALLBACK PRODUCT 1                 -->
+                <!-- ================================= -->
+
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <div class="product-card__placeholder">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-card__content">
+
+                        <h4 class="product-card__title">
+                            {% trans "Electronics & Accessories" %}
+                        </h4>
+
+                        <p class="product-card__desc">
+                            {% trans "Selected electronic devices, computer accessories, and practical technology products." %}
+                        </p>
+
+                        <a href="{% url 'contact' %}"
+                           class="product-card__link">
+
+                            {% trans "Request Details" %}
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================= -->
+                <!-- FALLBACK PRODUCT 2                 -->
+                <!-- ================================= -->
+
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <div class="product-card__placeholder">
+                            <i class="fas fa-tools"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-card__content">
+
+                        <h4 class="product-card__title">
+                            {% trans "Tools & Equipment" %}
+                        </h4>
+
+                        <p class="product-card__desc">
+                            {% trans "Practical tools and equipment for professional, technical, and business requirements." %}
+                        </p>
+
+                        <a href="{% url 'contact' %}"
+                           class="product-card__link">
+
+                            {% trans "Request Details" %}
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================= -->
+                <!-- FALLBACK PRODUCT 3                 -->
+                <!-- ================================= -->
+
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <div class="product-card__placeholder">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-card__content">
+
+                        <h4 class="product-card__title">
+                            {% trans "Office Supplies" %}
+                        </h4>
+
+                        <p class="product-card__desc">
+                            {% trans "Office essentials, stationery, accessories, and equipment for professional workplaces." %}
+                        </p>
+
+                        <a href="{% url 'contact' %}"
+                           class="product-card__link">
+
+                            {% trans "Request Details" %}
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            {% endif %}
+
+        </div>
+
+
+        <div class="products__view-all">
+
+            <a href="{% url 'contact' %}"
+               class="btn btn--outline btn--large">
+
+                {% trans "Request Full Product Catalog" %}
+
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 4. PRODUCT SOURCING                      -->
+<!-- ======================================== -->
+
+<section class="section section--sourcing"
+         aria-label="{% trans 'Product sourcing' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Product Sourcing" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Looking for a Specific Product?" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Tell us what you need and our team can review your request and provide availability and pricing information." %}
+            </p>
+
+        </div>
+
+
+        <div class="why-shop-grid grid-4">
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <h4>
+                    {% trans "Tell Us What You Need" %}
+                </h4>
+
+                <p>
+                    {% trans "Send us the product name, specifications, quantity, or any requirements you already have." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+
+                <h4>
+                    {% trans "Request Review" %}
+                </h4>
+
+                <p>
+                    {% trans "We review your request and check the available options based on your requirements." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+
+                <h4>
+                    {% trans "Receive a Quote" %}
+                </h4>
+
+                <p>
+                    {% trans "You receive product details, availability, and pricing information before placing an order." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+
+                <h4>
+                    {% trans "Place Your Order" %}
+                </h4>
+
+                <p>
+                    {% trans "Once the details are confirmed, we coordinate the next steps for your order." %}
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 5. WHY AZIN SHOP                         -->
+<!-- ======================================== -->
+
+<section class="section section--why-shop"
+         aria-label="{% trans 'Why choose AZIN SHOP' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Why AZIN SHOP" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "A Simple Way to Source Products" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "We focus on clear communication, practical product selection, and a straightforward inquiry process." %}
+            </p>
+
+        </div>
+
+
+        <div class="why-shop-grid grid-4">
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <h4>
+                    {% trans "Selected Products" %}
+                </h4>
+
+                <p>
+                    {% trans "We focus on useful products across business, office, home, and technical categories." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+
+                <h4>
+                    {% trans "Clear Pricing" %}
+                </h4>
+
+                <p>
+                    {% trans "Product availability and pricing are confirmed based on your specific request and order requirements." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+
+                <h4>
+                    {% trans "Bulk Orders" %}
+                </h4>
+
+                <p>
+                    {% trans "Businesses and organizations can contact us for bulk orders and larger product requirements." %}
+                </p>
+
+            </div>
+
+
+
+            <div class="why-shop-card">
+
+                <div class="why-shop-card__icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+
+                <h4>
+                    {% trans "Direct Support" %}
+                </h4>
+
+                <p>
+                    {% trans "Contact our team directly for product questions, specifications, availability, and order inquiries." %}
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- 6. BUSINESS / WHOLESALE CTA              -->
+<!-- ======================================== -->
+
+<section class="section section--cta"
+         aria-label="{% trans 'Business product inquiry' %}">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Need Products for Your Business?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you are looking for. We can help you review product options, availability, quantities, and pricing for your business or bulk order." %}
+                </p>
+
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn--primary btn--large">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        {% trans "Send a Product Request" %}
+
+                    </a>
+
+
+                    <a href="tel:+992110003443"
+                       class="btn btn--outline btn--large"
+                       style="border-color:rgba(255,255,255,0.3);color:white;">
+
+                        <i class="fas fa-phone"></i>
+
+                        {% trans "Contact Us" %}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

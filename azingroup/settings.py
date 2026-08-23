@@ -17,8 +17,9 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
+# ======================================== #
+# SECURITY WARNING                         #
+# ======================================== #
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure--qy@2yn56u^$rx)sq0s0b3$-&g=%4@sz)1%mdfj1=%4)0*c_0l'
@@ -27,7 +28,10 @@ SECRET_KEY = 'django-insecure--qy@2yn56u^$rx)sq0s0b3$-&g=%4@sz)1%mdfj1=%4)0*c_0l
 DEBUG = True
 ALLOWED_HOSTS = []
 
-# Application definition
+
+# ======================================== #
+# APPLICATION DEFINITION                   #
+# ======================================== #
 
 INSTALLED_APPS = [
     'jazzmin',
@@ -41,8 +45,13 @@ INSTALLED_APPS = [
     'azinapp',
 ]
 
+
+# ======================================== #
+# MIDDLEWARE                               #
+# ======================================== #
+
 MIDDLEWARE = [
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -51,7 +60,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'azingroup.urls'
@@ -74,8 +82,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'azingroup.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+# ======================================== #
+# DATABASE                                 #
+# ======================================== #
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -84,8 +94,9 @@ DATABASES = {
 }
 
 
-# Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
+# ======================================== #
+# PASSWORD VALIDATION                      #
+# ======================================== #
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -102,7 +113,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# for password 
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
@@ -114,18 +124,23 @@ SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.2/topics/i18n/
+# ======================================== #
+# INTERNATIONALIZATION                     #
+# ======================================== #
 
 from django.utils.translation import gettext_lazy as _
 
-LANGUAGE_CODE = 'fa'  # یا 'en'، هرچی زبان پیش‌فرضته
+# زبان پیش‌فرض انگلیسی
+LANGUAGE_CODE = 'en'
 
+# زبان‌های پشتیبانی شده
 LANGUAGES = [
     ('en', _('English')),
-    ('fa', _('Farsi')),
+    ('fa', _('Persian')),
+    ('tg', _('Tajik')),
 ]
 
+# مسیر فایل‌های ترجمه
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
@@ -133,34 +148,216 @@ LOCALE_PATHS = [
 USE_I18N = True
 USE_L10N = True
 
-TIME_ZONE = 'UTC'
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
-
+# ======================================== #
+# STATIC & MEDIA FILES                     #
+# ======================================== #
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# این خط را اضافه یا اصلاح کنید
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'azinapp', 'static'),  # مسیر صحیح
+]
 
+# یا اگر پوشه static در ریشه پروژه است:
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
-
-LOCALE_PATHS = [ 
-    BASE_DIR / 'locale',
-]
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+
+# ======================================== #
+# DEFAULT PRIMARY KEY FIELD                #
+# ======================================== #
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ======================================== #
+# EMAIL SETTINGS                           #
+# ======================================== #
+
+# For development - console backend
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# For production - SMTP backend (uncomment and configure)
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'info@azingroup.com'
+# EMAIL_HOST_PASSWORD = 'your-email-password'
+DEFAULT_FROM_EMAIL = 'info@azingroup.com'
+
+
+# ======================================== #
+# MESSAGE TAGS                             #
+# ======================================== #
+
+from django.contrib.messages import constants as messages_constants
+MESSAGE_TAGS = {
+    messages_constants.DEBUG: 'debug',
+    messages_constants.INFO: 'info',
+    messages_constants.SUCCESS: 'success',
+    messages_constants.WARNING: 'warning',
+    messages_constants.ERROR: 'error',
+}
+
+
+# ======================================== #
+# JAZZMIN ADMIN CONFIGURATION              #
+# ======================================== #
+
 JAZZMIN_SETTINGS = {
-    "site_title": "Azingroup Admin",
-    "site_header": "Azin Dashboard",
-    "welcome_sign": "Welcome Everyone!",
+    # ----- Branding -----
+    "site_title": "AZIN GROUP",
+    "site_header": "AZIN GROUP Admin",
+    "site_brand": "AZIN GROUP",
+    "site_logo": "img/azinlogo.jpg",
+    "login_logo": "img/azinlogo.jpg",
+    "login_logo_dark": None,
+    "site_logo_classes": "img-circle",
+    "site_icon": "/static/img/favicon.ico",
+    "welcome_sign": "Welcome to AZIN GROUP Management Dashboard",
+    "copyright": "AZIN GROUP",
+    
+    # ----- User Interface -----
+    "user_avatar": "profile__photo",
+    "topmenu_links": [
+        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
+        {"name": "View Site", "url": "/", "new_window": True},
+        {"name": "Documentation", "url": "https://docs.djangoproject.com/", "new_window": True},
+    ],
+    
+    # ----- Sidebar Menu -----
     "show_sidebar": True,
     "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    
+    # ----- Icons -----
+    "icons": {
+        # Auth
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        
+        # Custom Models
+        "azinapp.Profile": "fas fa-id-card",
+        "azinapp.Team": "fas fa-user-tie",
+        "azinapp.Contact": "fas fa-envelope",
+        "azinapp.Work": "fas fa-briefcase",
+        
+        # Media
+        "azinapp.MediaGallery": "fas fa-images",
+        "azinapp.GraphicDesignProject": "fas fa-palette",
+        "azinapp.GraphicProjectImage": "fas fa-image",
+        
+        # SMM
+        "azinapp.SMMProject": "fas fa-share-alt",
+        "azinapp.SMMProjectImage": "fas fa-images",
+        "azinapp.SMMClient": "fas fa-user-friends",
+        
+        # Services
+        "azinapp.WebProject": "fas fa-laptop-code",
+        "azinapp.WebProjectImage": "fas fa-image",
+        "azinapp.MobileAppProject": "fas fa-mobile-alt",
+        "azinapp.MobileAppImage": "fas fa-image",
+        "azinapp.DatabaseProject": "fas fa-database",
+        "azinapp.DatabaseProjectImage": "fas fa-image",
+        
+        # Shop & Services
+        "azinapp.ShopProduct": "fas fa-shopping-cart",
+        "azinapp.ShopProductImage": "fas fa-image",
+        "azinapp.DecoreProject": "fas fa-couch",
+        "azinapp.DecoreProjectImage": "fas fa-image",
+        "azinapp.TravelService": "fas fa-plane",
+        "azinapp.TravelServiceImage": "fas fa-image",
+    },
+    
+    # ----- UI Customization -----
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+    "changeform_format": "horizontal_tabs",
+    "changeform_format_overrides": {
+        "auth.user": "collapsible",
+        "auth.group": "vertical_tabs",
+    },
+    
+    # ----- Language -----
+    "language_chooser": True,
+    
+    # ----- Custom Links -----
+    "custom_links": {
+        "azinapp.SMMProject": [
+            {
+                "name": "View All Projects",
+                "url": "admin:azinapp_smmproject_changelist",
+                "icon": "fas fa-list",
+                "permissions": ["azinapp.view_smmproject"]
+            },
+        ],
+        "azinapp.GraphicDesignProject": [
+            {
+                "name": "View All Projects",
+                "url": "admin:azinapp_graphicdesignproject_changelist",
+                "icon": "fas fa-list",
+                "permissions": ["azinapp.view_graphicdesignproject"]
+            },
+        ],
+        "azinapp.MediaGallery": [
+            {
+                "name": "Add New Item",
+                "url": "admin:azinapp_mediagallery_add",
+                "icon": "fas fa-plus",
+                "permissions": ["azinapp.add_mediagallery"]
+            },
+        ],
+    },
+    
+    # ----- Actions -----
+    "show_ui_builder": True,
+    
+    # ----- Custom CSS & JS -----
+    "custom_css": "css/admin-custom.css",
+    "custom_js": None,
+}
+# ======================================== #
+# JAZZMIN UI THEMES (Optional)             #
+# ======================================== #
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": "navbar-dark",
+    "accent": "accent-primary",
+    "navbar": "navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": True,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-primary",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "default",
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success",
+    },
+    "actions_sticky_top": True,
 }

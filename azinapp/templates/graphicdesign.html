@@ -1,458 +1,767 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}graphicdesign | azingroup{% endblock %}
+{% block title %}Graphic Design & Brand Identity — AZIN MEDIA{% endblock %}
+
+{% block meta_description %}Graphic design and brand identity services including logo design, visual identity systems, packaging, print materials, motion graphics, and social media content.{% endblock %}
+
+{% block og_title %}Graphic Design & Brand Identity — AZIN MEDIA{% endblock %}
+
+{% block og_description %}AZIN MEDIA provides practical graphic design and brand identity services for businesses, organizations, products, and digital communication.{% endblock %}
 
 {% block content %}
 
-<section class="graphic-hero-section">
-    <div class="graphic-hero-background">
-        <div class="hero-gradient-overlay"></div>
-        <div class="graphic-pattern"></div>
-        <div class="floating-graphic-elements">
-            <div class="graphic-element elem-1"><i class="bi bi-palette"></i></div>
-            <div class="graphic-element elem-2"><i class="bi bi-brush"></i></div>
-            <div class="graphic-element elem-3"><i class="bi bi-pen"></i></div>
-            <div class="graphic-element elem-4"><i class="bi bi-eyedropper"></i></div>
-        </div>
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="graphic-hero" aria-label="{% trans 'Graphic Design Services' %}">
+    <div class="graphic-hero__background">
+        <div class="graphic-hero__overlay"></div>
+        <div class="graphic-hero__pattern"></div>
     </div>
-
     <div class="container">
-        <div class="graphic-hero-content">
-            <div class="graphic-hero-text">
-                <h1 class="graphic-hero-title">
-                    <span class="title-line">طراحی گرافیک سازمانی و</span>
-                    <span class="title-line accent">هویت‌سازی برند</span>
+        <div class="graphic-hero__content">
+            <div class="graphic-hero__text">
+                <span class="graphic-hero__badge">AZIN MEDIA</span>
+
+                <h1 class="graphic-hero__title">
+                    <span class="graphic-hero__title-line">{% trans "Graphic Design" %}</span>
+                    <span class="graphic-hero__title-line graphic-hero__accent">{% trans "& Brand Identity" %}</span>
                 </h1>
 
-                <p class="graphic-hero-description">
-                    واحد طراحی گرافیک گروه آذین با بهره‌گیری از تیم متخصص و خلاق، راهکارهای بصری مؤثری برای تقویت حضور برند شما در بازار ارائه می‌دهد. از طراحی لوگو تا توسعه کامل سیستم بصری، همراهی قابل اعتماد برای موفقیت برند شما هستیم.
+                <p class="graphic-hero__description">
+                    {% trans "We design visual systems and communication materials that help businesses present their brand consistently across digital and physical channels. Our work covers logos, brand identity, packaging, print materials, motion graphics, and social media content." %}
                 </p>
+
+                <div class="graphic-hero__actions">
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-pen-fancy"></i>
+                        {% trans "Discuss Your Design Project" %}
+                    </a>
+
+                    <a href="#portfolio" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-images"></i>
+                        {% trans "View Portfolio" %}
+                    </a>
+                </div>
             </div>
 
-            <div class="graphic-hero-visual">
-                <div class="brand-showcase">
-                    <div class="showcase-item logo-design">
-                        <div class="design-preview">
-                            <div class="logo-sample">
-                                <div class="logo-shape shape-1"></div>
-                                <div class="logo-shape shape-2"></div>
-                            </div>
-                            <span class="design-label">طراحی لوگو سازمانی</span>
-                        </div>
+            <div class="graphic-hero__visual">
+                <div class="graphic-hero__stats-card">
+
+                    <div class="graphic-hero__stat">
+                        <span class="graphic-hero__stat-number">
+                            <i class="fas fa-pen-nib"></i>
+                        </span>
+                        <span class="graphic-hero__stat-label">{% trans "Brand & Graphic Design" %}</span>
                     </div>
-                    <div class="showcase-item branding">
-                        <div class="design-preview">
-                            <div class="brand-elements">
-                                <div class="color-palette">
-                                    <div class="color color-1"></div>
-                                    <div class="color color-2"></div>
-                                    <div class="color color-3"></div>
-                                </div>
-                                <div class="typography-sample">
-                                    <span class="font-sample">Corporate Font</span>
-                                </div>
-                            </div>
-                            <span class="design-label">توسعه هویت برند</span>
-                        </div>
+
+                    <div class="graphic-hero__stat">
+                        <span class="graphic-hero__stat-number">
+                            <i class="fas fa-layer-group"></i>
+                        </span>
+                        <span class="graphic-hero__stat-label">{% trans "Visual Identity Systems" %}</span>
                     </div>
-                    <div class="showcase-item packaging">
-                        <div class="design-preview">
-                            <div class="package-design">
-                                <div class="package-box">
-                                    <div class="package-front"></div>
-                                    <div class="package-side"></div>
-                                </div>
-                            </div>
-                            <span class="design-label">طراحی بسته‌بندی</span>
-                        </div>
+
+                    <div class="graphic-hero__stat">
+                        <span class="graphic-hero__stat-number">
+                            <i class="fas fa-desktop"></i>
+                        </span>
+                        <span class="graphic-hero__stat-label">{% trans "Digital & Print Content" %}</span>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- بخش خدمات تخصصی -->
-<section class="graphic-services-section">
+
+<!-- ======================================== -->
+<!-- 2. SERVICES                              -->
+<!-- ======================================== -->
+<section class="section section--graphic-services" aria-label="{% trans 'Graphic design services' %}">
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">خدمات تخصصی طراحی گرافیک</h2>
-            <p class="section-subtitle">راهکارهای بصری جامع برای تقویت حضور برند شما در بازار</p>
-        </div>
 
-        <div class="graphic-services-grid">
-            <div class="graphic-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-badge-tm"></i>
-                </div>
-                <h3>طراحی هویت بصری برند</h3>
-                <p>توسعه سیستم جامع بصری شامل لوگو، پالت رنگی، تایپوگرافی و المان‌های گرافیکی برای ایجاد هویت منسجم برند</p>
-                <ul class="service-features">
-                    <li>تحلیل رقبا و تحقیق بازار هدف</li>
-                    <li>طراحی ۳ کانسپت اولیه لوگو</li>
-                    <li>تدوین راهنمای کامل برند (Brand Guidelines)</li>
-                    <li>تعریف پالت رنگی سازمانی</li>
-                    <li>انتخاب و طراحی تایپوگرافی اختصاصی</li>
-                </ul>
-                <a href="{% url 'contact' %}?service=branding" class="service-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="graphic-service-card featured">
-                <div class="service-icon">
-                    <i class="bi bi-megaphone"></i>
-                </div>
-                <h3>طرابیغات و کمپین‌های بازاریابی</h3>
-                <p>طراحی حرفه‌ای محتوای بصری برای کمپین‌های تبلیغاتی دیجیتال و چاپی با تمرکز بر جذب مخاطب</p>
-                <ul class="service-features">
-                    <li>طراحی پوستر و بنرهای تبلیغاتی</li>
-                    <li>ساخت اینفوگرافیک و داده‌نمایی</li>
-                    <li>طراحی کارت ویزیت و سربرگ سازمانی</li>
-                    <li>تهیه بروشور و کاتالوگ محصولات</li>
-                    <li>طراحی محتوای شبکه‌های اجتماعی</li>
-                </ul>
-                <a href="{% url 'contact' %}?service=marketing" class="service-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="graphic-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-box-seam"></i>
-                </div>
-                <h3>طراحی بسته‌بندی و لیبلینگ</h3>
-                <p>خلق طراحی‌های خلاقانه و کاربردی برای بسته‌بندی محصولات با هدف جذب مشتری و افزایش فروش</p>
-                <ul class="service-features">
-                    <li>طراحی لیبل و برچسب محصول</li>
-                    <li>طراحی بسته‌بندی اصلی محصول</li>
-                    <li>طراحی جعبه و کارتن حمل</li>
-                    <li>مدل‌سازی سه‌بعدی بسته‌بندی</li>
-                    <li>تهیه فایل‌های آماده چاپ</li>
-                </ul>
-            
-                <a href="{% url 'contact' %}?service=packaging" class="service-cta-btn">
-                    <span>ثبت سفارش</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش فرآیند طراحی -->
-<section class="design-process-section">
-    <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">فرآیند طراحی سیستماتیک</h2>
-            <p class="section-subtitle">رویکرد مرحله‌ای و مبتنی بر استانداردهای طراحی حرفه‌ای</p>
-        </div>
-
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-icon">
-                    <i class="bi bi-clipboard-data"></i>
-                </div>
-                <div class="step-content">
-                    <h4>تحلیل و تحقیق برند</h4>
-                    <p>شناسایی اهداف سازمانی، تحلیل رقبا و درک مخاطبان هدف</p>
-                    <ul>
-                        <li>مصاحبه با ذینفعان برند</li>
-                        <li>تحلیل جایگاه رقابتی</li>
-                        <li>شناسایی مخاطبان هدف</li>
-                        <li>تعیین استراتژی بصری</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="step-icon">
-                    <i class="bi bi-lightbulb"></i>
-                </div>
-                <div class="step-content">
-                    <h4>ایده‌پردازی و کانسپت‌سازی</h4>
-                    <p>توسعه ایده‌های خلاقانه و ارائه کانسپت‌های طراحی</p>
-                    <ul>
-                        <li>طوفان فکری و ایده‌پردازی</li>
-                        <li>تهیه اسکچ و طرح اولیه</li>
-                        <li>انتخاب کانسپت برتر</li>
-                        <li>توسعه جهت‌گیری خلاقانه</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="step-icon">
-                    <i class="bi bi-pencil-square"></i>
-                </div>
-                <div class="step-content">
-                    <h4>طراحی و توسعه اجرایی</h4>
-                    <p>اجرای حرفه‌ای طرح‌ها و اصلاح بر اساس بازخوردهای دریافتی</p>
-                    <ul>
-                        <li>طراحی دیجیتالی کامل</li>
-                        <li>ارائه برای بازخورد</li>
-                        <li>اصلاح و بهبود طرح</li>
-                        <li>تهیه نسخه نهایی</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="process-step">
-                <div class="step-icon">
-                    <i class="bi bi-folder-check"></i>
-                </div>
-                <div class="step-content">
-                    <h4>تحویل و مستندسازی</h4>
-                    <p>تحویل کامل فایل‌ها و ارائه راهنمای کاربری</p>
-                    <ul>
-                        <li>تحویل فایل‌های نهایی</li>
-                        <li>ارائه راهنمای برند</li>
-                        <li>مستندسازی فنی</li>
-                        <li>پشتیبانی پس از تحویل</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش نمونه کارها -->
-<section id="portfolio" class="graphic-portfolio-section">
-    <div class="container">
         <div class="section-header">
-            <h2 class="section-title">گالری پروژه‌های طراحی گرافیک</h2>
-            <p class="section-subtitle">نمایشگاهی از دستاوردهای واحد طراحی گرافیک گروه آذین</p>
+            <span class="section-header__badge">{% trans "Our Services" %}</span>
+
+            <h2 class="section-header__title">
+                {% trans "Design Services for Business Communication" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "From a single design asset to a complete visual identity, we create materials based on where your brand needs to communicate and how the final design will be used." %}
+            </p>
         </div>
-    
 
-        <div class="graphic-portfolio-grid">
-            <div class="portfolio-item" data-category="logo">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/azinlogo.jpg' %}" alt="طراحی لوگو شرکت فناوری اطلاعات">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>لوگو شرکت تک‌راه</h4>
-                                <p>شرکت فناوری اطلاعات و ارتباطات</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-btn" data-project="1">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">طراحی لوگو</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="client-info">
-                            <i class="bi bi-building"></i>
-                            <span>شرکت تک‌راه</span>
-                        </div>
-                        <h6>طراحی لوگو و نشان سازمانی</h6>
-                        <div class="portfolio-tags">
-                            <span class="tag">تکنولوژی</span>
-                            <span class="tag">مدرن</span>
-                            <span class="tag">مینیمال</span>
-                        </div>
-                    </div>
+        <div class="graphic-services__grid">
+
+            <!-- Service 1: Logo Design -->
+            <div class="graphic-service graphic-service--featured">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-trademark"></i>
                 </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Logo Design" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "A logo designed to give your business a clear and usable visual mark. We consider your business, audience, industry, and the places where the logo will appear before developing the design." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Initial concept development" %}</li>
+                    <li>{% trans "Design direction and revisions" %}</li>
+                    <li>{% trans "Vector and digital files" %}</li>
+                    <li>{% trans "Basic logo usage guidance" %}</li>
+                </ul>
+
             </div>
 
-            <div class="portfolio-item" data-category="branding">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/azinlogo.jpg' %}" alt="سیستم هویت بصری بانک خصوصی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>برندینگ بانک سرمایه</h4>
-                                <p>توسعه کامل سیستم بصری</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-btn" data-project="2">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">هویت برند</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="client-info">
-                            <i class="bi bi-bank"></i>
-                            <span>بانک سرمایه</span>
-                        </div>
-                        <h6>توسعه سیستم هویت بصری</h6>
-                        <div class="portfolio-tags">
-                            <span class="tag">سازمانی</span>
-                            <span class="tag">امنیت</span>
-                            <span class="tag">اعتماد</span>
-                        </div>
-                    </div>
+
+            <!-- Service 2: Brand Identity -->
+            <div class="graphic-service">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-palette"></i>
                 </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Brand Identity" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "A consistent visual identity that gives your business a defined way to communicate across websites, documents, social media, presentations, and other customer-facing materials." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Visual direction and design system" %}</li>
+                    <li>{% trans "Color palette and typography" %}</li>
+                    <li>{% trans "Logo and identity applications" %}</li>
+                    <li>{% trans "Brand guidelines" %}</li>
+                </ul>
+
             </div>
 
-            <div class="portfolio-item" data-category="packaging">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/brand.jpg' %}" alt="طراحی بسته‌بندی محصولات لوکس آرایشی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>بسته‌بندی گل‌رنگ</h4>
-                                <p>برند محصولات آرایشی</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-btn" data-project="3">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">طراحی بسته‌بندی</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="client-info">
-                            <i class="bi bi-flower1"></i>
-                            <span>برند گل‌رنگ</span>
-                        </div>
-                        <h6>طراحی بسته‌بندی محصولات آرایشی</h6>
-                        <div class="portfolio-tags">
-                            <span class="tag">لوکس</span>
-                            <span class="tag">زنانه</span>
-                            <span class="tag">طبیعی</span>
-                        </div>
-                    </div>
+
+            <!-- Service 3: Motion Graphics -->
+            <div class="graphic-service graphic-service--featured">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-film"></i>
                 </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Motion Graphics" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "Animated visual content for presentations, promotional videos, social media, and digital communication. Motion design can be used to explain information, introduce a brand, or add movement to existing visual assets." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Logo and brand animation" %}</li>
+                    <li>{% trans "Animated titles and graphics" %}</li>
+                    <li>{% trans "Short-form social content" %}</li>
+                    <li>{% trans "Visual elements for video projects" %}</li>
+                </ul>
+
             </div>
 
-            <div class="portfolio-item" data-category="print">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">
-                        <img src="{% static 'img/decore.jpg' %}" alt="طراحی کاتالوگ محصولات صنعتی">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h4>کاتالوگ فنی صنعت‌گستر</h4>
-                                <p>شرکت تجهیزات صنعتی</p>
-                            </div>
-                            <div class="portfolio-actions">
-                                <button class="view-btn" data-project="4">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="portfolio-badge">طراحی چاپی</div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="client-info">
-                            <i class="bi bi-gear"></i>
-                            <span>صنعت‌گستر</span>
-                        </div>
-                        <h6>طراحی کاتالوگ محصولات صنعتی</h6>
-                        <div class="portfolio-tags">
-                            <span class="tag">فنی</span>
-                            <span class="tag">صنعتی</span>
-                            <span class="tag">حرفه‌ای</span>
-                        </div>
-                    </div>
+
+            <!-- Service 4: Packaging Design -->
+            <div class="graphic-service">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-box"></i>
                 </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Packaging Design" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "Packaging and label designs developed around the product, brand identity, required information, and printing requirements. The goal is to create packaging that is clear, practical, and consistent with the brand." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Product packaging concepts" %}</li>
+                    <li>{% trans "Label and sticker design" %}</li>
+                    <li>{% trans "Packaging mockups" %}</li>
+                    <li>{% trans "Print-ready artwork" %}</li>
+                </ul>
+
             </div>
+
+
+            <!-- Service 5: Print Design -->
+            <div class="graphic-service">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-print"></i>
+                </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Print & Business Materials" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "Professional print materials that keep your visual communication consistent across business documents, marketing materials, events, and customer-facing environments." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Brochures and company profiles" %}</li>
+                    <li>{% trans "Flyers, posters, and promotional materials" %}</li>
+                    <li>{% trans "Business cards and stationery" %}</li>
+                    <li>{% trans "Print-ready files and specifications" %}</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Service 6: Social Media Graphics -->
+            <div class="graphic-service">
+
+                <div class="graphic-service__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+
+                <h3 class="graphic-service__title">
+                    {% trans "Social Media Graphics" %}
+                </h3>
+
+                <p class="graphic-service__desc">
+                    {% trans "Branded visual content for social media platforms, including posts, stories, campaigns, announcements, and promotional materials. Designs are prepared according to the platform and intended content format." %}
+                </p>
+
+                <ul class="graphic-service__features">
+                    <li>{% trans "Post and story designs" %}</li>
+                    <li>{% trans "Campaign and promotional creatives" %}</li>
+                    <li>{% trans "Social media covers and banners" %}</li>
+                    <li>{% trans "Reusable branded templates" %}</li>
+                </ul>
+
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- بخش نرم‌افزارها و تکنولوژی -->
-<section class="tools-section">
+
+<!-- ======================================== -->
+<!-- 3. PORTFOLIO (Dynamic from Admin)       -->
+<!-- ======================================== -->
+<section class="section section--graphic-portfolio" id="portfolio" aria-label="{% trans 'Graphic design portfolio' %}">
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">ابزارها و فناوری‌های طراحی</h2>
-            <p class="section-subtitle">استفاده از پیشرفته‌ترین نرم‌افزارها و متدولوژی‌های روز دنیا</p>
+
+        <div class="section-header">
+            <span class="section-header__badge">{% trans "Our Work" %}</span>
+
+            <h2 class="section-header__title">
+                {% trans "Selected Design Work" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Explore examples of the design formats and visual projects AZIN MEDIA can support." %}
+            </p>
         </div>
 
-        <div class="tools-grid">
-            <div class="tool-card">
-                <div class="tool-logo">
-                    <i class="bi bi-adobe"></i>
-                </div>
-                <h4>Adobe Creative Cloud</h4>
-                <p>مجموعه کامل نرم‌افزارهای استاندارد صنعت طراحی گرافیک</p>
-                <div class="tool-features">
-                    <span>Adobe Illustrator</span>
-                    <span>Adobe Photoshop</span>
-                    <span>Adobe InDesign</span>
-                    <span>Adobe After Effects</span>
-                </div>
-            </div>
 
-            <div class="tool-card">
-                <div class="tool-logo">
-                    <i class="bi bi-cube"></i>
-                </div>
-                <h4>طراحی سه‌بعدی و رندرینگ</h4>
-                <p>ابزارهای پیشرفته مدل‌سازی و رندرینگ سه‌بعدی</p>
-                <div class="tool-features">
-                    <span>Blender</span>
-                    <span>Cinema 4D</span>
-                    <span>KeyShot</span>
-                    <span>3ds Max</span>
-                </div>
-            </div>
+        <!-- Filters -->
+        <div class="graphic-portfolio__filters">
 
-            <div class="tool-card">
-                <div class="tool-logo">
-                    <i class="bi bi-play-circle"></i>
+            <button class="graphic-portfolio__filter active" data-filter="all">
+                {% trans "All" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="logo">
+                {% trans "Logo" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="branding">
+                {% trans "Branding" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="motion">
+                {% trans "Motion Graphics" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="packaging">
+                {% trans "Packaging" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="print">
+                {% trans "Print" %}
+            </button>
+
+            <button class="graphic-portfolio__filter" data-filter="social">
+                {% trans "Social Media" %}
+            </button>
+
+        </div>
+
+
+        <!-- Portfolio Grid -->
+        <div class="graphic-portfolio__grid" id="portfolioGrid">
+
+            {% if design_projects %}
+
+                {% for project in design_projects %}
+
+                <div class="graphic-portfolio__item" data-category="{{ project.category|lower }}">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            {% if project.image %}
+
+                                <img src="{{ project.image.url }}" alt="{{ project.title }}" loading="lazy">
+
+                            {% else %}
+
+                                <div class="graphic-portfolio__placeholder">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+
+                            {% endif %}
+
+                            {% if project.is_featured %}
+
+                                <span class="graphic-portfolio__badge featured">
+                                    {% trans "Featured" %}
+                                </span>
+
+                            {% else %}
+
+                                <span class="graphic-portfolio__badge">
+                                    {{ project.get_category_display|default:_("Design") }}
+                                </span>
+
+                            {% endif %}
+
+                        </div>
+
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {{ project.title }}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {{ project.description|truncatewords:14 }}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+
+                                {% if project.client %}
+
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    {{ project.client }}
+                                </span>
+
+                                {% endif %}
+
+                                {% if project.created_at %}
+
+                                <span>
+                                    <i class="fas fa-calendar"></i>
+                                    {{ project.created_at|date:"Y" }}
+                                </span>
+
+                                {% endif %}
+
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <h4>موشن گرافیک و انیمیشن</h4>
-                <p>تولید محتوای متحرک و انیمیشن‌های حرفه‌ای</p>
-                <div class="tool-features">
-                    <span>Adobe After Effects</span>
-                    <span>Premiere Pro</span>
-                    <span>DaVinci Resolve</span>
-                    <span>Figma (پروتوتایپ)</span>
+
+                {% endfor %}
+
+            {% else %}
+
+                <!-- Fallback: Service Examples -->
+
+                <div class="graphic-portfolio__item" data-category="logo">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-trademark"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Logo" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Logo Design" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "Logo concepts developed for businesses that need a clear and adaptable visual mark." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Brand Identity" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
+
+                <div class="graphic-portfolio__item" data-category="branding">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-palette"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Branding" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Visual Brand Identity" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "A coordinated visual system covering colors, typography, logo applications, and everyday brand communication." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Brand Identity" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="graphic-portfolio__item" data-category="motion">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-film"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Motion Graphics" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Animated Brand Content" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "Short animated visual content for brand introductions, social media, presentations, and digital campaigns." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Digital Content" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="graphic-portfolio__item" data-category="packaging">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-box"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Packaging" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Product Packaging" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "Packaging and label concepts designed around the product, brand identity, required information, and production format." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Product Design" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="graphic-portfolio__item" data-category="print">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-print"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Print" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Business Print Materials" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "Brochures, company profiles, stationery, flyers, posters, and other printed materials for business communication." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Business Communication" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="graphic-portfolio__item" data-category="social">
+
+                    <div class="graphic-portfolio__card">
+
+                        <div class="graphic-portfolio__image">
+
+                            <div class="graphic-portfolio__placeholder">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+
+                            <span class="graphic-portfolio__badge">
+                                {% trans "Social Media" %}
+                            </span>
+
+                        </div>
+
+                        <div class="graphic-portfolio__content">
+
+                            <h4 class="graphic-portfolio__title">
+                                {% trans "Social Media Content" %}
+                            </h4>
+
+                            <p class="graphic-portfolio__desc">
+                                {% trans "Branded visual templates and campaign graphics designed for regular social media publishing and digital communication." %}
+                            </p>
+
+                            <div class="graphic-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-briefcase"></i>
+                                    {% trans "Social Media Design" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="graphic-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 4. CTA SECTION                           -->
+<!-- ======================================== -->
+<section class="section section--cta" aria-label="{% trans 'Call to action' %}">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Need Design for Your Business?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you are building, what materials you need, and where the designs will be used. We can discuss the scope, visual direction, required formats, and next steps for your project." %}
+                </p>
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-pen-fancy"></i>
+                        {% trans "Discuss Your Design Project" %}
+                    </a>
+
+                    <a href="tel:+992110003443" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-phone"></i>
+                        {% trans "Call for Inquiry" %}
+                    </a>
+
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
+{% endblock %}
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT FOR FILTER & COUNTER         -->
+<!-- ======================================== -->
+{% block extra_js %}
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // فیلتر نمونه کارها
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // ---- Portfolio Filter ----
+        const filterBtns = document.querySelectorAll('.graphic-portfolio__filter');
+        const portfolioItems = document.querySelectorAll('.graphic-portfolio__item');
 
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', function () {
+
+            btn.addEventListener('click', function() {
+
                 filterBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
 
                 const filterValue = this.getAttribute('data-filter');
 
                 portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+
+                    const category = item.getAttribute('data-category');
+
+                    if (filterValue === 'all' || category === filterValue) {
+
                         item.style.display = 'block';
+
                         setTimeout(() => {
                             item.style.opacity = '1';
                             item.style.transform = 'translateY(0)';
-                        }, 100);
+                        }, 50);
+
                     } else {
+
                         item.style.opacity = '0';
                         item.style.transform = 'translateY(20px)';
+
                         setTimeout(() => {
                             item.style.display = 'none';
                         }, 300);
+
                     }
+
                 });
+
             });
+
         });
 
-        // نمایش جزئیات پروژه
-        document.querySelectorAll('.view-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const projectId = this.getAttribute('data-project');
-                // نمایش مودال یا هدایت به صفحه جزئیات
-                alert(`نمایش جزئیات پروژه شماره ${projectId}\n\nاین بخش می‌تواند به صفحه جداگانه پروژه متصل شود.`);
-            });
-        });
     });
 </script>
-{% endblock content %}
+{% endblock %}

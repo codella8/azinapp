@@ -1,167 +1,251 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
-from . models import Work, Team, Profile
 from django.contrib import messages
-from .forms import ContactForm
-from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import user_passes_test, login_required
 from django.contrib.auth.models import User
-from . forms import SignUpForm, UserUpdateForm, UpdatePasswordForm, UpdateUserInfo
+from django.core.mail import send_mail
 from django.conf import settings
 from django.utils.translation import gettext as _
-from django.contrib.auth.decorators import user_passes_test
+from django.utils.text import slugify
 
-def admin_only(user): #بررسی اینکه کاربر ادمین هست یا نه
-    return user.is_staff 
+from .models import (
+    Team, Profile, Contact,
+    MediaGallery,
+    GraphicDesignProject,
+    SMMProject,
+    WebProject,
+    MobileAppProject,
+    DatabaseProject,
+    ShopProduct,
+    DecoreProject,
+)
+from .forms import (
+    ContactForm, SignUpForm, UserUpdateForm, 
+    UpdatePasswordForm, UpdateUserInfo
+)
 
-@user_passes_test(admin_only) #فقط به ادمین‌ها اجازه ورود می‌دهد
+
+# ======================================== #
+# 1. ADMIN PANEL                          #
+# ======================================== #
+
+def admin_only(user):
+    return user.is_staff
+
+@user_passes_test(admin_only)
 def admin_panel(request):
     return redirect('admin:index')
 
+
+# ======================================== #
+# 2. TEST VIEW                            #
+# ======================================== #
+
 def my_view(request):
-    output = _("Welcome to my site.")
+    output = _("Welcome to AZIN GROUP.")
     return HttpResponse(output)
 
+
+# ======================================== #
+# 3. HOME PAGE                            #
+# ======================================== #
+
 def index(request):
-    return render(request, 'index.html')
+    featured_media = MediaGallery.objects.filter(is_featured=True, is_published=True)[:6]
+    
+    context = {
+        'featured_media': featured_media,
+    }
+    return render(request, 'index.html', context)
+
+
+# ======================================== #
+# 4. ABOUT PAGE                           #
+# ======================================== #
 
 def about(request):
     team = Team.objects.all()
-    return render(request, "about.html", {"team": team}) 
+    return render(request, "about.html", {"team": team})
+
+
+# ======================================== #
+# 5. CONTACT PAGE                         #
+# ======================================== #
 
 def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data["name"]
-            email = form.cleaned_data["email"]
-            message = form.cleaned_data["message"]
-
-            send_mail(
-                subject=f"پیام جدید از {name}",
-                message=f"از: {name} <{email}>\n\n{message}",
-                from_email=settings.DEFAULT_FROM_EMAIL,
-                recipient_list=[settings.DEFAULT_FROM_EMAIL],
-                fail_silently=False,
-            )
-
-            messages.success(request, "Massage sent successfully!")
+            contact = form.save()
+            
+            # Send email notification
+            try:
+                send_mail(
+                    subject=f"New Message from {contact.name}",
+                    message=f"From: {contact.name} <{contact.email}>\n\n{contact.message}",
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[settings.DEFAULT_FROM_EMAIL],
+                    fail_silently=True,
+                )
+            except:
+                pass
+            
+            messages.success(request, _("Your message has been sent successfully!"))
             return redirect("contact")
     else:
         form = ContactForm()
 
     return render(request, "contact.html", {"form": form})
 
-def portfolio(request):
-    projects = Work.objects.all().order_by('-created_at') 
-    return render(request, 'portfolio.html', {'projects': projects})
-
-def graphicdesign(request):
-    return render(request, 'graphicdesign.html')
-
-def mobileapp(request):
-    return render(request, 'mobileapp.html')
+# ======================================== #
+# 7. MEDIA GALLERY PAGE                   #
+# ======================================== #
 
 def media(request):
-    return render(request, 'media.html')
+    gallery_items = MediaGallery.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'media.html', {'gallery_items': gallery_items})
+
+
+# ======================================== #
+# 8. GRAPHIC DESIGN PAGE                  #
+# ======================================== #
+
+def graphicdesign(request):
+    projects = GraphicDesignProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'graphicdesign.html', {'design_projects': projects})
+
+
+# ======================================== #
+# 9. SOCIAL MEDIA MANAGEMENT PAGE         #
+# ======================================== #
 
 def smm(request):
-    return render(request, 'smm.html')
+    projects = SMMProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'smm.html', {'smm_projects': projects})
+
+
+# ======================================== #
+# 10. WEB DEVELOPMENT PAGE                #
+# ======================================== #
 
 def website(request):
-    return render(request, 'website.html')
+    projects = WebProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'website.html', {'web_projects': projects})
 
-def store(request):
-    return render(request, 'store.html')
+
+# ======================================== #
+# 11. MOBILE APP PAGE                     #
+# ======================================== #
+
+def mobileapp(request):
+    projects = MobileAppProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'mobileapp.html', {'mobile_projects': projects})
+
+
+# ======================================== #
+# 12. DATABASE SERVICES PAGE              #
+# ======================================== #
+
+def database(request):
+    projects = DatabaseProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'database.html', {'database_projects': projects})
+
+
+# ======================================== #
+# 13. SHOP PAGE                           #
+# ======================================== #
+
+def shop(request):
+    products = ShopProduct.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'shop.html', {'products': products})
+
+
+# ======================================== #
+# 14. DECORE PAGE                         #
+# ======================================== #
 
 def decore(request):
-    return render(request, 'decore.html')
+    projects = DecoreProject.objects.filter(is_published=True).order_by('sort_order', '-created_at')
+    return render(request, 'decore.html', {'decore_projects': projects})
 
-def travel(request):
-    return render(request, 'travel.html')
-
-def sham_about(request):
-    return render(request, 'sham_about.html')
+# ======================================== #
+# 16. AUTHENTICATION VIEWS                #
+# ======================================== #
 
 def logout_user(request):
     logout(request)
-    messages.success(request, _('با موفقیت خارج شدید'))
+    messages.success(request, _('You have been logged out successfully.'))
     return redirect('index')
 
 
-def login_user(request): # تعریف ویوی ورود
+def login_user(request):
     if request.user.is_authenticated:
-        messages.info(request, _("شما قبلاً وارد شده‌اید."))
-        return redirect("index") # اینکار باعث جلوگیری از ورود دوباره‌ی کاربران وارد شده می‌شود
+        messages.info(request, _("You are already logged in."))
+        return redirect("index")
 
-    if request.method == "POST": # گرفتن داده ها
+    if request.method == "POST":
         username = request.POST.get('username', '').strip()
         password = request.POST.get('password', '').strip()
 
-        user = authenticate(request, username=username, password=password) # بررسی اعتبار با authenticated
+        user = authenticate(request, username=username, password=password)
 
         if user is not None:
             login(request, user)
-            next_page = request.GET.get('next', 'index') #اگر کاربر از یک صفحه خاص به login هدایت شده بود next را برمیگرداند
+            next_page = request.GET.get('next', 'index')
             
             if '/admin/' in next_page and not user.is_staff:
-                messages.error(request, _("شما دسترسی به پنل مدیریت ندارید"))
-                return redirect('index') # محافظت از صفحه ادمین
+                messages.error(request, _("You don't have access to the admin panel."))
+                return redirect('index')
                 
             return redirect(next_page)
         else:
-            messages.error(request, _("نام کاربری یا رمز عبور اشتباه است"))
+            messages.error(request, _("Invalid username or password."))
     
     return render(request, 'login.html')
 
 
 def signup_user(request):
-    if request.method == "POST": # بررسی درخواست از نوع post
+    if request.method == "POST":
         form = SignUpForm(request.POST)
-        if form.is_valid(): #فرم وارد شده را اعتبارسنجی می‌کنیم
+        if form.is_valid():
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
 
-            if User.objects.filter(username=username).exists(): #بررسی وجود نام کاربری و ایمیل
-                form.add_error('username', _("این نام کاربری قبلاً ثبت شده است."))
+            if User.objects.filter(username=username).exists():
+                form.add_error('username', _("This username is already taken."))
             elif User.objects.filter(email=email).exists():
-                form.add_error('email', _("این ایمیل قبلاً ثبت شده است."))
+                form.add_error('email', _("This email is already registered."))
             else:
                 user = form.save()
-                Profile.objects.get_or_create(user=user) # ایجاد پروفایل کاربر 
-                #get_or_create() بررسی میکند که آیا پروفایل برای این کاربر وجود دارد یا خیر
-                login(request, user) # ورود کاربر به حساب
-                messages.success(request, _("اکانت شما ساخته شد."))
+                Profile.objects.get_or_create(user=user)
+                login(request, user)
+                messages.success(request, _("Your account has been created successfully!"))
                 return redirect("index")
 
-        messages.error(request, _("لطفاً خطاهای فرم را بررسی و اصلاح کنید.")) #در صورتی که فرم معتبر نباشد
+        messages.error(request, _("Please check the form for errors."))
         return render(request, 'signup.html', {'form': form})
-
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
 
 
+@login_required
 def update_user(request):
-    if request.user.is_authenticated: #ابتدا بررسی می‌کنیم که آیا کاربر وارد شده است یا خیر.
-        current_user = User.objects.get(id=request.user.id) # استفاده از request.user.is_authenticated برای بررسی وضعیت ورود
-        user_form = UserUpdateForm(request.POST or None, instance = current_user) # استفاده از فرم UserUpdateForm برای بروزرسانی داده‌ها
-        if user_form.is_valid(): 
-            user_form.save() # ذخیره‌سازی و بروزرسانی اطلاعات
-            login(request, current_user) # بروزرسانی اطلاعات کاربر و ورود مجدد به سیستم
-            messages.success(request, 'Updated!')
-            return redirect('index')
-        return render(request, 'update_user.html', {'user_form': user_form})
-       
-    else:
-        messages.error(request, 'login First') # اگر کاربر وارد نشده باشد
+    current_user = User.objects.get(id=request.user.id)
+    user_form = UserUpdateForm(request.POST or None, instance=current_user)
+    
+    if user_form.is_valid():
+        user_form.save()
+        login(request, current_user)
+        messages.success(request, _('Profile updated successfully!'))
         return redirect('index')
     
-def update_password(request):
-    if not request.user.is_authenticated:
-        messages.error(request, _('لطفاً ابتدا وارد شوید.'))
-        return redirect('login')
+    return render(request, 'update_user.html', {'user_form': user_form})
 
+
+@login_required
+def update_password(request):
     current_user = request.user
 
     if request.method == 'POST':
@@ -169,7 +253,7 @@ def update_password(request):
         if form.is_valid():
             form.save()
             login(request, current_user)
-            messages.success(request, 'رمز عبور با موفقیت تغییر کرد.')
+            messages.success(request, _('Password changed successfully.'))
             return redirect('update_user')
         else:
             for error in list(form.errors.values()):
@@ -180,22 +264,19 @@ def update_password(request):
     return render(request, 'update_password.html', {'form': form})
 
 
+@login_required
 def update_info(request):
-    if not request.user.is_authenticated:
-        messages.error(request, _('لطفاً ابتدا وارد حساب کاربری شوید.'))
-        return redirect('login')
-
-    current_user, created = Profile.objects.get_or_create(user=request.user) # اطلاعات کاربر ساخته شده را ذخیره میکنیم تا در مراحل بعدی استفاده کنیم
+    current_user, created = Profile.objects.get_or_create(user=request.user)
 
     if request.method == "POST":
         form = UpdateUserInfo(request.POST, instance=current_user)
         if form.is_valid():
             form.save()
-            messages.success(request, _('اطلاعات با موفقیت بروزرسانی شد.'))
+            messages.success(request, _('Information updated successfully.'))
             return redirect('index')
         else:
-            messages.error(request, _('Error'))
+            messages.error(request, _('Please check the form for errors.'))
     else:
-        form = UpdateUserInfo(instance=current_user) # نمایش یک فرم خالی برای کاربر و وارد کردن اطلاعات
+        form = UpdateUserInfo(instance=current_user)
 
     return render(request, 'update_info.html', {'form': form})

@@ -1,0 +1,4363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-20 03:38-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Tajik <tg@li.org>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\azinapp\forms.py:17 .\azinapp\templates\contact.html:463
+msgid "Full Name"
+msgstr "Номи пурра"
+
+#: .\azinapp\forms.py:21
+msgid "Enter your full name"
+msgstr "Номи пурраи худро ворид кунед"
+
+#: .\azinapp\forms.py:25
+msgid "Please enter your name."
+msgstr "Лутфан номи худро ворид кунед."
+
+#: .\azinapp\forms.py:26
+msgid "Name cannot exceed 100 characters."
+msgstr "Ном набояд аз 100 аломат зиёд бошад."
+
+#: .\azinapp\forms.py:31 .\azinapp\forms.py:223 .\azinapp\forms.py:304
+#: .\azinapp\forms.py:437 .\azinapp\templates\contact.html:479
+#: .\azinapp\templates\signup.html:86
+msgid "Email Address"
+msgstr "Суроғаи почтаи электронӣ"
+
+#: .\azinapp\forms.py:34 .\azinapp\forms.py:227 .\azinapp\forms.py:307
+msgid "example@email.com"
+msgstr "example@email.com"
+
+#: .\azinapp\forms.py:38 .\azinapp\forms.py:310 .\azinapp\forms.py:444
+msgid "Please enter your email address."
+msgstr "Лутфан суроғаи почтаи электронии худро ворид кунед."
+
+#: .\azinapp\forms.py:39 .\azinapp\forms.py:68 .\azinapp\forms.py:230
+#: .\azinapp\forms.py:311 .\azinapp\forms.py:445
+msgid "Please enter a valid email address."
+msgstr "Лутфан суроғаи дурусти почтаи электрониро ворид кунед."
+
+#: .\azinapp\forms.py:44 .\azinapp\templates\contact.html:586
+msgid "Message"
+msgstr "Паём"
+
+#: .\azinapp\forms.py:48
+msgid "Enter your message here..."
+msgstr "Паёми худро дар ин ҷо ворид кунед..."
+
+#: .\azinapp\forms.py:52
+msgid "Please enter your message."
+msgstr "Лутфан паёми худро ворид кунед."
+
+#: .\azinapp\forms.py:80 .\azinapp\templates\contact.html:503
+msgid "Phone Number"
+msgstr "Рақами телефон"
+
+#: .\azinapp\forms.py:84
+msgid "e.g. 09123456789"
+msgstr "e.g. 09123456789"
+
+#: .\azinapp\forms.py:88
+msgid "Please enter your phone number."
+msgstr "Лутфан рақами телефони худро ворид кунед."
+
+#: .\azinapp\forms.py:93
+msgid "Address Line 1"
+msgstr "Суроға, сатри 1"
+
+#: .\azinapp\forms.py:97
+msgid "Enter your address"
+msgstr "Суроғаи худро ворид кунед"
+
+#: .\azinapp\forms.py:102
+msgid "Address Line 2"
+msgstr "Суроға, сатри 2"
+
+#: .\azinapp\forms.py:106
+msgid "Enter your address (optional)"
+msgstr "Суроғаи худро ворид кунед (ихтиёрӣ)"
+
+#: .\azinapp\forms.py:111
+msgid "City"
+msgstr "Шаҳр"
+
+#: .\azinapp\forms.py:115
+msgid "Enter your city"
+msgstr "Шаҳри худро ворид кунед"
+
+#: .\azinapp\forms.py:120
+msgid "Country"
+msgstr "Кишвар"
+
+#: .\azinapp\forms.py:125
+msgid "Enter your country"
+msgstr "Кишвари худро ворид кунед"
+
+#: .\azinapp\forms.py:141
+msgid "Phone number must contain only digits."
+msgstr "Рақами телефон бояд танҳо рақамҳоро дар бар гирад."
+
+#: .\azinapp\forms.py:143
+msgid "Phone number must be at least 10 digits."
+msgstr "Рақами телефон бояд ҳадди ақал 10 рақам дошта бошад."
+
+#: .\azinapp\forms.py:155 .\azinapp\templates\update_password.html:79
+msgid "New Password"
+msgstr "Пароли нав"
+
+#: .\azinapp\forms.py:158
+msgid "Enter your new password"
+msgstr "Пароли нави худро ворид кунед"
+
+#: .\azinapp\forms.py:163
+msgid "Please enter your new password."
+msgstr "Лутфан пароли нави худро ворид кунед."
+
+#: .\azinapp\forms.py:168 .\azinapp\templates\update_password.html:111
+msgid "Confirm New Password"
+msgstr "Пароли навро тасдиқ кунед"
+
+#: .\azinapp\forms.py:171
+msgid "Enter your new password again"
+msgstr "Пароли нави худро дубора ворид кунед"
+
+#: .\azinapp\forms.py:176
+msgid "Please confirm your new password."
+msgstr "Лутфан пароли нави худро тасдиқ кунед."
+
+#: .\azinapp\forms.py:185 .\azinapp\forms.py:382
+msgid "Password must be at least 8 characters."
+msgstr "Парол бояд ҳадди ақал 8 аломат дошта бошад."
+
+#: .\azinapp\forms.py:187 .\azinapp\forms.py:384
+msgid "Password must contain at least one number."
+msgstr "Парол бояд ҳадди ақал як рақам дошта бошад."
+
+#: .\azinapp\forms.py:189 .\azinapp\forms.py:386
+msgid "Password must contain at least one letter."
+msgstr "Парол бояд ҳадди ақал як ҳарф дошта бошад."
+
+#: .\azinapp\forms.py:203 .\azinapp\forms.py:279
+#: .\azinapp\templates\signup.html:48
+msgid "First Name"
+msgstr "Ном"
+
+#: .\azinapp\forms.py:208 .\azinapp\forms.py:283
+msgid "Enter your first name"
+msgstr "Номи худро ворид кунед"
+
+#: .\azinapp\forms.py:213 .\azinapp\forms.py:292
+#: .\azinapp\templates\signup.html:58
+msgid "Last Name"
+msgstr "Насаб"
+
+#: .\azinapp\forms.py:218 .\azinapp\forms.py:296
+msgid "Enter your last name"
+msgstr "Насабатонро ворид кунед"
+
+#: .\azinapp\forms.py:235 .\azinapp\forms.py:316
+#: .\azinapp\templates\signup.html:71
+msgid "Username"
+msgstr "Номи корбар"
+
+#: .\azinapp\forms.py:240 .\azinapp\forms.py:320
+msgid "Enter your username"
+msgstr "Номи корбарии худро ворид кунед"
+
+#: .\azinapp\forms.py:253 .\azinapp\forms.py:362
+msgid "Username must be at least 3 characters."
+msgstr "Номи корбар бояд ҳадди ақал 3 аломат дошта бошад."
+
+#: .\azinapp\forms.py:255 .\azinapp\forms.py:364
+msgid "Username must contain only letters and numbers."
+msgstr "Номи корбар бояд танҳо ҳарфҳо ва рақамҳоро дар бар гирад."
+
+#: .\azinapp\forms.py:258 .\azinapp\forms.py:366 .\azinapp\views.py:216
+msgid "This username is already taken."
+msgstr "Ин номи корбар аллакай истифода шудааст."
+
+#: .\azinapp\forms.py:267 .\azinapp\forms.py:374 .\azinapp\views.py:218
+msgid "This email is already registered."
+msgstr "Ин почтаи электронӣ аллакай сабтином шудааст."
+
+#: .\azinapp\forms.py:287
+msgid "Please enter your first name."
+msgstr "Лутфан номи худро ворид кунед."
+
+#: .\azinapp\forms.py:299
+msgid "Please enter your last name."
+msgstr "Лутфан насабатонро ворид кунед."
+
+#: .\azinapp\forms.py:323
+msgid "Please enter your username."
+msgstr "Лутфан номи корбарии худро ворид кунед."
+
+#: .\azinapp\forms.py:325
+msgid "Minimum 3 characters, letters and numbers only."
+msgstr "Ҳадди ақал 3 аломат; танҳо ҳарфҳо ва рақамҳо."
+
+#: .\azinapp\forms.py:329 .\azinapp\templates\login.html:49
+#: .\azinapp\templates\signup.html:98
+msgid "Password"
+msgstr "Парол"
+
+#: .\azinapp\forms.py:332 .\azinapp\templates\login.html:53
+msgid "Enter your password"
+msgstr "Пароли худро ворид кунед"
+
+#: .\azinapp\forms.py:336
+msgid "Please enter your password."
+msgstr "Лутфан пароли худро ворид кунед."
+
+#: .\azinapp\forms.py:338
+msgid "Minimum 8 characters including letters and numbers."
+msgstr "Ҳадди ақал 8 аломат, аз ҷумла ҳарфҳо ва рақамҳо."
+
+#: .\azinapp\forms.py:342 .\azinapp\templates\signup.html:114
+msgid "Confirm Password"
+msgstr "Тасдиқи парол"
+
+#: .\azinapp\forms.py:345
+msgid "Enter your password again"
+msgstr "Пароли худро дубора ворид кунед"
+
+#: .\azinapp\forms.py:349
+msgid "Please confirm your password."
+msgstr "Лутфан пароли худро тасдиқ кунед."
+
+#: .\azinapp\forms.py:395
+msgid "Passwords do not match."
+msgstr "Паролҳо мувофиқат намекунанд."
+
+#: .\azinapp\forms.py:415 .\azinapp\forms.py:420
+msgid "Search"
+msgstr "Ҷустуҷӯ"
+
+#: .\azinapp\forms.py:419
+msgid "Search..."
+msgstr "Ҷустуҷӯ..."
+
+#: .\azinapp\forms.py:425
+msgid "Category"
+msgstr "Категория"
+
+#: .\azinapp\forms.py:440
+msgid "Enter your email address"
+msgstr "Суроғаи почтаи электронии худро ворид кунед"
+
+#: .\azinapp\forms.py:441
+msgid "Subscribe to newsletter"
+msgstr "Ба ахборнома обуна шавед"
+
+#: .\azinapp\templates\about.html:19 .\azinapp\templates\about.html:41
+msgid "About AZIN GROUP"
+msgstr "Дар бораи AZIN GROUP"
+
+#: .\azinapp\templates\about.html:47
+msgid "Technology, Creativity"
+msgstr "Технология, эҷодкорӣ"
+
+#: .\azinapp\templates\about.html:53 .\azinapp\templates\website.html:66
+msgid "& Business Solutions"
+msgstr "ва ҳалли тиҷоратӣ"
+
+#: .\azinapp\templates\about.html:59
+msgid ""
+"AZIN GROUP brings together technology, creative services, media production, "
+"and business solutions under one professional team. We help businesses and "
+"organizations turn ideas into practical, high-quality solutions designed "
+"around their goals."
+msgstr "AZIN GROUP технология, хизматрасониҳои эҷодӣ, истеҳсоли медиа ва ҳалли тиҷоратиро дар як дастаи касбӣ муттаҳид мекунад. Мо ба ширкатҳо ва ташкилотҳо кӯмак мекунем, ки ғояҳои худро ба ҳалли амалӣ ва босифате табдил диҳанд, ки ба ҳадафҳои онҳо мутобиқ бошад."
+
+#: .\azinapp\templates\about.html:72 .\azinapp\templates\index.html:50
+msgid "Years of Experience"
+msgstr "Солҳои таҷриба"
+
+#: .\azinapp\templates\about.html:84 .\azinapp\templates\index.html:42
+msgid "Projects Delivered"
+msgstr "Лоиҳаҳои иҷронамуда"
+
+#: .\azinapp\templates\about.html:96 .\azinapp\templates\index.html:46
+msgid "Clients Served"
+msgstr "Мизоҷони хизматрасонидашуда"
+
+#: .\azinapp\templates\about.html:108
+msgid "Work With Us"
+msgstr "Бо мо ҳамкорӣ кунед"
+
+#: .\azinapp\templates\about.html:119
+msgid "Explore Our Story"
+msgstr "Қиссаи моро омӯзед"
+
+#: .\azinapp\templates\about.html:140
+msgid "Your Partner for Growth"
+msgstr "Шарики шумо барои рушд"
+
+#: .\azinapp\templates\about.html:144
+msgid "Technology, Creative & Business Services"
+msgstr "Хизматрасониҳои технологӣ, эҷодӣ ва тиҷоратӣ"
+
+#: .\azinapp\templates\about.html:167
+msgid "Our story"
+msgstr "Қиссаи мо"
+
+#: .\azinapp\templates\about.html:174
+msgid "Our Journey"
+msgstr "Роҳи мо"
+
+#: .\azinapp\templates\about.html:178
+msgid "Our Story"
+msgstr "Қиссаи мо"
+
+#: .\azinapp\templates\about.html:182
+msgid ""
+"A growing organization built around technology, creativity, and practical "
+"business solutions."
+msgstr "Ташкилоти рушдёбанда, ки бар технология, эҷодкорӣ ва ҳалли амалии тиҷоратӣ асос ёфтааст."
+
+#: .\azinapp\templates\about.html:202
+msgid "Foundation"
+msgstr "Бунёд"
+
+#: .\azinapp\templates\about.html:206
+msgid ""
+"AZIN GROUP began with the goal of providing professional services that help "
+"businesses and organizations solve practical challenges and move their ideas "
+"forward."
+msgstr "AZIN GROUP began with the ҳадаф of providing касбӣ хизматрасониҳо that кӯмак соҳибкорон and ташкилотҳо solve амалӣ challenges and move their ideas forward."
+
+#: .\azinapp\templates\about.html:227
+msgid "Service Expansion"
+msgstr "Вусъати хизматрасониҳо"
+
+#: .\azinapp\templates\about.html:231
+msgid ""
+"The range of services expanded to include creative, media, design, and "
+"digital capabilities, allowing clients to access multiple services through "
+"one team."
+msgstr "The ҳудуд of хизматрасониҳо expanded to дар бар гирифтан эҷодӣ, медиа, тарроҳӣ, and рақамӣ имкониятҳо, allowing мизоҷон to access multiple хизматрасониҳо тавассути one даста."
+
+#: .\azinapp\templates\about.html:252
+msgid "Specialized Services"
+msgstr "Хизматрасониҳои махсус"
+
+#: .\azinapp\templates\about.html:256
+msgid ""
+"AZIN GROUP developed specialized service areas covering technology, media, "
+"design, and business support, creating a broader foundation for client "
+"projects."
+msgstr "AZIN GROUP developed махсус хизматрасонӣ areas covering технология, медиа, тарроҳӣ, and тиҷорат дастгирӣ, creating a broader foundation for мизоҷ лоиҳаҳо."
+
+#: .\azinapp\templates\about.html:277
+msgid "Broader Reach"
+msgstr "Фарогирии бештар"
+
+#: .\azinapp\templates\about.html:281
+msgid ""
+"The organization continued expanding its capabilities and working with "
+"clients across different markets and industries."
+msgstr "The ташкилот continued expanding its имкониятҳо and кор with мизоҷон дар саросари гуногун бозорҳо and соҳаҳо."
+
+#: .\azinapp\templates\about.html:302
+msgid "Building the Future"
+msgstr "Сохтани оянда"
+
+#: .\azinapp\templates\about.html:306
+msgid ""
+"Today, AZIN GROUP continues to develop its technology, creative, media, and "
+"business capabilities while focusing on practical solutions and long-term "
+"client relationships."
+msgstr "имрӯз, AZIN GROUP continues to таҳия its технология, эҷодӣ, медиа, and тиҷорат имкониятҳо while focusing on амалӣ ҳалҳо and дарозмуддат мизоҷ relationships."
+
+#: .\azinapp\templates\about.html:326
+msgid "AZIN GROUP services"
+msgstr "Хизматрасониҳои AZIN GROUP"
+
+#: .\azinapp\templates\about.html:333 .\azinapp\templates\index.html:188
+msgid "What We Do"
+msgstr "Мо чӣ кор мекунем"
+
+#: .\azinapp\templates\about.html:337
+msgid "Our Core Services"
+msgstr "Хизматрасониҳои асосии мо"
+
+#: .\azinapp\templates\about.html:341
+msgid ""
+"Specialized capabilities working together to deliver complete solutions for "
+"our clients."
+msgstr "махсус имкониятҳо кор together to deliver complete ҳалҳо for our мизоҷон."
+
+#: .\azinapp\templates\about.html:357 .\azinapp\templates\mobileapp.html:598
+msgid "Technology"
+msgstr "Технология"
+
+#: .\azinapp\templates\about.html:361
+msgid ""
+"Web development, mobile applications, custom software, and digital "
+"infrastructure for modern businesses."
+msgstr "Web таҳия, мобилӣ барномаҳо, custom software, and рақамӣ infrastructure for муосир соҳибкорон."
+
+#: .\azinapp\templates\about.html:371 .\azinapp\templates\about.html:402
+#: .\azinapp\templates\about.html:433
+msgid "Projects"
+msgstr "Лоиҳаҳо"
+
+#: .\azinapp\templates\about.html:388 .\azinapp\templates\contact.html:557
+msgid "Media"
+msgstr "Медиа"
+
+#: .\azinapp\templates\about.html:392
+msgid ""
+"Photography, videography, content production, and media services designed "
+"for brands and organizations."
+msgstr "аксбардорӣ, videography, мундариҷа истеҳсол, and медиа хизматрасониҳо Тарҳрезишуда for brands and ташкилотҳо."
+
+#: .\azinapp\templates\about.html:419
+#: .\azinapp\templates\graphicdesign.html:342
+msgid "Design"
+msgstr "Дизайн"
+
+#: .\azinapp\templates\about.html:423
+msgid ""
+"Graphic design, branding, visual identity, and creative solutions that help "
+"businesses communicate clearly."
+msgstr "графикӣ тарроҳӣ, брендинг, визуалӣ identity, and эҷодӣ ҳалҳо that кӯмак соҳибкорон communicate clearly."
+
+#: .\azinapp\templates\about.html:450
+msgid "Business Solutions"
+msgstr "Ҳалли тиҷоратӣ"
+
+#: .\azinapp\templates\about.html:454
+msgid ""
+"Business consulting, strategic support, and practical solutions designed to "
+"help organizations grow."
+msgstr "тиҷорат consulting, strategic дастгирӣ, and амалӣ ҳалҳо Тарҳрезишуда to кӯмак ташкилотҳо grow."
+
+#: .\azinapp\templates\about.html:464
+msgid "Clients"
+msgstr "Мизоҷон"
+
+#: .\azinapp\templates\about.html:484
+msgid "Mission and values"
+msgstr "Миссия ва арзишҳо"
+
+#: .\azinapp\templates\about.html:495
+msgid "Our Mission"
+msgstr "Миссияи мо"
+
+#: .\azinapp\templates\about.html:499
+msgid "Turning Ideas Into Practical Solutions"
+msgstr "Табдил додани ғояҳо ба ҳалли амалӣ"
+
+#: .\azinapp\templates\about.html:503
+msgid ""
+"Our mission is to combine technology, creativity, and business expertise to "
+"deliver solutions that are useful, reliable, and aligned with our clients' "
+"objectives."
+msgstr "Миссияи мо муттаҳид кардани технология, эҷодкорӣ ва таҷрибаи тиҷоратӣ барои пешниҳоди ҳалли муфид, боэътимод ва мувофиқ ба ҳадафҳои мизоҷон мебошад."
+
+#: .\azinapp\templates\about.html:507
+msgid ""
+"We focus on understanding the real needs behind every project and building "
+"solutions that provide measurable value rather than unnecessary complexity."
+msgstr "Мо ба дарки ниёзҳои воқеии ҳар як лоиҳа ва сохтани ҳалли дорои арзиши ченшаванда диққат медиҳем, на ба мураккабии нолозим."
+
+#: .\azinapp\templates\about.html:519
+msgid "Our Vision"
+msgstr "Дидгоҳи мо"
+
+#: .\azinapp\templates\about.html:523
+msgid ""
+"To build a trusted, forward-looking organization known for practical "
+"technology, creative excellence, and dependable business services."
+msgstr "Эҷоди ташкилоти боэътимод ва ояндадор, ки бо технологияҳои амалӣ, сатҳи баланди эҷодӣ ва хизматрасониҳои боэътимоди тиҷоратӣ шинохта шавад."
+
+#: .\azinapp\templates\about.html:538
+msgid "Core Values"
+msgstr "Арзишҳои асосӣ"
+
+#: .\azinapp\templates\about.html:542
+msgid "What We Stand For"
+msgstr "Мо ба чӣ бовар дорем"
+
+#: .\azinapp\templates\about.html:556
+msgid "Innovation"
+msgstr "Навоварӣ"
+
+#: .\azinapp\templates\about.html:560
+msgid ""
+"We continuously look for better ways to solve problems, improve services, "
+"and create meaningful value."
+msgstr "Мо пайваста роҳҳои беҳтари ҳалли мушкилот, такмили хизматрасониҳо ва эҷоди арзиши воқеиро меҷӯем."
+
+#: .\azinapp\templates\about.html:577
+msgid "People First"
+msgstr "Аввал одамон"
+
+#: .\azinapp\templates\about.html:581
+msgid ""
+"We value collaboration, professional development, and the people behind "
+"every successful project."
+msgstr "Мо ҳамкорӣ, рушди касбӣ ва одамонеро, ки дар паси ҳар як лоиҳаи муваффақ қарор доранд, қадр мекунем."
+
+#: .\azinapp\templates\about.html:598
+msgid "Trust & Integrity"
+msgstr "Эътимод ва поквиҷдонӣ"
+
+#: .\azinapp\templates\about.html:602
+msgid ""
+"We build professional relationships through transparency, responsibility, "
+"clear communication, and accountability."
+msgstr "Мо муносибатҳои касбиро бар асоси шаффофият, масъулият, муоширати равшан ва ҷавобгарӣ месозем."
+
+#: .\azinapp\templates\about.html:619
+msgid "Sustainable Growth"
+msgstr "Рушди устувор"
+
+#: .\azinapp\templates\about.html:623
+msgid ""
+"We aim to create long-term value for our clients, our team, and the wider "
+"business community."
+msgstr "Ҳадафи мо эҷоди арзиши дарозмуддат барои мизоҷон, дастаи мо ва ҷомеаи васеи соҳибкорӣ мебошад."
+
+#: .\azinapp\templates\about.html:647
+msgid "Our team"
+msgstr "Дастаи мо"
+
+#: .\azinapp\templates\about.html:654
+msgid "Our Team"
+msgstr "Дастаи мо"
+
+#: .\azinapp\templates\about.html:658
+msgid "The People Behind AZIN GROUP"
+msgstr "Одамони паси AZIN GROUP"
+
+#: .\azinapp\templates\about.html:662
+msgid ""
+"A multidisciplinary team bringing together technical, creative, and business "
+"expertise."
+msgstr "Дастаи бисёрсоҳа, ки таҷрибаи техникӣ, эҷодӣ ва тиҷоратиро муттаҳид мекунад."
+
+#: .\azinapp\templates\about.html:702
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: .\azinapp\templates\about.html:717
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\azinapp\templates\about.html:732
+msgid "GitHub"
+msgstr "GitHub"
+
+#: .\azinapp\templates\about.html:756
+msgid ""
+"A member of the AZIN GROUP team, contributing professional expertise to our "
+"projects and services."
+msgstr "Узви дастаи AZIN GROUP, ки таҷрибаи касбии худро ба лоиҳаҳо ва хизматрасониҳои мо саҳм мегузорад."
+
+#: .\azinapp\templates\about.html:776
+msgid "Our Team Profiles Are Coming Soon"
+msgstr "Профилҳои дастаи мо ба зудӣ дастрас мешаванд"
+
+#: .\azinapp\templates\about.html:780
+msgid ""
+"We are currently updating our team information. Please check back soon to "
+"learn more about the people behind AZIN GROUP."
+msgstr "Айни ҳол мо маълумоти дастаи худро навсозӣ карда истодаем. Лутфан баъдтар боздид кунед, то дар бораи одамони паси AZIN GROUP бештар маълумот гиред."
+
+#: .\azinapp\templates\about.html:798
+msgid "Contact AZIN GROUP"
+msgstr "Бо AZIN GROUP тамос гиред"
+
+#: .\azinapp\templates\about.html:807 .\azinapp\templates\contact.html:717
+#: .\azinapp\templates\index.html:449
+msgid "Have a Project in Mind?"
+msgstr "Лоиҳае дар назар доред?"
+
+#: .\azinapp\templates\about.html:811
+msgid ""
+"Tell us what you are working on. Our team can help you identify the right "
+"technology, creative, media, or business solution for your needs."
+msgstr "Ба мо бигӯед, ки рӯи чӣ кор карда истодаед. Дастаи мо метавонад барои интихоби технологияи дуруст ё ҳалли эҷодӣ, медиа ва тиҷоратии мувофиқ ба ниёзҳои шумо кӯмак кунад."
+
+#: .\azinapp\templates\about.html:820 .\azinapp\templates\contact.html:735
+msgid "Start a Conversation"
+msgstr "Суҳбатро оғоз кунед"
+
+#: .\azinapp\templates\base.html:56 .\azinapp\templates\base.html:57
+msgid "Skip to main content"
+msgstr "Гузаштан ба мундариҷаи асосӣ"
+
+#: .\azinapp\templates\base.html:80
+msgid "Close message"
+msgstr "Пӯшидани паём"
+
+#: .\azinapp\templates\base.html:108
+msgid ""
+"Integrated digital solutions and creative services built around real "
+"business needs."
+msgstr "Ҳалли ҳамгирошудаи рақамӣ ва хизматрасониҳои эҷодӣ, ки бар асоси ниёзҳои воқеии тиҷорат сохта шудаанд."
+
+#: .\azinapp\templates\base.html:115
+msgid "Quality Guaranteed"
+msgstr "Сифат кафолат дода мешавад"
+
+#: .\azinapp\templates\base.html:119
+msgid "Expert Team"
+msgstr "Дастаи мутахассисон"
+
+#: .\azinapp\templates\base.html:123
+msgid "24/7 Support"
+msgstr "Дастгирии 24/7"
+
+#: .\azinapp\templates\base.html:130
+msgid "Quick Links"
+msgstr "Истинодҳои зуд"
+
+#: .\azinapp\templates\base.html:132 .\azinapp\templates\navbar.html:20
+#: .\azinapp\templates\navbar.html:203
+msgid "Home"
+msgstr "Саҳифаи асосӣ"
+
+#: .\azinapp\templates\base.html:133
+msgid "About Us"
+msgstr "Дар бораи мо"
+
+#: .\azinapp\templates\base.html:134 .\azinapp\templates\navbar.html:88
+#: .\azinapp\templates\navbar.html:227
+msgid "Contact"
+msgstr "Тамос"
+
+#: .\azinapp\templates\base.html:140
+msgid "Services"
+msgstr "Хизматрасониҳо"
+
+#: .\azinapp\templates\base.html:142 .\azinapp\templates\index.html:200
+#: .\azinapp\templates\index.html:355 .\azinapp\templates\navbar.html:55
+#: .\azinapp\templates\navbar.html:219 .\azinapp\templates\website.html:62
+msgid "Web Development"
+msgstr "Таҳияи веб"
+
+#: .\azinapp\templates\base.html:143
+msgid "Mobile Apps"
+msgstr "Барномаҳои мобилӣ"
+
+#: .\azinapp\templates\base.html:144 .\azinapp\templates\index.html:123
+#: .\azinapp\templates\index.html:238 .\azinapp\templates\index.html:381
+#: .\azinapp\templates\navbar.html:33 .\azinapp\templates\navbar.html:209
+msgid "Media Production"
+msgstr "Истеҳсоли медиа"
+
+#: .\azinapp\templates\base.html:145 .\azinapp\templates\graphicdesign.html:302
+#: .\azinapp\templates\graphicdesign.html:635 .\azinapp\templates\smm.html:32
+#: .\azinapp\templates\smm.html:464
+msgid "Social Media"
+msgstr "Шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\base.html:146 .\azinapp\templates\contact.html:553
+#: .\azinapp\templates\graphicdesign.html:29 .\azinapp\templates\navbar.html:37
+#: .\azinapp\templates\navbar.html:210
+msgid "Graphic Design"
+msgstr "Тарроҳии графикӣ"
+
+#: .\azinapp\templates\base.html:152 .\azinapp\templates\contact.html:29
+msgid "Get in Touch"
+msgstr "Бо мо тамос гиред"
+
+#: .\azinapp\templates\base.html:158 .\azinapp\templates\contact.html:131
+msgid "Email"
+msgstr "Почтаи электронӣ"
+
+#: .\azinapp\templates\base.html:165
+msgid "Support"
+msgstr "Дастгирӣ"
+
+#: .\azinapp\templates\base.html:172 .\azinapp\templates\contact.html:228
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\azinapp\templates\base.html:179 .\azinapp\templates\contact.html:255
+msgid "Location"
+msgstr "Макон"
+
+#: .\azinapp\templates\base.html:187
+msgid "Follow Us"
+msgstr "Моро пайгирӣ кунед"
+
+#: .\azinapp\templates\base.html:214
+msgid "All rights reserved."
+msgstr "Ҳамаи ҳуқуқҳо маҳфузанд."
+
+#: .\azinapp\templates\base.html:217
+msgid "Terms of Service"
+msgstr "Шартҳои хизматрасонӣ"
+
+#: .\azinapp\templates\base.html:218
+msgid "Privacy Policy"
+msgstr "Сиёсати махфият"
+
+#: .\azinapp\templates\base.html:226
+msgid "Toggle theme"
+msgstr "Тағйири мавзӯъ"
+
+#: .\azinapp\templates\base.html:226
+msgid "Toggle dark/light mode"
+msgstr "Тағйири ҳолати торик/равшан"
+
+#: .\azinapp\templates\contact.html:33
+msgid "Let's Discuss Your"
+msgstr "Let's Discuss Your"
+
+#: .\azinapp\templates\contact.html:36
+msgid "Next Project"
+msgstr "Лоиҳаи навбатии шумо"
+
+#: .\azinapp\templates\contact.html:41
+msgid ""
+"Whether you need a website, digital solution, creative service, media "
+"production, or business support, our team is ready to understand your needs "
+"and discuss the right approach for your project."
+msgstr "Новобаста аз он ки ба шумо вебсайт, ҳалли рақамӣ, хизматрасонии эҷодӣ, истеҳсоли медиа ё дастгирии тиҷоратӣ лозим аст, дастаи мо омода аст ниёзҳои шуморо дарк карда, равиши мувофиқро барои лоиҳаатон муҳокима кунад."
+
+#: .\azinapp\templates\contact.html:49
+msgid "Email AZIN GROUP"
+msgstr "Ба AZIN GROUP почтаи электронӣ фиристед"
+
+#: .\azinapp\templates\contact.html:58
+msgid "Call AZIN GROUP"
+msgstr "Ба AZIN GROUP занг занед"
+
+#: .\azinapp\templates\contact.html:96
+msgid "Contact Information"
+msgstr "Маълумоти тамос"
+
+#: .\azinapp\templates\contact.html:104
+msgid "How Can We Help?"
+msgstr "Чӣ гуна метавонем ба шумо кумак кунем?"
+
+#: .\azinapp\templates\contact.html:111
+msgid ""
+"Choose the most convenient way to reach AZIN GROUP. For project inquiries, "
+"you can also use the contact form."
+msgstr "Роҳи қулайтарини тамос бо AZIN GROUP-ро интихоб кунед. Барои дархостҳои лоиҳа инчунин метавонед шакли тамосро истифода баред."
+
+#: .\azinapp\templates\contact.html:138
+msgid "General inquiries and project requests"
+msgstr "Саволҳои умумӣ ва дархостҳои лоиҳа"
+
+#: .\azinapp\templates\contact.html:157
+msgid "AzinGroup"
+msgstr "AzinGroup"
+
+#: .\azinapp\templates\contact.html:163 .\azinapp\templates\contact.html:186
+#: .\azinapp\templates\contact.html:209
+msgid "Technical support and existing projects"
+msgstr "Дастгирии техникӣ ва лоиҳаҳои мавҷуда"
+
+#: .\azinapp\templates\contact.html:180
+msgid "AzinMedia"
+msgstr "AzinMedia"
+
+#: .\azinapp\templates\contact.html:202
+msgid "Azinshop"
+msgstr "Azinshop"
+
+#: .\azinapp\templates\contact.html:235
+msgid "Monday – Friday, 9:00 AM – 6:00 PM"
+msgstr "Душанбе – ҷумъа, 09:00 – 18:00"
+
+#: .\azinapp\templates\contact.html:262
+msgid "Rudaki Avenue, 127"
+msgstr "Rudaki Avenue, 127"
+
+#: .\azinapp\templates\contact.html:279
+msgid "Follow AZIN GROUP"
+msgstr "Follow AZIN GROUP"
+
+#: .\azinapp\templates\contact.html:340
+msgid "Working Hours"
+msgstr "Соатҳои корӣ"
+
+#: .\azinapp\templates\contact.html:347
+msgid "Monday – Thursday"
+msgstr "Душанбе – панҷшанбе"
+
+#: .\azinapp\templates\contact.html:357
+msgid "Friday"
+msgstr "Ҷумъа"
+
+#: .\azinapp\templates\contact.html:367
+msgid "Saturday – Sunday"
+msgstr "Шанбе – якшанбе"
+
+#: .\azinapp\templates\contact.html:371
+msgid "Closed"
+msgstr "Баста"
+
+#: .\azinapp\templates\contact.html:391
+msgid "Send Us a Message"
+msgstr "Ба мо паём фиристед"
+
+#: .\azinapp\templates\contact.html:395
+msgid ""
+"Tell us a little about your project, requirements, or question. Our team "
+"will review your message and get back to you."
+msgstr "Каме дар бораи лоиҳа, талабот ё саволи худ ба мо нақл кунед. Дастаи мо паёми шуморо баррасӣ карда, ба шумо ҷавоб медиҳад."
+
+#: .\azinapp\templates\contact.html:428
+msgid "Please review the following information:"
+msgstr "Лутфан маълумоти зеринро санҷед:"
+
+#: .\azinapp\templates\contact.html:470
+msgid "Enter your name or company name."
+msgstr "Ном ё номи ширкати худро ворид кунед."
+
+#: .\azinapp\templates\contact.html:486
+msgid "We use your email only to respond to your inquiry."
+msgstr "Мо почтаи электронии шуморо танҳо барои посух ба дархостатон истифода мебарем."
+
+#: .\azinapp\templates\contact.html:516
+msgid "Optional. Include your country code."
+msgstr "Ихтиёрӣ. Рамзи кишвари худро илова кунед."
+
+#: .\azinapp\templates\contact.html:525
+msgid "Subject"
+msgstr "Мавзӯъ"
+
+#: .\azinapp\templates\contact.html:541
+msgid "Select a subject..."
+msgstr "Мавзӯъро интихоб кунед..."
+
+#: .\azinapp\templates\contact.html:545
+msgid "Order a web app"
+msgstr "фармоиш a web app"
+
+#: .\azinapp\templates\contact.html:549
+msgid "Order a Mobileapp"
+msgstr "фармоиш a Mobileapp"
+
+#: .\azinapp\templates\contact.html:561
+msgid "Order Product"
+msgstr "фармоиш маҳсулот"
+
+#: .\azinapp\templates\contact.html:565
+msgid "Technical Support"
+msgstr "Дастгирии техникӣ"
+
+#: .\azinapp\templates\contact.html:569
+msgid "Other Inquiry"
+msgstr "Дархости дигар"
+
+#: .\azinapp\templates\contact.html:593
+msgid "Briefly describe your project, requirements, budget range, or question."
+msgstr "Лоиҳа, талабот, ҳудуди буҷет ё саволи худро мухтасар тавсиф кунед."
+
+#: .\azinapp\templates\contact.html:613
+msgid "Send Message"
+msgstr "Фиристодани паём"
+
+#: .\azinapp\templates\contact.html:625
+msgid "We aim to respond within 24 business hours."
+msgstr "Мо кӯшиш мекунем дар давоми 24 соати корӣ посух диҳем."
+
+#: .\azinapp\templates\contact.html:653
+msgid "Our Location"
+msgstr "Маҳалли мо"
+
+#: .\azinapp\templates\contact.html:660
+msgid "Visit AZIN GROUP"
+msgstr "Аз AZIN GROUP боздид кунед"
+
+#: .\azinapp\templates\contact.html:664
+msgid "Our office is located in Dushanbe, Tajikistan."
+msgstr "Дафтари мо дар шаҳри Душанбе, Тоҷикистон ҷойгир аст."
+
+#: .\azinapp\templates\contact.html:678
+msgid "AZIN GROUP office location on Google Maps"
+msgstr "AZIN GROUP office location on Google Maps"
+
+#: .\azinapp\templates\contact.html:707
+msgid "Start a project with AZIN GROUP"
+msgstr "Лоиҳаи худро бо AZIN GROUP оғоз кунед"
+
+#: .\azinapp\templates\contact.html:721
+msgid ""
+"Tell us what you are looking to build or improve. We will help you identify "
+"the right solution and next steps."
+msgstr "Ба мо бигӯед, ки чӣ сохтан ё беҳтар кардан мехоҳед. Мо барои муайян кардани ҳалли мувофиқ ва қадамҳои минбаъда ба шумо кӯмак мекунем."
+
+#: .\azinapp\templates\contact.html:750 .\azinapp\templates\mobileapp.html:847
+msgid "Call Us"
+msgstr "Ба мо занг занед"
+
+#: .\azinapp\templates\decore.html:23
+msgid "AZIN SHOP — Products and Business Supplies"
+msgstr "AZIN SHOP — маҳсулот and тиҷорат Supplies"
+
+#: .\azinapp\templates\decore.html:43 .\azinapp\templates\shop.html:40
+msgid "Products for Business"
+msgstr "маҳсулот for тиҷорат"
+
+#: .\azinapp\templates\decore.html:47 .\azinapp\templates\shop.html:44
+msgid "& Everyday Needs"
+msgstr "& Everyday ниёзҳо"
+
+#: .\azinapp\templates\decore.html:53
+msgid ""
+"Discover a selection of practical products and supplies for businesses, "
+"offices, and everyday use. Browse our categories, explore available "
+"products, and contact AZIN SHOP for product inquiries, bulk orders, and "
+"sourcing requests."
+msgstr "Маҷмӯи маҳсулот ва лавозимоти амалиро барои ширкатҳо, идораҳо ва истифодаи ҳаррӯза кашф кунед. Категорияҳои моро бинед, маҳсулоти дастрасро омӯзед ва барои дархости маҳсулот, фармоишҳои яклухт ва таъмини маҳсулот бо AZIN SHOP тамос гиред."
+
+#: .\azinapp\templates\decore.html:60 .\azinapp\templates\shop.html:60
+msgid "Explore Products"
+msgstr "Маҳсулотро бинед"
+
+#: .\azinapp\templates\decore.html:66 .\azinapp\templates\decore.html:539
+#: .\azinapp\templates\website.html:1025
+msgid "Request a Quote"
+msgstr "Дархости нархнома"
+
+#: .\azinapp\templates\decore.html:75 .\azinapp\templates\decore.html:255
+#: .\azinapp\templates\decore.html:594 .\azinapp\templates\shop.html:270
+#: .\azinapp\templates\shop.html:637
+msgid "Selected Products"
+msgstr "Маҳсулоти интихобшуда"
+
+#: .\azinapp\templates\decore.html:80
+msgid "Business Inquiries"
+msgstr "Дархостҳои тиҷоратӣ"
+
+#: .\azinapp\templates\decore.html:85
+msgid "Order Support"
+msgstr "Дастгирии фармоиш"
+
+#: .\azinapp\templates\decore.html:99 .\azinapp\templates\decore.html:165
+#: .\azinapp\templates\shop.html:88 .\azinapp\templates\shop.html:176
+msgid "Electronics"
+msgstr "Таҷҳизоти электронӣ"
+
+#: .\azinapp\templates\decore.html:104 .\azinapp\templates\decore.html:184
+#: .\azinapp\templates\shop.html:99 .\azinapp\templates\shop.html:196
+msgid "Home Essentials"
+msgstr "Маҳсулоти зарурии хона"
+
+#: .\azinapp\templates\decore.html:109 .\azinapp\templates\decore.html:203
+#: .\azinapp\templates\shop.html:110 .\azinapp\templates\shop.html:216
+#: .\azinapp\templates\shop.html:448
+msgid "Office Supplies"
+msgstr "Лавозимоти корӣ"
+
+#: .\azinapp\templates\decore.html:114 .\azinapp\templates\decore.html:222
+#: .\azinapp\templates\decore.html:388 .\azinapp\templates\shop.html:121
+#: .\azinapp\templates\shop.html:236 .\azinapp\templates\shop.html:408
+msgid "Tools & Equipment"
+msgstr "Асбобҳо ва таҷҳизот"
+
+#: .\azinapp\templates\decore.html:133 .\azinapp\templates\shop.html:143
+#: .\azinapp\templates\website.html:765
+msgid "Product categories"
+msgstr "Категорияҳои маҳсулот"
+
+#: .\azinapp\templates\decore.html:140 .\azinapp\templates\shop.html:150
+msgid "Product Categories"
+msgstr "Категорияҳои маҳсулот"
+
+#: .\azinapp\templates\decore.html:144
+msgid "Explore Our Categories"
+msgstr "Категорияҳои моро бинед"
+
+#: .\azinapp\templates\decore.html:148
+msgid ""
+"Browse our main product categories and find the products that match your "
+"business or everyday needs."
+msgstr "Категорияҳои асосии маҳсулоти моро бинед ва маҳсулоти мувофиқ ба ниёзҳои тиҷоратӣ ё ҳаррӯзаи худро пайдо кунед."
+
+#: .\azinapp\templates\decore.html:169
+msgid ""
+"Computers, accessories, devices, and selected electronic products for work "
+"and everyday use."
+msgstr "Компютерҳо, лавозимот, дастгоҳҳо ва маҳсулоти электронии интихобшуда барои кор ва истифодаи ҳаррӯза."
+
+#: .\azinapp\templates\decore.html:188
+msgid ""
+"Practical home products, furniture, kitchen items, and selected essentials "
+"for everyday spaces."
+msgstr "Маҳсулоти амалии хонагӣ, мебел, лавозимоти ошхона ва ашёи зарурии интихобшуда барои муҳити ҳаррӯза."
+
+#: .\azinapp\templates\decore.html:207
+msgid ""
+"Stationery, office equipment, accessories, and practical supplies for "
+"professional workplaces."
+msgstr "Канселярия, таҷҳизоти идорӣ, лавозимот ва маводи амалии зарурӣ барои муҳити касбии корӣ."
+
+#: .\azinapp\templates\decore.html:226
+msgid ""
+"Tools, equipment, and selected products for maintenance, workshop, and "
+"business needs."
+msgstr "Асбобҳо, таҷҳизот ва маҳсулоти интихобшуда барои нигоҳдорӣ, устохона ва ниёзҳои тиҷоратӣ."
+
+#: .\azinapp\templates\decore.html:244 .\azinapp\templates\shop.html:259
+msgid "Featured products"
+msgstr "Маҳсулоти пешниҳодшуда"
+
+#: .\azinapp\templates\decore.html:251 .\azinapp\templates\shop.html:266
+msgid "Featured Products"
+msgstr "Маҳсулоти пешниҳодшуда"
+
+#: .\azinapp\templates\decore.html:259
+msgid ""
+"Explore a selection of products currently presented by AZIN SHOP. "
+"Availability and pricing may vary by product and order requirements."
+msgstr "Маҳсулоти ҳозира пешниҳодшудаи AZIN SHOP-ро бинед. Мавҷудият ва нарх вобаста ба маҳсулот ва талаботи фармоиш метавонанд тағйир ёбанд."
+
+#: .\azinapp\templates\decore.html:295
+#: .\azinapp\templates\graphicdesign.html:336 .\azinapp\templates\shop.html:312
+#: .\azinapp\templates\smm.html:472 .\azinapp\templates\website.html:1408
+msgid "Featured"
+msgstr "Пешниҳодшуда"
+
+#: .\azinapp\templates\decore.html:317 .\azinapp\templates\decore.html:360
+#: .\azinapp\templates\decore.html:398 .\azinapp\templates\decore.html:436
+msgid "Request Product Details"
+msgstr "Дархости маълумоти маҳсулот"
+
+#: .\azinapp\templates\decore.html:350
+msgid "Business Electronics"
+msgstr "Таҷҳизоти электронии тиҷоратӣ"
+
+#: .\azinapp\templates\decore.html:354
+msgid ""
+"Selected electronic devices and accessories suitable for offices, "
+"businesses, and everyday use."
+msgstr "Дастгоҳҳои электронии интихобшуда ва лавозимоти мувофиқ барои идораҳо, ширкатҳо ва истифодаи ҳаррӯза."
+
+#: .\azinapp\templates\decore.html:392
+msgid ""
+"Practical tools and equipment for maintenance, workshops, and professional "
+"business use."
+msgstr "Асбобҳо ва таҷҳизоти амалӣ барои нигоҳдорӣ, устохонаҳо ва истифодаи касбии тиҷоратӣ."
+
+#: .\azinapp\templates\decore.html:426
+msgid "Office Essentials"
+msgstr "Лавозимоти зарурии корӣ"
+
+#: .\azinapp\templates\decore.html:430
+msgid ""
+"Useful office supplies and workplace essentials for professional "
+"environments."
+msgstr "Лавозимоти муфиди идорӣ ва ашёи зарурии ҷойи кор барои муҳити касбӣ."
+
+#: .\azinapp\templates\decore.html:456 .\azinapp\templates\shop.html:479
+msgid "Request Full Product Catalog"
+msgstr "Каталоги пурраи маҳсулотро дархост кунед"
+
+#: .\azinapp\templates\decore.html:474
+msgid "Business and wholesale orders"
+msgstr "Фармоишҳои тиҷоратӣ ва яклухт"
+
+#: .\azinapp\templates\decore.html:481
+msgid "For Businesses"
+msgstr "Барои соҳибкорон"
+
+#: .\azinapp\templates\decore.html:485
+msgid "Business & Bulk Orders"
+msgstr "Фармоишҳои тиҷоратӣ ва яклухт"
+
+#: .\azinapp\templates\decore.html:489
+msgid ""
+"Looking for products in larger quantities? Contact us with your requirements "
+"and we will review the available options."
+msgstr "Маҳсулотро ба миқдори зиёд меҷӯед? Талаботи худро ба мо фиристед, то имкониятҳои дастрасро баррасӣ кунем."
+
+#: .\azinapp\templates\decore.html:505 .\azinapp\templates\shop.html:673
+msgid "Bulk Orders"
+msgstr "Фармоишҳои яклухт"
+
+#: .\azinapp\templates\decore.html:509
+msgid ""
+"Tell us what products and quantities you need for your business or "
+"organization."
+msgstr "Ба мо бигӯед, ки барои ширкат ё ташкилоти шумо кадом маҳсулот ва чӣ миқдор лозим аст."
+
+#: .\azinapp\templates\decore.html:522 .\azinapp\templates\shop.html:505
+msgid "Product Sourcing"
+msgstr "Ҷустуҷӯ ва таъмини маҳсулот"
+
+#: .\azinapp\templates\decore.html:526
+msgid ""
+"Have a specific product in mind? Send us the details and we can review your "
+"sourcing request."
+msgstr "Маҳсулоти мушаххас дар назар доред? Тафсилотро фиристед, то дархости таъминоти шуморо баррасӣ кунем."
+
+#: .\azinapp\templates\decore.html:543
+msgid ""
+"Receive product and order information based on your requested items, "
+"quantities, and requirements."
+msgstr "Маълумоти маҳсулот ва фармоишро бар асоси номгӯй, миқдор ва талаботи дархостшудаи худ дастрас кунед."
+
+#: .\azinapp\templates\decore.html:561 .\azinapp\templates\shop.html:606
+msgid "Why choose AZIN SHOP"
+msgstr "Чаро AZIN SHOP-ро интихоб кунед?"
+
+#: .\azinapp\templates\decore.html:568 .\azinapp\templates\shop.html:613
+msgid "Why AZIN SHOP"
+msgstr "Чаро AZIN SHOP"
+
+#: .\azinapp\templates\decore.html:572
+msgid "A Practical Approach to Product Supply"
+msgstr "Муносибати амалӣ ба таъминоти маҳсулот"
+
+#: .\azinapp\templates\decore.html:576
+msgid ""
+"We focus on clear communication, practical product options, and support "
+"throughout the inquiry and ordering process."
+msgstr "Мо ба муоширати равшан, имкониятҳои амалии маҳсулот ва дастгирӣ дар тамоми раванди дархост ва фармоиш диққат медиҳем."
+
+#: .\azinapp\templates\decore.html:598
+msgid ""
+"We present selected products across practical categories for business and "
+"everyday needs."
+msgstr "Мо маҳсулоти интихобшударо дар категорияҳои амалӣ барои ниёзҳои тиҷоратӣ ва ҳаррӯза пешниҳод мекунем."
+
+#: .\azinapp\templates\decore.html:613 .\azinapp\templates\index.html:426
+#: .\azinapp\templates\mobileapp.html:731 .\azinapp\templates\website.html:1743
+msgid "Clear Communication"
+msgstr "Муоширати равшан"
+
+#: .\azinapp\templates\decore.html:617
+msgid ""
+"We keep product inquiries and order discussions clear, direct, and easy to "
+"understand."
+msgstr "Мо дархостҳои маҳсулот ва муҳокимаи фармоишҳоро равшан, мустақим ва фаҳмо нигоҳ медорем."
+
+#: .\azinapp\templates\decore.html:632
+msgid "Flexible Orders"
+msgstr "Фармоишҳои чандир"
+
+#: .\azinapp\templates\decore.html:636
+msgid ""
+"Contact us to discuss individual requirements, larger quantities, or "
+"specific product requests."
+msgstr "Барои муҳокимаи талаботи инфиродӣ, миқдори зиёд ё дархости маҳсулоти мушаххас бо мо тамос гиред."
+
+#: .\azinapp\templates\decore.html:651
+msgid "Customer Support"
+msgstr "Дастгирии мизоҷон"
+
+#: .\azinapp\templates\decore.html:655
+msgid ""
+"Our team is available to help with product information, inquiries, and order-"
+"related questions."
+msgstr "Дастаи мо барои кӯмак дар бораи маълумоти маҳсулот, дархостҳо ва саволҳои марбут ба фармоиш омода аст."
+
+#: .\azinapp\templates\decore.html:673
+msgid "How to order"
+msgstr "Чӣ гуна фармоиш додан"
+
+#: .\azinapp\templates\decore.html:680
+msgid "Simple Process"
+msgstr "Раванди оддӣ"
+
+#: .\azinapp\templates\decore.html:684
+msgid "How to Order"
+msgstr "Чӣ гуна фармоиш додан"
+
+#: .\azinapp\templates\decore.html:688
+msgid "A simple way to ask about products and start your order."
+msgstr "Роҳи одии пурсидани маълумот дар бораи маҳсулот ва оғоз кардани фармоиш."
+
+#: .\azinapp\templates\decore.html:708
+msgid "Choose a Product"
+msgstr "Маҳсулотро интихоб кунед"
+
+#: .\azinapp\templates\decore.html:712
+msgid "Browse our categories or selected products and identify what you need."
+msgstr "Категорияҳо ё маҳсулоти интихобшударо бинед ва маҳсулоти лозимиро муайян кунед."
+
+#: .\azinapp\templates\decore.html:729
+msgid "Send an Inquiry"
+msgstr "Дархост фиристед"
+
+#: .\azinapp\templates\decore.html:733
+msgid ""
+"Contact us with the product name, quantity, and any specific requirements."
+msgstr "Номи маҳсулот, миқдор ва талаботи мушаххаси худро ба мо фиристед."
+
+#: .\azinapp\templates\decore.html:750
+msgid "Confirm Details"
+msgstr "Маълумотро тасдиқ кунед"
+
+#: .\azinapp\templates\decore.html:754
+msgid ""
+"We discuss availability, quantity, pricing, and other order requirements."
+msgstr "Мо мавҷудият, миқдор, нарх ва дигар талаботи фармоишро муҳокима мекунем."
+
+#: .\azinapp\templates\decore.html:771 .\azinapp\templates\shop.html:583
+msgid "Place Your Order"
+msgstr "Фармоиш диҳед"
+
+#: .\azinapp\templates\decore.html:775
+msgid ""
+"Once the details are confirmed, we proceed with the agreed order process."
+msgstr "Пас аз тасдиқи тафсилот, мо раванди мувофиқашудаи фармоишро идома медиҳем."
+
+#: .\azinapp\templates\decore.html:793
+msgid "Contact AZIN SHOP"
+msgstr "Бо AZIN SHOP тамос гиред"
+
+#: .\azinapp\templates\decore.html:802 .\azinapp\templates\shop.html:509
+msgid "Looking for a Specific Product?"
+msgstr "Маҳсулоти мушаххас меҷӯед?"
+
+#: .\azinapp\templates\decore.html:806
+msgid ""
+"Tell us what you need, how many you need, and any important requirements. "
+"Our team will review your request and get back to you with the available "
+"options."
+msgstr "Ба мо бигӯед, ки чӣ лозим аст, чӣ қадар лозим аст ва кадом талаботи муҳим мавҷуд аст. Дастаи мо дархости шуморо баррасӣ карда, имкониятҳои дастрасро пешниҳод мекунад."
+
+#: .\azinapp\templates\decore.html:817
+msgid "Send Product Inquiry"
+msgstr "Дархости маҳсулотро фиристед"
+
+#: .\azinapp\templates\decore.html:828
+#: .\azinapp\templates\graphicdesign.html:702
+#: .\azinapp\templates\media.html:563 .\azinapp\templates\smm.html:752
+msgid "Call for Inquiry"
+msgstr "Барои дархост занг занед"
+
+#: .\azinapp\templates\graphicdesign.html:18
+msgid "Graphic Design Services"
+msgstr "Хизматрасониҳои тарроҳии графикӣ"
+
+#: .\azinapp\templates\graphicdesign.html:30
+msgid "& Brand Identity"
+msgstr "ва ҳувияти бренд"
+
+#: .\azinapp\templates\graphicdesign.html:34
+msgid ""
+"We design visual systems and communication materials that help businesses "
+"present their brand consistently across digital and physical channels. Our "
+"work covers logos, brand identity, packaging, print materials, motion "
+"graphics, and social media content."
+msgstr "We тарроҳӣ визуалӣ systems and муошират materials that кӯмак соҳибкорон present their бренд consistently дар саросари рақамӣ and physical channels. Our work covers logos, бренд identity, packaging, print materials, motion graphics, and иҷтимоӣ медиа мундариҷа."
+
+#: .\azinapp\templates\graphicdesign.html:40
+#: .\azinapp\templates\graphicdesign.html:697
+msgid "Discuss Your Design Project"
+msgstr "Лоиҳаи тарроҳии худро муҳокима кунед"
+
+#: .\azinapp\templates\graphicdesign.html:45
+#: .\azinapp\templates\website.html:127
+msgid "View Portfolio"
+msgstr "Портфолиоро бинед"
+
+#: .\azinapp\templates\graphicdesign.html:57
+msgid "Brand & Graphic Design"
+msgstr "Тарроҳии бренд ва графикӣ"
+
+#: .\azinapp\templates\graphicdesign.html:64
+msgid "Visual Identity Systems"
+msgstr "Системаҳои ҳувияти визуалӣ"
+
+#: .\azinapp\templates\graphicdesign.html:71
+msgid "Digital & Print Content"
+msgstr "Мундариҷаи рақамӣ ва чопӣ"
+
+#: .\azinapp\templates\graphicdesign.html:84
+msgid "Graphic design services"
+msgstr "графикӣ тарроҳӣ хизматрасониҳо"
+
+#: .\azinapp\templates\graphicdesign.html:88 .\azinapp\templates\index.html:189
+#: .\azinapp\templates\media.html:88 .\azinapp\templates\smm.html:105
+msgid "Our Services"
+msgstr "Хизматрасониҳои мо"
+
+#: .\azinapp\templates\graphicdesign.html:91
+msgid "Design Services for Business Communication"
+msgstr "Хизматрасониҳои тарроҳӣ барои муоширати тиҷоратӣ"
+
+#: .\azinapp\templates\graphicdesign.html:95
+msgid ""
+"From a single design asset to a complete visual identity, we create "
+"materials based on where your brand needs to communicate and how the final "
+"design will be used."
+msgstr "From a single тарроҳӣ asset to a complete визуалӣ identity, we эҷод кардан materials бар асоси on ҷое ки your бренд ниёзҳо to communicate and чӣ гуна the final тарроҳӣ хоҳад be истифода мешавад."
+
+#: .\azinapp\templates\graphicdesign.html:109
+#: .\azinapp\templates\graphicdesign.html:418
+#: .\azinapp\templates\index.html:279
+msgid "Logo Design"
+msgstr "Тарроҳии логотип"
+
+#: .\azinapp\templates\graphicdesign.html:113
+msgid ""
+"A logo designed to give your business a clear and usable visual mark. We "
+"consider your business, audience, industry, and the places where the logo "
+"will appear before developing the design."
+msgstr "A logo Тарҳрезишуда to give your тиҷорат a равшан and usable визуалӣ mark. We consider your тиҷорат, аудитория, industry, and the places ҷое ки the logo хоҳад appear пеш аз developing the тарроҳӣ."
+
+#: .\azinapp\templates\graphicdesign.html:117
+msgid "Initial concept development"
+msgstr "Таҳияи консепсияи ибтидоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:118
+msgid "Design direction and revisions"
+msgstr "Самти тарроҳӣ ва ислоҳот"
+
+#: .\azinapp\templates\graphicdesign.html:119
+msgid "Vector and digital files"
+msgstr "Файлҳои векторӣ ва рақамӣ"
+
+#: .\azinapp\templates\graphicdesign.html:120
+msgid "Basic logo usage guidance"
+msgstr "Роҳнамои асосии истифодаи логотип"
+
+#: .\azinapp\templates\graphicdesign.html:134
+#: .\azinapp\templates\graphicdesign.html:428
+#: .\azinapp\templates\graphicdesign.html:473
+#: .\azinapp\templates\index.html:280
+msgid "Brand Identity"
+msgstr "Ҳувияти бренд"
+
+#: .\azinapp\templates\graphicdesign.html:138
+msgid ""
+"A consistent visual identity that gives your business a defined way to "
+"communicate across websites, documents, social media, presentations, and "
+"other customer-facing materials."
+msgstr "A consistent визуалӣ identity that gives your тиҷорат a defined way to communicate дар саросари вебсайтҳо, documents, иҷтимоӣ медиа, presentations, and дигар customer-facing materials."
+
+#: .\azinapp\templates\graphicdesign.html:142
+msgid "Visual direction and design system"
+msgstr "Самти визуалӣ ва низоми тарроҳӣ"
+
+#: .\azinapp\templates\graphicdesign.html:143
+msgid "Color palette and typography"
+msgstr "Палитраи рангҳо ва типография"
+
+#: .\azinapp\templates\graphicdesign.html:144
+msgid "Logo and identity applications"
+msgstr "Истифодаҳои логотип ва ҳувият"
+
+#: .\azinapp\templates\graphicdesign.html:145
+msgid "Brand guidelines"
+msgstr "Роҳнамои бренд"
+
+#: .\azinapp\templates\graphicdesign.html:159
+#: .\azinapp\templates\graphicdesign.html:290
+#: .\azinapp\templates\graphicdesign.html:500
+#: .\azinapp\templates\index.html:155 .\azinapp\templates\index.html:243
+msgid "Motion Graphics"
+msgstr "Графикаи ҳаракатӣ"
+
+#: .\azinapp\templates\graphicdesign.html:163
+msgid ""
+"Animated visual content for presentations, promotional videos, social media, "
+"and digital communication. Motion design can be used to explain information, "
+"introduce a brand, or add movement to existing visual assets."
+msgstr "Animated визуалӣ мундариҷа for presentations, promotional видеоҳо, иҷтимоӣ медиа, and рақамӣ муошират. Motion тарроҳӣ метавонад be истифода мешавад to explain маълумот, introduce a бренд, or add movement to existing визуалӣ assets."
+
+#: .\azinapp\templates\graphicdesign.html:167
+msgid "Logo and brand animation"
+msgstr "Аниматсияи логотип ва бренд"
+
+#: .\azinapp\templates\graphicdesign.html:168
+msgid "Animated titles and graphics"
+msgstr "Сарлавҳаҳо ва графикаи аниматсионӣ"
+
+#: .\azinapp\templates\graphicdesign.html:169
+msgid "Short-form social content"
+msgstr "Мундариҷаи кӯтоҳ барои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:170
+msgid "Visual elements for video projects"
+msgstr "Унсурҳои визуалӣ барои лоиҳаҳои видеоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:184
+msgid "Packaging Design"
+msgstr "Тарроҳии бастабандӣ"
+
+#: .\azinapp\templates\graphicdesign.html:188
+msgid ""
+"Packaging and label designs developed around the product, brand identity, "
+"required information, and printing requirements. The goal is to create "
+"packaging that is clear, practical, and consistent with the brand."
+msgstr "Packaging and label designs developed бар асоси the маҳсулот, бренд identity, лозим маълумот, and printing талабот. The ҳадаф аст to эҷод кардан packaging that аст равшан, амалӣ, and consistent with the бренд."
+
+#: .\azinapp\templates\graphicdesign.html:192
+msgid "Product packaging concepts"
+msgstr "Консепсияҳои бастабандии маҳсулот"
+
+#: .\azinapp\templates\graphicdesign.html:193
+msgid "Label and sticker design"
+msgstr "Тарроҳии тамғакоғаз ва стикер"
+
+#: .\azinapp\templates\graphicdesign.html:194
+msgid "Packaging mockups"
+msgstr "Мокапҳои бастабандӣ"
+
+#: .\azinapp\templates\graphicdesign.html:195
+msgid "Print-ready artwork"
+msgstr "Макети омода барои чоп"
+
+#: .\azinapp\templates\graphicdesign.html:209
+msgid "Print & Business Materials"
+msgstr "Маводи чопӣ ва тиҷоратӣ"
+
+#: .\azinapp\templates\graphicdesign.html:213
+msgid ""
+"Professional print materials that keep your visual communication consistent "
+"across business documents, marketing materials, events, and customer-facing "
+"environments."
+msgstr "касбӣ print materials that keep your визуалӣ муошират consistent дар саросари тиҷорат documents, marketing materials, events, and customer-facing environments."
+
+#: .\azinapp\templates\graphicdesign.html:217
+msgid "Brochures and company profiles"
+msgstr "Брошюраҳо ва профилҳои ширкат"
+
+#: .\azinapp\templates\graphicdesign.html:218
+msgid "Flyers, posters, and promotional materials"
+msgstr "Флаерҳо, постерҳо ва маводи таблиғотӣ"
+
+#: .\azinapp\templates\graphicdesign.html:219
+msgid "Business cards and stationery"
+msgstr "Кортҳои корӣ ва лавозимоти идорӣ"
+
+#: .\azinapp\templates\graphicdesign.html:220
+msgid "Print-ready files and specifications"
+msgstr "Файлҳо ва талаботи омода барои чоп"
+
+#: .\azinapp\templates\graphicdesign.html:234
+msgid "Social Media Graphics"
+msgstr "Графика барои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:238
+msgid ""
+"Branded visual content for social media platforms, including posts, stories, "
+"campaigns, announcements, and promotional materials. Designs are prepared "
+"according to the platform and intended content format."
+msgstr "Branded визуалӣ мундариҷа for иҷтимоӣ медиа platforms, аз ҷумла posts, stories, маъракаҳо, announcements, and promotional materials. Designs ҳастанд prepared according to the platform and intended мундариҷа format."
+
+#: .\azinapp\templates\graphicdesign.html:242
+msgid "Post and story designs"
+msgstr "Тарроҳии постҳо ва сторӣ"
+
+#: .\azinapp\templates\graphicdesign.html:243
+msgid "Campaign and promotional creatives"
+msgstr "Маводи эҷодӣ барои маъракаҳо ва таблиғот"
+
+#: .\azinapp\templates\graphicdesign.html:244
+msgid "Social media covers and banners"
+msgstr "Коверҳо ва баннерҳои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:245
+msgid "Reusable branded templates"
+msgstr "Шаблонҳои брендии такроран истифодашаванда"
+
+#: .\azinapp\templates\graphicdesign.html:258
+msgid "Graphic design portfolio"
+msgstr "Портфолиои тарроҳии графикӣ"
+
+#: .\azinapp\templates\graphicdesign.html:262
+#: .\azinapp\templates\index.html:319 .\azinapp\templates\smm.html:389
+msgid "Our Work"
+msgstr "Корҳои мо"
+
+#: .\azinapp\templates\graphicdesign.html:265
+msgid "Selected Design Work"
+msgstr "Корҳои интихобшудаи тарроҳӣ"
+
+#: .\azinapp\templates\graphicdesign.html:269
+msgid ""
+"Explore examples of the design formats and visual projects AZIN MEDIA can "
+"support."
+msgstr "Explore examples of the тарроҳӣ formats and визуалӣ лоиҳаҳо AZIN MEDIA метавонад дастгирӣ."
+
+#: .\azinapp\templates\graphicdesign.html:278
+#: .\azinapp\templates\media.html:265 .\azinapp\templates\smm.html:407
+msgid "All"
+msgstr "Ҳама"
+
+#: .\azinapp\templates\graphicdesign.html:282
+#: .\azinapp\templates\graphicdesign.html:410
+msgid "Logo"
+msgstr "Логотип"
+
+#: .\azinapp\templates\graphicdesign.html:286
+#: .\azinapp\templates\graphicdesign.html:455
+msgid "Branding"
+msgstr "Брендинг"
+
+#: .\azinapp\templates\graphicdesign.html:294
+#: .\azinapp\templates\graphicdesign.html:545
+msgid "Packaging"
+msgstr "Бастабандӣ"
+
+#: .\azinapp\templates\graphicdesign.html:298
+#: .\azinapp\templates\graphicdesign.html:590
+msgid "Print"
+msgstr "Чоп"
+
+#: .\azinapp\templates\graphicdesign.html:383
+#: .\azinapp\templates\graphicdesign.html:433
+#: .\azinapp\templates\graphicdesign.html:478
+#: .\azinapp\templates\graphicdesign.html:523
+#: .\azinapp\templates\graphicdesign.html:568
+#: .\azinapp\templates\graphicdesign.html:613
+#: .\azinapp\templates\graphicdesign.html:658 .\azinapp\templates\smm.html:522
+#: .\azinapp\templates\smm.html:573 .\azinapp\templates\smm.html:618
+#: .\azinapp\templates\smm.html:663 .\azinapp\templates\smm.html:708
+#: .\azinapp\templates\website.html:1456 .\azinapp\templates\website.html:1523
+#: .\azinapp\templates\website.html:1586 .\azinapp\templates\website.html:1649
+msgid "Discuss a Similar Project"
+msgstr "Лоиҳаи монандро муҳокима кунед"
+
+#: .\azinapp\templates\graphicdesign.html:422
+msgid ""
+"Logo concepts developed for businesses that need a clear and adaptable "
+"visual mark."
+msgstr "Logo concepts developed for соҳибкорон that лозим a равшан and adaptable визуалӣ mark."
+
+#: .\azinapp\templates\graphicdesign.html:463
+msgid "Visual Brand Identity"
+msgstr "Ҳувияти визуалии бренд"
+
+#: .\azinapp\templates\graphicdesign.html:467
+msgid ""
+"A coordinated visual system covering colors, typography, logo applications, "
+"and everyday brand communication."
+msgstr "A coordinated визуалӣ system covering colors, typography, logo барномаҳо, and everyday бренд муошират."
+
+#: .\azinapp\templates\graphicdesign.html:508
+msgid "Animated Brand Content"
+msgstr "Мундариҷаи аниматсионии бренд"
+
+#: .\azinapp\templates\graphicdesign.html:512
+msgid ""
+"Short animated visual content for brand introductions, social media, "
+"presentations, and digital campaigns."
+msgstr "Short animated визуалӣ мундариҷа for бренд introductions, иҷтимоӣ медиа, presentations, and рақамӣ маъракаҳо."
+
+#: .\azinapp\templates\graphicdesign.html:518
+msgid "Digital Content"
+msgstr "Мундариҷаи рақамӣ"
+
+#: .\azinapp\templates\graphicdesign.html:553
+msgid "Product Packaging"
+msgstr "Бастабандии маҳсулот"
+
+#: .\azinapp\templates\graphicdesign.html:557
+msgid ""
+"Packaging and label concepts designed around the product, brand identity, "
+"required information, and production format."
+msgstr "Packaging and label concepts Тарҳрезишуда бар асоси the маҳсулот, бренд identity, лозим маълумот, and истеҳсол format."
+
+#: .\azinapp\templates\graphicdesign.html:563
+msgid "Product Design"
+msgstr "Тарроҳии маҳсулот"
+
+#: .\azinapp\templates\graphicdesign.html:598
+msgid "Business Print Materials"
+msgstr "Маводи чопии тиҷоратӣ"
+
+#: .\azinapp\templates\graphicdesign.html:602
+msgid ""
+"Brochures, company profiles, stationery, flyers, posters, and other printed "
+"materials for business communication."
+msgstr "Brochures, ширкат profiles, stationery, flyers, posters, and дигар printed materials for тиҷорат муошират."
+
+#: .\azinapp\templates\graphicdesign.html:608
+msgid "Business Communication"
+msgstr "Муоширати тиҷоратӣ"
+
+#: .\azinapp\templates\graphicdesign.html:643
+#: .\azinapp\templates\index.html:244
+msgid "Social Media Content"
+msgstr "Мундариҷаи шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:647
+msgid ""
+"Branded visual templates and campaign graphics designed for regular social "
+"media publishing and digital communication."
+msgstr "Branded визуалӣ templates and маърака graphics Тарҳрезишуда for regular иҷтимоӣ медиа publishing and рақамӣ муошират."
+
+#: .\azinapp\templates\graphicdesign.html:653
+msgid "Social Media Design"
+msgstr "Тарроҳии шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\graphicdesign.html:678
+#: .\azinapp\templates\index.html:445 .\azinapp\templates\media.html:539
+#: .\azinapp\templates\smm.html:728
+msgid "Call to action"
+msgstr "Даъват ба амал"
+
+#: .\azinapp\templates\graphicdesign.html:686
+msgid "Need Design for Your Business?"
+msgstr "Барои тиҷорати худ тарроҳӣ лозим аст?"
+
+#: .\azinapp\templates\graphicdesign.html:690
+msgid ""
+"Tell us what you are building, what materials you need, and where the "
+"designs will be used. We can discuss the scope, visual direction, required "
+"formats, and next steps for your project."
+msgstr "Tell us чӣ you ҳастанд building, чӣ materials you лозим, and ҷое ки the designs хоҳад be истифода мешавад. We метавонад discuss the scope, визуалӣ direction, лозим formats, and next steps for your лоиҳа."
+
+#: .\azinapp\templates\index.html:18
+msgid "Hero section"
+msgstr "Бахши асосӣ"
+
+#: .\azinapp\templates\index.html:21
+msgid "Digital & Creative Services"
+msgstr "Хизматрасониҳои рақамӣ ва эҷодӣ"
+
+#: .\azinapp\templates\index.html:24
+msgid "Digital Solutions &"
+msgstr "Ҳалли рақамӣ ва"
+
+#: .\azinapp\templates\index.html:25 .\azinapp\templates\index.html:92
+msgid "Creative Services"
+msgstr "Хизматрасониҳои эҷодӣ"
+
+#: .\azinapp\templates\index.html:29
+msgid ""
+"AZIN GROUP provides practical digital, creative, and business services "
+"designed around the needs of organizations and growing businesses. We bring "
+"technology, content, design, and business support together to help you "
+"build, improve, and manage your digital presence."
+msgstr "AZIN GROUP provides амалӣ рақамӣ, эҷодӣ, and тиҷорат хизматрасониҳо Тарҳрезишуда бар асоси the ниёзҳо of ташкилотҳо and growing соҳибкорон. We bring технология, мундариҷа, тарроҳӣ, and тиҷорат дастгирӣ together to кӯмак you сохтан, improve, and идора кардан your рақамӣ presence."
+
+#: .\azinapp\templates\index.html:34 .\azinapp\templates\index.html:453
+#: .\azinapp\templates\media.html:40 .\azinapp\templates\media.html:558
+#: .\azinapp\templates\mobileapp.html:838
+msgid "Discuss Your Project"
+msgstr "Лоиҳаи худро муҳокима кунед"
+
+#: .\azinapp\templates\index.html:65
+msgid "AZIN GROUP overview"
+msgstr "Маълумоти умумӣ дар бораи AZIN GROUP"
+
+#: .\azinapp\templates\index.html:68
+msgid "Who We Are"
+msgstr "Мо кӣ ҳастем"
+
+#: .\azinapp\templates\index.html:69 .\azinapp\templates\navbar.html:49
+#: .\azinapp\templates\navbar.html:218
+msgid "AZIN GROUP"
+msgstr "AZIN GROUP"
+
+#: .\azinapp\templates\index.html:70
+msgid ""
+"A multi-service company providing web, media, design, social media, and "
+"business services for organizations and businesses."
+msgstr "A multi-service ширкат providing web, медиа, тарроҳӣ, иҷтимоӣ медиа, and тиҷорат хизматрасониҳо for ташкилотҳо and соҳибкорон."
+
+#: .\azinapp\templates\index.html:76
+msgid ""
+"AZIN GROUP works with businesses and organizations that need reliable "
+"support across digital, creative, and business activities. Our services "
+"cover website development, media production, graphic design, social media "
+"management, and business services. We focus on understanding the actual "
+"requirements of each project and providing practical solutions that are "
+"clear, useful, and appropriate for the client’s goals."
+msgstr "AZIN GROUP кор мекунад with соҳибкорон and ташкилотҳо that лозим боэътимод дастгирӣ дар саросари рақамӣ, эҷодӣ, and тиҷорат activities. Our хизматрасониҳо cover вебсайт таҳия, медиа истеҳсол, графикӣ тарроҳӣ, иҷтимоӣ медиа идоракунӣ, and тиҷорат хизматрасониҳо. We focus on understanding the actual талабот of ҳар лоиҳа and providing амалӣ ҳалҳо that ҳастанд равшан, useful, and appropriate for the мизоҷ’s ҳадафҳо."
+
+#: .\azinapp\templates\index.html:84
+msgid "Practical Technology"
+msgstr "Технологияи амалӣ"
+
+#: .\azinapp\templates\index.html:85
+msgid ""
+"Web development and digital solutions designed around business requirements, "
+"usability, and long-term maintenance."
+msgstr "Web таҳия and рақамӣ ҳалҳо Тарҳрезишуда бар асоси тиҷорат талабот, usability, and дарозмуддат maintenance."
+
+#: .\azinapp\templates\index.html:93
+msgid ""
+"Photography, video production, graphic design, and visual content developed "
+"for brands and business communication."
+msgstr "аксбардорӣ, видео истеҳсол, графикӣ тарроҳӣ, and визуалӣ мундариҷа developed for brands and тиҷорат муошират."
+
+#: .\azinapp\templates\index.html:100 .\azinapp\templates\index.html:298
+msgid "Business Support"
+msgstr "Дастгирии тиҷорат"
+
+#: .\azinapp\templates\index.html:101
+msgid ""
+"Practical services that help businesses organize their digital activities, "
+"communication, and day-to-day business needs."
+msgstr "амалӣ хизматрасониҳо that кӯмак соҳибкорон organize their рақамӣ activities, муошират, and ҳаррӯза тиҷорат ниёзҳо."
+
+#: .\azinapp\templates\index.html:107
+msgid "Learn More About AZIN GROUP"
+msgstr "Дар бораи AZIN GROUP бештар омӯзед"
+
+#: .\azinapp\templates\index.html:120
+msgid "AZIN MEDIA — Media Production"
+msgstr "AZIN MEDIA — Истеҳсоли медиа"
+
+#: .\azinapp\templates\index.html:125
+msgid ""
+"Photography, videography, and content production for businesses, "
+"organizations, and brands."
+msgstr "аксбардорӣ, videography, and мундариҷа истеҳсол for соҳибкорон, ташкилотҳо, and brands."
+
+#: .\azinapp\templates\index.html:135 .\azinapp\templates\media.html:57
+msgid "Photography"
+msgstr "Аксбардорӣ"
+
+#: .\azinapp\templates\index.html:136
+msgid ""
+"Corporate, product, commercial, event, and business photography for "
+"professional communication and marketing materials."
+msgstr "Corporate, маҳсулот, commercial, event, and тиҷорат аксбардорӣ for касбӣ муошират and marketing materials."
+
+#: .\azinapp\templates\index.html:145
+msgid "Videography"
+msgstr "Наворбардорӣ"
+
+#: .\azinapp\templates\index.html:146
+msgid ""
+"Business videos, promotional content, corporate productions, and visual "
+"stories created for digital and offline use."
+msgstr "тиҷорат видеоҳо, promotional мундариҷа, corporate productions, and визуалӣ stories сохта шуд for рақамӣ and offline истифода."
+
+#: .\azinapp\templates\index.html:156
+msgid ""
+"Motion design, animation, and visual effects for presentations, campaigns, "
+"social media, and digital content."
+msgstr "Motion тарроҳӣ, animation, and визуалӣ effects for presentations, маъракаҳо, иҷтимоӣ медиа, and рақамӣ мундариҷа."
+
+#: .\azinapp\templates\index.html:165
+msgid "Advertising Content"
+msgstr "Мундариҷаи таблиғотӣ"
+
+#: .\azinapp\templates\index.html:166
+msgid ""
+"Visual content and creative production that help businesses communicate "
+"their products, services, and brand message clearly."
+msgstr "визуалӣ мундариҷа and эҷодӣ истеҳсол that кӯмак соҳибкорон communicate their маҳсулот, хизматрасониҳо, and бренд message clearly."
+
+#: .\azinapp\templates\index.html:173
+msgid "Explore AZIN MEDIA"
+msgstr "AZIN MEDIA-ро омӯзед"
+
+#: .\azinapp\templates\index.html:185
+msgid "Our services"
+msgstr "Our хизматрасониҳо"
+
+#: .\azinapp\templates\index.html:190
+msgid ""
+"Practical digital, creative, and business services designed to support "
+"different stages of your business."
+msgstr "амалӣ рақамӣ, эҷодӣ, and тиҷорат хизматрасониҳо Тарҳрезишуда to дастгирӣ гуногун stages of your тиҷорат."
+
+#: .\azinapp\templates\index.html:201
+msgid ""
+"Professional websites and web applications built around your business "
+"requirements, content, users, and future needs."
+msgstr "Вебсайтҳо ва барномаҳои веби касбӣ, ки бар асоси талабот, мундариҷа, корбарон ва ниёзҳои ояндаи тиҷорати шумо сохта мешаванд."
+
+#: .\azinapp\templates\index.html:203
+msgid "Responsive Design"
+msgstr "Тарроҳии мутобиқшаванда"
+
+#: .\azinapp\templates\index.html:204
+msgid "Content Management"
+msgstr "Идоракунии мундариҷа"
+
+#: .\azinapp\templates\index.html:205
+msgid "Search Engine Readiness"
+msgstr "Омодагӣ барои муҳаррикҳои ҷустуҷӯ"
+
+#: .\azinapp\templates\index.html:206
+msgid "Performance & Maintenance"
+msgstr "Самаранокӣ ва нигоҳдорӣ"
+
+#: .\azinapp\templates\index.html:209 .\azinapp\templates\index.html:228
+#: .\azinapp\templates\index.html:247 .\azinapp\templates\index.html:266
+#: .\azinapp\templates\index.html:285 .\azinapp\templates\index.html:304
+#: .\azinapp\templates\index.html:457
+msgid "Learn More"
+msgstr "Бештар омӯзед"
+
+#: .\azinapp\templates\index.html:219 .\azinapp\templates\index.html:368
+msgid "Digital Solutions"
+msgstr "Ҳалли рақамӣ"
+
+#: .\azinapp\templates\index.html:220
+msgid ""
+"Digital tools and solutions designed to help businesses manage information, "
+"improve workflows, and support their day-to-day operations."
+msgstr "Абзорҳо ва ҳалли рақамӣ барои кӯмак ба ширкатҳо дар идоракунии маълумот, беҳсозии равандҳои корӣ ва дастгирии фаъолияти ҳаррӯзаи онҳо."
+
+#: .\azinapp\templates\index.html:222 .\azinapp\templates\website.html:171
+msgid "Business-Focused Solutions"
+msgstr "Ҳалли мутамарказ ба тиҷорат"
+
+#: .\azinapp\templates\index.html:223
+msgid "Custom Functionality"
+msgstr "Функсияҳои фармоишӣ"
+
+#: .\azinapp\templates\index.html:224
+msgid "Data & Workflow Support"
+msgstr "Дастгирии маълумот ва равандҳои корӣ"
+
+#: .\azinapp\templates\index.html:225
+msgid "Scalable Development"
+msgstr "Таҳияи миқёспазир"
+
+#: .\azinapp\templates\index.html:239
+msgid ""
+"Photography, videography, and visual content production for businesses, "
+"organizations, products, and marketing campaigns."
+msgstr "аксбардорӣ, videography, and визуалӣ мундариҷа истеҳсол for соҳибкорон, ташкилотҳо, маҳсулот, and marketing маъракаҳо."
+
+#: .\azinapp\templates\index.html:241
+msgid "Commercial Photography"
+msgstr "Аксбардории тиҷоратӣ"
+
+#: .\azinapp\templates\index.html:242 .\azinapp\templates\media.html:64
+#: .\azinapp\templates\media.html:200
+msgid "Video Production"
+msgstr "Истеҳсоли видео"
+
+#: .\azinapp\templates\index.html:257 .\azinapp\templates\navbar.html:41
+#: .\azinapp\templates\navbar.html:211 .\azinapp\templates\smm.html:18
+msgid "Social Media Management"
+msgstr "Идоракунии шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\index.html:258
+msgid ""
+"Structured social media management covering content planning, publishing, "
+"audience communication, and performance tracking."
+msgstr "Structured иҷтимоӣ медиа идоракунӣ covering мундариҷа банақшагирӣ, publishing, аудитория муошират, and самаранокӣ tracking."
+
+#: .\azinapp\templates\index.html:260 .\azinapp\templates\smm.html:65
+msgid "Content Planning"
+msgstr "Банақшагирии мундариҷа"
+
+#: .\azinapp\templates\index.html:261
+msgid "Community Management"
+msgstr "Идоракунии ҷомеа"
+
+#: .\azinapp\templates\index.html:262
+msgid "Analytics & Reporting"
+msgstr "Таҳлил ва ҳисобот"
+
+#: .\azinapp\templates\index.html:263
+msgid "Campaign Support"
+msgstr "Дастгирии маъракаҳо"
+
+#: .\azinapp\templates\index.html:276
+msgid "Graphic Design & Branding"
+msgstr "Тарроҳии графикӣ ва брендинг"
+
+#: .\azinapp\templates\index.html:277
+msgid ""
+"Clear and consistent visual design for businesses that need professional "
+"branding and communication materials."
+msgstr "равшан and consistent визуалӣ тарроҳӣ for соҳибкорон that лозим касбӣ брендинг and муошират materials."
+
+#: .\azinapp\templates\index.html:281
+msgid "Marketing Materials"
+msgstr "Маводи маркетингӣ"
+
+#: .\azinapp\templates\index.html:282
+msgid "Print & Digital Design"
+msgstr "Тарроҳии чопӣ ва рақамӣ"
+
+#: .\azinapp\templates\index.html:295
+msgid "Business Services"
+msgstr "Хизматрасониҳои тиҷоратӣ"
+
+#: .\azinapp\templates\index.html:296
+msgid ""
+"Practical business support for organizations that need help with digital "
+"operations, communication, content, and related business activities."
+msgstr "амалӣ тиҷорат дастгирӣ for ташкилотҳо that лозим кӯмак with рақамӣ фаъолият, муошират, мундариҷа, and related тиҷорат activities."
+
+#: .\azinapp\templates\index.html:299
+msgid "Digital Operations"
+msgstr "Амалиёти рақамӣ"
+
+#: .\azinapp\templates\index.html:300
+msgid "Content & Documentation"
+msgstr "Мундариҷа ва ҳуҷҷатгузорӣ"
+
+#: .\azinapp\templates\index.html:301
+msgid "Project Coordination"
+msgstr "Ҳамоҳангсозии лоиҳа"
+
+#: .\azinapp\templates\index.html:316
+msgid "Portfolio preview"
+msgstr "Пешнамоиши портфолио"
+
+#: .\azinapp\templates\index.html:320 .\azinapp\templates\website.html:1355
+msgid "Selected Projects"
+msgstr "Лоиҳаҳои интихобшуда"
+
+#: .\azinapp\templates\index.html:321
+msgid ""
+"A selection of projects and services delivered for businesses and "
+"organizations."
+msgstr "A интихоб of лоиҳаҳо and хизматрасониҳо delivered for соҳибкорон and ташкилотҳо."
+
+#: .\azinapp\templates\index.html:342
+msgid "View Project"
+msgstr "Дидани лоиҳа"
+
+#: .\azinapp\templates\index.html:358 .\azinapp\templates\website.html:587
+#: .\azinapp\templates\website.html:1509
+msgid "Business Website"
+msgstr "Вебсайти тиҷоратӣ"
+
+#: .\azinapp\templates\index.html:359
+msgid ""
+"A professional business website designed to present services clearly, "
+"support customer communication, and provide a structured digital presence."
+msgstr "A касбӣ тиҷорат вебсайт Тарҳрезишуда to present хизматрасониҳо clearly, дастгирӣ customer муошират, and пешниҳод кардан a structured рақамӣ presence."
+
+#: .\azinapp\templates\index.html:371
+msgid "Business Application"
+msgstr "Барномаи тиҷоратӣ"
+
+#: .\azinapp\templates\index.html:372
+msgid ""
+"A practical digital solution designed to support business processes, "
+"organize information, and improve day-to-day operations."
+msgstr "A амалӣ рақамӣ ҳал Тарҳрезишуда to дастгирӣ тиҷорат processes, organize маълумот, and improve ҳаррӯза фаъолият."
+
+#: .\azinapp\templates\index.html:384
+msgid "Brand Video"
+msgstr "Видеои бренд"
+
+#: .\azinapp\templates\index.html:385
+msgid ""
+"Business-focused video content combining professional production, editing, "
+"and visual elements to communicate a clear brand message."
+msgstr "Business-focused видео мундариҷа combining касбӣ истеҳсол, таҳрир, and визуалӣ elements to communicate a равшан бренд message."
+
+#: .\azinapp\templates\index.html:397 .\azinapp\templates\index.html:401
+#: .\azinapp\templates\website.html:1683
+msgid "Why AZIN GROUP"
+msgstr "Чаро AZIN GROUP"
+
+#: .\azinapp\templates\index.html:400
+msgid "Why Work With Us"
+msgstr "Чаро бо мо кор кунед"
+
+#: .\azinapp\templates\index.html:402
+msgid ""
+"A practical approach focused on understanding your requirements and "
+"delivering work that serves a clear purpose."
+msgstr "A амалӣ approach мутамарказ on understanding your талабот and delivering work that serves a равшан purpose."
+
+#: .\azinapp\templates\index.html:410
+msgid "Experienced Team"
+msgstr "Дастаи ботаҷриба"
+
+#: .\azinapp\templates\index.html:411
+msgid ""
+"Our team brings experience across technology, media, design, and business "
+"services to support different project requirements."
+msgstr "Our даста brings таҷриба дар саросари технология, медиа, тарроҳӣ, and тиҷорат хизматрасониҳо to дастгирӣ гуногун лоиҳа талабот."
+
+#: .\azinapp\templates\index.html:418
+msgid "Practical Approach"
+msgstr "Муносибати амалӣ"
+
+#: .\azinapp\templates\index.html:419
+msgid ""
+"We focus on understanding the actual business need before selecting the "
+"right service, process, and solution."
+msgstr "We focus on understanding the actual тиҷорат лозим пеш аз selecting the мувофиқ хизматрасонӣ, раванд, and ҳал."
+
+#: .\azinapp\templates\index.html:427
+msgid ""
+"We keep project requirements, deliverables, timelines, and communication "
+"clear throughout the working process."
+msgstr "We keep лоиҳа талабот, deliverables, timelines, and муошират равшан throughout the кор раванд."
+
+#: .\azinapp\templates\index.html:434
+msgid "Ongoing Support"
+msgstr "Дастгирии доимӣ"
+
+#: .\azinapp\templates\index.html:435
+msgid ""
+"Our relationship does not have to end when a project is delivered. We can "
+"continue to provide support, updates, and maintenance when needed."
+msgstr "Our relationship мекунад not доранд to end вақте ки a лоиҳа аст delivered. We метавонад continue to пешниҳод кардан дастгирӣ, updates, and maintenance вақте ки needed."
+
+#: .\azinapp\templates\index.html:450
+msgid ""
+"Tell us what you need, what you are trying to achieve, and where you need "
+"support. We will review your requirements and discuss the most suitable way "
+"to move forward with AZIN GROUP."
+msgstr "Tell us чӣ you лозим, чӣ you ҳастанд trying to achieve, and ҷое ки you лозим дастгирӣ. We хоҳад review your талабот and discuss the аз ҳама suitable way to move forward with AZIN GROUP."
+
+#: .\azinapp\templates\login.html:11 .\azinapp\templates\login.html:61
+#: .\azinapp\templates\navbar.html:175 .\azinapp\templates\navbar.html:267
+#: .\azinapp\templates\signup.html:130
+msgid "Login"
+msgstr "Воридшавӣ"
+
+#: .\azinapp\templates\login.html:20
+msgid "Welcome Back"
+msgstr "Хуш омадед"
+
+#: .\azinapp\templates\login.html:21
+msgid "Login to your account to manage your profile."
+msgstr "Барои идоракунии профили худ ба ҳисоби худ ворид шавед."
+
+#: .\azinapp\templates\login.html:39
+msgid "Username or Email"
+msgstr "Номи корбар ё почтаи электронӣ"
+
+#: .\azinapp\templates\login.html:43
+msgid "Enter your username or email"
+msgstr "Номи корбар ё почтаи электронии худро ворид кунед"
+
+#: .\azinapp\templates\login.html:54
+#: .\azinapp\templates\update_password.html:67
+#: .\azinapp\templates\update_password.html:83
+#: .\azinapp\templates\update_password.html:115
+msgid "Toggle password visibility"
+msgstr "Намоиши паролро тағйир диҳед"
+
+#: .\azinapp\templates\login.html:67
+msgid "Don't have an account?"
+msgstr "Ҳисоб надоред?"
+
+#: .\azinapp\templates\login.html:67 .\azinapp\templates\navbar.html:178
+#: .\azinapp\templates\navbar.html:270 .\azinapp\templates\signup.html:11
+msgid "Sign Up"
+msgstr "Сабтином шудан"
+
+#: .\azinapp\templates\media.html:18
+msgid "AZIN MEDIA — Photography, Video & Content Production"
+msgstr "AZIN MEDIA — Аксбардорӣ, видео ва истеҳсоли мундариҷа"
+
+#: .\azinapp\templates\media.html:29
+msgid "Photography, Video &"
+msgstr "Аксбардорӣ, видео ва"
+
+#: .\azinapp\templates\media.html:30 .\azinapp\templates\smm.html:74
+msgid "Content Production"
+msgstr "Истеҳсоли мундариҷа"
+
+#: .\azinapp\templates\media.html:34
+msgid ""
+"We create photography and video content for businesses, organizations, "
+"events, products, and personal projects. From planning and production to "
+"editing and final delivery, we focus on creating visual content that fits "
+"where and how it will be used."
+msgstr "We эҷод кардан аксбардорӣ and видео мундариҷа for соҳибкорон, ташкилотҳо, events, маҳсулот, and personal лоиҳаҳо. From банақшагирӣ and истеҳсол to таҳрир and final delivery, we focus on creating визуалӣ мундариҷа that fits ҷое ки and чӣ гуна it хоҳад be истифода мешавад."
+
+#: .\azinapp\templates\media.html:45
+msgid "View Gallery"
+msgstr "Дидани галерея"
+
+#: .\azinapp\templates\media.html:71
+msgid "Visual Content"
+msgstr "Мундариҷаи визуалӣ"
+
+#: .\azinapp\templates\media.html:84
+msgid "Media services"
+msgstr "Хизматрасониҳои медиа"
+
+#: .\azinapp\templates\media.html:91
+msgid "Photography & Video Services"
+msgstr "Хизматрасониҳои аксбардорӣ ва видео"
+
+#: .\azinapp\templates\media.html:95
+msgid ""
+"Visual production for business communication, products, events, social "
+"media, and personal projects."
+msgstr "визуалӣ истеҳсол for тиҷорат муошират, маҳсулот, events, иҷтимоӣ медиа, and personal лоиҳаҳо."
+
+#: .\azinapp\templates\media.html:108 .\azinapp\templates\media.html:365
+msgid "Wedding Photography"
+msgstr "Аксбардории тӯй"
+
+#: .\azinapp\templates\media.html:112
+msgid ""
+"Wedding photography planned around the flow of your day, from preparation "
+"and ceremony to the reception. The focus is on documenting the people, "
+"details, and moments that matter to you."
+msgstr "Wedding аксбардорӣ planned бар асоси the flow of your day, from preparation and ceremony to the reception. The focus аст on documenting the одамон, тафсилот, and moments that matter to you."
+
+#: .\azinapp\templates\media.html:116
+msgid "Pre-wedding & engagement sessions"
+msgstr "Аксбардории пеш аз тӯй ва номзадӣ"
+
+#: .\azinapp\templates\media.html:117
+msgid "Ceremony and reception coverage"
+msgstr "Аксбардории маросим ва зиёфати тӯй"
+
+#: .\azinapp\templates\media.html:118
+msgid "Professional photo selection and editing"
+msgstr "Интихоб ва таҳрири касбии аксҳо"
+
+#: .\azinapp\templates\media.html:119
+msgid "Digital delivery of final images"
+msgstr "Пешниҳоди рақамии аксҳои ниҳоӣ"
+
+#: .\azinapp\templates\media.html:131
+msgid "Celebration & Event Photography"
+msgstr "Аксбардории ҷашн ва чорабиниҳо"
+
+#: .\azinapp\templates\media.html:135
+msgid ""
+"Photography for birthdays, anniversaries, family gatherings, private events, "
+"and other occasions where you want a clear visual record of the people and "
+"atmosphere."
+msgstr "аксбардорӣ for birthdays, anniversaries, family gatherings, private events, and дигар occasions ҷое ки you want a равшан визуалӣ record of the одамон and atmosphere."
+
+#: .\azinapp\templates\media.html:139
+msgid "Birthday and private events"
+msgstr "Зодрӯз ва чорабиниҳои хусусӣ"
+
+#: .\azinapp\templates\media.html:140
+msgid "Anniversaries and celebrations"
+msgstr "Солгардҳо ва ҷашнҳо"
+
+#: .\azinapp\templates\media.html:141
+msgid "Family and group photography"
+msgstr "Аксбардории оилавӣ ва гурӯҳӣ"
+
+#: .\azinapp\templates\media.html:142
+msgid "Edited digital photo delivery"
+msgstr "Пешниҳоди рақамии аксҳои таҳриршуда"
+
+#: .\azinapp\templates\media.html:154 .\azinapp\templates\media.html:455
+msgid "Product Photography"
+msgstr "Аксбардории маҳсулот"
+
+#: .\azinapp\templates\media.html:158
+msgid ""
+"Product images prepared for e-commerce stores, websites, catalogs, social "
+"media, and marketing materials. We plan the shoot around the product, "
+"platform, and intended use."
+msgstr "маҳсулот images prepared for e-commerce stores, вебсайтҳо, catalogs, иҷтимоӣ медиа, and marketing materials. We plan the shoot бар асоси the маҳсулот, platform, and intended истифода."
+
+#: .\azinapp\templates\media.html:162
+msgid "Product and catalog photography"
+msgstr "Аксбардории маҳсулот ва каталог"
+
+#: .\azinapp\templates\media.html:163
+msgid "Lifestyle and contextual images"
+msgstr "Аксҳои услуби зиндагӣ ва муҳитӣ"
+
+#: .\azinapp\templates\media.html:164
+msgid "Clean backgrounds and detailed shots"
+msgstr "Заминаҳои тоза ва аксҳои муфассал"
+
+#: .\azinapp\templates\media.html:165
+msgid "Editing and image preparation"
+msgstr "Таҳрир ва омодасозии аксҳо"
+
+#: .\azinapp\templates\media.html:177
+msgid "Corporate & Event Photography"
+msgstr "Аксбардории корпоративӣ ва чорабиниҳо"
+
+#: .\azinapp\templates\media.html:181
+msgid ""
+"Professional photography for conferences, seminars, company events, team "
+"activities, launches, and other business occasions where reliable visual "
+"documentation is needed."
+msgstr "касбӣ аксбардорӣ for conferences, seminars, ширкат events, даста activities, launches, and дигар тиҷорат occasions ҷое ки боэътимод визуалӣ documentation аст needed."
+
+#: .\azinapp\templates\media.html:185
+msgid "Conferences and seminars"
+msgstr "Конфронсҳо ва семинарҳо"
+
+#: .\azinapp\templates\media.html:186
+msgid "Corporate events and launches"
+msgstr "Чорабиниҳои корпоративӣ ва муаррифии маҳсулот"
+
+#: .\azinapp\templates\media.html:187
+msgid "Team and executive portraits"
+msgstr "Портретҳои даста ва роҳбарон"
+
+#: .\azinapp\templates\media.html:188
+msgid "Event documentation for business use"
+msgstr "Ҳуҷҷатгузории чорабиниҳо барои истифодаи тиҷоратӣ"
+
+#: .\azinapp\templates\media.html:204
+msgid ""
+"Video production for businesses, events, products, campaigns, and social "
+"media. Projects can be scoped around the required format, message, platform, "
+"and final deliverables."
+msgstr "видео истеҳсол for соҳибкорон, events, маҳсулот, маъракаҳо, and иҷтимоӣ медиа. лоиҳаҳо метавонад be scoped бар асоси the лозим format, message, platform, and final deliverables."
+
+#: .\azinapp\templates\media.html:208
+msgid "Corporate and promotional videos"
+msgstr "Видеоҳои корпоративӣ ва таблиғотӣ"
+
+#: .\azinapp\templates\media.html:209
+msgid "Event and ceremony videos"
+msgstr "Видеоҳои чорабиниҳо ва маросимҳо"
+
+#: .\azinapp\templates\media.html:210
+msgid "Short-form social media content"
+msgstr "Short-form иҷтимоӣ медиа мундариҷа"
+
+#: .\azinapp\templates\media.html:211
+msgid "Video editing and post-production"
+msgstr "Таҳрири видео ва пост-продакшн"
+
+#: .\azinapp\templates\media.html:223
+msgid "Portrait & Professional Photography"
+msgstr "Аксбардории портретӣ ва касбӣ"
+
+#: .\azinapp\templates\media.html:227
+msgid ""
+"Portrait sessions for individuals, families, professionals, teams, and "
+"organizations. Images can be prepared for personal use, professional "
+"profiles, websites, and business communication."
+msgstr "Portrait sessions for individuals, families, professionals, teams, and ташкилотҳо. Images метавонад be prepared for personal истифода, касбӣ profiles, вебсайтҳо, and тиҷорат муошират."
+
+#: .\azinapp\templates\media.html:231
+msgid "Professional headshots"
+msgstr "Портретҳои касбӣ"
+
+#: .\azinapp\templates\media.html:232
+msgid "Individual and family portraits"
+msgstr "Портретҳои инфиродӣ ва оилавӣ"
+
+#: .\azinapp\templates\media.html:233
+msgid "Team and staff photography"
+msgstr "Аксбардории даста ва кормандон"
+
+#: .\azinapp\templates\media.html:234
+msgid "Edited images for digital use"
+msgstr "Аксҳои таҳриршуда барои истифодаи рақамӣ"
+
+#: .\azinapp\templates\media.html:246
+msgid "Media gallery"
+msgstr "Галереяи медиа"
+
+#: .\azinapp\templates\media.html:250 .\azinapp\templates\website.html:1351
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: .\azinapp\templates\media.html:253
+msgid "Selected Work"
+msgstr "Корҳои интихобшуда"
+
+#: .\azinapp\templates\media.html:257
+msgid ""
+"A selection of photography and visual content representing the types of "
+"projects we work on."
+msgstr "A интихоб of аксбардорӣ and визуалӣ мундариҷа representing the types of лоиҳаҳо we work on."
+
+#: .\azinapp\templates\media.html:269 .\azinapp\templates\media.html:372
+#: .\azinapp\templates\media.html:402
+msgid "Wedding"
+msgstr "Тӯй"
+
+#: .\azinapp\templates\media.html:273 .\azinapp\templates\media.html:432
+msgid "Celebration"
+msgstr "Ҷашн"
+
+#: .\azinapp\templates\media.html:277 .\azinapp\templates\media.html:462
+msgid "Product"
+msgstr "Маҳсулот"
+
+#: .\azinapp\templates\media.html:281 .\azinapp\templates\media.html:492
+msgid "Corporate"
+msgstr "Корпоративӣ"
+
+#: .\azinapp\templates\media.html:285 .\azinapp\templates\media.html:522
+msgid "Portrait"
+msgstr "Портрет"
+
+#: .\azinapp\templates\media.html:307
+msgid "Your browser does not support the video tag."
+msgstr "Браузери шумо теги видеоиро дастгирӣ намекунад."
+
+#: .\azinapp\templates\media.html:312 .\azinapp\templates\smm.html:458
+msgid "Video"
+msgstr "Видео"
+
+#: .\azinapp\templates\media.html:323 .\azinapp\templates\media.html:360
+#: .\azinapp\templates\media.html:390 .\azinapp\templates\media.html:420
+#: .\azinapp\templates\media.html:450 .\azinapp\templates\media.html:480
+#: .\azinapp\templates\media.html:510
+msgid "Photo"
+msgstr "Акс"
+
+#: .\azinapp\templates\media.html:368
+msgid ""
+"Wedding photography focused on people, details, atmosphere, and the natural "
+"flow of the day."
+msgstr "Wedding аксбардорӣ мутамарказ on одамон, тафсилот, atmosphere, and the natural flow of the day."
+
+#: .\azinapp\templates\media.html:395
+msgid "Wedding Reception"
+msgstr "Зиёфати тӯй"
+
+#: .\azinapp\templates\media.html:398
+msgid "Natural moments and event details documented throughout the reception."
+msgstr "Лаҳзаҳои табиӣ ва ҷузъиёти чорабинӣ дар тамоми давраи зиёфат сабт карда мешаванд."
+
+#: .\azinapp\templates\media.html:425
+msgid "Celebration Photography"
+msgstr "Аксбардории ҷашн"
+
+#: .\azinapp\templates\media.html:428
+msgid "Photography for private celebrations, gatherings, and events."
+msgstr "Аксбардорӣ барои ҷашнҳо, ҷамъомадҳо ва чорабиниҳои хусусӣ."
+
+#: .\azinapp\templates\media.html:458
+msgid ""
+"Product images prepared for online stores, websites, catalogs, and marketing "
+"use."
+msgstr "маҳсулот images prepared for online stores, вебсайтҳо, catalogs, and marketing истифода."
+
+#: .\azinapp\templates\media.html:485
+msgid "Corporate Event"
+msgstr "Чорабинии корпоративӣ"
+
+#: .\azinapp\templates\media.html:488
+msgid ""
+"Business event photography for conferences, meetings, launches, and company "
+"activities."
+msgstr "тиҷорат event аксбардорӣ for conferences, meetings, launches, and ширкат activities."
+
+#: .\azinapp\templates\media.html:515
+msgid "Professional Portrait"
+msgstr "Портрети касбӣ"
+
+#: .\azinapp\templates\media.html:518
+msgid ""
+"Portrait photography for professional profiles, websites, teams, and "
+"personal use."
+msgstr "Portrait аксбардорӣ for касбӣ profiles, вебсайтҳо, teams, and personal истифода."
+
+#: .\azinapp\templates\media.html:547
+msgid "Planning a Photo or Video Project?"
+msgstr "Лоиҳаи аксбардорӣ ё видеоро ба нақша мегиред?"
+
+#: .\azinapp\templates\media.html:551
+msgid ""
+"Tell us what you need to produce, where the content will be used, and when "
+"you need it. We can discuss the scope, required production, editing, and "
+"final deliverables before the project begins."
+msgstr "Tell us чӣ you лозим to produce, ҷое ки the мундариҷа хоҳад be истифода мешавад, and вақте ки you лозим it. We метавонад discuss the scope, лозим истеҳсол, таҳрир, and final deliverables пеш аз the лоиҳа begins."
+
+#: .\azinapp\templates\mobileapp.html:18
+msgid "Mobile app development services"
+msgstr "Хизматрасониҳои таҳияи барномаҳои мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:48
+msgid "AZIN GROUP — Mobile App Development"
+msgstr "AZIN GROUP — Таҳияи барномаҳои мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:53
+msgid "Mobile App"
+msgstr "Барномаи мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:57 .\azinapp\templates\website.html:1299
+msgid "Development"
+msgstr "Таҳия"
+
+#: .\azinapp\templates\mobileapp.html:62
+msgid ""
+"We help businesses turn their mobile app ideas into practical digital "
+"products. From planning and UI/UX design to development, testing, "
+"deployment, and ongoing support, we focus on creating reliable and user-"
+"friendly mobile experiences."
+msgstr "We кӯмак соҳибкорон turn their мобилӣ app ideas into амалӣ рақамӣ маҳсулот. From банақшагирӣ ва UI/UX тарроҳӣ to таҳия, testing, deployment, and доимӣ дастгирӣ, we focus on creating боэътимод and user-friendly мобилӣ experiences."
+
+#: .\azinapp\templates\mobileapp.html:69
+msgid "Discuss Your App Idea"
+msgstr "Ғояи барномаи худро муҳокима кунед"
+
+#: .\azinapp\templates\mobileapp.html:119
+msgid "Mobile applications we build"
+msgstr "Барномаҳои мобилие, ки мо таҳия мекунем"
+
+#: .\azinapp\templates\mobileapp.html:126 .\azinapp\templates\website.html:285
+msgid "What We Build"
+msgstr "Мо чӣ месозем"
+
+#: .\azinapp\templates\mobileapp.html:130
+msgid "Mobile Solutions for Different Business Needs"
+msgstr "Ҳалли мобилӣ барои ниёзҳои гуногуни тиҷорат"
+
+#: .\azinapp\templates\mobileapp.html:134
+msgid ""
+"We develop mobile solutions based on your business goals, target users, "
+"required features, and project scope."
+msgstr "We таҳия мобилӣ ҳалҳо бар асоси on your тиҷорат ҳадафҳо, target корбарон, лозим features, and лоиҳа scope."
+
+#: .\azinapp\templates\mobileapp.html:150
+msgid "Business Applications"
+msgstr "Барномаҳои тиҷоратӣ"
+
+#: .\azinapp\templates\mobileapp.html:154
+msgid ""
+"Mobile applications designed to help businesses provide services, manage "
+"operations, and stay connected with their customers."
+msgstr "мобилӣ барномаҳо Тарҳрезишуда to кӯмак соҳибкорон пешниҳод кардан хизматрасониҳо, идора кардан фаъолият, and stay connected with their мизоҷон."
+
+#: .\azinapp\templates\mobileapp.html:158
+msgid "Business workflows"
+msgstr "Равандҳои кории тиҷоратӣ"
+
+#: .\azinapp\templates\mobileapp.html:159
+msgid "User accounts & profiles"
+msgstr "Ҳисобҳо ва профилҳои корбарон"
+
+#: .\azinapp\templates\mobileapp.html:160
+msgid "Notifications & communication"
+msgstr "Огоҳиҳо ва муошират"
+
+#: .\azinapp\templates\mobileapp.html:161
+#: .\azinapp\templates\mobileapp.html:398
+msgid "Backend & API integration"
+msgstr "Интегратсияи backend ва API"
+
+#: .\azinapp\templates\mobileapp.html:175
+msgid "Customer-Facing Apps"
+msgstr "Барномаҳо барои мизоҷон"
+
+#: .\azinapp\templates\mobileapp.html:179
+msgid ""
+"User-friendly mobile applications that allow customers to browse services, "
+"submit requests, communicate, and manage their accounts."
+msgstr "User-friendly мобилӣ барномаҳо that allow мизоҷон to browse хизматрасониҳо, submit requests, communicate, and идора кардан their accounts."
+
+#: .\azinapp\templates\mobileapp.html:183
+msgid "User registration & login"
+msgstr "Сабтином ва воридшавии корбар"
+
+#: .\azinapp\templates\mobileapp.html:184
+msgid "Service browsing"
+msgstr "Дидани хизматрасониҳо"
+
+#: .\azinapp\templates\mobileapp.html:185
+msgid "Request & booking features"
+msgstr "Имкониятҳои дархост ва бронкунӣ"
+
+#: .\azinapp\templates\mobileapp.html:186
+msgid "Customer notifications"
+msgstr "Огоҳиҳои мизоҷон"
+
+#: .\azinapp\templates\mobileapp.html:200
+msgid "Mobile Commerce"
+msgstr "Тиҷорати мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:204
+msgid ""
+"Mobile shopping experiences with product catalogs, customer accounts, "
+"orders, and payment integration."
+msgstr "мобилӣ shopping experiences with маҳсулот catalogs, customer accounts, фармоишҳо, and пардохт integration."
+
+#: .\azinapp\templates\mobileapp.html:208 .\azinapp\templates\website.html:763
+msgid "Product catalog"
+msgstr "Каталоги маҳсулот"
+
+#: .\azinapp\templates\mobileapp.html:209
+msgid "Shopping cart"
+msgstr "Сабади харид"
+
+#: .\azinapp\templates\mobileapp.html:210 .\azinapp\templates\website.html:366
+#: .\azinapp\templates\website.html:771
+msgid "Order management"
+msgstr "Идоракунии фармоишҳо"
+
+#: .\azinapp\templates\mobileapp.html:211 .\azinapp\templates\website.html:364
+msgid "Payment integration"
+msgstr "Интегратсияи пардохт"
+
+#: .\azinapp\templates\mobileapp.html:225
+msgid "Educational Apps"
+msgstr "Барномаҳои таълимӣ"
+
+#: .\azinapp\templates\mobileapp.html:229
+msgid ""
+"Mobile learning solutions for courses, educational content, student access, "
+"and progress management."
+msgstr "мобилӣ learning ҳалҳо for courses, educational мундариҷа, student access, and progress идоракунӣ."
+
+#: .\azinapp\templates\mobileapp.html:233
+msgid "Course & lesson access"
+msgstr "Дастрасӣ ба курсҳо ва дарсҳо"
+
+#: .\azinapp\templates\mobileapp.html:234 .\azinapp\templates\website.html:442
+msgid "Student accounts"
+msgstr "Ҳисобҳои донишҷӯён"
+
+#: .\azinapp\templates\mobileapp.html:235
+msgid "Learning content"
+msgstr "Мундариҷаи таълимӣ"
+
+#: .\azinapp\templates\mobileapp.html:236 .\azinapp\templates\website.html:446
+#: .\azinapp\templates\website.html:928
+msgid "Progress tracking"
+msgstr "Назорати пешрафт"
+
+#: .\azinapp\templates\mobileapp.html:250
+msgid "Service Applications"
+msgstr "Барномаҳои хизматрасонӣ"
+
+#: .\azinapp\templates\mobileapp.html:254
+msgid ""
+"Custom mobile apps for businesses that need to connect customers with "
+"services, teams, or operational processes."
+msgstr "Custom мобилӣ apps for соҳибкорон that лозим to connect мизоҷон with хизматрасониҳо, teams, or operational processes."
+
+#: .\azinapp\templates\mobileapp.html:258
+msgid "Service requests"
+msgstr "Дархостҳои хизматрасонӣ"
+
+#: .\azinapp\templates\mobileapp.html:259
+msgid "Booking workflows"
+msgstr "Равандҳои бронкунӣ"
+
+#: .\azinapp\templates\mobileapp.html:260
+msgid "User communication"
+msgstr "Муошират бо корбар"
+
+#: .\azinapp\templates\mobileapp.html:261
+msgid "Business management"
+msgstr "Идоракунии тиҷорат"
+
+#: .\azinapp\templates\mobileapp.html:275
+msgid "Custom Mobile Applications"
+msgstr "Барномаҳои мобилии фармоишӣ"
+
+#: .\azinapp\templates\mobileapp.html:279
+msgid ""
+"Tailor-made mobile applications built around specific business requirements, "
+"workflows, and integrations."
+msgstr "Tailor-made мобилӣ барномаҳо сохта бар асоси мушаххас тиҷорат талабот, workflows, and integrations."
+
+#: .\azinapp\templates\mobileapp.html:283 .\azinapp\templates\website.html:520
+#: .\azinapp\templates\website.html:998
+msgid "Custom business logic"
+msgstr "Мантиқи фармоишии тиҷорат"
+
+#: .\azinapp\templates\mobileapp.html:284 .\azinapp\templates\website.html:524
+msgid "API integrations"
+msgstr "Интегратсияҳои API"
+
+#: .\azinapp\templates\mobileapp.html:285
+msgid "Role-based access"
+msgstr "Дастрасӣ бар асоси нақш"
+
+#: .\azinapp\templates\mobileapp.html:286 .\azinapp\templates\website.html:526
+msgid "Scalable architecture"
+msgstr "Меъмории миқёспазир"
+
+#: .\azinapp\templates\mobileapp.html:302
+msgid "Mobile app development process"
+msgstr "Раванди таҳияи барномаи мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:309 .\azinapp\templates\website.html:1205
+msgid "Our Process"
+msgstr "Раванди мо"
+
+#: .\azinapp\templates\mobileapp.html:313 .\azinapp\templates\website.html:1209
+msgid "From Idea to Launch"
+msgstr "Аз ғоя то оғоз"
+
+#: .\azinapp\templates\mobileapp.html:317
+msgid ""
+"A structured development process designed to keep your project clear, "
+"efficient, and aligned with your business goals."
+msgstr "A structured таҳия раванд Тарҳрезишуда to keep your лоиҳа равшан, efficient, and aligned with your тиҷорат ҳадафҳо."
+
+#: .\azinapp\templates\mobileapp.html:335
+msgid "Discovery & Requirements"
+msgstr "Омӯзиш ва талабот"
+
+#: .\azinapp\templates\mobileapp.html:339
+msgid ""
+"We discuss your idea, target users, business goals, required features, and "
+"technical requirements."
+msgstr "We discuss your idea, target корбарон, тиҷорат ҳадафҳо, лозим features, and техникӣ талабот."
+
+#: .\azinapp\templates\mobileapp.html:343
+msgid "Business requirements"
+msgstr "Талаботи тиҷорат"
+
+#: .\azinapp\templates\mobileapp.html:344
+msgid "Target users"
+msgstr "Корбарони мақсаднок"
+
+#: .\azinapp\templates\mobileapp.html:345
+msgid "Feature planning"
+msgstr "Банақшагирии имкониятҳо"
+
+#: .\azinapp\templates\mobileapp.html:346
+msgid "Project scope"
+msgstr "Ҳаҷми лоиҳа"
+
+#: .\azinapp\templates\mobileapp.html:362
+msgid "UI/UX Design"
+msgstr "Тарроҳии UI/UX"
+
+#: .\azinapp\templates\mobileapp.html:366
+msgid ""
+"We create clear and intuitive interfaces designed around your users and "
+"brand identity."
+msgstr "We эҷод кардан равшан and intuitive interfaces Тарҳрезишуда бар асоси your корбарон and бренд identity."
+
+#: .\azinapp\templates\mobileapp.html:370
+msgid "User flows"
+msgstr "Равандҳои корбар"
+
+#: .\azinapp\templates\mobileapp.html:371
+msgid "Wireframes"
+msgstr "Вайрфреймҳо"
+
+#: .\azinapp\templates\mobileapp.html:372
+msgid "Interface design"
+msgstr "Тарроҳии интерфейс"
+
+#: .\azinapp\templates\mobileapp.html:373
+msgid "Interactive prototypes"
+msgstr "Прототипҳои интерактивӣ"
+
+#: .\azinapp\templates\mobileapp.html:389
+msgid "App Development"
+msgstr "Таҳияи барнома"
+
+#: .\azinapp\templates\mobileapp.html:393
+msgid ""
+"Our development team implements the planned features, connects the backend "
+"services, and builds the application according to the approved scope."
+msgstr "Our таҳия даста implements the planned features, connects the backend хизматрасониҳо, and builds the барнома according to the approved scope."
+
+#: .\azinapp\templates\mobileapp.html:397
+msgid "Mobile application development"
+msgstr "Таҳияи барномаи мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:399
+msgid "Database integration"
+msgstr "Интегратсияи пойгоҳи додаҳо"
+
+#: .\azinapp\templates\mobileapp.html:400 .\azinapp\templates\website.html:1008
+msgid "Authentication & permissions"
+msgstr "Аутентификатсия ва иҷозатҳо"
+
+#: .\azinapp\templates\mobileapp.html:416
+msgid "Testing & Quality Assurance"
+msgstr "Санҷиш ва таъмини сифат"
+
+#: .\azinapp\templates\mobileapp.html:420
+msgid ""
+"We test the application across supported devices and key user flows to "
+"identify and resolve issues before launch."
+msgstr "We test the барнома дар саросари supported devices and key корбар flows to identify and resolve issues пеш аз launch."
+
+#: .\azinapp\templates\mobileapp.html:424
+msgid "Functional testing"
+msgstr "Санҷиши функсионалӣ"
+
+#: .\azinapp\templates\mobileapp.html:425
+msgid "Interface testing"
+msgstr "Санҷиши интерфейс"
+
+#: .\azinapp\templates\mobileapp.html:426
+msgid "Device compatibility"
+msgstr "Мутобиқат бо дастгоҳҳо"
+
+#: .\azinapp\templates\mobileapp.html:427
+msgid "Bug fixing & refinement"
+msgstr "Ислоҳи хатогиҳо ва такмил"
+
+#: .\azinapp\templates\mobileapp.html:443
+msgid "Deployment & Support"
+msgstr "Ҷойгиркунӣ ва дастгирӣ"
+
+#: .\azinapp\templates\mobileapp.html:447
+msgid ""
+"We prepare the application for release and help with deployment, updates, "
+"and post-launch technical support."
+msgstr "We prepare the барнома for release and кӯмак with deployment, updates, and post-launch техникӣ дастгирӣ."
+
+#: .\azinapp\templates\mobileapp.html:451
+msgid "Release preparation"
+msgstr "Омодагӣ ба нашр"
+
+#: .\azinapp\templates\mobileapp.html:452
+msgid "Store deployment support"
+msgstr "Дастгирии ҷойгиркунӣ дар мағозаҳо"
+
+#: .\azinapp\templates\mobileapp.html:453
+msgid "Post-launch fixes"
+msgstr "Ислоҳот пас аз оғоз"
+
+#: .\azinapp\templates\mobileapp.html:454
+msgid "Ongoing maintenance"
+msgstr "Нигоҳдории доимӣ"
+
+#: .\azinapp\templates\mobileapp.html:470
+msgid "Mobile app technical features"
+msgstr "Хусусиятҳои техникии барномаи мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:477
+msgid "Technical Approach"
+msgstr "Равиши техникӣ"
+
+#: .\azinapp\templates\mobileapp.html:481
+msgid "Built for Reliability and Growth"
+msgstr "Барои эътимоднокӣ ва рушд сохта шудааст"
+
+#: .\azinapp\templates\mobileapp.html:485
+msgid ""
+"We focus on maintainable architecture, reliable integrations, performance, "
+"and a smooth user experience."
+msgstr "We focus on нигоҳдошташаванда architecture, боэътимод integrations, самаранокӣ, and a smooth корбар таҷриба."
+
+#: .\azinapp\templates\mobileapp.html:503
+msgid "Secure Authentication"
+msgstr "Аутентификатсияи бехатар"
+
+#: .\azinapp\templates\mobileapp.html:507
+msgid ""
+"We implement appropriate authentication, authorization, and data protection "
+"practices based on your application's requirements."
+msgstr "We implement appropriate authentication, authorization, and маълумот protection practices бар асоси on your барнома's талабот."
+
+#: .\azinapp\templates\mobileapp.html:525
+msgid "Scalable Architecture"
+msgstr "Меъмории миқёспазир"
+
+#: .\azinapp\templates\mobileapp.html:529
+msgid ""
+"We structure applications and backend services so the product can evolve as "
+"your users, features, and business requirements grow."
+msgstr "We structure барномаҳо and backend хизматрасониҳо so the маҳсулот метавонад evolve as your корбарон, features, and тиҷорат талабот grow."
+
+#: .\azinapp\templates\mobileapp.html:547
+msgid "Performance Optimization"
+msgstr "Оптимизатсияи самаранокӣ"
+
+#: .\azinapp\templates\mobileapp.html:551
+msgid ""
+"We pay attention to application performance, API communication, resource "
+"usage, and efficient user flows."
+msgstr "We pay attention to барнома самаранокӣ, API муошират, resource usage, and efficient корбар flows."
+
+#: .\azinapp\templates\mobileapp.html:569
+msgid "API & Third-Party Integration"
+msgstr "Интегратсияи API ва хизматрасониҳои тарафи сеюм"
+
+#: .\azinapp\templates\mobileapp.html:573
+msgid ""
+"Connect your mobile application with existing business systems, APIs, "
+"payment services, and other required platforms."
+msgstr "Connect your мобилӣ барнома with existing тиҷорат systems, APIs, пардохт хизматрасониҳо, and дигар лозим platforms."
+
+#: .\azinapp\templates\mobileapp.html:591
+msgid "Mobile development technologies"
+msgstr "Технологияҳои таҳияи мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:602
+msgid "Technology Choices Based on Your Project"
+msgstr "Интихоби технологияҳо бар асоси лоиҳаи шумо"
+
+#: .\azinapp\templates\mobileapp.html:606
+msgid ""
+"We select the appropriate mobile technology and architecture according to "
+"your project requirements, target platforms, budget, and long-term goals."
+msgstr "We select the appropriate мобилӣ технология and architecture according to your лоиҳа талабот, target platforms, budget, and дарозмуддат ҳадафҳо."
+
+#: .\azinapp\templates\mobileapp.html:622
+msgid "iOS Applications"
+msgstr "Барномаҳои iOS"
+
+#: .\azinapp\templates\mobileapp.html:633
+msgid ""
+"Solutions designed for Apple's mobile ecosystem, based on the requirements "
+"of your application."
+msgstr "ҳалҳо Тарҳрезишуда for Apple's мобилӣ ecosystem, бар асоси on the талабот of your барнома."
+
+#: .\azinapp\templates\mobileapp.html:647
+msgid "Android Applications"
+msgstr "Барномаҳои Android"
+
+#: .\azinapp\templates\mobileapp.html:658
+msgid ""
+"Android applications designed for modern devices and business use cases."
+msgstr "Android барномаҳо Тарҳрезишуда for муосир devices and тиҷорат истифода cases."
+
+#: .\azinapp\templates\mobileapp.html:672
+msgid "Cross-Platform Solutions"
+msgstr "Ҳалли кросс-платформавӣ"
+
+#: .\azinapp\templates\mobileapp.html:683
+msgid ""
+"Cross-platform approaches can reduce development effort when a shared "
+"codebase is appropriate for the project."
+msgstr "Cross-platform approaches метавонад reduce таҳия effort вақте ки a shared codebase аст appropriate for the лоиҳа."
+
+#: .\azinapp\templates\mobileapp.html:699
+msgid "Mobile app development benefits"
+msgstr "Бартариҳои таҳияи барномаҳои мобилӣ"
+
+#: .\azinapp\templates\mobileapp.html:706
+msgid "Project Delivery"
+msgstr "Супоридани лоиҳа"
+
+#: .\azinapp\templates\mobileapp.html:710
+msgid "What You Can Expect From Our Team"
+msgstr "Аз дастаи мо чӣ интизор шуда метавонед"
+
+#: .\azinapp\templates\mobileapp.html:714
+msgid ""
+"A professional development experience focused on communication, quality, and "
+"long-term maintainability."
+msgstr "A касбӣ таҳия таҷриба мутамарказ on муошират, сифат, and дарозмуддат maintainability."
+
+#: .\azinapp\templates\mobileapp.html:735
+msgid ""
+"You receive clear project updates, defined milestones, and direct "
+"communication throughout the development process."
+msgstr "You receive равшан лоиҳа updates, defined milestones, and мустақим муошират throughout the таҳия раванд."
+
+#: .\azinapp\templates\mobileapp.html:752
+msgid "Maintainable Code"
+msgstr "Коди нигоҳдошташаванда"
+
+#: .\azinapp\templates\mobileapp.html:756
+msgid ""
+"We aim for clean, organized, and maintainable implementation that can be "
+"extended as your product evolves."
+msgstr "We aim for clean, organized, and нигоҳдошташаванда implementation that метавонад be extended as your маҳсулот evolves."
+
+#: .\azinapp\templates\mobileapp.html:773
+msgid "Backend Integration"
+msgstr "Интегратсияи backend"
+
+#: .\azinapp\templates\mobileapp.html:777
+msgid ""
+"Mobile applications can be connected to existing or custom backend systems "
+"through secure APIs and appropriate data architecture."
+msgstr "мобилӣ барномаҳо метавонад be connected to existing or custom backend systems тавассути secure APIs and appropriate маълумот architecture."
+
+#: .\azinapp\templates\mobileapp.html:794
+msgid "Post-Launch Support"
+msgstr "Дастгирии пас аз оғоз"
+
+#: .\azinapp\templates\mobileapp.html:798
+msgid ""
+"After launch, we can provide maintenance, bug fixes, technical improvements, "
+"and updates based on your support requirements."
+msgstr "пас аз launch, we метавонад пешниҳод кардан maintenance, bug fixes, техникӣ improvements, and updates бар асоси on your дастгирӣ талабот."
+
+#: .\azinapp\templates\mobileapp.html:816
+msgid "Start a mobile app project"
+msgstr "Лоиҳаи барномаи мобилиро оғоз кунед"
+
+#: .\azinapp\templates\mobileapp.html:825
+msgid "Have a Mobile App Idea?"
+msgstr "Ғояи барномаи мобилӣ доред?"
+
+#: .\azinapp\templates\mobileapp.html:829
+msgid ""
+"Tell us what you want to build. We will review your requirements, discuss "
+"the best approach, and provide a clear project scope and quotation."
+msgstr "Tell us чӣ you want to сохтан. We хоҳад review your талабот, discuss the best approach, and пешниҳод кардан a равшан лоиҳа scope and quotation."
+
+#: .\azinapp\templates\navbar.html:7
+msgid "Main navigation"
+msgstr "Навигатсияи асосӣ"
+
+#: .\azinapp\templates\navbar.html:27 .\azinapp\templates\navbar.html:208
+msgid "AZIN MEDIA"
+msgstr "AZIN MEDIA"
+
+#: .\azinapp\templates\navbar.html:59 .\azinapp\templates\navbar.html:220
+msgid "Mobile App Development"
+msgstr "Таҳияи барномаҳои мобилӣ"
+
+#: .\azinapp\templates\navbar.html:67 .\azinapp\templates\navbar.html:224
+#: .\azinapp\templates\shop.html:20
+msgid "AZIN SHOP"
+msgstr "AZIN SHOP"
+
+#: .\azinapp\templates\navbar.html:74 .\azinapp\templates\navbar.html:225
+msgid "AZIN DECORE"
+msgstr "AZIN DECORE"
+
+#: .\azinapp\templates\navbar.html:81 .\azinapp\templates\navbar.html:226
+msgid "About"
+msgstr "Дар бораи"
+
+#: .\azinapp\templates\navbar.html:99
+msgid "Change language"
+msgstr "Тағйири забон"
+
+#: .\azinapp\templates\navbar.html:139
+msgid "User menu"
+msgstr "Менюи корбар"
+
+#: .\azinapp\templates\navbar.html:149 .\azinapp\templates\navbar.html:259
+msgid "My Profile"
+msgstr "Профили ман"
+
+#: .\azinapp\templates\navbar.html:153
+msgid "Edit Info"
+msgstr "Таҳрири маълумот"
+
+#: .\azinapp\templates\navbar.html:157 .\azinapp\templates\update_info.html:42
+#: .\azinapp\templates\update_password.html:5
+#: .\azinapp\templates\update_password.html:15
+#: .\azinapp\templates\update_password.html:41
+#: .\azinapp\templates\update_user.html:47
+msgid "Change Password"
+msgstr "Тағйири парол"
+
+#: .\azinapp\templates\navbar.html:163
+msgid "Admin Panel"
+msgstr "Панели маъмурӣ"
+
+#: .\azinapp\templates\navbar.html:169 .\azinapp\templates\navbar.html:262
+msgid "Logout"
+msgstr "Баромадан"
+
+#: .\azinapp\templates\navbar.html:184
+msgid "Toggle menu"
+msgstr "Тағйири меню"
+
+#: .\azinapp\templates\navbar.html:194
+msgid "Mobile navigation"
+msgstr "Навигатсияи мобилӣ"
+
+#: .\azinapp\templates\navbar.html:197
+msgid "Close menu"
+msgstr "Пӯшидани меню"
+
+#: .\azinapp\templates\navbar.html:234
+msgid "Language"
+msgstr "Забон"
+
+#: .\azinapp\templates\shop.html:50
+msgid ""
+"Discover a selected range of products for businesses, offices, and everyday "
+"use. From electronics and office supplies to home essentials and tools, AZIN "
+"SHOP helps you find the products you need through a simple and reliable "
+"inquiry process."
+msgstr "Discover a интихобшуда ҳудуд of маҳсулот for соҳибкорон, offices, and everyday истифода. From electronics and office supplies to home essentials and tools, AZIN SHOP helps you find the маҳсулот you лозим тавассути a оддӣ and боэътимод inquiry раванд."
+
+#: .\azinapp\templates\shop.html:70
+msgid "Request a Product"
+msgstr "Маҳсулотро дархост кунед"
+
+#: .\azinapp\templates\shop.html:154
+msgid "Explore Our Product Categories"
+msgstr "Категорияҳои маҳсулоти моро бинед"
+
+#: .\azinapp\templates\shop.html:158
+msgid ""
+"Browse our main product categories or contact us if you are looking for a "
+"specific item."
+msgstr "Browse our main маҳсулот категорияҳо or contact us if you ҳастанд looking for a мушаххас item."
+
+#: .\azinapp\templates\shop.html:180
+msgid ""
+"Computers, accessories, devices, and selected electronic products for "
+"business and personal use."
+msgstr "Computers, accessories, devices, and интихобшуда electronic маҳсулот for тиҷорат and personal истифода."
+
+#: .\azinapp\templates\shop.html:200
+msgid ""
+"Practical products and everyday essentials for homes, workplaces, and modern "
+"living."
+msgstr "амалӣ маҳсулот and everyday essentials for homes, workplaces, and муосир living."
+
+#: .\azinapp\templates\shop.html:220
+msgid ""
+"Stationery, office equipment, accessories, and essential products for "
+"productive workplaces."
+msgstr "Stationery, office equipment, accessories, and essential маҳсулот for productive workplaces."
+
+#: .\azinapp\templates\shop.html:240
+msgid ""
+"Tools, equipment, and practical products for professional, technical, and "
+"business use."
+msgstr "Tools, equipment, and амалӣ маҳсулот for касбӣ, техникӣ, and тиҷорат истифода."
+
+#: .\azinapp\templates\shop.html:274
+msgid ""
+"Explore selected products available through AZIN SHOP. Contact us for "
+"availability, pricing, and order details."
+msgstr "Explore интихобшуда маҳсулот дастрас тавассути AZIN SHOP. Contact us for availability, pricing, and фармоиш тафсилот."
+
+#: .\azinapp\templates\shop.html:334 .\azinapp\templates\shop.html:378
+#: .\azinapp\templates\shop.html:418 .\azinapp\templates\shop.html:458
+msgid "Request Details"
+msgstr "Дархости маълумот"
+
+#: .\azinapp\templates\shop.html:368
+msgid "Electronics & Accessories"
+msgstr "Электроника ва лавозимот"
+
+#: .\azinapp\templates\shop.html:372
+msgid ""
+"Selected electronic devices, computer accessories, and practical technology "
+"products."
+msgstr "интихобшуда electronic devices, computer accessories, and амалӣ технология маҳсулот."
+
+#: .\azinapp\templates\shop.html:412
+msgid ""
+"Practical tools and equipment for professional, technical, and business "
+"requirements."
+msgstr "амалӣ tools and equipment for касбӣ, техникӣ, and тиҷорат талабот."
+
+#: .\azinapp\templates\shop.html:452
+msgid ""
+"Office essentials, stationery, accessories, and equipment for professional "
+"workplaces."
+msgstr "Office essentials, stationery, accessories, and equipment for касбӣ workplaces."
+
+#: .\azinapp\templates\shop.html:498
+msgid "Product sourcing"
+msgstr "Ҷустуҷӯ ва таъмини маҳсулот"
+
+#: .\azinapp\templates\shop.html:513
+msgid ""
+"Tell us what you need and our team can review your request and provide "
+"availability and pricing information."
+msgstr "Tell us чӣ you лозим and our даста метавонад review your request and пешниҳод кардан availability and pricing маълумот."
+
+#: .\azinapp\templates\shop.html:529
+msgid "Tell Us What You Need"
+msgstr "Ба мо бигӯед, ки чӣ лозим аст"
+
+#: .\azinapp\templates\shop.html:533
+msgid ""
+"Send us the product name, specifications, quantity, or any requirements you "
+"already have."
+msgstr "Send us the маҳсулот name, specifications, quantity, or any талабот you already доранд."
+
+#: .\azinapp\templates\shop.html:547
+msgid "Request Review"
+msgstr "Баррасии дархост"
+
+#: .\azinapp\templates\shop.html:551
+msgid ""
+"We review your request and check the available options based on your "
+"requirements."
+msgstr "We review your request and check the дастрас options бар асоси on your талабот."
+
+#: .\azinapp\templates\shop.html:565
+msgid "Receive a Quote"
+msgstr "Нархномаро гиред"
+
+#: .\azinapp\templates\shop.html:569
+msgid ""
+"You receive product details, availability, and pricing information before "
+"placing an order."
+msgstr "You receive маҳсулот тафсилот, availability, and pricing маълумот пеш аз placing an фармоиш."
+
+#: .\azinapp\templates\shop.html:587
+msgid ""
+"Once the details are confirmed, we coordinate the next steps for your order."
+msgstr "Once the тафсилот ҳастанд confirmed, we coordinate the next steps for your фармоиш."
+
+#: .\azinapp\templates\shop.html:617
+msgid "A Simple Way to Source Products"
+msgstr "Роҳи одии таъмини маҳсулот"
+
+#: .\azinapp\templates\shop.html:621
+msgid ""
+"We focus on clear communication, practical product selection, and a "
+"straightforward inquiry process."
+msgstr "We focus on равшан муошират, амалӣ маҳсулот интихоб, and a straightforward inquiry раванд."
+
+#: .\azinapp\templates\shop.html:641
+msgid ""
+"We focus on useful products across business, office, home, and technical "
+"categories."
+msgstr "We focus on useful маҳсулот дар саросари тиҷорат, office, home, and техникӣ категорияҳо."
+
+#: .\azinapp\templates\shop.html:655
+msgid "Clear Pricing"
+msgstr "Нархгузории равшан"
+
+#: .\azinapp\templates\shop.html:659
+msgid ""
+"Product availability and pricing are confirmed based on your specific "
+"request and order requirements."
+msgstr "маҳсулот availability and pricing ҳастанд confirmed бар асоси on your мушаххас request and фармоиш талабот."
+
+#: .\azinapp\templates\shop.html:677
+msgid ""
+"Businesses and organizations can contact us for bulk orders and larger "
+"product requirements."
+msgstr "соҳибкорон and ташкилотҳо метавонад contact us for bulk фармоишҳо and larger маҳсулот талабот."
+
+#: .\azinapp\templates\shop.html:691
+msgid "Direct Support"
+msgstr "Дастгирии мустақим"
+
+#: .\azinapp\templates\shop.html:695
+msgid ""
+"Contact our team directly for product questions, specifications, "
+"availability, and order inquiries."
+msgstr "Contact our даста directly for маҳсулот questions, specifications, availability, and фармоиш inquiries."
+
+#: .\azinapp\templates\shop.html:714
+msgid "Business product inquiry"
+msgstr "Дархости маҳсулоти тиҷоратӣ"
+
+#: .\azinapp\templates\shop.html:723
+msgid "Need Products for Your Business?"
+msgstr "Барои тиҷорати худ маҳсулот лозим аст?"
+
+#: .\azinapp\templates\shop.html:727
+msgid ""
+"Tell us what you are looking for. We can help you review product options, "
+"availability, quantities, and pricing for your business or bulk order."
+msgstr "Tell us чӣ you ҳастанд looking for. We метавонад кӯмак you review маҳсулот options, availability, quantities, and pricing for your тиҷорат or bulk фармоиш."
+
+#: .\azinapp\templates\shop.html:738
+msgid "Send a Product Request"
+msgstr "Дархости маҳсулот фиристед"
+
+#: .\azinapp\templates\shop.html:749 .\azinapp\templates\website.html:1800
+msgid "Contact Us"
+msgstr "Бо мо тамос гиред"
+
+#: .\azinapp\templates\signup.html:20 .\azinapp\templates\signup.html:124
+msgid "Create Account"
+msgstr "Эҷоди ҳисоб"
+
+#: .\azinapp\templates\signup.html:21
+msgid "Join AZIN GROUP and manage your projects."
+msgstr "Ба AZIN GROUP ҳамроҳ шавед ва лоиҳаҳои худро идора кунед."
+
+#: .\azinapp\templates\signup.html:105
+msgid "At least 8 characters with letters and numbers."
+msgstr "Ҳадди ақал 8 аломат бо ҳарфҳо ва рақамҳо."
+
+#: .\azinapp\templates\signup.html:130
+msgid "Already have an account?"
+msgstr "Аллакай ҳисоб доред?"
+
+#: .\azinapp\templates\smm.html:33
+msgid "Management"
+msgstr "Идоракунӣ"
+
+#: .\azinapp\templates\smm.html:37
+msgid ""
+"We help businesses manage their social media presence with a practical "
+"combination of content planning, visual production, publishing, community "
+"management, and performance review. The approach is based on your business "
+"goals, audience, platforms, and available resources."
+msgstr "We кӯмак соҳибкорон идора кардан their иҷтимоӣ медиа presence with a амалӣ combination of мундариҷа банақшагирӣ, визуалӣ истеҳсол, publishing, community идоракунӣ, and самаранокӣ review. The approach аст бар асоси on your тиҷорат ҳадафҳо, аудитория, platforms, and дастрас resources."
+
+#: .\azinapp\templates\smm.html:44
+msgid "Discuss Your Social Media Needs"
+msgstr "Ниёзҳои худро дар шабакаҳои иҷтимоӣ муҳокима кунед"
+
+#: .\azinapp\templates\smm.html:49
+msgid "View Our Work"
+msgstr "Корҳои моро бинед"
+
+#: .\azinapp\templates\smm.html:83
+msgid "Performance Review"
+msgstr "Арзёбии самаранокӣ"
+
+#: .\azinapp\templates\smm.html:99
+msgid "Social media services"
+msgstr "иҷтимоӣ медиа хизматрасониҳо"
+
+#: .\azinapp\templates\smm.html:109
+msgid "Social Media Services"
+msgstr "Хизматрасониҳои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:113
+msgid ""
+"A practical social media service covering planning, content, publishing, "
+"audience interaction, campaigns, and performance review."
+msgstr "A амалӣ иҷтимоӣ медиа хизматрасонӣ covering банақшагирӣ, мундариҷа, publishing, аудитория interaction, маъракаҳо, and самаранокӣ review."
+
+#: .\azinapp\templates\smm.html:129
+msgid "Social Media Account Management"
+msgstr "Идоракунии ҳисоби шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:133
+msgid ""
+"Ongoing management of your selected social media channels, with a clear "
+"publishing schedule, content coordination, audience interaction, and regular "
+"review of account performance."
+msgstr "доимӣ идоракунӣ of your интихобшуда иҷтимоӣ медиа channels, with a равшан publishing schedule, мундариҷа coordination, аудитория interaction, and regular review of account самаранокӣ."
+
+#: .\azinapp\templates\smm.html:137
+msgid "Content scheduling and publishing"
+msgstr "Банақшагирӣ ва нашри мундариҷа"
+
+#: .\azinapp\templates\smm.html:138
+msgid "Community and comment management"
+msgstr "Идоракунии ҷомеа ва шарҳҳо"
+
+#: .\azinapp\templates\smm.html:139
+msgid "Account and content coordination"
+msgstr "Ҳамоҳангсозии ҳисоб ва мундариҷа"
+
+#: .\azinapp\templates\smm.html:140
+msgid "Regular performance reporting"
+msgstr "Ҳисоботи мунтазами самаранокӣ"
+
+#: .\azinapp\templates\smm.html:154
+msgid "Social Media Content Production"
+msgstr "Истеҳсоли мундариҷа барои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:158
+msgid ""
+"Visual content prepared for the platforms and formats your audience uses, "
+"including short videos, reels, photography, graphics, and branded content."
+msgstr "визуалӣ мундариҷа prepared for the platforms and formats your аудитория uses, аз ҷумла short видеоҳо, reels, аксбардорӣ, graphics, and branded мундариҷа."
+
+#: .\azinapp\templates\smm.html:162
+msgid "Short-form video and reel production"
+msgstr "Истеҳсоли видеоҳои кӯтоҳ ва рилҳо"
+
+#: .\azinapp\templates\smm.html:163
+msgid "Photography and visual content"
+msgstr "Аксбардорӣ ва мундариҷаи визуалӣ"
+
+#: .\azinapp\templates\smm.html:164
+msgid "Social media graphic design"
+msgstr "Тарроҳии графикӣ барои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:165
+msgid "Content calendar planning"
+msgstr "Банақшагирии тақвими мундариҷа"
+
+#: .\azinapp\templates\smm.html:179
+msgid "Advertising Clips & Reels"
+msgstr "Клипҳо ва рилҳои таблиғотӣ"
+
+#: .\azinapp\templates\smm.html:183
+msgid ""
+"Short-form promotional videos created for products, services, campaigns, and "
+"social media advertising. Content is planned around the message, audience, "
+"platform, and campaign objective."
+msgstr "Short-form promotional видеоҳо сохта шуд for маҳсулот, хизматрасониҳо, маъракаҳо, and иҷтимоӣ медиа advertising. мундариҷа аст planned бар асоси the message, аудитория, platform, and маърака ҳадаф."
+
+#: .\azinapp\templates\smm.html:187
+msgid "Short-form promotional videos"
+msgstr "Видеоҳои кӯтоҳи таблиғотӣ"
+
+#: .\azinapp\templates\smm.html:188
+msgid "Instagram Reels and similar formats"
+msgstr "Instagram Reels ва форматҳои монанд"
+
+#: .\azinapp\templates\smm.html:189
+msgid "Product and service promotional content"
+msgstr "Мундариҷаи таблиғотии маҳсулот ва хизматрасониҳо"
+
+#: .\azinapp\templates\smm.html:190
+msgid "Creative direction for social campaigns"
+msgstr "Роҳбарии эҷодӣ барои маъракаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:204
+msgid "Social Media Strategy & Analytics"
+msgstr "Стратегия ва таҳлили шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:208
+msgid ""
+"A structured approach to deciding what to publish, which platforms to "
+"prioritize, what content to test, and how to evaluate results using relevant "
+"account and campaign data."
+msgstr "A structured approach to deciding чӣ to publish, ки platforms to prioritize, чӣ мундариҷа to test, and чӣ гуна to evaluate results истифодаи relevant account and маърака маълумот."
+
+#: .\azinapp\templates\smm.html:212
+msgid "Audience and competitor research"
+msgstr "Таҳқиқи аудитория ва рақибон"
+
+#: .\azinapp\templates\smm.html:213
+msgid "Content strategy and planning"
+msgstr "Стратегия ва банақшагирии мундариҷа"
+
+#: .\azinapp\templates\smm.html:214
+msgid "Performance tracking"
+msgstr "Назорати самаранокӣ"
+
+#: .\azinapp\templates\smm.html:215
+msgid "Content and campaign optimization"
+msgstr "Оптимизатсияи мундариҷа ва маъракаҳо"
+
+#: .\azinapp\templates\smm.html:229
+msgid "Influencer & Creator Campaigns"
+msgstr "Маъракаҳо бо инфлюенсерҳо ва эҷодкорон"
+
+#: .\azinapp\templates\smm.html:233
+msgid ""
+"Support for businesses that want to work with relevant creators or "
+"influencers as part of a broader social media campaign, from planning and "
+"coordination to content delivery and review."
+msgstr "дастгирӣ for соҳибкорон that want to work with relevant creators or influencers as part of a broader иҷтимоӣ медиа маърака, from банақшагирӣ and coordination to мундариҷа delivery and review."
+
+#: .\azinapp\templates\smm.html:237
+msgid "Creator and influencer research"
+msgstr "Таҳқиқи эҷодкорон ва инфлюенсерҳо"
+
+#: .\azinapp\templates\smm.html:238
+msgid "Campaign planning and coordination"
+msgstr "Банақшагирӣ ва ҳамоҳангсозии маърака"
+
+#: .\azinapp\templates\smm.html:239
+msgid "Content collaboration"
+msgstr "Ҳамкории мундариҷавӣ"
+
+#: .\azinapp\templates\smm.html:240
+msgid "Campaign performance review"
+msgstr "Арзёбии самаранокии маърака"
+
+#: .\azinapp\templates\smm.html:254
+msgid "Paid Social Advertising"
+msgstr "Таблиғоти пулакӣ дар шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:258
+msgid ""
+"Social advertising support for businesses that want to promote specific "
+"products, services, offers, or campaigns. Campaign setup and optimization "
+"are based on the available audience, budget, creative assets, and objectives."
+msgstr "иҷтимоӣ advertising дастгирӣ for соҳибкорон that want to promote мушаххас маҳсулот, хизматрасониҳо, offers, or маъракаҳо. маърака setup and optimization ҳастанд бар асоси on the дастрас аудитория, budget, эҷодӣ assets, and ҳадафҳо."
+
+#: .\azinapp\templates\smm.html:262
+msgid "Campaign setup and targeting"
+msgstr "Танзими маърака ва ҳадафгузорӣ"
+
+#: .\azinapp\templates\smm.html:263
+msgid "Ad creative coordination"
+msgstr "Ҳамоҳангсозии маводи эҷодии таблиғотӣ"
+
+#: .\azinapp\templates\smm.html:264
+msgid "Budget and campaign monitoring"
+msgstr "Назорати буҷет ва маърака"
+
+#: .\azinapp\templates\smm.html:265
+msgid "Performance reporting and optimization"
+msgstr "Ҳисобот ва оптимизатсияи самаранокӣ"
+
+#: .\azinapp\templates\smm.html:278
+msgid "Equipment and technology"
+msgstr "Таҷҳизот ва технология"
+
+#: .\azinapp\templates\smm.html:284
+msgid "Production"
+msgstr "Истеҳсол"
+
+#: .\azinapp\templates\smm.html:288
+msgid "Content Production & Post-Production"
+msgstr "Истеҳсоли мундариҷа ва пост-продакшн"
+
+#: .\azinapp\templates\smm.html:292
+msgid ""
+"Social media content is planned and produced according to the format, "
+"platform, message, and production requirements of each project."
+msgstr "иҷтимоӣ медиа мундариҷа аст planned and produced according to the format, platform, message, and истеҳсол талабот of ҳар лоиҳа."
+
+#: .\azinapp\templates\smm.html:307
+msgid "Photography & Video"
+msgstr "Аксбардорӣ ва видео"
+
+#: .\azinapp\templates\smm.html:311
+msgid "Product photography"
+msgstr "Аксбардории маҳсулот"
+
+#: .\azinapp\templates\smm.html:312
+msgid "Business and brand photography"
+msgstr "Аксбардории тиҷоратӣ ва бренд"
+
+#: .\azinapp\templates\smm.html:313
+msgid "Short-form video production"
+msgstr "Истеҳсоли видеоҳои кӯтоҳ"
+
+#: .\azinapp\templates\smm.html:326
+msgid "Lighting & Visual Setup"
+msgstr "Равшанӣ ва танзими визуалӣ"
+
+#: .\azinapp\templates\smm.html:330
+msgid "Lighting setup for video and photography"
+msgstr "Танзими равшанӣ барои видео ва аксбардорӣ"
+
+#: .\azinapp\templates\smm.html:331
+msgid "Controlled visual environments"
+msgstr "Муҳити визуалии назоратшаванда"
+
+#: .\azinapp\templates\smm.html:332
+msgid "Product and promotional setups"
+msgstr "Танзимоти маҳсулот ва таблиғот"
+
+#: .\azinapp\templates\smm.html:345
+msgid "Audio Production"
+msgstr "Истеҳсоли аудио"
+
+#: .\azinapp\templates\smm.html:349
+msgid "Voice and interview recording"
+msgstr "Сабти овоз ва мусоҳиба"
+
+#: .\azinapp\templates\smm.html:350
+msgid "Audio for short-form videos"
+msgstr "Аудио барои видеоҳои кӯтоҳ"
+
+#: .\azinapp\templates\smm.html:351
+msgid "Basic sound preparation and cleanup"
+msgstr "Омодасозӣ ва тозакунии асосии садо"
+
+#: .\azinapp\templates\smm.html:364
+msgid "Post-Production"
+msgstr "Пост-продакшн"
+
+#: .\azinapp\templates\smm.html:368
+msgid "Video editing"
+msgstr "Таҳрири видео"
+
+#: .\azinapp\templates\smm.html:369
+msgid "Motion and visual elements"
+msgstr "Унсурҳои ҳаракатӣ ва визуалӣ"
+
+#: .\azinapp\templates\smm.html:370
+msgid "Captions and platform-ready formats"
+msgstr "Субтитрҳо ва форматҳо барои платформаҳо"
+
+#: .\azinapp\templates\smm.html:383
+msgid "Social media portfolio"
+msgstr "Портфолиои шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:393
+msgid "Social Media & Content Portfolio"
+msgstr "Портфолиои шабакаҳои иҷтимоӣ ва мундариҷа"
+
+#: .\azinapp\templates\smm.html:397
+msgid ""
+"Examples of the social media content formats and campaign work we can "
+"support."
+msgstr "Examples of the иҷтимоӣ медиа мундариҷа formats and маърака work we метавонад дастгирӣ."
+
+#: .\azinapp\templates\smm.html:411
+msgid "Reels"
+msgstr "Рилҳо"
+
+#: .\azinapp\templates\smm.html:415
+msgid "Ad Clips"
+msgstr "Клипҳои таблиғотӣ"
+
+#: .\azinapp\templates\smm.html:419 .\azinapp\templates\smm.html:640
+msgid "Content"
+msgstr "Мундариҷа"
+
+#: .\azinapp\templates\smm.html:423
+msgid "Campaigns"
+msgstr "Маъракаҳо"
+
+#: .\azinapp\templates\smm.html:550
+msgid "Reel"
+msgstr "Рил"
+
+#: .\azinapp\templates\smm.html:558
+msgid "Short-Form Brand Reel"
+msgstr "Рили кӯтоҳи бренд"
+
+#: .\azinapp\templates\smm.html:562
+msgid ""
+"Short-form video content designed to introduce a product, service, campaign, "
+"or brand message in a social-first format."
+msgstr "Short-form видео мундариҷа Тарҳрезишуда to introduce a маҳсулот, хизматрасонӣ, маърака, or бренд message in a social-first format."
+
+#: .\azinapp\templates\smm.html:568
+msgid "Social Video"
+msgstr "Видеои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:595
+msgid "Ad Clip"
+msgstr "Клипи таблиғотӣ"
+
+#: .\azinapp\templates\smm.html:603
+msgid "Product & Service Ad Content"
+msgstr "Мундариҷаи таблиғотии маҳсулот ва хизматрасонӣ"
+
+#: .\azinapp\templates\smm.html:607
+msgid ""
+"Promotional short-form video created around a specific product, service, "
+"offer, or campaign objective."
+msgstr "Promotional short-form видео сохта шуд бар асоси a мушаххас маҳсулот, хизматрасонӣ, offer, or маърака ҳадаф."
+
+#: .\azinapp\templates\smm.html:613
+msgid "Paid Social"
+msgstr "Таблиғоти пулакӣ дар шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:648
+msgid "Branded Content Series"
+msgstr "Силсилаи мундариҷаи брендӣ"
+
+#: .\azinapp\templates\smm.html:652
+msgid ""
+"A coordinated set of social media visuals created to maintain a consistent "
+"message and visual direction across multiple posts."
+msgstr "A coordinated set of иҷтимоӣ медиа visuals сохта шуд to maintain a consistent message and визуалӣ direction дар саросари multiple posts."
+
+#: .\azinapp\templates\smm.html:658
+msgid "Content Series"
+msgstr "Силсилаи мундариҷа"
+
+#: .\azinapp\templates\smm.html:685
+msgid "Campaign"
+msgstr "Маърака"
+
+#: .\azinapp\templates\smm.html:693
+msgid "Social Media Campaign"
+msgstr "Маъракаи шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\smm.html:697
+msgid ""
+"Campaign content planned around a defined message, audience, publishing "
+"schedule, and set of social media formats."
+msgstr "маърака мундариҷа planned бар асоси a defined message, аудитория, publishing schedule, and set of иҷтимоӣ медиа formats."
+
+#: .\azinapp\templates\smm.html:703
+msgid "Campaign Planning"
+msgstr "Банақшагирии маърака"
+
+#: .\azinapp\templates\smm.html:736
+msgid "Need a More Consistent Social Media Presence?"
+msgstr "Ҳузури пайвастатар дар шабакаҳои иҷтимоӣ мехоҳед?"
+
+#: .\azinapp\templates\smm.html:740
+msgid ""
+"Tell us about your business, your current social media channels, and what "
+"you want to achieve. We can discuss the right combination of content, "
+"management, campaigns, and reporting for your needs."
+msgstr "Tell us about your тиҷорат, your current иҷтимоӣ медиа channels, and чӣ you want to achieve. We метавонад discuss the мувофиқ combination of мундариҷа, идоракунӣ, маъракаҳо, and ҳисоботдиҳӣ for your ниёзҳо."
+
+#: .\azinapp\templates\smm.html:747
+msgid "Discuss Your Social Media Strategy"
+msgstr "Стратегияи шабакаҳои иҷтимоии худро муҳокима кунед"
+
+#: .\azinapp\templates\update_info.html:5
+#: .\azinapp\templates\update_info.html:16
+#: .\azinapp\templates\update_user.html:5
+#: .\azinapp\templates\update_user.html:16
+msgid "Edit Profile"
+msgstr "Таҳрири профил"
+
+#: .\azinapp\templates\update_info.html:11
+#: .\azinapp\templates\update_user.html:11
+msgid "Edit profile"
+msgstr "Таҳрири профил"
+
+#: .\azinapp\templates\update_info.html:18
+msgid "Manage your personal information and contact details."
+msgstr "Маълумоти шахсӣ ва маълумоти тамоси худро идора кунед."
+
+#: .\azinapp\templates\update_info.html:37
+#: .\azinapp\templates\update_info.html:53
+#: .\azinapp\templates\update_password.html:36
+#: .\azinapp\templates\update_user.html:42
+msgid "Personal Information"
+msgstr "Маълумоти шахсӣ"
+
+#: .\azinapp\templates\update_info.html:55
+msgid "Update your identification and contact details."
+msgstr "Маълумоти шахсият ва тамоси худро навсозӣ кунед."
+
+#: .\azinapp\templates\update_info.html:83
+#: .\azinapp\templates\update_password.html:126
+#: .\azinapp\templates\update_user.html:88
+msgid "Save Changes"
+msgstr "Захира кардани тағйирот"
+
+#: .\azinapp\templates\update_info.html:86
+#: .\azinapp\templates\update_user.html:91
+msgid "Cancel"
+msgstr "Бекор кардан"
+
+#: .\azinapp\templates\update_password.html:11
+msgid "Change password"
+msgstr "Тағйири парол"
+
+#: .\azinapp\templates\update_password.html:17
+msgid "Update your password to keep your account secure."
+msgstr "Пароли худро навсозӣ кунед, то ҳисоби шумо бехатар бошад."
+
+#: .\azinapp\templates\update_password.html:52
+msgid "Update Password"
+msgstr "Навсозии парол"
+
+#: .\azinapp\templates\update_password.html:54
+msgid "Enter your current password and choose a new one."
+msgstr "Пароли ҷории худро ворид карда, пароли нав интихоб кунед."
+
+#: .\azinapp\templates\update_password.html:63
+msgid "Current Password"
+msgstr "Пароли ҷорӣ"
+
+#: .\azinapp\templates\update_password.html:94
+msgid "Password Requirements:"
+msgstr "Талаботи парол:"
+
+#: .\azinapp\templates\update_password.html:97
+msgid "At least 8 characters"
+msgstr "Ҳадди ақал 8 аломат"
+
+#: .\azinapp\templates\update_password.html:100
+msgid "Uppercase and lowercase letters"
+msgstr "Ҳарфҳои калон ва хурд"
+
+#: .\azinapp\templates\update_password.html:103
+msgid "Numbers and special characters"
+msgstr "Рақамҳо ва аломатҳои махсус"
+
+#: .\azinapp\templates\update_password.html:129
+msgid "Back to Profile"
+msgstr "Бозгашт ба профил"
+
+#: .\azinapp\templates\update_user.html:18
+msgid "Update your account information."
+msgstr "Маълумоти ҳисоби худро навсозӣ кунед."
+
+#: .\azinapp\templates\update_user.html:37
+msgid "Profile"
+msgstr "Профил"
+
+#: .\azinapp\templates\update_user.html:58
+msgid "Account Profile"
+msgstr "Профили ҳисоб"
+
+#: .\azinapp\templates\update_user.html:60
+msgid "Update your name, email, and username."
+msgstr "Ном, почтаи электронӣ ва номи корбарии худро навсозӣ кунед."
+
+#: .\azinapp\templates\website.html:24
+msgid "Web Development Services"
+msgstr "Хизматрасониҳои таҳияи веб"
+
+#: .\azinapp\templates\website.html:72
+msgid ""
+"We design and develop modern, responsive, and reliable websites and web "
+"applications for businesses, organizations, and growing brands. From "
+"professional corporate websites to custom Django-powered business systems, "
+"we build solutions around your goals, workflow, and budget."
+msgstr "We тарроҳӣ and таҳия муосир, responsive, and боэътимод вебсайтҳо and web барномаҳо for соҳибкорон, ташкилотҳо, and growing brands. From касбӣ corporate вебсайтҳо to custom Django-powered тиҷорат systems, we сохтан ҳалҳо бар асоси your ҳадафҳо, workflow, and budget."
+
+#: .\azinapp\templates\website.html:116
+msgid "View Packages"
+msgstr "Дидани бастаҳо"
+
+#: .\azinapp\templates\website.html:145
+msgid "Backend Development"
+msgstr "Таҳияи backend"
+
+#: .\azinapp\templates\website.html:158
+msgid "Reliable Database Solutions"
+msgstr "Ҳалли боэътимоди пойгоҳи додаҳо"
+
+#: .\azinapp\templates\website.html:200
+msgid "Responsive Web Experience"
+msgstr "Таҷрибаи мутобиқшавандаи веб"
+
+#: .\azinapp\templates\website.html:225
+msgid "Tablet"
+msgstr "Планшет"
+
+#: .\azinapp\templates\website.html:250
+msgid "Mobile"
+msgstr "Мобилӣ"
+
+#: .\azinapp\templates\website.html:278
+msgid "Types of websites and applications"
+msgstr "Навъҳои вебсайтҳо ва барномаҳо"
+
+#: .\azinapp\templates\website.html:289
+msgid "Websites & Web Applications"
+msgstr "Вебсайтҳо ва барномаҳои веб"
+
+#: .\azinapp\templates\website.html:293
+msgid ""
+"From professional business websites to custom web applications, we build "
+"practical digital solutions designed around your requirements."
+msgstr "From касбӣ тиҷорат вебсайтҳо to custom web барномаҳо, we сохтан амалӣ рақамӣ ҳалҳо Тарҳрезишуда бар асоси your талабот."
+
+#: .\azinapp\templates\website.html:311
+msgid "Corporate Websites"
+msgstr "Вебсайтҳои корпоративӣ"
+
+#: .\azinapp\templates\website.html:315
+msgid ""
+"Professional websites that present your company, services, team, projects, "
+"and brand clearly to your customers."
+msgstr "касбӣ вебсайтҳо that present your ширкат, хизматрасониҳо, даста, лоиҳаҳо, and бренд clearly to your мизоҷон."
+
+#: .\azinapp\templates\website.html:320 .\azinapp\templates\website.html:615
+msgid "Responsive design"
+msgstr "Тарроҳии мутобиқшаванда"
+
+#: .\azinapp\templates\website.html:322
+msgid "Company & service pages"
+msgstr "Саҳифаҳои ширкат ва хизматрасонӣ"
+
+#: .\azinapp\templates\website.html:324
+msgid "Contact & inquiry forms"
+msgstr "Шаклҳои тамос ва дархост"
+
+#: .\azinapp\templates\website.html:326 .\azinapp\templates\website.html:486
+#: .\azinapp\templates\website.html:623
+msgid "Content management"
+msgstr "Идоракунии мундариҷа"
+
+#: .\azinapp\templates\website.html:332 .\azinapp\templates\website.html:372
+#: .\azinapp\templates\website.html:412 .\azinapp\templates\website.html:452
+#: .\azinapp\templates\website.html:492
+msgid "Starting at"
+msgstr "Аз"
+
+#: .\azinapp\templates\website.html:351
+msgid "E-Commerce Stores"
+msgstr "Дӯконҳои тиҷорати электронӣ"
+
+#: .\azinapp\templates\website.html:355
+msgid ""
+"Online stores with product management, customer accounts, shopping carts, "
+"orders, and payment integrations."
+msgstr "Online stores with маҳсулот идоракунӣ, customer accounts, shopping carts, фармоишҳо, and пардохт integrations."
+
+#: .\azinapp\templates\website.html:360
+msgid "Product catalog & categories"
+msgstr "Каталог ва категорияҳои маҳсулот"
+
+#: .\azinapp\templates\website.html:362 .\azinapp\templates\website.html:767
+msgid "Shopping cart & checkout"
+msgstr "Сабади харид ва пардохт"
+
+#: .\azinapp\templates\website.html:391
+msgid "Business Dashboards"
+msgstr "Панелҳои идоракунии тиҷорат"
+
+#: .\azinapp\templates\website.html:395
+msgid ""
+"Custom dashboards for managing business data, users, operations, reports, "
+"and internal workflows."
+msgstr "Custom dashboards for managing тиҷорат маълумот, корбарон, фаъолият, ҳисоботҳо, and internal workflows."
+
+#: .\azinapp\templates\website.html:400 .\azinapp\templates\website.html:846
+msgid "User & role management"
+msgstr "Идоракунии корбарон ва нақшҳо"
+
+#: .\azinapp\templates\website.html:402 .\azinapp\templates\website.html:850
+msgid "Reports & analytics"
+msgstr "Ҳисобот ва таҳлил"
+
+#: .\azinapp\templates\website.html:404 .\azinapp\templates\website.html:852
+msgid "Custom forms & workflows"
+msgstr "Шаклҳо ва равандҳои фармоишӣ"
+
+#: .\azinapp\templates\website.html:406
+msgid "Data export"
+msgstr "Содироти маълумот"
+
+#: .\azinapp\templates\website.html:431
+msgid "Educational Platforms"
+msgstr "Платформаҳои таълимӣ"
+
+#: .\azinapp\templates\website.html:435
+msgid ""
+"Learning platforms for courses, lessons, students, educational content, "
+"assessments, and progress management."
+msgstr "Learning platforms for courses, lessons, students, educational мундариҷа, assessments, and progress идоракунӣ."
+
+#: .\azinapp\templates\website.html:440 .\azinapp\templates\website.html:922
+msgid "Course & lesson management"
+msgstr "Идоракунии курсҳо ва дарсҳо"
+
+#: .\azinapp\templates\website.html:444
+msgid "Content delivery"
+msgstr "Пешниҳоди мундариҷа"
+
+#: .\azinapp\templates\website.html:471
+msgid "Blogs & Content Platforms"
+msgstr "Блогҳо ва платформаҳои мундариҷа"
+
+#: .\azinapp\templates\website.html:475
+msgid ""
+"Professional publishing platforms for businesses, organizations, news, "
+"articles, and content-driven websites."
+msgstr "касбӣ publishing platforms for соҳибкорон, ташкилотҳо, news, articles, and content-driven вебсайтҳо."
+
+#: .\azinapp\templates\website.html:480
+msgid "Post & category management"
+msgstr "Идоракунии постҳо ва категорияҳо"
+
+#: .\azinapp\templates\website.html:482
+msgid "SEO-friendly structure"
+msgstr "Сохтори мувофиқ ба SEO"
+
+#: .\azinapp\templates\website.html:484
+msgid "Search & filtering"
+msgstr "Ҷустуҷӯ ва филтр"
+
+#: .\azinapp\templates\website.html:511
+msgid "Custom Web Applications"
+msgstr "Барномаҳои веби фармоишӣ"
+
+#: .\azinapp\templates\website.html:515
+msgid ""
+"Custom-built web applications for businesses that need specific workflows, "
+"automation, integrations, or internal systems."
+msgstr "Custom-built web барномаҳо for соҳибкорон that лозим мушаххас workflows, automation, integrations, or internal systems."
+
+#: .\azinapp\templates\website.html:522
+msgid "Workflow automation"
+msgstr "Автоматизатсияи равандҳои корӣ"
+
+#: .\azinapp\templates\website.html:532
+msgid "Contact for quote"
+msgstr "Барои нархнома тамос гиред"
+
+#: .\azinapp\templates\website.html:552
+msgid "Web development pricing"
+msgstr "Нархгузории таҳияи веб"
+
+#: .\azinapp\templates\website.html:559
+msgid "Pricing"
+msgstr "Нархгузорӣ"
+
+#: .\azinapp\templates\website.html:563
+msgid "Web Development Packages"
+msgstr "Бастаҳои таҳияи веб"
+
+#: .\azinapp\templates\website.html:567
+msgid ""
+"Clear starting prices for common project types. Final pricing is confirmed "
+"after reviewing your requirements and project scope."
+msgstr "равшан starting prices for common лоиҳа types. Final pricing аст confirmed пас аз reviewing your талабот and лоиҳа scope."
+
+#: .\azinapp\templates\website.html:583
+msgid "Basic"
+msgstr "Асосӣ"
+
+#: .\azinapp\templates\website.html:597 .\azinapp\templates\website.html:671
+#: .\azinapp\templates\website.html:747 .\azinapp\templates\website.html:830
+#: .\azinapp\templates\website.html:906
+msgid "starting from"
+msgstr "аз"
+
+#: .\azinapp\templates\website.html:603
+msgid ""
+"A professional website for small businesses, startups, professionals, and "
+"personal brands."
+msgstr "A касбӣ вебсайт for small соҳибкорон, startups, professionals, and personal brands."
+
+#: .\azinapp\templates\website.html:613
+msgid "Up to 5 core pages"
+msgstr "То 5 саҳифаи асосӣ"
+
+#: .\azinapp\templates\website.html:617
+msgid "Contact form"
+msgstr "Шакли тамос"
+
+#: .\azinapp\templates\website.html:619
+msgid "Social media integration"
+msgstr "Интегратсияи шабакаҳои иҷтимоӣ"
+
+#: .\azinapp\templates\website.html:621
+msgid "Basic SEO setup"
+msgstr "Танзими асосии SEO"
+
+#: .\azinapp\templates\website.html:625
+msgid "1 revision round"
+msgstr "1 марҳилаи ислоҳот"
+
+#: .\azinapp\templates\website.html:638 .\azinapp\templates\website.html:714
+msgid "Start Your Project"
+msgstr "Лоиҳаи худро оғоз кунед"
+
+#: .\azinapp\templates\website.html:657
+msgid "Most Popular"
+msgstr "Машҳуртарин"
+
+#: .\azinapp\templates\website.html:661 .\azinapp\templates\website.html:1489
+#: .\azinapp\templates\website.html:1498
+msgid "Corporate Website"
+msgstr "Вебсайти корпоративӣ"
+
+#: .\azinapp\templates\website.html:677
+msgid ""
+"A complete corporate website for companies that need a stronger online "
+"presence and content management."
+msgstr "A complete corporate вебсайт for ширкатҳо that лозим a stronger online presence and мундариҷа идоракунӣ."
+
+#: .\azinapp\templates\website.html:687
+msgid "Up to 15 core pages"
+msgstr "То 15 саҳифаи асосӣ"
+
+#: .\azinapp\templates\website.html:689
+msgid "Custom UI/UX implementation"
+msgstr "Татбиқи фармоишии UI/UX"
+
+#: .\azinapp\templates\website.html:691
+msgid "Advanced content management"
+msgstr "Идоракунии пешрафтаи мундариҷа"
+
+#: .\azinapp\templates\website.html:693
+msgid "Blog or news section"
+msgstr "Бахши блог ё хабарҳо"
+
+#: .\azinapp\templates\website.html:695
+msgid "Multi-language support"
+msgstr "Дастгирии чандзабонӣ"
+
+#: .\azinapp\templates\website.html:697
+msgid "User authentication"
+msgstr "Аутентификатсияи корбар"
+
+#: .\azinapp\templates\website.html:699
+msgid "Performance optimization"
+msgstr "Оптимизатсияи самаранокӣ"
+
+#: .\azinapp\templates\website.html:701 .\azinapp\templates\website.html:777
+msgid "2 revision rounds"
+msgstr "2 марҳилаи ислоҳот"
+
+#: .\azinapp\templates\website.html:733 .\azinapp\templates\website.html:1552
+msgid "E-Commerce"
+msgstr "Тиҷорати электронӣ"
+
+#: .\azinapp\templates\website.html:737 .\azinapp\templates\website.html:1561
+#: .\azinapp\templates\website.html:1572
+msgid "Online Store"
+msgstr "Дӯкони онлайн"
+
+#: .\azinapp\templates\website.html:753
+msgid ""
+"A custom online store with product management, customer accounts, orders, "
+"and payment integration."
+msgstr "A custom online store with маҳсулот идоракунӣ, customer accounts, фармоишҳо, and пардохт integration."
+
+#: .\azinapp\templates\website.html:769
+msgid "Payment gateway integration"
+msgstr "Интегратсияи шлюзи пардохт"
+
+#: .\azinapp\templates\website.html:773
+msgid "Inventory management"
+msgstr "Идоракунии захираҳо"
+
+#: .\azinapp\templates\website.html:775
+msgid "Customer accounts"
+msgstr "Ҳисобҳои мизоҷон"
+
+#: .\azinapp\templates\website.html:790
+msgid "Discuss Your Store"
+msgstr "Дӯкони худро муҳокима кунед"
+
+#: .\azinapp\templates\website.html:816
+msgid "Business"
+msgstr "Тиҷорат"
+
+#: .\azinapp\templates\website.html:820 .\azinapp\templates\website.html:1615
+msgid "Business Dashboard"
+msgstr "Панели идоракунии тиҷорат"
+
+#: .\azinapp\templates\website.html:836
+msgid ""
+"A custom internal dashboard for managing users, operations, data, reports, "
+"and business workflows."
+msgstr "A custom internal dashboard for managing корбарон, фаъолият, маълумот, ҳисоботҳо, and тиҷорат workflows."
+
+#: .\azinapp\templates\website.html:848
+msgid "Business data management"
+msgstr "Идоракунии маълумоти тиҷоратӣ"
+
+#: .\azinapp\templates\website.html:854
+msgid "CSV / PDF export"
+msgstr "Содироти CSV / PDF"
+
+#: .\azinapp\templates\website.html:856
+msgid "Activity tracking"
+msgstr "Назорати фаъолият"
+
+#: .\azinapp\templates\website.html:858
+msgid "Responsive interface"
+msgstr "Интерфейси мутобиқшаванда"
+
+#: .\azinapp\templates\website.html:860 .\azinapp\templates\website.html:936
+msgid "3 revision rounds"
+msgstr "3 марҳилаи ислоҳот"
+
+#: .\azinapp\templates\website.html:873
+msgid "Discuss Your Dashboard"
+msgstr "Панели идоракунии худро муҳокима кунед"
+
+#: .\azinapp\templates\website.html:892
+msgid "Advanced"
+msgstr "Пешрафта"
+
+#: .\azinapp\templates\website.html:896
+msgid "Educational Platform"
+msgstr "Платформаи таълимӣ"
+
+#: .\azinapp\templates\website.html:912
+msgid ""
+"A custom learning platform for organizations, educators, academies, and "
+"online education businesses."
+msgstr "A custom learning platform for ташкилотҳо, educators, academies, and online education соҳибкорон."
+
+#: .\azinapp\templates\website.html:924
+msgid "Student registration & profiles"
+msgstr "Сабтином ва профилҳои донишҷӯён"
+
+#: .\azinapp\templates\website.html:926
+msgid "Educational content delivery"
+msgstr "Пешниҳоди мундариҷаи таълимӣ"
+
+#: .\azinapp\templates\website.html:930
+msgid "Quizzes & assignments"
+msgstr "Тестҳо ва супоришҳо"
+
+#: .\azinapp\templates\website.html:932
+msgid "Certificates"
+msgstr "Сертификатҳо"
+
+#: .\azinapp\templates\website.html:934
+msgid "Admin management"
+msgstr "Идоракунии маъмурӣ"
+
+#: .\azinapp\templates\website.html:949
+msgid "Discuss Your Platform"
+msgstr "Платформаи худро муҳокима кунед"
+
+#: .\azinapp\templates\website.html:968 .\azinapp\templates\website.html:978
+msgid "Custom"
+msgstr "Фармоишӣ"
+
+#: .\azinapp\templates\website.html:972
+msgid "Custom Web Application"
+msgstr "Барномаи веби фармоишӣ"
+
+#: .\azinapp\templates\website.html:982
+msgid "project quote"
+msgstr "нархномаи лоиҳа"
+
+#: .\azinapp\templates\website.html:988
+msgid ""
+"For businesses that need a tailored system, automation, API integration, or "
+"a custom Django application."
+msgstr "For соҳибкорон that лозим a tailored system, automation, API integration, or a custom Django барнома."
+
+#: .\azinapp\templates\website.html:1000
+msgid "Django backend development"
+msgstr "Таҳияи backend бо Django"
+
+#: .\azinapp\templates\website.html:1002
+msgid "Database architecture"
+msgstr "Меъмории пойгоҳи додаҳо"
+
+#: .\azinapp\templates\website.html:1004
+msgid "REST API development"
+msgstr "Таҳияи REST API"
+
+#: .\azinapp\templates\website.html:1006
+msgid "Third-party integrations"
+msgstr "Интегратсияҳои тарафи сеюм"
+
+#: .\azinapp\templates\website.html:1010
+msgid "Deployment assistance"
+msgstr "Кумаки ҷойгиркунӣ"
+
+#: .\azinapp\templates\website.html:1012
+msgid "Documentation"
+msgstr "Ҳуҷҷатгузорӣ"
+
+#: .\azinapp\templates\website.html:1044
+msgid "Additional Services"
+msgstr "Хизматрасониҳои иловагӣ"
+
+#: .\azinapp\templates\website.html:1048
+msgid ""
+"Optional services that can be added to a project or requested separately."
+msgstr "Optional хизматрасониҳо that метавонад be added to a лоиҳа or requested separately."
+
+#: .\azinapp\templates\website.html:1057
+msgid "Landing Page"
+msgstr "Саҳифаи фуруд"
+
+#: .\azinapp\templates\website.html:1067
+msgid "Website Redesign"
+msgstr "Бозтарроҳии вебсайт"
+
+#: .\azinapp\templates\website.html:1077
+msgid "UI/UX Implementation"
+msgstr "Татбиқи UI/UX"
+
+#: .\azinapp\templates\website.html:1087
+msgid "Django Backend Development"
+msgstr "Таҳияи backend бо Django"
+
+#: .\azinapp\templates\website.html:1097
+msgid "PostgreSQL Database Setup"
+msgstr "Танзими пойгоҳи додаҳои PostgreSQL"
+
+#: .\azinapp\templates\website.html:1107
+msgid "Admin Dashboard"
+msgstr "Панели маъмурӣ"
+
+#: .\azinapp\templates\website.html:1117
+msgid "REST API Development"
+msgstr "Таҳияи REST API"
+
+#: .\azinapp\templates\website.html:1127
+msgid "Payment Gateway Integration"
+msgstr "Интегратсияи шлюзи пардохт"
+
+#: .\azinapp\templates\website.html:1137
+msgid "Third-Party API Integration"
+msgstr "Интегратсияи API-и тарафи сеюм"
+
+#: .\azinapp\templates\website.html:1147
+msgid "Deployment & Hosting Setup"
+msgstr "Танзими ҷойгиркунӣ ва хостинг"
+
+#: .\azinapp\templates\website.html:1157
+msgid "Bug Fixing & Maintenance"
+msgstr "Ислоҳи хатогиҳо ва нигоҳдорӣ"
+
+#: .\azinapp\templates\website.html:1167
+msgid "Monthly Maintenance & Support"
+msgstr "Нигоҳдорӣ ва дастгирии моҳона"
+
+#: .\azinapp\templates\website.html:1181
+msgid ""
+"Prices shown are starting prices. Final pricing depends on project scope, "
+"number of pages, features, integrations, content requirements, and technical "
+"complexity."
+msgstr "Prices shown ҳастанд starting prices. Final pricing depends on лоиҳа scope, number of pages, features, integrations, мундариҷа талабот, and техникӣ complexity."
+
+#: .\azinapp\templates\website.html:1198
+msgid "Web development process"
+msgstr "Раванди таҳияи веб"
+
+#: .\azinapp\templates\website.html:1213
+msgid ""
+"A clear and collaborative process designed to keep your project organized "
+"from the first conversation to final delivery."
+msgstr "A равшан and collaborative раванд Тарҳрезишуда to keep your лоиҳа organized from the first conversation to final delivery."
+
+#: .\azinapp\templates\website.html:1233
+msgid "Discovery"
+msgstr "Омӯзиш"
+
+#: .\azinapp\templates\website.html:1237
+msgid ""
+"We discuss your business, objectives, target audience, required features, "
+"and project priorities."
+msgstr "We discuss your тиҷорат, ҳадафҳо, target аудитория, лозим features, and лоиҳа priorities."
+
+#: .\azinapp\templates\website.html:1255
+msgid "Scope & Proposal"
+msgstr "Ҳаҷм ва пешниҳод"
+
+#: .\azinapp\templates\website.html:1259
+msgid ""
+"You receive a clear project scope, recommended solution, estimated timeline, "
+"and pricing proposal."
+msgstr "You receive a равшан лоиҳа scope, recommended ҳал, estimated timeline, and pricing proposal."
+
+#: .\azinapp\templates\website.html:1277
+msgid "Design & Planning"
+msgstr "Тарроҳӣ ва банақшагирӣ"
+
+#: .\azinapp\templates\website.html:1281
+msgid ""
+"We plan the structure, user experience, content requirements, and technical "
+"architecture before development."
+msgstr "We plan the structure, корбар таҷриба, мундариҷа талабот, and техникӣ architecture пеш аз таҳия."
+
+#: .\azinapp\templates\website.html:1303
+msgid ""
+"We develop the website or application, integrate the required functionality, "
+"and test the key user flows."
+msgstr "We таҳия the вебсайт or барнома, integrate the лозим functionality, and test the key корбар flows."
+
+#: .\azinapp\templates\website.html:1321
+msgid "Launch & Handover"
+msgstr "Оғоз ва супоридани лоиҳа"
+
+#: .\azinapp\templates\website.html:1325
+msgid ""
+"After final testing and approval, we deploy the project and provide the "
+"necessary handover and support."
+msgstr "пас аз final testing and approval, we deploy the лоиҳа and пешниҳод кардан the necessary handover and дастгирӣ."
+
+#: .\azinapp\templates\website.html:1344
+msgid "Web development portfolio"
+msgstr "Портфолиои таҳияи веб"
+
+#: .\azinapp\templates\website.html:1359
+msgid ""
+"Explore examples of websites, dashboards, and custom web applications "
+"developed for different business needs."
+msgstr "Explore examples of вебсайтҳо, dashboards, and custom web барномаҳо developed for гуногун тиҷорат ниёзҳо."
+
+#: .\azinapp\templates\website.html:1399
+msgid "Web Project"
+msgstr "Лоиҳаи веб"
+
+#: .\azinapp\templates\website.html:1502
+msgid ""
+"A professional corporate website focused on clear service presentation, "
+"responsive design, and content management."
+msgstr "A касбӣ corporate вебсайт мутамарказ on равшан хизматрасонӣ presentation, responsive тарроҳӣ, and мундариҷа идоракунӣ."
+
+#: .\azinapp\templates\website.html:1565
+msgid ""
+"An e-commerce platform designed for product management, customer accounts, "
+"shopping cart functionality, and order processing."
+msgstr "An e-commerce platform Тарҳрезишуда for маҳсулот идоракунӣ, customer accounts, shopping cart functionality, and фармоиш processing."
+
+#: .\azinapp\templates\website.html:1624
+msgid "Business Management Dashboard"
+msgstr "Панели идоракунии тиҷорат"
+
+#: .\azinapp\templates\website.html:1628
+msgid ""
+"A custom dashboard for managing business data, users, reports, workflows, "
+"and day-to-day operations."
+msgstr "A custom dashboard for managing тиҷорат маълумот, корбарон, ҳисоботҳо, workflows, and ҳаррӯза фаъолият."
+
+#: .\azinapp\templates\website.html:1635
+msgid "Web Application"
+msgstr "Барномаи веб"
+
+#: .\azinapp\templates\website.html:1676
+msgid "Why choose AZIN GROUP"
+msgstr "Чаро AZIN GROUP-ро интихоб кунед"
+
+#: .\azinapp\templates\website.html:1687
+msgid "Built Around Your Business"
+msgstr "Бар асоси тиҷорати шумо сохта шудааст"
+
+#: .\azinapp\templates\website.html:1691
+msgid ""
+"We focus on practical solutions, clear communication, maintainable code, and "
+"technology that supports your business goals."
+msgstr "We focus on амалӣ ҳалҳо, равшан муошират, нигоҳдошташаванда code, and технология that supports your тиҷорат ҳадафҳо."
+
+#: .\azinapp\templates\website.html:1707
+msgid "Business-Focused Development"
+msgstr "Таҳия бо таваҷҷуҳ ба тиҷорат"
+
+#: .\azinapp\templates\website.html:1711
+msgid ""
+"We start with your business requirements and workflows, then choose the "
+"right technical solution."
+msgstr "We start with your тиҷорат талабот and workflows, then choose the мувофиқ техникӣ ҳал."
+
+#: .\azinapp\templates\website.html:1725
+msgid "Modern & Maintainable Code"
+msgstr "Коди муосир ва нигоҳдошташаванда"
+
+#: .\azinapp\templates\website.html:1729
+msgid ""
+"Our development approach emphasizes clean structure, maintainability, "
+"security, and future scalability."
+msgstr "Our таҳия approach emphasizes clean structure, maintainability, security, and оянда scalability."
+
+#: .\azinapp\templates\website.html:1747
+msgid ""
+"You receive clear information about scope, progress, requirements, and next "
+"steps throughout the project."
+msgstr "You receive равшан маълумот about scope, progress, талабот, and next steps throughout the лоиҳа."
+
+#: .\azinapp\templates\website.html:1765
+msgid "Start your web development project"
+msgstr "Лоиҳаи таҳияи веби худро оғоз кунед"
+
+#: .\azinapp\templates\website.html:1774
+msgid "Have a Web Project in Mind?"
+msgstr "доранд a Web лоиҳа in Mind?"
+
+#: .\azinapp\templates\website.html:1778
+msgid ""
+"Tell us what you need. We will review your requirements, recommend a "
+"suitable solution, and provide a clear project scope and quotation."
+msgstr "Tell us чӣ you лозим. We хоҳад review your талабот, recommend a suitable ҳал, and пешниҳод кардан a равшан лоиҳа scope and quotation."
+
+#: .\azinapp\templates\website.html:1789
+msgid "Request a Free Consultation"
+msgstr "Машварати ройгон дархост кунед"
+
+#: .\azinapp\views.py:46
+msgid "Welcome to AZIN GROUP."
+msgstr "Хуш омадед ба AZIN GROUP."
+
+#: .\azinapp\views.py:94
+msgid "Your message has been sent successfully!"
+msgstr "Паёми шумо бомуваффақият фиристода шуд!"
+
+#: .\azinapp\views.py:178
+msgid "You have been logged out successfully."
+msgstr "Шумо бомуваффақият аз ҳисоб баромадед."
+
+#: .\azinapp\views.py:184
+msgid "You are already logged in."
+msgstr "Шумо аллакай ворид шудаед."
+
+#: .\azinapp\views.py:198
+msgid "You don't have access to the admin panel."
+msgstr "Шумо ба панели маъмурӣ дастрасӣ надоред."
+
+#: .\azinapp\views.py:203
+msgid "Invalid username or password."
+msgstr "Номи корбар ё парол нодуруст аст."
+
+#: .\azinapp\views.py:223
+msgid "Your account has been created successfully!"
+msgstr "Ҳисоби шумо бомуваффақият сохта шуд!"
+
+#: .\azinapp\views.py:226 .\azinapp\views.py:278
+msgid "Please check the form for errors."
+msgstr "Лутфан шаклро барои хатогиҳо санҷед."
+
+#: .\azinapp\views.py:241
+msgid "Profile updated successfully!"
+msgstr "Профил бомуваффақият навсозӣ шуд!"
+
+#: .\azinapp\views.py:256
+msgid "Password changed successfully."
+msgstr "Парол бомуваффақият тағйир дода шуд."
+
+#: .\azinapp\views.py:275
+msgid "Information updated successfully."
+msgstr "Маълумот бомуваффақият навсозӣ шуд."
+
+#: .\azingroup\settings.py:138
+msgid "English"
+msgstr "Англисӣ"
+
+#: .\azingroup\settings.py:139
+msgid "Persian"
+msgstr "Форсӣ"
+
+#: .\azingroup\settings.py:140
+msgid "Tajik"
+msgstr "Тоҷикӣ"

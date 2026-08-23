@@ -1,380 +1,818 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}مدیریت شبکه‌های اجتماعی | گروه آذین{% endblock %}
+{% block title %}Social Media Management & Content — AZIN MEDIA{% endblock %}
+
+{% block meta_description %}Social media management and content production for businesses, including content planning, short-form video, graphic design, community management, paid campaigns, and performance reporting.{% endblock %}
+
+{% block og_title %}Social Media Management & Content — AZIN MEDIA{% endblock %}
+
+{% block og_description %}Practical social media management and content production services for businesses, covering strategy, content, community management, campaigns, and performance reporting.{% endblock %}
 
 {% block content %}
-<section class="smm-hero-section">
-    <div class="smm-hero-background">
-        <div class="hero-gradient-overlay"></div>
-        <div class="social-pattern"></div>
-        <div class="floating-social-elements">
-            <div class="social-element elem-1"><i class="bi bi-instagram"></i></div>
-            <div class="social-element elem-2"><i class="bi bi-facebook"></i></div>
-            <div class="social-element elem-3"><i class="bi bi-youtube"></i></div>
-        </div>
+
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="smm-hero" aria-label="{% trans 'Social Media Management' %}">
+    <div class="smm-hero__background">
+        <div class="smm-hero__overlay"></div>
+        <div class="smm-hero__pattern"></div>
     </div>
 
     <div class="container">
-        <div class="smm-hero-content">
-            <div class="smm-hero-text">
-                <div class="service-badge">
-                    <span class="badge-text">واحد دیجیتال مارکتینگ</span>
-                    <div class="badge-line"></div>
-                </div>
+        <div class="smm-hero__content">
 
-                <h1 class="smm-hero-title">
-                    <span class="title-line">مدیریت حرفه‌ای و استراتژیک</span>
-                    <span class="title-line accent">شبکه‌های اجتماعی سازمانی</span>
+            <div class="smm-hero__text">
+
+                <span class="smm-hero__badge">AZIN MEDIA</span>
+
+                <h1 class="smm-hero__title">
+                    <span class="smm-hero__title-line">{% trans "Social Media" %}</span>
+                    <span class="smm-hero__title-line smm-hero__accent">{% trans "Management" %}</span>
                 </h1>
 
-                <p class="smm-hero-description">
-                    واحد مدیریت شبکه‌های اجتماعی گروه آذین با تدوین استراتژی‌های اثربخش و اجرای برنامه‌های هدفمند، حضور برند شما را در فضای دیجیتال تقویت می‌کند. ما با افزایش تعامل، جذب مشتریان هدف و ساخت هویت دیجیتال منسجم، رشد پایدار کسب‌وکار شما را تضمین می‌نماییم.
+                <p class="smm-hero__description">
+                    {% trans "We help businesses manage their social media presence with a practical combination of content planning, visual production, publishing, community management, and performance review. The approach is based on your business goals, audience, platforms, and available resources." %}
                 </p>
 
-                <div class="smm-hero-actions">
-                    <a href="{% url 'contact' %}" class="smm-cta-btn primary">
-                        <i class="bi bi-calendar-check"></i>
-                        <span>درخواست مشاوره</span>
+                <div class="smm-hero__actions">
+
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-rocket"></i>
+                        {% trans "Discuss Your Social Media Needs" %}
                     </a>
+
+                    <a href="#portfolio" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-images"></i>
+                        {% trans "View Our Work" %}
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="smm-hero-visual">
-                <div class="social-showcase">
-                    <div class="social-platform instagram">
-                        <div class="platform-card">
-                            <div class="platform-header">
-                                <i class="bi bi-instagram"></i>
-                                <span>Instagram Business</span>
-                            </div>
-                            <div class="platform-stats">
-                                <div class="stat">
-                                    <span class="number">+ 15K</span>
-                                    <span class="label">مخاطب هدفمند</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="number">+ 25K</span>
-                                    <span class="label">تعامل ماهانه</span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="smm-hero__visual">
+
+                <div class="smm-hero__stats-card">
+
+                    <div class="smm-hero__stat">
+                        <span class="smm-hero__stat-number">
+                            <i class="fas fa-calendar-alt"></i>
+                        </span>
+                        <span class="smm-hero__stat-label">
+                            {% trans "Content Planning" %}
+                        </span>
                     </div>
-                    <div class="social-platform linkedin">
-                        <div class="platform-card">
-                            <div class="platform-header">
-                                <i class="bi bi-linkedin"></i>
-                                <span>LinkedIn Professional</span>
-                            </div>
-                            <div class="platform-stats">
-                                <div class="stat">
-                                    <span class="number">+ 50K</span>
-                                    <span class="label">نمایش محتوای سازمانی</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="number">+ 1K</span>
-                                    <span class="label">تعامل حرفه‌ای</span>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="smm-hero__stat">
+                        <span class="smm-hero__stat-number">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        <span class="smm-hero__stat-label">
+                            {% trans "Content Production" %}
+                        </span>
                     </div>
-                    <div class="social-analytics">
-                        <div class="analytics-card">
-                            <div class="growth-chart">
-                                <div class="chart-bar" style="height: 80%"></div>
-                                <div class="chart-bar" style="height: 60%"></div>
-                                <div class="chart-bar" style="height: 90%"></div>
-                                <div class="chart-bar" style="height: 100%"></div>
-                            </div>
-                            <div class="chart-label">رشد ماهانه برندهای همکار</div>
-                        </div>
+
+                    <div class="smm-hero__stat">
+                        <span class="smm-hero__stat-number">
+                            <i class="fas fa-chart-line"></i>
+                        </span>
+                        <span class="smm-hero__stat-label">
+                            {% trans "Performance Review" %}
+                        </span>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- بخش خدمات اصلی -->
-<section id="services" class="smm-services-section">
+
+<!-- ======================================== -->
+<!-- 2. SERVICES                              -->
+<!-- ======================================== -->
+<section class="section section--smm-services" aria-label="{% trans 'Social media services' %}">
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">خدمات تخصصی مدیریت شبکه‌های اجتماعی</h2>
-            <p class="section-subtitle">ارائه راهکارهای جامع برای تقویت حضور دیجیتال برند شما</p>
-        </div>
 
-        <div class="smm-services-grid">
-            <div class="smm-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-pencil-square"></i>
-                </div>
-                <h3>تولید محتوای استراتژیک</h3>
-                <p>تدوین استراتژی محتوایی، تولید محتوای هدفمند و بهینه‌سازی برای هر پلتفرم با توجه به اهداف کسب‌وکار</p>
-                <ul class="service-features">
-                    <li>تدوین استراتژی محتوای سازمانی</li>
-                    <li>تولید محتوای ویدیویی و تصویری حرفه‌ای</li>
-                    <li>کپشن‌نویسی تخصصی و بهینه‌سازی</li>
-                    <li>طراحی گرافیک اختصاصی مطابق با هویت برند</li>
-                    <li>برنامه‌ریزی کمپین‌های محتوایی فصلی</li>
-                </ul>
-                <a href="{% url 'contact' %}?service=content" class="service-cta-btn">
-                    <span>درخواست مشاوره محتوا</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="smm-service-card featured">
-                <div class="service-icon">
-                    <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <h3>مدیریت جامع پلتفرم‌ها</h3>
-                <p>مدیریت حرفه‌ای روزانه پیج‌های سازمانی با استراتژی رشد مستمر و افزایش تعامل</p>
-                <ul class="service-features">
-                    <li>پست‌گذاری استراتژیک و زمان‌بندی شده</li>
-                    <li>مدیریت حرفه‌ای کامنت‌ها و پیام‌های دریافتی</li>
-                    <li>برنامه‌ریزی کانتنت کالندر بر اساس اهداف سازمان</li>
-                    <li>آنالیز رقبا و نظارت بر فضای بازار</li>
-                    <li>گزارش‌دهی هفتگی و تحلیل شاخص‌های کلیدی</li>
-                </ul>
-                <a href="{% url 'contact' %}?service=management" class="service-cta-btn">
-                    <span>درخواست مدیریت حرفه‌ای</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-
-            <div class="smm-service-card">
-                <div class="service-icon">
-                    <i class="bi bi-megaphone"></i>
-                </div>
-                <h3>تبلیغات و کمپین‌سازی هدفمند</h3>
-                <p>اجرای کمپین‌های تبلیغاتی هوشمند با تمرکز بر بالاترین نرخ بازگشت سرمایه (ROI)</p>
-                <ul class="service-features">
-                    <li>تبلیغات هدفمند اینستاگرام و فیسبوک</li>
-                    <li>کمپین‌سازی مبتنی بر هشتگ‌های استراتژیک</li>
-                    <li>تبلیغات ریتارگتینگ و بازاریابی مجدد</li>
-                    <li>کمپین‌های اینفلوئنسر مارکتینگ سازمانی</li>
-                    <li>آنالیز دقیق ROI و عملکرد کمپین‌ها</li>
-                </ul>
-                <a href="{% url 'contact' %}?service=ads" class="service-cta-btn">
-                    <span>درخواست مشاوره تبلیغاتی</span>
-                    <i class="bi bi-arrow-left"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش پلتفرم‌های تحت پوشش -->
-<section class="platforms-section">
-    <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">پلتفرم‌های تخصصی تحت مدیریت</h2>
-            <p class="section-subtitle">مدیریت حرفه‌ای و هدفمند تمامی پلتفرم‌های اجتماعی مؤثر</p>
-        </div>
-
-        <div class="platforms-grid">
-            <div class="platform-card">
-                <div class="platform-logo instagram">
-                    <i class="bi bi-instagram"></i>
-                </div>
-                <h3>مدیریت اینستاگرام سازمانی</h3>
-                <p>مدیریت حرفه‌ای پیج بیزینس، تولید محتوای ویدیویی و تصویری، استوری‌مارکتینگ و کمپین‌های تعاملی</p>
-                <div class="platform-features">
-                    <span>پست‌گذاری استراتژیک</span>
-                    <span>استوری‌مارکتینگ پیشرفته</span>
-                    <span>تولید محتوای Reels حرفه‌ای</span>
-                    <span>مدیریت تعامل و جامعه</span>
-                </div>
-            </div>
-
-            <div class="platform-card">
-                <div class="platform-logo facebook">
-                    <i class="bi bi-facebook"></i>
-                </div>
-                <h3>مدیریت پیج فیسبوک</h3>
-                <p>مدیریت جامع پیج سازمانی، گروه‌سازی استراتژیک، تبلیغات هدفمند و مدیریت جامعه دیجیتال</p>
-                <div class="platform-features">
-                    <span>مدیریت پیج سازمانی</span>
-                    <span>گروه‌سازی و مدیریت جامعه</span>
-                    <span>تبلیغات هدفمند فیسبوک</span>
-                    <span>برگزاری رویدادهای آنلاین</span>
-                </div>
-            </div>
-
-            <div class="platform-card">
-                <div class="platform-logo youtube">
-                    <i class="bi bi-youtube"></i>
-                </div>
-                <h3>مدیریت کانال یوتیوب</h3>
-                <p>مدیریت تخصصی کانال، تولید محتوای ویدیویی سازمانی، SEO ویدیو و افزایش پایدار سابسکرایبر</p>
-                <div class="platform-features">
-                    <span>تولید محتوای ویدیویی حرفه‌ای</span>
-                    <span>بهینه‌سازی SEO ویدیوها</span>
-                    <span>افزایش سابسکرایبر هدفمند</span>
-                    <span>آنالیز عملکرد و رشد کانال</span>
-                </div>
-            </div>
-
-            <div class="platform-card">
-                <div class="platform-logo tiktok">
-                    <i class="bi bi-tiktok"></i>
-                </div>
-                <h3>مدیریت پیج تیک‌تاک سازمانی</h3>
-                <p>تولید محتوای ویدیویی کوتاه، ترندسازی استراتژیک و جذب مخاطب نسل جدید برای برند</p>
-                <div class="platform-features">
-                    <span>تولید محتوای ویدیویی کوتاه</span>
-                    <span>ترندسازی و چالش‌های برند</span>
-                    <span>جذب مخاطبان نسل Z</span>
-                    <span>کمپین‌های تعاملی و ویروسی</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- بخش استراتژی و فرآیند -->
-<section class="strategy-section">
-    <div class="container">
         <div class="section-header">
-            <h2 class="section-title">استراتژی سیستماتیک مدیریت شبکه‌های اجتماعی</h2>
-            <p class="section-subtitle">برنامه‌ریزی جامع و مرحله‌ای برای رشد پایدار برند شما</p>
+
+            <span class="section-header__badge">
+                {% trans "Our Services" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Social Media Services" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "A practical social media service covering planning, content, publishing, audience interaction, campaigns, and performance review." %}
+            </p>
+
         </div>
 
-        <div class="strategy-process">
-            <div class="strategy-step">
-                <div class="step-content">
-                    <h4>تحلیل جامع و تحقیقات بازار</h4>
-                    <p>بررسی دقیق کسب‌وکار، تحلیل رقبا، شناسایی مخاطبان هدف و بررسی جایگاه فعلی برند</p>
-                    <ul>
-                        <li>تحلیل SWOT کسب‌وکار</li>
-                        <li>بررسی رقبا و شناسایی مزیت رقابتی</li>
-                        <li>شناسایی پرسونای مخاطب</li>
-                        <li>ارزیابی جایگاه فعلی برند در فضای دیجیتال</li>
-                    </ul>
+
+        <div class="smm-services__grid">
+
+            <!-- Service 1: Account Management -->
+            <div class="smm-service smm-service--featured">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-user-cog"></i>
                 </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Social Media Account Management" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "Ongoing management of your selected social media channels, with a clear publishing schedule, content coordination, audience interaction, and regular review of account performance." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Content scheduling and publishing" %}</li>
+                    <li>{% trans "Community and comment management" %}</li>
+                    <li>{% trans "Account and content coordination" %}</li>
+                    <li>{% trans "Regular performance reporting" %}</li>
+                </ul>
+
             </div>
 
-            <div class="strategy-step">
-                <div class="step-content">
-                    <h4>تدوین استراتژی و برنامه‌ریزی</h4>
-                    <p>تعیین اهداف SMART، انتخاب پلتفرم‌های هدف و طراحی نقشه راه محتوایی</p>
-                    <ul>
-                        <li>تعیین اهداف کمّی و کیفی</li>
-                        <li>انتخاب پلتفرم‌های استراتژیک</li>
-                        <li>طراحی تقویم محتوایی (Content Calendar)</li>
-                        <li>تعیین شاخص‌های کلیدی عملکرد (KPI)</li>
-                    </ul>
+
+            <!-- Service 2: Content Production -->
+            <div class="smm-service">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-video"></i>
                 </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Social Media Content Production" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "Visual content prepared for the platforms and formats your audience uses, including short videos, reels, photography, graphics, and branded content." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Short-form video and reel production" %}</li>
+                    <li>{% trans "Photography and visual content" %}</li>
+                    <li>{% trans "Social media graphic design" %}</li>
+                    <li>{% trans "Content calendar planning" %}</li>
+                </ul>
+
             </div>
 
-            <div class="strategy-step">
-                <div class="step-content">
-                    <h4>تولید و انتشار محتوای هدفمند</h4>
-                    <p>تولید محتوای جذاب، ارزش‌آفرین و انتشار استراتژیک در پلتفرم‌های مختلف</p>
-                    <ul>
-                        <li>تولید محتوای سازمانی و برندسازی</li>
-                        <li>بهینه‌سازی محتوا برای هر پلتفرم</li>
-                        <li>انتشار زمان‌بندی شده و استراتژیک</li>
-                        <li>استفاده از تکنیک‌های Storytelling</li>
-                    </ul>
+
+            <!-- Service 3: Advertising Clips -->
+            <div class="smm-service smm-service--featured">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-ad"></i>
                 </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Advertising Clips & Reels" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "Short-form promotional videos created for products, services, campaigns, and social media advertising. Content is planned around the message, audience, platform, and campaign objective." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Short-form promotional videos" %}</li>
+                    <li>{% trans "Instagram Reels and similar formats" %}</li>
+                    <li>{% trans "Product and service promotional content" %}</li>
+                    <li>{% trans "Creative direction for social campaigns" %}</li>
+                </ul>
+
             </div>
 
-            <div class="strategy-step">
-                <div class="step-content">
-                    <h4>تعامل و مدیریت جامعه</h4>
-                    <p>مدیریت فعال تعاملات، ساخت جامعه وفادار و افزایش درگیری مخاطبان با برند</p>
-                    <ul>
-                        <li>مدیریت حرفه‌ای کامنت‌ها و پیام‌ها</li>
-                        <li>برگزاری مسابقات و کمپین‌های تعاملی</li>
-                        <li>ساخت و مدیریت جامعه وفادار</li>
-                        <li>برگزاری Live Sessions و وبینارها</li>
-                    </ul>
+
+            <!-- Service 4: Strategy & Analytics -->
+            <div class="smm-service">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-chart-line"></i>
                 </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Social Media Strategy & Analytics" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "A structured approach to deciding what to publish, which platforms to prioritize, what content to test, and how to evaluate results using relevant account and campaign data." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Audience and competitor research" %}</li>
+                    <li>{% trans "Content strategy and planning" %}</li>
+                    <li>{% trans "Performance tracking" %}</li>
+                    <li>{% trans "Content and campaign optimization" %}</li>
+                </ul>
+
             </div>
 
-            <div class="strategy-step">
-                <div class="step-content">
-                    <h4>آنالیز، گزارش‌دهی و بهینه‌سازی</h4>
-                    <p>مانیتورینگ مستمر عملکرد، آنالیز داده‌ها و بهینه‌سازی مداوم استراتژی</p>
-                    <ul>
-                        <li>آنالیز متریک‌های کلیدی عملکرد</li>
-                        <li>گزارش‌دهی منظم و شفاف</li>
-                        <li>بهینه‌سازی مستمر بر اساس داده‌ها</li>
-                        <li>بررسی ROI و اثربخشی فعالیت‌ها</li>
-                    </ul>
+
+            <!-- Service 5: Influencer Marketing -->
+            <div class="smm-service">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-star"></i>
                 </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Influencer & Creator Campaigns" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "Support for businesses that want to work with relevant creators or influencers as part of a broader social media campaign, from planning and coordination to content delivery and review." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Creator and influencer research" %}</li>
+                    <li>{% trans "Campaign planning and coordination" %}</li>
+                    <li>{% trans "Content collaboration" %}</li>
+                    <li>{% trans "Campaign performance review" %}</li>
+                </ul>
+
             </div>
+
+
+            <!-- Service 6: Paid Advertising -->
+            <div class="smm-service">
+
+                <div class="smm-service__icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <h3 class="smm-service__title">
+                    {% trans "Paid Social Advertising" %}
+                </h3>
+
+                <p class="smm-service__desc">
+                    {% trans "Social advertising support for businesses that want to promote specific products, services, offers, or campaigns. Campaign setup and optimization are based on the available audience, budget, creative assets, and objectives." %}
+                </p>
+
+                <ul class="smm-service__features">
+                    <li>{% trans "Campaign setup and targeting" %}</li>
+                    <li>{% trans "Ad creative coordination" %}</li>
+                    <li>{% trans "Budget and campaign monitoring" %}</li>
+                    <li>{% trans "Performance reporting and optimization" %}</li>
+                </ul>
+
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- بخش نتایج و آمار -->
-<section class="results-section">
+
+<!-- ======================================== -->
+<!-- 3. EQUIPMENT & TECHNOLOGY                -->
+<!-- ======================================== -->
+<section class="section section--smm-equipment" aria-label="{% trans 'Equipment and technology' %}">
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">نتایج قابل اندازه‌گیری و مستند</h2>
-            <p class="section-subtitle">شاهد رشد چشمگیر و مستمر کسب‌وکارهای همکار با واحد دیجیتال مارکتینگ ما باشید</p>
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Production" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Content Production & Post-Production" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Social media content is planned and produced according to the format, platform, message, and production requirements of each project." %}
+            </p>
+
         </div>
 
-        <div class="results-grid">
-            <div class="result-card">
-                <div class="result-icon">
-                    <i class="bi bi-people"></i>
+
+        <div class="smm-equipment__grid">
+
+            <div class="smm-equipment__card">
+
+                <div class="smm-equipment__icon">
+                    <i class="fas fa-camera"></i>
                 </div>
-                <div class="result-content">
-                    <h3>افزایش پایدار مخاطبان هدفمند</h3>
-                    <div class="result-stats">
-                        <span class="percentage">+۳۰۰%</span>
-                        <span class="duration">در بازه ۳ ماهه</span>
-                    </div>
-                    <p>رشد ارگانیک و پایدار فالوورهای واقعی، مرتبط و هدفمند</p>
-                </div>
+
+                <h4>
+                    {% trans "Photography & Video" %}
+                </h4>
+
+                <ul>
+                    <li>{% trans "Product photography" %}</li>
+                    <li>{% trans "Business and brand photography" %}</li>
+                    <li>{% trans "Short-form video production" %}</li>
+                </ul>
+
             </div>
 
-            <div class="result-card">
-                <div class="result-icon">
-                    <i class="bi bi-chat-heart"></i>
+
+            <div class="smm-equipment__card smm-equipment__card--featured">
+
+                <div class="smm-equipment__icon">
+                    <i class="fas fa-lightbulb"></i>
                 </div>
-                <div class="result-content">
-                    <h3>افزایش کیفیت تعاملات</h3>
-                    <div class="result-stats">
-                        <span class="percentage">+۴۵%</span>
-                        <span class="duration">در بازه ۳ ماهه</span>
-                    </div>
-                    <p>رشد چشمگیر لایک، کامنت معنادار و اشتراک‌گذاری محتوا</p>
-                </div>
+
+                <h4>
+                    {% trans "Lighting & Visual Setup" %}
+                </h4>
+
+                <ul>
+                    <li>{% trans "Lighting setup for video and photography" %}</li>
+                    <li>{% trans "Controlled visual environments" %}</li>
+                    <li>{% trans "Product and promotional setups" %}</li>
+                </ul>
+
             </div>
 
-            <div class="result-card">
-                <div class="result-icon">
-                    <i class="bi bi-cart"></i>
+
+            <div class="smm-equipment__card">
+
+                <div class="smm-equipment__icon">
+                    <i class="fas fa-microphone"></i>
                 </div>
-                <div class="result-content">
-                    <h3>افزایش محسوس نرخ تبدیل</h3>
-                    <div class="result-stats">
-                        <span class="percentage">+۲۰۰%</span>
-                        <span class="duration">در بازه ۳ ماهه</span>
-                    </div>
-                    <p>تبدیل مؤثر مخاطب به لید و افزایش مستقیم فروش</p>
-                </div>
+
+                <h4>
+                    {% trans "Audio Production" %}
+                </h4>
+
+                <ul>
+                    <li>{% trans "Voice and interview recording" %}</li>
+                    <li>{% trans "Audio for short-form videos" %}</li>
+                    <li>{% trans "Basic sound preparation and cleanup" %}</li>
+                </ul>
+
             </div>
 
-            <div class="result-card">
-                <div class="result-icon">
-                    <i class="bi bi-eye"></i>
+
+            <div class="smm-equipment__card">
+
+                <div class="smm-equipment__icon">
+                    <i class="fas fa-edit"></i>
                 </div>
-                <div class="result-content">
-                    <h3>افزایش دیده‌شدن برند</h3>
-                    <div class="result-stats">
-                        <span class="percentage">+۳۵۰%</span>
-                        <span class="duration">در بازه ۳ ماهه</span>
-                    </div>
-                    <p>دیده شدن بیشتر برند توسط مخاطبان جدید و مرتبط</p>
-                </div>
+
+                <h4>
+                    {% trans "Post-Production" %}
+                </h4>
+
+                <ul>
+                    <li>{% trans "Video editing" %}</li>
+                    <li>{% trans "Motion and visual elements" %}</li>
+                    <li>{% trans "Captions and platform-ready formats" %}</li>
+                </ul>
+
             </div>
+
         </div>
     </div>
 </section>
 
-{% endblock content %}
+
+<!-- ======================================== -->
+<!-- 4. PORTFOLIO (Dynamic from Admin)       -->
+<!-- ======================================== -->
+<section class="section section--smm-portfolio" id="portfolio" aria-label="{% trans 'Social media portfolio' %}">
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Our Work" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Social Media & Content Portfolio" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "Examples of the social media content formats and campaign work we can support." %}
+            </p>
+
+        </div>
+
+
+        <!-- Filters -->
+        <div class="smm-portfolio__filters">
+
+            <button class="smm-portfolio__filter active" data-filter="all">
+                {% trans "All" %}
+            </button>
+
+            <button class="smm-portfolio__filter" data-filter="reel">
+                {% trans "Reels" %}
+            </button>
+
+            <button class="smm-portfolio__filter" data-filter="ad">
+                {% trans "Ad Clips" %}
+            </button>
+
+            <button class="smm-portfolio__filter" data-filter="content">
+                {% trans "Content" %}
+            </button>
+
+            <button class="smm-portfolio__filter" data-filter="campaign">
+                {% trans "Campaigns" %}
+            </button>
+
+        </div>
+
+
+        <!-- Portfolio Grid -->
+        <div class="smm-portfolio__grid" id="portfolioGrid">
+
+            {% if smm_projects %}
+
+                {% for project in smm_projects %}
+
+                <div class="smm-portfolio__item" data-category="{{ project.category|lower }}">
+
+                    <div class="smm-portfolio__card">
+
+                        <div class="smm-portfolio__image">
+
+                            {% if project.image %}
+
+                                <img src="{{ project.image.url }}" alt="{{ project.title }}" loading="lazy">
+
+                            {% else %}
+
+                                <div class="smm-portfolio__placeholder">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+
+                            {% endif %}
+
+                            {% if project.is_video %}
+
+                                <span class="smm-portfolio__badge video">
+                                    <i class="fas fa-play"></i>
+                                    {% trans "Video" %}
+                                </span>
+
+                            {% else %}
+
+                                <span class="smm-portfolio__badge">
+                                    {{ project.get_category_display|default:_("Social Media") }}
+                                </span>
+
+                            {% endif %}
+
+                            {% if project.is_featured %}
+
+                                <span class="smm-portfolio__badge featured">
+                                    {% trans "Featured" %}
+                                </span>
+
+                            {% endif %}
+
+                        </div>
+
+
+                        <div class="smm-portfolio__content">
+
+                            <h4 class="smm-portfolio__title">
+                                {{ project.title }}
+                            </h4>
+
+                            <p class="smm-portfolio__desc">
+                                {{ project.description|truncatewords:14 }}
+                            </p>
+
+                            <div class="smm-portfolio__meta">
+
+                                {% if project.platform %}
+
+                                <span>
+                                    <i class="fas fa-share-alt"></i>
+                                    {{ project.get_platform_display }}
+                                </span>
+
+                                {% endif %}
+
+                                {% if project.engagement %}
+
+                                <span>
+                                    <i class="fas fa-heart"></i>
+                                    {{ project.engagement }}
+                                </span>
+
+                                {% endif %}
+
+                                {% if project.reach %}
+
+                                <span>
+                                    <i class="fas fa-eye"></i>
+                                    {{ project.reach }}
+                                </span>
+
+                                {% endif %}
+
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="smm-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <!-- Fallback: Service Examples -->
+
+                <div class="smm-portfolio__item" data-category="reel">
+
+                    <div class="smm-portfolio__card">
+
+                        <div class="smm-portfolio__image">
+
+                            <div class="smm-portfolio__placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+
+                            <span class="smm-portfolio__badge video">
+                                <i class="fas fa-play"></i>
+                                {% trans "Reel" %}
+                            </span>
+
+                        </div>
+
+                        <div class="smm-portfolio__content">
+
+                            <h4 class="smm-portfolio__title">
+                                {% trans "Short-Form Brand Reel" %}
+                            </h4>
+
+                            <p class="smm-portfolio__desc">
+                                {% trans "Short-form video content designed to introduce a product, service, campaign, or brand message in a social-first format." %}
+                            </p>
+
+                            <div class="smm-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-share-alt"></i>
+                                    {% trans "Social Video" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="smm-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="smm-portfolio__item" data-category="ad">
+
+                    <div class="smm-portfolio__card">
+
+                        <div class="smm-portfolio__image">
+
+                            <div class="smm-portfolio__placeholder">
+                                <i class="fas fa-ad"></i>
+                            </div>
+
+                            <span class="smm-portfolio__badge">
+                                {% trans "Ad Clip" %}
+                            </span>
+
+                        </div>
+
+                        <div class="smm-portfolio__content">
+
+                            <h4 class="smm-portfolio__title">
+                                {% trans "Product & Service Ad Content" %}
+                            </h4>
+
+                            <p class="smm-portfolio__desc">
+                                {% trans "Promotional short-form video created around a specific product, service, offer, or campaign objective." %}
+                            </p>
+
+                            <div class="smm-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-bullseye"></i>
+                                    {% trans "Paid Social" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="smm-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="smm-portfolio__item" data-category="content">
+
+                    <div class="smm-portfolio__card">
+
+                        <div class="smm-portfolio__image">
+
+                            <div class="smm-portfolio__placeholder">
+                                <i class="fas fa-images"></i>
+                            </div>
+
+                            <span class="smm-portfolio__badge">
+                                {% trans "Content" %}
+                            </span>
+
+                        </div>
+
+                        <div class="smm-portfolio__content">
+
+                            <h4 class="smm-portfolio__title">
+                                {% trans "Branded Content Series" %}
+                            </h4>
+
+                            <p class="smm-portfolio__desc">
+                                {% trans "A coordinated set of social media visuals created to maintain a consistent message and visual direction across multiple posts." %}
+                            </p>
+
+                            <div class="smm-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {% trans "Content Series" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="smm-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="smm-portfolio__item" data-category="campaign">
+
+                    <div class="smm-portfolio__card">
+
+                        <div class="smm-portfolio__image">
+
+                            <div class="smm-portfolio__placeholder">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+
+                            <span class="smm-portfolio__badge">
+                                {% trans "Campaign" %}
+                            </span>
+
+                        </div>
+
+                        <div class="smm-portfolio__content">
+
+                            <h4 class="smm-portfolio__title">
+                                {% trans "Social Media Campaign" %}
+                            </h4>
+
+                            <p class="smm-portfolio__desc">
+                                {% trans "Campaign content planned around a defined message, audience, publishing schedule, and set of social media formats." %}
+                            </p>
+
+                            <div class="smm-portfolio__meta">
+                                <span>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    {% trans "Campaign Planning" %}
+                                </span>
+                            </div>
+
+                            <a href="{% url 'contact' %}" class="smm-portfolio__link">
+                                {% trans "Discuss a Similar Project" %}
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ======================================== -->
+<!-- 5. CTA SECTION                           -->
+<!-- ======================================== -->
+<section class="section section--cta" aria-label="{% trans 'Call to action' %}">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Need a More Consistent Social Media Presence?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us about your business, your current social media channels, and what you want to achieve. We can discuss the right combination of content, management, campaigns, and reporting for your needs." %}
+                </p>
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-rocket"></i>
+                        {% trans "Discuss Your Social Media Strategy" %}
+                    </a>
+
+                    <a href="tel:+992110003443" class="btn btn--outline btn--large" style="border-color:rgba(255,255,255,0.3);color:white;">
+                        <i class="fas fa-phone"></i>
+                        {% trans "Call for Inquiry" %}
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT FOR FILTER & COUNTER         -->
+<!-- ======================================== -->
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // ---- Portfolio Filter ----
+        const filterBtns = document.querySelectorAll('.smm-portfolio__filter');
+        const portfolioItems = document.querySelectorAll('.smm-portfolio__item');
+
+        filterBtns.forEach(btn => {
+
+            btn.addEventListener('click', function() {
+
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filterValue = this.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+
+                    const category = item.getAttribute('data-category');
+
+                    if (filterValue === 'all' || category === filterValue) {
+
+                        item.style.display = 'block';
+
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 50);
+
+                    } else {
+
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    });
+</script>
+{% endblock %}

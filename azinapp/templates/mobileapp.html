@@ -1,337 +1,862 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}mobileapp | azingroup{% endblock %}
+{% block title %}Mobile App Development — AZIN GROUP{% endblock %}
+
+{% block meta_description %}Custom mobile app development for businesses and organizations. We help turn mobile app ideas into reliable, user-friendly digital products with scalable architecture and professional development.{% endblock %}
+
+{% block og_title %}Mobile App Development — AZIN GROUP{% endblock %}
+
+{% block og_description %}Professional mobile app development for businesses and organizations — from product planning and UI/UX design to development, testing, deployment, and ongoing support.{% endblock %}
 
 {% block content %}
-<!-- هیرو سکشن اپلیکیشن موبایل -->
-<section class="mobileapp-hero-section">
-    <div class="mobileapp-hero-background">
-        <div class="hero-gradient-overlay"></div>
-        <div class="app-pattern"></div>
-        <div class="floating-app-elements">
-            <div class="app-element elem-1"><i class="bi bi-phone"></i></div>
-            <div class="app-element elem-2"><i class="bi bi-tablet"></i></div>
-            <div class="app-element elem-3"><i class="bi bi-code-slash"></i></div>
-            <div class="app-element elem-4"><i class="bi bi-rocket"></i></div>
+
+<!-- ======================================== -->
+<!-- 1. HERO SECTION                          -->
+<!-- ======================================== -->
+<section class="mobile-hero" aria-label="{% trans 'Mobile app development services' %}">
+    <div class="mobile-hero__background">
+        <div class="mobile-hero__overlay"></div>
+        <div class="mobile-hero__pattern"></div>
+
+        <div class="mobile-hero__floating">
+            <div class="mobile-hero__float mobile-hero__float--1">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+
+            <div class="mobile-hero__float mobile-hero__float--2">
+                <i class="fas fa-tablet-alt"></i>
+            </div>
+
+            <div class="mobile-hero__float mobile-hero__float--3">
+                <i class="fas fa-code"></i>
+            </div>
+
+            <div class="mobile-hero__float mobile-hero__float--4">
+                <i class="fas fa-rocket"></i>
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="mobileapp-hero-content">
-            <div class="mobileapp-hero-text">
-                <div class="service-badge">
-                    <span class="badge-text">واحد توسعه موبایل</span>
-                    <div class="badge-line"></div>
-                </div>
+        <div class="mobile-hero__content">
 
-                <h1 class="mobileapp-hero-title">
-                    <span class="title-line">توسعه اپلیکیشن‌های سازمانی</span>
-                    <span class="title-line accent">با تکنولوژی‌های برتر موبایل</span>
+            <div class="mobile-hero__text">
+
+                <span class="mobile-hero__badge">
+                    {% trans "AZIN GROUP — Mobile App Development" %}
+                </span>
+
+                <h1 class="mobile-hero__title">
+                    <span class="mobile-hero__title-line">
+                        {% trans "Mobile App" %}
+                    </span>
+
+                    <span class="mobile-hero__title-line mobile-hero__accent">
+                        {% trans "Development" %}
+                    </span>
                 </h1>
 
-                <p class="mobileapp-hero-description">
-                    واحد توسعه اپلیکیشن موبایل گروه آذین با تیمی از مهندسان متخصص، راهکارهای نوآورانه و کاربردی برای پلتفرم‌های iOS و Android ارائه می‌دهد. ما از ایده‌پردازی تا انتشار در استورها، همراهی قابل اعتماد برای کسب‌وکارهای دیجیتال هستیم.
+                <p class="mobile-hero__description">
+                    {% trans "We help businesses turn their mobile app ideas into practical digital products. From planning and UI/UX design to development, testing, deployment, and ongoing support, we focus on creating reliable and user-friendly mobile experiences." %}
                 </p>
 
-                <div class="mobileapp-hero-actions">
-                    <a href="{% url 'contact' %}" class="mobileapp-cta-btn primary">
-                        <i class="bi bi-calendar-check"></i>
-                        <span>درخواست مشاوره فنی</span>
+                <div class="mobile-hero__actions">
+
+                    <a href="{% url 'contact' %}" class="btn btn--primary btn--large">
+                        <i class="fas fa-paper-plane"></i>
+                        {% trans "Discuss Your App Idea" %}
                     </a>
-                    <a href="{% url 'portfolio' %}"class="mobileapp-cta-btn secondary">
-                        <i class="bi bi-phone"></i>
-                        <span>مشاهده نمونه‌کارها</span>
-                    </a>
+
                 </div>
+
             </div>
 
-            <div class="mobileapp-hero-visual">
-                <div class="app-showcase">
-                    <div class="app-device iphone">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img src="{% static 'img/mobileapp.jpg' %}" alt="نمونه اپلیکیشن iOS طراحی شده">
-                                <div class="app-badge">
-                                    <i class="bi bi-apple"></i>
+            <div class="mobile-hero__visual">
+
+                <div class="mobile-hero__devices">
+
+                    <div class="mobile-hero__device mobile-hero__device--ios">
+                        <div class="mobile-hero__device-frame">
+                            <div class="mobile-hero__device-screen">
+
+                                <div class="mobile-hero__device-placeholder">
+                                    <i class="fas fa-mobile-alt"></i>
                                     <span>iOS</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="app-device android">
-                        <div class="device-frame">
-                            <div class="device-screen">
-                                <img src="{% static 'img/port.jpg' %}" alt="نمونه اپلیکیشن Android طراحی شده">
-                                <div class="app-badge">
-                                    <i class="bi bi-google-play"></i>
+
+                    <div class="mobile-hero__device mobile-hero__device--android">
+                        <div class="mobile-hero__device-frame">
+                            <div class="mobile-hero__device-screen">
+
+                                <div class="mobile-hero__device-placeholder">
+                                    <i class="fab fa-android"></i>
                                     <span>Android</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- بخش فرآیند توسعه -->
-<section class="development-process-section">
+
+<!-- ======================================== -->
+<!-- 2. WHAT WE BUILD                         -->
+<!-- ======================================== -->
+<section class="section section--types"
+         aria-label="{% trans 'Mobile applications we build' %}">
+
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">فرآیند توسعه اپلیکیشن موبایل</h2>
-            <p class="section-subtitle">رویکرد سیستماتیک و مرحله‌ای برای تضمین کیفیت</p>
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "What We Build" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Mobile Solutions for Different Business Needs" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "We develop mobile solutions based on your business goals, target users, required features, and project scope." %}
+            </p>
+
         </div>
 
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-number">۰۱</div>
-                <div class="step-icon">
-                    <i class="bi bi-clipboard-data"></i>
+
+        <div class="types-grid grid-3">
+
+            <!-- Business Apps -->
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-building"></i>
                 </div>
-                <div class="step-content">
-                    <h4>تحلیل نیاز و برنامه‌ریزی</h4>
-                    <p>بررسی دقیق نیازمندی‌ها، تحلیل بازار و تدوین مستندات فنی پروژه</p>
-                    <ul>
-                        <li>مشاوره تخصصی با تحلیلگران کسب‌وکار</li>
-                        <li>تهیه User Stories و سناریوهای کاربری</li>
-                        <li>تدوین مستندات فنی (Technical Documentation)</li>
-                        <li>برنامه‌ریزی زمان‌بندی و منابع</li>
-                    </ul>
-                </div>
+
+                <h4>
+                    {% trans "Business Applications" %}
+                </h4>
+
+                <p>
+                    {% trans "Mobile applications designed to help businesses provide services, manage operations, and stay connected with their customers." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "Business workflows" %}</li>
+                    <li>{% trans "User accounts & profiles" %}</li>
+                    <li>{% trans "Notifications & communication" %}</li>
+                    <li>{% trans "Backend & API integration" %}</li>
+                </ul>
+
             </div>
 
-            <div class="process-step">
-                <div class="step-number">۰۲</div>
-                <div class="step-icon">
-                    <i class="bi bi-pencil-square"></i>
+
+            <!-- Customer Apps -->
+            <div class="type-card type-card--featured">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-users"></i>
                 </div>
-                <div class="step-content">
-                    <h4>طراحی UI/UX و معماری</h4>
-                    <p>طراحی رابط کاربری، تجربه کاربری و معماری فنی اپلیکیشن</p>
-                    <ul>
-                        <li>طراحی وایرفریم و پروتوتایپ اولیه</li>
-                        <li>طراحی UI با تمرکز بر اصول Material Design / Human Interface</li>
-                        <li>تعیین معماری فنی (MVVM، Clean Architecture)</li>
-                        <li>توسعه Design System اختصاصی</li>
-                    </ul>
-                </div>
+
+                <h4>
+                    {% trans "Customer-Facing Apps" %}
+                </h4>
+
+                <p>
+                    {% trans "User-friendly mobile applications that allow customers to browse services, submit requests, communicate, and manage their accounts." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "User registration & login" %}</li>
+                    <li>{% trans "Service browsing" %}</li>
+                    <li>{% trans "Request & booking features" %}</li>
+                    <li>{% trans "Customer notifications" %}</li>
+                </ul>
+
             </div>
 
-            <div class="process-step">
-                <div class="step-number">۰۳</div>
-                <div class="step-icon">
-                    <i class="bi bi-code-square"></i>
+
+            <!-- E-Commerce Apps -->
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
-                <div class="step-content">
-                    <h4>توسعه و پیاده‌سازی</h4>
-                    <p>کدنویسی، پیاده‌سازی ماژول‌ها و یکپارچه‌سازی سرویس‌ها</p>
-                    <ul>
-                        <li>توسعه Frontend با تکنولوژی‌های روز</li>
-                        <li>پیاده‌سازی Backend و API ها</li>
-                        <li>یکپارچه‌سازی سرویس‌های شخص ثالث</li>
-                        <li>پیاده‌سازی سیستم‌های امنیتی</li>
-                    </ul>
-                </div>
+
+                <h4>
+                    {% trans "Mobile Commerce" %}
+                </h4>
+
+                <p>
+                    {% trans "Mobile shopping experiences with product catalogs, customer accounts, orders, and payment integration." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "Product catalog" %}</li>
+                    <li>{% trans "Shopping cart" %}</li>
+                    <li>{% trans "Order management" %}</li>
+                    <li>{% trans "Payment integration" %}</li>
+                </ul>
+
             </div>
 
-            <div class="process-step">
-                <div class="step-number">۰۴</div>
-                <div class="step-icon">
-                    <i class="bi bi-bug"></i>
+
+            <!-- Education -->
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                <div class="step-content">
-                    <h4>تست و کنترل کیفیت</h4>
-                    <p>انجام تست‌های جامع و اطمینان از عملکرد بی‌نقص اپلیکیشن</p>
-                    <ul>
-                        <li>تست واحد (Unit Testing)</li>
-                        <li>تست یکپارچگی (Integration Testing)</li>
-                        <li>تست کاربری (User Acceptance Testing)</li>
-                        <li>تست عملکرد و Load Testing</li>
-                    </ul>
-                </div>
+
+                <h4>
+                    {% trans "Educational Apps" %}
+                </h4>
+
+                <p>
+                    {% trans "Mobile learning solutions for courses, educational content, student access, and progress management." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "Course & lesson access" %}</li>
+                    <li>{% trans "Student accounts" %}</li>
+                    <li>{% trans "Learning content" %}</li>
+                    <li>{% trans "Progress tracking" %}</li>
+                </ul>
+
             </div>
 
-            <div class="process-step">
-                <div class="step-number">۰۵</div>
-                <div class="step-icon">
-                    <i class="bi bi-rocket"></i>
+
+            <!-- Service Apps -->
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-concierge-bell"></i>
                 </div>
-                <div class="step-content">
-                    <h4>استقرار و پشتیبانی</h4>
-                    <p>انتشار در استورها، مانیتورینگ و پشتیبانی مستمر</p>
-                    <ul>
-                        <li>آماده‌سازی برای انتشار (App Store / Google Play)</li>
-                        <li>مانیتورینگ عملکرد و گزارش‌گیری</li>
-                        <li>پشتیبانی فنی و رفع باگ‌ها</li>
-                        <li>به‌روزرسانی‌های دوره‌ای</li>
-                    </ul>
-                </div>
+
+                <h4>
+                    {% trans "Service Applications" %}
+                </h4>
+
+                <p>
+                    {% trans "Custom mobile apps for businesses that need to connect customers with services, teams, or operational processes." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "Service requests" %}</li>
+                    <li>{% trans "Booking workflows" %}</li>
+                    <li>{% trans "User communication" %}</li>
+                    <li>{% trans "Business management" %}</li>
+                </ul>
+
             </div>
+
+
+            <!-- Custom Apps -->
+            <div class="type-card">
+
+                <div class="type-card__icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+
+                <h4>
+                    {% trans "Custom Mobile Applications" %}
+                </h4>
+
+                <p>
+                    {% trans "Tailor-made mobile applications built around specific business requirements, workflows, and integrations." %}
+                </p>
+
+                <ul class="type-card__features">
+                    <li>{% trans "Custom business logic" %}</li>
+                    <li>{% trans "API integrations" %}</li>
+                    <li>{% trans "Role-based access" %}</li>
+                    <li>{% trans "Scalable architecture" %}</li>
+                </ul>
+
+            </div>
+
         </div>
+
     </div>
+
 </section>
 
-<!-- بخش ویژگی‌های فنی -->
-<section class="technical-features-section">
+
+<!-- ======================================== -->
+<!-- 3. DEVELOPMENT PROCESS                   -->
+<!-- ======================================== -->
+<section class="section section--process"
+         aria-label="{% trans 'Mobile app development process' %}">
+
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">ویژگی‌های فنی اپلیکیشن‌های ما</h2>
-            <p class="section-subtitle">تضمین کیفیت با رعایت استانداردهای جهانی توسعه موبایل</p>
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Our Process" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "From Idea to Launch" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "A structured development process designed to keep your project clear, efficient, and aligned with your business goals." %}
+            </p>
+
         </div>
 
-        <div class="tech-features-grid">
-            <div class="tech-feature-card">
-                <div class="tech-icon">
-                    <i class="bi bi-shield-check"></i>
+
+        <div class="process-grid">
+
+            <!-- Step 01 -->
+            <div class="process-step">
+
+                <span class="process-step__number">01</span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-comments"></i>
                 </div>
-                <h4>امنیت پیشرفته</h4>
-                <p>پیاده‌سازی پروتکل‌های امنیتی پیشرفته، رمزنگاری end-to-end و احراز هویت چندعاملی</p>
-                <div class="tech-progress">
-                    <div class="progress-bar" style="width: 98%"></div>
-                </div>
+
+                <h4 class="process-step__title">
+                    {% trans "Discovery & Requirements" %}
+                </h4>
+
+                <p class="process-step__desc">
+                    {% trans "We discuss your idea, target users, business goals, required features, and technical requirements." %}
+                </p>
+
+                <ul class="process-step__list">
+                    <li>{% trans "Business requirements" %}</li>
+                    <li>{% trans "Target users" %}</li>
+                    <li>{% trans "Feature planning" %}</li>
+                    <li>{% trans "Project scope" %}</li>
+                </ul>
+
             </div>
 
-            <div class="tech-feature-card">
-                <div class="tech-icon">
-                    <i class="bi bi-cloud-upload"></i>
+
+            <!-- Step 02 -->
+            <div class="process-step">
+
+                <span class="process-step__number">02</span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-pencil-ruler"></i>
                 </div>
-                <h4>معماری مقیاس‌پذیر</h4>
-                <p>توسعه سرور و API های امن و scalable با قابلیت پشتیبانی از میلیون‌ها کاربر همزمان</p>
-                <div class="tech-progress">
-                    <div class="progress-bar" style="width: 94%"></div>
-                </div>
+
+                <h4 class="process-step__title">
+                    {% trans "UI/UX Design" %}
+                </h4>
+
+                <p class="process-step__desc">
+                    {% trans "We create clear and intuitive interfaces designed around your users and brand identity." %}
+                </p>
+
+                <ul class="process-step__list">
+                    <li>{% trans "User flows" %}</li>
+                    <li>{% trans "Wireframes" %}</li>
+                    <li>{% trans "Interface design" %}</li>
+                    <li>{% trans "Interactive prototypes" %}</li>
+                </ul>
+
             </div>
 
-            <div class="tech-feature-card">
-                <div class="tech-icon">
-                    <i class="bi bi-speedometer2"></i>
+
+            <!-- Step 03 -->
+            <div class="process-step">
+
+                <span class="process-step__number">03</span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-code"></i>
                 </div>
-                <h4>عملکرد بهینه</h4>
-                <p>بهینه‌سازی کامل کد، کاهش مصرف باتری و افزایش سرعت لود اپلیکیشن</p>
-                <div class="tech-progress">
-                    <div class="progress-bar" style="width: 96%"></div>
-                </div>
+
+                <h4 class="process-step__title">
+                    {% trans "App Development" %}
+                </h4>
+
+                <p class="process-step__desc">
+                    {% trans "Our development team implements the planned features, connects the backend services, and builds the application according to the approved scope." %}
+                </p>
+
+                <ul class="process-step__list">
+                    <li>{% trans "Mobile application development" %}</li>
+                    <li>{% trans "Backend & API integration" %}</li>
+                    <li>{% trans "Database integration" %}</li>
+                    <li>{% trans "Authentication & permissions" %}</li>
+                </ul>
+
             </div>
 
-            <div class="tech-feature-card">
-                <div class="tech-icon">
-                    <i class="bi bi-tools"></i>
+
+            <!-- Step 04 -->
+            <div class="process-step">
+
+                <span class="process-step__number">04</span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-vial"></i>
                 </div>
-                <h4>پشتیبانی جامع</h4>
-                <p>پشتیبانی فنی ۲۴/۷، به‌روزرسانی‌های دوره‌ای و رفع سریع مشکلات</p>
-                <div class="tech-progress">
-                    <div class="progress-bar" style="width: 100%"></div>
-                </div>
+
+                <h4 class="process-step__title">
+                    {% trans "Testing & Quality Assurance" %}
+                </h4>
+
+                <p class="process-step__desc">
+                    {% trans "We test the application across supported devices and key user flows to identify and resolve issues before launch." %}
+                </p>
+
+                <ul class="process-step__list">
+                    <li>{% trans "Functional testing" %}</li>
+                    <li>{% trans "Interface testing" %}</li>
+                    <li>{% trans "Device compatibility" %}</li>
+                    <li>{% trans "Bug fixing & refinement" %}</li>
+                </ul>
+
             </div>
+
+
+            <!-- Step 05 -->
+            <div class="process-step">
+
+                <span class="process-step__number">05</span>
+
+                <div class="process-step__icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+
+                <h4 class="process-step__title">
+                    {% trans "Deployment & Support" %}
+                </h4>
+
+                <p class="process-step__desc">
+                    {% trans "We prepare the application for release and help with deployment, updates, and post-launch technical support." %}
+                </p>
+
+                <ul class="process-step__list">
+                    <li>{% trans "Release preparation" %}</li>
+                    <li>{% trans "Store deployment support" %}</li>
+                    <li>{% trans "Post-launch fixes" %}</li>
+                    <li>{% trans "Ongoing maintenance" %}</li>
+                </ul>
+
+            </div>
+
         </div>
+
     </div>
+
 </section>
 
-<!-- بخش تکنولوژی‌ها -->
-<section class="technologies-section">
+
+<!-- ======================================== -->
+<!-- 4. TECHNICAL FEATURES                    -->
+<!-- ======================================== -->
+<section class="section section--tech-features"
+         aria-label="{% trans 'Mobile app technical features' %}">
+
     <div class="container">
-        <div class="section-header center">
-            <h2 class="section-title">تکنولوژی‌های مورد استفاده در توسعه</h2>
-            <p class="section-subtitle">استفاده از برترین و به‌روزترین تکنولوژی‌های صنعت توسعه موبایل</p>
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Technical Approach" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Built for Reliability and Growth" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "We focus on maintainable architecture, reliable integrations, performance, and a smooth user experience." %}
+            </p>
+
         </div>
 
-        <div class="technologies-grid">
-            <div class="tech-card">
-                <div class="tech-logo">
-                    <i class="bi bi-apple"></i>
+
+        <div class="tech-features-grid grid-2">
+
+            <!-- Feature 1 -->
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
-                <h4>توسعه iOS Native</h4>
-                <div class="tech-stack">
-                    <span class="stack-item">Swift 5.9</span>
-                    <span class="stack-item">SwiftUI</span>
-                    <span class="stack-item">UIKit</span>
-                    <span class="stack-item">Combine Framework</span>
-                    <span class="stack-item">Core Data</span>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Secure Authentication" %}
+                    </h4>
+
+                    <p>
+                        {% trans "We implement appropriate authentication, authorization, and data protection practices based on your application's requirements." %}
+                    </p>
+
                 </div>
-                <p class="tech-description">توسعه اپلیکیشن‌های بومی iOS با آخرین ویژگی‌های سیستم عامل</p>
+
             </div>
 
-            <div class="tech-card">
-                <div class="tech-logo">
-                    <i class="bi bi-google"></i>
+
+            <!-- Feature 2 -->
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-layer-group"></i>
                 </div>
-                <h4>توسعه Android Native</h4>
-                <div class="tech-stack">
-                    <span class="stack-item">Kotlin</span>
-                    <span class="stack-item">Jetpack Compose</span>
-                    <span class="stack-item">Coroutines</span>
-                    <span class="stack-item">Room Database</span>
-                    <span class="stack-item">Retrofit</span>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Scalable Architecture" %}
+                    </h4>
+
+                    <p>
+                        {% trans "We structure applications and backend services so the product can evolve as your users, features, and business requirements grow." %}
+                    </p>
+
                 </div>
-                <p class="tech-description">توسعه اپلیکیشن‌های بومی Android با معماری‌های مدرن</p>
+
             </div>
 
-            <div class="tech-card">
-                <div class="tech-logo">
-                    <i class="bi bi-react"></i>
+
+            <!-- Feature 3 -->
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-bolt"></i>
                 </div>
-                <h4>Cross-Platform Development</h4>
-                <div class="tech-stack">
-                    <span class="stack-item">React Native</span>
-                    <span class="stack-item">Flutter</span>
-                    <span class="stack-item">Xamarin</span>
-                    <span class="stack-item">TypeScript</span>
-                    <span class="stack-item">Redux</span>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Performance Optimization" %}
+                    </h4>
+
+                    <p>
+                        {% trans "We pay attention to application performance, API communication, resource usage, and efficient user flows." %}
+                    </p>
+
                 </div>
-                <p class="tech-description">توسعه چندپلتفرمی برای صرفه‌جویی در زمان و هزینه</p>
+
             </div>
 
-            <div class="tech-card">
-                <div class="tech-logo">
-                    <i class="bi bi-database"></i>
+
+            <!-- Feature 4 -->
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-plug"></i>
                 </div>
-                <h4>Backend & Database</h4>
-                <div class="tech-stack">
-                    <span class="stack-item">Node.js</span>
-                    <span class="stack-item">Python Django</span>
-                    <span class="stack-item">Firebase</span>
-                    <span class="stack-item">MongoDB</span>
-                    <span class="stack-item">PostgreSQL</span>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "API & Third-Party Integration" %}
+                    </h4>
+
+                    <p>
+                        {% trans "Connect your mobile application with existing business systems, APIs, payment services, and other required platforms." %}
+                    </p>
+
                 </div>
-                <p class="tech-description">توسعه سمت سرور و پایگاه‌داده‌های امن و مقیاس‌پذیر</p>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
 
-<script>
-    // انیمیشن شماره‌ها
-    document.addEventListener('DOMContentLoaded', function() {
-    
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                const filterValue = this.getAttribute('data-filter');
-                
-                portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                        item.style.display = 'block';
-                        setTimeout(() => {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }, 100);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 300);
-                    }
-                });
-            });
-        });
-    });
-</script>
-{% endblock content %}
+
+<!-- ======================================== -->
+<!-- 5. TECHNOLOGIES                         -->
+<!-- ======================================== -->
+<section class="section section--technologies"
+         aria-label="{% trans 'Mobile development technologies' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Technology" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "Technology Choices Based on Your Project" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "We select the appropriate mobile technology and architecture according to your project requirements, target platforms, budget, and long-term goals." %}
+            </p>
+
+        </div>
+
+
+        <div class="tech-stack-grid grid-3">
+
+            <!-- iOS -->
+            <div class="tech-stack-card">
+
+                <div class="tech-stack-card__icon">
+                    <i class="fab fa-apple"></i>
+                </div>
+
+                <h4>
+                    {% trans "iOS Applications" %}
+                </h4>
+
+                <div class="tech-stack-card__tags">
+                    <span>iOS</span>
+                    <span>Swift</span>
+                    <span>SwiftUI</span>
+                    <span>UIKit</span>
+                </div>
+
+                <p>
+                    {% trans "Solutions designed for Apple's mobile ecosystem, based on the requirements of your application." %}
+                </p>
+
+            </div>
+
+
+            <!-- Android -->
+            <div class="tech-stack-card">
+
+                <div class="tech-stack-card__icon">
+                    <i class="fab fa-android"></i>
+                </div>
+
+                <h4>
+                    {% trans "Android Applications" %}
+                </h4>
+
+                <div class="tech-stack-card__tags">
+                    <span>Android</span>
+                    <span>Kotlin</span>
+                    <span>Jetpack</span>
+                    <span>Android SDK</span>
+                </div>
+
+                <p>
+                    {% trans "Android applications designed for modern devices and business use cases." %}
+                </p>
+
+            </div>
+
+
+            <!-- Cross Platform -->
+            <div class="tech-stack-card">
+
+                <div class="tech-stack-card__icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h4>
+                    {% trans "Cross-Platform Solutions" %}
+                </h4>
+
+                <div class="tech-stack-card__tags">
+                    <span>Flutter</span>
+                    <span>React Native</span>
+                    <span>Dart</span>
+                    <span>TypeScript</span>
+                </div>
+
+                <p>
+                    {% trans "Cross-platform approaches can reduce development effort when a shared codebase is appropriate for the project." %}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================== -->
+<!-- 6. WHAT YOU GET                          -->
+<!-- ======================================== -->
+<section class="section section--benefits"
+         aria-label="{% trans 'Mobile app development benefits' %}">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-header__badge">
+                {% trans "Project Delivery" %}
+            </span>
+
+            <h2 class="section-header__title">
+                {% trans "What You Can Expect From Our Team" %}
+            </h2>
+
+            <p class="section-header__subtitle">
+                {% trans "A professional development experience focused on communication, quality, and long-term maintainability." %}
+            </p>
+
+        </div>
+
+
+        <div class="tech-features-grid grid-2">
+
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Clear Communication" %}
+                    </h4>
+
+                    <p>
+                        {% trans "You receive clear project updates, defined milestones, and direct communication throughout the development process." %}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-file-code"></i>
+                </div>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Maintainable Code" %}
+                    </h4>
+
+                    <p>
+                        {% trans "We aim for clean, organized, and maintainable implementation that can be extended as your product evolves." %}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Backend Integration" %}
+                    </h4>
+
+                    <p>
+                        {% trans "Mobile applications can be connected to existing or custom backend systems through secure APIs and appropriate data architecture." %}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-feature">
+
+                <div class="tech-feature__icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+
+                <div class="tech-feature__content">
+
+                    <h4>
+                        {% trans "Post-Launch Support" %}
+                    </h4>
+
+                    <p>
+                        {% trans "After launch, we can provide maintenance, bug fixes, technical improvements, and updates based on your support requirements." %}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================== -->
+<!-- 7. CTA SECTION                           -->
+<!-- ======================================== -->
+<section class="section section--cta"
+         aria-label="{% trans 'Start a mobile app project' %}">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-box__content">
+
+                <h2 class="cta-box__title">
+                    {% trans "Have a Mobile App Idea?" %}
+                </h2>
+
+                <p class="cta-box__desc">
+                    {% trans "Tell us what you want to build. We will review your requirements, discuss the best approach, and provide a clear project scope and quotation." %}
+                </p>
+
+                <div class="cta-box__actions">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn--primary btn--large">
+
+                        <i class="fas fa-paper-plane"></i>
+                        {% trans "Discuss Your Project" %}
+
+                    </a>
+
+                    <a href="tel:+992110003443"
+                       class="btn btn--outline btn--large"
+                       style="border-color:rgba(255,255,255,0.3);color:white;">
+
+                        <i class="fas fa-phone"></i>
+                        {% trans "Call Us" %}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

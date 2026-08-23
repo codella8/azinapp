@@ -1,0 +1,4756 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-20 03:34-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\azinapp\forms.py:17 .\azinapp\templates\contact.html:463
+msgid "Full Name"
+msgstr "نام کامل"
+
+#: .\azinapp\forms.py:21
+msgid "Enter your full name"
+msgstr "نام کامل تان را وارد کنید"
+
+#: .\azinapp\forms.py:25
+msgid "Please enter your name."
+msgstr "لطفا نام تان را وارد کنید"
+
+#: .\azinapp\forms.py:26
+msgid "Name cannot exceed 100 characters."
+msgstr "نام نمی‌تواند بیش از ۱۰۰ کاراکتر باشد."
+
+#: .\azinapp\forms.py:31 .\azinapp\forms.py:223 .\azinapp\forms.py:304
+#: .\azinapp\forms.py:437 .\azinapp\templates\contact.html:479
+#: .\azinapp\templates\signup.html:86
+msgid "Email Address"
+msgstr "ایمیل آدرس"
+
+#: .\azinapp\forms.py:34 .\azinapp\forms.py:227 .\azinapp\forms.py:307
+msgid "example@email.com"
+msgstr "example@email.com"
+
+#: .\azinapp\forms.py:38 .\azinapp\forms.py:310 .\azinapp\forms.py:444
+msgid "Please enter your email address."
+msgstr "لطفا ایمیل تان را وارد کنید"
+
+#: .\azinapp\forms.py:39 .\azinapp\forms.py:68 .\azinapp\forms.py:230
+#: .\azinapp\forms.py:311 .\azinapp\forms.py:445
+msgid "Please enter a valid email address."
+msgstr "لطفاً یک آدرس ایمیل معتبر وارد کنید."
+
+#: .\azinapp\forms.py:44 .\azinapp\templates\contact.html:586
+msgid "Message"
+msgstr "پیام"
+
+#: .\azinapp\forms.py:48
+msgid "Enter your message here..."
+msgstr "پیام تان را اینجا وارد کنید..."
+
+#: .\azinapp\forms.py:52
+msgid "Please enter your message."
+msgstr "لطفا پیام تان را وارد کنید"
+
+#: .\azinapp\forms.py:80 .\azinapp\templates\contact.html:503
+msgid "Phone Number"
+msgstr "شماره تماس"
+
+#: .\azinapp\forms.py:84
+msgid "e.g. 09123456789"
+msgstr "e.g. 09123456789"
+
+#: .\azinapp\forms.py:88
+msgid "Please enter your phone number."
+msgstr "لطفا شماره تماس تان را وارد کنید"
+
+#: .\azinapp\forms.py:93
+msgid "Address Line 1"
+msgstr "آدرس 1"
+
+#: .\azinapp\forms.py:97
+msgid "Enter your address"
+msgstr "آدرس تان را وارد کنید"
+
+#: .\azinapp\forms.py:102
+msgid "Address Line 2"
+msgstr "آدرس 2"
+
+#: .\azinapp\forms.py:106
+msgid "Enter your address (optional)"
+msgstr "آدرس تان را وارد کنید (اختیاری)"
+
+#: .\azinapp\forms.py:111
+msgid "City"
+msgstr "شهر"
+
+#: .\azinapp\forms.py:115
+msgid "Enter your city"
+msgstr "شهر تان را وارد کنید"
+
+#: .\azinapp\forms.py:120
+msgid "Country"
+msgstr "کشور"
+
+#: .\azinapp\forms.py:125
+msgid "Enter your country"
+msgstr "کشور تان را وارد کنید"
+
+#: .\azinapp\forms.py:141
+msgid "Phone number must contain only digits."
+msgstr "شماره تلفن باید فقط شامل ارقام باشد."
+
+#: .\azinapp\forms.py:143
+msgid "Phone number must be at least 10 digits."
+msgstr "شماره تلفن باید حداقل ۱۰ رقم باشد."
+
+#: .\azinapp\forms.py:155 .\azinapp\templates\update_password.html:79
+msgid "New Password"
+msgstr "رمز عبور جدید"
+
+#: .\azinapp\forms.py:158
+msgid "Enter your new password"
+msgstr "رمز عبور جدید تان را وارد کنید"
+
+#: .\azinapp\forms.py:163
+msgid "Please enter your new password."
+msgstr "لطفا رمز عبور جدید تان را وارد کنید"
+
+#: .\azinapp\forms.py:168 .\azinapp\templates\update_password.html:111
+msgid "Confirm New Password"
+msgstr "تایید رمز عبور"
+
+#: .\azinapp\forms.py:171
+msgid "Enter your new password again"
+msgstr "رمز عبور تان را دوباره وارد کنید"
+
+#: .\azinapp\forms.py:176
+msgid "Please confirm your new password."
+msgstr "لطفا رمز عبور جدید تان را تایید کنید"
+
+#: .\azinapp\forms.py:185 .\azinapp\forms.py:382
+msgid "Password must be at least 8 characters."
+msgstr "رمز عبور باید حداقل ۸ کاراکتر باشد."
+
+#: .\azinapp\forms.py:187 .\azinapp\forms.py:384
+msgid "Password must contain at least one number."
+msgstr "رمز عبور باید حداقل شامل یک عدد باشد."
+
+#: .\azinapp\forms.py:189 .\azinapp\forms.py:386
+msgid "Password must contain at least one letter."
+msgstr "رمز عبور باید حداقل شامل یک حرف باشد."
+
+#: .\azinapp\forms.py:203 .\azinapp\forms.py:279
+#: .\azinapp\templates\signup.html:48
+msgid "First Name"
+msgstr "نام"
+
+#: .\azinapp\forms.py:208 .\azinapp\forms.py:283
+msgid "Enter your first name"
+msgstr "نام تان را وارد کنید"
+
+#: .\azinapp\forms.py:213 .\azinapp\forms.py:292
+#: .\azinapp\templates\signup.html:58
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: .\azinapp\forms.py:218 .\azinapp\forms.py:296
+msgid "Enter your last name"
+msgstr "نام خانوادگی تان را وارد کنید"
+
+#: .\azinapp\forms.py:235 .\azinapp\forms.py:316
+#: .\azinapp\templates\signup.html:71
+msgid "Username"
+msgstr "نام کاربری"
+
+#: .\azinapp\forms.py:240 .\azinapp\forms.py:320
+msgid "Enter your username"
+msgstr "نام کاربری تان را وارد کنید"
+
+#: .\azinapp\forms.py:253 .\azinapp\forms.py:362
+msgid "Username must be at least 3 characters."
+msgstr "نام کاربری باید حداقل ۳ کاراکتر باشد."
+
+#: .\azinapp\forms.py:255 .\azinapp\forms.py:364
+msgid "Username must contain only letters and numbers."
+msgstr "نام کاربری باید فقط شامل حروف و اعداد باشد."
+
+#: .\azinapp\forms.py:258 .\azinapp\forms.py:366 .\azinapp\views.py:216
+msgid "This username is already taken."
+msgstr "این نام کاربری قبلاً انتخاب شده است."
+
+#: .\azinapp\forms.py:267 .\azinapp\forms.py:374 .\azinapp\views.py:218
+msgid "This email is already registered."
+msgstr "این ایمیل قبلاً ثبت شده است."
+
+#: .\azinapp\forms.py:287
+msgid "Please enter your first name."
+msgstr "لطفاً نام خود را وارد کنید."
+
+#: .\azinapp\forms.py:299
+msgid "Please enter your last name."
+msgstr "لطفاً نام خانوادگی خود را وارد کنید."
+
+#: .\azinapp\forms.py:323
+msgid "Please enter your username."
+msgstr "لطفاً نام کاربری خود را وارد کنید."
+
+#: .\azinapp\forms.py:325
+msgid "Minimum 3 characters, letters and numbers only."
+msgstr "حداقل ۳ کاراکتر؛ فقط شامل حروف و اعداد."
+
+#: .\azinapp\forms.py:329 .\azinapp\templates\login.html:49
+#: .\azinapp\templates\signup.html:98
+msgid "Password"
+msgstr "رمز عبور"
+
+#: .\azinapp\forms.py:332 .\azinapp\templates\login.html:53
+msgid "Enter your password"
+msgstr "رمز عبور خودرا وارد کنید"
+
+#: .\azinapp\forms.py:336
+msgid "Please enter your password."
+msgstr "لطفا رمز عبور خودرا  وارد کنید"
+
+#: .\azinapp\forms.py:338
+msgid "Minimum 8 characters including letters and numbers."
+msgstr "حداقل ۸ کاراکتر شامل حروف و اعداد."
+
+#: .\azinapp\forms.py:342 .\azinapp\templates\signup.html:114
+msgid "Confirm Password"
+msgstr "تایید رمز عبور"
+
+#: .\azinapp\forms.py:345
+msgid "Enter your password again"
+msgstr "رمز عبور خودرا دوباره وارد کنید"
+
+#: .\azinapp\forms.py:349
+msgid "Please confirm your password."
+msgstr "لطفاً رمز عبور خود را تأیید کنید."
+
+#: .\azinapp\forms.py:395
+msgid "Passwords do not match."
+msgstr "رمزهای عبور مطابقت ندارند."
+
+#: .\azinapp\forms.py:415 .\azinapp\forms.py:420
+msgid "Search"
+msgstr "جستجو"
+
+#: .\azinapp\forms.py:419
+msgid "Search..."
+msgstr "جستجو..."
+
+#: .\azinapp\forms.py:425
+msgid "Category"
+msgstr "دسته بندی"
+
+#: .\azinapp\forms.py:440
+msgid "Enter your email address"
+msgstr "آدرس ایمیل خود را وارد کنید"
+
+#: .\azinapp\forms.py:441
+msgid "Subscribe to newsletter"
+msgstr "عضویت در خبرنامه"
+
+#: .\azinapp\templates\about.html:19 .\azinapp\templates\about.html:41
+msgid "About AZIN GROUP"
+msgstr "درباره گروه آذین"
+
+#: .\azinapp\templates\about.html:47
+msgid "Technology, Creativity"
+msgstr "فناوری، خلاقیت"
+
+#: .\azinapp\templates\about.html:53 .\azinapp\templates\website.html:66
+msgid "& Business Solutions"
+msgstr "و راهکارهای تجاری"
+
+#: .\azinapp\templates\about.html:59
+msgid ""
+"AZIN GROUP brings together technology, creative services, media production, "
+"and business solutions under one professional team. We help businesses and "
+"organizations turn ideas into practical, high-quality solutions designed "
+"around their goals."
+msgstr "گروه آذین، فناوری، خدمات خلاقانه، تولید رسانه و راهکارهای تجاری را تحت یک تیم حرفه‌ای گرد هم می‌آورد. ما به کسب‌وکارها و سازمان‌ها کمک می‌کنیم تا ایده‌ها را به راه‌حل‌های عملی و باکیفیتی که پیرامون اهدافشان طراحی شده‌اند، تبدیل کنند."
+
+#: .\azinapp\templates\about.html:72 .\azinapp\templates\index.html:50
+msgid "Years of Experience"
+msgstr "سال‌ها تجربه"
+
+#: .\azinapp\templates\about.html:84 .\azinapp\templates\index.html:42
+msgid "Projects Delivered"
+msgstr "پروژه‌های تحویل‌داده‌شده"
+
+#: .\azinapp\templates\about.html:96 .\azinapp\templates\index.html:46
+msgid "Clients Served"
+msgstr "مشتریان خدمت‌رسانی‌شده"
+
+#: .\azinapp\templates\about.html:108
+msgid "Work With Us"
+msgstr "با ما همکاری کنید"
+
+#: .\azinapp\templates\about.html:119
+msgid "Explore Our Story"
+msgstr "با داستان ما آشنا شوید"
+
+#: .\azinapp\templates\about.html:140
+msgid "Your Partner for Growth"
+msgstr "شریک شما برای رشد"
+
+#: .\azinapp\templates\about.html:144
+msgid "Technology, Creative & Business Services"
+msgstr "خدمات فناوری، خلاقیت و کسب‌وکار "
+
+#: .\azinapp\templates\about.html:167
+msgid "Our story"
+msgstr "داستان ما"
+
+#: .\azinapp\templates\about.html:174
+msgid "Our Journey"
+msgstr "سفر ما"
+
+#: .\azinapp\templates\about.html:178
+msgid "Our Story"
+msgstr "داستان ما"
+
+#: .\azinapp\templates\about.html:182
+msgid ""
+"A growing organization built around technology, creativity, and practical "
+"business solutions."
+msgstr "سازمانی رو به رشد که بر پایه فناوری، خلاقیت و راهکارهای عملی کسب‌وکار بنا شده است."
+
+#: .\azinapp\templates\about.html:202
+msgid "Foundation"
+msgstr "بنیاد"
+
+#: .\azinapp\templates\about.html:206
+msgid ""
+"AZIN GROUP began with the goal of providing professional services that help "
+"businesses and organizations solve practical challenges and move their ideas "
+"forward."
+msgstr "گروه آذین با هدف ارائه خدمات حرفه‌ای آغاز به کار کرد؛ خدماتی که به کسب‌وکارها و سازمان‌ها کمک می‌کند تا چالش‌های عملی را برطرف کرده و ایده‌های خود را پیش ببرند."
+
+#: .\azinapp\templates\about.html:227
+msgid "Service Expansion"
+msgstr "گسترش خدمات"
+
+#: .\azinapp\templates\about.html:231
+msgid ""
+"The range of services expanded to include creative, media, design, and "
+"digital capabilities, allowing clients to access multiple services through "
+"one team."
+msgstr "دامنه خدمات گسترش یافت و شامل قابلیت‌های حوزه خلاقیت، رسانه، طراحی و دیجیتال شد؛ امری که به مشتریان امکان می‌دهد از طریق یک تیم واحد به خدمات متنوعی دسترسی داشته باشند."
+
+#: .\azinapp\templates\about.html:252
+msgid "Specialized Services"
+msgstr "خدمات تخصصی"
+
+#: .\azinapp\templates\about.html:256
+msgid ""
+"AZIN GROUP developed specialized service areas covering technology, media, "
+"design, and business support, creating a broader foundation for client "
+"projects."
+msgstr "گروه آذین حوزه‌های خدمات تخصصی شامل فناوری، رسانه، طراحی و پشتیبانی کسب‌وکار را توسعه داد و بدین‌وسیله بستری گسترده‌تر برای پروژه‌های مشتریان فراهم کرد."
+
+#: .\azinapp\templates\about.html:277
+msgid "Broader Reach"
+msgstr "گستره وسیع‌تر"
+
+#: .\azinapp\templates\about.html:281
+msgid ""
+"The organization continued expanding its capabilities and working with "
+"clients across different markets and industries."
+msgstr "این سازمان به گسترش قابلیت‌های خود و همکاری با مشتریان در بازارهای و صنایع گوناگون ادامه داد."
+
+#: .\azinapp\templates\about.html:302
+msgid "Building the Future"
+msgstr "ساختن آینده"
+
+#: .\azinapp\templates\about.html:306
+msgid ""
+"Today, AZIN GROUP continues to develop its technology, creative, media, and "
+"business capabilities while focusing on practical solutions and long-term "
+"client relationships."
+msgstr "امروزه، گروه آذین ضمن تمرکز بر راهکارهای کاربردی و روابط بلندمدت با مشتریان، به توسعه قابلیت‌های خود در حوزه‌های فناوری، خلاقیت، رسانه و کسب‌وکار ادامه می‌دهد."
+
+#: .\azinapp\templates\about.html:326
+msgid "AZIN GROUP services"
+msgstr "خدمات گروه آذین"
+
+#: .\azinapp\templates\about.html:333 .\azinapp\templates\index.html:188
+msgid "What We Do"
+msgstr "آنچه انجام می‌دهیم"
+
+#: .\azinapp\templates\about.html:337
+msgid "Our Core Services"
+msgstr "خدمات اصلی ما"
+
+#: .\azinapp\templates\about.html:341
+msgid ""
+"Specialized capabilities working together to deliver complete solutions for "
+"our clients."
+msgstr "توانمندی‌های تخصصی که در کنار هم، راهکارهای جامعی را برای مشتریان ما فراهم می‌آورند."
+
+#: .\azinapp\templates\about.html:357 .\azinapp\templates\mobileapp.html:598
+msgid "Technology"
+msgstr "فناوری"
+
+#: .\azinapp\templates\about.html:361
+msgid ""
+"Web development, mobile applications, custom software, and digital "
+"infrastructure for modern businesses."
+msgstr "توسعه وب، اپلیکیشن‌های موبایل، نرم‌افزارهای سفارشی و زیرساخت‌های دیجیتال برای کسب‌وکارهای مدرن."
+
+#: .\azinapp\templates\about.html:371 .\azinapp\templates\about.html:402
+#: .\azinapp\templates\about.html:433
+msgid "Projects"
+msgstr "پروژه ها"
+
+#: .\azinapp\templates\about.html:388 .\azinapp\templates\contact.html:557
+msgid "Media"
+msgstr "رسانه"
+
+#: .\azinapp\templates\about.html:392
+msgid ""
+"Photography, videography, content production, and media services designed "
+"for brands and organizations."
+msgstr "خدمات عکاسی، فیلم‌برداری، تولید محتوا و رسانه که برای برندها و سازمان‌ها طراحی شده‌اند."
+
+#: .\azinapp\templates\about.html:419
+#: .\azinapp\templates\graphicdesign.html:342
+msgid "Design"
+msgstr "طراحی"
+
+#: .\azinapp\templates\about.html:423
+msgid ""
+"Graphic design, branding, visual identity, and creative solutions that help "
+"businesses communicate clearly."
+msgstr "طراحی گرافیک، برندسازی، هویت بصری و راهکارهای خلاقانه‌ای که به کسب‌وکارها کمک می‌کنند تا ارتباطی شفاف برقرار کنند."
+
+#: .\azinapp\templates\about.html:450
+msgid "Business Solutions"
+msgstr "راهکارهای تجاری"
+
+#: .\azinapp\templates\about.html:454
+msgid ""
+"Business consulting, strategic support, and practical solutions designed to "
+"help organizations grow."
+msgstr "مشاوره کسب‌وکار، پشتیبانی راهبردی و راهکارهای عملی که برای کمک به رشد سازمان‌ها طراحی شده‌اند."
+
+#: .\azinapp\templates\about.html:464
+msgid "Clients"
+msgstr "مشتری ها"
+
+#: .\azinapp\templates\about.html:484
+msgid "Mission and values"
+msgstr "مأموریت و ارزش‌ها"
+
+#: .\azinapp\templates\about.html:495
+msgid "Our Mission"
+msgstr "ماموریت ما"
+
+#: .\azinapp\templates\about.html:499
+msgid "Turning Ideas Into Practical Solutions"
+msgstr "تبدیل ایده‌ها به راهکارهای عملی"
+
+#: .\azinapp\templates\about.html:503
+msgid ""
+"Our mission is to combine technology, creativity, and business expertise to "
+"deliver solutions that are useful, reliable, and aligned with our clients' "
+"objectives."
+msgstr "مأموریت ما تلفیق فناوری، خلاقیت و تخصص تجاری برای ارائه راهکارهایی است که کارآمد و قابل‌اطمینان بوده و با اهداف مشتریانمان همسو باشند."
+
+#: .\azinapp\templates\about.html:507
+msgid ""
+"We focus on understanding the real needs behind every project and building "
+"solutions that provide measurable value rather than unnecessary complexity."
+msgstr "تمرکز ما بر درک نیازهای واقعیِ نهفته در پسِ هر پروژه و ایجاد راهکارهایی است که به‌جای پیچیدگی‌های غیرضروری، ارزشی قابل‌سنجش ارائه دهند."
+
+#: .\azinapp\templates\about.html:519
+msgid "Our Vision"
+msgstr "چشم‌انداز ما"
+
+#: .\azinapp\templates\about.html:523
+msgid ""
+"To build a trusted, forward-looking organization known for practical "
+"technology, creative excellence, and dependable business services."
+msgstr "ایجاد سازمانی قابل‌اعتماد و آینده‌نگر که به واسطه فناوری‌های کاربردی، تعالی خلاقانه و خدمات تجاری مطمئن شناخته می‌شود."
+
+#: .\azinapp\templates\about.html:538
+msgid "Core Values"
+msgstr "ارزش‌های محوری"
+
+#: .\azinapp\templates\about.html:542
+msgid "What We Stand For"
+msgstr "اصول و ارزش‌های ما"
+
+#: .\azinapp\templates\about.html:556
+msgid "Innovation"
+msgstr "نوآوری"
+
+#: .\azinapp\templates\about.html:560
+msgid ""
+"We continuously look for better ways to solve problems, improve services, "
+"and create meaningful value."
+msgstr "ما همواره به دنبال روش‌های بهتری برای حل مشکلات، بهبود خدمات و خلق ارزش‌های معنادار هستیم."
+
+#: .\azinapp\templates\about.html:577
+msgid "People First"
+msgstr "اولویت با مردم است"
+
+#: .\azinapp\templates\about.html:581
+msgid ""
+"We value collaboration, professional development, and the people behind "
+"every successful project."
+msgstr "ما برای همکاری، توسعه حرفه‌ای و افرادی که در پسِ هر پروژه موفق قرار دارند، ارزش قائلیم."
+
+#: .\azinapp\templates\about.html:598
+msgid "Trust & Integrity"
+msgstr "اعتماد و درستکاری"
+
+#: .\azinapp\templates\about.html:602
+msgid ""
+"We build professional relationships through transparency, responsibility, "
+"clear communication, and accountability."
+msgstr "ما روابط حرفه‌ای را از طریق شفافیت، مسئولیت‌پذیری، ارتباطات شفاف و پاسخگویی بنا می‌کنیم."
+
+#: .\azinapp\templates\about.html:619
+msgid "Sustainable Growth"
+msgstr "رشد پایدار"
+
+#: .\azinapp\templates\about.html:623
+msgid ""
+"We aim to create long-term value for our clients, our team, and the wider "
+"business community."
+msgstr "هدف ما خلق ارزش بلندمدت برای مشتریان، تیم خود و جامعه تجاری گسترده‌تر است."
+
+#: .\azinapp\templates\about.html:647
+msgid "Our team"
+msgstr "تیم ما"
+
+#: .\azinapp\templates\about.html:654
+msgid "Our Team"
+msgstr "تیم ما"
+
+#: .\azinapp\templates\about.html:658
+msgid "The People Behind AZIN GROUP"
+msgstr "The People Behind AZIN GROUP"
+
+#: .\azinapp\templates\about.html:662
+msgid ""
+"A multidisciplinary team bringing together technical, creative, and business "
+"expertise."
+msgstr "تیمی چندرشته‌ای که تخصص‌های فنی، خلاقانه و تجاری را گرد هم می‌آورد."
+
+#: .\azinapp\templates\about.html:702
+msgid "LinkedIn"
+msgstr "لینکدین"
+
+#: .\azinapp\templates\about.html:717
+msgid "Instagram"
+msgstr "انستاگرام"
+
+#: .\azinapp\templates\about.html:732
+msgid "GitHub"
+msgstr "گیت هاب"
+
+#: .\azinapp\templates\about.html:756
+msgid ""
+"A member of the AZIN GROUP team, contributing professional expertise to our "
+"projects and services."
+msgstr "«عضوی از تیم گروه AZIN که تخصص حرفه‌ای خود را در پروژه‌ها و خدمات ما به کار می‌گیرد.»"
+
+#: .\azinapp\templates\about.html:776
+msgid "Our Team Profiles Are Coming Soon"
+msgstr "نمایه اعضای تیم ما به‌زودی منتشر می‌شود."
+
+#: .\azinapp\templates\about.html:780
+msgid ""
+"We are currently updating our team information. Please check back soon to "
+"learn more about the people behind AZIN GROUP."
+msgstr "«ما در حال به‌روزرسانی اطلاعات تیم خود هستیم. لطفاً به‌زودی دوباره مراجعه کنید تا»"
+"«با افراد پشت‌صحنه «گروه آذین» (AZIN GROUP) بیشتر آشنا شوید.»"
+
+#: .\azinapp\templates\about.html:798
+msgid "Contact AZIN GROUP"
+msgstr "تماس با گروه آذین"
+
+#: .\azinapp\templates\about.html:807 .\azinapp\templates\contact.html:717
+#: .\azinapp\templates\index.html:449
+msgid "Have a Project in Mind?"
+msgstr "پروژه‌ای در ذهن دارید؟"
+
+#: .\azinapp\templates\about.html:811
+msgid ""
+"Tell us what you are working on. Our team can help you identify the right "
+"technology, creative, media, or business solution for your needs."
+msgstr "«به ما بگویید روی چه چیزی کار می‌کنید. تیم ما می‌تواند به شما کمک کند تا مناسب‌ترین راهکار فناوری، خلاقانه، رسانه‌ای یا تجاری را متناسب با نیازهای خود شناسایی کنید.»"
+
+#: .\azinapp\templates\about.html:820 .\azinapp\templates\contact.html:735
+msgid "Start a Conversation"
+msgstr "گفتگو را آغاز کنید"
+
+#: .\azinapp\templates\base.html:56 .\azinapp\templates\base.html:57
+msgid "Skip to main content"
+msgstr "رفتن به محتوای اصلی"
+
+#: .\azinapp\templates\base.html:80
+msgid "Close message"
+msgstr "بستن پیام"
+
+#: .\azinapp\templates\base.html:108
+msgid ""
+"Integrated digital solutions and creative services built around real "
+"business needs."
+msgstr "راهکارهای دیجیتال یکپارچه و خدمات خلاقانه، مبتنی بر نیازهای واقعی کسب‌وکار."
+
+#: .\azinapp\templates\base.html:115
+msgid "Quality Guaranteed"
+msgstr "کیفیت تضمین‌شده"
+
+#: .\azinapp\templates\base.html:119
+msgid "Expert Team"
+msgstr "تیم متخصص"
+
+#: .\azinapp\templates\base.html:123
+msgid "24/7 Support"
+msgstr "پشتیبانی ۲۴ ساعته در تمام روزهای هفته"
+
+#: .\azinapp\templates\base.html:130
+msgid "Quick Links"
+msgstr "پیوندهای سریع"
+
+#: .\azinapp\templates\base.html:132 .\azinapp\templates\navbar.html:20
+#: .\azinapp\templates\navbar.html:203
+msgid "Home"
+msgstr "صفحه اصلی"
+
+#: .\azinapp\templates\base.html:133
+msgid "About Us"
+msgstr "درباره ما"
+
+#: .\azinapp\templates\base.html:134 .\azinapp\templates\navbar.html:88
+#: .\azinapp\templates\navbar.html:227
+msgid "Contact"
+msgstr "تماس"
+
+#: .\azinapp\templates\base.html:140
+msgid "Services"
+msgstr "خدمات"
+
+#: .\azinapp\templates\base.html:142 .\azinapp\templates\index.html:200
+#: .\azinapp\templates\index.html:355 .\azinapp\templates\navbar.html:55
+#: .\azinapp\templates\navbar.html:219 .\azinapp\templates\website.html:62
+msgid "Web Development"
+msgstr "توسعه وبسایت"
+
+#: .\azinapp\templates\base.html:143
+msgid "Mobile Apps"
+msgstr "اپلیکیشن موبایل"
+
+#: .\azinapp\templates\base.html:144 .\azinapp\templates\index.html:123
+#: .\azinapp\templates\index.html:238 .\azinapp\templates\index.html:381
+#: .\azinapp\templates\navbar.html:33 .\azinapp\templates\navbar.html:209
+msgid "Media Production"
+msgstr "تولید رسانه‌ای"
+
+#: .\azinapp\templates\base.html:145 .\azinapp\templates\graphicdesign.html:302
+#: .\azinapp\templates\graphicdesign.html:635 .\azinapp\templates\smm.html:32
+#: .\azinapp\templates\smm.html:464
+msgid "Social Media"
+msgstr "شبکه اجتماعی"
+
+#: .\azinapp\templates\base.html:146 .\azinapp\templates\contact.html:553
+#: .\azinapp\templates\graphicdesign.html:29 .\azinapp\templates\navbar.html:37
+#: .\azinapp\templates\navbar.html:210
+msgid "Graphic Design"
+msgstr "گرافیک دیزاین"
+
+#: .\azinapp\templates\base.html:152 .\azinapp\templates\contact.html:29
+msgid "Get in Touch"
+msgstr "به تماس شوید"
+
+#: .\azinapp\templates\base.html:158 .\azinapp\templates\contact.html:131
+msgid "Email"
+msgstr "ایمیل"
+
+#: .\azinapp\templates\base.html:165
+msgid "Support"
+msgstr "پشتیبانی"
+
+#: .\azinapp\templates\base.html:172 .\azinapp\templates\contact.html:228
+msgid "Phone"
+msgstr "تلفن"
+
+#: .\azinapp\templates\base.html:179 .\azinapp\templates\contact.html:255
+msgid "Location"
+msgstr "موقعیت"
+
+#: .\azinapp\templates\base.html:187
+msgid "Follow Us"
+msgstr "دنبال کنید"
+
+#: .\azinapp\templates\base.html:214
+msgid "All rights reserved."
+msgstr "تمامی حقوق محفوظ است."
+
+#: .\azinapp\templates\base.html:217
+msgid "Terms of Service"
+msgstr "شرایط خدمات"
+
+#: .\azinapp\templates\base.html:218
+msgid "Privacy Policy"
+msgstr "سیاست حفظ حریم خصوصی"
+
+#: .\azinapp\templates\base.html:226
+msgid "Toggle theme"
+msgstr "تغییر تم"
+
+#: .\azinapp\templates\base.html:226
+msgid "Toggle dark/light mode"
+msgstr "تغییر حالت تیره/روشن"
+
+#: .\azinapp\templates\contact.html:33
+msgid "Let's Discuss Your"
+msgstr "بیایید درباره ... شما صحبت کنیم"
+
+#: .\azinapp\templates\contact.html:36
+msgid "Next Project"
+msgstr "پروژه بعدی"
+
+#: .\azinapp\templates\contact.html:41
+msgid ""
+"Whether you need a website, digital solution, creative service, media "
+"production, or business support, our team is ready to understand your needs "
+"and discuss the right approach for your project."
+msgstr "«چه به وب‌سایت، راهکار دیجیتال، خدمات خلاقانه، تولید محتوای رسانه‌ای و یا پشتیبانی کسب‌وکار نیاز داشته باشید، تیم ما آماده است تا نیازهای شما را درک کرده و درباره رویکرد مناسب برای پروژه‌تان گفتگو کند.»"
+
+#: .\azinapp\templates\contact.html:49
+msgid "Email AZIN GROUP"
+msgstr "ایمیل گروه آذین"
+
+#: .\azinapp\templates\contact.html:58
+msgid "Call AZIN GROUP"
+msgstr "با گروه آذین تماس بگیرید"
+
+#: .\azinapp\templates\contact.html:96
+msgid "Contact Information"
+msgstr "اطلاعات تماس"
+
+#: .\azinapp\templates\contact.html:104
+msgid "How Can We Help?"
+msgstr "چطور می‌توانیم کمک کنیم؟"
+
+#: .\azinapp\templates\contact.html:111
+msgid ""
+"Choose the most convenient way to reach AZIN GROUP. For project inquiries, "
+"you can also use the contact form."
+msgstr "«راحت‌ترین روش را برای ارتباط با گروه آذین انتخاب کنید. برای پرس‌وجو درباره پروژه‌ها،»"
+"«می‌توانید از فرم تماس نیز استفاده کنید.»"
+
+#: .\azinapp\templates\contact.html:138
+msgid "General inquiries and project requests"
+msgstr "پرسش‌های عمومی و درخواست‌های پروژه"
+
+#: .\azinapp\templates\contact.html:157
+msgid "AzinGroup"
+msgstr "گروه آذین"
+
+#: .\azinapp\templates\contact.html:163 .\azinapp\templates\contact.html:186
+#: .\azinapp\templates\contact.html:209
+msgid "Technical support and existing projects"
+msgstr "پشتیبانی فنی و پروژه‌های موجود"
+
+#: .\azinapp\templates\contact.html:180
+msgid "AzinMedia"
+msgstr "آذین‌مدیا"
+
+#: .\azinapp\templates\contact.html:202
+msgid "Azinshop"
+msgstr "فروشگاه آذین"
+
+#: .\azinapp\templates\contact.html:235
+msgid "Monday – Friday, 9:00 AM – 6:00 PM"
+msgstr "دوشنبه تا جمعه، ۹:۰۰ صبح تا ۶:۰۰ عصر"
+
+#: .\azinapp\templates\contact.html:262
+msgid "Rudaki Avenue, 127"
+msgstr "خیابان رودکی، 127"
+
+#: .\azinapp\templates\contact.html:279
+msgid "Follow AZIN GROUP"
+msgstr "گروه آذین را دنبال کنید"
+
+#: .\azinapp\templates\contact.html:340
+msgid "Working Hours"
+msgstr "ساعات کاری"
+
+#: .\azinapp\templates\contact.html:347
+msgid "Monday – Thursday"
+msgstr "دوشنبه - پنجشنبه"
+
+#: .\azinapp\templates\contact.html:357
+msgid "Friday"
+msgstr "جمعه"
+
+#: .\azinapp\templates\contact.html:367
+msgid "Saturday – Sunday"
+msgstr "شنبه - یکشنبه"
+
+#: .\azinapp\templates\contact.html:371
+msgid "Closed"
+msgstr "بسته"
+
+#: .\azinapp\templates\contact.html:391
+msgid "Send Us a Message"
+msgstr "برای ما پیام بفرستید"
+
+#: .\azinapp\templates\contact.html:395
+msgid ""
+"Tell us a little about your project, requirements, or question. Our team "
+"will review your message and get back to you."
+msgstr "«کمی درباره پروژه، نیازمندی‌ها یا پرسش خود به ما بگویید. تیم ما»"
+"«پیام شما را بررسی کرده و با شما تماس خواهد گرفت.»"
+
+#: .\azinapp\templates\contact.html:428
+msgid "Please review the following information:"
+msgstr "لطفاً اطلاعات زیر را بررسی کنید:"
+
+#: .\azinapp\templates\contact.html:470
+msgid "Enter your name or company name."
+msgstr "نام یا نام شرکت خود را وارد کنید."
+
+#: .\azinapp\templates\contact.html:486
+msgid "We use your email only to respond to your inquiry."
+msgstr "ما از ایمیل شما تنها برای پاسخ دادن به درخواستتان استفاده می‌کنیم."
+
+#: .\azinapp\templates\contact.html:516
+msgid "Optional. Include your country code."
+msgstr "اختیاری. کد کشور خود را وارد کنید.زر"
+
+#: .\azinapp\templates\contact.html:525
+msgid "Subject"
+msgstr "موضوع"
+
+#: .\azinapp\templates\contact.html:541
+msgid "Select a subject..."
+msgstr "یک موضوع را انتخاب کنید..."
+
+#: .\azinapp\templates\contact.html:545
+msgid "Order a web app"
+msgstr "سفارش اپلیکیشن وب"
+
+#: .\azinapp\templates\contact.html:549
+msgid "Order a Mobileapp"
+msgstr "سفارش اپلیکیشن موبایل"
+
+#: .\azinapp\templates\contact.html:561
+msgid "Order Product"
+msgstr "سفارش محصول"
+
+#: .\azinapp\templates\contact.html:565
+msgid "Technical Support"
+msgstr "پشتیبانی فنی"
+
+#: .\azinapp\templates\contact.html:569
+msgid "Other Inquiry"
+msgstr "سایر درخواست‌ها"
+
+#: .\azinapp\templates\contact.html:593
+msgid "Briefly describe your project, requirements, budget range, or question."
+msgstr "لطفاً پروژه، نیازمندی‌ها، محدوده بودجه یا پرسش خود را به‌اختصار توضیح دهید."
+
+#: .\azinapp\templates\contact.html:613
+msgid "Send Message"
+msgstr "ارسال پیام"
+
+#: .\azinapp\templates\contact.html:625
+msgid "We aim to respond within 24 business hours."
+msgstr "هدف ما این است که حداکثر ظرف ۲۴ ساعت کاری پاسخ دهیم."
+
+#: .\azinapp\templates\contact.html:653
+msgid "Our Location"
+msgstr "موقعیت ما"
+
+#: .\azinapp\templates\contact.html:660
+msgid "Visit AZIN GROUP"
+msgstr "بازدید از گروه آذین"
+
+#: .\azinapp\templates\contact.html:664
+msgid "Our office is located in Dushanbe, Tajikistan."
+msgstr "دفتر ما در دوشنبه، تاجیکستان قرار دارد."
+
+#: .\azinapp\templates\contact.html:678
+msgid "AZIN GROUP office location on Google Maps"
+msgstr "موقعیت دفتر گروه آذین در نقشه‌های گوگل"
+
+#: .\azinapp\templates\contact.html:707
+msgid "Start a project with AZIN GROUP"
+msgstr "پروژه خود را با گروه آذین آغاز کنید"
+
+#: .\azinapp\templates\contact.html:721
+msgid ""
+"Tell us what you are looking to build or improve. We will help you identify "
+"the right solution and next steps."
+msgstr ""
+"به ما بگویید قصد دارید چه چیزی ایجاد یا بهبود دهید. ما به شما کمک می‌کنیم "
+"راهکار مناسب و مراحل بعدی را مشخص کنید."
+
+#: .\azinapp\templates\contact.html:750 .\azinapp\templates\mobileapp.html:847
+msgid "Call Us"
+msgstr "با ما تماس بگیرید"
+
+#: .\azinapp\templates\decore.html:23
+msgid "AZIN SHOP — Products and Business Supplies"
+msgstr "فروشگاه آذین — محصولات و ملزومات کسب‌وکار"
+
+#: .\azinapp\templates\decore.html:43 .\azinapp\templates\shop.html:40
+msgid "Products for Business"
+msgstr "محصولات ویژه کسب‌وکار"
+
+#: .\azinapp\templates\decore.html:47 .\azinapp\templates\shop.html:44
+msgid "& Everyday Needs"
+msgstr "و نیازهای روزمره"
+
+#: .\azinapp\templates\decore.html:53
+msgid ""
+"Discover a selection of practical products and supplies for businesses, "
+"offices, and everyday use. Browse our categories, explore available "
+"products, and contact AZIN SHOP for product inquiries, bulk orders, and "
+"sourcing requests."
+msgstr ""
+"مجموعه‌ای از محصولات و ملزومات کاربردی برای کسب‌وکارها، دفاتر و استفاده‌های "
+"روزمره را مشاهده کنید. دسته‌بندی‌های ما را بررسی کرده، محصولات موجود را "
+"مشاهده کنید و برای پرسش درباره محصولات، سفارش‌های عمده و درخواست تأمین "
+"محصول با فروشگاه آذین تماس بگیرید."
+
+#: .\azinapp\templates\decore.html:60 .\azinapp\templates\shop.html:60
+msgid "Explore Products"
+msgstr "مشاهده محصولات"
+
+#: .\azinapp\templates\decore.html:66 .\azinapp\templates\decore.html:539
+#: .\azinapp\templates\website.html:1025
+msgid "Request a Quote"
+msgstr "درخواست قیمت"
+
+#: .\azinapp\templates\decore.html:75 .\azinapp\templates\decore.html:255
+#: .\azinapp\templates\decore.html:594 .\azinapp\templates\shop.html:270
+#: .\azinapp\templates\shop.html:637
+msgid "Selected Products"
+msgstr "محصولات منتخب"
+
+#: .\azinapp\templates\decore.html:80
+msgid "Business Inquiries"
+msgstr "درخواست‌های تجاری"
+
+#: .\azinapp\templates\decore.html:85
+msgid "Order Support"
+msgstr "پشتیبانی سفارش"
+
+#: .\azinapp\templates\decore.html:99 .\azinapp\templates\decore.html:165
+#: .\azinapp\templates\shop.html:88 .\azinapp\templates\shop.html:176
+msgid "Electronics"
+msgstr "لوازم الکترونیکی"
+
+#: .\azinapp\templates\decore.html:104 .\azinapp\templates\decore.html:184
+#: .\azinapp\templates\shop.html:99 .\azinapp\templates\shop.html:196
+msgid "Home Essentials"
+msgstr "ملزومات خانه"
+
+#: .\azinapp\templates\decore.html:109 .\azinapp\templates\decore.html:203
+#: .\azinapp\templates\shop.html:110 .\azinapp\templates\shop.html:216
+#: .\azinapp\templates\shop.html:448
+msgid "Office Supplies"
+msgstr "ملزومات اداری"
+
+#: .\azinapp\templates\decore.html:114 .\azinapp\templates\decore.html:222
+#: .\azinapp\templates\decore.html:388 .\azinapp\templates\shop.html:121
+#: .\azinapp\templates\shop.html:236 .\azinapp\templates\shop.html:408
+msgid "Tools & Equipment"
+msgstr "ابزار و تجهیزات"
+
+#: .\azinapp\templates\decore.html:133 .\azinapp\templates\shop.html:143
+#: .\azinapp\templates\website.html:765
+msgid "Product categories"
+msgstr "دسته‌بندی محصولات"
+
+#: .\azinapp\templates\decore.html:140 .\azinapp\templates\shop.html:150
+msgid "Product Categories"
+msgstr "دسته‌بندی محصولات"
+
+#: .\azinapp\templates\decore.html:144
+msgid "Explore Our Categories"
+msgstr "دسته‌بندی‌های ما را مشاهده کنید"
+
+#: .\azinapp\templates\decore.html:148
+msgid ""
+"Browse our main product categories and find the products that match your "
+"business or everyday needs."
+msgstr ""
+"دسته‌بندی‌های اصلی محصولات ما را بررسی کنید و محصولاتی متناسب با نیازهای "
+"کسب‌وکار یا زندگی روزمره خود بیابید."
+
+#: .\azinapp\templates\decore.html:169
+msgid ""
+"Computers, accessories, devices, and selected electronic products for work "
+"and everyday use."
+msgstr ""
+"رایانه‌ها، لوازم جانبی، دستگاه‌ها و مجموعه‌ای از محصولات الکترونیکی برای "
+"کار و استفاده روزمره."
+
+#: .\azinapp\templates\decore.html:188
+msgid ""
+"Practical home products, furniture, kitchen items, and selected essentials "
+"for everyday spaces."
+msgstr ""
+"محصولات کاربردی خانه، مبلمان، لوازم آشپزخانه و مجموعه‌ای از ملزومات موردنیاز "
+"برای فضاهای روزمره."
+
+#: .\azinapp\templates\decore.html:207
+msgid ""
+"Stationery, office equipment, accessories, and practical supplies for "
+"professional workplaces."
+msgstr ""
+"لوازم‌التحریر، تجهیزات اداری، لوازم جانبی و ملزومات کاربردی برای محیط‌های "
+"کاری حرفه‌ای."
+
+#: .\azinapp\templates\decore.html:226
+msgid ""
+"Tools, equipment, and selected products for maintenance, workshop, and "
+"business needs."
+msgstr ""
+"ابزارها، تجهیزات و مجموعه‌ای از محصولات موردنیاز برای نگهداری، کارگاه و "
+"نیازهای کسب‌وکار."
+
+#: .\azinapp\templates\decore.html:244 .\azinapp\templates\shop.html:259
+msgid "Featured products"
+msgstr "محصولات ویژه"
+
+#: .\azinapp\templates\decore.html:251 .\azinapp\templates\shop.html:266
+msgid "Featured Products"
+msgstr "محصولات ویژه"
+
+#: .\azinapp\templates\decore.html:259
+msgid ""
+"Explore a selection of products currently presented by AZIN SHOP. "
+"Availability and pricing may vary by product and order requirements."
+msgstr ""
+"مجموعه‌ای از محصولاتی را که در حال حاضر توسط فروشگاه آذین ارائه می‌شوند "
+"مشاهده کنید. موجودی و قیمت محصولات ممکن است بر اساس نوع محصول و شرایط سفارش "
+"متفاوت باشد."
+
+#: .\azinapp\templates\decore.html:295
+#: .\azinapp\templates\graphicdesign.html:336 .\azinapp\templates\shop.html:312
+#: .\azinapp\templates\smm.html:472 .\azinapp\templates\website.html:1408
+msgid "Featured"
+msgstr "ویژه"
+
+#: .\azinapp\templates\decore.html:317 .\azinapp\templates\decore.html:360
+#: .\azinapp\templates\decore.html:398 .\azinapp\templates\decore.html:436
+msgid "Request Product Details"
+msgstr "درخواست جزئیات محصول"
+
+#: .\azinapp\templates\decore.html:350
+msgid "Business Electronics"
+msgstr "لوازم الکترونیکی کسب‌وکار"
+
+#: .\azinapp\templates\decore.html:354
+msgid ""
+"Selected electronic devices and accessories suitable for offices, "
+"businesses, and everyday use."
+msgstr ""
+"مجموعه‌ای از دستگاه‌ها و لوازم جانبی الکترونیکی مناسب برای دفاتر، "
+"کسب‌وکارها و استفاده روزمره."
+
+#: .\azinapp\templates\decore.html:392
+msgid ""
+"Practical tools and equipment for maintenance, workshops, and professional "
+"business use."
+msgstr ""
+"ابزارها و تجهیزات کاربردی برای نگهداری، کارگاه‌ها و استفاده حرفه‌ای در "
+"کسب‌وکارها."
+
+#: .\azinapp\templates\decore.html:426
+msgid "Office Essentials"
+msgstr "ملزومات اداری"
+
+#: .\azinapp\templates\decore.html:430
+msgid ""
+"Useful office supplies and workplace essentials for professional "
+"environments."
+msgstr ""
+"لوازم اداری کاربردی و ملزومات محیط کار برای محیط‌های حرفه‌ای."
+
+#: .\azinapp\templates\decore.html:456 .\azinapp\templates\shop.html:479
+msgid "Request Full Product Catalog"
+msgstr "درخواست فهرست کامل محصولات"
+
+#: .\azinapp\templates\decore.html:474
+msgid "Business and wholesale orders"
+msgstr "سفارش‌های تجاری و عمده"
+
+#: .\azinapp\templates\decore.html:481
+msgid "For Businesses"
+msgstr "برای کسب‌وکارها"
+
+#: .\azinapp\templates\decore.html:485
+msgid "Business & Bulk Orders"
+msgstr "سفارش‌های تجاری و عمده"
+
+#: .\azinapp\templates\decore.html:489
+msgid ""
+"Looking for products in larger quantities? Contact us with your requirements "
+"and we will review the available options."
+msgstr ""
+"به دنبال محصولات در تعداد بیشتر هستید؟ نیازمندی‌های خود را با ما در میان "
+"بگذارید تا گزینه‌های موجود را بررسی کنیم."
+
+#: .\azinapp\templates\decore.html:505 .\azinapp\templates\shop.html:673
+msgid "Bulk Orders"
+msgstr "سفارش‌های عمده"
+
+#: .\azinapp\templates\decore.html:509
+msgid ""
+"Tell us what products and quantities you need for your business or "
+"organization."
+msgstr ""
+"به ما بگویید چه محصولاتی و با چه تعداد برای کسب‌وکار یا سازمان خود نیاز دارید."
+
+#: .\azinapp\templates\decore.html:522 .\azinapp\templates\shop.html:505
+msgid "Product Sourcing"
+msgstr "تأمین محصولات"
+
+#: .\azinapp\templates\decore.html:526
+msgid ""
+"Have a specific product in mind? Send us the details and we can review your "
+"sourcing request."
+msgstr ""
+"محصول خاصی مدنظر دارید؟ جزئیات آن را برای ما ارسال کنید تا درخواست تأمین "
+"محصول شما را بررسی کنیم."
+
+#: .\azinapp\templates\decore.html:543
+msgid ""
+"Receive product and order information based on your requested items, "
+"quantities, and requirements."
+msgstr ""
+"اطلاعات مربوط به محصولات و سفارش را بر اساس اقلام، تعداد و نیازمندی‌های "
+"درخواستی خود دریافت کنید."
+
+#: .\azinapp\templates\decore.html:561 .\azinapp\templates\shop.html:606
+msgid "Why choose AZIN SHOP"
+msgstr "چرا فروشگاه آذین را انتخاب کنید"
+
+#: .\azinapp\templates\decore.html:568 .\azinapp\templates\shop.html:613
+msgid "Why AZIN SHOP"
+msgstr "چرا فروشگاه آذین"
+
+#: .\azinapp\templates\decore.html:572
+msgid "A Practical Approach to Product Supply"
+msgstr "رویکردی کاربردی برای تأمین محصولات"
+
+#: .\azinapp\templates\decore.html:576
+msgid ""
+"We focus on clear communication, practical product options, and support "
+"throughout the inquiry and ordering process."
+msgstr ""
+"ما بر ارتباط شفاف، ارائه گزینه‌های کاربردی برای محصولات و پشتیبانی در تمام "
+"مراحل درخواست و سفارش تمرکز داریم."
+
+#: .\azinapp\templates\decore.html:598
+msgid ""
+"We present selected products across practical categories for business and "
+"everyday needs."
+msgstr ""
+"ما مجموعه‌ای از محصولات منتخب را در دسته‌بندی‌های کاربردی برای نیازهای "
+"کسب‌وکار و زندگی روزمره ارائه می‌کنیم."
+
+#: .\azinapp\templates\decore.html:613 .\azinapp\templates\index.html:426
+#: .\azinapp\templates\mobileapp.html:731 .\azinapp\templates\website.html:1743
+msgid "Clear Communication"
+msgstr "ارتباط شفاف"
+
+#: .\azinapp\templates\decore.html:617
+msgid ""
+"We keep product inquiries and order discussions clear, direct, and easy to "
+"understand."
+msgstr ""
+"ما درخواست‌های مربوط به محصولات و گفت‌وگوهای مربوط به سفارش را شفاف، مستقیم "
+"و قابل‌درک نگه می‌داریم."
+
+#: .\azinapp\templates\decore.html:632
+msgid "Flexible Orders"
+msgstr "سفارش‌های انعطاف‌پذیر"
+
+#: .\azinapp\templates\decore.html:636
+msgid ""
+"Contact us to discuss individual requirements, larger quantities, or "
+"specific product requests."
+msgstr ""
+"برای گفت‌وگو درباره نیازهای خاص، تعداد بیشتر یا درخواست‌های مشخص برای "
+"محصولات با ما تماس بگیرید."
+
+#: .\azinapp\templates\decore.html:651
+msgid "Customer Support"
+msgstr "پشتیبانی مشتریان"
+
+#: .\azinapp\templates\decore.html:655
+msgid ""
+"Our team is available to help with product information, inquiries, and order-"
+"related questions."
+msgstr ""
+"تیم ما برای ارائه اطلاعات محصولات، پاسخ به درخواست‌ها و پرسش‌های مرتبط با "
+"سفارش در دسترس شماست."
+
+#: .\azinapp\templates\decore.html:673
+msgid "How to order"
+msgstr "نحوه سفارش"
+
+#: .\azinapp\templates\decore.html:680
+msgid "Simple Process"
+msgstr "فرایندی ساده"
+
+#: .\azinapp\templates\decore.html:684
+msgid "How to Order"
+msgstr "نحوه سفارش"
+
+#: .\azinapp\templates\decore.html:688
+msgid "A simple way to ask about products and start your order."
+msgstr "روشی ساده برای پرس‌وجو درباره محصولات و آغاز سفارش شما."
+
+#: .\azinapp\templates\decore.html:708
+msgid "Choose a Product"
+msgstr "یک محصول انتخاب کنید"
+
+#: .\azinapp\templates\decore.html:712
+msgid "Browse our categories or selected products and identify what you need."
+msgstr "دسته‌بندی‌ها یا محصولات منتخب ما را بررسی کنید و محصول موردنیاز خود را بیابید."
+
+#: .\azinapp\templates\decore.html:729
+msgid "Send an Inquiry"
+msgstr "ارسال درخواست"
+
+#: .\azinapp\templates\decore.html:733
+msgid ""
+"Contact us with the product name, quantity, and any specific requirements."
+msgstr ""
+"نام محصول، تعداد موردنیاز و هرگونه نیازمندی خاص خود را برای ما ارسال کنید."
+
+#: .\azinapp\templates\decore.html:750
+msgid "Confirm Details"
+msgstr "تأیید جزئیات"
+
+#: .\azinapp\templates\decore.html:754
+msgid ""
+"We discuss availability, quantity, pricing, and other order requirements."
+msgstr ""
+"موجودی، تعداد، قیمت و سایر شرایط سفارش را با شما بررسی می‌کنیم."
+
+#: .\azinapp\templates\decore.html:771 .\azinapp\templates\shop.html:583
+msgid "Place Your Order"
+msgstr "ثبت سفارش"
+
+#: .\azinapp\templates\decore.html:775
+msgid ""
+"Once the details are confirmed, we proceed with the agreed order process."
+msgstr ""
+"پس از تأیید جزئیات، فرایند سفارش مورد توافق را آغاز می‌کنیم."
+
+#: .\azinapp\templates\decore.html:793
+msgid "Contact AZIN SHOP"
+msgstr "تماس با فروشگاه آذین"
+
+#: .\azinapp\templates\decore.html:802 .\azinapp\templates\shop.html:509
+msgid "Looking for a Specific Product?"
+msgstr "به دنبال محصول خاصی هستید؟"
+
+#: .\azinapp\templates\decore.html:806
+msgid ""
+"Tell us what you need, how many you need, and any important requirements. "
+"Our team will review your request and get back to you with the available "
+"options."
+msgstr ""
+"به ما بگویید چه محصولی نیاز دارید، چه تعدادی می‌خواهید و چه نیازمندی‌های "
+"مهمی دارید. تیم ما درخواست شما را بررسی کرده و گزینه‌های موجود را به شما "
+"اعلام خواهد کرد."
+
+#: .\azinapp\templates\decore.html:817
+msgid "Send Product Inquiry"
+msgstr "ارسال درخواست محصول"
+
+#: .\azinapp\templates\decore.html:828
+#: .\azinapp\templates\graphicdesign.html:702
+#: .\azinapp\templates\media.html:563 .\azinapp\templates\smm.html:752
+msgid "Call for Inquiry"
+msgstr "برای دریافت اطلاعات تماس بگیرید"
+
+#: .\azinapp\templates\graphicdesign.html:18
+msgid "Graphic Design Services"
+msgstr "خدمات طراحی گرافیک"
+
+#: .\azinapp\templates\graphicdesign.html:30
+msgid "& Brand Identity"
+msgstr "و هویت بصری برند"
+
+#: .\azinapp\templates\graphicdesign.html:34
+msgid ""
+"We design visual systems and communication materials that help businesses "
+"present their brand consistently across digital and physical channels. Our "
+"work covers logos, brand identity, packaging, print materials, motion "
+"graphics, and social media content."
+msgstr ""
+"ما سیستم‌های بصری و محتوای ارتباطی طراحی می‌کنیم تا کسب‌وکارها بتوانند برند "
+"خود را به‌صورت یکپارچه در بسترهای دیجیتال و فیزیکی معرفی کنند. خدمات ما شامل "
+"طراحی لوگو، هویت بصری برند، بسته‌بندی، اقلام چاپی، گرافیک متحرک و محتوای "
+"شبکه‌های اجتماعی است."
+
+#: .\azinapp\templates\graphicdesign.html:40
+#: .\azinapp\templates\graphicdesign.html:697
+msgid "Discuss Your Design Project"
+msgstr "درباره پروژه طراحی خود گفت‌وگو کنید"
+
+#: .\azinapp\templates\graphicdesign.html:45
+#: .\azinapp\templates\website.html:127
+msgid "View Portfolio"
+msgstr "مشاهده نمونه‌کارها"
+
+#: .\azinapp\templates\graphicdesign.html:57
+msgid "Brand & Graphic Design"
+msgstr "طراحی برند و گرافیک"
+
+#: .\azinapp\templates\graphicdesign.html:64
+msgid "Visual Identity Systems"
+msgstr "سیستم‌های هویت بصری"
+
+#: .\azinapp\templates\graphicdesign.html:71
+msgid "Digital & Print Content"
+msgstr "محتوای دیجیتال و چاپی"
+
+#: .\azinapp\templates\graphicdesign.html:84
+msgid "Graphic design services"
+msgstr "خدمات طراحی گرافیک"
+
+#: .\azinapp\templates\graphicdesign.html:88 .\azinapp\templates\index.html:189
+#: .\azinapp\templates\media.html:88 .\azinapp\templates\smm.html:105
+msgid "Our Services"
+msgstr "خدمات ما"
+
+#: .\azinapp\templates\graphicdesign.html:91
+msgid "Design Services for Business Communication"
+msgstr "خدمات طراحی برای ارتباطات تجاری"
+
+#: .\azinapp\templates\graphicdesign.html:95
+msgid ""
+"From a single design asset to a complete visual identity, we create "
+"materials based on where your brand needs to communicate and how the final "
+"design will be used."
+msgstr ""
+"از طراحی یک مورد گرافیکی ساده تا ایجاد یک هویت بصری کامل، ما محتوا و "
+"طرح‌هایی متناسب با بستر ارتباطی برند شما و نحوه استفاده نهایی از طراحی "
+"ایجاد می‌کنیم."
+
+#: .\azinapp\templates\graphicdesign.html:109
+#: .\azinapp\templates\graphicdesign.html:418
+#: .\azinapp\templates\index.html:279
+msgid "Logo Design"
+msgstr "طراحی لوگو"
+
+#: .\azinapp\templates\graphicdesign.html:113
+msgid ""
+"A logo designed to give your business a clear and usable visual mark. We "
+"consider your business, audience, industry, and the places where the logo "
+"will appear before developing the design."
+msgstr ""
+"لوگویی طراحی می‌کنیم که نشان بصری واضح و کاربردی برای کسب‌وکار شما باشد. "
+"پیش از طراحی، کسب‌وکار، مخاطبان، حوزه فعالیت و محل‌هایی را که لوگو در آن‌ها "
+"استفاده خواهد شد در نظر می‌گیریم."
+
+#: .\azinapp\templates\graphicdesign.html:117
+msgid "Initial concept development"
+msgstr "توسعه ایده اولیه"
+
+#: .\azinapp\templates\graphicdesign.html:118
+msgid "Design direction and revisions"
+msgstr "جهت‌گیری طراحی و بازبینی‌ها"
+
+#: .\azinapp\templates\graphicdesign.html:119
+msgid "Vector and digital files"
+msgstr "فایل‌های برداری و دیجیتال"
+
+#: .\azinapp\templates\graphicdesign.html:120
+msgid "Basic logo usage guidance"
+msgstr "راهنمای اولیه استفاده از لوگو"
+
+#: .\azinapp\templates\graphicdesign.html:134
+#: .\azinapp\templates\graphicdesign.html:428
+#: .\azinapp\templates\graphicdesign.html:473
+#: .\azinapp\templates\index.html:280
+msgid "Brand Identity"
+msgstr "هویت بصری برند"
+
+#: .\azinapp\templates\graphicdesign.html:138
+msgid ""
+"A consistent visual identity that gives your business a defined way to "
+"communicate across websites, documents, social media, presentations, and "
+"other customer-facing materials."
+msgstr ""
+"هویت بصری یکپارچه‌ای که به کسب‌وکار شما شیوه‌ای مشخص برای ارتباط در وب‌سایت‌ها، "
+"اسناد، شبکه‌های اجتماعی، ارائه‌ها و سایر محتوای قابل مشاهده برای مشتریان "
+"می‌دهد."
+
+#: .\azinapp\templates\graphicdesign.html:142
+msgid "Visual direction and design system"
+msgstr "جهت‌گیری بصری و سیستم طراحی"
+
+#: .\azinapp\templates\graphicdesign.html:143
+msgid "Color palette and typography"
+msgstr "پالت رنگی و تایپوگرافی"
+
+#: .\azinapp\templates\graphicdesign.html:144
+msgid "Logo and identity applications"
+msgstr "کاربردهای لوگو و هویت بصری"
+
+#: .\azinapp\templates\graphicdesign.html:145
+msgid "Brand guidelines"
+msgstr "راهنمای هویت برند"
+
+#: .\azinapp\templates\graphicdesign.html:159
+#: .\azinapp\templates\graphicdesign.html:290
+#: .\azinapp\templates\graphicdesign.html:500
+#: .\azinapp\templates\index.html:155 .\azinapp\templates\index.html:243
+msgid "Motion Graphics"
+msgstr "گرافیک متحرک"
+
+#: .\azinapp\templates\graphicdesign.html:163
+msgid ""
+"Animated visual content for presentations, promotional videos, social media, "
+"and digital communication. Motion design can be used to explain information, "
+"introduce a brand, or add movement to existing visual assets."
+msgstr ""
+"محتوای بصری متحرک برای ارائه‌ها، ویدئوهای تبلیغاتی، شبکه‌های اجتماعی و "
+"ارتباطات دیجیتال. طراحی متحرک می‌تواند برای توضیح اطلاعات، معرفی یک برند "
+"یا افزودن حرکت به عناصر بصری موجود استفاده شود."
+
+#: .\azinapp\templates\graphicdesign.html:167
+msgid "Logo and brand animation"
+msgstr "پویانمایی لوگو و برند"
+
+#: .\azinapp\templates\graphicdesign.html:168
+msgid "Animated titles and graphics"
+msgstr "عنوان‌ها و گرافیک‌های متحرک"
+
+#: .\azinapp\templates\graphicdesign.html:169
+msgid "Short-form social content"
+msgstr "محتوای کوتاه برای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\graphicdesign.html:170
+msgid "Visual elements for video projects"
+msgstr "عناصر بصری برای پروژه‌های ویدئویی"
+
+#: .\azinapp\templates\graphicdesign.html:184
+msgid "Packaging Design"
+msgstr "طراحی بسته‌بندی"
+
+#: .\azinapp\templates\graphicdesign.html:188
+msgid ""
+"Packaging and label designs developed around the product, brand identity, "
+"required information, and printing requirements. The goal is to create "
+"packaging that is clear, practical, and consistent with the brand."
+msgstr ""
+"طراحی بسته‌بندی و برچسب بر اساس محصول، هویت برند، اطلاعات موردنیاز و الزامات "
+"چاپ انجام می‌شود. هدف، ایجاد بسته‌بندی‌ای واضح، کاربردی و هماهنگ با هویت "
+"برند است."
+
+#: .\azinapp\templates\graphicdesign.html:192
+msgid "Product packaging concepts"
+msgstr "ایده‌پردازی برای بسته‌بندی محصولات"
+
+#: .\azinapp\templates\graphicdesign.html:193
+msgid "Label and sticker design"
+msgstr "طراحی برچسب و استیکر"
+
+#: .\azinapp\templates\graphicdesign.html:194
+msgid "Packaging mockups"
+msgstr "ماکاپ‌های بسته‌بندی"
+
+#: .\azinapp\templates\graphicdesign.html:195
+msgid "Print-ready artwork"
+msgstr "فایل‌های آماده چاپ"
+
+#: .\azinapp\templates\graphicdesign.html:209
+msgid "Print & Business Materials"
+msgstr "اقلام چاپی و تجاری"
+
+#: .\azinapp\templates\graphicdesign.html:213
+msgid ""
+"Professional print materials that keep your visual communication consistent "
+"across business documents, marketing materials, events, and customer-facing "
+"environments."
+msgstr ""
+"اقلام چاپی حرفه‌ای که به حفظ یکپارچگی ارتباطات بصری شما در اسناد تجاری، "
+"مطالب بازاریابی، رویدادها و محیط‌های مرتبط با مشتری کمک می‌کنند."
+
+#: .\azinapp\templates\graphicdesign.html:217
+msgid "Brochures and company profiles"
+msgstr "بروشورها و معرفی‌نامه‌های شرکت"
+
+#: .\azinapp\templates\graphicdesign.html:218
+msgid "Flyers, posters, and promotional materials"
+msgstr "تراکت‌ها، پوسترها و مطالب تبلیغاتی"
+
+#: .\azinapp\templates\graphicdesign.html:219
+msgid "Business cards and stationery"
+msgstr "کارت‌های ویزیت و لوازم‌التحریر اداری"
+
+#: .\azinapp\templates\graphicdesign.html:220
+msgid "Print-ready files and specifications"
+msgstr "فایل‌ها و مشخصات فنی آماده چاپ"
+
+#: .\azinapp\templates\graphicdesign.html:234
+msgid "Social Media Graphics"
+msgstr "گرافیک شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\graphicdesign.html:238
+msgid ""
+"Branded visual content for social media platforms, including posts, stories, "
+"campaigns, announcements, and promotional materials. Designs are prepared "
+"according to the platform and intended content format."
+msgstr ""
+"محتوای بصری هماهنگ با برند برای شبکه‌های اجتماعی، شامل پست‌ها، استوری‌ها، "
+"کمپین‌ها، اطلاعیه‌ها و مطالب تبلیغاتی. طراحی‌ها متناسب با بستر انتشار و "
+"قالب محتوای موردنظر آماده می‌شوند."
+
+#: .\azinapp\templates\graphicdesign.html:242
+msgid "Post and story designs"
+msgstr "طراحی پست و استوری"
+
+#: .\azinapp\templates\graphicdesign.html:243
+msgid "Campaign and promotional creatives"
+msgstr "طرح‌های خلاقانه برای کمپین و تبلیغات"
+
+#: .\azinapp\templates\graphicdesign.html:244
+msgid "Social media covers and banners"
+msgstr "کاور و بنر شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\graphicdesign.html:245
+msgid "Reusable branded templates"
+msgstr "قالب‌های قابل استفاده مجدد با هویت برند"
+
+#: .\azinapp\templates\graphicdesign.html:258
+msgid "Graphic design portfolio"
+msgstr "نمونه‌کارهای طراحی گرافیک"
+
+#: .\azinapp\templates\graphicdesign.html:262
+#: .\azinapp\templates\index.html:319 .\azinapp\templates\smm.html:389
+msgid "Our Work"
+msgstr "نمونه‌کارهای ما"
+
+#: .\azinapp\templates\graphicdesign.html:265
+msgid "Selected Design Work"
+msgstr "نمونه‌های منتخب طراحی"
+
+#: .\azinapp\templates\graphicdesign.html:269
+msgid ""
+"Explore examples of the design formats and visual projects AZIN MEDIA can "
+"support."
+msgstr ""
+"نمونه‌هایی از قالب‌های طراحی و پروژه‌های بصری را که آذین مدیا می‌تواند "
+"پشتیبانی و اجرا کند، مشاهده کنید."
+
+#: .\azinapp\templates\graphicdesign.html:278
+#: .\azinapp\templates\media.html:265 .\azinapp\templates\smm.html:407
+msgid "All"
+msgstr "همه"
+
+#: .\azinapp\templates\graphicdesign.html:282
+#: .\azinapp\templates\graphicdesign.html:410
+msgid "Logo"
+msgstr "لوگو"
+
+#: .\azinapp\templates\graphicdesign.html:286
+#: .\azinapp\templates\graphicdesign.html:455
+msgid "Branding"
+msgstr "برندسازی"
+
+#: .\azinapp\templates\graphicdesign.html:294
+#: .\azinapp\templates\graphicdesign.html:545
+msgid "Packaging"
+msgstr "بسته‌بندی"
+
+#: .\azinapp\templates\graphicdesign.html:298
+#: .\azinapp\templates\graphicdesign.html:590
+msgid "Print"
+msgstr "چاپ"
+
+#: .\azinapp\templates\graphicdesign.html:383
+#: .\azinapp\templates\graphicdesign.html:433
+#: .\azinapp\templates\graphicdesign.html:478
+#: .\azinapp\templates\graphicdesign.html:523
+#: .\azinapp\templates\graphicdesign.html:568
+#: .\azinapp\templates\graphicdesign.html:613
+#: .\azinapp\templates\graphicdesign.html:658 .\azinapp\templates\smm.html:522
+#: .\azinapp\templates\smm.html:573 .\azinapp\templates\smm.html:618
+#: .\azinapp\templates\smm.html:663 .\azinapp\templates\smm.html:708
+#: .\azinapp\templates\website.html:1456 .\azinapp\templates\website.html:1523
+#: .\azinapp\templates\website.html:1586 .\azinapp\templates\website.html:1649
+msgid "Discuss a Similar Project"
+msgstr "درباره پروژه‌ای مشابه گفت‌وگو کنید"
+
+#: .\azinapp\templates\graphicdesign.html:422
+msgid ""
+"Logo concepts developed for businesses that need a clear and adaptable "
+"visual mark."
+msgstr ""
+"طرح‌های پیشنهادی لوگو برای کسب‌وکارهایی که به یک نشان بصری واضح، حرفه‌ای و "
+"قابل استفاده در موقعیت‌های مختلف نیاز دارند."
+
+#: .\azinapp\templates\graphicdesign.html:463
+msgid "Visual Brand Identity"
+msgstr "هویت بصری برند"
+
+#: .\azinapp\templates\graphicdesign.html:467
+msgid ""
+"A coordinated visual system covering colors, typography, logo applications, "
+"and everyday brand communication."
+msgstr ""
+"یک نظام بصری هماهنگ شامل رنگ‌ها، شیوه نوشتار، کاربردهای لوگو و ارتباطات "
+"روزمره برند."
+
+#: .\azinapp\templates\graphicdesign.html:508
+msgid "Animated Brand Content"
+msgstr "محتوای متحرک برند"
+
+#: .\azinapp\templates\graphicdesign.html:512
+msgid ""
+"Short animated visual content for brand introductions, social media, "
+"presentations, and digital campaigns."
+msgstr ""
+"محتوای بصری کوتاه و متحرک برای معرفی برند، شبکه‌های اجتماعی، ارائه‌ها و "
+"کارزارهای دیجیتال."
+
+#: .\azinapp\templates\graphicdesign.html:518
+msgid "Digital Content"
+msgstr "محتوای دیجیتال"
+
+#: .\azinapp\templates\graphicdesign.html:553
+msgid "Product Packaging"
+msgstr "بسته‌بندی محصولات"
+
+#: .\azinapp\templates\graphicdesign.html:557
+msgid ""
+"Packaging and label concepts designed around the product, brand identity, "
+"required information, and production format."
+msgstr ""
+"طرح‌های بسته‌بندی و برچسب‌گذاری متناسب با محصول، هویت برند، اطلاعات موردنیاز "
+"و شیوه تولید."
+
+#: .\azinapp\templates\graphicdesign.html:563
+msgid "Product Design"
+msgstr "طراحی محصول"
+
+#: .\azinapp\templates\graphicdesign.html:598
+msgid "Business Print Materials"
+msgstr "اقلام چاپی تجاری"
+
+#: .\azinapp\templates\graphicdesign.html:602
+msgid ""
+"Brochures, company profiles, stationery, flyers, posters, and other printed "
+"materials for business communication."
+msgstr ""
+"بروشورها، معرفی‌نامه‌های شرکت، سربرگ و اقلام اداری، تراکت‌ها، پوسترها و "
+"سایر اقلام چاپی مورد استفاده در ارتباطات تجاری."
+
+#: .\azinapp\templates\graphicdesign.html:608
+msgid "Business Communication"
+msgstr "ارتباطات تجاری"
+
+#: .\azinapp\templates\graphicdesign.html:643
+#: .\azinapp\templates\index.html:244
+msgid "Social Media Content"
+msgstr "محتوای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\graphicdesign.html:647
+msgid ""
+"Branded visual templates and campaign graphics designed for regular social "
+"media publishing and digital communication."
+msgstr ""
+"قالب‌های بصری هماهنگ با برند و طرح‌های گرافیکی کارزارهای تبلیغاتی برای "
+"انتشار منظم در شبکه‌های اجتماعی و ارتباطات دیجیتال."
+
+#: .\azinapp\templates\graphicdesign.html:653
+msgid "Social Media Design"
+msgstr "طراحی شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\graphicdesign.html:678
+#: .\azinapp\templates\index.html:445 .\azinapp\templates\media.html:539
+#: .\azinapp\templates\smm.html:728
+msgid "Call to action"
+msgstr "دعوت به اقدام"
+
+#: .\azinapp\templates\graphicdesign.html:686
+msgid "Need Design for Your Business?"
+msgstr "برای کسب‌وکارتان به طراحی نیاز دارید؟"
+
+#: .\azinapp\templates\graphicdesign.html:690
+msgid ""
+"Tell us what you are building, what materials you need, and where the "
+"designs will be used. We can discuss the scope, visual direction, required "
+"formats, and next steps for your project."
+msgstr ""
+"به ما بگویید چه چیزی در حال ساخت است، به چه اقلامی نیاز دارید و طرح‌ها در چه "
+"محل یا بستری استفاده خواهند شد. می‌توانیم درباره محدوده پروژه، مسیر بصری، "
+"قالب‌های موردنیاز و مراحل بعدی پروژه شما گفت‌وگو کنیم."
+
+#: .\azinapp\templates\index.html:18
+msgid "Hero section"
+msgstr "بخش اصلی"
+
+#: .\azinapp\templates\index.html:21
+msgid "Digital & Creative Services"
+msgstr "خدمات دیجیتال و خلاقانه"
+
+#: .\azinapp\templates\index.html:24
+msgid "Digital Solutions &"
+msgstr "راهکارهای دیجیتال و"
+
+#: .\azinapp\templates\index.html:25 .\azinapp\templates\index.html:92
+msgid "Creative Services"
+msgstr "خدمات خلاقانه"
+
+#: .\azinapp\templates\index.html:29
+msgid ""
+"AZIN GROUP provides practical digital, creative, and business services "
+"designed around the needs of organizations and growing businesses. We bring "
+"technology, content, design, and business support together to help you "
+"build, improve, and manage your digital presence."
+msgstr ""
+"آذین گروپ خدمات کاربردی دیجیتال، خلاقانه و تجاری را متناسب با نیازهای "
+"سازمان‌ها و کسب‌وکارهای در حال رشد ارائه می‌دهد. ما فناوری، محتوا، طراحی و "
+"پشتیبانی تجاری را در کنار یکدیگر قرار می‌دهیم تا به شما در ایجاد، بهبود و "
+"مدیریت حضور دیجیتال کمک کنیم."
+
+#: .\azinapp\templates\index.html:34 .\azinapp\templates\index.html:453
+#: .\azinapp\templates\media.html:40 .\azinapp\templates\media.html:558
+#: .\azinapp\templates\mobileapp.html:838
+msgid "Discuss Your Project"
+msgstr "درباره پروژه خود گفت‌وگو کنید"
+
+#: .\azinapp\templates\index.html:65
+msgid "AZIN GROUP overview"
+msgstr "معرفی آذین گروپ"
+
+#: .\azinapp\templates\index.html:68
+msgid "Who We Are"
+msgstr "ما چه کسانی هستیم"
+
+#: .\azinapp\templates\index.html:69 .\azinapp\templates\navbar.html:49
+#: .\azinapp\templates\navbar.html:218
+msgid "AZIN GROUP"
+msgstr "آذین گروپ"
+
+#: .\azinapp\templates\index.html:70
+msgid ""
+"A multi-service company providing web, media, design, social media, and "
+"business services for organizations and businesses."
+msgstr ""
+"یک مجموعه چندخدماتی که خدمات وب، رسانه، طراحی، شبکه‌های اجتماعی و خدمات "
+"تجاری را به سازمان‌ها و کسب‌وکارها ارائه می‌دهد."
+
+#: .\azinapp\templates\index.html:76
+msgid ""
+"AZIN GROUP works with businesses and organizations that need reliable "
+"support across digital, creative, and business activities. Our services "
+"cover website development, media production, graphic design, social media "
+"management, and business services. We focus on understanding the actual "
+"requirements of each project and providing practical solutions that are "
+"clear, useful, and appropriate for the client’s goals."
+msgstr ""
+"آذین گروپ با کسب‌وکارها و سازمان‌هایی همکاری می‌کند که برای فعالیت‌های "
+"دیجیتال، خلاقانه و تجاری خود به پشتیبانی قابل اعتماد نیاز دارند. خدمات ما "
+"شامل طراحی و توسعه وب‌سایت، تولید محتوای رسانه‌ای، طراحی گرافیکی، مدیریت "
+"شبکه‌های اجتماعی و خدمات تجاری است. تمرکز ما بر درک نیازهای واقعی هر پروژه "
+"و ارائه راهکارهای کاربردی، شفاف و متناسب با اهداف مشتری است."
+
+#: .\azinapp\templates\index.html:84
+msgid "Practical Technology"
+msgstr "فناوری کاربردی"
+
+#: .\azinapp\templates\index.html:85
+msgid ""
+"Web development and digital solutions designed around business requirements, "
+"usability, and long-term maintenance."
+msgstr ""
+"توسعه وب و راهکارهای دیجیتالی که بر اساس نیازهای کسب‌وکار، سهولت استفاده و "
+"نگهداری بلندمدت طراحی می‌شوند."
+
+#: .\azinapp\templates\index.html:93
+msgid ""
+"Photography, video production, graphic design, and visual content developed "
+"for brands and business communication."
+msgstr ""
+"عکاسی، تولید ویدئو، طراحی گرافیکی و محتوای بصری برای برندها و ارتباطات "
+"تجاری."
+
+#: .\azinapp\templates\index.html:100 .\azinapp\templates\index.html:298
+msgid "Business Support"
+msgstr "پشتیبانی تجاری"
+
+#: .\azinapp\templates\index.html:101
+msgid ""
+"Practical services that help businesses organize their digital activities, "
+"communication, and day-to-day business needs."
+msgstr ""
+"خدمات کاربردی برای کمک به کسب‌وکارها در سازمان‌دهی فعالیت‌های دیجیتال، "
+"ارتباطات و نیازهای روزمره تجاری."
+
+#: .\azinapp\templates\index.html:107
+msgid "Learn More About AZIN GROUP"
+msgstr "اطلاعات بیشتر درباره آذین گروپ"
+
+#: .\azinapp\templates\index.html:120
+msgid "AZIN MEDIA — Media Production"
+msgstr "آذین مدیا — تولید محتوای رسانه‌ای"
+
+#: .\azinapp\templates\index.html:125
+msgid ""
+"Photography, videography, and content production for businesses, "
+"organizations, and brands."
+msgstr ""
+"عکاسی، فیلم‌برداری و تولید محتوا برای کسب‌وکارها، سازمان‌ها و برندها."
+
+#: .\azinapp\templates\index.html:135 .\azinapp\templates\media.html:57
+msgid "Photography"
+msgstr "عکاسی"
+
+#: .\azinapp\templates\index.html:136
+msgid ""
+"Corporate, product, commercial, event, and business photography for "
+"professional communication and marketing materials."
+msgstr ""
+"عکاسی سازمانی، محصول، تجاری، رویداد و کسب‌وکار برای ارتباطات حرفه‌ای و "
+"محتوای بازاریابی."
+
+#: .\azinapp\templates\index.html:145
+msgid "Videography"
+msgstr "فیلم‌برداری"
+
+#: .\azinapp\templates\index.html:146
+msgid ""
+"Business videos, promotional content, corporate productions, and visual "
+"stories created for digital and offline use."
+msgstr ""
+"ویدئوهای تجاری، محتوای تبلیغاتی، تولیدات سازمانی و روایت‌های بصری برای "
+"استفاده در بسترهای دیجیتال و غیر دیجیتال."
+
+#: .\azinapp\templates\index.html:156
+msgid ""
+"Motion design, animation, and visual effects for presentations, campaigns, "
+"social media, and digital content."
+msgstr ""
+"طراحی حرکتی، پویانمایی و جلوه‌های بصری برای ارائه‌ها، کارزارهای تبلیغاتی، "
+"شبکه‌های اجتماعی و محتوای دیجیتال."
+
+#: .\azinapp\templates\index.html:165
+msgid "Advertising Content"
+msgstr "محتوای تبلیغاتی"
+
+#: .\azinapp\templates\index.html:166
+msgid ""
+"Visual content and creative production that help businesses communicate "
+"their products, services, and brand message clearly."
+msgstr ""
+"محتوای بصری و تولیدات خلاقانه‌ای که به کسب‌وکارها کمک می‌کنند محصولات، "
+"خدمات و پیام برند خود را به‌صورت شفاف منتقل کنند."
+
+#: .\azinapp\templates\index.html:173
+msgid "Explore AZIN MEDIA"
+msgstr "مشاهده خدمات آذین مدیا"
+
+#: .\azinapp\templates\index.html:185
+msgid "Our services"
+msgstr "خدمات ما"
+
+#: .\azinapp\templates\index.html:190
+msgid ""
+"Practical digital, creative, and business services designed to support "
+"different stages of your business."
+msgstr ""
+"خدمات کاربردی دیجیتال، خلاقانه و تجاری برای پشتیبانی از مراحل مختلف "
+"کسب‌وکار شما."
+
+#: .\azinapp\templates\index.html:201
+msgid ""
+"Professional websites and web applications built around your business "
+"requirements, content, users, and future needs."
+msgstr ""
+"وب‌سایت‌ها و برنامه‌های تحت وب حرفه‌ای که بر اساس نیازهای کسب‌وکار، محتوا، "
+"کاربران و نیازهای آینده شما ساخته می‌شوند."
+
+#: .\azinapp\templates\index.html:203
+msgid "Responsive Design"
+msgstr "طراحی واکنش‌گرا"
+
+#: .\azinapp\templates\index.html:204
+msgid "Content Management"
+msgstr "مدیریت محتوا"
+
+#: .\azinapp\templates\index.html:205
+msgid "Search Engine Readiness"
+msgstr "آمادگی برای موتورهای جست‌وجو"
+
+#: .\azinapp\templates\index.html:206
+msgid "Performance & Maintenance"
+msgstr "بهینه‌سازی عملکرد و نگهداری"
+
+#: .\azinapp\templates\index.html:209 .\azinapp\templates\index.html:228
+#: .\azinapp\templates\index.html:247 .\azinapp\templates\index.html:266
+#: .\azinapp\templates\index.html:285 .\azinapp\templates\index.html:304
+#: .\azinapp\templates\index.html:457
+msgid "Learn More"
+msgstr "اطلاعات بیشتر"
+
+#: .\azinapp\templates\index.html:219 .\azinapp\templates\index.html:368
+msgid "Digital Solutions"
+msgstr "راهکارهای دیجیتال"
+
+#: .\azinapp\templates\index.html:220
+msgid ""
+"Digital tools and solutions designed to help businesses manage information, "
+"improve workflows, and support their day-to-day operations."
+msgstr ""
+"ابزارها و راهکارهای دیجیتالی برای کمک به کسب‌وکارها در مدیریت اطلاعات، "
+"بهبود روندهای کاری و پشتیبانی از فعالیت‌های روزمره."
+
+#: .\azinapp\templates\index.html:222 .\azinapp\templates\website.html:171
+msgid "Business-Focused Solutions"
+msgstr "راهکارهای متناسب با کسب‌وکار"
+
+#: .\azinapp\templates\index.html:223
+msgid "Custom Functionality"
+msgstr "قابلیت‌های اختصاصی"
+
+#: .\azinapp\templates\index.html:224
+msgid "Data & Workflow Support"
+msgstr "پشتیبانی از داده‌ها و روندهای کاری"
+
+#: .\azinapp\templates\index.html:225
+msgid "Scalable Development"
+msgstr "توسعه مقیاس‌پذیر"
+
+#: .\azinapp\templates\index.html:239
+msgid ""
+"Photography, videography, and visual content production for businesses, "
+"organizations, products, and marketing campaigns."
+msgstr ""
+"عکاسی، فیلم‌برداری و تولید محتوای بصری برای کسب‌وکارها، سازمان‌ها، محصولات "
+"و کارزارهای بازاریابی."
+
+#: .\azinapp\templates\index.html:241
+msgid "Commercial Photography"
+msgstr "عکاسی تجاری"
+
+#: .\azinapp\templates\index.html:242 .\azinapp\templates\media.html:64
+#: .\azinapp\templates\media.html:200
+msgid "Video Production"
+msgstr "تولید ویدئو"
+
+#: .\azinapp\templates\index.html:257 .\azinapp\templates\navbar.html:41
+#: .\azinapp\templates\navbar.html:211 .\azinapp\templates\smm.html:18
+msgid "Social Media Management"
+msgstr "مدیریت شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\index.html:258
+msgid ""
+"Structured social media management covering content planning, publishing, "
+"audience communication, and performance tracking."
+msgstr ""
+"مدیریت ساختاریافته شبکه‌های اجتماعی شامل برنامه‌ریزی محتوا، انتشار، "
+"ارتباط با مخاطبان و بررسی عملکرد."
+
+#: .\azinapp\templates\index.html:260 .\azinapp\templates\smm.html:65
+msgid "Content Planning"
+msgstr "برنامه‌ریزی محتوا"
+
+#: .\azinapp\templates\index.html:261
+msgid "Community Management"
+msgstr "مدیریت جامعه مخاطبان"
+
+#: .\azinapp\templates\index.html:262
+msgid "Analytics & Reporting"
+msgstr "تحلیل و گزارش‌دهی"
+
+#: .\azinapp\templates\index.html:263
+msgid "Campaign Support"
+msgstr "پشتیبانی از کارزارهای تبلیغاتی"
+
+#: .\azinapp\templates\index.html:276
+msgid "Graphic Design & Branding"
+msgstr "طراحی گرافیکی و برندسازی"
+
+#: .\azinapp\templates\index.html:277
+msgid ""
+"Clear and consistent visual design for businesses that need professional "
+"branding and communication materials."
+msgstr ""
+"طراحی بصری شفاف و یکپارچه برای کسب‌وکارهایی که به برندسازی حرفه‌ای و "
+"اقلام ارتباطی نیاز دارند."
+
+#: .\azinapp\templates\index.html:281
+msgid "Marketing Materials"
+msgstr "اقلام بازاریابی"
+
+#: .\azinapp\templates\index.html:282
+msgid "Print & Digital Design"
+msgstr "طراحی چاپی و دیجیتال"
+
+#: .\azinapp\templates\index.html:295
+msgid "Business Services"
+msgstr "خدمات تجاری"
+
+#: .\azinapp\templates\index.html:296
+msgid ""
+"Practical business support for organizations that need help with digital "
+"operations, communication, content, and related business activities."
+msgstr ""
+"پشتیبانی کاربردی تجاری برای سازمان‌هایی که در زمینه فعالیت‌های دیجیتال، "
+"ارتباطات، محتوا و سایر امور مرتبط به کمک نیاز دارند."
+
+#: .\azinapp\templates\index.html:299
+msgid "Digital Operations"
+msgstr "عملیات دیجیتال"
+
+#: .\azinapp\templates\index.html:300
+msgid "Content & Documentation"
+msgstr "محتوا و مستندسازی"
+
+#: .\azinapp\templates\index.html:301
+msgid "Project Coordination"
+msgstr "هماهنگی پروژه"
+
+#: .\azinapp\templates\index.html:316
+msgid "Portfolio preview"
+msgstr "پیش‌نمایش نمونه‌کارها"
+
+#: .\azinapp\templates\index.html:320 .\azinapp\templates\website.html:1355
+msgid "Selected Projects"
+msgstr "پروژه‌های منتخب"
+
+#: .\azinapp\templates\index.html:321
+msgid ""
+"A selection of projects and services delivered for businesses and "
+"organizations."
+msgstr ""
+"منتخبی از پروژه‌ها و خدمات ارائه‌شده برای کسب‌وکارها و سازمان‌ها."
+
+#: .\azinapp\templates\index.html:342
+msgid "View Project"
+msgstr "مشاهده پروژه"
+
+#: .\azinapp\templates\index.html:358 .\azinapp\templates\website.html:587
+#: .\azinapp\templates\website.html:1509
+msgid "Business Website"
+msgstr "وب‌سایت تجاری"
+
+#: .\azinapp\templates\index.html:359
+msgid ""
+"A professional business website designed to present services clearly, "
+"support customer communication, and provide a structured digital presence."
+msgstr ""
+"یک وب‌سایت تجاری حرفه‌ای که برای معرفی شفاف خدمات، پشتیبانی از ارتباط با "
+"مشتریان و ایجاد یک حضور دیجیتال منسجم طراحی شده است."
+
+#: .\azinapp\templates\index.html:371
+msgid "Business Application"
+msgstr "برنامه کاربردی تجاری"
+
+#: .\azinapp\templates\index.html:372
+msgid ""
+"A practical digital solution designed to support business processes, "
+"organize information, and improve day-to-day operations."
+msgstr ""
+"یک راهکار دیجیتال کاربردی که برای پشتیبانی از فرایندهای کسب‌وکار، سازمان‌دهی "
+"اطلاعات و بهبود فعالیت‌های روزمره طراحی شده است."
+
+#: .\azinapp\templates\index.html:384
+msgid "Brand Video"
+msgstr "ویدئوی برند"
+
+#: .\azinapp\templates\index.html:385
+msgid ""
+"Business-focused video content combining professional production, editing, "
+"and visual elements to communicate a clear brand message."
+msgstr ""
+"محتوای ویدئویی تجاری که تولید حرفه‌ای، تدوین و عناصر بصری را برای انتقال "
+"شفاف پیام برند در کنار هم قرار می‌دهد."
+
+#: .\azinapp\templates\index.html:397 .\azinapp\templates\index.html:401
+#: .\azinapp\templates\website.html:1683
+msgid "Why AZIN GROUP"
+msgstr "چرا آذین گروپ"
+
+#: .\azinapp\templates\index.html:400
+msgid "Why Work With Us"
+msgstr "چرا با ما همکاری کنید"
+
+#: .\azinapp\templates\index.html:402
+msgid ""
+"A practical approach focused on understanding your requirements and "
+"delivering work that serves a clear purpose."
+msgstr ""
+"رویکردی کاربردی که بر درک نیازهای شما و ارائه کاری با هدف و کاربرد مشخص "
+"تمرکز دارد."
+
+#: .\azinapp\templates\index.html:410
+msgid "Experienced Team"
+msgstr "تیم باتجربه"
+
+#: .\azinapp\templates\index.html:411
+msgid ""
+"Our team brings experience across technology, media, design, and business "
+"services to support different project requirements."
+msgstr ""
+"تیم ما در زمینه فناوری، رسانه، طراحی و خدمات تجاری تجربه دارد و می‌تواند "
+"نیازهای متنوع پروژه‌ها را پشتیبانی کند."
+
+#: .\azinapp\templates\index.html:418
+msgid "Practical Approach"
+msgstr "رویکرد کاربردی"
+
+#: .\azinapp\templates\index.html:419
+msgid ""
+"We focus on understanding the actual business need before selecting the "
+"right service, process, and solution."
+msgstr ""
+"ما پیش از انتخاب خدمت، فرایند و راهکار مناسب، ابتدا بر درک نیاز واقعی "
+"کسب‌وکار تمرکز می‌کنیم."
+
+#: .\azinapp\templates\index.html:427
+msgid ""
+"We keep project requirements, deliverables, timelines, and communication "
+"clear throughout the working process."
+msgstr ""
+"در تمام مراحل همکاری، نیازمندی‌های پروژه، خروجی‌ها، زمان‌بندی و ارتباطات را "
+"شفاف نگه می‌داریم."
+
+#: .\azinapp\templates\index.html:434
+msgid "Ongoing Support"
+msgstr "پشتیبانی مستمر"
+
+#: .\azinapp\templates\index.html:435
+msgid ""
+"Our relationship does not have to end when a project is delivered. We can "
+"continue to provide support, updates, and maintenance when needed."
+msgstr ""
+"همکاری ما لزوماً با تحویل پروژه به پایان نمی‌رسد. در صورت نیاز می‌توانیم "
+"پشتیبانی، به‌روزرسانی و نگهداری پروژه را نیز ادامه دهیم."
+
+#: .\azinapp\templates\index.html:450
+msgid ""
+"Tell us what you need, what you are trying to achieve, and where you need "
+"support. We will review your requirements and discuss the most suitable way "
+"to move forward with AZIN GROUP."
+msgstr ""
+"به ما بگویید به چه چیزی نیاز دارید، قصد دارید به چه هدفی برسید و در چه "
+"بخش‌هایی به پشتیبانی نیاز دارید. نیازهای شما را بررسی می‌کنیم و مناسب‌ترین "
+"روش برای ادامه همکاری با آذین گروپ را با شما در میان می‌گذاریم."
+
+#: .\azinapp\templates\login.html:11 .\azinapp\templates\login.html:61
+#: .\azinapp\templates\navbar.html:175 .\azinapp\templates\navbar.html:267
+#: .\azinapp\templates\signup.html:130
+msgid "Login"
+msgstr "ورود"
+
+#: .\azinapp\templates\login.html:20
+msgid "Welcome Back"
+msgstr "خوش آمدید"
+
+#: .\azinapp\templates\login.html:21
+msgid "Login to your account to manage your profile."
+msgstr "برای مدیریت نمایه خود وارد حساب کاربری‌تان شوید."
+
+#: .\azinapp\templates\login.html:39
+msgid "Username or Email"
+msgstr "نام کاربری یا ایمیل"
+
+#: .\azinapp\templates\login.html:43
+msgid "Enter your username or email"
+msgstr "نام کاربری یا ایمیل خود را وارد کنید"
+
+#: .\azinapp\templates\login.html:54
+#: .\azinapp\templates\update_password.html:67
+#: .\azinapp\templates\update_password.html:83
+#: .\azinapp\templates\update_password.html:115
+msgid "Toggle password visibility"
+msgstr "نمایش یا پنهان کردن رمز عبور"
+
+#: .\azinapp\templates\login.html:67
+msgid "Don't have an account?"
+msgstr "حساب کاربری ندارید؟"
+
+#: .\azinapp\templates\login.html:67 .\azinapp\templates\navbar.html:178
+#: .\azinapp\templates\navbar.html:270 .\azinapp\templates\signup.html:11
+msgid "Sign Up"
+msgstr "ثبت‌نام"
+
+#: .\azinapp\templates\media.html:18
+msgid "AZIN MEDIA — Photography, Video & Content Production"
+msgstr "آذین مدیا — عکاسی، ویدئو و تولید محتوا"
+
+#: .\azinapp\templates\media.html:29
+msgid "Photography, Video &"
+msgstr "عکاسی، ویدئو و"
+
+#: .\azinapp\templates\media.html:30 .\azinapp\templates\smm.html:74
+msgid "Content Production"
+msgstr "تولید محتوا"
+
+#: .\azinapp\templates\media.html:34
+msgid ""
+"We create photography and video content for businesses, organizations, "
+"events, products, and personal projects. From planning and production to "
+"editing and final delivery, we focus on creating visual content that fits "
+"where and how it will be used."
+msgstr ""
+"ما برای کسب‌وکارها، سازمان‌ها، رویدادها، محصولات و پروژه‌های شخصی محتوای "
+"عکاسی و ویدئویی تولید می‌کنیم. از برنامه‌ریزی و تولید تا تدوین و تحویل "
+"نهایی، تمرکز ما بر ایجاد محتوای بصری متناسب با محل و شیوه استفاده از آن است."
+
+#: .\azinapp\templates\media.html:45
+msgid "View Gallery"
+msgstr "مشاهده گالری"
+
+#: .\azinapp\templates\media.html:71
+msgid "Visual Content"
+msgstr "محتوای بصری"
+
+#: .\azinapp\templates\media.html:84
+msgid "Media services"
+msgstr "خدمات رسانه‌ای"
+
+#: .\azinapp\templates\media.html:91
+msgid "Photography & Video Services"
+msgstr "خدمات عکاسی و ویدئو"
+
+#: .\azinapp\templates\media.html:95
+msgid ""
+"Visual production for business communication, products, events, social "
+"media, and personal projects."
+msgstr ""
+"تولید محتوای بصری برای ارتباطات تجاری، محصولات، رویدادها، شبکه‌های اجتماعی "
+"و پروژه‌های شخصی."
+
+#: .\azinapp\templates\media.html:108 .\azinapp\templates\media.html:365
+msgid "Wedding Photography"
+msgstr "عکاسی عروسی"
+
+#: .\azinapp\templates\media.html:112
+msgid ""
+"Wedding photography planned around the flow of your day, from preparation "
+"and ceremony to the reception. The focus is on documenting the people, "
+"details, and moments that matter to you."
+msgstr ""
+"عکاسی عروسی متناسب با روند روز ویژه شما، از آماده‌شدن و مراسم تا جشن و "
+"پذیرایی. تمرکز ما بر ثبت افراد، جزئیات و لحظه‌هایی است که برای شما اهمیت "
+"دارند."
+
+#: .\azinapp\templates\media.html:116
+msgid "Pre-wedding & engagement sessions"
+msgstr "جلسات عکاسی پیش از عروسی و نامزدی"
+
+#: .\azinapp\templates\media.html:117
+msgid "Ceremony and reception coverage"
+msgstr "پوشش تصویری مراسم و جشن"
+
+#: .\azinapp\templates\media.html:118
+msgid "Professional photo selection and editing"
+msgstr "انتخاب و ویرایش حرفه‌ای عکس‌ها"
+
+#: .\azinapp\templates\media.html:119
+msgid "Digital delivery of final images"
+msgstr "تحویل دیجیتال تصاویر نهایی"
+
+#: .\azinapp\templates\media.html:131
+msgid "Celebration & Event Photography"
+msgstr "عکاسی از جشن‌ها و رویدادها"
+
+#: .\azinapp\templates\media.html:135
+msgid ""
+"Photography for birthdays, anniversaries, family gatherings, private events, "
+"and other occasions where you want a clear visual record of the people and "
+"atmosphere."
+msgstr ""
+"عکاسی از تولدها، سالگردها، دورهمی‌های خانوادگی، رویدادهای خصوصی و سایر "
+"مناسبت‌هایی که می‌خواهید افراد، لحظات و فضای آن‌ها به‌صورت واضح و حرفه‌ای "
+"ثبت شود."
+
+#: .\azinapp\templates\media.html:139
+msgid "Birthday and private events"
+msgstr "تولدها و رویدادهای خصوصی"
+
+#: .\azinapp\templates\media.html:140
+msgid "Anniversaries and celebrations"
+msgstr "سالگردها و جشن‌ها"
+
+#: .\azinapp\templates\media.html:141
+msgid "Family and group photography"
+msgstr "عکاسی خانوادگی و گروهی"
+
+#: .\azinapp\templates\media.html:142
+msgid "Edited digital photo delivery"
+msgstr "تحویل دیجیتال عکس‌های ویرایش‌شده"
+
+#: .\azinapp\templates\media.html:154 .\azinapp\templates\media.html:455
+msgid "Product Photography"
+msgstr "عکاسی محصول"
+
+#: .\azinapp\templates\media.html:158
+msgid ""
+"Product images prepared for e-commerce stores, websites, catalogs, social "
+"media, and marketing materials. We plan the shoot around the product, "
+"platform, and intended use."
+msgstr ""
+"تصاویر محصول برای فروشگاه‌های اینترنتی، وب‌سایت‌ها، کاتالوگ‌ها، شبکه‌های "
+"اجتماعی و محتوای بازاریابی. برنامه‌ریزی عکاسی بر اساس محصول، بستر انتشار و "
+"نحوه استفاده موردنظر انجام می‌شود."
+
+#: .\azinapp\templates\media.html:162
+msgid "Product and catalog photography"
+msgstr "عکاسی محصول و کاتالوگ"
+
+#: .\azinapp\templates\media.html:163
+msgid "Lifestyle and contextual images"
+msgstr "تصاویر سبک زندگی و محیطی"
+
+#: .\azinapp\templates\media.html:164
+msgid "Clean backgrounds and detailed shots"
+msgstr "پس‌زمینه‌های تمیز و تصاویر با جزئیات"
+
+#: .\azinapp\templates\media.html:165
+msgid "Editing and image preparation"
+msgstr "ویرایش و آماده‌سازی تصاویر"
+
+#: .\azinapp\templates\media.html:177
+msgid "Corporate & Event Photography"
+msgstr "عکاسی سازمانی و رویدادها"
+
+#: .\azinapp\templates\media.html:181
+msgid ""
+"Professional photography for conferences, seminars, company events, team "
+"activities, launches, and other business occasions where reliable visual "
+"documentation is needed."
+msgstr ""
+"عکاسی حرفه‌ای از همایش‌ها، سمینارها، رویدادهای شرکتی، فعالیت‌های تیمی، "
+"مراسم معرفی و سایر مناسبت‌های تجاری که به مستندسازی تصویری دقیق و قابل "
+"اعتماد نیاز دارند."
+
+#: .\azinapp\templates\media.html:185
+msgid "Conferences and seminars"
+msgstr "همایش‌ها و سمینارها"
+
+#: .\azinapp\templates\media.html:186
+msgid "Corporate events and launches"
+msgstr "رویدادهای شرکتی و مراسم معرفی"
+
+#: .\azinapp\templates\media.html:187
+msgid "Team and executive portraits"
+msgstr "عکاسی از تیم و مدیران"
+
+#: .\azinapp\templates\media.html:188
+msgid "Event documentation for business use"
+msgstr "مستندسازی رویداد برای استفاده تجاری"
+
+#: .\azinapp\templates\media.html:204
+msgid ""
+"Video production for businesses, events, products, campaigns, and social "
+"media. Projects can be scoped around the required format, message, platform, "
+"and final deliverables."
+msgstr ""
+"تولید ویدئو برای کسب‌وکارها، رویدادها، محصولات، کارزارهای تبلیغاتی و "
+"شبکه‌های اجتماعی. محدوده هر پروژه بر اساس قالب موردنیاز، پیام، بستر انتشار "
+"و خروجی‌های نهایی تعیین می‌شود."
+
+#: .\azinapp\templates\media.html:208
+msgid "Corporate and promotional videos"
+msgstr "ویدئوهای سازمانی و تبلیغاتی"
+
+#: .\azinapp\templates\media.html:209
+msgid "Event and ceremony videos"
+msgstr "ویدئوهای رویداد و مراسم"
+
+#: .\azinapp\templates\media.html:210
+msgid "Short-form social media content"
+msgstr "محتوای کوتاه برای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\media.html:211
+msgid "Video editing and post-production"
+msgstr "تدوین و پس‌تولید ویدئو"
+
+#: .\azinapp\templates\media.html:223
+msgid "Portrait & Professional Photography"
+msgstr "عکاسی پرتره و حرفه‌ای"
+
+#: .\azinapp\templates\media.html:227
+msgid ""
+"Portrait sessions for individuals, families, professionals, teams, and "
+"organizations. Images can be prepared for personal use, professional "
+"profiles, websites, and business communication."
+msgstr ""
+"جلسات عکاسی پرتره برای افراد، خانواده‌ها، متخصصان، تیم‌ها و سازمان‌ها. "
+"تصاویر می‌توانند برای استفاده شخصی، پروفایل‌های حرفه‌ای، وب‌سایت‌ها و "
+"ارتباطات تجاری آماده شوند."
+
+#: .\azinapp\templates\media.html:231
+msgid "Professional headshots"
+msgstr "عکس‌های حرفه‌ای چهره"
+
+#: .\azinapp\templates\media.html:232
+msgid "Individual and family portraits"
+msgstr "پرتره‌های فردی و خانوادگی"
+
+#: .\azinapp\templates\media.html:233
+msgid "Team and staff photography"
+msgstr "عکاسی از تیم و کارکنان"
+
+#: .\azinapp\templates\media.html:234
+msgid "Edited images for digital use"
+msgstr "تصاویر ویرایش‌شده برای استفاده دیجیتال"
+
+#: .\azinapp\templates\media.html:246
+msgid "Media gallery"
+msgstr "گالری رسانه"
+
+#: .\azinapp\templates\media.html:250 .\azinapp\templates\website.html:1351
+msgid "Portfolio"
+msgstr "نمونه‌کارها"
+
+#: .\azinapp\templates\media.html:253
+msgid "Selected Work"
+msgstr "نمونه‌کارهای منتخب"
+
+#: .\azinapp\templates\media.html:257
+msgid "A selection of photography and visual content representing the types of "
+"projects we work on."
+msgstr "منتخبی از عکس‌ها و محتوای بصری که نمونه‌ای از انواع پروژه‌هایی است که روی "
+"آن‌ها کار می‌کنیم."
+
+#: .\azinapp\templates\media.html:269 .\azinapp\templates\media.html:372
+#: .\azinapp\templates\media.html:402
+msgid "Wedding"
+msgstr "عروسی"
+
+#: .\azinapp\templates\media.html:273 .\azinapp\templates\media.html:432
+msgid "Celebration"
+msgstr "جشن"
+
+#: .\azinapp\templates\media.html:277 .\azinapp\templates\media.html:462
+msgid "Product"
+msgstr "محصول"
+
+#: .\azinapp\templates\media.html:281 .\azinapp\templates\media.html:492
+msgid "Corporate"
+msgstr "سازمانی"
+
+#: .\azinapp\templates\media.html:285 .\azinapp\templates\media.html:522
+msgid "Portrait"
+msgstr "پرتره"
+
+#: .\azinapp\templates\media.html:307
+msgid "Your browser does not support the video tag."
+msgstr "مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند."
+
+#: .\azinapp\templates\media.html:312 .\azinapp\templates\smm.html:458
+msgid "Video"
+msgstr "ویدئو"
+
+#: .\azinapp\templates\media.html:323 .\azinapp\templates\media.html:360
+#: .\azinapp\templates\media.html:390 .\azinapp\templates\media.html:420
+#: .\azinapp\templates\media.html:450 .\azinapp\templates\media.html:480
+#: .\azinapp\templates\media.html:510
+msgid "Photo"
+msgstr "عکس"
+
+#: .\azinapp\templates\media.html:368
+msgid ""
+"Wedding photography focused on people, details, atmosphere, and the natural "
+"flow of the day."
+msgstr ""
+"عکاسی عروسی با تمرکز بر افراد، جزئیات، فضای مراسم و روند طبیعی روز."
+
+#: .\azinapp\templates\media.html:395
+msgid "Wedding Reception"
+msgstr "جشن عروسی"
+
+#: .\azinapp\templates\media.html:398
+msgid "Natural moments and event details documented throughout the reception."
+msgstr "ثبت لحظه‌های طبیعی و جزئیات مراسم در طول جشن عروسی."
+
+#: .\azinapp\templates\media.html:425
+msgid "Celebration Photography"
+msgstr "عکاسی از جشن‌ها"
+
+#: .\azinapp\templates\media.html:428
+msgid "Photography for private celebrations, gatherings, and events."
+msgstr "عکاسی از جشن‌ها، دورهمی‌ها و رویدادهای خصوصی."
+
+#: .\azinapp\templates\media.html:458
+msgid ""
+"Product images prepared for online stores, websites, catalogs, and marketing "
+"use."
+msgstr ""
+"تصاویر محصول آماده‌شده برای فروشگاه‌های اینترنتی، وب‌سایت‌ها، کاتالوگ‌ها و "
+"استفاده‌های بازاریابی."
+
+#: .\azinapp\templates\media.html:485
+msgid "Corporate Event"
+msgstr "رویداد سازمانی"
+
+#: .\azinapp\templates\media.html:488
+msgid ""
+"Business event photography for conferences, meetings, launches, and company "
+"activities."
+msgstr ""
+"عکاسی از رویدادهای تجاری شامل همایش‌ها، نشست‌ها، مراسم معرفی و فعالیت‌های "
+"شرکتی."
+
+#: .\azinapp\templates\media.html:515
+msgid "Professional Portrait"
+msgstr "پرتره حرفه‌ای"
+
+#: .\azinapp\templates\media.html:518
+msgid ""
+"Portrait photography for professional profiles, websites, teams, and "
+"personal use."
+msgstr ""
+"عکاسی پرتره برای پروفایل‌های حرفه‌ای، وب‌سایت‌ها، تیم‌ها و استفاده شخصی."
+
+#: .\azinapp\templates\media.html:547
+msgid "Planning a Photo or Video Project?"
+msgstr "برای یک پروژه عکاسی یا ویدئویی برنامه‌ریزی می‌کنید؟"
+
+#: .\azinapp\templates\media.html:551
+msgid ""
+"Tell us what you need to produce, where the content will be used, and when "
+"you need it. We can discuss the scope, required production, editing, and "
+"final deliverables before the project begins."
+msgstr ""
+"به ما بگویید چه محتوایی نیاز دارید، این محتوا در کجا استفاده خواهد شد و چه "
+"زمانی به آن نیاز دارید. پیش از شروع پروژه می‌توانیم درباره محدوده کار، "
+"تولید موردنیاز، ویرایش و خروجی‌های نهایی گفت‌وگو کنیم."
+
+#: .\azinapp\templates\mobileapp.html:18
+msgid "Mobile app development services"
+msgstr "خدمات توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:48
+msgid "AZIN GROUP — Mobile App Development"
+msgstr "آذین گروپ — توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:53
+msgid "Mobile App"
+msgstr "اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:57 .\azinapp\templates\website.html:1299
+msgid "Development"
+msgstr "توسعه"
+
+#: .\azinapp\templates\mobileapp.html:62
+msgid ""
+"We help businesses turn their mobile app ideas into practical digital "
+"products. From planning and UI/UX design to development, testing, "
+"deployment, and ongoing support, we focus on creating reliable and user-"
+"friendly mobile experiences."
+msgstr ""
+"ما به کسب‌وکارها کمک می‌کنیم ایده‌های اپلیکیشن موبایل خود را به محصولات "
+"دیجیتال کاربردی تبدیل کنند. از برنامه‌ریزی و طراحی رابط و تجربه کاربری تا "
+"توسعه، آزمایش، راه‌اندازی و پشتیبانی مستمر، تمرکز ما بر ایجاد تجربه‌های "
+"موبایلی قابل‌اعتماد و کاربرپسند است."
+
+#: .\azinapp\templates\mobileapp.html:69
+msgid "Discuss Your App Idea"
+msgstr "ایده اپلیکیشن خود را با ما در میان بگذارید"
+
+#: .\azinapp\templates\mobileapp.html:119
+msgid "Mobile applications we build"
+msgstr "اپلیکیشن‌های موبایلی که توسعه می‌دهیم"
+
+#: .\azinapp\templates\mobileapp.html:126 .\azinapp\templates\website.html:285
+msgid "What We Build"
+msgstr "چه چیزهایی می‌سازیم"
+
+#: .\azinapp\templates\mobileapp.html:130
+msgid "Mobile Solutions for Different Business Needs"
+msgstr "راهکارهای موبایلی برای نیازهای مختلف کسب‌وکار"
+
+#: .\azinapp\templates\mobileapp.html:134
+msgid ""
+"We develop mobile solutions based on your business goals, target users, "
+"required features, and project scope."
+msgstr ""
+"ما راهکارهای موبایلی را بر اساس اهداف کسب‌وکار، کاربران هدف، قابلیت‌های "
+"موردنیاز و محدوده پروژه شما توسعه می‌دهیم."
+
+#: .\azinapp\templates\mobileapp.html:150
+msgid "Business Applications"
+msgstr "اپلیکیشن‌های کسب‌وکاری"
+
+#: .\azinapp\templates\mobileapp.html:154
+msgid ""
+"Mobile applications designed to help businesses provide services, manage "
+"operations, and stay connected with their customers."
+msgstr ""
+"اپلیکیشن‌های موبایلی طراحی‌شده برای کمک به کسب‌وکارها در ارائه خدمات، "
+"مدیریت عملیات و حفظ ارتباط با مشتریان."
+
+#: .\azinapp\templates\mobileapp.html:158
+msgid "Business workflows"
+msgstr "فرایندهای کاری کسب‌وکار"
+
+#: .\azinapp\templates\mobileapp.html:159
+msgid "User accounts & profiles"
+msgstr "حساب‌های کاربری و پروفایل‌ها"
+
+#: .\azinapp\templates\mobileapp.html:160
+msgid "Notifications & communication"
+msgstr "اعلان‌ها و ارتباطات"
+
+#: .\azinapp\templates\mobileapp.html:161
+#: .\azinapp\templates\mobileapp.html:398
+msgid "Backend & API integration"
+msgstr "یکپارچه‌سازی بخش پشتیبان و رابط‌های برنامه‌نویسی"
+
+#: .\azinapp\templates\mobileapp.html:175
+msgid "Customer-Facing Apps"
+msgstr "اپلیکیشن‌های ویژه مشتریان"
+
+#: .\azinapp\templates\mobileapp.html:179
+msgid ""
+"User-friendly mobile applications that allow customers to browse services, "
+"submit requests, communicate, and manage their accounts."
+msgstr ""
+"اپلیکیشن‌های موبایلی کاربرپسندی که به مشتریان امکان می‌دهند خدمات را مشاهده "
+"کنند، درخواست ارسال کنند، ارتباط برقرار کنند و حساب کاربری خود را مدیریت "
+"کنند."
+
+#: .\azinapp\templates\mobileapp.html:183
+msgid "User registration & login"
+msgstr "ثبت‌نام و ورود کاربران"
+
+#: .\azinapp\templates\mobileapp.html:184
+msgid "Service browsing"
+msgstr "مشاهده خدمات"
+
+#: .\azinapp\templates\mobileapp.html:185
+msgid "Request & booking features"
+msgstr "قابلیت‌های درخواست و رزرو"
+
+#: .\azinapp\templates\mobileapp.html:186
+msgid "Customer notifications"
+msgstr "اعلان‌های مشتریان"
+
+#: .\azinapp\templates\mobileapp.html:200
+msgid "Mobile Commerce"
+msgstr "تجارت موبایلی"
+
+#: .\azinapp\templates\mobileapp.html:204
+msgid ""
+"Mobile shopping experiences with product catalogs, customer accounts, "
+"orders, and payment integration."
+msgstr ""
+"تجربه خرید موبایلی همراه با فهرست محصولات، حساب‌های مشتریان، سفارش‌ها و "
+"یکپارچه‌سازی پرداخت."
+
+#: .\azinapp\templates\mobileapp.html:208 .\azinapp\templates\website.html:763
+msgid "Product catalog"
+msgstr "فهرست محصولات"
+
+#: .\azinapp\templates\mobileapp.html:209
+msgid "Shopping cart"
+msgstr "سبد خرید"
+
+#: .\azinapp\templates\mobileapp.html:210 .\azinapp\templates\website.html:366
+#: .\azinapp\templates\website.html:771
+msgid "Order management"
+msgstr "مدیریت سفارش‌ها"
+
+#: .\azinapp\templates\mobileapp.html:211 .\azinapp\templates\website.html:364
+msgid "Payment integration"
+msgstr "یکپارچه‌سازی پرداخت"
+
+#: .\azinapp\templates\mobileapp.html:225
+msgid "Educational Apps"
+msgstr "اپلیکیشن‌های آموزشی"
+
+#: .\azinapp\templates\mobileapp.html:229
+msgid ""
+"Mobile learning solutions for courses, educational content, student access, "
+"and progress management."
+msgstr ""
+"راهکارهای آموزش موبایلی برای دوره‌ها، محتوای آموزشی، دسترسی دانشجویان و "
+"مدیریت روند پیشرفت."
+
+#: .\azinapp\templates\mobileapp.html:233
+msgid "Course & lesson access"
+msgstr "دسترسی به دوره‌ها و درس‌ها"
+
+#: .\azinapp\templates\mobileapp.html:234 .\azinapp\templates\website.html:442
+msgid "Student accounts"
+msgstr "حساب‌های دانشجویان"
+
+#: .\azinapp\templates\mobileapp.html:235
+msgid "Learning content"
+msgstr "محتوای آموزشی"
+
+#: .\azinapp\templates\mobileapp.html:236 .\azinapp\templates\website.html:446
+#: .\azinapp\templates\website.html:928
+msgid "Progress tracking"
+msgstr "پیگیری پیشرفت"
+
+#: .\azinapp\templates\mobileapp.html:250
+msgid "Service Applications"
+msgstr "اپلیکیشن‌های خدماتی"
+
+#: .\azinapp\templates\mobileapp.html:254
+msgid ""
+"Custom mobile apps for businesses that need to connect customers with "
+"services, teams, or operational processes."
+msgstr ""
+"اپلیکیشن‌های موبایلی سفارشی برای کسب‌وکارهایی که نیاز دارند مشتریان را به "
+"خدمات، تیم‌ها یا فرایندهای عملیاتی متصل کنند."
+
+#: .\azinapp\templates\mobileapp.html:258
+msgid "Service requests"
+msgstr "درخواست‌های خدمات"
+
+#: .\azinapp\templates\mobileapp.html:259
+msgid "Booking workflows"
+msgstr "فرایندهای رزرو"
+
+#: .\azinapp\templates\mobileapp.html:260
+msgid "User communication"
+msgstr "ارتباط با کاربران"
+
+#: .\azinapp\templates\mobileapp.html:261
+msgid "Business management"
+msgstr "مدیریت کسب‌وکار"
+
+#: .\azinapp\templates\mobileapp.html:275
+msgid "Custom Mobile Applications"
+msgstr "اپلیکیشن‌های موبایلی سفارشی"
+
+#: .\azinapp\templates\mobileapp.html:279
+msgid ""
+"Tailor-made mobile applications built around specific business requirements, "
+"workflows, and integrations."
+msgstr ""
+"اپلیکیشن‌های موبایلی اختصاصی که بر اساس نیازهای مشخص کسب‌وکار، فرایندهای "
+"کاری و یکپارچه‌سازی‌های موردنیاز ساخته می‌شوند."
+
+#: .\azinapp\templates\mobileapp.html:283 .\azinapp\templates\website.html:520
+#: .\azinapp\templates\website.html:998
+msgid "Custom business logic"
+msgstr "منطق کسب‌وکار سفارشی"
+
+#: .\azinapp\templates\mobileapp.html:284 .\azinapp\templates\website.html:524
+msgid "API integrations"
+msgstr "یکپارچه‌سازی با رابط‌های برنامه‌نویسی"
+
+#: .\azinapp\templates\mobileapp.html:285
+msgid "Role-based access"
+msgstr "دسترسی مبتنی بر نقش"
+
+#: .\azinapp\templates\mobileapp.html:286 .\azinapp\templates\website.html:526
+msgid "Scalable architecture"
+msgstr "معماری مقیاس‌پذیر"
+
+#: .\azinapp\templates\mobileapp.html:302
+msgid "Mobile app development process"
+msgstr "فرایند توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:309 .\azinapp\templates\website.html:1205
+msgid "Our Process"
+msgstr "فرایند کاری ما"
+
+#: .\azinapp\templates\mobileapp.html:313 .\azinapp\templates\website.html:1209
+msgid "From Idea to Launch"
+msgstr "از ایده تا راه‌اندازی"
+
+#: .\azinapp\templates\mobileapp.html:317
+msgid ""
+"A structured development process designed to keep your project clear, "
+"efficient, and aligned with your business goals."
+msgstr ""
+"فرایند توسعه‌ای ساختاریافته که برای شفاف، کارآمد و همسو نگه‌داشتن پروژه با "
+"اهداف کسب‌وکار شما طراحی شده است."
+
+#: .\azinapp\templates\mobileapp.html:335
+msgid "Discovery & Requirements"
+msgstr "بررسی و نیازمندی‌ها"
+
+#: .\azinapp\templates\mobileapp.html:339
+msgid ""
+"We discuss your idea, target users, business goals, required features, and "
+"technical requirements."
+msgstr ""
+"درباره ایده، کاربران هدف، اهداف کسب‌وکار، قابلیت‌های موردنیاز و نیازمندی‌های "
+"فنی پروژه شما گفت‌وگو می‌کنیم."
+
+#: .\azinapp\templates\mobileapp.html:343
+msgid "Business requirements"
+msgstr "نیازمندی‌های کسب‌وکار"
+
+#: .\azinapp\templates\mobileapp.html:344
+msgid "Target users"
+msgstr "کاربران هدف"
+
+#: .\azinapp\templates\mobileapp.html:345
+msgid "Feature planning"
+msgstr "برنامه‌ریزی قابلیت‌ها"
+
+#: .\azinapp\templates\mobileapp.html:346
+msgid "Project scope"
+msgstr "محدوده پروژه"
+
+#: .\azinapp\templates\mobileapp.html:362
+msgid "UI/UX Design"
+msgstr "طراحی رابط و تجربه کاربری"
+
+#: .\azinapp\templates\mobileapp.html:366
+msgid ""
+"We create clear and intuitive interfaces designed around your users and "
+"brand identity."
+msgstr ""
+"ما رابط‌های کاربری شفاف و ساده‌ای طراحی می‌کنیم که بر اساس کاربران و هویت "
+"برند شما شکل گرفته‌اند."
+
+#: .\azinapp\templates\mobileapp.html:370
+msgid "User flows"
+msgstr "جریان‌های کاربری"
+
+#: .\azinapp\templates\mobileapp.html:371
+msgid "Wireframes"
+msgstr "طرح‌های اولیه"
+
+#: .\azinapp\templates\mobileapp.html:372
+msgid "Interface design"
+msgstr "طراحی رابط کاربری"
+
+#: .\azinapp\templates\mobileapp.html:373
+msgid "Interactive prototypes"
+msgstr "نمونه‌های اولیه تعاملی"
+
+#: .\azinapp\templates\mobileapp.html:389
+msgid "App Development"
+msgstr "توسعه اپلیکیشن"
+
+#: .\azinapp\templates\mobileapp.html:393
+msgid ""
+"Our development team implements the planned features, connects the backend "
+"services, and builds the application according to the approved scope."
+msgstr ""
+"تیم توسعه ما قابلیت‌های برنامه‌ریزی‌شده را پیاده‌سازی می‌کند، خدمات بخش "
+"پشتیبان را متصل می‌سازد و اپلیکیشن را مطابق با محدوده تأییدشده پروژه توسعه "
+"می‌دهد."
+
+#: .\azinapp\templates\mobileapp.html:397
+msgid "Mobile application development"
+msgstr "توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:399
+msgid "Database integration"
+msgstr "یکپارچه‌سازی پایگاه داده"
+
+#: .\azinapp\templates\mobileapp.html:400 .\azinapp\templates\website.html:1008
+msgid "Authentication & permissions"
+msgstr "احراز هویت و مجوزهای دسترسی"
+
+#: .\azinapp\templates\mobileapp.html:416
+msgid "Testing & Quality Assurance"
+msgstr "آزمایش و تضمین کیفیت"
+
+#: .\azinapp\templates\mobileapp.html:420
+msgid ""
+"We test the application across supported devices and key user flows to "
+"identify and resolve issues before launch."
+msgstr ""
+"اپلیکیشن را روی دستگاه‌های پشتیبانی‌شده و جریان‌های اصلی کاربری آزمایش "
+"می‌کنیم تا مشکلات را پیش از راه‌اندازی شناسایی و برطرف کنیم."
+
+#: .\azinapp\templates\mobileapp.html:424
+msgid "Functional testing"
+msgstr "آزمایش عملکردی"
+
+#: .\azinapp\templates\mobileapp.html:425
+msgid "Interface testing"
+msgstr "آزمایش رابط کاربری"
+
+#: .\azinapp\templates\mobileapp.html:426
+msgid "Device compatibility"
+msgstr "سازگاری با دستگاه‌ها"
+
+#: .\azinapp\templates\mobileapp.html:427
+msgid "Bug fixing & refinement"
+msgstr "رفع خطا و بهبود نهایی"
+
+#: .\azinapp\templates\mobileapp.html:443
+msgid "Deployment & Support"
+msgstr "راه‌اندازی و پشتیبانی"
+
+#: .\azinapp\templates\mobileapp.html:447
+msgid ""
+"We prepare the application for release and help with deployment, updates, "
+"and post-launch technical support."
+msgstr ""
+"اپلیکیشن را برای انتشار آماده می‌کنیم و در راه‌اندازی، به‌روزرسانی‌ها و "
+"پشتیبانی فنی پس از راه‌اندازی همراه شما خواهیم بود."
+
+#: .\azinapp\templates\mobileapp.html:451
+msgid "Release preparation"
+msgstr "آماده‌سازی برای انتشار"
+
+#: .\azinapp\templates\mobileapp.html:452
+msgid "Store deployment support"
+msgstr "پشتیبانی از انتشار در فروشگاه‌ها"
+
+#: .\azinapp\templates\mobileapp.html:453
+msgid "Post-launch fixes"
+msgstr "رفع مشکلات پس از راه‌اندازی"
+
+#: .\azinapp\templates\mobileapp.html:454
+msgid "Ongoing maintenance"
+msgstr "نگهداری مستمر"
+
+#: .\azinapp\templates\mobileapp.html:470
+msgid "Mobile app technical features"
+msgstr "قابلیت‌های فنی اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:477
+msgid "Technical Approach"
+msgstr "رویکرد فنی"
+
+#: .\azinapp\templates\mobileapp.html:481
+msgid "Built for Reliability and Growth"
+msgstr "ساخته‌شده برای پایداری و رشد"
+
+#: .\azinapp\templates\mobileapp.html:485
+msgid ""
+"We focus on maintainable architecture, reliable integrations, performance, "
+"and a smooth user experience."
+msgstr ""
+"تمرکز ما بر معماری قابل نگهداری، یکپارچه‌سازی‌های قابل‌اعتماد، عملکرد مناسب "
+"و تجربه کاربری روان است."
+
+#: .\azinapp\templates\mobileapp.html:503
+msgid "Secure Authentication"
+msgstr "احراز هویت امن"
+
+#: .\azinapp\templates\mobileapp.html:507
+msgid ""
+"We implement appropriate authentication, authorization, and data protection "
+"practices based on your application's requirements."
+msgstr ""
+"ما روش‌های مناسب احراز هویت، مجوزدهی و حفاظت از داده‌ها را بر اساس "
+"نیازمندی‌های اپلیکیشن شما پیاده‌سازی می‌کنیم."
+
+#: .\azinapp\templates\mobileapp.html:525
+msgid "Scalable Architecture"
+msgstr "معماری مقیاس‌پذیر"
+
+#: .\azinapp\templates\mobileapp.html:529
+msgid ""
+"We structure applications and backend services so the product can evolve as "
+"your users, features, and business requirements grow."
+msgstr ""
+"اپلیکیشن‌ها و خدمات بخش پشتیبان را به‌گونه‌ای ساختاربندی می‌کنیم که محصول "
+"همگام با افزایش کاربران، قابلیت‌ها و نیازمندی‌های کسب‌وکار شما بتواند رشد "
+"و توسعه پیدا کند."
+
+#: .\azinapp\templates\mobileapp.html:547
+msgid "Performance Optimization"
+msgstr "بهینه‌سازی عملکرد"
+
+#: .\azinapp\templates\mobileapp.html:551
+msgid ""
+"We pay attention to application performance, API communication, resource "
+"usage, and efficient user flows."
+msgstr ""
+"ما به عملکرد اپلیکیشن، ارتباط با رابط‌های برنامه‌نویسی، مصرف منابع و "
+"جریان‌های کاربری کارآمد توجه ویژه داریم."
+
+#: .\azinapp\templates\mobileapp.html:569
+msgid "API & Third-Party Integration"
+msgstr "یکپارچه‌سازی با رابط‌های برنامه‌نویسی و خدمات شخص ثالث"
+
+#: .\azinapp\templates\mobileapp.html:573
+msgid ""
+"Connect your mobile application with existing business systems, APIs, "
+"payment services, and other required platforms."
+msgstr ""
+"اپلیکیشن موبایل خود را به سامانه‌های موجود کسب‌وکار، رابط‌های برنامه‌نویسی، "
+"خدمات پرداخت و سایر بسترهای موردنیاز متصل کنید."
+
+#: .\azinapp\templates\mobileapp.html:591
+msgid "Mobile development technologies"
+msgstr "فناوری‌های توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:602
+msgid "Technology Choices Based on Your Project"
+msgstr "انتخاب فناوری بر اساس پروژه شما"
+
+#: .\azinapp\templates\mobileapp.html:606
+msgid ""
+"We select the appropriate mobile technology and architecture according to "
+"your project requirements, target platforms, budget, and long-term goals."
+msgstr ""
+"ما فناوری و معماری مناسب موبایل را بر اساس نیازمندی‌های پروژه، بسترهای هدف، "
+"بودجه و اهداف بلندمدت شما انتخاب می‌کنیم."
+
+#: .\azinapp\templates\mobileapp.html:622
+msgid "iOS Applications"
+msgstr "اپلیکیشن‌های آی‌اواس"
+
+#: .\azinapp\templates\mobileapp.html:633
+msgid ""
+"Solutions designed for Apple's mobile ecosystem, based on the requirements "
+"of your application."
+msgstr ""
+"راهکارهایی طراحی‌شده برای اکوسیستم موبایلی اپل، بر اساس نیازمندی‌های "
+"اپلیکیشن شما."
+
+#: .\azinapp\templates\mobileapp.html:647
+msgid "Android Applications"
+msgstr "اپلیکیشن‌های اندروید"
+
+#: .\azinapp\templates\mobileapp.html:658
+msgid ""
+"Android applications designed for modern devices and business use cases."
+msgstr ""
+"اپلیکیشن‌های اندرویدی طراحی‌شده برای دستگاه‌های مدرن و کاربردهای کسب‌وکاری."
+
+#: .\azinapp\templates\mobileapp.html:672
+msgid "Cross-Platform Solutions"
+msgstr "راهکارهای چندسکویی"
+
+#: .\azinapp\templates\mobileapp.html:683
+msgid ""
+"Cross-platform approaches can reduce development effort when a shared "
+"codebase is appropriate for the project."
+msgstr ""
+"در صورتی که استفاده از یک کدپایه مشترک برای پروژه مناسب باشد، رویکردهای "
+"چندسکویی می‌توانند زمان و تلاش موردنیاز برای توسعه را کاهش دهند."
+
+#: .\azinapp\templates\mobileapp.html:699
+msgid "Mobile app development benefits"
+msgstr "مزایای توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\mobileapp.html:706
+msgid "Project Delivery"
+msgstr "تحویل پروژه"
+
+#: .\azinapp\templates\mobileapp.html:710
+msgid "What You Can Expect From Our Team"
+msgstr "آنچه می‌توانید از تیم ما انتظار داشته باشید"
+
+#: .\azinapp\templates\mobileapp.html:714
+msgid ""
+"A professional development experience focused on communication, quality, and "
+"long-term maintainability."
+msgstr ""
+"تجربه‌ای حرفه‌ای از فرایند توسعه با تمرکز بر ارتباط مؤثر، کیفیت و "
+"قابلیت نگهداری بلندمدت."
+
+#: .\azinapp\templates\mobileapp.html:735
+msgid ""
+"You receive clear project updates, defined milestones, and direct "
+"communication throughout the development process."
+msgstr ""
+"در طول فرایند توسعه، گزارش‌های شفاف از روند پروژه، مراحل مشخص و ارتباط "
+"مستقیم با تیم دریافت خواهید کرد."
+
+#: .\azinapp\templates\mobileapp.html:752
+msgid "Maintainable Code"
+msgstr "کد قابل نگهداری"
+
+#: .\azinapp\templates\mobileapp.html:756
+msgid ""
+"We aim for clean, organized, and maintainable implementation that can be "
+"extended as your product evolves."
+msgstr ""
+"هدف ما پیاده‌سازی کدی تمیز، منظم و قابل نگهداری است که با رشد و توسعه "
+"محصول شما بتوان آن را گسترش داد."
+
+#: .\azinapp\templates\mobileapp.html:773
+msgid "Backend Integration"
+msgstr "یکپارچه‌سازی با بخش پشتیبان"
+
+#: .\azinapp\templates\mobileapp.html:777
+msgid ""
+"Mobile applications can be connected to existing or custom backend systems "
+"through secure APIs and appropriate data architecture."
+msgstr ""
+"اپلیکیشن‌های موبایل می‌توانند از طریق رابط‌های برنامه‌نویسی امن و معماری "
+"مناسب داده به سامانه‌های پشتیبان موجود یا سفارشی متصل شوند."
+
+#: .\azinapp\templates\mobileapp.html:794
+msgid "Post-Launch Support"
+msgstr "پشتیبانی پس از راه‌اندازی"
+
+#: .\azinapp\templates\mobileapp.html:798
+msgid ""
+"After launch, we can provide maintenance, bug fixes, technical improvements, "
+"and updates based on your support requirements."
+msgstr ""
+"پس از راه‌اندازی، می‌توانیم بر اساس نیازهای پشتیبانی شما خدمات نگهداری، "
+"رفع خطا، بهبودهای فنی و به‌روزرسانی‌های لازم را ارائه کنیم."
+
+#: .\azinapp\templates\mobileapp.html:816
+msgid "Start a mobile app project"
+msgstr "پروژه اپلیکیشن موبایل خود را آغاز کنید"
+
+#: .\azinapp\templates\mobileapp.html:825
+msgid "Have a Mobile App Idea?"
+msgstr "ایده‌ای برای اپلیکیشن موبایل دارید؟"
+
+#: .\azinapp\templates\mobileapp.html:829
+msgid ""
+"Tell us what you want to build. We will review your requirements, discuss "
+"the best approach, and provide a clear project scope and quotation."
+msgstr ""
+"به ما بگویید چه چیزی می‌خواهید بسازید. نیازمندی‌های شما را بررسی می‌کنیم، "
+"بهترین رویکرد را پیشنهاد می‌دهیم و محدوده پروژه و پیشنهاد قیمت شفاف ارائه "
+"می‌کنیم."
+
+#: .\azinapp\templates\navbar.html:7
+msgid "Main navigation"
+msgstr "ناوبری اصلی"
+
+#: .\azinapp\templates\navbar.html:27 .\azinapp\templates\navbar.html:208
+msgid "AZIN MEDIA"
+msgstr "آذین مدیا"
+
+#: .\azinapp\templates\navbar.html:59 .\azinapp\templates\navbar.html:220
+msgid "Mobile App Development"
+msgstr "توسعه اپلیکیشن موبایل"
+
+#: .\azinapp\templates\navbar.html:67 .\azinapp\templates\navbar.html:224
+#: .\azinapp\templates\shop.html:20
+msgid "AZIN SHOP"
+msgstr "آذین شاپ"
+
+#: .\azinapp\templates\navbar.html:74 .\azinapp\templates\navbar.html:225
+msgid "AZIN DECORE"
+msgstr "آذین دکور"
+
+#: .\azinapp\templates\navbar.html:81 .\azinapp\templates\navbar.html:226
+msgid "About"
+msgstr "درباره ما"
+
+#: .\azinapp\templates\navbar.html:99
+msgid "Change language"
+msgstr "تغییر زبان"
+
+#: .\azinapp\templates\navbar.html:139
+msgid "User menu"
+msgstr "منوی کاربر"
+
+#: .\azinapp\templates\navbar.html:149 .\azinapp\templates\navbar.html:259
+msgid "My Profile"
+msgstr "پروفایل من"
+
+#: .\azinapp\templates\navbar.html:153
+msgid "Edit Info"
+msgstr "ویرایش اطلاعات"
+
+#: .\azinapp\templates\navbar.html:157 .\azinapp\templates\update_info.html:42
+#: .\azinapp\templates\update_password.html:5
+#: .\azinapp\templates\update_password.html:15
+#: .\azinapp\templates\update_password.html:41
+#: .\azinapp\templates\update_user.html:47
+msgid "Change Password"
+msgstr "تغییر رمز عبور"
+
+#: .\azinapp\templates\navbar.html:163
+msgid "Admin Panel"
+msgstr "پنل مدیریت"
+
+#: .\azinapp\templates\navbar.html:169 .\azinapp\templates\navbar.html:262
+msgid "Logout"
+msgstr "خروج"
+
+#: .\azinapp\templates\navbar.html:184
+msgid "Toggle menu"
+msgstr "باز و بسته کردن منو"
+
+#: .\azinapp\templates\navbar.html:194
+msgid "Mobile navigation"
+msgstr "ناوبری موبایل"
+
+#: .\azinapp\templates\navbar.html:197
+msgid "Close menu"
+msgstr "بستن منو"
+
+#: .\azinapp\templates\navbar.html:234
+msgid "Language"
+msgstr "زبان"
+
+#: .\azinapp\templates\shop.html:50
+msgid ""
+"Discover a selected range of products for businesses, offices, and everyday "
+"use. From electronics and office supplies to home essentials and tools, AZIN "
+"SHOP helps you find the products you need through a simple and reliable "
+"inquiry process."
+msgstr ""
+"مجموعه‌ای منتخب از محصولات مناسب برای کسب‌وکارها، دفاتر و استفاده روزمره را "
+"مشاهده کنید. از لوازم الکترونیکی و تجهیزات اداری گرفته تا لوازم ضروری منزل "
+"و ابزارها، آذین شاپ به شما کمک می‌کند محصولات موردنیاز خود را از طریق یک "
+"فرایند ساده و قابل‌اعتماد برای ثبت درخواست پیدا کنید."
+
+#: .\azinapp\templates\shop.html:70
+msgid "Request a Product"
+msgstr "درخواست محصول"
+
+#: .\azinapp\templates\shop.html:154
+msgid "Explore Our Product Categories"
+msgstr "دسته‌بندی محصولات ما را بررسی کنید"
+
+#: .\azinapp\templates\shop.html:158
+msgid ""
+"Browse our main product categories or contact us if you are looking for a "
+"specific item."
+msgstr ""
+"دسته‌بندی‌های اصلی محصولات ما را مشاهده کنید یا اگر به دنبال محصول خاصی "
+"هستید، با ما تماس بگیرید."
+
+#: .\azinapp\templates\shop.html:180
+msgid ""
+"Computers, accessories, devices, and selected electronic products for "
+"business and personal use."
+msgstr ""
+"رایانه‌ها، لوازم جانبی، دستگاه‌ها و مجموعه‌ای از محصولات الکترونیکی برای "
+"استفاده کاری و شخصی."
+
+#: .\azinapp\templates\shop.html:200
+msgid ""
+"Practical products and everyday essentials for homes, workplaces, and modern "
+"living."
+msgstr ""
+"محصولات کاربردی و لوازم ضروری روزمره برای خانه‌ها، محیط‌های کاری و زندگی "
+"مدرن."
+
+#: .\azinapp\templates\shop.html:220
+msgid ""
+"Stationery, office equipment, accessories, and essential products for "
+"productive workplaces."
+msgstr ""
+"لوازم‌التحریر، تجهیزات اداری، لوازم جانبی و محصولات ضروری برای محیط‌های "
+"کاری کارآمد."
+
+#: .\azinapp\templates\shop.html:240
+msgid ""
+"Tools, equipment, and practical products for professional, technical, and "
+"business use."
+msgstr ""
+"ابزارها، تجهیزات و محصولات کاربردی برای استفاده حرفه‌ای، فنی و کسب‌وکاری."
+
+#: .\azinapp\templates\shop.html:274
+msgid ""
+"Explore selected products available through AZIN SHOP. Contact us for "
+"availability, pricing, and order details."
+msgstr ""
+"محصولات منتخب موجود در آذین شاپ را بررسی کنید. برای اطلاع از موجودی، قیمت "
+"و جزئیات سفارش با ما تماس بگیرید."
+
+#: .\azinapp\templates\shop.html:334 .\azinapp\templates\shop.html:378
+#: .\azinapp\templates\shop.html:418 .\azinapp\templates\shop.html:458
+msgid "Request Details"
+msgstr "جزئیات درخواست"
+
+#: .\azinapp\templates\shop.html:368
+msgid "Electronics & Accessories"
+msgstr "لوازم الکترونیکی و جانبی"
+
+#: .\azinapp\templates\shop.html:372
+msgid ""
+"Selected electronic devices, computer accessories, and practical technology "
+"products."
+msgstr ""
+"مجموعه‌ای از دستگاه‌های الکترونیکی، لوازم جانبی رایانه و محصولات کاربردی "
+"فناوری."
+
+#: .\azinapp\templates\shop.html:412
+msgid ""
+"Practical tools and equipment for professional, technical, and business "
+"requirements."
+msgstr ""
+"ابزارها و تجهیزات کاربردی برای نیازهای حرفه‌ای، فنی و کسب‌وکاری."
+
+#: .\azinapp\templates\shop.html:452
+msgid ""
+"Office essentials, stationery, accessories, and equipment for professional "
+"workplaces."
+msgstr ""
+"لوازم ضروری اداری، لوازم‌التحریر، لوازم جانبی و تجهیزات موردنیاز محیط‌های "
+"کاری حرفه‌ای."
+
+#: .\azinapp\templates\shop.html:498
+msgid "Product sourcing"
+msgstr "تأمین محصولات"
+
+#: .\azinapp\templates\shop.html:513
+msgid ""
+"Tell us what you need and our team can review your request and provide "
+"availability and pricing information."
+msgstr ""
+"به ما بگویید به چه محصولی نیاز دارید تا تیم ما درخواست شما را بررسی کرده و "
+"اطلاعات مربوط به موجودی و قیمت را ارائه دهد."
+
+#: .\azinapp\templates\shop.html:529
+msgid "Tell Us What You Need"
+msgstr "نیاز خود را به ما بگویید"
+
+#: .\azinapp\templates\shop.html:533
+msgid ""
+"Send us the product name, specifications, quantity, or any requirements you "
+"already have."
+msgstr ""
+"نام محصول، مشخصات، تعداد یا هر نیازمندی دیگری را که در اختیار دارید برای ما "
+"ارسال کنید."
+
+#: .\azinapp\templates\shop.html:547
+msgid "Request Review"
+msgstr "بررسی درخواست"
+
+#: .\azinapp\templates\shop.html:551
+msgid ""
+"We review your request and check the available options based on your "
+"requirements."
+msgstr ""
+"درخواست شما را بررسی می‌کنیم و گزینه‌های موجود را بر اساس نیازمندی‌های شما "
+"ارزیابی می‌کنیم."
+
+#: .\azinapp\templates\shop.html:565
+msgid "Receive a Quote"
+msgstr "دریافت پیشنهاد قیمت"
+
+#: .\azinapp\templates\shop.html:569
+msgid ""
+"You receive product details, availability, and pricing information before "
+"placing an order."
+msgstr ""
+"پیش از ثبت سفارش، جزئیات محصول، وضعیت موجودی و اطلاعات قیمت را دریافت "
+"خواهید کرد."
+
+#: .\azinapp\templates\shop.html:587
+msgid ""
+"Once the details are confirmed, we coordinate the next steps for your order."
+msgstr ""
+"پس از تأیید جزئیات، مراحل بعدی سفارش شما را هماهنگ می‌کنیم."
+
+#: .\azinapp\templates\shop.html:617
+msgid "A Simple Way to Source Products"
+msgstr "راهی ساده برای تأمین محصولات"
+
+#: .\azinapp\templates\shop.html:621
+msgid ""
+"We focus on clear communication, practical product selection, and a "
+"straightforward inquiry process."
+msgstr ""
+"تمرکز ما بر ارتباط شفاف، انتخاب محصولات کاربردی و فرایند ساده و مستقیم "
+"برای ثبت درخواست است."
+
+#: .\azinapp\templates\shop.html:641
+msgid ""
+"We focus on useful products across business, office, home, and technical "
+"categories."
+msgstr ""
+"تمرکز ما بر ارائه محصولات کاربردی در دسته‌های کسب‌وکار، اداری، خانگی و فنی "
+"است."
+
+#: .\azinapp\templates\shop.html:655
+msgid "Clear Pricing"
+msgstr "قیمت‌گذاری شفاف"
+
+#: .\azinapp\templates\shop.html:659
+msgid ""
+"Product availability and pricing are confirmed based on your specific "
+"request and order requirements."
+msgstr ""
+"موجودی و قیمت محصولات بر اساس درخواست مشخص و نیازمندی‌های سفارش شما تأیید "
+"می‌شود."
+
+#: .\azinapp\templates\shop.html:677
+msgid ""
+"Businesses and organizations can contact us for bulk orders and larger "
+"product requirements."
+msgstr ""
+"کسب‌وکارها و سازمان‌ها می‌توانند برای سفارش‌های عمده و نیازهای بزرگ‌تر "
+"محصولات با ما تماس بگیرند."
+
+#: .\azinapp\templates\shop.html:691
+msgid "Direct Support"
+msgstr "پشتیبانی مستقیم"
+
+#: .\azinapp\templates\shop.html:695
+msgid ""
+"Contact our team directly for product questions, specifications, "
+"availability, and order inquiries."
+msgstr ""
+"برای پرسش درباره محصولات، مشخصات، موجودی و درخواست‌های سفارش، مستقیماً با "
+"تیم ما در تماس باشید."
+
+#: .\azinapp\templates\shop.html:714
+msgid "Business product inquiry"
+msgstr "درخواست محصول برای کسب‌وکار"
+
+#: .\azinapp\templates\shop.html:723
+msgid "Need Products for Your Business?"
+msgstr "برای کسب‌وکار خود به محصول نیاز دارید؟"
+
+#: .\azinapp\templates\shop.html:727
+msgid ""
+"Tell us what you are looking for. We can help you review product options, "
+"availability, quantities, and pricing for your business or bulk order."
+msgstr ""
+"به ما بگویید به دنبال چه محصولی هستید. ما می‌توانیم در بررسی گزینه‌های "
+"محصول، موجودی، تعداد و قیمت برای کسب‌وکار یا سفارش عمده شما کمک کنیم."
+
+#: .\azinapp\templates\shop.html:738
+msgid "Send a Product Request"
+msgstr "ارسال درخواست محصول"
+
+#: .\azinapp\templates\shop.html:749 .\azinapp\templates\website.html:1800
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+#: .\azinapp\templates\signup.html:20 .\azinapp\templates\signup.html:124
+msgid "Create Account"
+msgstr "ایجاد حساب کاربری"
+
+#: .\azinapp\templates\signup.html:21
+msgid "Join AZIN GROUP and manage your projects."
+msgstr "به آذین گروپ بپیوندید و پروژه‌های خود را مدیریت کنید."
+
+#: .\azinapp\templates\signup.html:105
+msgid "At least 8 characters with letters and numbers."
+msgstr "حداقل ۸ نویسه شامل حروف و اعداد."
+
+#: .\azinapp\templates\signup.html:130
+msgid "Already have an account?"
+msgstr "قبلاً حساب کاربری دارید؟"
+
+#: .\azinapp\templates\smm.html:33
+msgid "Management"
+msgstr "مدیریت"
+
+#: .\azinapp\templates\smm.html:37
+msgid ""
+"We help businesses manage their social media presence with a practical "
+"combination of content planning, visual production, publishing, community "
+"management, and performance review. The approach is based on your business "
+"goals, audience, platforms, and available resources."
+msgstr ""
+"ما به کسب‌وکارها کمک می‌کنیم حضور خود را در شبکه‌های اجتماعی با ترکیبی "
+"کاربردی از برنامه‌ریزی محتوا، تولید محتوای بصری، انتشار، مدیریت جامعه "
+"مخاطبان و بررسی عملکرد مدیریت کنند. این رویکرد بر اساس اهداف کسب‌وکار، "
+"مخاطبان، بسترهای مورد استفاده و منابع در دسترس شما تنظیم می‌شود."
+
+#: .\azinapp\templates\smm.html:44
+msgid "Discuss Your Social Media Needs"
+msgstr "نیازهای شبکه‌های اجتماعی خود را با ما در میان بگذارید"
+
+#: .\azinapp\templates\smm.html:49
+msgid "View Our Work"
+msgstr "مشاهده نمونه‌کارهای ما"
+
+#: .\azinapp\templates\smm.html:83
+msgid "Performance Review"
+msgstr "ارزیابی عملکرد"
+
+#: .\azinapp\templates\smm.html:99
+msgid "Social media services"
+msgstr "خدمات شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:109
+msgid "Social Media Services"
+msgstr "خدمات شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:113
+msgid ""
+"A practical social media service covering planning, content, publishing, "
+"audience interaction, campaigns, and performance review."
+msgstr ""
+"خدمات کاربردی شبکه‌های اجتماعی شامل برنامه‌ریزی، تولید محتوا، انتشار، "
+"تعامل با مخاطبان، اجرای کمپین‌ها و ارزیابی عملکرد."
+
+#: .\azinapp\templates\smm.html:129
+msgid "Social Media Account Management"
+msgstr "مدیریت حساب‌های شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:133
+msgid ""
+"Ongoing management of your selected social media channels, with a clear "
+"publishing schedule, content coordination, audience interaction, and regular "
+"review of account performance."
+msgstr ""
+"مدیریت مستمر شبکه‌های اجتماعی انتخاب‌شده شما، همراه با برنامه مشخص انتشار "
+"محتوا، هماهنگی محتوا، تعامل با مخاطبان و ارزیابی منظم عملکرد حساب‌ها."
+
+#: .\azinapp\templates\smm.html:137
+msgid "Content scheduling and publishing"
+msgstr "برنامه‌ریزی و انتشار محتوا"
+
+#: .\azinapp\templates\smm.html:138
+msgid "Community and comment management"
+msgstr "مدیریت جامعه مخاطبان و دیدگاه‌ها"
+
+#: .\azinapp\templates\smm.html:139
+msgid "Account and content coordination"
+msgstr "هماهنگی حساب و محتوا"
+
+#: .\azinapp\templates\smm.html:140
+msgid "Regular performance reporting"
+msgstr "گزارش‌دهی منظم عملکرد"
+
+#: .\azinapp\templates\smm.html:154
+msgid "Social Media Content Production"
+msgstr "تولید محتوای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:158
+msgid ""
+"Visual content prepared for the platforms and formats your audience uses, "
+"including short videos, reels, photography, graphics, and branded content."
+msgstr ""
+"تولید محتوای بصری متناسب با بسترها و قالب‌هایی که مخاطبان شما استفاده می‌کنند، "
+"از جمله ویدئوهای کوتاه، ویدئوهای عمودی کوتاه، عکاسی، طراحی‌های گرافیکی و "
+"محتوای اختصاصی برند."
+
+#: .\azinapp\templates\smm.html:162
+msgid "Short-form video and reel production"
+msgstr "تولید ویدئوهای کوتاه و ویدئوهای عمودی کوتاه"
+
+#: .\azinapp\templates\smm.html:163
+msgid "Photography and visual content"
+msgstr "عکاسی و تولید محتوای بصری"
+
+#: .\azinapp\templates\smm.html:164
+msgid "Social media graphic design"
+msgstr "طراحی گرافیکی برای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:165
+msgid "Content calendar planning"
+msgstr "برنامه‌ریزی تقویم محتوایی"
+
+#: .\azinapp\templates\smm.html:179
+msgid "Advertising Clips & Reels"
+msgstr "ویدئوهای تبلیغاتی و ویدئوهای عمودی کوتاه"
+
+#: .\azinapp\templates\smm.html:183
+msgid ""
+"Short-form promotional videos created for products, services, campaigns, and "
+"social media advertising. Content is planned around the message, audience, "
+"platform, and campaign objective."
+msgstr ""
+"ویدئوهای تبلیغاتی کوتاه برای معرفی محصولات، خدمات، کمپین‌ها و تبلیغات در "
+"شبکه‌های اجتماعی. محتوا بر اساس پیام، مخاطبان، بستر انتشار و هدف کمپین "
+"برنامه‌ریزی و تولید می‌شود."
+
+#: .\azinapp\templates\smm.html:187
+msgid "Short-form promotional videos"
+msgstr "ویدئوهای تبلیغاتی کوتاه"
+
+#: .\azinapp\templates\smm.html:188
+msgid "Instagram Reels and similar formats"
+msgstr "ویدئوهای عمودی کوتاه اینستاگرام و قالب‌های مشابه"
+
+#: .\azinapp\templates\smm.html:189
+msgid "Product and service promotional content"
+msgstr "محتوای تبلیغاتی محصولات و خدمات"
+
+#: .\azinapp\templates\smm.html:190
+msgid "Creative direction for social campaigns"
+msgstr "هدایت خلاقانه کمپین‌های شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:204
+msgid "Social Media Strategy & Analytics"
+msgstr "راهبرد و تحلیل شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:208
+msgid ""
+"A structured approach to deciding what to publish, which platforms to "
+"prioritize, what content to test, and how to evaluate results using relevant "
+"account and campaign data."
+msgstr ""
+"رویکردی ساختاریافته برای تعیین محتوای قابل انتشار، اولویت‌بندی بسترهای "
+"انتشار، آزمایش انواع محتوا و ارزیابی نتایج با استفاده از داده‌های مرتبط "
+"با حساب و کمپین."
+
+#: .\azinapp\templates\smm.html:212
+msgid "Audience and competitor research"
+msgstr "بررسی مخاطبان و رقبا"
+
+#: .\azinapp\templates\smm.html:213
+msgid "Content strategy and planning"
+msgstr "راهبرد و برنامه‌ریزی محتوا"
+
+#: .\azinapp\templates\smm.html:214
+msgid "Performance tracking"
+msgstr "پیگیری عملکرد"
+
+#: .\azinapp\templates\smm.html:215
+msgid "Content and campaign optimization"
+msgstr "بهینه‌سازی محتوا و کمپین‌ها"
+
+#: .\azinapp\templates\smm.html:229
+msgid "Influencer & Creator Campaigns"
+msgstr "کمپین‌های تأثیرگذاران و تولیدکنندگان محتوا"
+
+#: .\azinapp\templates\smm.html:233
+msgid ""
+"Support for businesses that want to work with relevant creators or "
+"influencers as part of a broader social media campaign, from planning and "
+"coordination to content delivery and review."
+msgstr ""
+"پشتیبانی از کسب‌وکارهایی که می‌خواهند به‌عنوان بخشی از یک کمپین گسترده‌تر "
+"شبکه‌های اجتماعی با تولیدکنندگان محتوا یا تأثیرگذاران مرتبط همکاری کنند؛ "
+"از برنامه‌ریزی و هماهنگی گرفته تا ارائه و ارزیابی محتوا."
+
+#: .\azinapp\templates\smm.html:237
+msgid "Creator and influencer research"
+msgstr "بررسی تولیدکنندگان محتوا و تأثیرگذاران"
+
+#: .\azinapp\templates\smm.html:238
+msgid "Campaign planning and coordination"
+msgstr "برنامه‌ریزی و هماهنگی کمپین"
+
+#: .\azinapp\templates\smm.html:239
+msgid "Content collaboration"
+msgstr "همکاری در تولید محتوا"
+
+#: .\azinapp\templates\smm.html:240
+msgid "Campaign performance review"
+msgstr "ارزیابی عملکرد کمپین"
+
+#: .\azinapp\templates\smm.html:254
+msgid "Paid Social Advertising"
+msgstr "تبلیغات پولی در شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:258
+msgid ""
+"Social advertising support for businesses that want to promote specific "
+"products, services, offers, or campaigns. Campaign setup and optimization "
+"are based on the available audience, budget, creative assets, and objectives."
+msgstr ""
+"ارائه خدمات تبلیغات در شبکه‌های اجتماعی برای کسب‌وکارهایی که قصد دارند "
+"محصولات، خدمات، پیشنهادها یا کمپین‌های مشخصی را تبلیغ کنند. راه‌اندازی و "
+"بهینه‌سازی کمپین بر اساس مخاطبان موجود، بودجه، محتوای خلاقانه و اهداف "
+"تعیین‌شده انجام می‌شود."
+
+#: .\azinapp\templates\smm.html:262
+msgid "Campaign setup and targeting"
+msgstr "راه‌اندازی و هدف‌گذاری کمپین"
+
+#: .\azinapp\templates\smm.html:263
+msgid "Ad creative coordination"
+msgstr "هماهنگی محتوای خلاقانه تبلیغات"
+
+#: .\azinapp\templates\smm.html:264
+msgid "Budget and campaign monitoring"
+msgstr "نظارت بر بودجه و کمپین"
+
+#: .\azinapp\templates\smm.html:265
+msgid "Performance reporting and optimization"
+msgstr "گزارش‌دهی و بهینه‌سازی عملکرد"
+
+#: .\azinapp\templates\smm.html:278
+msgid "Equipment and technology"
+msgstr "تجهیزات و فناوری"
+
+#: .\azinapp\templates\smm.html:284
+msgid "Production"
+msgstr "تولید"
+
+#: .\azinapp\templates\smm.html:288
+msgid "Content Production & Post-Production"
+msgstr "تولید و پس‌تولید محتوا"
+
+#: .\azinapp\templates\smm.html:292
+msgid ""
+"Social media content is planned and produced according to the format, "
+"platform, message, and production requirements of each project."
+msgstr ""
+"محتوای شبکه‌های اجتماعی بر اساس قالب، بستر انتشار، پیام و نیازهای تولید "
+"هر پروژه برنامه‌ریزی و تولید می‌شود."
+
+#: .\azinapp\templates\smm.html:307
+msgid "Photography & Video"
+msgstr "عکاسی و ویدئو"
+
+#: .\azinapp\templates\smm.html:311
+msgid "Product photography"
+msgstr "عکاسی محصولات"
+
+#: .\azinapp\templates\smm.html:312
+msgid "Business and brand photography"
+msgstr "عکاسی کسب‌وکار و برند"
+
+#: .\azinapp\templates\smm.html:313
+msgid "Short-form video production"
+msgstr "تولید ویدئوهای کوتاه"
+
+#: .\azinapp\templates\smm.html:326
+msgid "Lighting & Visual Setup"
+msgstr "نورپردازی و آماده‌سازی بصری"
+
+#: .\azinapp\templates\smm.html:330
+msgid "Lighting setup for video and photography"
+msgstr "آماده‌سازی نورپردازی برای ویدئو و عکاسی"
+
+#: .\azinapp\templates\smm.html:331
+msgid "Controlled visual environments"
+msgstr "محیط‌های بصری کنترل‌شده"
+
+#: .\azinapp\templates\smm.html:332
+msgid "Product and promotional setups"
+msgstr "چیدمان‌های محصول و تبلیغاتی"
+
+#: .\azinapp\templates\smm.html:345
+msgid "Audio Production"
+msgstr "تولید محتوای صوتی"
+
+#: .\azinapp\templates\smm.html:349
+msgid "Voice and interview recording"
+msgstr "ضبط صدا و مصاحبه"
+
+#: .\azinapp\templates\smm.html:350
+msgid "Audio for short-form videos"
+msgstr "محتوای صوتی برای ویدئوهای کوتاه"
+
+#: .\azinapp\templates\smm.html:351
+msgid "Basic sound preparation and cleanup"
+msgstr "آماده‌سازی و پاک‌سازی اولیه صدا"
+
+#: .\azinapp\templates\smm.html:364
+msgid "Post-Production"
+msgstr "پس‌تولید"
+
+#: .\azinapp\templates\smm.html:368
+msgid "Video editing"
+msgstr "ویرایش ویدئو"
+
+#: .\azinapp\templates\smm.html:369
+msgid "Motion and visual elements"
+msgstr "عناصر حرکتی و بصری"
+
+#: .\azinapp\templates\smm.html:370
+msgid "Captions and platform-ready formats"
+msgstr "زیرنویس و قالب‌های آماده انتشار در بسترهای مختلف"
+
+#: .\azinapp\templates\smm.html:383
+msgid "Social media portfolio"
+msgstr "نمونه‌کارهای شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:393
+msgid "Social Media & Content Portfolio"
+msgstr "نمونه‌کارهای شبکه‌های اجتماعی و محتوا"
+
+#: .\azinapp\templates\smm.html:397
+msgid ""
+"Examples of the social media content formats and campaign work we can "
+"support."
+msgstr ""
+"نمونه‌هایی از قالب‌های محتوای شبکه‌های اجتماعی و فعالیت‌های کمپینی که "
+"می‌توانیم در اجرای آن‌ها پشتیبانی ارائه کنیم."
+
+#: .\azinapp\templates\smm.html:411
+msgid "Reels"
+msgstr "ویدئوهای عمودی کوتاه"
+
+#: .\azinapp\templates\smm.html:415
+msgid "Ad Clips"
+msgstr "ویدئوهای تبلیغاتی کوتاه"
+
+#: .\azinapp\templates\smm.html:419 .\azinapp\templates\smm.html:640
+msgid "Content"
+msgstr "محتوا"
+
+#: .\azinapp\templates\smm.html:423
+msgid "Campaigns"
+msgstr "کمپین‌ها"
+
+#: .\azinapp\templates\smm.html:550
+msgid "Reel"
+msgstr "ویدئوی عمودی کوتاه"
+
+#: .\azinapp\templates\smm.html:558
+msgid "Short-Form Brand Reel"
+msgstr "ویدئوی عمودی کوتاه معرفی برند"
+
+#: .\azinapp\templates\smm.html:562
+msgid ""
+"Short-form video content designed to introduce a product, service, campaign, "
+"or brand message in a social-first format."
+msgstr ""
+"محتوای ویدئویی کوتاه که برای معرفی محصول، خدمت، کمپین یا پیام برند در قالبی "
+"طراحی‌شده برای شبکه‌های اجتماعی تولید می‌شود."
+
+#: .\azinapp\templates\smm.html:568
+msgid "Social Video"
+msgstr "ویدئوی شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:595
+msgid "Ad Clip"
+msgstr "ویدئوی تبلیغاتی کوتاه"
+
+#: .\azinapp\templates\smm.html:603
+msgid "Product & Service Ad Content"
+msgstr "محتوای تبلیغاتی محصولات و خدمات"
+
+#: .\azinapp\templates\smm.html:607
+msgid ""
+"Promotional short-form video created around a specific product, service, "
+"offer, or campaign objective."
+msgstr ""
+"ویدئوی تبلیغاتی کوتاهی که با تمرکز بر یک محصول، خدمت، پیشنهاد یا هدف مشخص "
+"کمپین تولید می‌شود."
+
+#: .\azinapp\templates\smm.html:613
+msgid "Paid Social"
+msgstr "تبلیغات پولی در شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:648
+msgid "Branded Content Series"
+msgstr "مجموعه محتوای اختصاصی برند"
+
+#: .\azinapp\templates\smm.html:652
+msgid ""
+"A coordinated set of social media visuals created to maintain a consistent "
+"message and visual direction across multiple posts."
+msgstr ""
+"مجموعه‌ای هماهنگ از محتوای بصری شبکه‌های اجتماعی که برای حفظ پیام و "
+"جهت‌گیری بصری یکپارچه در چندین انتشار ایجاد می‌شود."
+
+#: .\azinapp\templates\smm.html:658
+msgid "Content Series"
+msgstr "مجموعه محتوایی"
+
+#: .\azinapp\templates\smm.html:685
+msgid "Campaign"
+msgstr "کمپین"
+
+#: .\azinapp\templates\smm.html:693
+msgid "Social Media Campaign"
+msgstr "کمپین شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\smm.html:697
+msgid ""
+"Campaign content planned around a defined message, audience, publishing "
+"schedule, and set of social media formats."
+msgstr ""
+"محتوای کمپینی که بر اساس پیام مشخص، مخاطبان هدف، برنامه انتشار و مجموعه‌ای "
+"از قالب‌های شبکه‌های اجتماعی برنامه‌ریزی می‌شود."
+
+#: .\azinapp\templates\smm.html:703
+msgid "Campaign Planning"
+msgstr "برنامه‌ریزی کمپین"
+
+#: .\azinapp\templates\smm.html:736
+msgid "Need a More Consistent Social Media Presence?"
+msgstr "به حضور منسجم‌تری در شبکه‌های اجتماعی نیاز دارید؟"
+
+#: .\azinapp\templates\smm.html:740
+msgid ""
+"Tell us about your business, your current social media channels, and what "
+"you want to achieve. We can discuss the right combination of content, "
+"management, campaigns, and reporting for your needs."
+msgstr ""
+"درباره کسب‌وکار، شبکه‌های اجتماعی فعلی و اهداف خود با ما صحبت کنید. "
+"می‌توانیم ترکیب مناسب محتوا، مدیریت، کمپین‌ها و گزارش‌دهی را متناسب با "
+"نیازهای شما بررسی کنیم."
+
+#: .\azinapp\templates\smm.html:747
+msgid "Discuss Your Social Media Strategy"
+msgstr "بررسی راهبرد شبکه‌های اجتماعی شما"
+
+#: .\azinapp\templates\update_info.html:5
+#: .\azinapp\templates\update_info.html:16
+#: .\azinapp\templates\update_user.html:5
+#: .\azinapp\templates\update_user.html:16
+msgid "Edit Profile"
+msgstr "ویرایش نمایه"
+
+#: .\azinapp\templates\update_info.html:11
+#: .\azinapp\templates\update_user.html:11
+msgid "Edit profile"
+msgstr "ویرایش نمایه"
+
+#: .\azinapp\templates\update_info.html:18
+msgid "Manage your personal information and contact details."
+msgstr "اطلاعات شخصی و مشخصات تماس خود را مدیریت کنید."
+
+#: .\azinapp\templates\update_info.html:37
+#: .\azinapp\templates\update_info.html:53
+#: .\azinapp\templates\update_password.html:36
+#: .\azinapp\templates\update_user.html:42
+msgid "Personal Information"
+msgstr "اطلاعات شخصی"
+
+#: .\azinapp\templates\update_info.html:55
+msgid "Update your identification and contact details."
+msgstr "مشخصات هویتی و اطلاعات تماس خود را به‌روزرسانی کنید."
+
+#: .\azinapp\templates\update_info.html:83
+#: .\azinapp\templates\update_password.html:126
+#: .\azinapp\templates\update_user.html:88
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: .\azinapp\templates\update_info.html:86
+#: .\azinapp\templates\update_user.html:91
+msgid "Cancel"
+msgstr "لغو"
+
+#: .\azinapp\templates\update_password.html:11
+msgid "Change password"
+msgstr "تغییر رمز عبور"
+
+#: .\azinapp\templates\update_password.html:17
+msgid "Update your password to keep your account secure."
+msgstr "برای حفظ امنیت حساب خود، رمز عبورتان را به‌روزرسانی کنید."
+
+#: .\azinapp\templates\update_password.html:52
+msgid "Update Password"
+msgstr "به‌روزرسانی رمز عبور"
+
+#: .\azinapp\templates\update_password.html:54
+msgid "Enter your current password and choose a new one."
+msgstr "رمز عبور فعلی خود را وارد کنید و یک رمز عبور جدید انتخاب کنید."
+
+#: .\azinapp\templates\update_password.html:63
+msgid "Current Password"
+msgstr "رمز عبور فعلی"
+
+#: .\azinapp\templates\update_password.html:94
+msgid "Password Requirements:"
+msgstr "الزامات رمز عبور:"
+
+#: .\azinapp\templates\update_password.html:97
+msgid "At least 8 characters"
+msgstr "حداقل ۸ نویسه"
+
+#: .\azinapp\templates\update_password.html:100
+msgid "Uppercase and lowercase letters"
+msgstr "حروف بزرگ و کوچک"
+
+#: .\azinapp\templates\update_password.html:103
+msgid "Numbers and special characters"
+msgstr "اعداد و نویسه‌های ویژه"
+
+#: .\azinapp\templates\update_password.html:129
+msgid "Back to Profile"
+msgstr "بازگشت به نمایه"
+
+#: .\azinapp\templates\update_user.html:18
+msgid "Update your account information."
+msgstr "اطلاعات حساب خود را به‌روزرسانی کنید."
+
+#: .\azinapp\templates\update_user.html:37
+msgid "Profile"
+msgstr "نمایه"
+
+#: .\azinapp\templates\update_user.html:58
+msgid "Account Profile"
+msgstr "نمایه حساب"
+
+#: .\azinapp\templates\update_user.html:60
+msgid "Update your name, email, and username."
+msgstr "نام، رایانامه و نام کاربری خود را به‌روزرسانی کنید."
+
+#: .\azinapp\templates\website.html:24
+msgid "Web Development Services"
+msgstr "خدمات توسعه وب"
+
+#: .\azinapp\templates\website.html:72
+msgid ""
+"We design and develop modern, responsive, and reliable websites and web "
+"applications for businesses, organizations, and growing brands. From "
+"professional corporate websites to custom Django-powered business systems, "
+"we build solutions around your goals, workflow, and budget."
+msgstr ""
+"ما وب‌سایت‌ها و برنامه‌های کاربردی وب مدرن، واکنش‌گرا و قابل‌اعتمادی برای "
+"کسب‌وکارها، سازمان‌ها و برندهای در حال رشد طراحی و توسعه می‌دهیم. از "
+"وب‌سایت‌های حرفه‌ای شرکتی گرفته تا سامانه‌های اختصاصی کسب‌وکار مبتنی بر "
+"جنگو، راهکارهایی متناسب با اهداف، فرایندهای کاری و بودجه شما ایجاد می‌کنیم."
+
+#: .\azinapp\templates\website.html:116
+msgid "View Packages"
+msgstr "مشاهده بسته‌ها"
+
+#: .\azinapp\templates\website.html:145
+msgid "Backend Development"
+msgstr "توسعه بخش پشتیبان"
+
+#: .\azinapp\templates\website.html:158
+msgid "Reliable Database Solutions"
+msgstr "راهکارهای پایگاه داده قابل‌اعتماد"
+
+#: .\azinapp\templates\website.html:200
+msgid "Responsive Web Experience"
+msgstr "تجربه وب واکنش‌گرا"
+
+#: .\azinapp\templates\website.html:225
+msgid "Tablet"
+msgstr "رایانه لوحی"
+
+#: .\azinapp\templates\website.html:250
+msgid "Mobile"
+msgstr "تلفن همراه"
+
+#: .\azinapp\templates\website.html:278
+msgid "Types of websites and applications"
+msgstr "انواع وب‌سایت‌ها و برنامه‌های کاربردی"
+
+#: .\azinapp\templates\website.html:289
+msgid "Websites & Web Applications"
+msgstr "وب‌سایت‌ها و برنامه‌های کاربردی وب"
+
+#: .\azinapp\templates\website.html:293
+msgid ""
+"From professional business websites to custom web applications, we build "
+"practical digital solutions designed around your requirements."
+msgstr ""
+"از وب‌سایت‌های حرفه‌ای کسب‌وکار گرفته تا برنامه‌های کاربردی وب اختصاصی، "
+"ما راهکارهای دیجیتال کاربردی متناسب با نیازهای شما ایجاد می‌کنیم."
+
+#: .\azinapp\templates\website.html:311
+msgid "Corporate Websites"
+msgstr "وب‌سایت‌های شرکتی"
+
+#: .\azinapp\templates\website.html:315
+msgid ""
+"Professional websites that present your company, services, team, projects, "
+"and brand clearly to your customers."
+msgstr ""
+"وب‌سایت‌های حرفه‌ای برای معرفی شفاف شرکت، خدمات، تیم، پروژه‌ها و برند شما "
+"به مشتریان."
+
+#: .\azinapp\templates\website.html:320 .\azinapp\templates\website.html:615
+msgid "Responsive design"
+msgstr "طراحی واکنش‌گرا"
+
+#: .\azinapp\templates\website.html:322
+msgid "Company & service pages"
+msgstr "صفحات شرکت و خدمات"
+
+#: .\azinapp\templates\website.html:324
+msgid "Contact & inquiry forms"
+msgstr "فرم‌های تماس و درخواست"
+
+#: .\azinapp\templates\website.html:326 .\azinapp\templates\website.html:486
+#: .\azinapp\templates\website.html:623
+msgid "Content management"
+msgstr "مدیریت محتوا"
+
+#: .\azinapp\templates\website.html:332 .\azinapp\templates\website.html:372
+#: .\azinapp\templates\website.html:412 .\azinapp\templates\website.html:452
+#: .\azinapp\templates\website.html:492
+msgid "Starting at"
+msgstr "شروع از"
+
+#: .\azinapp\templates\website.html:351
+msgid "E-Commerce Stores"
+msgstr "فروشگاه‌های اینترنتی"
+
+#: .\azinapp\templates\website.html:355
+msgid ""
+"Online stores with product management, customer accounts, shopping carts, "
+"orders, and payment integrations."
+msgstr ""
+"فروشگاه‌های اینترنتی مجهز به مدیریت محصولات، حساب‌های مشتریان، سبد خرید، "
+"مدیریت سفارش‌ها و اتصال به سامانه‌های پرداخت."
+
+#: .\azinapp\templates\website.html:360
+msgid "Product catalog & categories"
+msgstr "فهرست و دسته‌بندی محصولات"
+
+#: .\azinapp\templates\website.html:362 .\azinapp\templates\website.html:767
+msgid "Shopping cart & checkout"
+msgstr "سبد خرید و تکمیل سفارش"
+
+#: .\azinapp\templates\website.html:391
+msgid "Business Dashboards"
+msgstr "داشبوردهای کسب‌وکار"
+
+#: .\azinapp\templates\website.html:395
+msgid ""
+"Custom dashboards for managing business data, users, operations, reports, "
+"and internal workflows."
+msgstr ""
+"داشبوردهای اختصاصی برای مدیریت داده‌های کسب‌وکار، کاربران، عملیات، "
+"گزارش‌ها و فرایندهای داخلی."
+
+#: .\azinapp\templates\website.html:400 .\azinapp\templates\website.html:846
+msgid "User & role management"
+msgstr "مدیریت کاربران و نقش‌ها"
+
+#: .\azinapp\templates\website.html:402 .\azinapp\templates\website.html:850
+msgid "Reports & analytics"
+msgstr "گزارش‌ها و تحلیل‌ها"
+
+#: .\azinapp\templates\website.html:404 .\azinapp\templates\website.html:852
+msgid "Custom forms & workflows"
+msgstr "فرم‌ها و فرایندهای کاری اختصاصی"
+
+#: .\azinapp\templates\website.html:406
+msgid "Data export"
+msgstr "خروجی گرفتن از داده‌ها"
+
+#: .\azinapp\templates\website.html:431
+msgid "Educational Platforms"
+msgstr "سامانه‌های آموزشی"
+
+#: .\azinapp\templates\website.html:435
+msgid ""
+"Learning platforms for courses, lessons, students, educational content, "
+"assessments, and progress management."
+msgstr ""
+"سامانه‌های آموزشی برای دوره‌ها، درس‌ها، دانشجویان، محتوای آموزشی، "
+"ارزیابی‌ها و مدیریت پیشرفت."
+
+#: .\azinapp\templates\website.html:440 .\azinapp\templates\website.html:922
+msgid "Course & lesson management"
+msgstr "مدیریت دوره‌ها و درس‌ها"
+
+#: .\azinapp\templates\website.html:444
+msgid "Content delivery"
+msgstr "ارائه محتوا"
+
+#: .\azinapp\templates\website.html:471
+msgid "Blogs & Content Platforms"
+msgstr "وبلاگ‌ها و سامانه‌های محتوایی"
+
+#: .\azinapp\templates\website.html:475
+msgid ""
+"Professional publishing platforms for businesses, organizations, news, "
+"articles, and content-driven websites."
+msgstr ""
+"سامانه‌های حرفه‌ای انتشار محتوا برای کسب‌وکارها، سازمان‌ها، اخبار، "
+"مقالات و وب‌سایت‌های محتوایی."
+
+#: .\azinapp\templates\website.html:480
+msgid "Post & category management"
+msgstr "مدیریت نوشته‌ها و دسته‌بندی‌ها"
+
+#: .\azinapp\templates\website.html:482
+msgid "SEO-friendly structure"
+msgstr "ساختار مناسب برای بهینه‌سازی موتورهای جست‌وجو"
+
+#: .\azinapp\templates\website.html:484
+msgid "Search & filtering"
+msgstr "جست‌وجو و پالایش"
+
+#: .\azinapp\templates\website.html:511
+msgid "Custom Web Applications"
+msgstr "برنامه‌های کاربردی وب اختصاصی"
+
+#: .\azinapp\templates\website.html:515
+msgid ""
+"Custom-built web applications for businesses that need specific workflows, "
+"automation, integrations, or internal systems."
+msgstr ""
+"برنامه‌های کاربردی وب اختصاصی برای کسب‌وکارهایی که به فرایندهای کاری خاص، "
+"خودکارسازی، یکپارچه‌سازی یا سامانه‌های داخلی نیاز دارند."
+
+#: .\azinapp\templates\website.html:522
+msgid "Workflow automation"
+msgstr "خودکارسازی فرایندهای کاری"
+
+#: .\azinapp\templates\website.html:532
+msgid "Contact for quote"
+msgstr "برای دریافت قیمت تماس بگیرید"
+
+#: .\azinapp\templates\website.html:552
+msgid "Web development pricing"
+msgstr "قیمت‌گذاری توسعه وب"
+
+#: .\azinapp\templates\website.html:559
+msgid "Pricing"
+msgstr "قیمت‌گذاری"
+
+#: .\azinapp\templates\website.html:563
+msgid "Web Development Packages"
+msgstr "بسته‌های توسعه وب"
+
+#: .\azinapp\templates\website.html:567
+msgid ""
+"Clear starting prices for common project types. Final pricing is confirmed "
+"after reviewing your requirements and project scope."
+msgstr ""
+"قیمت‌های اولیه مشخص برای انواع رایج پروژه‌ها. قیمت نهایی پس از بررسی "
+"نیازمندی‌ها و محدوده پروژه تعیین می‌شود."
+
+#: .\azinapp\templates\website.html:583
+msgid "Basic"
+msgstr "پایه"
+
+#: .\azinapp\templates\website.html:597 .\azinapp\templates\website.html:671
+#: .\azinapp\templates\website.html:747 .\azinapp\templates\website.html:830
+#: .\azinapp\templates\website.html:906
+msgid "starting from"
+msgstr "شروع از"
+
+#: .\azinapp\templates\website.html:603
+msgid ""
+"A professional website for small businesses, startups, professionals, and "
+"personal brands."
+msgstr ""
+"یک وب‌سایت حرفه‌ای برای کسب‌وکارهای کوچک، شرکت‌های نوپا، متخصصان و "
+"برندهای شخصی."
+
+#: .\azinapp\templates\website.html:613
+msgid "Up to 5 core pages"
+msgstr "حداکثر ۵ صفحه اصلی"
+
+#: .\azinapp\templates\website.html:617
+msgid "Contact form"
+msgstr "فرم تماس"
+
+#: .\azinapp\templates\website.html:619
+msgid "Social media integration"
+msgstr "اتصال به شبکه‌های اجتماعی"
+
+#: .\azinapp\templates\website.html:621
+msgid "Basic SEO setup"
+msgstr "راه‌اندازی پایه بهینه‌سازی موتورهای جست‌وجو"
+
+#: .\azinapp\templates\website.html:625
+msgid "1 revision round"
+msgstr "یک مرحله بازبینی"
+
+#: .\azinapp\templates\website.html:638 .\azinapp\templates\website.html:714
+msgid "Start Your Project"
+msgstr "پروژه خود را شروع کنید"
+
+#: .\azinapp\templates\website.html:657
+msgid "Most Popular"
+msgstr "محبوب‌ترین"
+
+#: .\azinapp\templates\website.html:661 .\azinapp\templates\website.html:1489
+#: .\azinapp\templates\website.html:1498
+msgid "Corporate Website"
+msgstr "وب‌سایت شرکتی"
+
+#: .\azinapp\templates\website.html:677
+msgid ""
+"A complete corporate website for companies that need a stronger online "
+"presence and content management."
+msgstr ""
+"یک وب‌سایت شرکتی کامل برای شرکت‌هایی که به حضور قدرتمندتر در فضای آنلاین "
+"و مدیریت محتوا نیاز دارند."
+
+#: .\azinapp\templates\website.html:687
+msgid "Up to 15 core pages"
+msgstr "حداکثر ۱۵ صفحه اصلی"
+
+#: .\azinapp\templates\website.html:689
+msgid "Custom UI/UX implementation"
+msgstr "پیاده‌سازی اختصاصی رابط و تجربه کاربری"
+
+#: .\azinapp\templates\website.html:691
+msgid "Advanced content management"
+msgstr "مدیریت پیشرفته محتوا"
+
+#: .\azinapp\templates\website.html:693
+msgid "Blog or news section"
+msgstr "بخش وبلاگ یا اخبار"
+
+#: .\azinapp\templates\website.html:695
+msgid "Multi-language support"
+msgstr "پشتیبانی از چند زبان"
+
+#: .\azinapp\templates\website.html:697
+msgid "User authentication"
+msgstr "احراز هویت کاربران"
+
+#: .\azinapp\templates\website.html:699
+msgid "Performance optimization"
+msgstr "بهینه‌سازی عملکرد"
+
+#: .\azinapp\templates\website.html:701 .\azinapp\templates\website.html:777
+msgid "2 revision rounds"
+msgstr "دو مرحله بازبینی"
+
+#: .\azinapp\templates\website.html:733 .\azinapp\templates\website.html:1552
+msgid "E-Commerce"
+msgstr "تجارت الکترونیکی"
+
+#: .\azinapp\templates\website.html:737 .\azinapp\templates\website.html:1561
+#: .\azinapp\templates\website.html:1572
+msgid "Online Store"
+msgstr "فروشگاه اینترنتی"
+
+#: .\azinapp\templates\website.html:753
+msgid ""
+"A custom online store with product management, customer accounts, orders, "
+"and payment integration."
+msgstr ""
+"یک فروشگاه اینترنتی اختصاصی با مدیریت محصولات، حساب‌های مشتریان، سفارش‌ها "
+"و اتصال به سامانه پرداخت."
+
+#: .\azinapp\templates\website.html:769
+msgid "Payment gateway integration"
+msgstr "اتصال به درگاه پرداخت"
+
+#: .\azinapp\templates\website.html:773
+msgid "Inventory management"
+msgstr "مدیریت موجودی"
+
+#: .\azinapp\templates\website.html:775
+msgid "Customer accounts"
+msgstr "حساب‌های مشتریان"
+
+#: .\azinapp\templates\website.html:790
+msgid "Discuss Your Store"
+msgstr "درباره فروشگاه خود گفت‌وگو کنید"
+
+#: .\azinapp\templates\website.html:816
+msgid "Business"
+msgstr "کسب‌وکار"
+
+#: .\azinapp\templates\website.html:820 .\azinapp\templates\website.html:1615
+msgid "Business Dashboard"
+msgstr "داشبورد کسب‌وکار"
+
+#: .\azinapp\templates\website.html:836
+msgid ""
+"A custom internal dashboard for managing users, operations, data, reports, "
+"and business workflows."
+msgstr ""
+"یک داشبورد داخلی اختصاصی برای مدیریت کاربران، عملیات، داده‌ها، گزارش‌ها "
+"و فرایندهای کاری کسب‌وکار."
+
+#: .\azinapp\templates\website.html:848
+msgid "Business data management"
+msgstr "مدیریت داده‌های کسب‌وکار"
+
+#: .\azinapp\templates\website.html:854
+msgid "CSV / PDF export"
+msgstr "خروجی با قالب‌های CSV و PDF"
+
+#: .\azinapp\templates\website.html:856
+msgid "Activity tracking"
+msgstr "پیگیری فعالیت‌ها"
+
+#: .\azinapp\templates\website.html:858
+msgid "Responsive interface"
+msgstr "رابط کاربری واکنش‌گرا"
+
+#: .\azinapp\templates\website.html:860 .\azinapp\templates\website.html:936
+msgid "3 revision rounds"
+msgstr "سه مرحله بازبینی"
+
+#: .\azinapp\templates\website.html:873
+msgid "Discuss Your Dashboard"
+msgstr "درباره داشبورد خود گفت‌وگو کنید"
+
+#: .\azinapp\templates\website.html:892
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: .\azinapp\templates\website.html:896
+msgid "Educational Platform"
+msgstr "سامانه آموزشی"
+
+#: .\azinapp\templates\website.html:912
+msgid ""
+"A custom learning platform for organizations, educators, academies, and "
+"online education businesses."
+msgstr ""
+"یک سامانه آموزشی اختصاصی برای سازمان‌ها، مدرسان، آموزشگاه‌ها و "
+"کسب‌وکارهای آموزش آنلاین."
+
+#: .\azinapp\templates\website.html:924
+msgid "Student registration & profiles"
+msgstr "ثبت‌نام و نمایه‌های دانشجویان"
+
+#: .\azinapp\templates\website.html:926
+msgid "Educational content delivery"
+msgstr "ارائه محتوای آموزشی"
+
+#: .\azinapp\templates\website.html:930
+msgid "Quizzes & assignments"
+msgstr "آزمون‌ها و تکالیف"
+
+#: .\azinapp\templates\website.html:932
+msgid "Certificates"
+msgstr "گواهی‌نامه‌ها"
+
+#: .\azinapp\templates\website.html:934
+msgid "Admin management"
+msgstr "مدیریت بخش مدیریت"
+
+#: .\azinapp\templates\website.html:949
+msgid "Discuss Your Platform"
+msgstr "درباره سامانه خود گفت‌وگو کنید"
+
+#: .\azinapp\templates\website.html:968 .\azinapp\templates\website.html:978
+msgid "Custom"
+msgstr "اختصاصی"
+
+#: .\azinapp\templates\website.html:972
+msgid "Custom Web Application"
+msgstr "برنامه کاربردی وب اختصاصی"
+
+#: .\azinapp\templates\website.html:982
+msgid "project quote"
+msgstr "قیمت پروژه"
+
+#: .\azinapp\templates\website.html:988
+msgid ""
+"For businesses that need a tailored system, automation, API integration, or "
+"a custom Django application."
+msgstr ""
+"برای کسب‌وکارهایی که به یک سامانه اختصاصی، خودکارسازی، اتصال به رابط "
+"برنامه‌نویسی کاربردی یا یک برنامه کاربردی اختصاصی با جنگو نیاز دارند."
+
+#: .\azinapp\templates\website.html:1000
+msgid "Django backend development"
+msgstr "توسعه بخش پشتیبان با جنگو"
+
+#: .\azinapp\templates\website.html:1002
+msgid "Database architecture"
+msgstr "معماری پایگاه داده"
+
+#: .\azinapp\templates\website.html:1004
+msgid "REST API development"
+msgstr "توسعه رابط برنامه‌نویسی کاربردی REST"
+
+#: .\azinapp\templates\website.html:1006
+msgid "Third-party integrations"
+msgstr "یکپارچه‌سازی با سامانه‌های شخص ثالث"
+
+#: .\azinapp\templates\website.html:1010
+msgid "Deployment assistance"
+msgstr "کمک در استقرار"
+
+#: .\azinapp\templates\website.html:1012
+msgid "Documentation"
+msgstr "مستندسازی"
+
+#: .\azinapp\templates\website.html:1044
+msgid "Additional Services"
+msgstr "خدمات تکمیلی"
+
+#: .\azinapp\templates\website.html:1048
+msgid ""
+"Optional services that can be added to a project or requested separately."
+msgstr ""
+"خدمات اختیاری که می‌توانند به پروژه اضافه شوند یا به‌صورت جداگانه درخواست شوند."
+
+#: .\azinapp\templates\website.html:1057
+msgid "Landing Page"
+msgstr "صفحه فرود"
+
+#: .\azinapp\templates\website.html:1067
+msgid "Website Redesign"
+msgstr "بازطراحی وب‌سایت"
+
+#: .\azinapp\templates\website.html:1077
+msgid "UI/UX Implementation"
+msgstr "پیاده‌سازی رابط و تجربه کاربری"
+
+#: .\azinapp\templates\website.html:1087
+msgid "Django Backend Development"
+msgstr "توسعه بخش پشتیبان با جنگو"
+
+#: .\azinapp\templates\website.html:1097
+msgid "PostgreSQL Database Setup"
+msgstr "راه‌اندازی پایگاه داده PostgreSQL"
+
+#: .\azinapp\templates\website.html:1107
+msgid "Admin Dashboard"
+msgstr "داشبورد مدیریت"
+
+#: .\azinapp\templates\website.html:1117
+msgid "REST API Development"
+msgstr "توسعه رابط برنامه‌نویسی کاربردی REST"
+
+#: .\azinapp\templates\website.html:1127
+msgid "Payment Gateway Integration"
+msgstr "اتصال به درگاه پرداخت"
+
+#: .\azinapp\templates\website.html:1137
+msgid "Third-Party API Integration"
+msgstr "اتصال به رابط‌های برنامه‌نویسی کاربردی شخص ثالث"
+
+#: .\azinapp\templates\website.html:1147
+msgid "Deployment & Hosting Setup"
+msgstr "راه‌اندازی استقرار و میزبانی"
+
+#: .\azinapp\templates\website.html:1157
+msgid "Bug Fixing & Maintenance"
+msgstr "رفع خطا و نگهداری"
+
+#: .\azinapp\templates\website.html:1167
+msgid "Monthly Maintenance & Support"
+msgstr "نگهداری و پشتیبانی ماهانه"
+
+#: .\azinapp\templates\website.html:1181
+msgid ""
+"Prices shown are starting prices. Final pricing depends on project scope, "
+"number of pages, features, integrations, content requirements, and technical "
+"complexity."
+msgstr ""
+"قیمت‌های نمایش‌داده‌شده، قیمت‌های اولیه هستند. قیمت نهایی به محدوده پروژه، "
+"تعداد صفحات، امکانات، یکپارچه‌سازی‌ها، نیازهای محتوایی و پیچیدگی فنی "
+"بستگی دارد."
+
+#: .\azinapp\templates\website.html:1198
+msgid "Web development process"
+msgstr "فرایند توسعه وب"
+
+#: .\azinapp\templates\website.html:1213
+msgid ""
+"A clear and collaborative process designed to keep your project organized "
+"from the first conversation to final delivery."
+msgstr ""
+"فرایندی شفاف و مشارکتی که برای منظم نگه‌داشتن پروژه شما از نخستین گفت‌وگو "
+"تا تحویل نهایی طراحی شده است."
+
+#: .\azinapp\templates\website.html:1233
+msgid "Discovery"
+msgstr "بررسی اولیه"
+
+#: .\azinapp\templates\website.html:1237
+msgid ""
+"We discuss your business, objectives, target audience, required features, "
+"and project priorities."
+msgstr ""
+"درباره کسب‌وکار، اهداف، مخاطبان هدف، امکانات موردنیاز و اولویت‌های پروژه "
+"با شما گفت‌وگو می‌کنیم."
+
+#: .\azinapp\templates\website.html:1255
+msgid "Scope & Proposal"
+msgstr "محدوده پروژه و پیشنهاد"
+
+#: .\azinapp\templates\website.html:1259
+msgid ""
+"You receive a clear project scope, recommended solution, estimated timeline, "
+"and pricing proposal."
+msgstr ""
+"شما یک محدوده پروژه مشخص، راهکار پیشنهادی، زمان‌بندی تخمینی و پیشنهاد "
+"قیمت‌گذاری دریافت می‌کنید."
+
+#: .\azinapp\templates\website.html:1277
+msgid "Design & Planning"
+msgstr "طراحی و برنامه‌ریزی"
+
+#: .\azinapp\templates\website.html:1281
+msgid ""
+"We plan the structure, user experience, content requirements, and technical "
+"architecture before development."
+msgstr ""
+"پیش از شروع توسعه، ساختار، تجربه کاربری، نیازهای محتوایی و معماری فنی "
+"پروژه را برنامه‌ریزی می‌کنیم."
+
+#: .\azinapp\templates\website.html:1303
+msgid ""
+"We develop the website or application, integrate the required functionality, "
+"and test the key user flows."
+msgstr ""
+"وب‌سایت یا برنامه کاربردی را توسعه می‌دهیم، امکانات موردنیاز را یکپارچه "
+"می‌کنیم و فرایندهای اصلی کاربری را آزمایش می‌کنیم."
+
+#: .\azinapp\templates\website.html:1321
+msgid "Launch & Handover"
+msgstr "راه‌اندازی و تحویل"
+
+#: .\azinapp\templates\website.html:1325
+msgid ""
+"After final testing and approval, we deploy the project and provide the "
+"necessary handover and support."
+msgstr ""
+"پس از آزمایش نهایی و تأیید پروژه، آن را مستقر می‌کنیم و آموزش و پشتیبانی "
+"لازم برای تحویل را ارائه می‌دهیم."
+
+#: .\azinapp\templates\website.html:1344
+msgid "Web development portfolio"
+msgstr "نمونه‌کارهای توسعه وب"
+
+#: .\azinapp\templates\website.html:1359
+msgid ""
+"Explore examples of websites, dashboards, and custom web applications "
+"developed for different business needs."
+msgstr ""
+"نمونه‌هایی از وب‌سایت‌ها، داشبوردها و برنامه‌های کاربردی وب اختصاصی "
+"توسعه‌یافته برای نیازهای مختلف کسب‌وکار را مشاهده کنید."
+
+#: .\azinapp\templates\website.html:1399
+msgid "Web Project"
+msgstr "پروژه وب"
+
+#: .\azinapp\templates\website.html:1502
+msgid ""
+"A professional corporate website focused on clear service presentation, "
+"responsive design, and content management."
+msgstr ""
+"یک وب‌سایت شرکتی حرفه‌ای با تمرکز بر معرفی شفاف خدمات، طراحی واکنش‌گرا "
+"و مدیریت محتوا."
+
+#: .\azinapp\templates\website.html:1565
+msgid ""
+"An e-commerce platform designed for product management, customer accounts, "
+"shopping cart functionality, and order processing."
+msgstr ""
+"یک سامانه تجارت الکترونیکی طراحی‌شده برای مدیریت محصولات، حساب‌های مشتریان، "
+"قابلیت سبد خرید و پردازش سفارش‌ها."
+
+#: .\azinapp\templates\website.html:1624
+msgid "Business Management Dashboard"
+msgstr "داشبورد مدیریت کسب‌وکار"
+
+#: .\azinapp\templates\website.html:1628
+msgid ""
+"A custom dashboard for managing business data, users, reports, workflows, "
+"and day-to-day operations."
+msgstr ""
+"یک داشبورد اختصاصی برای مدیریت داده‌های کسب‌وکار، کاربران، گزارش‌ها، "
+"فرایندهای کاری و عملیات روزمره."
+
+#: .\azinapp\templates\website.html:1635
+msgid "Web Application"
+msgstr "برنامه کاربردی وب"
+
+#: .\azinapp\templates\website.html:1676
+msgid "Why choose AZIN GROUP"
+msgstr "چرا AZIN GROUP را انتخاب کنید"
+
+#: .\azinapp\templates\website.html:1687
+msgid "Built Around Your Business"
+msgstr "طراحی‌شده بر اساس کسب‌وکار شما"
+
+#: .\azinapp\templates\website.html:1691
+msgid ""
+"We focus on practical solutions, clear communication, maintainable code, and "
+"technology that supports your business goals."
+msgstr ""
+"ما بر راهکارهای کاربردی، ارتباط شفاف، کدنویسی قابل نگهداری و فناوری‌هایی "
+"تمرکز می‌کنیم که از اهداف کسب‌وکار شما پشتیبانی می‌کنند."
+
+#: .\azinapp\templates\website.html:1707
+msgid "Business-Focused Development"
+msgstr "توسعه مبتنی بر نیازهای کسب‌وکار"
+
+#: .\azinapp\templates\website.html:1711
+msgid ""
+"We start with your business requirements and workflows, then choose the "
+"right technical solution."
+msgstr ""
+"ما کار را با نیازمندی‌ها و فرایندهای کاری کسب‌وکار شما آغاز می‌کنیم و "
+"سپس راهکار فنی مناسب را انتخاب می‌کنیم."
+
+#: .\azinapp\templates\website.html:1725
+msgid "Modern & Maintainable Code"
+msgstr "کدنویسی مدرن و قابل نگهداری"
+
+#: .\azinapp\templates\website.html:1729
+msgid ""
+"Our development approach emphasizes clean structure, maintainability, "
+"security, and future scalability."
+msgstr ""
+"رویکرد توسعه ما بر ساختار منظم، قابلیت نگهداری، امنیت و امکان توسعه "
+"در آینده تأکید دارد."
+
+#: .\azinapp\templates\website.html:1747
+msgid ""
+"You receive clear information about scope, progress, requirements, and next "
+"steps throughout the project."
+msgstr ""
+"در طول پروژه، اطلاعات شفافی درباره محدوده، پیشرفت، نیازمندی‌ها و مراحل "
+"بعدی دریافت می‌کنید."
+
+#: .\azinapp\templates\website.html:1765
+msgid "Start your web development project"
+msgstr "پروژه توسعه وب خود را شروع کنید"
+
+#: .\azinapp\templates\website.html:1774
+msgid "Have a Web Project in Mind?"
+msgstr "پروژه وبی در ذهن دارید؟"
+
+#: .\azinapp\templates\website.html:1778
+msgid ""
+"Tell us what you need. We will review your requirements, recommend a "
+"suitable solution, and provide a clear project scope and quotation."
+msgstr ""
+"نیاز خود را با ما در میان بگذارید. نیازمندی‌های شما را بررسی می‌کنیم، "
+"راهکار مناسب را پیشنهاد می‌دهیم و محدوده پروژه و قیمت پیشنهادی شفافی "
+"ارائه می‌کنیم."
+
+#: .\azinapp\templates\website.html:1789
+msgid "Request a Free Consultation"
+msgstr "درخواست مشاوره رایگان"
+
+#: .\azinapp\views.py:46
+msgid "Welcome to AZIN GROUP."
+msgstr "به AZIN GROUP خوش آمدید."
+
+#: .\azinapp\views.py:94
+msgid "Your message has been sent successfully!"
+msgstr "پیام شما با موفقیت ارسال شد!"
+
+#: .\azinapp\views.py:178
+msgid "You have been logged out successfully."
+msgstr "با موفقیت از حساب کاربری خود خارج شدید."
+
+#: .\azinapp\views.py:184
+msgid "You are already logged in."
+msgstr "شما در حال حاضر وارد حساب کاربری خود هستید."
+
+#: .\azinapp\views.py:198
+msgid "You don't have access to the admin panel."
+msgstr "شما به بخش مدیریت دسترسی ندارید."
+
+#: .\azinapp\views.py:203
+msgid "Invalid username or password."
+msgstr "نام کاربری یا رمز عبور نادرست است."
+
+#: .\azinapp\views.py:223
+msgid "Your account has been created successfully!"
+msgstr "حساب کاربری شما با موفقیت ایجاد شد!"
+
+#: .\azinapp\views.py:226 .\azinapp\views.py:278
+msgid "Please check the form for errors."
+msgstr "لطفاً فرم را برای یافتن خطاها بررسی کنید."
+
+#: .\azinapp\views.py:241
+msgid "Profile updated successfully!"
+msgstr "نمایه با موفقیت به‌روزرسانی شد!"
+
+#: .\azinapp\views.py:256
+msgid "Password changed successfully."
+msgstr "رمز عبور با موفقیت تغییر کرد."
+
+#: .\azinapp\views.py:275
+msgid "Information updated successfully."
+msgstr "اطلاعات با موفقیت به‌روزرسانی شد."
+
+#: .\azingroup\settings.py:138
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\azingroup\settings.py:139
+msgid "Persian"
+msgstr "فارسی"
+
+#: .\azingroup\settings.py:140
+msgid "Tajik"
+msgstr "تاجیکی"
